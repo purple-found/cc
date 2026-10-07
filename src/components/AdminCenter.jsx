@@ -114,16 +114,29 @@ export default function AdminCenter({
       <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <span className="p-2 rounded-xl bg-concert-50 dark:bg-hall-800 text-concert-600 dark:text-concert-400">
                 <ShieldCheck className="w-5 h-5" />
               </span>
               <h2 className="font-serif font-bold text-xl text-stone-900 dark:text-stone-50 flex items-center gap-2">
                 <span>공연장 관리 센터</span>
-                <span className="px-2 py-0.5 text-[10px] font-semibold tracking-tight rounded border border-stone-200 dark:border-hall-700 bg-stone-100 dark:bg-hall-800 text-stone-600 dark:text-stone-300">
-                  관리자 전용 권한
-                </span>
               </h2>
+
+              {/* 1. 슬림 타원 분홍 뱃지 */}
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 border border-pink-200/80 dark:border-pink-900/60 shrink-0">
+                관리자 전용 권한
+              </span>
+
+              {/* 2. 관리자 모드 나가기 버튼 (뱃지와 동일한 컴팩트 타원 규격) */}
+              {onLogout && (
+                <button
+                  onClick={onLogout}
+                  className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-300 border border-stone-200 dark:border-hall-700 transition-colors shrink-0"
+                  title="관리자 세션 종료"
+                >
+                  <span>관리자 모드 나가기</span>
+                </button>
+              )}
             </div>
             <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 font-medium">
               누락된 일정을 직접 관리하거나, 관람객이 제보한 공연을 검토하여 정식 등록합니다.
@@ -131,15 +144,6 @@ export default function AdminCenter({
           </div>
 
           <div className="flex items-center gap-2.5">
-            {onLogout && (
-              <button
-                onClick={onLogout}
-                className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl border border-stone-200 dark:border-hall-700 bg-white dark:bg-hall-800 hover:bg-stone-50 dark:hover:bg-hall-700 text-stone-600 dark:text-stone-300 text-xs font-semibold transition-all shrink-0"
-                title="관리자 세션 종료"
-              >
-                <span>관리자 모드 나가기</span>
-              </button>
-            )}
             <button
               onClick={onSyncAllHalls}
               disabled={isSyncing}
