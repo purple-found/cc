@@ -193,7 +193,8 @@ export default function CommunityBoard({
               아직 등록된 후기 및 기대평이 없습니다
             </h3>
             <p className="text-xs text-stone-500 dark:text-stone-400 max-w-sm mx-auto leading-relaxed">
-              관람객 여러분의 실제 목소리로 채워지는 공간입니다. 무대에 대한 설렘이나 감상을 첫 번째로 남겨보세요!
+              관람객 여러분의 실제 목소리로 채워지는 공간입니다.<br />
+              무대에 대한 설렘이나 감상을 첫 번째로 남겨보세요!
             </p>
             <button
               onClick={() => setIsWriteModalOpen(true)}
