@@ -10,15 +10,21 @@ import {
   ExternalLink,
   CheckCircle2,
   AlertTriangle,
-  Music
+  Music,
+  Inbox,
+  Check,
+  UserCheck
 } from 'lucide-react';
-import { formatKoreanDate } from '../utils/parser';
+import { formatKoreanDate } from '../utils/parser.js';
 
 export default function AdminCenter({
   halls,
   concerts,
+  tips = [],
   onAddConcert,
   onDeleteConcert,
+  onApproveTip,
+  onDeleteTip,
   onSyncAllHalls,
   isSyncing
 }) {
@@ -111,12 +117,15 @@ export default function AdminCenter({
               <span className="p-2 rounded-xl bg-concert-50 dark:bg-hall-800 text-concert-600 dark:text-concert-400">
                 <ShieldCheck className="w-5 h-5" />
               </span>
-              <h2 className="font-serif font-black text-xl text-stone-900 dark:text-stone-50">
-                공연장 수집 관리 & 수동 등록 센터
+              <h2 className="font-serif font-bold text-xl text-stone-900 dark:text-stone-50 flex items-center gap-2">
+                <span>공연장 관리 센터</span>
+                <span className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-concert-100 text-concert-800 dark:bg-hall-800 dark:text-concert-300">
+                  관리자 전용 권한
+                </span>
               </h2>
             </div>
             <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 font-medium">
-              연주장 홈페이지의 보안 정책이나 크롤링 차단으로 인해 누락된 일정을 직접 보완하고 관리합니다.
+              연주장 홈페이지의 보안 정책(크롤링 차단)으로 누락된 일정을 직접 관리하거나, 관람객이 제보한 공연을 검토하여 정식 등록합니다.
             </p>
           </div>
 
@@ -136,7 +145,7 @@ export default function AdminCenter({
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-md shrink-0"
             >
               <PlusCircle className="w-4 h-4" />
-              <span>공연 수동 등록</span>
+              <span>공연 직접 등록 (관리자)</span>
             </button>
           </div>
         </div>
@@ -159,15 +168,84 @@ export default function AdminCenter({
             </span>
           </div>
 
-          <div className="p-3.5 rounded-xl bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200/50 dark:border-emerald-900/40">
-            <span className="text-emerald-700 dark:text-emerald-400 block text-[11px] font-semibold">
-              정상 자동 연동 기관
+          <div className="p-3.5 rounded-xl bg-blue-50/60 dark:bg-blue-950/20 border border-blue-200/50 dark:border-blue-900/40">
+            <span className="text-blue-700 dark:text-blue-400 block text-[11px] font-semibold">
+              접수된 관람객 제보
             </span>
-            <span className="text-base font-bold text-emerald-900 dark:text-emerald-300 mt-0.5 block">
-              {halls.length - blockedHallsCount}개 공연장
+            <span className="text-base font-bold text-blue-900 dark:text-blue-300 mt-0.5 block">
+              {tips.length}건 대기 중
             </span>
           </div>
         </div>
+      </div>
+
+      {/* User Tip-off Inbox (관람객 제보 대기열 섹션) */}
+      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Inbox className="w-5 h-5 text-concert-500" />
+            <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100">
+              관람객 공연 제보함 ({tips.length}건 대기 중)
+            </h3>
+          </div>
+          <span className="text-xs text-stone-400">
+            검토 후 승인 시 즉시 공식 일정으로 메인 화면에 등록됩니다.
+          </span>
+        </div>
+
+        {tips.length === 0 ? (
+          <div className="p-8 text-center bg-stone-50 dark:bg-hall-850 rounded-2xl border border-stone-200/60 dark:border-hall-800 text-xs text-stone-500 dark:text-stone-400">
+            현재 대기 중인 관람객 제보가 없습니다. 일반 사용자가 상단 [공연 제보하기]를 통해 보낸 공연이 여기에 표시됩니다.
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {tips.map((tip) => (
+              <div
+                key={tip.id}
+                className="p-4 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-800 space-y-3"
+              >
+                <div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] text-stone-400">{tip.createdAt} 제보 접수</span>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300">
+                      검토 대기
+                    </span>
+                  </div>
+                  <h4 className="font-bold text-sm text-stone-900 dark:text-stone-100 mt-1">
+                    {tip.title}
+                  </h4>
+                  <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">
+                    {formatKoreanDate(tip.date)} · {tip.time} | {tip.venue}
+                  </p>
+                  <p className="text-xs text-concert-600 dark:text-concert-400 font-medium mt-0.5">
+                    출연: {Array.isArray(tip.performers) ? tip.performers.join(', ') : tip.performers}
+                  </p>
+                  {tip.note && (
+                    <p className="text-[11px] text-stone-600 dark:text-stone-300 bg-white dark:bg-hall-900 p-2 rounded-lg border border-stone-200/60 dark:border-hall-800 mt-2">
+                      <strong>제보 메모:</strong> {tip.note}
+                    </p>
+                  )}
+                </div>
+
+                <div className="flex items-center justify-end gap-2 pt-2 border-t border-stone-200/80 dark:border-hall-800">
+                  <button
+                    onClick={() => onDeleteTip(tip.id)}
+                    className="px-3 py-1.5 rounded-lg bg-stone-200 hover:bg-stone-300 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-300 text-xs font-semibold transition-colors"
+                  >
+                    반려
+                  </button>
+                  <button
+                    onClick={() => onApproveTip(tip.id)}
+                    className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-xs"
+                  >
+                    <Check className="w-3.5 h-3.5" />
+                    <span>승인하여 정식 등록</span>
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Hall Monitoring Table */}
@@ -245,14 +323,14 @@ export default function AdminCenter({
           <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100">
             현재 등록된 전체 공연 데이터 ({concerts.length}건)
           </h3>
-          <span className="text-xs text-stone-400">삭제 시 메인 화면에 즉시 반영됩니다</span>
+          <span className="text-xs text-stone-400">관리자 삭제 시 메인 화면에 즉시 반영됩니다</span>
         </div>
 
-        <div className="divide-y divide-stone-100 dark:divide-hall-800">
+        <div className="divide-y divide-stone-100 dark:divide-hall-800 max-h-96 overflow-y-auto">
           {concerts.map((c) => (
             <div
               key={c.id}
-              className="py-3.5 flex items-center justify-between gap-3 text-xs"
+              className="py-3 flex items-center justify-between gap-3 text-xs"
             >
               <div className="min-w-0 space-y-1">
                 <div className="flex items-center gap-2">
@@ -272,7 +350,7 @@ export default function AdminCenter({
                   <span>·</span>
                   <span>{c.venue}</span>
                   <span>·</span>
-                  <span className="text-concert-600 dark:text-concert-400">{c.performers.join(', ')}</span>
+                  <span className="text-concert-600 dark:text-concert-400 truncate max-w-xs">{c.performers.join(', ')}</span>
                 </div>
               </div>
 
@@ -292,7 +370,7 @@ export default function AdminCenter({
         </div>
       </div>
 
-      {/* Manual Registration Modal */}
+      {/* Manual Registration Modal (Admin Only) */}
       {isAddModalOpen && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
@@ -305,12 +383,17 @@ export default function AdminCenter({
             onClick={(e) => e.stopPropagation()}
           >
             <div>
-              <h2 className="font-serif font-black text-xl text-stone-900 dark:text-stone-50 flex items-center gap-2">
+              <div className="flex items-center gap-2">
+                <span className="p-1 rounded-md bg-concert-100 dark:bg-hall-800 text-concert-700 dark:text-concert-300 text-[11px] font-bold">
+                  관리자 단독 권한
+                </span>
+              </div>
+              <h2 className="font-serif font-bold text-xl text-stone-900 dark:text-stone-50 flex items-center gap-2 mt-1">
                 <PlusCircle className="w-5 h-5 text-concert-500" />
-                <span>공연 일정 수동 등록</span>
+                <span>공연 일정 직접 등록</span>
               </h2>
               <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">
-                홈페이지가 크롤링을 차단했거나 비공개 기획 공연의 정보를 직접 등록합니다.
+                보안 방화벽으로 자동 수집이 차단된 공연장의 일정을 관리자가 직접 정식 등록합니다.
               </p>
             </div>
 
@@ -324,7 +407,7 @@ export default function AdminCenter({
                   required
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                  placeholder="예: 임윤찬 피아노 리사이틀 2025"
+                  placeholder="예: 임윤찬 피아노 리사이틀 2026"
                   className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                 />
               </div>
@@ -375,6 +458,9 @@ export default function AdminCenter({
                     <option value="대구콘서트하우스 그랜드홀">대구콘서트하우스 그랜드홀</option>
                     <option value="통영국제음악당 콘서트홀">통영국제음악당 콘서트홀</option>
                     <option value="국립극장 해오름극장">국립극장 해오름극장 (차단)</option>
+                    <option value="대전예술의전당 아트홀">대전예술의전당 아트홀</option>
+                    <option value="광주예술의전당 대극장">광주예술의전당 대극장</option>
+                    <option value="부산문화회관 대극장">부산문화회관 대극장</option>
                   </select>
                 </div>
 
@@ -405,7 +491,7 @@ export default function AdminCenter({
                   required
                   value={formData.performers}
                   onChange={(e) => setFormData({ ...formData, performers: e.target.value })}
-                  placeholder="예: 임윤찬 (피아노), 마린 알솝 (지휘)"
+                  placeholder="예: 조성진 (Piano), 서울시향"
                   className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                 />
               </div>
@@ -418,7 +504,7 @@ export default function AdminCenter({
                   type="text"
                   value={formData.composers}
                   onChange={(e) => setFormData({ ...formData, composers: e.target.value })}
-                  placeholder="예: 쇼팽, 베토벤, 리스트"
+                  placeholder="예: 쇼팽, 베토벤, 말러"
                   className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                 />
               </div>
@@ -431,7 +517,7 @@ export default function AdminCenter({
                   rows={3}
                   value={formData.pieces}
                   onChange={(e) => setFormData({ ...formData, pieces: e.target.value })}
-                  placeholder="쇼팽 - 녹턴 제8번 Db장조 Op.27 No.2&#10;베토벤 - 피아노 소나타 제32번 c단조 Op.111"
+                  placeholder="베토벤 - 피아노 협주곡 5번 '황제'&#10;브람스 - 교향곡 1번"
                   className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                 />
               </div>

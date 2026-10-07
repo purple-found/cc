@@ -4,6 +4,7 @@ import FilterBar from './components/FilterBar';
 import ConcertCard from './components/ConcertCard';
 import ConcertCalendar from './components/ConcertCalendar';
 import ConcertDetailModal from './components/ConcertDetailModal';
+import TipConcertModal from './components/TipConcertModal';
 import CommunityBoard from './components/CommunityBoard';
 import AdminCenter from './components/AdminCenter';
 import Toast from './components/Toast';
@@ -21,6 +22,7 @@ export default function App() {
   const [concerts, setConcerts] = useState([]);
   const [halls, setHalls] = useState([]);
   const [posts, setPosts] = useState([]);
+  const [tips, setTips] = useState([]);
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [hasFatalError, setHasFatalError] = useState(false);
 
@@ -37,7 +39,7 @@ export default function App() {
   // Modal & Target states
   const [selectedConcert, setSelectedConcert] = useState(null);
   const [reviewTargetConcert, setReviewTargetConcert] = useState(null);
-  const [isAdminAddModalDirect, setIsAdminAddModalDirect] = useState(false);
+  const [isTipModalOpen, setIsTipModalOpen] = useState(false);
 
   // Async Simulator State
   const [isSyncing, setIsSyncing] = useState(false);
@@ -59,9 +61,11 @@ export default function App() {
       const c = storageService.getConcerts();
       const h = storageService.getHalls();
       const p = storageService.getPosts();
+      const t = storageService.getTips();
       setConcerts(c);
       setHalls(h);
       setPosts(p);
+      setTips(t);
       setIsDataLoaded(true);
       setHasFatalError(false);
     } catch (err) {
@@ -79,7 +83,29 @@ export default function App() {
     setToast({ message, type });
   };
 
-  // 공연 추가 핸들러 (Admin)
+  // 일반 사용자의 공연 제보 핸들러
+  const handleSubmitTip = (tipData) => {
+    const updatedTips = storageService.addTip(tipData);
+    setTips(updatedTips);
+    showToast('소중한 공연 제보가 관리자에게 전달되었습니다. 검토 후 공식 일정으로 등록됩니다.');
+  };
+
+  // 관리자의 제보 승인 및 공식 일정 반영 핸들러
+  const handleApproveTip = (tipId) => {
+    const { updatedTips, updatedConcerts, approvedConcert } = storageService.approveTip(tipId);
+    setTips(updatedTips);
+    setConcerts(updatedConcerts);
+    showToast(`제보 공연 '${approvedConcert.title}'이(가) 공식 일정으로 정식 등록되었습니다!`);
+  };
+
+  // 관리자의 제보 반려/삭제 핸들러
+  const handleDeleteTip = (tipId) => {
+    const updatedTips = storageService.deleteTip(tipId);
+    setTips(updatedTips);
+    showToast('제보가 반려/삭제되었습니다.', 'info');
+  };
+
+  // 공연 추가 핸들러 (Admin 직접 등록)
   const handleAddConcert = (newConcert) => {
     const updated = storageService.addConcert(newConcert);
     setConcerts(updated);
@@ -208,10 +234,7 @@ export default function App() {
         setActiveTab={setActiveTab}
         theme={theme}
         setTheme={setTheme}
-        onOpenAddModal={() => {
-          setActiveTab('admin');
-          setIsAdminAddModalDirect(true);
-        }}
+        onOpenTipModal={() => setIsTipModalOpen(true)}
       />
 
       {/* Main Container */}
@@ -310,13 +333,23 @@ export default function App() {
           <AdminCenter
             halls={halls}
             concerts={concerts}
+            tips={tips}
             onAddConcert={handleAddConcert}
             onDeleteConcert={handleDeleteConcert}
+            onApproveTip={handleApproveTip}
+            onDeleteTip={handleDeleteTip}
             onSyncAllHalls={handleSyncAllHalls}
             isSyncing={isSyncing}
           />
         )}
       </main>
+
+      {/* General User Tip Modal */}
+      <TipConcertModal
+        isOpen={isTipModalOpen}
+        onClose={() => setIsTipModalOpen(false)}
+        onSubmitTip={handleSubmitTip}
+      />
 
       {/* Detail Modal */}
       <ConcertDetailModal

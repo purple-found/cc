@@ -1,7 +1,7 @@
 import React from 'react';
 import { Music, Calendar, MessageSquare, ShieldCheck, Sun, Moon, Sparkles } from 'lucide-react';
 
-export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpenAddModal }) {
+export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpenTipModal }) {
   const toggleTheme = () => {
     const nextTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(nextTheme);
@@ -21,15 +21,12 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-serif font-black text-xl tracking-tight text-stone-900 dark:text-stone-100">
+                <span className="font-serif font-bold text-xl tracking-tight text-stone-900 dark:text-stone-100">
                   OPUS KOREA
-                </span>
-                <span className="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-concert-100 dark:bg-hall-800 text-concert-700 dark:text-concert-300">
-                  클래식 아카이브
                 </span>
               </div>
               <p className="text-xs text-stone-500 dark:text-stone-400 font-medium">
-                대한민국 클래식 공연 일정 & 관람 커뮤니티
+                선율이 머무는 곳, 클래식 모아보기
               </p>
             </div>
           </div>
@@ -69,20 +66,20 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
               }`}
             >
               <ShieldCheck className="w-4 h-4 text-concert-500" />
-              <span>공연장 수집 관리</span>
+              <span>공연장 관리 센터</span>
             </button>
           </nav>
 
           {/* Right Action buttons */}
           <div className="flex items-center gap-2.5">
-            {/* Quick manual concert registration */}
+            {/* General User: Suggest/Tip-off concert to Admin */}
             <button
-              onClick={onOpenAddModal}
-              className="hidden lg:flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-lg bg-concert-50 dark:bg-hall-800 border border-concert-300/80 dark:border-hall-700 text-concert-800 dark:text-concert-300 hover:bg-concert-100 dark:hover:bg-hall-700 transition-colors shrink-0"
-              title="홈페이지 크롤링 차단 공연장 일정 직접 등록"
+              onClick={onOpenTipModal}
+              className="flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-lg bg-concert-50 dark:bg-hall-800 border border-concert-300/80 dark:border-hall-700 text-concert-800 dark:text-concert-300 hover:bg-concert-100 dark:hover:bg-hall-700 transition-colors shrink-0"
+              title="누락되었거나 크롤링 차단된 공연 일정을 관리자에게 제보하기"
             >
               <Sparkles className="w-3.5 h-3.5 text-concert-600 dark:text-concert-400" />
-              <span>공연 수동 등록</span>
+              <span>공연 제보하기</span>
             </button>
 
             {/* Dark / Light Mode Switcher */}
@@ -134,7 +131,7 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
             }`}
           >
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>수집 관리</span>
+            <span>관리 센터</span>
           </button>
         </div>
       </div>

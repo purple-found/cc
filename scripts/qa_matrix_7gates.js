@@ -367,14 +367,28 @@ try {
   });
   const persona3Success = adminConcert[0].title.includes('부천아트센터 특별 오르간 콘서트');
 
-  if (foundBrahmsConcert && foundMahlerEnglish && persona2Success && hasBlockedHallDetected && persona3Success) {
+  // 페르소나 4: 일반 사용자 제보 -> 관리자 승인 -> 공식 일정 등록 워크플로우 검증
+  const userTip = storageService.addTip({
+    title: '제보 테스트: 성남아트센터 리사이틀',
+    date: '2026-10-29',
+    venue: '성남아트센터 콘서트홀',
+    performers: ['선우예권 (피아노)'],
+    note: '방화벽 차단으로 누락된 공연 제보합니다.'
+  });
+  const tipId = userTip[0].id;
+  const { updatedConcerts, approvedConcert } = storageService.approveTip(tipId);
+  const persona4Success = approvedConcert.title === '제보 테스트: 성남아트센터 리사이틀' &&
+    updatedConcerts.some(c => c.title === '제보 테스트: 성남아트센터 리사이틀');
+
+  if (foundBrahmsConcert && foundMahlerEnglish && persona2Success && hasBlockedHallDetected && persona3Success && persona4Success) {
     gateResults.gate7 = true;
     console.log(`  ${GREEN}✓${RESET} 페르소나 1 (일반 관람객): 한글/영문 양방향 필터링 및 2026년 10월 공연 탐색 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 2 (커뮤니티 유저): 기대평 작성-댓글-공감 라이프사이클 전과정 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 3 (공연장 관리자): 차단 공연장 감지 및 수동 등록-실시간 반영 통과`);
+    console.log(`  ${GREEN}✓${RESET} 페르소나 4 (권한 격리 워크플로우): 일반 사용자 공연 제보 -> 관리자 승인 후 공식 등록 완주`);
     console.log(`  ${GREEN}✓${RESET} 모바일 & 데스크톱 뷰포트 반응형 레이아웃 시뮬레이션 일관성 통과`);
   } else {
-    console.error(`  ${RED}✗ Gate 7 시뮬레이션 실패`);
+    console.error(`  ${RED}✗ Gate 7 시뮬레이션 실패`, { foundBrahmsConcert, foundMahlerEnglish, persona2Success, hasBlockedHallDetected, persona3Success, persona4Success });
   }
 } catch (e) {
   console.error(`  ${RED}✗ Gate 7 예외 발생:${RESET}`, e.message);

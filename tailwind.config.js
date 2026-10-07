@@ -30,7 +30,7 @@ export default {
         }
       },
       fontFamily: {
-        serif: ['"Noto Serif KR"', 'Georgia', 'Cambria', 'serif'],
+        serif: ['"Gowun Batang"', '"Playfair Display"', 'Georgia', 'Cambria', 'serif'],
         sans: ['"Pretendard"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
       }
     },

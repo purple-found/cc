@@ -164,10 +164,87 @@ export const storageService = {
     localStorage.setItem(THEME_KEY, theme);
   },
 
+  // 공연 제보(Tip-off) 목록 조회 (일반 사용자 제보 -> 관리자 승인)
+  getTips() {
+    try {
+      const raw = localStorage.getItem('opus_korea_tips_v3');
+      if (!raw) return [];
+      const parsed = safeParseJSON(raw, []);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (e) {
+      return [];
+    }
+  },
+
+  saveTips(tips) {
+    try {
+      localStorage.setItem('opus_korea_tips_v3', JSON.stringify(tips));
+    } catch (e) {
+      console.error('[저장소 오류] 제보 목록 저장 실패', e);
+    }
+  },
+
+  // 일반 사용자의 공연 제보 등록
+  addTip(tipData) {
+    const list = this.getTips();
+    const newTip = {
+      ...tipData,
+      id: `tip-${Date.now()}`,
+      status: 'pending',
+      createdAt: new Date().toISOString().slice(0, 16).replace('T', ' ')
+    };
+    const updated = [newTip, ...list];
+    this.saveTips(updated);
+    return updated;
+  },
+
+  // 관리자의 제보 승인 및 공식 공연 정식 등록
+  approveTip(tipId) {
+    const tips = this.getTips();
+    const targetTip = tips.find(t => t.id === tipId);
+    if (!targetTip) return { updatedTips: tips, updatedConcerts: this.getConcerts() };
+
+    // 공식 공연 객체로 변환하여 등록
+    const newConcert = {
+      title: targetTip.title,
+      date: targetTip.date,
+      time: targetTip.time || '19:30',
+      venue: targetTip.venue,
+      city: targetTip.city || '기타',
+      performerType: targetTip.performerType || '오케스트라',
+      performers: Array.isArray(targetTip.performers) ? targetTip.performers : [targetTip.performers || '출연진 정보'],
+      composers: Array.isArray(targetTip.composers) ? targetTip.composers : [targetTip.composers || '클래식'],
+      pieces: Array.isArray(targetTip.pieces) ? targetTip.pieces : [targetTip.pieces || '상세 프로그램'],
+      price: targetTip.price || '추후 공지',
+      ticketUrl: targetTip.ticketUrl || 'https://www.sac.or.kr',
+      status: '예매중',
+      description: `[관람객 제보 등록] ${targetTip.note || '공연 일정입니다.'}`,
+      imageUrl: targetTip.imageUrl || 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80',
+      source: '관람객 제보 (관리자 승인)',
+      crawlerBlocked: true
+    };
+
+    const updatedConcerts = this.addConcert(newConcert);
+    // 제보 목록에서 승인 완료된 항목 제거
+    const updatedTips = tips.filter(t => t.id !== tipId);
+    this.saveTips(updatedTips);
+
+    return { updatedTips, updatedConcerts, approvedConcert: newConcert };
+  },
+
+  // 관리자의 제보 반려/삭제
+  deleteTip(tipId) {
+    const list = this.getTips();
+    const updated = list.filter(t => t.id !== tipId);
+    this.saveTips(updated);
+    return updated;
+  },
+
   // 데이터 초기화
   resetAll() {
     localStorage.removeItem(CONCERTS_KEY);
     localStorage.removeItem(HALLS_KEY);
     localStorage.removeItem(POSTS_KEY);
+    localStorage.removeItem('opus_korea_tips_v3');
   }
 };
