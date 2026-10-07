@@ -16,8 +16,16 @@ export default function FilterBar({
     { label: '부천아트센터 (Bucheon Arts Center)', value: '부천아트센터' },
     { label: '세종문화회관 (Sejong Center)', value: '세종문화회관' },
     { label: '아트센터인천 (Art Center Incheon)', value: '아트센터인천' },
+    { label: '대전예술의전당 (Daejeon Arts Center)', value: '대전예술의전당' },
+    { label: '광주예술의전당 (Gwangju Arts Center)', value: '광주예술의전당' },
+    { label: '부산문화회관 (Busan Cultural Center)', value: '부산문화회관' },
+    { label: '대구콘서트하우스 (Daegu Concert House)', value: '대구콘서트하우스' },
     { label: '통영국제음악당 (Tongyeong Music Hall)', value: '통영국제음악당' },
-    { label: '대구콘서트하우스 (Daegu Concert House)', value: '대구콘서트하우스' }
+    { label: '경기아트센터 (Gyeonggi Arts Center)', value: '경기아트센터' },
+    { label: '국립극장 (National Theater of Korea)', value: '국립극장' },
+    { label: '금호아트홀 연세 (Kumho Art Hall)', value: '금호아트홀' },
+    { label: 'LG아트센터 서울 (LG Arts Center)', value: 'LG아트센터' },
+    { label: '강릉아트센터 (Gangneung Arts Center)', value: '강릉아트센터' }
   ];
 
   const composers = [

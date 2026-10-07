@@ -185,14 +185,23 @@ export default function CommunityBoard({
       {/* Post List */}
       <div className="grid grid-cols-1 gap-3.5">
         {filteredPosts.length === 0 ? (
-          <div className="p-12 text-center bg-white dark:bg-hall-900 rounded-2xl border border-stone-200 dark:border-hall-800">
-            <MessageCircle className="w-10 h-10 mx-auto text-stone-300 dark:text-stone-600 mb-2" />
-            <p className="text-sm font-semibold text-stone-600 dark:text-stone-300">
-              조건에 맞는 게시글이 없습니다.
+          <div className="p-16 text-center bg-white dark:bg-hall-900 rounded-3xl border border-stone-200 dark:border-hall-800 space-y-3">
+            <div className="w-14 h-14 mx-auto rounded-2xl bg-concert-50 dark:bg-hall-850 flex items-center justify-center text-concert-500 border border-concert-200/60 dark:border-hall-700">
+              <MessageCircle className="w-7 h-7" />
+            </div>
+            <h3 className="text-base font-serif font-bold text-stone-800 dark:text-stone-200">
+              아직 등록된 후기 및 기대평이 없습니다
+            </h3>
+            <p className="text-xs text-stone-500 dark:text-stone-400 max-w-sm mx-auto leading-relaxed">
+              가짜 후기 없이 관람객 여러분의 실제 목소리로 채워지는 공간입니다. 2026년 10월 무대에 대한 설렘이나 감상을 첫 번째로 남겨보세요!
             </p>
-            <p className="text-xs text-stone-400 dark:text-stone-500 mt-1">
-              새로운 공연 기대평이나 관람기를 첫 번째로 등록해보세요!
-            </p>
+            <button
+              onClick={() => setIsWriteModalOpen(true)}
+              className="mt-2 inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-md"
+            >
+              <PenSquare className="w-4 h-4" />
+              <span>첫 이야기 남기기</span>
+            </button>
           </div>
         ) : (
           filteredPosts.map((post) => (
