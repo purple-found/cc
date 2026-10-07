@@ -222,15 +222,11 @@ export default function App() {
             {/* Hero Banner */}
             <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-stone-900 via-hall-900 to-stone-950 text-white p-8 sm:p-10 shadow-lg border border-stone-800">
               <div className="relative z-10 max-w-2xl space-y-3">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-concert-500/20 text-concert-300 border border-concert-500/30">
-                  <Sparkles className="w-3.5 h-3.5" />
-                  <span>2025/2026 대한민국 클래식 시즌</span>
-                </span>
-                <h1 className="font-serif font-black text-2xl sm:text-4xl leading-tight">
-                  한국 클래식 공연의 감동을<br />한눈에 탐색하고 기록하세요
+                <h1 className="font-serif font-black text-2xl sm:text-4xl leading-tight tracking-tight">
+                  숨죽인 홀 안의 침묵,<br />그리고 가슴 깊이 남겨질 선율의 순간
                 </h1>
                 <p className="text-xs sm:text-sm text-stone-300 font-medium leading-relaxed">
-                  예술의전당부터 롯데콘서트홀, 부천아트센터까지 전국 주요 클래식 전용홀의 일정을 날짜·장소·작곡가·연주자별로 정밀하게 큐레이션합니다.
+                  무대 위의 호흡과 객석의 여운이 하나가 되는 시간. 전국 클래식 전용홀에서 펼쳐지는 아름다운 연주의 순간들을 정갈하게 전합니다.
                 </p>
               </div>
               <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-15 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-concert-400 via-transparent to-transparent" />
