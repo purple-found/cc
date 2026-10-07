@@ -18,7 +18,18 @@ export const storageService = {
         return initialConcerts;
       }
       const parsed = safeParseJSON(raw, initialConcerts);
-      return Array.isArray(parsed) && parsed.length > 0 ? parsed : initialConcerts;
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        // 기존 브라우저 캐시에 신규 11월/12월 공식 공연이 누락되어 있을 경우 자동 병합
+        const existingIds = new Set(parsed.map(c => c.id));
+        const missingOfficial = initialConcerts.filter(c => !existingIds.has(c.id));
+        if (missingOfficial.length > 0) {
+          const merged = [...parsed, ...missingOfficial];
+          localStorage.setItem(CONCERTS_KEY, JSON.stringify(merged));
+          return merged;
+        }
+        return parsed;
+      }
+      return initialConcerts;
     } catch (e) {
       console.warn('[저장소 안전 복구] 공연 목록 기본값 복원', e);
       return initialConcerts;
