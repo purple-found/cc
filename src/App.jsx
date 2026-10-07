@@ -254,11 +254,11 @@ export default function App() {
 
               <div className="relative z-10 max-w-2xl space-y-3.5">
                 <h1 className="font-serif font-black text-xl sm:text-3xl leading-snug tracking-tight text-[#fdf8f4] drop-shadow-sm">
-                  숨죽인 홀 안의 침묵,<br />그리고 가슴 깊이 남겨질 선율의 순간
+                  숨죽인 홀 안의 침묵<br />그리고 가슴 깊이 남겨질 선율의 순간
                 </h1>
                 <p className="text-sm sm:text-[15px] text-[#ebdcc5]/95 font-medium leading-relaxed drop-shadow-xs">
-                  무대 위의 호흡과 객석의 여운이 하나가 되는 시간.<br />
-                  전국 클래식 전용홀에서 펼쳐지는 아름다운 연주의 순간들을 정갈하게 전합니다.
+                  무대 위의 호흡과 객석의 여운이 하나가 되는 시간<br />
+                  전국 클래식 전용홀에서 펼쳐지는 아름다운 연주의 순간들을 정갈하게 전합니다
                 </p>
               </div>
             </div>

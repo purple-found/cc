@@ -106,6 +106,24 @@ export function isPastConcert(dateString, timeString = '23:59') {
 }
 
 /**
+ * 공연이 오늘 날짜인지 확인하는 도우미
+ * 로컬 시스템 날짜(YYYY-MM-DD) 기준
+ */
+export function isTodayConcert(dateString) {
+  if (!dateString) return false;
+  try {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    const todayString = `${year}-${month}-${day}`;
+    return dateString === todayString;
+  } catch {
+    return false;
+  }
+}
+
+/**
  * 공연 상태 표시 텍스트 계산
  * 공연일이 이미 지난 경우 '지나간 공연'으로 자동 전환
  */
@@ -116,4 +134,5 @@ export function getDisplayStatus(concert) {
   }
   return concert.status || '예매중';
 }
+
 

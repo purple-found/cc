@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { X, Calendar, MapPin, User, Music, Tag, ExternalLink, MessageSquarePlus, ShieldAlert, CheckCircle2, Clock } from 'lucide-react';
-import { formatKoreanDate, getDisplayStatus, isPastConcert } from '../utils/parser.js';
+import { X, Calendar, MapPin, User, Music, Tag, ExternalLink, MessageSquarePlus, ShieldAlert, CheckCircle2, Clock, Sparkles } from 'lucide-react';
+import { formatKoreanDate, getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
 
 export default function ConcertDetailModal({ concert, onClose, onOpenReview, relatedPosts }) {
   // ESC 키 이벤트 바인딩 (Gate 2 준수)
@@ -17,6 +17,7 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
   if (!concert) return null;
 
   const isPast = isPastConcert(concert.date, concert.time);
+  const isToday = isTodayConcert(concert.date);
   const displayStatus = getDisplayStatus(concert);
 
   return (
@@ -47,6 +48,12 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
               <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-concert-500 text-white">
                 {concert.performerType}
               </span>
+              {isToday && !isPast && (
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-amber-500 text-white shadow-xs animate-pulse">
+                  <Sparkles className="w-3.5 h-3.5 text-white" />
+                  <span>오늘 공연</span>
+                </span>
+              )}
               {displayStatus && (
                 <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold ${
                   displayStatus === '지나간 공연'

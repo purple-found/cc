@@ -1,10 +1,11 @@
 import React from 'react';
-import { Calendar, MapPin, User, Music2, ExternalLink, MessageSquarePlus, Info, CheckCircle2, ShieldAlert, Sparkles, Clock } from 'lucide-react';
-import { formatKoreanDate, getDisplayStatus, isPastConcert } from '../utils/parser.js';
+import { Calendar, MapPin, User, Music2, ExternalLink, MessageSquarePlus, Info, CheckCircle2, ShieldAlert, Sparkles, Clock, Flame } from 'lucide-react';
+import { formatKoreanDate, getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
 
 export default function ConcertCard({ concert, onSelect, onOpenReview }) {
   const isBlocked = concert.crawlerBlocked;
   const isPast = isPastConcert(concert.date, concert.time);
+  const isToday = isTodayConcert(concert.date);
   const displayStatus = getDisplayStatus(concert);
 
   // 날짜 파싱 (예: 2026-10-05 -> 10월 5일)
@@ -30,6 +31,14 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
 
           {/* Status Badges */}
           <div className="flex items-center gap-1.5 flex-nowrap shrink-0">
+            {/* 오늘의 당일 공연 특별 뱃지 (아직 지나가지 않은 경우) */}
+            {isToday && !isPast && (
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-black bg-amber-500 text-white shadow-xs animate-pulse shrink-0">
+                <Sparkles className="w-3 h-3 text-white" />
+                <span>오늘 공연</span>
+              </span>
+            )}
+
             {displayStatus && (
               <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-[10px] font-bold shrink-0 ${
                 displayStatus === '지나간 공연'
