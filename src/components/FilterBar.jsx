@@ -224,7 +224,7 @@ export default function FilterBar({
           <Filter className="w-3.5 h-3.5 text-concert-500" />
           <span>
             총 <strong className="text-stone-900 dark:text-stone-100 font-bold">{totalCount}</strong>편의 클래식 공연 중{' '}
-            <strong className="text-concert-600 dark:text-concert-400 font-bold">{filteredCount}</strong>편이 검색되었습니다. (Bilingual Search Active)
+            <strong className="text-concert-600 dark:text-concert-400 font-bold">{filteredCount}</strong>편이 검색되었습니다.
           </span>
         </div>
       </div>

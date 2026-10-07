@@ -26,7 +26,8 @@ export default function AdminCenter({
   onApproveTip,
   onDeleteTip,
   onSyncAllHalls,
-  isSyncing
+  isSyncing,
+  onLogout
 }) {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -119,17 +120,26 @@ export default function AdminCenter({
               </span>
               <h2 className="font-serif font-bold text-xl text-stone-900 dark:text-stone-50 flex items-center gap-2">
                 <span>공연장 관리 센터</span>
-                <span className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-concert-100 text-concert-800 dark:bg-hall-800 dark:text-concert-300">
+                <span className="px-2 py-0.5 text-[10px] font-semibold tracking-tight rounded border border-stone-200 dark:border-hall-700 bg-stone-100 dark:bg-hall-800 text-stone-600 dark:text-stone-300">
                   관리자 전용 권한
                 </span>
               </h2>
             </div>
             <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 font-medium">
-              연주장 홈페이지의 보안 정책(크롤링 차단)으로 누락된 일정을 직접 관리하거나, 관람객이 제보한 공연을 검토하여 정식 등록합니다.
+              누락된 일정을 직접 관리하거나, 관람객이 제보한 공연을 검토하여 정식 등록합니다.
             </p>
           </div>
 
           <div className="flex items-center gap-2.5">
+            {onLogout && (
+              <button
+                onClick={onLogout}
+                className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl border border-stone-200 dark:border-hall-700 bg-white dark:bg-hall-800 hover:bg-stone-50 dark:hover:bg-hall-700 text-stone-600 dark:text-stone-300 text-xs font-semibold transition-all shrink-0"
+                title="관리자 세션 종료"
+              >
+                <span>관리자 모드 나가기</span>
+              </button>
+            )}
             <button
               onClick={onSyncAllHalls}
               disabled={isSyncing}
@@ -195,7 +205,7 @@ export default function AdminCenter({
 
         {tips.length === 0 ? (
           <div className="p-8 text-center bg-stone-50 dark:bg-hall-850 rounded-2xl border border-stone-200/60 dark:border-hall-800 text-xs text-stone-500 dark:text-stone-400">
-            현재 대기 중인 관람객 제보가 없습니다. 일반 사용자가 상단 [공연 제보하기]를 통해 보낸 공연이 여기에 표시됩니다.
+            현재 대기 중인 관람객 제보가 없습니다. 유저가 상단 [공연 제보하기]를 통해 제보한 공연이 여기에 표시됩니다.
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

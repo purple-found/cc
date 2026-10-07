@@ -1,64 +1,75 @@
 import React from 'react';
-import { Calendar, MapPin, User, Music2, ExternalLink, MessageSquarePlus, Info, CheckCircle2, ShieldAlert } from 'lucide-react';
-import { formatKoreanDate } from '../utils/parser';
+import { Calendar, MapPin, User, Music2, ExternalLink, MessageSquarePlus, Info, CheckCircle2, ShieldAlert, Sparkles } from 'lucide-react';
+import { formatKoreanDate } from '../utils/parser.js';
 
 export default function ConcertCard({ concert, onSelect, onOpenReview }) {
   const isBlocked = concert.crawlerBlocked;
 
+  // 날짜 파싱 (예: 2026-10-05 -> 10월 5일)
+  const dateParts = concert.date ? concert.date.split('-') : ['2026', '10', '01'];
+  const monthDay = `${Number(dateParts[1])}.${Number(dateParts[2])}`;
+
   return (
-    <article className="group bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/80 dark:border-hall-800 shadow-sm hover:shadow-md hover:border-concert-400/50 dark:hover:border-concert-500/50 transition-all duration-200 overflow-hidden flex flex-col justify-between">
-      {/* Top Banner Image & Status Badges */}
-      <div className="relative h-44 w-full overflow-hidden bg-stone-100 dark:bg-hall-850">
-        <img
-          src={concert.imageUrl}
-          alt={concert.title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+    <article className="group bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 shadow-sm hover:shadow-md hover:border-concert-400 dark:hover:border-concert-500 transition-all duration-200 flex flex-col justify-between p-5 space-y-4">
+      {/* Top Header: Date Block & Status Badges (No AI Image, Clean Typography) */}
+      <div className="space-y-3 pb-3 border-b border-stone-100 dark:border-hall-800">
+        <div className="flex items-center justify-between gap-2 flex-wrap">
+          {/* Elegant Date Badge */}
+          <div className="flex items-center gap-2">
+            <span className="font-serif font-black text-xl text-concert-700 dark:text-concert-300 tracking-tight">
+              {monthDay}
+            </span>
+            <span className="text-[11px] font-semibold text-stone-500 dark:text-stone-400">
+              {concert.time}
+            </span>
+          </div>
 
-        {/* Source Badge (Gate 1 자연어) */}
-        <div className="absolute top-3 left-3 flex items-center gap-1.5 flex-nowrap shrink-0">
-          {isBlocked ? (
-            <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-900/90 text-amber-200 border border-amber-500/30 backdrop-blur-sm shrink-0">
-              <ShieldAlert className="w-3 h-3 text-amber-300" />
-              <span>수동 등록 공연</span>
-            </span>
-          ) : (
-            <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-stone-900/80 text-emerald-300 border border-emerald-500/30 backdrop-blur-sm shrink-0">
-              <CheckCircle2 className="w-3 h-3 text-emerald-400" />
-              <span>공식 전산 연동</span>
-            </span>
-          )}
+          {/* Status Badges */}
+          <div className="flex items-center gap-1.5 flex-nowrap shrink-0">
+            {isBlocked ? (
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200/60 dark:border-amber-900/60 shrink-0">
+                <ShieldAlert className="w-3 h-3 text-amber-600 dark:text-amber-400" />
+                <span>수동 등록</span>
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-900/60 shrink-0">
+                <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
+                <span>공식 연동</span>
+              </span>
+            )}
 
-          {concert.status && (
-            <span className={`px-2.5 py-1 rounded-full text-[11px] font-bold backdrop-blur-sm shrink-0 ${
-              concert.status === '매진'
-                ? 'bg-rose-900/80 text-rose-200 border border-rose-500/30'
-                : concert.status === '매진임박'
-                ? 'bg-orange-900/80 text-orange-200 border border-orange-500/30'
-                : 'bg-teal-900/80 text-teal-200 border border-teal-500/30'
-            }`}>
-              {concert.status}
-            </span>
-          )}
+            {concert.status && (
+              <span className={`px-2 py-0.5 rounded text-[10px] font-bold shrink-0 ${
+                concert.status === '매진'
+                  ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-200/60 dark:border-rose-900/60'
+                  : concert.status === '매진임박'
+                  ? 'bg-orange-100 dark:bg-orange-950/60 text-orange-800 dark:text-orange-300 border border-orange-200/60 dark:border-orange-900/60'
+                  : 'bg-teal-50 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 border border-teal-200/60 dark:border-teal-900/60'
+              }`}>
+                {concert.status}
+              </span>
+            )}
+          </div>
         </div>
 
-        {/* Composer Tags (Over image bottom) */}
-        <div className="absolute bottom-3 left-3 right-3 flex items-center gap-1.5 overflow-hidden">
+        {/* Composers & Genre Tag List */}
+        <div className="flex items-center gap-1.5 flex-wrap overflow-hidden pt-0.5">
+          <span className="px-2.5 py-0.5 rounded text-[11px] font-bold bg-concert-50 dark:bg-hall-800 text-concert-800 dark:text-concert-300 shrink-0">
+            {concert.performerType}
+          </span>
           {concert.composers.map((comp) => (
             <span
               key={comp}
-              className="px-2.5 py-0.5 rounded-md text-xs font-semibold bg-white/90 text-stone-900 dark:bg-hall-950/90 dark:text-concert-300 backdrop-blur-md shrink-0 shadow-sm"
+              className="px-2.5 py-0.5 rounded text-[11px] font-medium bg-stone-100 dark:bg-hall-850 text-stone-700 dark:text-stone-300 shrink-0"
             >
-              #{comp}
+              #{comp.split(' ')[0]}
             </span>
           ))}
         </div>
       </div>
 
-      {/* Main Content Info (Ensure 12px+ safety padding, Gate 4) */}
-      <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
+      {/* Main Content Body */}
+      <div className="space-y-3 flex-1 flex flex-col justify-between">
         <div>
           {/* Title */}
           <h3 
@@ -68,15 +79,8 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
             {concert.title}
           </h3>
 
-          {/* Date, Time, Venue */}
+          {/* Details: Venue & Performers */}
           <div className="mt-3 space-y-1.5 text-xs text-stone-600 dark:text-stone-300 font-medium">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-3.5 h-3.5 text-concert-500 shrink-0" />
-              <span className="font-semibold text-stone-900 dark:text-stone-100">
-                {formatKoreanDate(concert.date)} · {concert.time}
-              </span>
-            </div>
-
             <div className="flex items-center gap-2">
               <MapPin className="w-3.5 h-3.5 text-concert-500 shrink-0" />
               <span className="truncate">{concert.venue}</span>

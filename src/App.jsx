@@ -7,6 +7,7 @@ import ConcertDetailModal from './components/ConcertDetailModal';
 import TipConcertModal from './components/TipConcertModal';
 import CommunityBoard from './components/CommunityBoard';
 import AdminCenter from './components/AdminCenter';
+import AdminAuthModal from './components/AdminAuthModal';
 import Toast from './components/Toast';
 import ErrorFallback from './components/ErrorFallback';
 import Footer from './components/Footer';
@@ -40,6 +41,8 @@ export default function App() {
   const [selectedConcert, setSelectedConcert] = useState(null);
   const [reviewTargetConcert, setReviewTargetConcert] = useState(null);
   const [isTipModalOpen, setIsTipModalOpen] = useState(false);
+  const [isAdminAuthModalOpen, setIsAdminAuthModalOpen] = useState(false);
+  const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false);
 
   // Async Simulator State
   const [isSyncing, setIsSyncing] = useState(false);
@@ -330,17 +333,50 @@ export default function App() {
 
         {/* Tab 3: Admin & Crawler Monitor */}
         {activeTab === 'admin' && (
-          <AdminCenter
-            halls={halls}
-            concerts={concerts}
-            tips={tips}
-            onAddConcert={handleAddConcert}
-            onDeleteConcert={handleDeleteConcert}
-            onApproveTip={handleApproveTip}
-            onDeleteTip={handleDeleteTip}
-            onSyncAllHalls={handleSyncAllHalls}
-            isSyncing={isSyncing}
-          />
+          isAdminAuthenticated ? (
+            <AdminCenter
+              halls={halls}
+              concerts={concerts}
+              tips={tips}
+              onAddConcert={handleAddConcert}
+              onDeleteConcert={handleDeleteConcert}
+              onApproveTip={handleApproveTip}
+              onDeleteTip={handleDeleteTip}
+              onSyncAllHalls={handleSyncAllHalls}
+              isSyncing={isSyncing}
+              onLogout={() => {
+                setIsAdminAuthenticated(false);
+                setActiveTab('concerts');
+                showToast('관리자 모드를 종료했습니다.', 'info');
+              }}
+            />
+          ) : (
+            <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-12 text-center max-w-lg mx-auto space-y-4">
+              <div className="w-12 h-12 rounded-full bg-concert-50 dark:bg-hall-800 text-concert-600 dark:text-concert-400 flex items-center justify-center mx-auto">
+                <AlertCircle className="w-6 h-6" />
+              </div>
+              <h3 className="font-serif font-bold text-lg text-stone-900 dark:text-stone-100">
+                관리자 인증이 필요합니다
+              </h3>
+              <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed">
+                해당 페이지는 관리자 전용 공간입니다. 하단 비밀번호 인증 후 진입하실 수 있습니다.
+              </p>
+              <div className="flex justify-center gap-3 pt-2">
+                <button
+                  onClick={() => setActiveTab('concerts')}
+                  className="px-4 py-2 rounded-xl text-xs font-semibold bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-300 transition-colors"
+                >
+                  메인으로 이동
+                </button>
+                <button
+                  onClick={() => setIsAdminAuthModalOpen(true)}
+                  className="px-4 py-2 rounded-xl text-xs font-bold bg-concert-500 hover:bg-concert-600 text-white transition-colors shadow-sm"
+                >
+                  비밀번호 입력하기
+                </button>
+              </div>
+            </div>
+          )
         )}
       </main>
 
@@ -349,6 +385,17 @@ export default function App() {
         isOpen={isTipModalOpen}
         onClose={() => setIsTipModalOpen(false)}
         onSubmitTip={handleSubmitTip}
+      />
+
+      {/* Admin Authentication Modal */}
+      <AdminAuthModal
+        isOpen={isAdminAuthModalOpen}
+        onClose={() => setIsAdminAuthModalOpen(false)}
+        onAuthenticate={() => {
+          setIsAdminAuthenticated(true);
+          setActiveTab('admin');
+          showToast('관리자 권한이 정상 인증되었습니다.');
+        }}
       />
 
       {/* Detail Modal */}
@@ -366,8 +413,15 @@ export default function App() {
       {/* Toast Notification */}
       <Toast toast={toast} onClose={() => setToast(null)} />
 
-      {/* Global Footer */}
-      <Footer />
+      {/* Global Footer with hidden admin trigger */}
+      <Footer onOpenAdminAuth={() => {
+        if (isAdminAuthenticated) {
+          setActiveTab('admin');
+          showToast('관리 센터로 이동했습니다.');
+        } else {
+          setIsAdminAuthModalOpen(true);
+        }
+      }} />
     </div>
   );
 }

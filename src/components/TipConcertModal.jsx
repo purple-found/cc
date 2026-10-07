@@ -72,7 +72,7 @@ export default function TipConcertModal({ isOpen, onClose, onSubmitTip }) {
               <span>공연 일정 제보하기</span>
             </h2>
             <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">
-              누락되었거나 홈페이지 보안으로 수집되지 못한 공연을 제보해주시면, 관리자 확인 후 공식 일정으로 등록됩니다.
+              누락된 공연을 제보해주시면, 관리자 확인 후 공식 일정으로 등록됩니다.
             </p>
           </div>
           <button
@@ -174,7 +174,7 @@ export default function TipConcertModal({ isOpen, onClose, onSubmitTip }) {
               rows={3}
               value={formData.note}
               onChange={(e) => setFormData({ ...formData, note: e.target.value })}
-              placeholder="공연장 홈페이지에서 방화벽으로 차단되었거나, 특별히 전하고 싶은 정보가 있다면 남겨주세요."
+              placeholder="특별히 전하고 싶은 정보가 있다면 남겨주세요."
               className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
             />
           </div>

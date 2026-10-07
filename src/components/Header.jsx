@@ -56,18 +56,6 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
               <MessageSquare className="w-4 h-4 text-concert-500" />
               <span>관람 후기 & 기대평</span>
             </button>
-
-            <button
-              onClick={() => setActiveTab('admin')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all shrink-0 ${
-                activeTab === 'admin'
-                  ? 'bg-white dark:bg-hall-700 text-stone-900 dark:text-stone-50 shadow-sm'
-                  : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
-              }`}
-            >
-              <ShieldCheck className="w-4 h-4 text-concert-500" />
-              <span>공연장 관리 센터</span>
-            </button>
           </nav>
 
           {/* Right Action buttons */}
@@ -121,17 +109,6 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
           >
             <MessageSquare className="w-3.5 h-3.5" />
             <span>후기·기대평</span>
-          </button>
-          <button
-            onClick={() => setActiveTab('admin')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold shrink-0 ${
-              activeTab === 'admin'
-                ? 'bg-concert-500 text-white'
-                : 'text-stone-600 dark:text-stone-300'
-            }`}
-          >
-            <ShieldCheck className="w-3.5 h-3.5" />
-            <span>관리 센터</span>
           </button>
         </div>
       </div>

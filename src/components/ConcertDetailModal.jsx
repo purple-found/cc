@@ -27,34 +27,27 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
         className="bg-white dark:bg-hall-900 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-stone-200 dark:border-hall-750 shadow-2xl transition-all"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Modal Header with Image */}
-        <div className="relative h-56 sm:h-64 w-full bg-stone-900 overflow-hidden rounded-t-3xl">
-          <img
-            src={concert.imageUrl}
-            alt={concert.title}
-            className="w-full h-full object-cover opacity-80"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/40 to-transparent" />
-
+        {/* Modal Header: Clean Classical Typography (No AI image) */}
+        <div className="relative p-6 sm:p-8 bg-stone-900 text-white rounded-t-3xl border-b border-stone-800">
           {/* Close button (Esc / Click) */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 p-2.5 rounded-full bg-black/40 hover:bg-black/60 text-white backdrop-blur-md transition-colors"
+            className="absolute top-5 right-5 p-2 rounded-full bg-stone-800/80 hover:bg-stone-700 text-stone-300 transition-colors"
             aria-label="모달 닫기"
           >
             <X className="w-5 h-5" />
           </button>
 
           {/* Title & Badges */}
-          <div className="absolute bottom-4 left-5 right-5 space-y-2">
+          <div className="space-y-3 pr-10">
             <div className="flex items-center gap-2 flex-wrap">
               {concert.crawlerBlocked ? (
-                <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-900/90 text-amber-200 border border-amber-500/30">
+                <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-950/80 text-amber-300 border border-amber-500/30">
                   <ShieldAlert className="w-3.5 h-3.5" />
                   <span>수동 등록 공연</span>
                 </span>
               ) : (
-                <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-950/90 text-emerald-300 border border-emerald-500/30">
+                <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-950/80 text-emerald-300 border border-emerald-500/30">
                   <CheckCircle2 className="w-3.5 h-3.5" />
                   <span>공식 전산 연동</span>
                 </span>
@@ -64,7 +57,7 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
               </span>
             </div>
 
-            <h2 className="font-serif font-black text-xl sm:text-2xl text-white leading-snug">
+            <h2 className="font-serif font-bold text-xl sm:text-2xl text-white leading-snug">
               {concert.title}
             </h2>
           </div>
