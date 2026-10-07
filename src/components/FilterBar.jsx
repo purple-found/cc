@@ -108,26 +108,28 @@ export default function FilterBar({
           <div className="flex items-center bg-stone-100 dark:bg-hall-850 p-1 rounded-xl border border-stone-200 dark:border-hall-700 shrink-0">
             <button
               onClick={() => setViewMode('cards')}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all shrink-0 ${
+              className={`p-2 rounded-lg text-xs font-semibold transition-all shrink-0 ${
                 viewMode === 'cards'
                   ? 'bg-white dark:bg-hall-700 text-stone-900 dark:text-stone-50 shadow-sm'
                   : 'text-stone-500 dark:text-stone-400 hover:text-stone-800'
               }`}
+              title="목록 보기"
+              aria-label="목록 보기"
             >
-              <LayoutGrid className="w-3.5 h-3.5 text-concert-500" />
-              <span className="shrink-0">목록 보기</span>
+              <LayoutGrid className="w-4 h-4 text-concert-500" />
             </button>
 
             <button
               onClick={() => setViewMode('calendar')}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all shrink-0 ${
+              className={`p-2 rounded-lg text-xs font-semibold transition-all shrink-0 ${
                 viewMode === 'calendar'
                   ? 'bg-white dark:bg-hall-700 text-stone-900 dark:text-stone-50 shadow-sm'
                   : 'text-stone-500 dark:text-stone-400 hover:text-stone-800'
               }`}
+              title="달력 보기"
+              aria-label="달력 보기"
             >
-              <CalendarDays className="w-3.5 h-3.5 text-concert-500" />
-              <span className="shrink-0">달력 보기</span>
+              <CalendarDays className="w-4 h-4 text-concert-500" />
             </button>
           </div>
         </div>

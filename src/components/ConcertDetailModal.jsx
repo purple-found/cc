@@ -53,10 +53,10 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
                     ? 'bg-stone-200 text-stone-900 border border-stone-300'
                     : displayStatus === '예매중'
                     ? 'bg-emerald-950/70 text-emerald-300 border border-emerald-500/40'
-                    : 'bg-stone-800 text-concert-300 border border-concert-500/30'
+                    : 'bg-rose-950/70 text-rose-300 border border-rose-500/40'
                 }`}>
                   {displayStatus === '지나간 공연' ? (
-                    <Clock className="w-3.5 h-3.5 text-stone-600 shrink-0" />
+                    <Clock className="w-3.5 h-3.5 text-stone-700 shrink-0" />
                   ) : displayStatus === '예매중' ? (
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                   ) : null}

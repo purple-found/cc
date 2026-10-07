@@ -31,9 +31,9 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
           {/* Status Badges */}
           <div className="flex items-center gap-1.5 flex-nowrap shrink-0">
             {displayStatus && (
-              <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[10px] font-bold shrink-0 ${
+              <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-[10px] font-bold shrink-0 ${
                 displayStatus === '지나간 공연'
-                  ? 'bg-stone-100 dark:bg-stone-200 text-stone-900 border border-stone-300'
+                  ? 'bg-stone-200/90 dark:bg-stone-300 text-stone-900 border border-stone-300 dark:border-stone-400'
                   : displayStatus === '매진'
                   ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-200/60 dark:border-rose-900/60'
                   : displayStatus === '매진임박'
@@ -41,7 +41,7 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
                   : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border border-emerald-200/70 dark:border-emerald-800/60'
               }`}>
                 {displayStatus === '지나간 공연' ? (
-                  <Clock className="w-3 h-3 text-stone-500 shrink-0" />
+                  <Clock className="w-3 h-3 text-stone-700 shrink-0" />
                 ) : displayStatus === '예매중' ? (
                   <CheckCircle2 className="w-3 h-3 text-emerald-500 shrink-0" />
                 ) : null}
