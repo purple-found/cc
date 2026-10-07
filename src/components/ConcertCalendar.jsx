@@ -56,7 +56,7 @@ export default function ConcertCalendar({ concerts, onSelectConcert }) {
           </div>
           <div>
             <h2 className="font-serif font-black text-xl text-stone-900 dark:text-stone-50">
-              {currentYear}년 {currentMonth}월 클래식 캘린더
+              {currentYear}년 {currentMonth}월 캘린더
             </h2>
             <p className="text-xs text-stone-500 dark:text-stone-400 font-medium">
               이 달에 예정된 클래식 공연 {concertsThisMonth.length}건
@@ -148,7 +148,7 @@ export default function ConcertCalendar({ concerts, onSelectConcert }) {
                     <div
                       key={c.id}
                       className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-white dark:bg-hall-800 text-stone-800 dark:text-stone-200 truncate border border-stone-200 dark:border-hall-700 shadow-xs"
-                      title={c.title}
+                      title={`${c.title} (${c.venue || '공연장'})`}
                     >
                       {c.title}
                     </div>

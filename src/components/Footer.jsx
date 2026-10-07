@@ -1,5 +1,6 @@
 import React from 'react';
-import { Music, Shield, Heart } from 'lucide-react';
+import { Shield, Heart } from 'lucide-react';
+import OrchestraConductorIcon from './OrchestraConductorIcon';
 
 export default function Footer({ onOpenAdminAuth }) {
   return (
@@ -11,7 +12,7 @@ export default function Footer({ onOpenAdminAuth }) {
             {/* Top row: Brand */}
             <div className="flex items-center gap-2.5">
               <div className="w-9 h-9 rounded-lg bg-concert-500 text-white flex items-center justify-center shadow-md shadow-concert-500/20 shrink-0">
-                <Music className="w-4.5 h-4.5" />
+                <OrchestraConductorIcon className="w-5 h-5" />
               </div>
               <div>
                 <div className="flex items-center gap-2">

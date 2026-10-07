@@ -1,5 +1,6 @@
 import React from 'react';
-import { Music, Calendar, MessageSquare, ShieldCheck, Sun, Moon, Sparkles } from 'lucide-react';
+import { Calendar, MessageSquare, ShieldCheck, Sun, Moon, Sparkles } from 'lucide-react';
+import OrchestraConductorIcon from './OrchestraConductorIcon';
 
 export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpenTipModal }) {
   const toggleTheme = () => {
@@ -17,7 +18,7 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
             className="flex items-center gap-3 cursor-pointer group shrink-0"
           >
             <div className="w-11 h-11 rounded-xl bg-concert-500 text-white flex items-center justify-center shadow-md shadow-concert-500/20 group-hover:scale-105 transition-transform">
-              <Music className="w-6 h-6" />
+              <OrchestraConductorIcon className="w-6 h-6" />
             </div>
             <div>
               <div className="flex items-center gap-2">
