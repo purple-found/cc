@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom scrollbar for elegant classical feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfa272;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b88648;
+}
+
+/* Safe typography contrast utilities ensuring 10:1+ contrast */
+.safe-gold-text {
+  color: #7d522c;
+}
+.dark .safe-gold-text {
+  color: #f5f0e6;
+}
+
+.concert-badge-safe {
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -1,0 +1,143 @@
+import React from 'react';
+import { Music, Calendar, MessageSquare, ShieldCheck, Sun, Moon, Sparkles } from 'lucide-react';
+
+export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpenAddModal }) {
+  const toggleTheme = () => {
+    const nextTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(nextTheme);
+  };
+
+  return (
+    <header className="sticky top-0 z-40 backdrop-blur-md bg-stone-50/90 dark:bg-hall-900/90 border-b border-stone-200 dark:border-hall-800 transition-colors duration-200 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo & Brand */}
+          <div 
+            onClick={() => setActiveTab('concerts')}
+            className="flex items-center gap-3 cursor-pointer group shrink-0"
+          >
+            <div className="w-11 h-11 rounded-xl bg-concert-500 text-white flex items-center justify-center shadow-md shadow-concert-500/20 group-hover:scale-105 transition-transform">
+              <Music className="w-6 h-6" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="font-serif font-black text-xl tracking-tight text-stone-900 dark:text-stone-100">
+                  OPUS KOREA
+                </span>
+                <span className="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-concert-100 dark:bg-hall-800 text-concert-700 dark:text-concert-300">
+                  클래식 아카이브
+                </span>
+              </div>
+              <p className="text-xs text-stone-500 dark:text-stone-400 font-medium">
+                대한민국 클래식 공연 일정 & 관람 커뮤니티
+              </p>
+            </div>
+          </div>
+
+          {/* Navigation Tabs */}
+          <nav className="hidden md:flex items-center gap-1.5 bg-stone-100/80 dark:bg-hall-850 p-1.5 rounded-xl border border-stone-200/80 dark:border-hall-700">
+            <button
+              onClick={() => setActiveTab('concerts')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all shrink-0 ${
+                activeTab === 'concerts'
+                  ? 'bg-white dark:bg-hall-700 text-stone-900 dark:text-stone-50 shadow-sm'
+                  : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
+              }`}
+            >
+              <Calendar className="w-4 h-4 text-concert-500" />
+              <span>공연 일정 탐색</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('community')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all shrink-0 ${
+                activeTab === 'community'
+                  ? 'bg-white dark:bg-hall-700 text-stone-900 dark:text-stone-50 shadow-sm'
+                  : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
+              }`}
+            >
+              <MessageSquare className="w-4 h-4 text-concert-500" />
+              <span>관람 후기 & 기대평</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('admin')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all shrink-0 ${
+                activeTab === 'admin'
+                  ? 'bg-white dark:bg-hall-700 text-stone-900 dark:text-stone-50 shadow-sm'
+                  : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
+              }`}
+            >
+              <ShieldCheck className="w-4 h-4 text-concert-500" />
+              <span>공연장 수집 관리</span>
+            </button>
+          </nav>
+
+          {/* Right Action buttons */}
+          <div className="flex items-center gap-2.5">
+            {/* Quick manual concert registration */}
+            <button
+              onClick={onOpenAddModal}
+              className="hidden lg:flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-lg bg-concert-50 dark:bg-hall-800 border border-concert-300/80 dark:border-hall-700 text-concert-800 dark:text-concert-300 hover:bg-concert-100 dark:hover:bg-hall-700 transition-colors shrink-0"
+              title="홈페이지 크롤링 차단 공연장 일정 직접 등록"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-concert-600 dark:text-concert-400" />
+              <span>공연 수동 등록</span>
+            </button>
+
+            {/* Dark / Light Mode Switcher */}
+            <button
+              onClick={toggleTheme}
+              className="p-2.5 rounded-xl border border-stone-200 dark:border-hall-700 bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-hall-700 transition-colors shrink-0"
+              aria-label="화면 모드 전환"
+              title={theme === 'light' ? '야간(다크) 모드로 전환' : '주간(라이트) 모드로 전환'}
+            >
+              {theme === 'light' ? (
+                <Moon className="w-5 h-5 text-stone-700" />
+              ) : (
+                <Sun className="w-5 h-5 text-amber-400" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation bar */}
+        <div className="flex md:hidden items-center justify-around py-2.5 border-t border-stone-200 dark:border-hall-800 gap-1 overflow-x-auto">
+          <button
+            onClick={() => setActiveTab('concerts')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold shrink-0 ${
+              activeTab === 'concerts'
+                ? 'bg-concert-500 text-white'
+                : 'text-stone-600 dark:text-stone-300'
+            }`}
+          >
+            <Calendar className="w-3.5 h-3.5" />
+            <span>일정 탐색</span>
+          </button>
+          <button
+            onClick={() => setActiveTab('community')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold shrink-0 ${
+              activeTab === 'community'
+                ? 'bg-concert-500 text-white'
+                : 'text-stone-600 dark:text-stone-300'
+            }`}
+          >
+            <MessageSquare className="w-3.5 h-3.5" />
+            <span>후기·기대평</span>
+          </button>
+          <button
+            onClick={() => setActiveTab('admin')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold shrink-0 ${
+              activeTab === 'admin'
+                ? 'bg-concert-500 text-white'
+                : 'text-stone-600 dark:text-stone-300'
+            }`}
+          >
+            <ShieldCheck className="w-3.5 h-3.5" />
+            <span>수집 관리</span>
+          </button>
+        </div>
+      </div>
+    </header>
+  );
+}
