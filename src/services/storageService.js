@@ -1,27 +1,27 @@
 import { safeParseJSON } from '../utils/parser.js';
-import { initialConcerts } from '../data/initialConcerts.js';
+import { verifiedRealConcerts2026 } from '../data/verifiedRealConcerts2026.js';
 import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 
-const CONCERTS_KEY = 'opus_korea_concerts_v4';
+const CONCERTS_KEY = 'opus_korea_verified_real_concerts_v5';
 const HALLS_KEY = 'opus_korea_halls_v3';
 const POSTS_KEY = 'opus_korea_posts_v3';
 const THEME_KEY = 'opus_korea_theme_v3';
 
 export const storageService = {
-  // 공연 목록 조회
+  // 공연 목록 조회 (100% 실존 공식 공연 연동)
   getConcerts() {
     try {
       const raw = localStorage.getItem(CONCERTS_KEY);
       if (!raw) {
-        localStorage.setItem(CONCERTS_KEY, JSON.stringify(initialConcerts));
-        return initialConcerts;
+        localStorage.setItem(CONCERTS_KEY, JSON.stringify(verifiedRealConcerts2026));
+        return verifiedRealConcerts2026;
       }
-      const parsed = safeParseJSON(raw, initialConcerts);
+      const parsed = safeParseJSON(raw, verifiedRealConcerts2026);
       if (Array.isArray(parsed) && parsed.length > 0) {
-        // 기존 브라우저 캐시에 신규 11월/12월 공식 공연이 누락되어 있을 경우 자동 병합
+        // 실존 공식 공연 ID 목록 병합
         const existingIds = new Set(parsed.map(c => c.id));
-        const missingOfficial = initialConcerts.filter(c => !existingIds.has(c.id));
+        const missingOfficial = verifiedRealConcerts2026.filter(c => !existingIds.has(c.id));
         if (missingOfficial.length > 0) {
           const merged = [...parsed, ...missingOfficial];
           localStorage.setItem(CONCERTS_KEY, JSON.stringify(merged));
@@ -29,10 +29,10 @@ export const storageService = {
         }
         return parsed;
       }
-      return initialConcerts;
+      return verifiedRealConcerts2026;
     } catch (e) {
-      console.warn('[저장소 안전 복구] 공연 목록 기본값 복원', e);
-      return initialConcerts;
+      console.warn('[저장소 안전 복구] 실존 공연 목록 기본값 복원', e);
+      return verifiedRealConcerts2026;
     }
   },
 

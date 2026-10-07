@@ -165,11 +165,20 @@ export default function AdminCenter({
         </div>
 
         {/* Status Highlights */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3 border-t border-stone-100 dark:border-hall-800 text-xs">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-3 border-t border-stone-100 dark:border-hall-800 text-xs">
           <div className="p-3.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-100 dark:border-hall-800">
-            <span className="text-stone-400 block text-[11px]">총 모니터링 공연장</span>
+            <span className="text-stone-400 block text-[11px]">총 모니터링 공연장 및 KOPIS 연동</span>
             <span className="text-base font-bold text-stone-900 dark:text-stone-100 mt-0.5 block">
-              {halls.length}개 기관
+              {halls.length}개 기관 (실존 공연)
+            </span>
+          </div>
+
+          <div className="p-3.5 rounded-xl bg-blue-50/70 dark:bg-blue-950/30 border border-blue-200/60 dark:border-blue-900/40">
+            <span className="text-blue-700 dark:text-blue-300 block text-[11px] font-semibold">
+              KOPIS 및 공식망 자동 모니터링
+            </span>
+            <span className="text-sm font-bold text-blue-900 dark:text-blue-200 mt-0.5 block">
+              매일 03:00 / 15:00 정기 점검
             </span>
           </div>
 
@@ -178,15 +187,15 @@ export default function AdminCenter({
               수집 차단 감지 (수동 관리 대상)
             </span>
             <span className="text-base font-bold text-amber-900 dark:text-amber-300 mt-0.5 block">
-              {blockedHallsCount}개 공연장
+              {halls.filter(h => h.blocked).length}개 기관 (국립극장 등)
             </span>
           </div>
 
-          <div className="p-3.5 rounded-xl bg-blue-50/60 dark:bg-blue-950/20 border border-blue-200/50 dark:border-blue-900/40">
-            <span className="text-blue-700 dark:text-blue-400 block text-[11px] font-semibold">
+          <div className="p-3.5 rounded-xl bg-purple-50/60 dark:bg-purple-950/20 border border-purple-200/50 dark:border-purple-900/40">
+            <span className="text-purple-700 dark:text-purple-400 block text-[11px] font-semibold">
               접수된 관람객 제보
             </span>
-            <span className="text-base font-bold text-blue-900 dark:text-blue-300 mt-0.5 block">
+            <span className="text-base font-bold text-purple-900 dark:text-purple-300 mt-0.5 block">
               {tips.length}건 대기 중
             </span>
           </div>

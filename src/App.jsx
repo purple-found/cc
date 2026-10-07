@@ -12,6 +12,7 @@ import Toast from './components/Toast';
 import ErrorFallback from './components/ErrorFallback';
 import Footer from './components/Footer';
 import { storageService } from './services/storageService';
+import { kopisMonitoringService } from './services/kopisMonitoringService.js';
 import { isPastConcert } from './utils/parser.js';
 import { Sparkles, Calendar, MessageSquare, AlertCircle } from 'lucide-react';
 
@@ -80,6 +81,14 @@ export default function App() {
 
   useEffect(() => {
     loadData();
+
+    // 매일 새벽 3시 / 오후 3시 (15:00) KOPIS 및 공식망 자동 모니터링 배치 타이머 등록
+    const timerId = kopisMonitoringService.initBackgroundTimer((res) => {
+      loadData();
+      showToast('KOPIS 및 공식망 자동 모니터링 검사 완료 (최신 공연 일정 반영)');
+    });
+
+    return () => clearInterval(timerId);
   }, []);
 
   // 토스트 도우미
