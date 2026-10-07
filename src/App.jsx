@@ -382,6 +382,7 @@ export default function App() {
               onDeleteTip={handleDeleteTip}
               onSyncAllHalls={handleSyncAllHalls}
               isSyncing={isSyncing}
+              onRefreshConcerts={(newList) => setConcerts(newList)}
               onLogout={() => {
                 setIsAdminAuthenticated(false);
                 setActiveTab('concerts');

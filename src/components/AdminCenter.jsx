@@ -16,10 +16,12 @@ import {
   UserCheck,
   Edit3,
   History,
-  ArrowRight
+  ArrowRight,
+  Globe
 } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser.js';
 import { kopisMonitoringService } from '../services/kopisMonitoringService.js';
+import { kopisCrawlerService } from '../services/kopisCrawlerService.js';
 
 export default function AdminCenter({
   halls,
@@ -32,11 +34,45 @@ export default function AdminCenter({
   onDeleteTip,
   onSyncAllHalls,
   isSyncing,
-  onLogout
+  onLogout,
+  onRefreshConcerts
 }) {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [editingConcert, setEditingConcert] = useState(null);
   const [monitoringLogs, setMonitoringLogs] = useState(() => kopisMonitoringService.getMonitoringHistory());
+  const [kopisKey, setKopisKey] = useState('');
+  const [crawlStartDate, setCrawlStartDate] = useState('2026-10-01');
+  const [crawlEndDate, setCrawlEndDate] = useState('2026-12-31');
+  const [isCrawling, setIsCrawling] = useState(false);
+  const [crawlFeedback, setCrawlFeedback] = useState(null);
+
+  const handleRunKopisCrawl = async () => {
+    setIsCrawling(true);
+    setCrawlFeedback(null);
+    try {
+      const res = await kopisCrawlerService.crawlKopisConcerts({
+        serviceKey: kopisKey,
+        startDate: crawlStartDate,
+        endDate: crawlEndDate
+      });
+      if (onRefreshConcerts && res.concerts) {
+        onRefreshConcerts(res.concerts);
+      }
+      setMonitoringLogs(kopisMonitoringService.getMonitoringHistory());
+      setCrawlFeedback(res.message);
+    } catch (e) {
+      setCrawlFeedback('크롤링 중 오류가 발생했습니다: ' + (e.message || '통신 오류'));
+    } finally {
+      setIsCrawling(false);
+    }
+  };
+
+  const handleClearMonitoringLogs = () => {
+    if (confirm('자동 모니터링 변동 이력을 모두 삭제하시겠습니까?')) {
+      const empty = kopisMonitoringService.clearMonitoringHistory();
+      setMonitoringLogs(empty);
+    }
+  };
   const [formData, setFormData] = useState({
     title: '',
     date: '',
@@ -342,6 +378,78 @@ export default function AdminCenter({
         )}
       </div>
 
+      {/* KOPIS OpenAPI 실시간 크롤링 및 수집 패널 (부정확한 정보 교정) */}
+      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100 flex items-center gap-2">
+              <Globe className="w-5 h-5 text-concert-500" />
+              <span>KOPIS 전산망 OpenAPI 실시간 크롤링 및 수집</span>
+            </h3>
+            <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 font-medium">
+              공연예술통합전산망(KOPIS) 서양음악(CCCA) 클래식 공연 데이터를 실시간 수집 및 대조하여 부정확한 정보를 정밀 교정합니다.
+            </p>
+          </div>
+
+          <button
+            onClick={handleRunKopisCrawl}
+            disabled={isCrawling}
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 disabled:opacity-50 text-white text-xs font-bold transition-all shadow-md shrink-0"
+          >
+            <RefreshCw className={`w-3.5 h-3.5 ${isCrawling ? 'animate-spin' : ''}`} />
+            <span>{isCrawling ? 'KOPIS 수집 진행 중...' : 'KOPIS 실시간 크롤링 실행'}</span>
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2 text-xs">
+          <div className="space-y-1">
+            <label className="text-[11px] font-bold text-stone-500 dark:text-stone-400">KOPIS 서비스 인증키 (선택 사항)</label>
+            <input
+              type="text"
+              placeholder="인증키 입력 시 실시간 전산망 직접 조회"
+              value={kopisKey}
+              onChange={(e) => setKopisKey(e.target.value)}
+              className="w-full px-3 py-2 rounded-xl border border-stone-200 dark:border-hall-700 bg-stone-50 dark:bg-hall-800 text-stone-900 dark:text-stone-100 text-xs focus:outline-hidden focus:ring-1 focus:ring-concert-500"
+            />
+          </div>
+
+          <div className="space-y-1">
+            <label className="text-[11px] font-bold text-stone-500 dark:text-stone-400">수집 시작일 (기본: 2026-10-01)</label>
+            <input
+              type="date"
+              value={crawlStartDate}
+              onChange={(e) => setCrawlStartDate(e.target.value)}
+              className="w-full px-3 py-2 rounded-xl border border-stone-200 dark:border-hall-700 bg-stone-50 dark:bg-hall-800 text-stone-900 dark:text-stone-100 text-xs focus:outline-hidden focus:ring-1 focus:ring-concert-500"
+            />
+          </div>
+
+          <div className="space-y-1">
+            <label className="text-[11px] font-bold text-stone-500 dark:text-stone-400">수집 종료일 (기본: 2026-12-31)</label>
+            <input
+              type="date"
+              value={crawlEndDate}
+              onChange={(e) => setCrawlEndDate(e.target.value)}
+              className="w-full px-3 py-2 rounded-xl border border-stone-200 dark:border-hall-700 bg-stone-50 dark:bg-hall-800 text-stone-900 dark:text-stone-100 text-xs focus:outline-hidden focus:ring-1 focus:ring-concert-500"
+            />
+          </div>
+        </div>
+
+        {crawlFeedback && (
+          <div className="p-3.5 rounded-xl bg-concert-50 dark:bg-hall-800/80 border border-concert-200/80 dark:border-hall-700 text-xs text-concert-800 dark:text-concert-200 flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-concert-600 shrink-0" />
+              <span className="font-medium">{crawlFeedback}</span>
+            </div>
+            <button
+              onClick={() => setCrawlFeedback(null)}
+              className="text-[11px] text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 shrink-0"
+            >
+              닫기
+            </button>
+          </div>
+        )}
+      </div>
+
       {/* Automated Monitoring Change Log Section (관람객 제보함 바로 아래 배치, 최근 한 달치 기록) */}
       <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
@@ -354,76 +462,95 @@ export default function AdminCenter({
               </span>
             </h3>
           </div>
-          <span className="text-xs text-stone-400">
-            최근 1개월간 KOPIS 및 공식 예매망에서 감지된 추가·수정 변동 기록 ({monitoringLogs.length}회차 보관)
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="text-xs text-stone-400">
+              최근 1개월간 KOPIS 및 공식 예매망에서 감지된 변동 기록 ({monitoringLogs.length}건)
+            </span>
+            {monitoringLogs.length > 0 && (
+              <button
+                onClick={handleClearMonitoringLogs}
+                className="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-600 dark:text-stone-300 transition-colors"
+                title="모든 변동 로그를 비웁니다"
+              >
+                이력 비우기
+              </button>
+            )}
+          </div>
         </div>
 
-        <div className="space-y-3 max-h-[380px] overflow-y-auto pr-1">
-          {monitoringLogs.map((log) => (
-            <div
-              key={log.id}
-              className="p-4 rounded-xl bg-stone-50/80 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 space-y-2 text-xs"
-            >
-              <div className="flex items-center justify-between flex-wrap gap-2">
-                <div className="flex items-center gap-2">
-                  <span className="font-bold text-stone-900 dark:text-stone-100">
-                    {log.timestamp}
-                  </span>
-                  <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-stone-200 dark:bg-hall-700 text-stone-700 dark:text-stone-300">
-                    {log.cycle}
-                  </span>
-                  <span className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-semibold text-[11px]">
-                    <CheckCircle2 className="w-3.5 h-3.5" />
-                    <span>{log.status}</span>
-                  </span>
+        {monitoringLogs.length === 0 ? (
+          <div className="py-8 text-center text-xs text-stone-400 dark:text-stone-500 bg-stone-50/50 dark:bg-hall-850/50 rounded-xl border border-dashed border-stone-200 dark:border-hall-800 space-y-1.5">
+            <History className="w-7 h-7 mx-auto mb-1 opacity-40 text-stone-400" />
+            <p className="font-semibold text-stone-600 dark:text-stone-300">기록된 자동 모니터링 변동 이력이 없습니다.</p>
+            <p className="text-[11px] text-stone-400">가짜 기록은 모두 정제되었으며, 정기 점검 또는 상단 'KOPIS 실시간 크롤링 실행' 시 실제 변동 내역이 기록됩니다.</p>
+          </div>
+        ) : (
+          <div className="space-y-3 max-h-[380px] overflow-y-auto pr-1">
+            {monitoringLogs.map((log) => (
+              <div
+                key={log.id}
+                className="p-4 rounded-xl bg-stone-50/80 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 space-y-2 text-xs"
+              >
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <div className="flex items-center gap-2">
+                    <span className="font-bold text-stone-900 dark:text-stone-100">
+                      {log.timestamp}
+                    </span>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-stone-200 dark:bg-hall-700 text-stone-700 dark:text-stone-300">
+                      {log.cycle}
+                    </span>
+                    <span className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-semibold text-[11px]">
+                      <CheckCircle2 className="w-3.5 h-3.5" />
+                      <span>{log.status}</span>
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-[11px]">
+                    {log.addedCount > 0 && (
+                      <span className="px-2 py-0.5 rounded font-bold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300">
+                        +{log.addedCount}건 추가
+                      </span>
+                    )}
+                    {log.modifiedCount > 0 && (
+                      <span className="px-2 py-0.5 rounded font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300">
+                        ~{log.modifiedCount}건 수정
+                      </span>
+                    )}
+                    {log.addedCount === 0 && log.modifiedCount === 0 && (
+                      <span className="text-stone-400">정합성 일치 (변동 없음)</span>
+                    )}
+                  </div>
                 </div>
 
-                <div className="flex items-center gap-2 text-[11px]">
-                  {log.addedCount > 0 && (
-                    <span className="px-2 py-0.5 rounded font-bold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300">
-                      +{log.addedCount}건 추가
-                    </span>
-                  )}
-                  {log.modifiedCount > 0 && (
-                    <span className="px-2 py-0.5 rounded font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300">
-                      ~{log.modifiedCount}건 수정
-                    </span>
-                  )}
-                  {log.addedCount === 0 && log.modifiedCount === 0 && (
-                    <span className="text-stone-400">정합성 일치 (변동 없음)</span>
-                  )}
-                </div>
+                <p className="text-stone-600 dark:text-stone-300 leading-relaxed font-medium">
+                  {log.summary}
+                </p>
+
+                {log.details && log.details.length > 0 && (
+                  <div className="mt-2 pt-2 border-t border-stone-200/60 dark:border-hall-800/80 space-y-1">
+                    {log.details.map((detail, idx) => (
+                      <div key={idx} className="flex items-start gap-2 text-[11px] text-stone-500 dark:text-stone-400">
+                        <span className={`px-1.5 py-0.2 rounded font-bold shrink-0 text-[10px] ${
+                          detail.action === '추가'
+                            ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300'
+                            : detail.action === '수정'
+                            ? 'bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-300'
+                            : 'bg-stone-100 text-stone-700 dark:bg-hall-800 dark:text-stone-300'
+                        }`}>
+                          {detail.action}
+                        </span>
+                        <span className="font-semibold text-stone-800 dark:text-stone-200 shrink-0">
+                          {detail.concertTitle}
+                        </span>
+                        <span className="text-stone-400 truncate">· {detail.note}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
-
-              <p className="text-stone-600 dark:text-stone-300 leading-relaxed font-medium">
-                {log.summary}
-              </p>
-
-              {log.details && log.details.length > 0 && (
-                <div className="mt-2 pt-2 border-t border-stone-200/60 dark:border-hall-800/80 space-y-1">
-                  {log.details.map((detail, idx) => (
-                    <div key={idx} className="flex items-start gap-2 text-[11px] text-stone-500 dark:text-stone-400">
-                      <span className={`px-1.5 py-0.2 rounded font-bold shrink-0 text-[10px] ${
-                        detail.action === '추가'
-                          ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300'
-                          : detail.action === '수정'
-                          ? 'bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-300'
-                          : 'bg-stone-100 text-stone-700 dark:bg-hall-800 dark:text-stone-300'
-                      }`}>
-                        {detail.action}
-                      </span>
-                      <span className="font-semibold text-stone-800 dark:text-stone-200 shrink-0">
-                        {detail.concertTitle}
-                      </span>
-                      <span className="text-stone-400 truncate">· {detail.note}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Hall Monitoring Table */}

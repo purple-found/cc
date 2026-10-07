@@ -3,7 +3,7 @@ import { verifiedRealConcerts2026 } from '../data/verifiedRealConcerts2026.js';
 import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 
-const CONCERTS_KEY = 'opus_korea_verified_real_concerts_v5';
+const CONCERTS_KEY = 'opus_korea_verified_real_concerts_v6';
 const HALLS_KEY = 'opus_korea_halls_v3';
 const POSTS_KEY = 'opus_korea_posts_v3';
 const THEME_KEY = 'opus_korea_theme_v3';
