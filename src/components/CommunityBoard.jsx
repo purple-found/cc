@@ -444,9 +444,9 @@ export default function CommunityBoard({
                     onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                     className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                   >
-                    <option value="기대평">공연 기대평</option>
-                    <option value="관람 후기">관람 후기 (별점 포함)</option>
-                    <option value="클래식 수다">클래식 수다 / 질문</option>
+                    <option value="기대평">기대평</option>
+                    <option value="관람 후기">관람 후기</option>
+                    <option value="클래식 수다">클래식 수다</option>
                   </select>
                 </div>
 
@@ -498,7 +498,6 @@ export default function CommunityBoard({
                   type="text"
                   value={formData.author}
                   onChange={(e) => setFormData({ ...formData, author: e.target.value })}
-                  placeholder="예: 조성진 팬, 예술의전당 단골"
                   className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                 />
               </div>
@@ -512,7 +511,6 @@ export default function CommunityBoard({
                   required
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                  placeholder="제목을 입력해주세요"
                   className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                 />
               </div>

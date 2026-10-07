@@ -42,7 +42,7 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
               }`}
             >
               <Calendar className="w-4 h-4 text-concert-500" />
-              <span>공연 일정 탐색</span>
+              <span>공연 일정</span>
             </button>
 
             <button
@@ -54,7 +54,7 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
               }`}
             >
               <MessageSquare className="w-4 h-4 text-concert-500" />
-              <span>관람 후기 & 기대평</span>
+              <span>커뮤니티</span>
             </button>
           </nav>
 
@@ -97,7 +97,7 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
             }`}
           >
             <Calendar className="w-3.5 h-3.5" />
-            <span>일정 탐색</span>
+            <span>공연 일정</span>
           </button>
           <button
             onClick={() => setActiveTab('community')}
@@ -108,7 +108,7 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
             }`}
           >
             <MessageSquare className="w-3.5 h-3.5" />
-            <span>후기·기대평</span>
+            <span>커뮤니티</span>
           </button>
         </div>
       </div>
