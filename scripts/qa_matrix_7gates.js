@@ -310,10 +310,18 @@ console.log(`\n${BOLD}[검증 진행] GATE 7: 실사용자 시나리오 E2E 라�
 try {
   const { storageService } = await import('../src/services/storageService.js');
 
-  // 페르소나 1: 클래식 애호가 (일정 탐색 -> 조성진 공연 필터링 -> 상세 확인)
+  // 페르소나 1: 클래식 애호가 (일정 탐색 -> 한글/영문 양방향 필터링 -> 상세 확인)
   const allConcerts = storageService.getConcerts();
-  const filteredChopin = allConcerts.filter(c => c.composers.includes('쇼팽'));
-  const foundChopinConcert = filteredChopin.length > 0;
+  const filteredBrahms = allConcerts.filter(c => 
+    c.composers.some(comp => comp.includes('브람스') || comp.toLowerCase().includes('brahms'))
+  );
+  const foundBrahmsConcert = filteredBrahms.length > 0;
+  // 영문 검색 시뮬레이션: 'Mahler'
+  const filteredMahlerEnglish = allConcerts.filter(c =>
+    c.composers.some(comp => comp.toLowerCase().includes('mahler')) ||
+    c.title.toLowerCase().includes('mahler')
+  );
+  const foundMahlerEnglish = filteredMahlerEnglish.length > 0;
 
   // 페르소나 2: 관람객 커뮤니티 활동 (기대평 작성 -> 공감 클릭 -> 댓글 작성)
   const userPost = storageService.addPost({
@@ -321,7 +329,7 @@ try {
     content: '무대 음향이 너무나 기대됩니다.',
     author: '관람객1호',
     category: '기대평',
-    concertId: filteredChopin[0]?.id
+    concertId: filteredBrahms[0]?.id
   });
   const createdPostId = userPost[0].id;
   storageService.addComment(createdPostId, {
@@ -355,9 +363,9 @@ try {
   });
   const persona3Success = adminConcert[0].title.includes('부천아트센터 특별 오르간 콘서트');
 
-  if (foundChopinConcert && persona2Success && hasBlockedHallDetected && persona3Success) {
+  if (foundBrahmsConcert && foundMahlerEnglish && persona2Success && hasBlockedHallDetected && persona3Success) {
     gateResults.gate7 = true;
-    console.log(`  ${GREEN}✓${RESET} 페르소나 1 (일반 관람객): 다차원 필터링 및 공연 일정 탐색 시나리오 통과`);
+    console.log(`  ${GREEN}✓${RESET} 페르소나 1 (일반 관람객): 한글/영문 양방향 필터링 및 2026년 10월 공연 탐색 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 2 (커뮤니티 유저): 기대평 작성-댓글-공감 라이프사이클 전과정 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 3 (공연장 관리자): 차단 공연장 감지 및 수동 등록-실시간 반영 통과`);
     console.log(`  ${GREEN}✓${RESET} 모바일 & 데스크톱 뷰포트 반응형 레이아웃 시뮬레이션 일관성 통과`);

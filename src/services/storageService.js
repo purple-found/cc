@@ -3,10 +3,10 @@ import { initialConcerts } from '../data/initialConcerts.js';
 import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 
-const CONCERTS_KEY = 'opus_korea_concerts_v1';
-const HALLS_KEY = 'opus_korea_halls_v1';
-const POSTS_KEY = 'opus_korea_posts_v1';
-const THEME_KEY = 'opus_korea_theme_v1';
+const CONCERTS_KEY = 'opus_korea_concerts_v2';
+const HALLS_KEY = 'opus_korea_halls_v2';
+const POSTS_KEY = 'opus_korea_posts_v2';
+const THEME_KEY = 'opus_korea_theme_v2';
 
 export const storageService = {
   // 공연 목록 조회

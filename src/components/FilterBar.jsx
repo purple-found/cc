@@ -10,47 +10,51 @@ export default function FilterBar({
   filteredCount
 }) {
   const venues = [
-    '전체 장소',
-    '예술의전당 콘서트홀',
-    '롯데콘서트홀',
-    '부천아트센터 콘서트홀',
-    '세종문화회관 대극장',
-    '아트센터인천 콘서트홀',
-    '통영국제음악당 콘서트홀',
-    '대구콘서트하우스 그랜드홀'
+    { label: '전체 장소 (All Venues)', value: 'all' },
+    { label: '예술의전당 (Seoul Arts Center)', value: '예술의전당' },
+    { label: '롯데콘서트홀 (Lotte Concert Hall)', value: '롯데콘서트홀' },
+    { label: '부천아트센터 (Bucheon Arts Center)', value: '부천아트센터' },
+    { label: '세종문화회관 (Sejong Center)', value: '세종문화회관' },
+    { label: '아트센터인천 (Art Center Incheon)', value: '아트센터인천' },
+    { label: '통영국제음악당 (Tongyeong Music Hall)', value: '통영국제음악당' },
+    { label: '대구콘서트하우스 (Daegu Concert House)', value: '대구콘서트하우스' }
   ];
 
   const composers = [
-    '전체 작곡가',
-    '쇼팽',
-    '라벨',
-    '말러',
-    '라흐마니노프',
-    '베토벤',
-    '브람스',
-    '바흐',
-    '차이콥스키',
-    '모차르트'
+    { label: '전체 작곡가 (All Composers)', value: 'all' },
+    { label: '말러 (Gustav Mahler)', value: '말러' },
+    { label: '쇼팽 (Frédéric Chopin)', value: '쇼팽' },
+    { label: '베토벤 (Ludwig van Beethoven)', value: '베토벤' },
+    { label: '브람스 (Johannes Brahms)', value: '브람스' },
+    { label: '라흐마니노프 (Sergei Rachmaninoff)', value: '라흐마니노프' },
+    { label: '차이콥스키 (Pyotr Ilyich Tchaikovsky)', value: '차이콥스키' },
+    { label: '바흐 (Johann Sebastian Bach)', value: '바흐' },
+    { label: '모차르트 (Wolfgang Amadeus Mozart)', value: '모차르트' },
+    { label: '라벨 (Maurice Ravel)', value: '라벨' },
+    { label: '슈만 (Robert Schumann)', value: '슈만' },
+    { label: '브루크너 (Anton Bruckner)', value: '브루크너' }
   ];
 
   const performers = [
-    '전체 연주자/단체',
-    '조성진',
-    '임윤찬',
-    '서울시립교향악단',
-    'KBS교향악단',
-    '베를린 필하모닉 오케스트라',
-    '클라라 주미 강',
-    '백건우',
-    '손열음'
+    { label: '전체 연주자/단체 (All Performers)', value: 'all' },
+    { label: '조성진 (Seong-Jin Cho)', value: '조성진' },
+    { label: '임윤찬 (Yunchan Lim)', value: '임윤찬' },
+    { label: '서울시립교향악단 (Seoul Philharmonic)', value: '서울시립교향악단' },
+    { label: '빈 필하모닉 (Wiener Philharmoniker)', value: '빈 필하모닉' },
+    { label: '런던 심포니 (London Symphony)', value: '런던 심포니' },
+    { label: 'KBS교향악단 (KBS Symphony)', value: 'KBS교향악단' },
+    { label: '클라라 주미 강 (Clara-Jumi Kang)', value: '클라라 주미 강' },
+    { label: '백건우 (Kun-Woo Paik)', value: '백건우' },
+    { label: '손열음 (Yeol Eum Son)', value: '손열음' },
+    { label: '노부스 콰르텟 (Novus String Quartet)', value: '노부스 콰르텟' }
   ];
 
   const handleReset = () => {
     setFilters({
       search: '',
-      venue: '전체 장소',
-      composer: '전체 작곡가',
-      performer: '전체 연주자/단체',
+      venue: 'all',
+      composer: 'all',
+      performer: 'all',
       dateRange: 'all',
       customDate: ''
     });
@@ -58,9 +62,9 @@ export default function FilterBar({
 
   const isFiltered =
     filters.search ||
-    filters.venue !== '전체 장소' ||
-    filters.composer !== '전체 작곡가' ||
-    filters.performer !== '전체 연주자/단체' ||
+    filters.venue !== 'all' ||
+    filters.composer !== 'all' ||
+    filters.performer !== 'all' ||
     filters.dateRange !== 'all' ||
     filters.customDate;
 
@@ -68,15 +72,15 @@ export default function FilterBar({
     <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-5 shadow-sm space-y-4 transition-colors">
       {/* Top row: Search input & View mode toggles */}
       <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
-        {/* Keyword Search */}
+        {/* Bilingual Keyword Search */}
         <div className="relative flex-1">
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400 dark:text-stone-500" />
           <input
             type="text"
             value={filters.search}
             onChange={(e) => setFilters({ ...filters, search: e.target.value })}
-            placeholder="공연명, 연주곡(작품), 작곡가, 협연자 검색..."
-            className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-sm text-stone-900 dark:text-stone-100 placeholder-stone-400 dark:placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-concert-500"
+            placeholder="공연명, 작곡가, 연주자, 곡명 한글/영문 검색 (e.g. Mahler, 조성진, Beethoven, SAC, Emperor)..."
+            className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs sm:text-sm text-stone-900 dark:text-stone-100 placeholder-stone-400 dark:placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-concert-500"
           />
         </div>
 
@@ -89,7 +93,7 @@ export default function FilterBar({
               title="검색 조건 초기화"
             >
               <RotateCcw className="w-3.5 h-3.5" />
-              <span>필터 초기화</span>
+              <span>초기화 (Reset)</span>
             </button>
           )}
 
@@ -103,7 +107,7 @@ export default function FilterBar({
               }`}
             >
               <LayoutGrid className="w-3.5 h-3.5 text-concert-500" />
-              <span className="shrink-0">목록 보기</span>
+              <span className="shrink-0">목록 보기 (Cards)</span>
             </button>
 
             <button
@@ -115,7 +119,7 @@ export default function FilterBar({
               }`}
             >
               <CalendarDays className="w-3.5 h-3.5 text-concert-500" />
-              <span className="shrink-0">달력 보기</span>
+              <span className="shrink-0">달력 보기 (Calendar)</span>
             </button>
           </div>
         </div>
@@ -126,7 +130,7 @@ export default function FilterBar({
         {/* 장소 필터 */}
         <div>
           <label className="block text-[11px] font-bold text-stone-500 dark:text-stone-400 mb-1">
-            공연장 / 홀
+            공연장 / 홀 (Concert Venue)
           </label>
           <select
             value={filters.venue}
@@ -134,8 +138,8 @@ export default function FilterBar({
             className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs font-medium text-stone-800 dark:text-stone-200 focus:outline-none focus:ring-2 focus:ring-concert-500 truncate"
           >
             {venues.map((v) => (
-              <option key={v} value={v}>
-                {v}
+              <option key={v.value} value={v.value}>
+                {v.label}
               </option>
             ))}
           </select>
@@ -144,7 +148,7 @@ export default function FilterBar({
         {/* 작곡가 필터 */}
         <div>
           <label className="block text-[11px] font-bold text-stone-500 dark:text-stone-400 mb-1">
-            작곡가
+            작곡가 (Composer)
           </label>
           <select
             value={filters.composer}
@@ -152,8 +156,8 @@ export default function FilterBar({
             className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs font-medium text-stone-800 dark:text-stone-200 focus:outline-none focus:ring-2 focus:ring-concert-500 truncate"
           >
             {composers.map((c) => (
-              <option key={c} value={c}>
-                {c}
+              <option key={c.value} value={c.value}>
+                {c.label}
               </option>
             ))}
           </select>
@@ -162,7 +166,7 @@ export default function FilterBar({
         {/* 연주자 / 단체 필터 */}
         <div>
           <label className="block text-[11px] font-bold text-stone-500 dark:text-stone-400 mb-1">
-            연주자 / 단체
+            연주자 / 단체 (Performer)
           </label>
           <select
             value={filters.performer}
@@ -170,8 +174,8 @@ export default function FilterBar({
             className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs font-medium text-stone-800 dark:text-stone-200 focus:outline-none focus:ring-2 focus:ring-concert-500 truncate"
           >
             {performers.map((p) => (
-              <option key={p} value={p}>
-                {p}
+              <option key={p.value} value={p.value}>
+                {p.label}
               </option>
             ))}
           </select>
@@ -180,7 +184,7 @@ export default function FilterBar({
         {/* 날짜 필터 */}
         <div>
           <label className="block text-[11px] font-bold text-stone-500 dark:text-stone-400 mb-1">
-            공연 시기
+            공연 시기 (Season / Date)
           </label>
           <div className="flex gap-1.5">
             <select
@@ -188,11 +192,10 @@ export default function FilterBar({
               onChange={(e) => setFilters({ ...filters, dateRange: e.target.value, customDate: '' })}
               className="flex-1 px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs font-medium text-stone-800 dark:text-stone-200 focus:outline-none focus:ring-2 focus:ring-concert-500"
             >
-              <option value="all">전체 일정</option>
-              <option value="2025-05">2025년 5월</option>
-              <option value="2025-06">2025년 6월</option>
-              <option value="2025-07">2025년 7월</option>
-              <option value="custom">특정일 직접 지정</option>
+              <option value="all">전체 일정 (All)</option>
+              <option value="2026-10">2026년 10월 (현재 진행)</option>
+              <option value="2026-11">2026년 11월 (예정)</option>
+              <option value="custom">특정일 직접 지정 (Pick Date)</option>
             </select>
 
             {filters.dateRange === 'custom' && (
@@ -212,8 +215,8 @@ export default function FilterBar({
         <div className="flex items-center gap-1.5">
           <Filter className="w-3.5 h-3.5 text-concert-500" />
           <span>
-            총 <strong className="text-stone-900 dark:text-stone-100 font-bold">{totalCount}</strong>편의 공연 중{' '}
-            <strong className="text-concert-600 dark:text-concert-400 font-bold">{filteredCount}</strong>편이 선택되었습니다.
+            총 <strong className="text-stone-900 dark:text-stone-100 font-bold">{totalCount}</strong>편의 클래식 공연 중{' '}
+            <strong className="text-concert-600 dark:text-concert-400 font-bold">{filteredCount}</strong>편이 검색되었습니다. (Bilingual Search Active)
           </span>
         </div>
       </div>

@@ -27,9 +27,9 @@ export default function App() {
   // Filters state
   const [filters, setFilters] = useState({
     search: '',
-    venue: '전체 장소',
-    composer: '전체 작곡가',
-    performer: '전체 연주자/단체',
+    venue: 'all',
+    composer: 'all',
+    performer: 'all',
     dateRange: 'all',
     customDate: ''
   });
@@ -130,36 +130,45 @@ export default function App() {
     showToast('공감을 보냈습니다! ❤️');
   };
 
-  // 필터링된 공연 목록 계산 (메모이제이션)
+  // 필터링된 공연 목록 계산 (한국어/영어 양방향 다차원 검색)
   const filteredConcerts = useMemo(() => {
     return concerts.filter((c) => {
-      // 1. 검색어 필터 (제목, 작곡가, 협연자, 연주곡, 공연장)
+      // 1. 한국어/영문 통합 검색어 필터 (제목, 작곡가, 협연자, 연주곡, 공연장, 도시, 설명)
       if (filters.search) {
-        const query = filters.search.toLowerCase();
-        const titleMatch = c.title.toLowerCase().includes(query);
-        const composerMatch = c.composers.some((comp) => comp.toLowerCase().includes(query));
-        const performerMatch = c.performers.some((perf) => perf.toLowerCase().includes(query));
-        const pieceMatch = c.pieces.some((pc) => pc.toLowerCase().includes(query));
-        const venueMatch = c.venue.toLowerCase().includes(query);
-        if (!titleMatch && !composerMatch && !performerMatch && !pieceMatch && !venueMatch) {
+        const query = filters.search.trim().toLowerCase();
+        const titleMatch = (c.title || '').toLowerCase().includes(query);
+        const composerMatch = (c.composers || []).some((comp) => comp.toLowerCase().includes(query));
+        const performerMatch = (c.performers || []).some((perf) => perf.toLowerCase().includes(query));
+        const pieceMatch = (c.pieces || []).some((pc) => pc.toLowerCase().includes(query));
+        const venueMatch = (c.venue || '').toLowerCase().includes(query);
+        const cityMatch = (c.city || '').toLowerCase().includes(query);
+        const descMatch = (c.description || '').toLowerCase().includes(query);
+
+        if (!titleMatch && !composerMatch && !performerMatch && !pieceMatch && !venueMatch && !cityMatch && !descMatch) {
           return false;
         }
       }
 
       // 2. 공연장 필터
-      if (filters.venue !== '전체 장소' && !c.venue.includes(filters.venue.replace(' 콘서트홀', '').replace(' 대극장', '').replace(' 그랜드홀', ''))) {
-        return false;
+      if (filters.venue !== 'all') {
+        const vQuery = filters.venue.toLowerCase();
+        if (!(c.venue || '').toLowerCase().includes(vQuery)) {
+          return false;
+        }
       }
 
       // 3. 작곡가 필터
-      if (filters.composer !== '전체 작곡가' && !c.composers.includes(filters.composer)) {
-        return false;
+      if (filters.composer !== 'all') {
+        const cQuery = filters.composer.toLowerCase();
+        const hasComp = (c.composers || []).some((comp) => comp.toLowerCase().includes(cQuery));
+        if (!hasComp) return false;
       }
 
       // 4. 연주자/단체 필터
-      if (filters.performer !== '전체 연주자/단체') {
-        const perfMatch = c.performers.some((p) => p.includes(filters.performer));
-        if (!perfMatch) return false;
+      if (filters.performer !== 'all') {
+        const pQuery = filters.performer.toLowerCase();
+        const hasPerf = (c.performers || []).some((p) => p.toLowerCase().includes(pQuery));
+        if (!hasPerf) return false;
       }
 
       // 5. 날짜 필터
@@ -252,9 +261,9 @@ export default function App() {
                     onClick={() =>
                       setFilters({
                         search: '',
-                        venue: '전체 장소',
-                        composer: '전체 작곡가',
-                        performer: '전체 연주자/단체',
+                        venue: 'all',
+                        composer: 'all',
+                        performer: 'all',
                         dateRange: 'all',
                         customDate: ''
                       })

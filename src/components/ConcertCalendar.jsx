@@ -3,9 +3,9 @@ import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Music } from 'luci
 import { formatKoreanDate } from '../utils/parser';
 
 export default function ConcertCalendar({ concerts, onSelectConcert }) {
-  // 기본 연월 설정 (2025년 5월)
-  const [currentYear, setCurrentYear] = useState(2025);
-  const [currentMonth, setCurrentMonth] = useState(5); // 1-indexed (5 = 5월)
+  // 기본 연월 설정 (2026년 10월)
+  const [currentYear, setCurrentYear] = useState(2026);
+  const [currentMonth, setCurrentMonth] = useState(10); // 1-indexed (10 = 10월)
   const [selectedDate, setSelectedDate] = useState(null);
 
   const prevMonth = () => {
@@ -56,7 +56,7 @@ export default function ConcertCalendar({ concerts, onSelectConcert }) {
           </div>
           <div>
             <h2 className="font-serif font-black text-xl text-stone-900 dark:text-stone-50">
-              {currentYear}년 {currentMonth}월 클래식 캘린더
+              {currentYear}년 {currentMonth}월 클래식 캘린더 (October 2026)
             </h2>
             <p className="text-xs text-stone-500 dark:text-stone-400 font-medium">
               이 달에 예정된 클래식 공연 {concertsThisMonth.length}건
@@ -74,13 +74,13 @@ export default function ConcertCalendar({ concerts, onSelectConcert }) {
           </button>
           <button
             onClick={() => {
-              setCurrentYear(2025);
-              setCurrentMonth(5);
+              setCurrentYear(2026);
+              setCurrentMonth(10);
               setSelectedDate(null);
             }}
             className="px-3 py-1.5 rounded-xl bg-stone-100 dark:bg-hall-850 hover:bg-stone-200 dark:hover:bg-hall-700 text-xs font-semibold text-stone-700 dark:text-stone-300 transition-colors shrink-0"
           >
-            이번 달
+            이번 달 (2026.10)
           </button>
           <button
             onClick={nextMonth}

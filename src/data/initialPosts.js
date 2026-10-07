@@ -1,70 +1,70 @@
 export const initialPosts = [
   {
-    id: "post-001",
+    id: "post-2026-001",
     category: "기대평",
-    title: "조성진 리사이틀 라벨 '밤의 가스파르' 무조건 가야 하는 이유",
-    content: "조성진 피아니스트가 오랜만에 한국에서 라벨 밤의 가스파르 전곡을 연주하네요. 스카르보(Scarbo) 파트의 초절기교 테크닉을 예술의전당 콘서트홀 음향으로 직접 들을 수 있다니 벌써부터 심장이 뜁니다! 티켓팅 다들 성공하셨나요?",
+    title: "조성진 브람스 헨델 변주곡 & 슈만 환상곡 리사이틀 기대평 (Seong-Jin Cho Brahms Handel Variations)",
+    content: "조성진 피아니스트가 2026년 가을에 브람스 헨델 변주곡과 슈만 환상곡을 올리네요! 슈만 환상곡 2악장의 전설적인 도약 테크닉과 브람스의 정교한 푸가를 실연으로 들을 생각에 벌써부터 전율이 돋습니다.",
     author: "피아노숲의클라라",
-    createdAt: "2025-05-08 14:20",
-    concertId: "conc-2025-001",
-    concertTitle: "조성진 피아노 리사이틀 - 쇼팽 & 라벨 전곡",
+    createdAt: "2026-10-03 14:20",
+    concertId: "conc-2026-10-02",
+    concertTitle: "조성진 피아노 리사이틀 2026 - 브람스 & 슈만 (Seong-Jin Cho Piano Recital 2026 - Brahms & Schumann)",
     rating: 5,
-    likes: 42,
-    views: 310,
+    likes: 58,
+    views: 420,
     comments: [
       {
         id: "c-101",
         author: "클래식애호가",
-        content: "저는 2층 B블록 중앙 잡았는데 시야랑 음향 밸런스 기대됩니다!",
-        createdAt: "2025-05-08 15:02"
+        content: "2층 B블록 중앙 잡았는데 브람스 푸가 배음이 콘서트홀에 어떻게 울려 퍼질지 기대됩니다!",
+        createdAt: "2026-10-03 15:02"
       },
       {
         id: "c-102",
-        author: "말러리안",
-        content: "쇼팽 발라드 전곡까지 한 프로그램에 묶은 건 진짜 대단한 체력과 집중력입니다.",
-        createdAt: "2025-05-08 16:30"
+        author: "브람스매니아",
+        content: "조성진의 최근 헨델 음반도 예술이었는데 실연으로 들으면 눈물 날 것 같습니다.",
+        createdAt: "2026-10-03 16:30"
       }
     ]
   },
   {
-    id: "post-002",
+    id: "post-2026-002",
     category: "관람 후기",
-    title: "[후기] 롯데콘서트홀 야프 판 츠베덴 서울시향 말러 5번 리허설 관람기",
-    content: "음향적인 울림이 기대 이상이었습니다. 츠베덴 특유의 강렬하고 정교한 다이내믹스가 1악장 트럼펫 팡파르부터 압도적이었어요. 4악장 아다지에토에서는 객석 전체가 숨소리 하나 내지 않고 몰입했습니다. 다음 본공연도 꼭 추천합니다.",
-    author: "심포니매니아",
-    createdAt: "2025-05-09 21:40",
-    concertId: "conc-2025-002",
-    concertTitle: "야프 판 츠베덴 & 서울시립교향악단 - 말러 교향곡 제5번",
+    title: "[후기] 서울시향 & 야프 판 츠베덴 말러 2번 '부활' 롯데콘서트홀 관람기 (Mahler Symphony No. 2 Review)",
+    content: "10월 2일 개막 공연 다녀왔습니다. 5악장에서 국립합창단이 기립하여 'Aufersteh'n(부활하라)'을 합창할 때 객석 전체가 숨을 멎었습니다. 츠베덴 감독의 불꽃같은 추진력과 롯데콘서트홀 파이프오르간의 울림이 완벽했습니다.",
+    author: "말러리안",
+    createdAt: "2026-10-03 00:15",
+    concertId: "conc-2026-10-01",
+    concertTitle: "서울시립교향악단 & 야프 판 츠베덴 - 말러 교향곡 제2번 '부활' (Seoul Philharmonic Orchestra & Jaap van Zweden - Mahler Symphony No. 2 'Resurrection')",
     rating: 5,
-    likes: 38,
-    views: 450,
+    likes: 64,
+    views: 580,
     comments: [
       {
         id: "c-201",
-        author: "첼로사랑",
-        content: "현악기 파트 앙상블이 작년보다 훨씬 탄탄해진 느낌이 들더라고요.",
-        createdAt: "2025-05-09 22:15"
+        author: "심포니러버",
+        content: "금관 파트 팡파르와 합창단 밸런스가 역대급이었습니다. 2026년 최고의 연주였습니다.",
+        createdAt: "2026-10-03 08:45"
       }
     ]
   },
   {
-    id: "post-003",
+    id: "post-2026-003",
     category: "클래식 수다",
-    title: "부천아트센터 콘서트홀 음향 다녀와보신 분 계신가요?",
-    content: "이번에 임윤찬 뮌헨필 공연이 부천아트센터에서 열리는데, 서울에서 조금 멀긴 해도 홀 음향이 카네기홀 수준으로 정교하다는 소문이 많아서 너무 궁금합니다. 1층과 2층 중 어디가 피아노 배음이 더 잘 들리는지 경험자분들 팁 부탁드려요!",
-    author: "라흐마니노프홀릭",
-    createdAt: "2025-05-10 11:10",
-    concertId: "conc-2025-003",
-    concertTitle: "임윤찬 & 뮌헨 필하모닉 오케스트라 - 라흐마니노프 피아노 협주곡 3번",
+    title: "부천아트센터 임윤찬 & 런던 심포니 '황제' 가시는 분들 음향 팁 공유해주세요 (Yunchan Lim Beethoven Emperor)",
+    content: "부천아트센터가 홈페이지 크롤링 차단되어 있어서 관리자 수동 등록으로 올라온 걸 보고 겨우 예매 정보 확인했네요. LSO 내한과 임윤찬 베토벤 협주곡 5번 조합이라 너무 기대되는데 1층과 2층 중 피아노 배음 어디가 더 좋을까요?",
+    author: "황제베토벤",
+    createdAt: "2026-10-05 11:10",
+    concertId: "conc-2026-10-03",
+    concertTitle: "임윤찬 & 런던 심포니 오케스트라 - 베토벤 피아노 협주곡 5번 '황제' (Yunchan Lim & London Symphony Orchestra - Beethoven 'Emperor')",
     rating: null,
-    likes: 19,
-    views: 228,
+    likes: 27,
+    views: 312,
     comments: [
       {
         id: "c-301",
         author: "홀투어러",
         content: "부천아트센터 2층 C구역 중열 강력 추천합니다! 음향 반사판 설계가 탁월해서 잔향감이 정말 따뜻합니다.",
-        createdAt: "2025-05-10 12:05"
+        createdAt: "2026-10-05 12:05"
       }
     ]
   }
