@@ -135,7 +135,7 @@ export default function CommunityBoard({
           <div>
             <h2 className="font-serif font-black text-xl text-stone-900 dark:text-stone-50 flex items-center gap-2">
               <MessageSquare className="w-5 h-5 text-concert-500" />
-              <span>클래식 자유 커뮤니티</span>
+              <span>클래식 커뮤니티</span>
             </h2>
             <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 font-medium">
               다가올 무대에 대한 벅찬 설렘과 생생한 관람 후기를 나눠보세요.
@@ -468,25 +468,6 @@ export default function CommunityBoard({
                     </select>
                   </div>
                 )}
-              </div>
-
-              {/* Linked Concert Selection */}
-              <div>
-                <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
-                  관련 공연 선택 (선택 사항)
-                </label>
-                <select
-                  value={formData.concertId}
-                  onChange={(e) => setFormData({ ...formData, concertId: e.target.value })}
-                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500 truncate"
-                >
-                  <option value="">-- 관련 공연을 선택하지 않음 --</option>
-                  {concerts.map((c) => (
-                    <option key={c.id} value={c.id}>
-                      [{c.date}] {c.title}
-                    </option>
-                  ))}
-                </select>
               </div>
 
               {/* Nickname & Title */}

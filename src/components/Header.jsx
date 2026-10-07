@@ -75,7 +75,7 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
               onClick={toggleTheme}
               className="p-2.5 rounded-xl border border-stone-200 dark:border-hall-700 bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-hall-700 transition-colors shrink-0"
               aria-label="화면 모드 전환"
-              title={theme === 'light' ? '야간(다크) 모드로 전환' : '주간(라이트) 모드로 전환'}
+              title={theme === 'light' ? '다크 모드로 전환' : '라이트 모드로 전환'}
             >
               {theme === 'light' ? (
                 <Moon className="w-5 h-5 text-stone-700" />

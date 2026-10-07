@@ -12,6 +12,7 @@ import Toast from './components/Toast';
 import ErrorFallback from './components/ErrorFallback';
 import Footer from './components/Footer';
 import { storageService } from './services/storageService';
+import { isPastConcert } from './utils/parser.js';
 import { Sparkles, Calendar, MessageSquare, AlertCircle } from 'lucide-react';
 
 export default function App() {
@@ -208,6 +209,21 @@ export default function App() {
       }
 
       return true;
+    }).sort((a, b) => {
+      const aPast = isPastConcert(a.date, a.time);
+      const bPast = isPastConcert(b.date, b.time);
+
+      // 예정된 미래 공연을 먼저 표시
+      if (!aPast && bPast) return -1;
+      if (aPast && !bPast) return 1;
+
+      // 예정된 미래 공연끼리는 가장 가까운 날짜부터 오름차순(가까운 미래 순)
+      if (!aPast && !bPast) {
+        return a.date.localeCompare(b.date) || (a.time || '').localeCompare(b.time || '');
+      }
+
+      // 이미 지나간 공연끼리는 최근에 끝난 공연 순으로 내림차순
+      return b.date.localeCompare(a.date) || (b.time || '').localeCompare(a.time || '');
     });
   }, [concerts, filters]);
 

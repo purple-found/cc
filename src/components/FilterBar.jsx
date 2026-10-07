@@ -87,7 +87,7 @@ export default function FilterBar({
             type="text"
             value={filters.search}
             onChange={(e) => setFilters({ ...filters, search: e.target.value })}
-            placeholder="공연명, 작곡가, 연주자, 곡명 한글/영문 검색 (e.g. Mahler, 조성진, Beethoven, SAC, Emperor)..."
+            placeholder="공연명, 작곡가, 연주자, 곡명 한글/영문 검색..."
             className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs sm:text-sm text-stone-900 dark:text-stone-100 placeholder-stone-400 dark:placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-concert-500"
           />
         </div>
@@ -203,8 +203,9 @@ export default function FilterBar({
               className="flex-1 px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs font-medium text-stone-800 dark:text-stone-200 focus:outline-none focus:ring-2 focus:ring-concert-500"
             >
               <option value="all">전체 일정 (All)</option>
-              <option value="2026-10">2026년 10월 (현재 진행)</option>
-              <option value="2026-11">2026년 11월 (예정)</option>
+              <option value="2026-10">2026년 10월</option>
+              <option value="2026-11">2026년 11월</option>
+              <option value="2026-12">2026년 12월</option>
               <option value="custom">특정일 직접 지정 (Pick Date)</option>
             </select>
 

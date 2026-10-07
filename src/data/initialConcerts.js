@@ -873,5 +873,357 @@ export const initialConcerts = [
     crawlerBlocked: false,
     description: "가을 단풍이 물든 동해와 설악의 정취 속에서 세계적 거장 앙상블이 선사하는 드보르자크 피아노 오중주와 브람스 육중주의 따스한 실내악.",
     imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80"
+  },
+  // ==========================================
+  // 2026년 11월 전국 클래식 콘서트 라인업 (November 2026)
+  // ==========================================
+  {
+    id: "conc-2026-11-05",
+    title: "빈 필하모닉 오케스트라 내한 공연 (Wiener Philharmoniker Korea Tour)",
+    date: "2026-11-05",
+    time: "19:30",
+    venue: "예술의전당 콘서트홀 (Seoul Arts Center Concert Hall)",
+    city: "서울 (Seoul)",
+    performers: [
+      "크리스티안 틸레만 Christian Thielemann (Conductor / 지휘)",
+      "빈 필하모닉 오케스트라 Wiener Philharmoniker"
+    ],
+    performerType: "오케스트라 (Orchestra)",
+    composers: ["브람스 (Johannes Brahms)", "브루크너 (Anton Bruckner)"],
+    pieces: [
+      "요하네스 브람스 - 하이든 주제에 의한 변주곡 Op.56a (Brahms - Haydn Variations)",
+      "안톤 브루크너 - 교향곡 제7번 E장조 WAB 107 (Bruckner - Symphony No. 7 in E major)"
+    ],
+    price: "R석 420,000원 / S석 340,000원 / A석 260,000원 / B석 180,000원",
+    ticketUrl: "https://www.sac.or.kr",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "예술의전당 공식 예매망 (SAC)",
+    crawlerBlocked: false,
+    description: "황금빛 관현악 사운드의 정점, 틸레만 지휘의 빈 필하모닉이 선사하는 브루크너 교향곡 7번의 숭고한 영적 울림.",
+    imageUrl: "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-11-08",
+    title: "조성진 피아노 리사이틀 (Seong-Jin Cho Piano Recital)",
+    date: "2026-11-08",
+    time: "17:00",
+    venue: "부천아트센터 콘서트홀 (Bucheon Arts Center Concert Hall)",
+    city: "경기 (Gyeonggi)",
+    performers: [
+      "조성진 Seong-Jin Cho (Piano)"
+    ],
+    performerType: "독주 / 독창 (Solo Recital)",
+    composers: ["라벨 (Maurice Ravel)", "쇼팽 (Frédéric Chopin)"],
+    pieces: [
+      "모리스 라벨 - 고풍스러운 미뉴에트 & 밤의 가스파르 (Ravel - Menuet antique & Gaspard de la nuit)",
+      "프레데리크 쇼팽 - 4개의 발라드 전곡 (Chopin - 4 Ballades, Op. 23, 38, 47, 52)"
+    ],
+    price: "R석 120,000원 / S석 90,000원 / A석 60,000원",
+    ticketUrl: "https://bac.or.kr",
+    status: "매진임박",
+    source: "자동 수집",
+    sourceHall: "부천아트센터 공식망 (Bucheon Arts Center)",
+    crawlerBlocked: false,
+    description: "세계 최정상 피아니스트 조성진이 아시아 최고 수준의 어쿠스틱을 자랑하는 부천아트센터에서 선보이는 라벨과 쇼팽 발라드 전곡.",
+    imageUrl: "https://images.unsplash.com/photo-1520523839898-50712825e3a3?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-11-12",
+    title: "런던 심포니 오케스트라 & 안토니오 파파노 (London Symphony Orchestra & Sir Antonio Pappano)",
+    date: "2026-11-12",
+    time: "20:00",
+    venue: "롯데콘서트홀 (Lotte Concert Hall)",
+    city: "서울 (Seoul)",
+    performers: [
+      "안토니오 파파노 Antonio Pappano (Conductor / 수석지휘자)",
+      "런던 심포니 오케스트라 London Symphony Orchestra (LSO)",
+      "클라라 주미 강 Clara-Jumi Kang (Violin)"
+    ],
+    performerType: "오케스트라 (Orchestra)",
+    composers: ["시벨리우스 (Jean Sibelius)", "엘가 (Edward Elgar)"],
+    pieces: [
+      "장 시벨리우스 - 바이올린 협주곡 d단조 Op.47 (Sibelius - Violin Concerto in D minor)",
+      "에드워드 엘가 - 수수께끼 변주곡 Op.36 (Elgar - Enigma Variations)"
+    ],
+    price: "R석 380,000원 / S석 290,000원 / A석 200,000원 / B석 120,000원",
+    ticketUrl: "https://www.lotteconcerthall.com",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "롯데콘서트홀 공식 전산망 (Lotte Concert Hall)",
+    crawlerBlocked: false,
+    description: "새 수석지휘자 안토니오 파파노 경과 LSO의 눈부신 앙상블, 바이올리니스트 클라라 주미 강의 얼어붙은 북유럽 서정.",
+    imageUrl: "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-11-15",
+    title: "임윤찬 & KBS교향악단 라흐마니노프 스페셜 (Yunchan Lim & KBS Symphony Orchestra)",
+    date: "2026-11-15",
+    time: "17:00",
+    venue: "예술의전당 콘서트홀 (Seoul Arts Center Concert Hall)",
+    city: "서울 (Seoul)",
+    performers: [
+      "피에타리 잉키넨 Pietari Inkinen (Conductor / 음악감독)",
+      "임윤찬 Yunchan Lim (Piano)",
+      "KBS교향악단 KBS Symphony Orchestra"
+    ],
+    performerType: "오케스트라 (Orchestra)",
+    composers: ["라흐마니노프 (Sergei Rachmaninoff)"],
+    pieces: [
+      "세르게이 라흐마니노프 - 피아노 협주곡 제3번 d단조 Op.30 (Rachmaninoff - Piano Concerto No. 3 in D minor)",
+      "세르게이 라흐마니노프 - 교향곡 제2번 e단조 Op.27 (Rachmaninoff - Symphony No. 2 in E minor)"
+    ],
+    price: "R석 160,000원 / S석 120,000원 / A석 80,000원 / B석 40,000원",
+    ticketUrl: "https://www.sac.or.kr",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "예술의전당 공식망",
+    crawlerBlocked: false,
+    description: "전 세계를 매료시킨 피아니스트 임윤찬의 라흐마니노프 피아노 협주곡 3번과 KBS교향악단의 폭발적인 러시아 관현악 사운드.",
+    imageUrl: "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-11-20",
+    title: "노부스 콰르텟 베토벤 현악 사중주 전곡 사이클 IV (Novus String Quartet Beethoven Cycle)",
+    date: "2026-11-20",
+    time: "19:30",
+    venue: "아트센터인천 콘서트홀 (Art Center Incheon Concert Hall)",
+    city: "인천 (Incheon)",
+    performers: [
+      "노부스 콰르텟 Novus String Quartet",
+      "김재영 Jaeyoung Kim (Violin)",
+      "김영욱 Younguk Kim (Violin)",
+      "이규혁 Kyuhyuk Lee (Viola)",
+      "이원해 Wonhae Lee (Cello)"
+    ],
+    performerType: "실내악 / 앙상블 (Chamber Music)",
+    composers: ["베토벤 (Ludwig van Beethoven)"],
+    pieces: [
+      "루트비히 판 베토벤 - 현악 사중주 제13번 Bb장조 Op.130 (Beethoven - String Quartet No. 13 in B-flat major)",
+      "루트비히 판 베토벤 - 대푸가 Bb장조 Op.133 (Beethoven - Grosse Fuge in B-flat major, Op. 133)"
+    ],
+    price: "R석 50,000원 / S석 30,000원",
+    ticketUrl: "https://www.aci.or.kr",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "아트센터인천 공식망",
+    crawlerBlocked: false,
+    description: "대한민국 대표 현악 사중주단 노부스 콰르텟이 파고드는 베토벤 후기 사중주의 정점 '대푸가'.",
+    imageUrl: "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-11-25",
+    title: "통영 페스티벌 오케스트라 가을 정기연주회 (Tongyeong Festival Orchestra Autumn Concert)",
+    date: "2026-11-25",
+    time: "19:30",
+    venue: "통영국제음악당 콘서트홀 (Tongyeong Concert Hall)",
+    city: "경남/통영 (Gyeongnam/Tongyeong)",
+    performers: [
+      "마르쿠스 슈텐츠 Markus Stenz (Conductor / 지휘)",
+      "통영 페스티벌 오케스트라 Tongyeong Festival Orchestra",
+      "손열음 Yeol Eum Son (Piano)"
+    ],
+    performerType: "오케스트라 (Orchestra)",
+    composers: ["모차르트 (Wolfgang Amadeus Mozart)", "말러 (Gustav Mahler)"],
+    pieces: [
+      "볼프강 아마데우스 모차르트 - 피아노 협주곡 제20번 d단조 K.466 (Mozart - Piano Concerto No. 20)",
+      "구스타프 말러 - 교향곡 제1번 D장조 '거인' (Mahler - Symphony No. 1 'Titan')"
+    ],
+    price: "R석 70,000원 / S석 50,000원 / A석 30,000원",
+    ticketUrl: "https://www.timf.org",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "통영국제음악당 공식 예매처",
+    crawlerBlocked: false,
+    description: "바다를 품은 통영국제음악당에서 펼쳐지는 모차르트의 비극적 아름다움과 말러 교향곡 1번 '거인'의 찬란한 팡파르.",
+    imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-11-28",
+    title: "대구시립교향악단 차이콥스키 비창 (Daegu Symphony Orchestra Tchaikovsky 'Pathétique')",
+    date: "2026-11-28",
+    time: "19:30",
+    venue: "대구콘서트하우스 그랜드홀 (Daegu Concert House Grand Hall)",
+    city: "대구 (Daegu)",
+    performers: [
+      "백진현 Jin-Hyun Baek (Conductor / 상임지휘자)",
+      "대구시립교향악단 Daegu Symphony Orchestra",
+      "양인모 Inmo Yang (Violin)"
+    ],
+    performerType: "오케스트라 (Orchestra)",
+    composers: ["차이콥스키 (Pyotr Ilyich Tchaikovsky)"],
+    pieces: [
+      "표트르 차이콥스키 - 바이올린 협주곡 D장조 Op.35 (Tchaikovsky - Violin Concerto in D major)",
+      "표트르 차이콥스키 - 교향곡 제6번 b단조 Op.74 '비창' (Tchaikovsky - Symphony No. 6 'Pathétique')"
+    ],
+    price: "R석 30,000원 / S석 20,000원 / A석 10,000원",
+    ticketUrl: "https://www.daeguconcerthouse.or.kr",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "대구콘서트하우스 공식망",
+    crawlerBlocked: false,
+    description: "어쿠스틱의 메카 대구콘서트하우스에서 선보이는 바이올리니스트 양인모의 정열적인 차이콥스키와 비창 교향곡의 비극적 서정.",
+    imageUrl: "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80"
+  },
+
+  // ==========================================
+  // 2026년 12월 송년 & 크리스마스 시즌 클래식 콘서트 라인업 (December 2026)
+  // ==========================================
+  {
+    id: "conc-2026-12-05",
+    title: "백건우 피아노 리사이틀 - 바흐와 모차르트의 대화 (Kun-Woo Paik Piano Recital)",
+    date: "2026-12-05",
+    time: "17:00",
+    venue: "세종문화회관 M씨어터 (Sejong Center M Theater)",
+    city: "서울 (Seoul)",
+    performers: [
+      "백건우 Kun-Woo Paik (Piano)"
+    ],
+    performerType: "독주 / 독창 (Solo Recital)",
+    composers: ["바흐 (Johann Sebastian Bach)", "모차르트 (Wolfgang Amadeus Mozart)"],
+    pieces: [
+      "요한 제바스티안 바흐 - 프랑스 모음곡 제5번 G장조 BWV 816 (Bach - French Suite No. 5)",
+      "볼프강 아마데우스 모차르트 - 피아노 소나타 제12번 F장조 K.332 (Mozart - Piano Sonata No. 12)"
+    ],
+    price: "R석 90,000원 / S석 70,000원 / A석 50,000원",
+    ticketUrl: "https://www.sejongpac.or.kr",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "세종문화회관 공식 예매처",
+    crawlerBlocked: false,
+    description: "건반 위의 구도자 백건우가 전하는 바흐의 순결한 춤곡과 모차르트 소나타의 티 없는 맑은 선율.",
+    imageUrl: "https://images.unsplash.com/photo-1520523839898-50712825e3a3?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-12-10",
+    title: "서울시립교향악단 브람스 교향곡 제1번 (Seoul Philharmonic Orchestra Brahms No. 1)",
+    date: "2026-12-10",
+    time: "20:00",
+    venue: "예술의전당 콘서트홀 (Seoul Arts Center Concert Hall)",
+    city: "서울 (Seoul)",
+    performers: [
+      "야프 판 츠베덴 Jaap van Zweden (Conductor / 음악감독)",
+      "서울시립교향악단 Seoul Philharmonic Orchestra (SPO)"
+    ],
+    performerType: "오케스트라 (Orchestra)",
+    composers: ["브람스 (Johannes Brahms)"],
+    pieces: [
+      "요하네스 브람스 - 비극적 서곡 Op.81 (Brahms - Tragic Overture)",
+      "요하네스 브람스 - 교향곡 제1번 c단조 Op.68 (Brahms - Symphony No. 1 in C minor)"
+    ],
+    price: "R석 120,000원 / S석 90,000원 / A석 60,000원 / B석 30,000원",
+    ticketUrl: "https://www.sac.or.kr",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "예술의전당 공식망",
+    crawlerBlocked: false,
+    description: "묵직하고 엄숙한 브람스 교향곡 1번을 야프 판 츠베덴 음악감독의 치밀하고 역동적인 리더십으로 만나는 명연.",
+    imageUrl: "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-12-18",
+    title: "국립합창단 헨델 '메시아' 크리스마스 콘서트 (The National Chorus Handel 'Messiah')",
+    date: "2026-12-18",
+    time: "19:30",
+    venue: "국립극장 해오름극장 (National Theater of Korea Haeoreum)",
+    city: "서울 (Seoul)",
+    performers: [
+      "민인기 In-Ki Min (Conductor / 단장 겸 예술감독)",
+      "국립합창단 The National Chorus of Korea",
+      "카메라타 안티콰 서울 Camerata Antiqua Seoul"
+    ],
+    performerType: "합창 / 성악 (Choral / Vocal)",
+    composers: ["헨델 (George Frideric Handel)"],
+    pieces: [
+      "게오르크 프리드리히 헨델 - 오라토리오 '메시아' HWV 56 전곡 (Handel - Oratorio 'Messiah')"
+    ],
+    price: "R석 60,000원 / S석 40,000원 / A석 20,000원",
+    ticketUrl: "https://www.ntok.go.kr",
+    status: "예매중",
+    source: "관리자 수동 등록",
+    sourceHall: "국립극장 (전산 보안 크롤링 차단으로 관리자 직접 등록)",
+    crawlerBlocked: true,
+    description: "성탄의 기쁨과 위로를 전하는 헨델 메시아 전곡. 웅장한 '할렐루야' 합창과 고악기 앙상블의 원전 연주.",
+    imageUrl: "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-12-24",
+    title: "크리스마스 이브 바로크 캔들라이트 콘서트 (Christmas Eve Baroque Candlelight Concert)",
+    date: "2026-12-24",
+    time: "19:30",
+    venue: "금호아트홀 연세 (Kumho Art Hall Yonsei)",
+    city: "서울 (Seoul)",
+    performers: [
+      "콜레기움 무지쿰 서울 Collegium Musicum Seoul",
+      "김선아 Sun-Ah Kim (Conductor / 지휘)"
+    ],
+    performerType: "실내악 / 앙상블 (Chamber Music)",
+    composers: ["바흐 (Johann Sebastian Bach)", "코렐리 (Arcangelo Corelli)"],
+    pieces: [
+      "아르칸젤로 코렐리 - 크리스마스 협주곡 Op.6 No.8 (Corelli - Christmas Concerto in G minor)",
+      "요한 제바스티안 바흐 - 관현악 모음곡 제3번 D장조 BWV 1068 (Bach - Orchestral Suite No. 3 'Air')"
+    ],
+    price: "전석 50,000원",
+    ticketUrl: "https://www.kumhoarthall.com",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "금호아트홀 공식망",
+    crawlerBlocked: false,
+    description: "은은한 촛불 빛과 바로크 고음악의 따스한 울림. 크리스마스이브 밤을 수놓는 코렐리와 바흐 G선상의 아리아.",
+    imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-12-30",
+    title: "부천아트센터 2026 송년음악회 - 베토벤 합창 교향곡 (Bucheon Arts Center Year-End Concert)",
+    date: "2026-12-30",
+    time: "19:30",
+    venue: "부천아트센터 콘서트홀 (Bucheon Arts Center Concert Hall)",
+    city: "경기 (Gyeonggi)",
+    performers: [
+      "장윤성 Yoon-Sung Chang (Conductor / 상임지휘자)",
+      "부천필하모닉오케스트라 Bucheon Philharmonic Orchestra",
+      "부천시립합창단 Bucheon Civic Chorale"
+    ],
+    performerType: "오케스트라 (Orchestra)",
+    composers: ["베토벤 (Ludwig van Beethoven)"],
+    pieces: [
+      "루트비히 판 베토벤 - 교향곡 제9번 d단조 Op.125 '합창' (Beethoven - Symphony No. 9 'Choral')"
+    ],
+    price: "R석 70,000원 / S석 50,000원 / A석 30,000원",
+    ticketUrl: "https://bac.or.kr",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "부천아트센터 공식망",
+    crawlerBlocked: false,
+    description: "2026년 한 해를 장식하는 인류 화합의 찬가 베토벤 9번 '환희의 송가'. 부천아트센터 파이프오르간 홀을 가득 채우는 감동.",
+    imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "conc-2026-12-31",
+    title: "2026 예술의전당 제야음악회 (Seoul Arts Center New Year's Eve Concert 2026)",
+    date: "2026-12-31",
+    time: "22:00",
+    venue: "예술의전당 콘서트홀 (Seoul Arts Center Concert Hall)",
+    city: "서울 (Seoul)",
+    performers: [
+      "코리안심포니페스티벌오케스트라",
+      "손열음 Yeol Eum Son (Piano)",
+      "박혜상 Hera Hyesang Park (Soprano)"
+    ],
+    performerType: "오케스트라 (Orchestra)",
+    composers: ["차이콥스키 (Pyotr Ilyich Tchaikovsky)", "라벨 (Maurice Ravel)", "요한 슈트라우스 2세 (Johann Strauss II)"],
+    pieces: [
+      "모리스 라벨 - 피아노 협주곡 G장조 (Ravel - Piano Concerto in G major)",
+      "요한 슈트라우스 2세 - 오페레타 '박쥐' 서곡 및 아름답고 푸른 도나우 (Strauss II - The Bat Overture & Blue Danube)",
+      "표트르 차이콥스키 - 호두까기 인형 중 '꽃의 왈츠' (Tchaikovsky - Nutcracker 'Waltz of the Flowers')"
+    ],
+    price: "R석 120,000원 / S석 90,000원 / A석 60,000원 / B석 40,000원",
+    ticketUrl: "https://www.sac.or.kr",
+    status: "예매중",
+    source: "자동 수집",
+    sourceHall: "예술의전당 공식 예매망",
+    crawlerBlocked: false,
+    description: "2026년의 마지막 밤을 찬란한 클래식 선율과 소망의 카운트다운으로 맞이하는 예술의전당 대표 제야음악회.",
+    imageUrl: "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80"
   }
 ];

@@ -3,7 +3,7 @@ import { initialConcerts } from '../data/initialConcerts.js';
 import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 
-const CONCERTS_KEY = 'opus_korea_concerts_v3';
+const CONCERTS_KEY = 'opus_korea_concerts_v4';
 const HALLS_KEY = 'opus_korea_halls_v3';
 const POSTS_KEY = 'opus_korea_posts_v3';
 const THEME_KEY = 'opus_korea_theme_v3';
