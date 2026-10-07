@@ -125,6 +125,13 @@ export default function App() {
     showToast(`'${newConcert.title}' 공연이 성공적으로 등록되었습니다.`);
   };
 
+  // 공연 수정 핸들러 (Admin 수동 편집/교정)
+  const handleUpdateConcert = (id, updatedData) => {
+    const updated = storageService.updateConcert(id, updatedData);
+    setConcerts(updated);
+    showToast(`'${updatedData.title || '공연'}' 정보가 성공적으로 수정되었습니다.`);
+  };
+
   // 공연 삭제 핸들러 (Admin)
   const handleDeleteConcert = (id) => {
     const updated = storageService.deleteConcert(id);
@@ -369,6 +376,7 @@ export default function App() {
               concerts={concerts}
               tips={tips}
               onAddConcert={handleAddConcert}
+              onUpdateConcert={handleUpdateConcert}
               onDeleteConcert={handleDeleteConcert}
               onApproveTip={handleApproveTip}
               onDeleteTip={handleDeleteTip}

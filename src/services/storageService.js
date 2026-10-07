@@ -67,6 +67,24 @@ export const storageService = {
     return updated;
   },
 
+  // 공연 수정 (관리자 수동 교정/편집)
+  updateConcert(id, updatedData) {
+    const list = this.getConcerts();
+    const updated = list.map(c => {
+      if (c.id === id) {
+        return {
+          ...c,
+          ...updatedData,
+          id, // id 불변 유지
+          source: c.source === '관리자 수동 등록' ? '관리자 수동 등록' : '공식 정보 (관리자 교정 완료)'
+        };
+      }
+      return c;
+    });
+    this.saveConcerts(updated);
+    return updated;
+  },
+
   // 공연장 상태 목록
   getHalls() {
     try {

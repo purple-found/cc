@@ -13,15 +13,20 @@ import {
   Music,
   Inbox,
   Check,
-  UserCheck
+  UserCheck,
+  Edit3,
+  History,
+  ArrowRight
 } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser.js';
+import { kopisMonitoringService } from '../services/kopisMonitoringService.js';
 
 export default function AdminCenter({
   halls,
   concerts,
   tips = [],
   onAddConcert,
+  onUpdateConcert,
   onDeleteConcert,
   onApproveTip,
   onDeleteTip,
@@ -30,6 +35,8 @@ export default function AdminCenter({
   onLogout
 }) {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [editingConcert, setEditingConcert] = useState(null);
+  const [monitoringLogs, setMonitoringLogs] = useState(() => kopisMonitoringService.getMonitoringHistory());
   const [formData, setFormData] = useState({
     title: '',
     date: '',
@@ -104,6 +111,70 @@ export default function AdminCenter({
       description: '',
       imageUrl: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80'
     });
+  };
+
+  // 기존 공연 편집 열기 핸들러
+  const openEditModal = (concert) => {
+    setEditingConcert({
+      id: concert.id,
+      title: concert.title || '',
+      date: concert.date || '',
+      time: concert.time || '19:30',
+      venue: concert.venue || '',
+      city: concert.city || '서울',
+      performerType: concert.performerType || '오케스트라',
+      performers: Array.isArray(concert.performers) ? concert.performers.join(', ') : (concert.performers || ''),
+      composers: Array.isArray(concert.composers) ? concert.composers.join(', ') : (concert.composers || ''),
+      pieces: Array.isArray(concert.pieces) ? concert.pieces.join('\n') : (concert.pieces || ''),
+      price: concert.price || '',
+      ticketUrl: concert.ticketUrl || '',
+      status: concert.status || '예매중',
+      description: concert.description || ''
+    });
+  };
+
+  // 기존 공연 수정 제출 핸들러
+  const handleEditSubmit = (e) => {
+    e.preventDefault();
+    if (!editingConcert || !editingConcert.title || !editingConcert.date) {
+      alert('공연명과 공연일은 필수입니다.');
+      return;
+    }
+
+    const performersArray = editingConcert.performers
+      .split(',')
+      .map((p) => p.trim())
+      .filter(Boolean);
+
+    const composersArray = editingConcert.composers
+      .split(',')
+      .map((c) => c.trim())
+      .filter(Boolean);
+
+    const piecesArray = editingConcert.pieces
+      .split('\n')
+      .map((p) => p.trim())
+      .filter(Boolean);
+
+    if (onUpdateConcert) {
+      onUpdateConcert(editingConcert.id, {
+        title: editingConcert.title,
+        date: editingConcert.date,
+        time: editingConcert.time,
+        venue: editingConcert.venue,
+        city: editingConcert.city,
+        performerType: editingConcert.performerType,
+        performers: performersArray.length > 0 ? performersArray : ['출연진 정보'],
+        composers: composersArray.length > 0 ? composersArray : ['클래식'],
+        pieces: piecesArray.length > 0 ? piecesArray : ['상세 프로그램'],
+        price: editingConcert.price,
+        ticketUrl: editingConcert.ticketUrl,
+        status: editingConcert.status,
+        description: editingConcert.description
+      });
+    }
+
+    setEditingConcert(null);
   };
 
   const blockedHallsCount = halls.filter((h) => h.blocked).length;
@@ -271,6 +342,90 @@ export default function AdminCenter({
         )}
       </div>
 
+      {/* Automated Monitoring Change Log Section (관람객 제보함 바로 아래 배치, 최근 한 달치 기록) */}
+      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <History className="w-5 h-5 text-blue-500" />
+            <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100 flex items-center gap-2">
+              <span>자동 모니터링 변동 이력 로그</span>
+              <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200/60 dark:border-blue-900/60">
+                새벽 03:00 / 오후 15:00 정기 배치
+              </span>
+            </h3>
+          </div>
+          <span className="text-xs text-stone-400">
+            최근 1개월간 KOPIS 및 공식 예매망에서 감지된 추가·수정 변동 기록 ({monitoringLogs.length}회차 보관)
+          </span>
+        </div>
+
+        <div className="space-y-3 max-h-[380px] overflow-y-auto pr-1">
+          {monitoringLogs.map((log) => (
+            <div
+              key={log.id}
+              className="p-4 rounded-xl bg-stone-50/80 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 space-y-2 text-xs"
+            >
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="font-bold text-stone-900 dark:text-stone-100">
+                    {log.timestamp}
+                  </span>
+                  <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-stone-200 dark:bg-hall-700 text-stone-700 dark:text-stone-300">
+                    {log.cycle}
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-semibold text-[11px]">
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    <span>{log.status}</span>
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2 text-[11px]">
+                  {log.addedCount > 0 && (
+                    <span className="px-2 py-0.5 rounded font-bold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300">
+                      +{log.addedCount}건 추가
+                    </span>
+                  )}
+                  {log.modifiedCount > 0 && (
+                    <span className="px-2 py-0.5 rounded font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300">
+                      ~{log.modifiedCount}건 수정
+                    </span>
+                  )}
+                  {log.addedCount === 0 && log.modifiedCount === 0 && (
+                    <span className="text-stone-400">정합성 일치 (변동 없음)</span>
+                  )}
+                </div>
+              </div>
+
+              <p className="text-stone-600 dark:text-stone-300 leading-relaxed font-medium">
+                {log.summary}
+              </p>
+
+              {log.details && log.details.length > 0 && (
+                <div className="mt-2 pt-2 border-t border-stone-200/60 dark:border-hall-800/80 space-y-1">
+                  {log.details.map((detail, idx) => (
+                    <div key={idx} className="flex items-start gap-2 text-[11px] text-stone-500 dark:text-stone-400">
+                      <span className={`px-1.5 py-0.2 rounded font-bold shrink-0 text-[10px] ${
+                        detail.action === '추가'
+                          ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300'
+                          : detail.action === '수정'
+                          ? 'bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-300'
+                          : 'bg-stone-100 text-stone-700 dark:bg-hall-800 dark:text-stone-300'
+                      }`}>
+                        {detail.action}
+                      </span>
+                      <span className="font-semibold text-stone-800 dark:text-stone-200 shrink-0">
+                        {detail.concertTitle}
+                      </span>
+                      <span className="text-stone-400 truncate">· {detail.note}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Hall Monitoring Table */}
       <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 overflow-hidden shadow-sm">
         <div className="p-5 border-b border-stone-100 dark:border-hall-800">
@@ -377,17 +532,26 @@ export default function AdminCenter({
                 </div>
               </div>
 
-              <button
-                onClick={() => {
-                  if (confirm(`'${c.title}' 공연을 삭제하시겠습니까?`)) {
-                    onDeleteConcert(c.id);
-                  }
-                }}
-                className="p-2 text-stone-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded-lg transition-colors shrink-0"
-                title="공연 일정 삭제"
-              >
-                <Trash2 className="w-4 h-4" />
-              </button>
+              <div className="flex items-center gap-1 shrink-0">
+                <button
+                  onClick={() => openEditModal(c)}
+                  className="p-2 text-stone-500 hover:text-concert-600 dark:hover:text-concert-400 hover:bg-concert-50 dark:hover:bg-hall-800 rounded-lg transition-colors"
+                  title="공연 정보 직접 수정"
+                >
+                  <Edit3 className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => {
+                    if (confirm(`'${c.title}' 공연을 삭제하시겠습니까?`)) {
+                      onDeleteConcert(c.id);
+                    }
+                  }}
+                  className="p-2 text-stone-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded-lg transition-colors"
+                  title="공연 일정 삭제"
+                >
+                  <Trash2 className="w-4 h-4" />
+                </button>
+              </div>
             </div>
           ))}
         </div>
@@ -585,6 +749,187 @@ export default function AdminCenter({
                   className="px-5 py-2 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold shadow-md transition-all"
                 >
                   공연 등록 완료
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Manual Edit Modal (공연 정보 수동 수정 모달) */}
+      {editingConcert && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
+          onClick={() => setEditingConcert(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="bg-white dark:bg-hall-900 rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto border border-stone-200 dark:border-hall-750 shadow-2xl p-6 sm:p-8 space-y-6"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="p-1 rounded-md bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 text-[11px] font-bold">
+                  공연 정보 수동 교정
+                </span>
+              </div>
+              <h2 className="font-serif font-bold text-xl text-stone-900 dark:text-stone-50 flex items-center gap-2 mt-1">
+                <Edit3 className="w-5 h-5 text-concert-500" />
+                <span>공연 정보 상세 수정</span>
+              </h2>
+              <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">
+                잘못 수집되었거나 변경된 연주자, 프로그램, 공연일시, 예매처 정보를 관리자가 직접 수정합니다.
+              </p>
+            </div>
+
+            <form onSubmit={handleEditSubmit} className="space-y-4">
+              <div>
+                <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  공연 명칭 *
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={editingConcert.title}
+                  onChange={(e) => setEditingConcert({ ...editingConcert, title: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    공연 날짜 *
+                  </label>
+                  <input
+                    type="date"
+                    required
+                    value={editingConcert.date}
+                    onChange={(e) => setEditingConcert({ ...editingConcert, date: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    시작 시간
+                  </label>
+                  <input
+                    type="time"
+                    value={editingConcert.time}
+                    onChange={(e) => setEditingConcert({ ...editingConcert, time: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    공연장 / 홀
+                  </label>
+                  <input
+                    type="text"
+                    value={editingConcert.venue}
+                    onChange={(e) => setEditingConcert({ ...editingConcert, venue: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    예매 진행 상태
+                  </label>
+                  <select
+                    value={editingConcert.status}
+                    onChange={(e) => setEditingConcert({ ...editingConcert, status: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  >
+                    <option value="예매중">예매중</option>
+                    <option value="매진임박">매진임박</option>
+                    <option value="매진">매진</option>
+                    <option value="지나간 공연">지나간 공연</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  출연진 (쉼표로 구분) *
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={editingConcert.performers}
+                  onChange={(e) => setEditingConcert({ ...editingConcert, performers: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  작곡가 (쉼표로 구분)
+                </label>
+                <input
+                  type="text"
+                  value={editingConcert.composers}
+                  onChange={(e) => setEditingConcert({ ...editingConcert, composers: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  연주 프로그램 (줄바꿈으로 구분)
+                </label>
+                <textarea
+                  rows={3}
+                  value={editingConcert.pieces}
+                  onChange={(e) => setEditingConcert({ ...editingConcert, pieces: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    티켓 가격 정보
+                  </label>
+                  <input
+                    type="text"
+                    value={editingConcert.price}
+                    onChange={(e) => setEditingConcert({ ...editingConcert, price: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    예매처 공식 링크
+                  </label>
+                  <input
+                    type="text"
+                    value={editingConcert.ticketUrl}
+                    onChange={(e) => setEditingConcert({ ...editingConcert, ticketUrl: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  />
+                </div>
+              </div>
+
+              <div className="flex items-center justify-end gap-2 pt-4 border-t border-stone-100 dark:border-hall-800">
+                <button
+                  type="button"
+                  onClick={() => setEditingConcert(null)}
+                  className="px-4 py-2 rounded-xl bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 text-xs font-semibold"
+                >
+                  취소
+                </button>
+                <button
+                  type="submit"
+                  className="px-5 py-2 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold shadow-md transition-all"
+                >
+                  수정 내용 저장
                 </button>
               </div>
             </form>
