@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, Calendar, MapPin, User, Music, Tag, ExternalLink, MessageSquarePlus, ShieldAlert, CheckCircle2 } from 'lucide-react';
+import { X, Calendar, MapPin, User, Music, Tag, ExternalLink, MessageSquarePlus, ShieldAlert, CheckCircle2, Clock } from 'lucide-react';
 import { formatKoreanDate, getDisplayStatus, isPastConcert } from '../utils/parser.js';
 
 export default function ConcertDetailModal({ concert, onClose, onOpenReview, relatedPosts }) {
@@ -44,33 +44,57 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
           {/* Title & Badges */}
           <div className="space-y-3 pr-10">
             <div className="flex items-center gap-2 flex-wrap">
-              {concert.crawlerBlocked ? (
-                <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-950/80 text-amber-300 border border-amber-500/30">
-                  <ShieldAlert className="w-3.5 h-3.5" />
-                  <span>수동 등록 공연</span>
-                </span>
-              ) : (
-                <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-950/80 text-emerald-300 border border-emerald-500/30">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  <span>공식 전산 연동</span>
-                </span>
-              )}
               <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-concert-500 text-white">
                 {concert.performerType}
               </span>
               {displayStatus && (
-                <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${
+                <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold ${
                   displayStatus === '지나간 공연'
-                    ? 'bg-stone-800 text-stone-300 border border-stone-700'
+                    ? 'bg-stone-200 text-stone-900 border border-stone-300'
+                    : displayStatus === '예매중'
+                    ? 'bg-emerald-950/70 text-emerald-300 border border-emerald-500/40'
                     : 'bg-stone-800 text-concert-300 border border-concert-500/30'
                 }`}>
-                  {displayStatus}
+                  {displayStatus === '지나간 공연' ? (
+                    <Clock className="w-3.5 h-3.5 text-stone-600 shrink-0" />
+                  ) : displayStatus === '예매중' ? (
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  ) : null}
+                  <span>{displayStatus}</span>
                 </span>
               )}
             </div>
 
             <h2 className="font-serif font-bold text-xl sm:text-2xl text-white leading-snug">
-              {concert.title}
+              {(() => {
+                const dashIdx = concert.title.indexOf(' - ');
+                if (dashIdx !== -1) {
+                  const part1 = concert.title.substring(0, dashIdx);
+                  const part2 = concert.title.substring(dashIdx + 3);
+                  return (
+                    <>
+                      <span className="block">{part1} -</span>
+                      <span className="block text-lg sm:text-xl font-medium text-stone-200 mt-1">
+                        {part2}
+                      </span>
+                    </>
+                  );
+                }
+                const singleDashIdx = concert.title.indexOf('-');
+                if (singleDashIdx !== -1 && singleDashIdx > 0 && singleDashIdx < concert.title.length - 1) {
+                  const part1 = concert.title.substring(0, singleDashIdx);
+                  const part2 = concert.title.substring(singleDashIdx + 1).trim();
+                  return (
+                    <>
+                      <span className="block">{part1} -</span>
+                      <span className="block text-lg sm:text-xl font-medium text-stone-200 mt-1">
+                        {part2}
+                      </span>
+                    </>
+                  );
+                }
+                return concert.title;
+              })()}
             </h2>
           </div>
         </div>

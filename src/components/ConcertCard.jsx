@@ -30,29 +30,22 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
 
           {/* Status Badges */}
           <div className="flex items-center gap-1.5 flex-nowrap shrink-0">
-            {isBlocked ? (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200/60 dark:border-amber-900/60 shrink-0">
-                <ShieldAlert className="w-3 h-3 text-amber-600 dark:text-amber-400" />
-                <span>수동 등록</span>
-              </span>
-            ) : (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-900/60 shrink-0">
-                <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
-                <span>공식 연동</span>
-              </span>
-            )}
-
             {displayStatus && (
-              <span className={`px-2 py-0.5 rounded text-[10px] font-bold shrink-0 ${
+              <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[10px] font-bold shrink-0 ${
                 displayStatus === '지나간 공연'
-                  ? 'bg-stone-100 dark:bg-hall-800 text-stone-500 dark:text-stone-400 border border-stone-200 dark:border-hall-700'
+                  ? 'bg-stone-100 dark:bg-stone-200 text-stone-900 border border-stone-300'
                   : displayStatus === '매진'
                   ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-200/60 dark:border-rose-900/60'
                   : displayStatus === '매진임박'
                   ? 'bg-orange-100 dark:bg-orange-950/60 text-orange-800 dark:text-orange-300 border border-orange-200/60 dark:border-orange-900/60'
-                  : 'bg-teal-50 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 border border-teal-200/60 dark:border-teal-900/60'
+                  : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border border-emerald-200/70 dark:border-emerald-800/60'
               }`}>
-                {displayStatus}
+                {displayStatus === '지나간 공연' ? (
+                  <Clock className="w-3 h-3 text-stone-500 shrink-0" />
+                ) : displayStatus === '예매중' ? (
+                  <CheckCircle2 className="w-3 h-3 text-emerald-500 shrink-0" />
+                ) : null}
+                <span>{displayStatus}</span>
               </span>
             )}
           </div>
@@ -77,12 +70,40 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
       {/* Main Content Body */}
       <div className="space-y-3 flex-1 flex flex-col justify-between">
         <div>
-          {/* Title */}
+          {/* Title: Break line after '-' */}
           <h3 
             onClick={() => onSelect(concert)}
-            className="font-serif font-bold text-base md:text-lg text-stone-900 dark:text-stone-50 line-clamp-2 hover:text-concert-600 dark:hover:text-concert-400 cursor-pointer transition-colors leading-snug"
+            className="font-serif font-bold text-base md:text-lg text-stone-900 dark:text-stone-50 hover:text-concert-600 dark:hover:text-concert-400 cursor-pointer transition-colors leading-snug"
           >
-            {concert.title}
+            {(() => {
+              const dashIdx = concert.title.indexOf(' - ');
+              if (dashIdx !== -1) {
+                const part1 = concert.title.substring(0, dashIdx);
+                const part2 = concert.title.substring(dashIdx + 3);
+                return (
+                  <>
+                    <span className="block">{part1} -</span>
+                    <span className="block text-sm md:text-base font-medium text-stone-700 dark:text-stone-200 mt-0.5 line-clamp-2">
+                      {part2}
+                    </span>
+                  </>
+                );
+              }
+              const singleDashIdx = concert.title.indexOf('-');
+              if (singleDashIdx !== -1 && singleDashIdx > 0 && singleDashIdx < concert.title.length - 1) {
+                const part1 = concert.title.substring(0, singleDashIdx);
+                const part2 = concert.title.substring(singleDashIdx + 1).trim();
+                return (
+                  <>
+                    <span className="block">{part1} -</span>
+                    <span className="block text-sm md:text-base font-medium text-stone-700 dark:text-stone-200 mt-0.5 line-clamp-2">
+                      {part2}
+                    </span>
+                  </>
+                );
+              }
+              return <span className="line-clamp-2">{concert.title}</span>;
+            })()}
           </h3>
 
           {/* Details: Venue & Performers */}

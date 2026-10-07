@@ -115,7 +115,7 @@ export default function FilterBar({
               }`}
             >
               <LayoutGrid className="w-3.5 h-3.5 text-concert-500" />
-              <span className="shrink-0">목록 보기 (Cards)</span>
+              <span className="shrink-0">목록 보기</span>
             </button>
 
             <button
@@ -127,7 +127,7 @@ export default function FilterBar({
               }`}
             >
               <CalendarDays className="w-3.5 h-3.5 text-concert-500" />
-              <span className="shrink-0">달력 보기 (Calendar)</span>
+              <span className="shrink-0">달력 보기</span>
             </button>
           </div>
         </div>
