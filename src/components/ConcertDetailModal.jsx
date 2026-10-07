@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { X, Calendar, MapPin, User, Music, Tag, ExternalLink, MessageSquarePlus, ShieldAlert, CheckCircle2 } from 'lucide-react';
-import { formatKoreanDate } from '../utils/parser';
+import { formatKoreanDate, getDisplayStatus, isPastConcert } from '../utils/parser.js';
 
 export default function ConcertDetailModal({ concert, onClose, onOpenReview, relatedPosts }) {
   // ESC 키 이벤트 바인딩 (Gate 2 준수)
@@ -15,6 +15,9 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
   }, [onClose]);
 
   if (!concert) return null;
+
+  const isPast = isPastConcert(concert.date, concert.time);
+  const displayStatus = getDisplayStatus(concert);
 
   return (
     <div
@@ -55,6 +58,15 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
               <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-concert-500 text-white">
                 {concert.performerType}
               </span>
+              {displayStatus && (
+                <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${
+                  displayStatus === '지나간 공연'
+                    ? 'bg-stone-800 text-stone-300 border border-stone-700'
+                    : 'bg-stone-800 text-concert-300 border border-concert-500/30'
+                }`}>
+                  {displayStatus}
+                </span>
+              )}
             </div>
 
             <h2 className="font-serif font-bold text-xl sm:text-2xl text-white leading-snug">

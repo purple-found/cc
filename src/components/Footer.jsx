@@ -23,7 +23,7 @@ export default function Footer({ onOpenAdminAuth }) {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 text-xs text-stone-400 dark:text-stone-500 md:pl-4">
+          <div className="flex items-center gap-3 text-xs text-stone-400 dark:text-stone-500 md:ml-auto md:pl-16">
             <span className="tracking-tight">© 2026 OPUS KOREA. 모든 음악의 울림과 함께합니다.</span>
             {/* Hidden admin access trigger */}
             <button

@@ -83,3 +83,37 @@ export function formatKoreanDate(dateString) {
     return dateString;
   }
 }
+
+/**
+ * 공연 일시 경과 여부 확인 도우미
+ * 공연일(date) 및 시작시간(time)을 기준으로 현재 시점 이후인지 판별
+ */
+export function isPastConcert(dateString, timeString = '23:59') {
+  if (!dateString) return false;
+  try {
+    const time = timeString ? timeString.slice(0, 5) : '23:59';
+    const concertDateTime = new Date(`${dateString}T${time}:00`);
+    if (isNaN(concertDateTime.getTime())) {
+      // YYYY-MM-DD 날짜만으로 비교
+      const today = new Date();
+      const concertDate = new Date(`${dateString}T23:59:59`);
+      return concertDate < today;
+    }
+    return concertDateTime < new Date();
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * 공연 상태 표시 텍스트 계산
+ * 공연일이 이미 지난 경우 '지나간 공연'으로 자동 전환
+ */
+export function getDisplayStatus(concert) {
+  if (!concert) return '';
+  if (isPastConcert(concert.date, concert.time)) {
+    return '지나간 공연';
+  }
+  return concert.status || '예매중';
+}
+

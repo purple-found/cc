@@ -1,9 +1,11 @@
 import React from 'react';
-import { Calendar, MapPin, User, Music2, ExternalLink, MessageSquarePlus, Info, CheckCircle2, ShieldAlert, Sparkles } from 'lucide-react';
-import { formatKoreanDate } from '../utils/parser.js';
+import { Calendar, MapPin, User, Music2, ExternalLink, MessageSquarePlus, Info, CheckCircle2, ShieldAlert, Sparkles, Clock } from 'lucide-react';
+import { formatKoreanDate, getDisplayStatus, isPastConcert } from '../utils/parser.js';
 
 export default function ConcertCard({ concert, onSelect, onOpenReview }) {
   const isBlocked = concert.crawlerBlocked;
+  const isPast = isPastConcert(concert.date, concert.time);
+  const displayStatus = getDisplayStatus(concert);
 
   // 날짜 파싱 (예: 2026-10-05 -> 10월 5일)
   const dateParts = concert.date ? concert.date.split('-') : ['2026', '10', '01'];
@@ -16,7 +18,9 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
         <div className="flex items-center justify-between gap-2 flex-wrap">
           {/* Elegant Date Badge */}
           <div className="flex items-center gap-2">
-            <span className="font-serif font-black text-xl text-concert-700 dark:text-concert-300 tracking-tight">
+            <span className={`font-serif font-black text-xl tracking-tight ${
+              isPast ? 'text-stone-400 dark:text-stone-500' : 'text-concert-700 dark:text-concert-300'
+            }`}>
               {monthDay}
             </span>
             <span className="text-[11px] font-semibold text-stone-500 dark:text-stone-400">
@@ -38,15 +42,17 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
               </span>
             )}
 
-            {concert.status && (
+            {displayStatus && (
               <span className={`px-2 py-0.5 rounded text-[10px] font-bold shrink-0 ${
-                concert.status === '매진'
+                displayStatus === '지나간 공연'
+                  ? 'bg-stone-100 dark:bg-hall-800 text-stone-500 dark:text-stone-400 border border-stone-200 dark:border-hall-700'
+                  : displayStatus === '매진'
                   ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-200/60 dark:border-rose-900/60'
-                  : concert.status === '매진임박'
+                  : displayStatus === '매진임박'
                   ? 'bg-orange-100 dark:bg-orange-950/60 text-orange-800 dark:text-orange-300 border border-orange-200/60 dark:border-orange-900/60'
                   : 'bg-teal-50 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 border border-teal-200/60 dark:border-teal-900/60'
               }`}>
-                {concert.status}
+                {displayStatus}
               </span>
             )}
           </div>
