@@ -346,9 +346,10 @@ export default function CommunityBoard({
                   setActivePost((prev) => ({ ...prev, likes: prev.likes + 1 }));
                 }}
                 className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 dark:hover:bg-rose-900/60 text-rose-600 dark:text-rose-300 font-bold text-xs transition-all border border-rose-200 dark:border-rose-900 shadow-xs"
+                aria-label={`공감 ${activePost.likes}`}
               >
                 <Heart className="w-4 h-4 fill-current" />
-                <span>공감해요 {activePost.likes}</span>
+                <span>{activePost.likes}</span>
               </button>
             </div>
 
@@ -366,14 +367,13 @@ export default function CommunityBoard({
                     type="text"
                     value={commentInput.author}
                     onChange={(e) => setCommentInput({ ...commentInput, author: e.target.value })}
-                    placeholder="닉네임 (기본: 클래식 청중)"
-                    className="w-36 px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                    placeholder="닉네임"
+                    className="w-28 sm:w-32 px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                   />
                   <input
                     type="text"
                     value={commentInput.content}
                     onChange={(e) => setCommentInput({ ...commentInput, content: e.target.value })}
-                    placeholder="공연에 대한 생각이나 의견을 남겨주세요..."
                     className="flex-1 px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                   />
                   <button
