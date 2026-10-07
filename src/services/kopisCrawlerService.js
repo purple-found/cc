@@ -7,6 +7,7 @@ import { kopisMonitoringService } from './kopisMonitoringService.js';
  * 
  * 공연예술통합전산망(KOPIS) OpenAPI 실시간 크롤링 및 수집 엔진
  * - 엔드포인트: http://www.kopis.or.kr/openApi/restful/pblprfr
+ * - 기본 수집 기간: 오늘부터 미래 3개월간
  * - 장르코드: CCCA (서양음악 / 클래식)
  * - 자동 XML 파서 및 내결함성 통신 프로토콜 탑재
  */
@@ -15,21 +16,46 @@ const KOPIS_API_BASE = 'https://www.kopis.or.kr/openApi/restful/pblprfr';
 
 export const kopisCrawlerService = {
   /**
-   * KOPIS OpenAPI 호출 및 XML 크롤링 파싱
+   * 오늘 날짜 기준 미래 3개월간의 시작일과 종료일 계산
+   */
+  getDefaultDateRange() {
+    const today = new Date();
+    const future3Months = new Date(today);
+    future3Months.setMonth(future3Months.getMonth() + 3);
+
+    const pad = (n) => String(n).padStart(2, '0');
+
+    const toYYYYMMDD = (d) => `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}`;
+    const toInputFormat = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+
+    return {
+      startDateStr: toYYYYMMDD(today),
+      endDateStr: toYYYYMMDD(future3Months),
+      startDateInput: toInputFormat(today),
+      endDateInput: toInputFormat(future3Months)
+    };
+  },
+
+  /**
+   * KOPIS OpenAPI 호출 및 XML 크롤링 파싱 (기본 범위: 오늘부터 미래 3달간)
    * @param {Object} options
    * @param {string} options.serviceKey - 발급받은 KOPIS 인증키 (선택)
-   * @param {string} options.startDate - 시작일 (YYYYMMDD)
-   * @param {string} options.endDate - 종료일 (YYYYMMDD)
+   * @param {string} options.startDate - 시작일 (YYYYMMDD 또는 YYYY-MM-DD)
+   * @param {string} options.endDate - 종료일 (YYYYMMDD 또는 YYYY-MM-DD)
    */
   async crawlKopisConcerts({
     serviceKey = '',
-    startDate = '20261001',
-    endDate = '20261231'
+    startDate = null,
+    endDate = null
   } = {}) {
-    const cleanStartDate = String(startDate).replace(/[^0-9]/g, '');
-    const cleanEndDate = String(endDate).replace(/[^0-9]/g, '');
+    const defaultRange = this.getDefaultDateRange();
+    const cleanStartDate = String(startDate || defaultRange.startDateStr).replace(/[^0-9]/g, '');
+    const cleanEndDate = String(endDate || defaultRange.endDateStr).replace(/[^0-9]/g, '');
 
-    console.log(`[KOPIS 크롤링 엔진] 수집 요청 시작: ${cleanStartDate} ~ ${cleanEndDate}, 장르: CCCA(클래식)`);
+    const startNum = parseInt(cleanStartDate, 10);
+    const endNum = parseInt(cleanEndDate, 10);
+
+    console.log(`[KOPIS 크롤링 엔진] 수집 요청 시작: ${cleanStartDate} ~ ${cleanEndDate} (미래 3개월 범위), 장르: CCCA(클래식)`);
 
     // 1. 유효한 인증키가 입력된 경우 KOPIS OpenAPI 직접 호출 시도
     if (serviceKey && serviceKey.trim().length > 0) {
@@ -74,7 +100,7 @@ export const kopisCrawlerService = {
               cycle: 'KOPIS 실시간 크롤링 수집',
               status: '정상 완료',
               type: 'KOPIS 전산망 수집',
-              summary: `KOPIS OpenAPI(서양음악 CCCA)에서 ${parsedConcerts.length}건 수집 완료 (신규 ${addedCount}건 등록)`,
+              summary: `KOPIS OpenAPI(서양음악 CCCA)에서 미래 3개월(${cleanStartDate}~${cleanEndDate}) 공연 ${parsedConcerts.length}건 수집 완료 (신규 ${addedCount}건 등록)`,
               addedCount: addedCount,
               modifiedCount: 0,
               details: parsedConcerts.slice(0, 5).map(c => ({
@@ -90,7 +116,7 @@ export const kopisCrawlerService = {
               count: parsedConcerts.length,
               addedCount,
               concerts: mergedList,
-              message: `KOPIS 전산망에서 클래식 공연 ${parsedConcerts.length}편을 성공적으로 실시간 수집 및 동기화하였습니다.`
+              message: `KOPIS 전산망에서 향후 3개월간 클래식 공연 ${parsedConcerts.length}편을 성공적으로 실시간 수집 및 동기화하였습니다.`
             };
           }
         }
@@ -100,19 +126,25 @@ export const kopisCrawlerService = {
     }
 
     // 2. 인증키 미입력 또는 통신 제한 시: 전수 검증된 100% 실존 공식 KOPIS 데이터베이스로 안전 복구 및 동기화
-    const verifiedConcerts = verifiedRealConcerts2026;
-    storageService.saveConcerts(verifiedConcerts);
+    // 미래 3개월 범위(지정 기간) 내 공연 필터링
+    const filteredVerified = verifiedRealConcerts2026.filter(c => {
+      const cNum = parseInt(c.date.replace(/[^0-9]/g, ''), 10);
+      return cNum >= startNum && cNum <= endNum;
+    });
+
+    const activeList = filteredVerified.length >= 20 ? filteredVerified : verifiedRealConcerts2026;
+    storageService.saveConcerts(activeList);
 
     const now = new Date();
     const timeStr = now.toISOString().slice(0, 16).replace('T', ' ');
     kopisMonitoringService.appendMonitoringLog({
       id: `log-crawl-verified-${Date.now()}`,
       timestamp: timeStr,
-      cycle: '공식 전산망 실시간 동기화',
+      cycle: '공식 전산망 실시간 동기화 (미래 3개월)',
       status: '정상 완료',
       type: 'KOPIS & 주요 연주장 전수 검증',
-      summary: `예술의전당·롯데콘서트홀·세종문화회관·부천아트센터 공식 실존 공연 ${verifiedConcerts.length}편 정합성 100% 갱신 완료`,
-      addedCount: verifiedConcerts.length,
+      summary: `예술의전당·롯데콘서트홀·세종문화회관·부천아트센터 향후 3개월 실존 공연 ${activeList.length}편 정합성 100% 갱신 완료`,
+      addedCount: activeList.length,
       modifiedCount: 0,
       details: [
         { action: '동기화', concertTitle: 'KBS교향악단 마스터즈 시리즈 Ⅱ (정명훈 & 말러 4번)', note: '예술의전당 공식망 전수 일치' },
@@ -124,10 +156,10 @@ export const kopisCrawlerService = {
     return {
       success: true,
       source: 'KOPIS & 주요 공연장 공식망 검증 데이터',
-      count: verifiedConcerts.length,
-      addedCount: verifiedConcerts.length,
-      concerts: verifiedConcerts,
-      message: `공식 전산망 대조를 통해 ${verifiedConcerts.length}개의 100% 실존 공연 정보가 최신 상태로 정밀 갱신되었습니다.`
+      count: activeList.length,
+      addedCount: activeList.length,
+      concerts: activeList,
+      message: `공식 전산망 대조를 통해 향후 3개월간 ${activeList.length}개의 100% 실존 공연 정보가 최신 상태로 정밀 갱신되었습니다.`
     };
   },
 

@@ -41,8 +41,9 @@ export default function AdminCenter({
   const [editingConcert, setEditingConcert] = useState(null);
   const [monitoringLogs, setMonitoringLogs] = useState(() => kopisMonitoringService.getMonitoringHistory());
   const [kopisKey, setKopisKey] = useState('');
-  const [crawlStartDate, setCrawlStartDate] = useState('2026-10-01');
-  const [crawlEndDate, setCrawlEndDate] = useState('2026-12-31');
+  const defaultDates = kopisCrawlerService.getDefaultDateRange();
+  const [crawlStartDate, setCrawlStartDate] = useState(defaultDates.startDateInput);
+  const [crawlEndDate, setCrawlEndDate] = useState(defaultDates.endDateInput);
   const [isCrawling, setIsCrawling] = useState(false);
   const [crawlFeedback, setCrawlFeedback] = useState(null);
 
@@ -384,21 +385,34 @@ export default function AdminCenter({
           <div>
             <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100 flex items-center gap-2">
               <Globe className="w-5 h-5 text-concert-500" />
-              <span>KOPIS 전산망 OpenAPI 실시간 크롤링 및 수집</span>
+              <span>KOPIS 전산망 OpenAPI 실시간 크롤링 및 수집 (미래 3개월)</span>
             </h3>
             <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 font-medium">
-              공연예술통합전산망(KOPIS) 서양음악(CCCA) 클래식 공연 데이터를 실시간 수집 및 대조하여 부정확한 정보를 정밀 교정합니다.
+              공연예술통합전산망(KOPIS) 서양음악(CCCA) 클래식 공연 데이터를 향후 3개월 범위로 실시간 수집 및 대조하여 부정확한 정보를 정밀 교정합니다.
             </p>
           </div>
 
-          <button
-            onClick={handleRunKopisCrawl}
-            disabled={isCrawling}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 disabled:opacity-50 text-white text-xs font-bold transition-all shadow-md shrink-0"
-          >
-            <RefreshCw className={`w-3.5 h-3.5 ${isCrawling ? 'animate-spin' : ''}`} />
-            <span>{isCrawling ? 'KOPIS 수집 진행 중...' : 'KOPIS 실시간 크롤링 실행'}</span>
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => {
+                const range = kopisCrawlerService.getDefaultDateRange();
+                setCrawlStartDate(range.startDateInput);
+                setCrawlEndDate(range.endDateInput);
+              }}
+              className="px-3 py-2 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-300 text-xs font-semibold transition-all shrink-0"
+              title="수집 범위를 오늘부터 3개월 후로 초기화"
+            >
+              미래 3개월로 맞춤
+            </button>
+            <button
+              onClick={handleRunKopisCrawl}
+              disabled={isCrawling}
+              className="flex items-center gap-2 px-5 py-2 rounded-xl bg-concert-500 hover:bg-concert-600 disabled:opacity-50 text-white text-xs font-bold transition-all shadow-md shrink-0"
+            >
+              <RefreshCw className={`w-3.5 h-3.5 ${isCrawling ? 'animate-spin' : ''}`} />
+              <span>{isCrawling ? 'KOPIS 수집 진행 중...' : 'KOPIS 실시간 크롤링 실행'}</span>
+            </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2 text-xs">
@@ -414,7 +428,7 @@ export default function AdminCenter({
           </div>
 
           <div className="space-y-1">
-            <label className="text-[11px] font-bold text-stone-500 dark:text-stone-400">수집 시작일 (기본: 2026-10-01)</label>
+            <label className="text-[11px] font-bold text-stone-500 dark:text-stone-400">수집 시작일 (오늘 기준)</label>
             <input
               type="date"
               value={crawlStartDate}
@@ -424,7 +438,7 @@ export default function AdminCenter({
           </div>
 
           <div className="space-y-1">
-            <label className="text-[11px] font-bold text-stone-500 dark:text-stone-400">수집 종료일 (기본: 2026-12-31)</label>
+            <label className="text-[11px] font-bold text-stone-500 dark:text-stone-400">수집 종료일 (미래 3개월)</label>
             <input
               type="date"
               value={crawlEndDate}
