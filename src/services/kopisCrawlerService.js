@@ -1,6 +1,7 @@
 import { verifiedRealConcerts2026 } from '../data/verifiedRealConcerts2026.js';
 import { storageService } from './storageService.js';
 import { kopisMonitoringService } from './kopisMonitoringService.js';
+import { formatKSTDateTime } from '../utils/parser.js';
 
 /**
  * kopisCrawlerService.js
@@ -93,7 +94,7 @@ export const kopisCrawlerService = {
 
             // 실제 크롤링 완료 이력 1건 기록
             const now = new Date();
-            const timeStr = now.toISOString().slice(0, 16).replace('T', ' ');
+            const timeStr = formatKSTDateTime(now);
             kopisMonitoringService.appendMonitoringLog({
               id: `log-crawl-${Date.now()}`,
               timestamp: timeStr,
@@ -136,7 +137,7 @@ export const kopisCrawlerService = {
     storageService.saveConcerts(activeList);
 
     const now = new Date();
-    const timeStr = now.toISOString().slice(0, 16).replace('T', ' ');
+    const timeStr = formatKSTDateTime(now);
     kopisMonitoringService.appendMonitoringLog({
       id: `log-crawl-verified-${Date.now()}`,
       timestamp: timeStr,

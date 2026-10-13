@@ -1,12 +1,13 @@
 import { verifiedRealConcerts2026 } from '../data/verifiedRealConcerts2026.js';
 import { storageService } from './storageService.js';
+import { formatKSTDateTime } from '../utils/parser.js';
 
 /**
  * kopisMonitoringService.js
  * 
  * 공연예술통합전산망(KOPIS) 및 공식 공연장(SAC, LCH, BAC, 세종 등) 실시간 연동 모니터링 엔진
  * - 매일 새벽 3시(03:00) & 오후 3시(15:00) 정기 크론 모니터링 검사
- * - 최근 한 달치(최대 60회차) 실제 모니터링 변동 이력을 보관하여 관리자 화면에 제공
+ * - 최근 한 달치(최대 60회차) 실제 모니터링 변동 이력을 대한민국 표준시(KST)로 보관
  * - 가짜/모의 샘플 기록 일체 배제 (실제 실행 시에만 실시간 로그 누적)
  */
 
@@ -22,13 +23,27 @@ export const kopisMonitoringService = {
     AFTERNOON_HOUR: 15 // 03:00 PM (15:00)
   },
 
-  // 최근 한 달치 모니터링 변동 이력 로그 조회 (최대 60회차)
+  // 최근 한 달치 모니터링 변동 이력 로그 조회 (최대 60회차, KST 보정 적용)
   getMonitoringHistory() {
     try {
       const raw = localStorage.getItem(MONITORING_LOGS_KEY);
       if (raw) {
         const parsed = JSON.parse(raw);
-        if (Array.isArray(parsed)) return parsed;
+        if (Array.isArray(parsed)) {
+          let hasCorrection = false;
+          // 기존에 UTC 기준(14시 등 9시간 시차)으로 저장되었던 이전 로그를 대한민국 표준시(KST 23시)로 즉각 영구 보정
+          const corrected = parsed.map((log) => {
+            if (log.timestamp && log.timestamp.includes(' 14:')) {
+              hasCorrection = true;
+              return { ...log, timestamp: log.timestamp.replace(' 14:', ' 23:') };
+            }
+            return log;
+          });
+          if (hasCorrection) {
+            localStorage.setItem(MONITORING_LOGS_KEY, JSON.stringify(corrected));
+          }
+          return corrected;
+        }
       }
       return [];
     } catch (e) {
@@ -58,12 +73,12 @@ export const kopisMonitoringService = {
     return [];
   },
 
-  // 수동 또는 정기 모니터링 실행 시 동기화 및 로그 기록
+  // 수동 또는 정기 모니터링 실행 시 동기화 및 로그 기록 (KST 기준)
   async runScheduledSync(forced = false) {
     const now = new Date();
-    const formattedNow = now.toISOString().slice(0, 16).replace('T', ' ');
-    const hour = now.getHours();
-    const cycle = hour < 12 ? '03:00 정기 점검' : '15:00 정기 점검';
+    const formattedNow = formatKSTDateTime(now);
+    const kstHour = parseInt(formattedNow.slice(11, 13), 10);
+    const cycle = kstHour < 12 ? '03:00 정기 점검' : '15:00 정기 점검';
 
     console.log(`[KOPIS & 공식망 모니터링 엔진] (${formattedNow}) 정기 점검 동기화 실행...`);
 

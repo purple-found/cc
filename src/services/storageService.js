@@ -1,4 +1,4 @@
-import { safeParseJSON } from '../utils/parser.js';
+import { safeParseJSON, formatKSTDateTime } from '../utils/parser.js';
 import { verifiedRealConcerts2026 } from '../data/verifiedRealConcerts2026.js';
 import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
@@ -137,7 +137,7 @@ export const storageService = {
     const newPost = {
       ...postData,
       id: `post-${Date.now()}`,
-      createdAt: new Date().toISOString().slice(0, 16).replace('T', ' '),
+      createdAt: formatKSTDateTime(new Date()),
       likes: 0,
       views: 1,
       comments: []
@@ -160,7 +160,7 @@ export const storageService = {
               id: `c-${Date.now()}`,
               author: commentData.author || '클래식 동행',
               content: commentData.content,
-              createdAt: new Date().toISOString().slice(0, 16).replace('T', ' ')
+              createdAt: formatKSTDateTime(new Date())
             }
           ]
         };
@@ -220,7 +220,7 @@ export const storageService = {
       ...tipData,
       id: `tip-${Date.now()}`,
       status: 'pending',
-      createdAt: new Date().toISOString().slice(0, 16).replace('T', ' ')
+      createdAt: formatKSTDateTime(new Date())
     };
     const updated = [newTip, ...list];
     this.saveTips(updated);

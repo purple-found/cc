@@ -66,6 +66,33 @@ export function sanitizeText(text) {
 }
 
 /**
+ * 한국 표준시(KST, UTC+9) 기준 날짜/시간 문자열 포맷팅 (YYYY-MM-DD HH:mm)
+ * 브라우저 및 시스템 시차(UTC 등)와 관계없이 항상 대한민국 표준시(KST)로 정확히 표시
+ */
+export function formatKSTDateTime(date = new Date()) {
+  const d = date instanceof Date ? date : new Date(date);
+  if (isNaN(d.getTime())) return '';
+
+  try {
+    const formatter = new Intl.DateTimeFormat('ko-KR', {
+      timeZone: 'Asia/Seoul',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    });
+    const parts = formatter.formatToParts(d);
+    const getPart = (type) => parts.find((p) => p.type === type)?.value || '';
+    return `${getPart('year')}-${getPart('month')}-${getPart('day')} ${getPart('hour')}:${getPart('minute')}`;
+  } catch (e) {
+    const pad = (n) => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  }
+}
+
+/**
  * 날짜 포맷팅 도우미 (YYYY.MM.DD (요일))
  */
 export function formatKoreanDate(dateString) {

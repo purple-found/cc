@@ -13,7 +13,7 @@ import ErrorFallback from './components/ErrorFallback';
 import Footer from './components/Footer';
 import { storageService } from './services/storageService';
 import { kopisMonitoringService } from './services/kopisMonitoringService.js';
-import { isPastConcert } from './utils/parser.js';
+import { isPastConcert, formatKSTDateTime } from './utils/parser.js';
 import { Sparkles, Calendar, MessageSquare, AlertCircle } from 'lucide-react';
 
 export default function App() {
@@ -148,7 +148,7 @@ export default function App() {
       const currentHalls = storageService.getHalls();
       const updatedHalls = currentHalls.map((h) => ({
         ...h,
-        lastSyncTime: new Date().toISOString().slice(0, 16).replace('T', ' ')
+        lastSyncTime: formatKSTDateTime(new Date())
       }));
       storageService.saveHalls(updatedHalls);
       setHalls(updatedHalls);

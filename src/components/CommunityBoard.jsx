@@ -13,6 +13,7 @@ import {
   MessageCircle,
   Sparkles
 } from 'lucide-react';
+import { formatKSTDateTime } from '../utils/parser.js';
 
 export default function CommunityBoard({
   posts,
@@ -117,7 +118,7 @@ export default function CommunityBoard({
           id: `c-${Date.now()}`,
           author: commentInput.author.trim() || '클래식 청중',
           content: commentInput.content.trim(),
-          createdAt: new Date().toISOString().slice(0, 16).replace('T', ' ')
+          createdAt: formatKSTDateTime(new Date())
         }
       ]
     }));
