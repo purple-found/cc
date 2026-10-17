@@ -252,6 +252,8 @@ export default function App() {
           if (!v.includes('대전') || !v.includes('예술의전당')) return false;
         } else if (filters.venue === '광주예술의전당') {
           if (!v.includes('광주') || !v.includes('예술의전당')) return false;
+        } else if (filters.venue === '청주예술의전당') {
+          if (!v.includes('청주') || !v.includes('예술의전당')) return false;
         } else {
           const vQuery = filters.venue.toLowerCase();
           if (!v.toLowerCase().includes(vQuery)) {
@@ -265,13 +267,6 @@ export default function App() {
         const cQuery = filters.composer.toLowerCase();
         const hasComp = (c.composers || []).some((comp) => comp.toLowerCase().includes(cQuery));
         if (!hasComp) return false;
-      }
-
-      // 4. 연주자/단체 필터
-      if (filters.performer !== 'all') {
-        const pQuery = filters.performer.toLowerCase();
-        const hasPerf = (c.performers || []).some((p) => p.toLowerCase().includes(pQuery));
-        if (!hasPerf) return false;
       }
 
       // 5. 날짜 필터
@@ -360,6 +355,7 @@ export default function App() {
               setViewMode={setViewMode}
               totalCount={concerts.length}
               filteredCount={filteredConcerts.length}
+              concerts={concerts}
             />
 
             {/* View Mode: Cards vs Calendar */}

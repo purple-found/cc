@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Search, RotateCcw, LayoutGrid, CalendarDays, Filter } from 'lucide-react';
 
 export default function FilterBar({
@@ -7,26 +7,57 @@ export default function FilterBar({
   viewMode,
   setViewMode,
   totalCount,
-  filteredCount
+  filteredCount,
+  concerts = []
 }) {
-  const venues = [
+  // 1. 주요 랜드마크 공연장 기본 목록
+  const primaryVenues = [
     { label: '전체 장소 (All Venues)', value: 'all' },
     { label: '예술의전당 (Seoul Arts Center)', value: '예술의전당' },
     { label: '롯데콘서트홀 (Lotte Concert Hall)', value: '롯데콘서트홀' },
     { label: '부천아트센터 (Bucheon Arts Center)', value: '부천아트센터' },
     { label: '세종문화회관 (Sejong Center)', value: '세종문화회관' },
     { label: '아트센터인천 (Art Center Incheon)', value: '아트센터인천' },
-    { label: '대전예술의전당 (Daejeon Arts Center)', value: '대전예술의전당' },
-    { label: '광주예술의전당 (Gwangju Arts Center)', value: '광주예술의전당' },
-    { label: '부산문화회관 (Busan Cultural Center)', value: '부산문화회관' },
-    { label: '대구콘서트하우스 (Daegu Concert House)', value: '대구콘서트하우스' },
-    { label: '통영국제음악당 (Tongyeong Music Hall)', value: '통영국제음악당' },
-    { label: '경기아트센터 (Gyeonggi Arts Center)', value: '경기아트센터' },
-    { label: '국립극장 (National Theater of Korea)', value: '국립극장' },
     { label: '금호아트홀 연세 (Kumho Art Hall)', value: '금호아트홀' },
     { label: 'LG아트센터 서울 (LG Arts Center)', value: 'LG아트센터' },
-    { label: '강릉아트센터 (Gangneung Arts Center)', value: '강릉아트센터' }
+    { label: '국립극장 (National Theater of Korea)', value: '국립극장' },
+    { label: '경기아트센터 (Gyeonggi Arts Center)', value: '경기아트센터' },
+    { label: '대구콘서트하우스 (Daegu Concert House)', value: '대구콘서트하우스' },
+    { label: '대전예술의전당 (Daejeon Arts Center)', value: '대전예술의전당' },
+    { label: '광주예술의전당 (Gwangju Arts Center)', value: '광주예술의전당' },
+    { label: '청주예술의전당 (Cheongju Arts Center)', value: '청주예술의전당' },
+    { label: '부산문화회관 (Busan Cultural Center)', value: '부산문화회관' },
+    { label: '부산콘서트홀 (Busan Concert Hall)', value: '부산콘서트홀' },
+    { label: '통영국제음악당 (Tongyeong Music Hall)', value: '통영국제음악당' },
+    { label: '강릉아트센터 (Gangneung Arts Center)', value: '강릉아트센터' },
+    { label: '성남아트센터 (Seongnam Arts Center)', value: '성남아트센터' },
+    { label: '고양아람누리 (Goyang Aram Nuri)', value: '고양아람누리' },
+    { label: '수성아트피아 (Suseong Artpia)', value: '수성아트피아' },
+    { label: '천안예술의전당 (Cheonan Arts Center)', value: '천안예술의전당' },
+    { label: '세종예술의전당 (Sejong Arts Center)', value: '세종예술의전당' },
+    { label: '안동문화예술의전당 (Andong Arts Center)', value: '안동문화예술의전당' }
   ];
+
+  // 2. 실제 데이터에 존재하는 전국의 모든 소형/중형/지역 공연장 전수 자동 통합
+  const venues = useMemo(() => {
+    const primaryValues = new Set(primaryVenues.map((v) => v.value));
+    const extraVenueSet = new Set();
+
+    (concerts || []).forEach((c) => {
+      const v = (c.venue || '').trim();
+      if (v && !primaryValues.has(v) && v !== '공식 공연장') {
+        extraVenueSet.add(v);
+      }
+    });
+
+    const sortedExtras = Array.from(extraVenueSet).sort((a, b) => a.localeCompare(b, 'ko'));
+    const extraVenueOptions = sortedExtras.map((name) => ({
+      label: name,
+      value: name
+    }));
+
+    return [...primaryVenues, ...extraVenueOptions];
+  }, [concerts]);
 
   const composers = [
     { label: '전체 작곡가 (All Composers)', value: 'all' },
@@ -41,20 +72,6 @@ export default function FilterBar({
     { label: '라벨 (Maurice Ravel)', value: '라벨' },
     { label: '슈만 (Robert Schumann)', value: '슈만' },
     { label: '브루크너 (Anton Bruckner)', value: '브루크너' }
-  ];
-
-  const performers = [
-    { label: '전체 연주자/단체 (All Performers)', value: 'all' },
-    { label: '조성진 (Seong-Jin Cho)', value: '조성진' },
-    { label: '임윤찬 (Yunchan Lim)', value: '임윤찬' },
-    { label: '서울시립교향악단 (Seoul Philharmonic)', value: '서울시립교향악단' },
-    { label: '빈 필하모닉 (Wiener Philharmoniker)', value: '빈 필하모닉' },
-    { label: '런던 심포니 (London Symphony)', value: '런던 심포니' },
-    { label: 'KBS교향악단 (KBS Symphony)', value: 'KBS교향악단' },
-    { label: '클라라 주미 강 (Clara-Jumi Kang)', value: '클라라 주미 강' },
-    { label: '백건우 (Kun-Woo Paik)', value: '백건우' },
-    { label: '손열음 (Yeol Eum Son)', value: '손열음' },
-    { label: '노부스 콰르텟 (Novus String Quartet)', value: '노부스 콰르텟' }
   ];
 
   const handleReset = () => {
@@ -72,7 +89,6 @@ export default function FilterBar({
     filters.search ||
     filters.venue !== 'all' ||
     filters.composer !== 'all' ||
-    filters.performer !== 'all' ||
     filters.dateRange !== 'all' ||
     filters.customDate;
 
@@ -80,7 +96,7 @@ export default function FilterBar({
     <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-5 shadow-sm space-y-4 transition-colors">
       {/* Top row: Search input & View mode toggles */}
       <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
-        {/* Bilingual Keyword Search */}
+        {/* Bilingual Keyword Search (공연명, 작곡가, 연주자, 곡명 등) */}
         <div className="relative flex-1">
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400 dark:text-stone-500" />
           <input
@@ -135,9 +151,9 @@ export default function FilterBar({
         </div>
       </div>
 
-      {/* Select Dropdowns Row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 pt-1 border-t border-stone-100 dark:border-hall-800">
-        {/* 장소 필터 */}
+      {/* Select Dropdowns Row: 3분할 깔끔한 구조 (공연장 / 작곡가 / 시기) */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1 border-t border-stone-100 dark:border-hall-800">
+        {/* 장소 필터 (청주예술의전당 등 소형/지역 공연장 전수 포함) */}
         <div>
           <label className="block text-[11px] font-bold text-stone-500 dark:text-stone-400 mb-1">
             공연장 / 홀 (Concert Venue)
@@ -168,24 +184,6 @@ export default function FilterBar({
             {composers.map((c) => (
               <option key={c.value} value={c.value}>
                 {c.label}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* 연주자 / 단체 필터 */}
-        <div>
-          <label className="block text-[11px] font-bold text-stone-500 dark:text-stone-400 mb-1">
-            연주자 / 단체 (Performer)
-          </label>
-          <select
-            value={filters.performer}
-            onChange={(e) => setFilters({ ...filters, performer: e.target.value })}
-            className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs font-medium text-stone-800 dark:text-stone-200 focus:outline-none focus:ring-2 focus:ring-concert-500 truncate"
-          >
-            {performers.map((p) => (
-              <option key={p.value} value={p.value}>
-                {p.label}
               </option>
             ))}
           </select>
