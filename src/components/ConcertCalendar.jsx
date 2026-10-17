@@ -4,10 +4,11 @@ import { formatKoreanDate } from '../utils/parser';
 
 /**
  * 클래식 공연 대표성 / 규모 / 인기 우선순위 점수 계산 알고리즘
- * 1. 대형 콘서트홀(예: 예술의전당 콘서트홀 2,000석+) vs 소형 리사이틀홀
- * 2. 대규모 오케스트라 / 심포니 / 페스티벌 / 내한 공연 가중치
- * 3. 세계적 거장 지휘자 / 최정상 솔리스트 / 대표 악단 가중치
- * 4. 개인 독주회 / 동문회 / 학위 리사이틀 상대적 후순위 조정
+ * 1. 대형 콘서트홀(예: 롯데콘서트홀, 예술의전당 콘서트홀 2,000석+) vs 소형 리사이틀홀
+ * 2. 세계적 거장 지휘자 / 슈퍼스타 솔리스트 / 최정상 악단 가중치 (+90)
+ * 3. '리사이틀' 지능형 가중치: 슈퍼스타 단독 리사이틀(+80, 총 +230점급 최고 흥행), 대형 콘서트홀 리사이틀(+35)
+ * 4. 대규모 오케스트라 / 교향악단 / 페스티벌 가중치 (+45)
+ * 5. 개인 학위/동문회/연구회/소규모 독주회 상대적 후순위 조정 (-40)
  */
 function getConcertPriorityScore(c) {
   let score = 0;
@@ -17,18 +18,65 @@ function getConcertPriorityScore(c) {
   const performers = (Array.isArray(c.performers) ? c.performers.join(' ') : (c.performers || '')).toLowerCase();
   const fullText = `${title} ${venue} ${performers} ${desc}`;
 
-  // 1. 공연장/홀 규모 가중치 (대형 콘서트홀 vs 소형 리사이틀홀)
-  if (venue.includes('콘서트홀') || venue.includes('대극장') || venue.includes('오페라극장') || venue.includes('음악당')) {
+  // 1. 전국구 최고 수준 대형 콘서트홀 (2,000석+ 메인 음악당)
+  const isMajorHall =
+    venue.includes('롯데콘서트홀') ||
+    venue.includes('예술의전당 [서울]') ||
+    venue.includes('예술의전당(서울)') ||
+    venue.includes('세종대극장') ||
+    venue.includes('대구콘서트하우스') ||
+    venue.includes('부천아트센터') ||
+    venue.includes('아트센터 인천') ||
+    venue.includes('콘서트홀') ||
+    venue.includes('대극장') ||
+    venue.includes('오페라극장') ||
+    venue.includes('음악당');
+
+  if (isMajorHall) {
     score += 60;
-  }
-  if (venue.includes('챔버홀') || venue.includes('체임버홀') || venue.includes('소극장')) {
+  } else if (venue.includes('챔버홀') || venue.includes('체임버홀') || venue.includes('소극장')) {
     score += 20;
-  }
-  if (venue.includes('리사이틀홀') || venue.includes('인춘아트홀') || venue.includes('소강당')) {
+  } else if (venue.includes('리사이틀홀') || venue.includes('인춘아트홀') || venue.includes('소강당')) {
     score += 5;
   }
 
-  // 2. 편성 규모 및 대형 이벤트 가중치 (오케스트라/교향악단/페스티벌)
+  // 2. 세계적 거장 및 슈퍼스타 솔리스트/지휘자/대표 국공립 악단
+  const superstarKeywords = [
+    '스미노 하야토', '스미노', 'sumino', 'cateen', 'hayato sumino',
+    '조성진', 'seong-jin cho', '임윤찬', 'yunchan lim', '손열음', 'yeol eum son',
+    '백건우', '김선욱', '선우예권', '박재홍', '신창용', '임동혁',
+    '클라라 주미 강', '강주미', '양인모', '김봄소리', '사라 장', '장영주', '정경화', '신지아', '대니 구',
+    '막심 벤게로프', 'vengerov', '파트리샤 코파친스카야', 'kopatchinskaja', '솔 가베타', 'sol gabetta',
+    '한재민', '문태국', '유자 왕', 'yuja wang', '랑랑', 'lang lang', '키신', 'kissin', '트리포노프', 'trifonov',
+    '파보 예르비', 'paavo järvi', 'paavo jarvi', '에스토니안', '사이먼 래틀', 'rattle',
+    '정명훈', '얍 판 츠베덴', '두다멜', 'dudamel', '메켈레', 'mäkelä',
+    '빈 필', '베를린 필', '런던 심포니', '로열 콘세르트', '바이에른', '라이프치히',
+    '서울시향', '서울시립교향악단', 'kbs교향악단', '국립심포니', '국립오페라단'
+  ];
+
+  let hasSuperstar = false;
+  for (const kw of superstarKeywords) {
+    if (fullText.includes(kw)) {
+      score += 90;
+      hasSuperstar = true;
+      break;
+    }
+  }
+
+  // 3. '리사이틀' / '독주회'의 지능형 다이내믹 가중치
+  // 슈퍼스타의 리사이틀은 오케스트라를 능가하는 클래식계 최고 흥행 이벤트 (+80)
+  const isRecital = title.includes('리사이틀') || title.includes('recital') || title.includes('독주회') || title.includes('독창회');
+  if (isRecital) {
+    if (hasSuperstar) {
+      score += 80;
+    } else if (isMajorHall) {
+      score += 35;
+    } else {
+      score -= 10;
+    }
+  }
+
+  // 4. 대형 오케스트라 및 정기 연주회/페스티벌 가중치
   if (
     fullText.includes('오케스트라') ||
     fullText.includes('교향악단') ||
@@ -37,36 +85,18 @@ function getConcertPriorityScore(c) {
     fullText.includes('philharmonic') ||
     fullText.includes('symphony')
   ) {
-    score += 70;
+    score += 45;
   }
   if (fullText.includes('페스티벌') || fullText.includes('festival') || fullText.includes('내한') || fullText.includes('정기연주회')) {
-    score += 40;
+    score += 30;
   }
   if (fullText.includes('협주곡') || fullText.includes('concerto') || fullText.includes('합창단')) {
-    score += 25;
+    score += 15;
   }
 
-  // 3. 세계적 거장 지휘자 및 슈퍼스타 솔리스트 가중치
-  const masterKeywords = [
-    '파보 예르비', 'paavo järvi', 'paavo jarvi', '에스토니안', '사이먼 래틀', '래틀', '정명훈', '얍 판 츠베덴',
-    '두다멜', '카라얀', '빈 필', '베를린 필', '런던 심포니', '로열 콘세르트', '라이프치히', '바이에른',
-    '조성진', '임윤찬', '손열음', '백건우', '김선욱', '선우예권', '클라라 주미 강', '강주미', '양인모', '사라 장', '막심 벤게로프',
-    '서울시향', '서울시립교향악단', 'kbs교향악단', '국립심포니'
-  ];
-
-  for (const kw of masterKeywords) {
-    if (fullText.includes(kw)) {
-      score += 80;
-      break;
-    }
-  }
-
-  // 4. 소규모 개인 독주회/독창회/동문회 상대적 후순위 조정
-  if (title.includes('독주회') || title.includes('독창회') || title.includes('귀국')) {
-    score -= 20;
-  }
-  if (title.includes('동문') || title.includes('제자') || title.includes('학위') || title.includes('연구회')) {
-    score -= 30;
+  // 5. 소규모 학위/동문회/제자 연주회/친목회 후순위 조정
+  if (title.includes('동문') || title.includes('제자') || title.includes('학위') || title.includes('연구회') || title.includes('동호회') || title.includes('귀국')) {
+    score -= 40;
   }
 
   return score;

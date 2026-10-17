@@ -3,13 +3,13 @@ import React from 'react';
 /**
  * OrchestraConductorIcon (Opus Korea 상징 아이콘)
  * 
- * 흔한 악기 단품(바이올린, 피아노 등)의 진부함을 탈피한 진정한 '오케스트라' 고유의 상징:
- * - 지휘대(Podium)를 중심으로 방사형으로 펼쳐지는 오케스트라 전용 부채꼴 무대 배열(Orchestral Fan/Arc Tiers)
- * - 현악기 층, 목관·금관 층, 타악기 층으로 웅장하게 확장되는 3단계 동심원 음향 아치
- * - 각 파트별 악단원들이 호흡을 맞추며 질서정연하게 자리한 앙상블 노드(Ensemble Nodes)
- * - 중앙에서 하늘을 향해 높고 유려하게 치솟아 100인의 소리를 하나로 이끄는 마에스트로의 지휘봉(Conductor's Baton)
+ * 오케스트라 사운드의 영혼이자 웅장한 브라스 하모니의 상징인 '프렌치 호른 (French Horn)':
+ * - 황동 금관 악기 특유의 우아하고 둥근 나선형 튜빙 코일 (Coiled Brass Body)
+ * - 우측 상단으로 웅장하고 유려하게 피어나는 활짝 벌어진 나팔 (Flaring Orchestral Bell)
+ * - 중앙에 정밀하게 배치된 3개의 로터리 밸브 레버 (Rotary Valves) 및 마우스피스
+ * - 메트로놈, 계기판 바늘, 자동차 등과 완전히 구별되는 클래식 오케스트라 고유의 품격 있는 미학
  * 
- * 규격: Lucide 및 SVG 표준 벡터 규격 (viewBox 0 0 24 24, strokeWidth 1.7~1.8, strokeLinecap round)
+ * 규격: Lucide 및 SVG 표준 벡터 규격 (viewBox 0 0 24 24, strokeWidth 1.8, strokeLinecap round)
  */
 export default function OrchestraConductorIcon({ className = 'w-6 h-6', ...props }) {
   return (
@@ -25,41 +25,25 @@ export default function OrchestraConductorIcon({ className = 'w-6 h-6', ...props
       aria-hidden="true"
       {...props}
     >
-      {/* 1. 오케스트라 무대 3단 부채꼴 음향 아치 (Orchestral Seating Arcs) */}
-      {/* 1열: 전면 현악 섹션 (Violin / Viola / Cello / Bass) */}
-      <path d="M7 16a6.5 6.5 0 0 1 10 0" strokeWidth="1.7" strokeOpacity="0.85" />
-      {/* 2열: 중앙 목관 및 금관 섹션 (Woodwinds & Brass) */}
-      <path d="M4.5 12.5a10 10 0 0 1 15 0" strokeWidth="1.7" strokeOpacity="0.9" />
-      {/* 3열: 후면 대편성 금관 및 팀파니/타악기 섹션 (Percussion & Timpani) */}
-      <path d="M2.5 9a13.5 13.5 0 0 1 19 0" strokeWidth="1.7" />
+      {/* 1. 호른의 메인 나선형 원형 튜빙 (Main Brass Coil) */}
+      <circle cx="10.5" cy="13.5" r="7.5" />
 
-      {/* 2. 각 파트별 오케스트라 단원 앙상블 (Ensemble Musicians) */}
-      {/* 1열 단원들 */}
-      <circle cx="8.5" cy="14.8" r="0.8" fill="currentColor" />
-      <circle cx="12" cy="14" r="0.8" fill="currentColor" />
-      <circle cx="15.5" cy="14.8" r="0.8" fill="currentColor" />
+      {/* 2. 내부 보조 공명 튜빙 (Inner Valve Loop) */}
+      <circle cx="10.5" cy="13.5" r="4.2" strokeOpacity="0.85" />
 
-      {/* 2열 단원들 */}
-      <circle cx="5.8" cy="11.4" r="0.8" fill="currentColor" />
-      <circle cx="9.8" cy="9.8" r="0.8" fill="currentColor" />
-      <circle cx="14.2" cy="9.8" r="0.8" fill="currentColor" />
-      <circle cx="18.2" cy="11.4" r="0.8" fill="currentColor" />
+      {/* 3. 우측 상단으로 웅장하게 벌어지는 나팔 벨 (Flaring Bell) */}
+      <path d="M14 8C17 6.2 19.5 5 22 4.2v7.6C19.5 11 17 9.8 14 8z" />
 
-      {/* 3열 단원들 */}
-      <circle cx="3.8" cy="8" r="0.8" fill="currentColor" />
-      <circle cx="8" cy="6.2" r="0.8" fill="currentColor" />
-      <circle cx="16" cy="6.2" r="0.8" fill="currentColor" />
-      <circle cx="20.2" cy="8" r="0.8" fill="currentColor" />
+      {/* 4. 나팔 벨 림 마감 (Bell Rim Acoustic Curve) */}
+      <path d="M22 4.2c.8 1.2.8 6.4 0 7.6" strokeWidth="1.4" />
 
-      {/* 3. 지휘대(Podium) & 지휘자의 지휘봉(Conductor's Baton) */}
-      {/* 지휘대 발판 */}
-      <path d="M9.5 21.5h5" strokeWidth="2" />
-      {/* 지휘봉 손잡이(Bulb) */}
-      <circle cx="11.5" cy="19.5" r="1.1" fill="currentColor" />
-      {/* 하늘을 가르는 유려한 지휘봉 샤프트 */}
-      <path d="M11.5 19.5L14.2 3.8" strokeWidth="2" />
-      {/* 지휘봉 끝에서 피어나는 선율 악센트 */}
-      <path d="M15.5 3.5a1.8 1.8 0 0 1 1.8 1.8" strokeWidth="1.6" strokeOpacity="0.8" />
+      {/* 5. 3개의 로터리 밸브 레버 (Rotary Valves & Keys) */}
+      <path d="M9 11v5" strokeWidth="1.6" />
+      <path d="M10.5 10.5v6" strokeWidth="1.6" />
+      <path d="M12 11v5" strokeWidth="1.6" />
+
+      {/* 6. 리드 파이프 & 마우스피스 (Leadpipe & Mouthpiece) */}
+      <path d="M3 13.5H1.5" strokeWidth="2" />
     </svg>
   );
 }
