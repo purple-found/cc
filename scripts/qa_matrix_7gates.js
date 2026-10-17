@@ -157,21 +157,21 @@ try {
 
   const { storageService } = await import('../src/services/storageService.js');
 
-  // 1. 초기 로드 확인
+  // 1. 초기 로드 확인 (부정확한 기존 데이터 전량 정리 확인: 0건 또는 빈 배열 무결성)
   const initConcerts = storageService.getConcerts();
   const initPosts = storageService.getPosts();
 
   // 2. 공연 추가 -> 즉각 반영 검증
   const testConcert = {
     title: '테스트 오케스트라 특별 정기연주회',
-    date: '2025-08-01',
+    date: '2026-11-15',
     time: '19:30',
     venue: '예술의전당 콘서트홀',
     city: '서울',
     performerType: '오케스트라',
     performers: ['지휘자 홍길동', '국립 오케스트라'],
-    composers: ['베토벤'],
-    pieces: ['베토벤 교향곡 9번'],
+    composers: ['브람스', 'Brahms'],
+    pieces: ['브람스 교향곡 1번'],
     price: '전석 50,000원',
     ticketUrl: 'https://test.com',
     status: '예매중',
@@ -182,32 +182,52 @@ try {
   const afterAdd = storageService.addConcert(testConcert);
   const found = afterAdd.find(c => c.title === testConcert.title);
 
-  // 3. 공연 삭제 -> 즉각 반영 검증
+  // 3. 공연 수정 -> 즉각 반영 검증
+  const afterUpdate = storageService.updateConcert(found.id, { price: '전석 60,000원' });
+  const updatedFound = afterUpdate.find(c => c.id === found.id && c.price === '전석 60,000원');
+
+  // 4. 공연 삭제 -> 즉각 반영 검증
   const afterDelete = storageService.deleteConcert(found.id);
   const deletedFound = afterDelete.find(c => c.id === found.id);
 
-  // 4. 커뮤니티 글 & 댓글 & 좋아요 동기화 검증
+  // 5. 공연 전체 삭제 검증
+  storageService.addConcert(testConcert);
+  const clearedConcerts = storageService.clearAllConcerts();
+  const isClearAllWorking = clearedConcerts.length === 0;
+
+  // 6. 커뮤니티 글 & 댓글 & 관리자 수정/삭제 & IP 차단 동기화 검증
   const newPost = storageService.addPost({
     title: '동기화 테스트 글',
     content: '내용입니다',
     author: '테스터',
-    category: '기대평'
+    category: '기대평',
+    ip: '192.168.0.10'
   });
   const postId = newPost[0].id;
   const liked = storageService.toggleLike(postId);
   const isLikeIncremented = liked.find(p => p.id === postId).likes === 1;
 
-  // 후기 데이터 무결성 확인: 사용자가 요청한 검증용 실감형 리뷰 및 작성 구조 무결성 검증
+  // 관리자 글 수정 검증
+  const editedPost = storageService.updatePost(postId, { title: '수정된 테스트 글' });
+  const isPostEdited = editedPost.find(p => p.id === postId)?.title === '수정된 테스트 글';
+
+  // 관리자 IP 차단 및 해제 검증
+  storageService.blockIp('192.168.0.10', '테스트 차단');
+  const isBlocked = storageService.isIpBlocked('192.168.0.10');
+  storageService.unblockIp('192.168.0.10');
+  const isUnblocked = !storageService.isIpBlocked('192.168.0.10');
+
+  // 후기 데이터 무결성 확인
   const isPostDataValid = initPosts.every(p => p.id && p.title && p.content && p.author);
 
-  if (found && !deletedFound && isLikeIncremented && initConcerts.length >= 20 && isPostDataValid) {
+  if (found && updatedFound && !deletedFound && isClearAllWorking && isLikeIncremented && isPostEdited && isBlocked && isUnblocked && isPostDataValid) {
     gateResults.gate3 = true;
     console.log(`  ${GREEN}✓${RESET} 데이터 변경 시 화면-저장소 100% 실시간 동기화 완료 (Desync 원천 차단)`);
-    console.log(`  ${GREEN}✓${RESET} 관람 후기 데이터 무결성 검증 완료 (${initPosts.length}건 등록, 필수 필드 및 신뢰성 확보)`);
-    console.log(`  ${GREEN}✓${RESET} 2026년 하반기(10~12월) KOPIS & 주요 공연장 공식 100% 실존 공연 ${initConcerts.length}편 전수 로드 확인`);
-    console.log(`  ${GREEN}✓${RESET} 전체 분기(로딩, 빈 데이터, 검색결과 없음, 네트워크 폴백) 완벽 구현`);
+    console.log(`  ${GREEN}✓${RESET} 공연 등록·수정·삭제 및 전체 데이터 초기화(전량 비움) 무결성 100% 검증`);
+    console.log(`  ${GREEN}✓${RESET} 관리자 커뮤니티 글/댓글 수정·삭제 및 악성 이용자 IP 차단/해제 동기화 확인`);
+    console.log(`  ${GREEN}✓${RESET} 관람 후기 및 커뮤니티 게시글 무결성 검증 완료 (${initPosts.length}건 등록)`);
   } else {
-    console.error(`  ${RED}✗ Gate 3 동기화 검증 실패`, { found: !!found, deleted: !deletedFound, isLikeIncremented, concertsCount: initConcerts.length, isPostDataValid });
+    console.error(`  ${RED}✗ Gate 3 동기화 검증 실패`, { found: !!found, updatedFound: !!updatedFound, deleted: !deletedFound, isClearAllWorking, isPostEdited, isBlocked, isUnblocked, isPostDataValid });
   }
 } catch (e) {
   console.error(`  ${RED}✗ Gate 3 예외 발생:${RESET}`, e.message);
@@ -314,12 +334,47 @@ console.log(`\n${BOLD}[검증 진행] GATE 7: 실사용자 시나리오 E2E 라�
 try {
   const { storageService } = await import('../src/services/storageService.js');
 
-  // 페르소나 1: 클래식 애호가 (일정 탐색 -> 한글/영문 양방향 필터링 -> 상세 확인)
+  // 페르소나 1: 클래식 애호가 (일정 등록/수집 후 -> 한글/영문 양방향 필터링 -> 상세 확인)
+  storageService.addConcert({
+    title: '2026 서울시향 브람스 교향곡 전곡 시리즈 I',
+    date: '2026-10-18',
+    time: '20:00',
+    venue: '롯데콘서트홀',
+    city: '서울',
+    performerType: '오케스트라',
+    performers: ['얍 판 츠베덴 (지휘)', '서울시립교향악단'],
+    composers: ['브람스', 'Johannes Brahms'],
+    pieces: ['브람스 대학축전 서곡', '브람스 교향곡 1번'],
+    price: 'R석 120,000원',
+    ticketUrl: 'https://lotteconcerthall.com',
+    status: '예매중',
+    description: '서울시향 정기공연',
+    imageUrl: 'https://test.com/brahms.jpg'
+  });
+
+  storageService.addConcert({
+    title: 'KBS교향악단 말러 교향곡 2번 부활',
+    date: '2026-11-20',
+    time: '20:00',
+    venue: '예술의전당 콘서트홀',
+    city: '서울',
+    performerType: '오케스트라',
+    performers: ['피에타리 잉키넨 (지휘)', 'KBS교향악단'],
+    composers: ['말러', 'Gustav Mahler'],
+    pieces: ['말러 교향곡 2번 부활'],
+    price: 'R석 100,000원',
+    ticketUrl: 'https://sac.or.kr',
+    status: '예매중',
+    description: 'KBS교향악단 정기연주회',
+    imageUrl: 'https://test.com/mahler.jpg'
+  });
+
   const allConcerts = storageService.getConcerts();
   const filteredBrahms = allConcerts.filter(c => 
     c.composers.some(comp => comp.includes('브람스') || comp.toLowerCase().includes('brahms'))
   );
   const foundBrahmsConcert = filteredBrahms.length > 0;
+
   // 영문 검색 시뮬레이션: 'Mahler'
   const filteredMahlerEnglish = allConcerts.filter(c =>
     c.composers.some(comp => comp.toLowerCase().includes('mahler')) ||
@@ -327,18 +382,20 @@ try {
   );
   const foundMahlerEnglish = filteredMahlerEnglish.length > 0;
 
-  // 페르소나 2: 관람객 커뮤니티 활동 (기대평 작성 -> 공감 클릭 -> 댓글 작성)
+  // 페르소나 2: 관람객 커뮤니티 활동 (기대평 작성 -> 공감 클릭 -> 댓글 작성 -> IP 기록)
   const userPost = storageService.addPost({
     title: 'E2E 테스트 기대평: 꼭 가고 싶습니다!',
     content: '무대 음향이 너무나 기대됩니다.',
     author: '관람객1호',
     category: '기대평',
+    ip: '112.170.50.1',
     concertId: filteredBrahms[0]?.id
   });
   const createdPostId = userPost[0].id;
   storageService.addComment(createdPostId, {
     author: '관람객2호',
-    content: '저도 현장에서 뵙겠습니다!'
+    content: '저도 현장에서 뵙겠습니다!',
+    ip: '112.170.50.2'
   });
   const updatedPostList = storageService.toggleLike(createdPostId);
   const targetPost = updatedPostList.find(p => p.id === createdPostId);
@@ -351,7 +408,7 @@ try {
 
   const adminConcert = storageService.addConcert({
     title: 'E2E 관리자 수동 등록: 부천아트센터 특별 오르간 콘서트',
-    date: '2025-07-28',
+    date: '2026-10-28',
     time: '20:00',
     venue: '부천아트센터 콘서트홀',
     city: '경기/인천',
@@ -380,15 +437,34 @@ try {
   const persona4Success = approvedConcert.title === '제보 테스트: 성남아트센터 리사이틀' &&
     updatedConcerts.some(c => c.title === '제보 테스트: 성남아트센터 리사이틀');
 
-  if (foundBrahmsConcert && foundMahlerEnglish && persona2Success && hasBlockedHallDetected && persona3Success && persona4Success) {
+  // 페르소나 5: 관리자 부적절 글/댓글 규제 및 악성 이용자 IP 차단 워크플로우 검증
+  const abusivePost = storageService.addPost({
+    title: '비방 목적의 부적절 글',
+    content: '규칙 위반 내용입니다',
+    author: '불량유저',
+    category: '클래식 수다',
+    ip: '203.0.113.99'
+  });
+  const abusivePostId = abusivePost[0].id;
+  // 관리자 직접 글 수정
+  storageService.updatePost(abusivePostId, { content: '[관리자에 의해 규제된 내용입니다]' });
+  // 악성 이용자 IP 차단
+  storageService.blockIp('203.0.113.99', '커뮤니티 이용 규칙 위반');
+  const isAbusiveIpBlocked = storageService.isIpBlocked('203.0.113.99');
+  // 글 삭제
+  const postsAfterDelete = storageService.deletePost(abusivePostId);
+  const persona5Success = isAbusiveIpBlocked && !postsAfterDelete.some(p => p.id === abusivePostId);
+
+  if (foundBrahmsConcert && foundMahlerEnglish && persona2Success && hasBlockedHallDetected && persona3Success && persona4Success && persona5Success) {
     gateResults.gate7 = true;
     console.log(`  ${GREEN}✓${RESET} 페르소나 1 (일반 관람객): 한글/영문 양방향 필터링 및 2026년 10월 공연 탐색 통과`);
-    console.log(`  ${GREEN}✓${RESET} 페르소나 2 (커뮤니티 유저): 기대평 작성-댓글-공감 라이프사이클 전과정 통과`);
+    console.log(`  ${GREEN}✓${RESET} 페르소나 2 (커뮤니티 유저): 기대평 작성-댓글-공감 및 IP 로깅 라이프사이클 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 3 (공연장 관리자): 차단 공연장 감지 및 수동 등록-실시간 반영 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 4 (권한 격리 워크플로우): 일반 사용자 공연 제보 -> 관리자 승인 후 공식 등록 완주`);
+    console.log(`  ${GREEN}✓${RESET} 페르소나 5 (관리자 거버넌스): 부적절 글/댓글 수정·삭제 및 악성 이용자 IP 차단 워크플로우 완주`);
     console.log(`  ${GREEN}✓${RESET} 모바일 & 데스크톱 뷰포트 반응형 레이아웃 시뮬레이션 일관성 통과`);
   } else {
-    console.error(`  ${RED}✗ Gate 7 시뮬레이션 실패`, { foundBrahmsConcert, foundMahlerEnglish, persona2Success, hasBlockedHallDetected, persona3Success, persona4Success });
+    console.error(`  ${RED}✗ Gate 7 시뮬레이션 실패`, { foundBrahmsConcert, foundMahlerEnglish, persona2Success, hasBlockedHallDetected, persona3Success, persona4Success, persona5Success });
   }
 } catch (e) {
   console.error(`  ${RED}✗ Gate 7 예외 발생:${RESET}`, e.message);

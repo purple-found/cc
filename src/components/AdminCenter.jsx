@@ -17,7 +17,17 @@ import {
   Edit3,
   History,
   ArrowRight,
-  Globe
+  Globe,
+  Ban,
+  MessageSquare,
+  MessageCircle,
+  X,
+  UserX,
+  Lock,
+  Unlock,
+  AlertOctagon,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser.js';
 import { kopisMonitoringService } from '../services/kopisMonitoringService.js';
@@ -27,15 +37,24 @@ export default function AdminCenter({
   halls,
   concerts,
   tips = [],
+  posts = [],
+  blockedIps = [],
   onAddConcert,
   onUpdateConcert,
   onDeleteConcert,
+  onClearAllConcerts,
   onApproveTip,
   onDeleteTip,
   onSyncAllHalls,
   isSyncing,
   onLogout,
-  onRefreshConcerts
+  onRefreshConcerts,
+  onUpdatePost,
+  onDeletePost,
+  onUpdateComment,
+  onDeleteComment,
+  onBlockIp,
+  onUnblockIp
 }) {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [editingConcert, setEditingConcert] = useState(null);
@@ -46,6 +65,13 @@ export default function AdminCenter({
   const [crawlEndDate, setCrawlEndDate] = useState(defaultDates.endDateInput);
   const [isCrawling, setIsCrawling] = useState(false);
   const [crawlFeedback, setCrawlFeedback] = useState(null);
+
+  // 커뮤니티 및 IP 관리용 상태
+  const [editingPost, setEditingPost] = useState(null);
+  const [editingComment, setEditingComment] = useState(null);
+  const [expandedPostId, setExpandedPostId] = useState(null);
+  const [manualBlockIp, setManualBlockIp] = useState('');
+  const [manualBlockReason, setManualBlockReason] = useState('');
 
   const handleRunKopisCrawl = async () => {
     setIsCrawling(true);
@@ -253,59 +279,12 @@ export default function AdminCenter({
 
           <div className="flex items-center gap-2.5">
             <button
-              onClick={onSyncAllHalls}
-              disabled={isSyncing}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-800 dark:text-stone-200 text-xs font-semibold transition-all shrink-0"
-              title="전체 연주장 수집 상태 재확인 및 동기화"
-            >
-              <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin text-concert-500' : ''}`} />
-              <span>{isSyncing ? '수집 동기화 진행 중...' : '자동 수집 상태 점검'}</span>
-            </button>
-
-            <button
               onClick={() => setIsAddModalOpen(true)}
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-md shrink-0"
             >
               <PlusCircle className="w-4 h-4" />
               <span>공연 직접 등록 (관리자)</span>
             </button>
-          </div>
-        </div>
-
-        {/* Status Highlights */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-3 border-t border-stone-100 dark:border-hall-800 text-xs">
-          <div className="p-3.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-100 dark:border-hall-800">
-            <span className="text-stone-400 block text-[11px]">총 모니터링 공연장 및 KOPIS 연동</span>
-            <span className="text-base font-bold text-stone-900 dark:text-stone-100 mt-0.5 block">
-              {halls.length}개 기관 (실존 공연)
-            </span>
-          </div>
-
-          <div className="p-3.5 rounded-xl bg-blue-50/70 dark:bg-blue-950/30 border border-blue-200/60 dark:border-blue-900/40">
-            <span className="text-blue-700 dark:text-blue-300 block text-[11px] font-semibold">
-              KOPIS 및 공식망 자동 모니터링
-            </span>
-            <span className="text-sm font-bold text-blue-900 dark:text-blue-200 mt-0.5 block">
-              매일 03:00 / 15:00 정기 점검
-            </span>
-          </div>
-
-          <div className="p-3.5 rounded-xl bg-amber-50/60 dark:bg-amber-950/20 border border-amber-200/50 dark:border-amber-900/40">
-            <span className="text-amber-700 dark:text-amber-400 block text-[11px] font-semibold">
-              수집 차단 감지 (수동 관리 대상)
-            </span>
-            <span className="text-base font-bold text-amber-900 dark:text-amber-300 mt-0.5 block">
-              {halls.filter(h => h.blocked).length}개 기관 (국립극장 등)
-            </span>
-          </div>
-
-          <div className="p-3.5 rounded-xl bg-purple-50/60 dark:bg-purple-950/20 border border-purple-200/50 dark:border-purple-900/40">
-            <span className="text-purple-700 dark:text-purple-400 block text-[11px] font-semibold">
-              접수된 관람객 제보
-            </span>
-            <span className="text-base font-bold text-purple-900 dark:text-purple-300 mt-0.5 block">
-              {tips.length}건 대기 중
-            </span>
           </div>
         </div>
       </div>
@@ -638,64 +617,418 @@ export default function AdminCenter({
 
       {/* Registered Concerts Management Section */}
       <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
-        <div className="flex items-center justify-between">
-          <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100">
-            현재 등록된 전체 공연 데이터 ({concerts.length}건)
-          </h3>
-          <span className="text-xs text-stone-400">관리자 삭제 시 메인 화면에 즉시 반영됩니다</span>
-        </div>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100 flex items-center gap-2">
+              <Music className="w-5 h-5 text-concert-500" />
+              <span>현재 등록된 전체 공연 데이터 ({concerts.length}건)</span>
+            </h3>
+            <span className="text-xs text-stone-400">관리자 삭제 시 메인 화면 및 캘린더에 즉시 반영됩니다</span>
+          </div>
 
-        <div className="divide-y divide-stone-100 dark:divide-hall-800 max-h-96 overflow-y-auto">
-          {concerts.map((c) => (
-            <div
-              key={c.id}
-              className="py-3 flex items-center justify-between gap-3 text-xs"
+          {concerts.length > 0 && (
+            <button
+              onClick={() => {
+                if (confirm('⚠️ 등록된 모든 공연 데이터를 완전히 삭제하시겠습니까?\n이 작업은 즉시 반영되며, 필요 시 상단의 KOPIS 수집이나 공연 직접 등록을 통해 다시 채울 수 있습니다.')) {
+                  if (onClearAllConcerts) {
+                    onClearAllConcerts();
+                  }
+                }
+              }}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-red-50 hover:bg-red-100 dark:bg-red-950/60 dark:hover:bg-red-900/60 text-red-600 dark:text-red-300 border border-red-200/80 dark:border-red-900/50 transition-colors shrink-0"
+              title="모든 공연 데이터를 완전히 비웁니다"
             >
-              <div className="min-w-0 space-y-1">
-                <div className="flex items-center gap-2">
-                  <span className="font-bold text-stone-900 dark:text-stone-100 text-sm truncate">
-                    {c.title}
-                  </span>
-                  <span className={`px-2 py-0.5 rounded text-[10px] font-semibold ${
-                    c.crawlerBlocked
-                      ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
-                      : 'bg-stone-100 text-stone-600 dark:bg-hall-800 dark:text-stone-300'
-                  }`}>
-                    {c.source}
-                  </span>
-                </div>
-                <div className="flex items-center gap-3 text-stone-500 dark:text-stone-400">
-                  <span>{formatKoreanDate(c.date)}</span>
-                  <span>·</span>
-                  <span>{c.venue}</span>
-                  <span>·</span>
-                  <span className="text-concert-600 dark:text-concert-400 truncate max-w-xs">{c.performers.join(', ')}</span>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-1 shrink-0">
-                <button
-                  onClick={() => openEditModal(c)}
-                  className="p-2 text-stone-500 hover:text-concert-600 dark:hover:text-concert-400 hover:bg-concert-50 dark:hover:bg-hall-800 rounded-lg transition-colors"
-                  title="공연 정보 직접 수정"
-                >
-                  <Edit3 className="w-4 h-4" />
-                </button>
-                <button
-                  onClick={() => {
-                    if (confirm(`'${c.title}' 공연을 삭제하시겠습니까?`)) {
-                      onDeleteConcert(c.id);
-                    }
-                  }}
-                  className="p-2 text-stone-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded-lg transition-colors"
-                  title="공연 일정 삭제"
-                >
-                  <Trash2 className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-          ))}
+              <Trash2 className="w-3.5 h-3.5" />
+              <span>공연 데이터 전체 삭제</span>
+            </button>
+          )}
         </div>
+
+        {concerts.length === 0 ? (
+          <div className="py-10 text-center text-xs text-stone-400 dark:text-stone-500 bg-stone-50/60 dark:bg-hall-850/60 rounded-xl border border-dashed border-stone-200 dark:border-hall-800 space-y-2">
+            <Music className="w-8 h-8 mx-auto text-stone-300 dark:text-stone-600" />
+            <p className="font-semibold text-stone-700 dark:text-stone-300">현재 등록된 공연 데이터가 없습니다.</p>
+            <p className="text-[11px] text-stone-400">기존 공연 데이터는 모두 비워졌습니다. 상단의 KOPIS 실시간 크롤링을 실행하거나 '공연 직접 등록' 버튼을 이용해 새로운 일정을 등록해주세요.</p>
+          </div>
+        ) : (
+          <div className="divide-y divide-stone-100 dark:divide-hall-800 max-h-96 overflow-y-auto">
+            {concerts.map((c) => (
+              <div
+                key={c.id}
+                className="py-3 flex items-center justify-between gap-3 text-xs"
+              >
+                <div className="min-w-0 space-y-1">
+                  <div className="flex items-center gap-2">
+                    <span className="font-bold text-stone-900 dark:text-stone-100 text-sm truncate">
+                      {c.title}
+                    </span>
+                    <span className={`px-2 py-0.5 rounded text-[10px] font-semibold ${
+                      c.crawlerBlocked
+                        ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
+                        : 'bg-stone-100 text-stone-600 dark:bg-hall-800 dark:text-stone-300'
+                    }`}>
+                      {c.source}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3 text-stone-500 dark:text-stone-400">
+                    <span>{formatKoreanDate(c.date)}</span>
+                    <span>·</span>
+                    <span>{c.venue}</span>
+                    <span>·</span>
+                    <span className="text-concert-600 dark:text-concert-400 truncate max-w-xs">{c.performers.join(', ')}</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-1 shrink-0">
+                  <button
+                    onClick={() => openEditModal(c)}
+                    className="p-2 text-stone-500 hover:text-concert-600 dark:hover:text-concert-400 hover:bg-concert-50 dark:hover:bg-hall-800 rounded-lg transition-colors"
+                    title="공연 정보 직접 수정"
+                  >
+                    <Edit3 className="w-4 h-4" />
+                  </button>
+                  <button
+                    onClick={() => {
+                      if (confirm(`'${c.title}' 공연을 삭제하시겠습니까?`)) {
+                        onDeleteConcert(c.id);
+                      }
+                    }}
+                    className="p-2 text-stone-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded-lg transition-colors"
+                    title="공연 일정 삭제"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* Community Moderation Section (커뮤니티 부적절 글 및 댓글 관리) */}
+      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <MessageSquare className="w-5 h-5 text-concert-500" />
+            <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100 flex items-center gap-2">
+              <span>커뮤니티 게시글 및 댓글 관리</span>
+              <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-stone-100 dark:bg-hall-800 text-stone-600 dark:text-stone-300">
+                게시글 {posts.length}건
+              </span>
+            </h3>
+          </div>
+          <span className="text-xs text-stone-400">
+            작성자 IP를 확인하고, 정치/비방 등 부적절한 글과 댓글을 수정·삭제하거나 이용자를 차단합니다.
+          </span>
+        </div>
+
+        {posts.length === 0 ? (
+          <div className="py-8 text-center text-xs text-stone-400 dark:text-stone-500 bg-stone-50/60 dark:bg-hall-850/60 rounded-xl border border-dashed border-stone-200 dark:border-hall-800">
+            등록된 커뮤니티 게시글이 없습니다.
+          </div>
+        ) : (
+          <div className="space-y-3 max-h-[500px] overflow-y-auto pr-1">
+            {posts.map((post) => {
+              const isAuthorBlocked = blockedIps.some((b) => b.ip === post.ip);
+              const isExpanded = expandedPostId === post.id;
+              const commentsCount = post.comments ? post.comments.length : 0;
+
+              return (
+                <div
+                  key={post.id}
+                  className="p-4 rounded-xl bg-stone-50/80 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 space-y-3"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="space-y-1 min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-concert-50 dark:bg-hall-800 text-concert-700 dark:text-concert-300">
+                          {post.category}
+                        </span>
+                        <h4 className="font-bold text-sm text-stone-900 dark:text-stone-100 truncate">
+                          {post.title}
+                        </h4>
+                      </div>
+
+                      <div className="flex items-center gap-2 text-[11px] text-stone-500 dark:text-stone-400 flex-wrap">
+                        <span className="font-semibold text-stone-700 dark:text-stone-300">{post.author}</span>
+                        <span>·</span>
+                        <span>{post.createdAt}</span>
+                        <span>·</span>
+                        <span className="inline-flex items-center px-2 py-0.5 rounded font-mono text-[10px] font-semibold bg-stone-200 dark:bg-hall-700 text-stone-700 dark:text-stone-300">
+                          IP: {post.ip || '기록 없음'}
+                        </span>
+                        {isAuthorBlocked && (
+                          <span className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded text-[10px] font-bold bg-red-100 dark:bg-red-950/70 text-red-700 dark:text-red-300">
+                            <Ban className="w-3 h-3" />
+                            차단된 IP
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <button
+                        onClick={() => setExpandedPostId(isExpanded ? null : post.id)}
+                        className="px-2.5 py-1.5 rounded-lg bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-300 text-xs font-semibold flex items-center gap-1 transition-colors"
+                        title="댓글 목록 확인"
+                      >
+                        <MessageCircle className="w-3.5 h-3.5 text-stone-500" />
+                        <span>댓글 ({commentsCount})</span>
+                        {isExpanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+                      </button>
+
+                      <button
+                        onClick={() => setEditingPost({
+                          id: post.id,
+                          title: post.title,
+                          category: post.category,
+                          content: post.content
+                        })}
+                        className="p-1.5 text-stone-500 hover:text-concert-600 dark:hover:text-concert-400 hover:bg-concert-50 dark:hover:bg-hall-800 rounded-lg transition-colors"
+                        title="게시글 내용 수정"
+                      >
+                        <Edit3 className="w-4 h-4" />
+                      </button>
+
+                      <button
+                        onClick={() => {
+                          if (confirm(`'${post.title}' 게시글을 삭제하시겠습니까?\n등록된 댓글도 함께 삭제됩니다.`)) {
+                            onDeletePost(post.id);
+                          }
+                        }}
+                        className="p-1.5 text-stone-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded-lg transition-colors"
+                        title="게시글 삭제"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+
+                      {post.ip && (
+                        isAuthorBlocked ? (
+                          <button
+                            onClick={() => onUnblockIp(post.ip)}
+                            className="px-2 py-1 rounded-lg text-[10px] font-bold bg-stone-200 hover:bg-stone-300 dark:bg-hall-700 dark:hover:bg-hall-600 text-stone-700 dark:text-stone-300 transition-colors"
+                            title="이 IP 차단 해제"
+                          >
+                            차단 해제
+                          </button>
+                        ) : (
+                          <button
+                            onClick={() => {
+                              if (confirm(`IP (${post.ip}) 사용자를 차단하시겠습니까?\n차단 시 해당 IP에서는 글 및 댓글 작성이 원천 차단됩니다.`)) {
+                                onBlockIp(post.ip, `게시글 '${post.title}' 부적절 발언 규제`);
+                              }
+                            }}
+                            className="px-2 py-1 rounded-lg text-[10px] font-bold bg-red-100 hover:bg-red-200 dark:bg-red-950/60 dark:hover:bg-red-900/60 text-red-700 dark:text-red-300 transition-colors"
+                            title="이 IP 차단하기"
+                          >
+                            IP 차단
+                          </button>
+                        )
+                      )}
+                    </div>
+                  </div>
+
+                  <p className="text-xs text-stone-700 dark:text-stone-300 bg-white dark:bg-hall-900 p-3 rounded-lg border border-stone-200/60 dark:border-hall-800 leading-relaxed whitespace-pre-wrap">
+                    {post.content}
+                  </p>
+
+                  {/* Comments accordion */}
+                  {isExpanded && (
+                    <div className="pt-3 border-t border-stone-200/60 dark:border-hall-800/80 space-y-2">
+                      <div className="flex items-center justify-between text-xs font-bold text-stone-700 dark:text-stone-300">
+                        <span>등록된 댓글 ({commentsCount}개)</span>
+                      </div>
+
+                      {commentsCount === 0 ? (
+                        <p className="text-[11px] text-stone-400 italic py-1">작성된 댓글이 없습니다.</p>
+                      ) : (
+                        <div className="space-y-2">
+                          {post.comments.map((comment) => {
+                            const isCommentBlocked = blockedIps.some((b) => b.ip === comment.ip);
+                            return (
+                              <div
+                                key={comment.id}
+                                className="p-2.5 rounded-lg bg-stone-100/70 dark:bg-hall-900 border border-stone-200/60 dark:border-hall-800 flex items-start justify-between gap-2 text-xs"
+                              >
+                                <div className="space-y-1 min-w-0">
+                                  <div className="flex items-center gap-2 flex-wrap text-[11px]">
+                                    <span className="font-bold text-stone-800 dark:text-stone-200">{comment.author}</span>
+                                    <span className="text-stone-400">{comment.createdAt}</span>
+                                    <span className="inline-flex items-center px-1.5 py-0.2 rounded font-mono text-[10px] bg-stone-200/80 dark:bg-hall-800 text-stone-700 dark:text-stone-300">
+                                      IP: {comment.ip || '기록 없음'}
+                                    </span>
+                                    {isCommentBlocked && (
+                                      <span className="text-[10px] font-bold text-red-600 dark:text-red-400">
+                                        (차단된 IP)
+                                      </span>
+                                    )}
+                                  </div>
+                                  <p className="text-stone-700 dark:text-stone-300 leading-relaxed">
+                                    {comment.content}
+                                  </p>
+                                </div>
+
+                                <div className="flex items-center gap-1 shrink-0">
+                                  <button
+                                    onClick={() => setEditingComment({
+                                      postId: post.id,
+                                      commentId: comment.id,
+                                      author: comment.author,
+                                      content: comment.content
+                                    })}
+                                    className="p-1 text-stone-500 hover:text-concert-600 dark:hover:text-concert-400 hover:bg-stone-200 dark:hover:bg-hall-800 rounded transition-colors"
+                                    title="댓글 수정"
+                                  >
+                                    <Edit3 className="w-3.5 h-3.5" />
+                                  </button>
+                                  <button
+                                    onClick={() => {
+                                      if (confirm('해당 댓글을 삭제하시겠습니까?')) {
+                                        onDeleteComment(post.id, comment.id);
+                                      }
+                                    }}
+                                    className="p-1 text-stone-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded transition-colors"
+                                    title="댓글 삭제"
+                                  >
+                                    <Trash2 className="w-3.5 h-3.5" />
+                                  </button>
+                                  {comment.ip && (
+                                    isCommentBlocked ? (
+                                      <button
+                                        onClick={() => onUnblockIp(comment.ip)}
+                                        className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-stone-200 dark:bg-hall-700 text-stone-700 dark:text-stone-300"
+                                      >
+                                        해제
+                                      </button>
+                                    ) : (
+                                      <button
+                                        onClick={() => {
+                                          if (confirm(`댓글 작성자 IP (${comment.ip})를 차단하시겠습니까?`)) {
+                                            onBlockIp(comment.ip, `댓글 부적절 표현 규제`);
+                                          }
+                                        }}
+                                        className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-red-100 hover:bg-red-200 dark:bg-red-950/60 text-red-700 dark:text-red-300"
+                                      >
+                                        IP 차단
+                                      </button>
+                                    )
+                                  )}
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* Blocked IPs Management Section (차단된 IP 목록 및 수동 차단 관리) */}
+      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <UserX className="w-5 h-5 text-red-500" />
+            <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100 flex items-center gap-2">
+              <span>차단된 이용자 (IP) 목록 관리</span>
+              <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-red-50 dark:bg-red-950/60 text-red-700 dark:text-red-300 border border-red-200/60 dark:border-red-900/60">
+                총 {blockedIps.length}개 차단됨
+              </span>
+            </h3>
+          </div>
+          <span className="text-xs text-stone-400">
+            차단된 IP는 커뮤니티 게시글 및 댓글 작성이 전면 차단됩니다.
+          </span>
+        </div>
+
+        {/* Manual IP Block Form */}
+        <div className="p-4 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 space-y-2">
+          <span className="text-xs font-bold text-stone-800 dark:text-stone-200 block">
+            수동 IP 차단 등록
+          </span>
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+            <input
+              type="text"
+              placeholder="차단할 IP 주소 (예: 192.168.1.100)"
+              value={manualBlockIp}
+              onChange={(e) => setManualBlockIp(e.target.value)}
+              className="px-3 py-2 rounded-xl border border-stone-200 dark:border-hall-700 bg-white dark:bg-hall-900 text-stone-900 dark:text-stone-100 text-xs flex-1 focus:outline-hidden focus:ring-1 focus:ring-concert-500 font-mono"
+            />
+            <input
+              type="text"
+              placeholder="차단 사유 (예: 지속적인 정치 논쟁 및 비방)"
+              value={manualBlockReason}
+              onChange={(e) => setManualBlockReason(e.target.value)}
+              className="px-3 py-2 rounded-xl border border-stone-200 dark:border-hall-700 bg-white dark:bg-hall-900 text-stone-900 dark:text-stone-100 text-xs flex-1 focus:outline-hidden focus:ring-1 focus:ring-concert-500"
+            />
+            <button
+              onClick={() => {
+                if (!manualBlockIp.trim()) {
+                  alert('차단할 IP 주소를 입력해주세요.');
+                  return;
+                }
+                onBlockIp(manualBlockIp.trim(), manualBlockReason.trim() || '관리자 수동 차단');
+                setManualBlockIp('');
+                setManualBlockReason('');
+              }}
+              className="px-4 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs font-bold transition-all shadow-xs shrink-0 flex items-center justify-center gap-1.5"
+            >
+              <Ban className="w-3.5 h-3.5" />
+              <span>IP 차단 등록</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Blocked IPs Table */}
+        {blockedIps.length === 0 ? (
+          <div className="py-8 text-center text-xs text-stone-400 dark:text-stone-500 bg-stone-50/50 dark:bg-hall-850/50 rounded-xl border border-dashed border-stone-200 dark:border-hall-800">
+            현재 차단된 IP 주소가 없습니다.
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs">
+              <thead className="bg-stone-50 dark:bg-hall-850 text-stone-500 dark:text-stone-400 font-bold border-b border-stone-100 dark:border-hall-800">
+                <tr>
+                  <th className="py-2.5 px-3">차단된 IP 주소</th>
+                  <th className="py-2.5 px-3">차단 사유</th>
+                  <th className="py-2.5 px-3">차단 일시</th>
+                  <th className="py-2.5 px-3 text-right">해제 조치</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-stone-100 dark:divide-hall-800">
+                {blockedIps.map((item) => (
+                  <tr key={item.ip} className="hover:bg-stone-50/80 dark:hover:bg-hall-850/50">
+                    <td className="py-3 px-3 font-mono font-bold text-red-600 dark:text-red-400">
+                      {item.ip}
+                    </td>
+                    <td className="py-3 px-3 text-stone-700 dark:text-stone-300">
+                      {item.reason}
+                    </td>
+                    <td className="py-3 px-3 text-stone-400 text-[11px]">
+                      {item.blockedAt}
+                    </td>
+                    <td className="py-3 px-3 text-right">
+                      <button
+                        onClick={() => {
+                          if (confirm(`IP (${item.ip}) 차단을 해제하시겠습니까?`)) {
+                            onUnblockIp(item.ip);
+                          }
+                        }}
+                        className="px-2.5 py-1 rounded-lg bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-300 text-[11px] font-semibold transition-colors"
+                      >
+                        차단 해제
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
 
       {/* Manual Registration Modal (Admin Only) */}
@@ -1071,6 +1404,174 @@ export default function AdminCenter({
                   className="px-5 py-2 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold shadow-md transition-all"
                 >
                   수정 내용 저장
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Post Moderation Edit Modal (Admin) */}
+      {editingPost && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
+          onClick={() => setEditingPost(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="bg-white dark:bg-hall-900 rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto border border-stone-200 dark:border-hall-750 shadow-2xl p-6 sm:p-8 space-y-5"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between pb-3 border-b border-stone-100 dark:border-hall-800">
+              <h2 className="font-serif font-bold text-lg text-stone-900 dark:text-stone-50 flex items-center gap-2">
+                <Edit3 className="w-5 h-5 text-concert-500" />
+                <span>커뮤니티 게시글 수정 (관리자)</span>
+              </h2>
+              <button
+                onClick={() => setEditingPost(null)}
+                className="p-1.5 rounded-full hover:bg-stone-100 dark:hover:bg-hall-800 text-stone-400"
+                aria-label="닫기"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                onUpdatePost(editingPost.id, {
+                  title: editingPost.title,
+                  category: editingPost.category,
+                  content: editingPost.content
+                });
+                setEditingPost(null);
+              }}
+              className="space-y-4 text-xs"
+            >
+              <div>
+                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  카테고리
+                </label>
+                <select
+                  value={editingPost.category}
+                  onChange={(e) => setEditingPost({ ...editingPost, category: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                >
+                  <option value="기대평">기대평</option>
+                  <option value="관람 후기">관람 후기</option>
+                  <option value="클래식 수다">클래식 수다</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  게시글 제목
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={editingPost.title}
+                  onChange={(e) => setEditingPost({ ...editingPost, title: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div>
+                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  게시글 본문
+                </label>
+                <textarea
+                  required
+                  rows={6}
+                  value={editingPost.content}
+                  onChange={(e) => setEditingPost({ ...editingPost, content: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div className="flex items-center justify-end gap-2 pt-3 border-t border-stone-100 dark:border-hall-800">
+                <button
+                  type="button"
+                  onClick={() => setEditingPost(null)}
+                  className="px-4 py-2 rounded-xl bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 text-xs font-semibold"
+                >
+                  취소
+                </button>
+                <button
+                  type="submit"
+                  className="px-5 py-2 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold shadow-md transition-all"
+                >
+                  수정 완료
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Comment Moderation Edit Modal (Admin) */}
+      {editingComment && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
+          onClick={() => setEditingComment(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="bg-white dark:bg-hall-900 rounded-3xl max-w-md w-full border border-stone-200 dark:border-hall-750 shadow-2xl p-6 space-y-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between pb-3 border-b border-stone-100 dark:border-hall-800">
+              <h2 className="font-serif font-bold text-base text-stone-900 dark:text-stone-50 flex items-center gap-2">
+                <Edit3 className="w-4 h-4 text-concert-500" />
+                <span>댓글 내용 수정 (관리자)</span>
+              </h2>
+              <button
+                onClick={() => setEditingComment(null)}
+                className="p-1 rounded-full hover:bg-stone-100 dark:hover:bg-hall-800 text-stone-400"
+                aria-label="닫기"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                onUpdateComment(editingComment.postId, editingComment.commentId, {
+                  content: editingComment.content
+                });
+                setEditingComment(null);
+              }}
+              className="space-y-4 text-xs"
+            >
+              <div>
+                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  작성자: {editingComment.author}
+                </label>
+                <textarea
+                  required
+                  rows={4}
+                  value={editingComment.content}
+                  onChange={(e) => setEditingComment({ ...editingComment, content: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div className="flex items-center justify-end gap-2 pt-2 border-t border-stone-100 dark:border-hall-800">
+                <button
+                  type="button"
+                  onClick={() => setEditingComment(null)}
+                  className="px-3.5 py-1.5 rounded-xl bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 font-semibold"
+                >
+                  취소
+                </button>
+                <button
+                  type="submit"
+                  className="px-4 py-1.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white font-bold shadow-xs transition-all"
+                >
+                  수정 저장
                 </button>
               </div>
             </form>

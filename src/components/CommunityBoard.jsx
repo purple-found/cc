@@ -11,9 +11,16 @@ import {
   X,
   Send,
   MessageCircle,
-  Sparkles
+  Sparkles,
+  ShieldAlert,
+  FileText,
+  ChevronDown,
+  ChevronUp,
+  AlertTriangle
 } from 'lucide-react';
 import { formatKSTDateTime } from '../utils/parser.js';
+import { ipService } from '../services/ipService.js';
+import { storageService } from '../services/storageService.js';
 
 export default function CommunityBoard({
   posts,
@@ -26,6 +33,7 @@ export default function CommunityBoard({
   const [selectedCategory, setSelectedCategory] = useState('전체');
   const [searchQuery, setSearchQuery] = useState('');
   const [isWriteModalOpen, setIsWriteModalOpen] = useState(false);
+  const [isRulesExpanded, setIsRulesExpanded] = useState(true);
   const [activePost, setActivePost] = useState(null);
 
   // New post form state
@@ -68,11 +76,17 @@ export default function CommunityBoard({
     return matchCat && matchSearch;
   });
 
-  // 글 등록 핸들러
-  const handleCreatePost = (e) => {
+  // 글 등록 핸들러 (IP 확인 및 차단 여부 검사)
+  const handleCreatePost = async (e) => {
     e.preventDefault();
     if (!formData.title.trim() || !formData.content.trim()) {
       alert('제목과 내용을 입력해주세요.');
+      return;
+    }
+
+    const clientIp = await ipService.getMyIp();
+    if (storageService.isIpBlocked(clientIp)) {
+      alert(`[작성 제한 안내]\n현재 접속하신 IP(${clientIp})는 커뮤니티 이용 규칙 위반(정치 논쟁/비방 등)으로 인해 글 및 댓글 작성이 차단되었습니다.\n차단 해제는 관리 센터로 문의하시기 바랍니다.`);
       return;
     }
 
@@ -85,7 +99,8 @@ export default function CommunityBoard({
       concertTitle: linkedConcert ? linkedConcert.title : null,
       rating: formData.category === '관람 후기' ? Number(formData.rating) : null,
       author: formData.author.trim() || '클래식 메이트',
-      content: formData.content.trim()
+      content: formData.content.trim(),
+      ip: clientIp
     });
 
     setFormData({
@@ -99,27 +114,33 @@ export default function CommunityBoard({
     setIsWriteModalOpen(false);
   };
 
-  // 댓글 등록 핸들러
-  const handleCreateComment = (e) => {
+  // 댓글 등록 핸들러 (IP 확인 및 차단 여부 검사)
+  const handleCreateComment = async (e) => {
     e.preventDefault();
     if (!commentInput.content.trim()) return;
 
-    onAddComment(activePost.id, {
+    const clientIp = await ipService.getMyIp();
+    if (storageService.isIpBlocked(clientIp)) {
+      alert(`[작성 제한 안내]\n현재 접속하신 IP(${clientIp})는 커뮤니티 이용 규칙 위반으로 작성이 차단되었습니다.`);
+      return;
+    }
+
+    const newComment = {
+      id: `c-${Date.now()}`,
       author: commentInput.author.trim() || '클래식 청중',
-      content: commentInput.content.trim()
-    });
+      content: commentInput.content.trim(),
+      ip: clientIp,
+      createdAt: formatKSTDateTime(new Date())
+    };
+
+    onAddComment(activePost.id, newComment);
 
     // 로컬 액티브 포스트도 갱신
     setActivePost((prev) => ({
       ...prev,
       comments: [
         ...(prev.comments || []),
-        {
-          id: `c-${Date.now()}`,
-          author: commentInput.author.trim() || '클래식 청중',
-          content: commentInput.content.trim(),
-          createdAt: formatKSTDateTime(new Date())
-        }
+        newComment
       ]
     }));
 
@@ -181,6 +202,75 @@ export default function CommunityBoard({
             />
           </div>
         </div>
+      </div>
+
+      {/* Community Guidelines Banner (클래식 커뮤니티 이용 규칙) */}
+      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-5 shadow-xs space-y-3">
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <span className="p-1.5 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400">
+              <ShieldAlert className="w-4 h-4" />
+            </span>
+            <h3 className="font-serif font-bold text-sm text-stone-900 dark:text-stone-100 flex items-center gap-2">
+              <span>클래식 커뮤니티 이용 규칙</span>
+              <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-stone-100 dark:bg-hall-800 text-stone-600 dark:text-stone-300">
+                필독
+              </span>
+            </h3>
+          </div>
+          <button
+            type="button"
+            onClick={() => setIsRulesExpanded(!isRulesExpanded)}
+            className="flex items-center gap-1 text-xs text-stone-500 hover:text-stone-700 dark:text-stone-400 dark:hover:text-stone-200 font-semibold transition-colors"
+          >
+            <span>{isRulesExpanded ? '규칙 접기' : '규칙 펼치기'}</span>
+            {isRulesExpanded ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+          </button>
+        </div>
+
+        {isRulesExpanded && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-3 border-t border-stone-100 dark:border-hall-800 text-xs">
+            <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1">
+              <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                1. 상호 존중 및 비방·욕설 금지
+              </span>
+              <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
+                연주자, 지휘자, 오케스트라 및 다른 관람객을 향한 인신공격, 조롱, 혐오 표현을 엄격히 금지합니다.
+              </p>
+            </div>
+
+            <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1">
+              <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                2. 정치·사회적 갈등 조장 발언 금지
+              </span>
+              <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
+                음악과 예술 본연의 향유를 위해 정치적 논쟁, 편가르기, 특정 집단 비하 게시물은 무통보 삭제 및 IP가 차단됩니다.
+              </p>
+            </div>
+
+            <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1">
+              <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                3. 허위사실 유포 및 불법 암표 거래 금지
+              </span>
+              <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
+                확인되지 않은 루머 유포나 공식 예매처 규정을 위반하는 프리미엄 웃돈 암표 거래, 불법 양도는 엄단합니다.
+              </p>
+            </div>
+
+            <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1">
+              <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                4. 성숙한 클래식 공연 에티켓 준수
+              </span>
+              <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
+                악장 간 박수 자제, 연주 중 스마트폰 무음 유지, 무단 녹음·촬영 금지 등 품격 있는 관람 문화를 함께 지켜주세요.
+              </p>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Post List */}
@@ -434,6 +524,16 @@ export default function CommunityBoard({
             </div>
 
             <form onSubmit={handleCreatePost} className="space-y-4">
+              {/* Community Rule Notice */}
+              <div className="p-3 rounded-xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200/70 dark:border-amber-900/40 text-[11px] text-amber-900 dark:text-amber-200 space-y-1">
+                <span className="font-bold flex items-center gap-1.5 text-amber-800 dark:text-amber-300">
+                  <ShieldAlert className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 shrink-0" />
+                  <span>이용 규칙 준수 안내</span>
+                </span>
+                <p className="leading-relaxed text-stone-600 dark:text-stone-300">
+                  정치적 논쟁, 특정인 비방·욕설, 불법 암표 거래 등 커뮤니티 이용 규칙을 위반할 경우 글이 삭제되며 해당 IP의 작성이 영구 차단될 수 있습니다.
+                </p>
+              </div>
               {/* Category & Rating */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>

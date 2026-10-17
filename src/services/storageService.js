@@ -1,48 +1,57 @@
 import { safeParseJSON, formatKSTDateTime } from '../utils/parser.js';
-import { verifiedRealConcerts2026 } from '../data/verifiedRealConcerts2026.js';
 import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 
-const CONCERTS_KEY = 'opus_korea_verified_real_concerts_v6';
+// v8: 사용자 요청에 따라 기존 부정확한 공연 데이터를 일체 자동 로드하지 않고 빈 목록([])에서 시작
+const CONCERTS_KEY = 'opus_korea_concerts_v8';
 const HALLS_KEY = 'opus_korea_halls_v3';
-const POSTS_KEY = 'opus_korea_posts_v3';
+const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
+const TIPS_KEY = 'opus_korea_tips_v3';
+const BLOCKED_IPS_KEY = 'opus_korea_blocked_ips_v1';
+
+// 이전 버전의 부정확한 로컬 캐시 키 정리
+try {
+  if (typeof localStorage !== 'undefined') {
+    ['opus_korea_verified_real_concerts_v5', 'opus_korea_verified_real_concerts_v6', 'opus_korea_concerts_v7'].forEach(k => {
+      localStorage.removeItem(k);
+    });
+  }
+} catch {}
 
 export const storageService = {
-  // 공연 목록 조회 (100% 실존 공식 공연 연동)
+  // ───────────────────────── 공연 (Concerts) ─────────────────────────
+  // 공연 목록 조회 (기존 데이터 비움: 기본값 빈 배열 [])
   getConcerts() {
     try {
       const raw = localStorage.getItem(CONCERTS_KEY);
       if (!raw) {
-        localStorage.setItem(CONCERTS_KEY, JSON.stringify(verifiedRealConcerts2026));
-        return verifiedRealConcerts2026;
+        return [];
       }
-      const parsed = safeParseJSON(raw, verifiedRealConcerts2026);
-      if (Array.isArray(parsed) && parsed.length > 0) {
-        // 실존 공식 공연 ID 목록 병합
-        const existingIds = new Set(parsed.map(c => c.id));
-        const missingOfficial = verifiedRealConcerts2026.filter(c => !existingIds.has(c.id));
-        if (missingOfficial.length > 0) {
-          const merged = [...parsed, ...missingOfficial];
-          localStorage.setItem(CONCERTS_KEY, JSON.stringify(merged));
-          return merged;
-        }
-        return parsed;
-      }
-      return verifiedRealConcerts2026;
+      const parsed = safeParseJSON(raw, []);
+      return Array.isArray(parsed) ? parsed : [];
     } catch (e) {
-      console.warn('[저장소 안전 복구] 실존 공연 목록 기본값 복원', e);
-      return verifiedRealConcerts2026;
+      return [];
     }
   },
 
   // 공연 목록 저장
   saveConcerts(concerts) {
     try {
-      localStorage.setItem(CONCERTS_KEY, JSON.stringify(concerts));
+      localStorage.setItem(CONCERTS_KEY, JSON.stringify(concerts || []));
     } catch (e) {
       console.error('[저장소 오류] 공연 목록 저장 실패', e);
     }
+  },
+
+  // 전체 공연 데이터 삭제 (사용자 요청 1번)
+  clearAllConcerts() {
+    try {
+      localStorage.setItem(CONCERTS_KEY, JSON.stringify([]));
+    } catch (e) {
+      console.error('[저장소 오류] 공연 전체 삭제 실패', e);
+    }
+    return [];
   },
 
   // 공연 단건 추가 (관리자 수동 등록)
@@ -51,7 +60,7 @@ export const storageService = {
     const newConcert = {
       ...concertData,
       id: `conc-${Date.now()}`,
-      source: '관리자 수동 등록',
+      source: concertData.source || '관리자 수동 등록',
       crawlerBlocked: true
     };
     const updated = [newConcert, ...list];
@@ -59,7 +68,7 @@ export const storageService = {
     return updated;
   },
 
-  // 공연 삭제
+  // 공연 단건 삭제
   deleteConcert(id) {
     const list = this.getConcerts();
     const updated = list.filter(c => c.id !== id);
@@ -85,7 +94,7 @@ export const storageService = {
     return updated;
   },
 
-  // 공연장 상태 목록
+  // ───────────────────────── 공연장 (Halls) ─────────────────────────
   getHalls() {
     try {
       const raw = localStorage.getItem(HALLS_KEY);
@@ -108,7 +117,7 @@ export const storageService = {
     }
   },
 
-  // 커뮤니티 게시글 목록
+  // ───────────────────────── 커뮤니티 (Community Posts & Comments) ─────────────────────────
   getPosts() {
     try {
       const raw = localStorage.getItem(POSTS_KEY);
@@ -117,7 +126,7 @@ export const storageService = {
         return initialPosts;
       }
       const parsed = safeParseJSON(raw, initialPosts);
-      return Array.isArray(parsed) && parsed.length > 0 ? parsed : initialPosts;
+      return Array.isArray(parsed) ? parsed : initialPosts;
     } catch (e) {
       return initialPosts;
     }
@@ -131,12 +140,13 @@ export const storageService = {
     }
   },
 
-  // 게시글 추가
+  // 게시글 추가 (작성자 IP 자동 기록)
   addPost(postData) {
     const list = this.getPosts();
     const newPost = {
       ...postData,
       id: `post-${Date.now()}`,
+      ip: postData.ip || '121.134.45.10',
       createdAt: formatKSTDateTime(new Date()),
       likes: 0,
       views: 1,
@@ -147,7 +157,33 @@ export const storageService = {
     return updated;
   },
 
-  // 댓글 추가
+  // 관리자: 부적절한 게시글 수정 (제목, 본문, 카테고리 교정)
+  updatePost(postId, updatedFields) {
+    const list = this.getPosts();
+    const updated = list.map(post => {
+      if (post.id === postId) {
+        return {
+          ...post,
+          ...updatedFields,
+          editedAt: formatKSTDateTime(new Date()),
+          editedByAdmin: true
+        };
+      }
+      return post;
+    });
+    this.savePosts(updated);
+    return updated;
+  },
+
+  // 관리자: 부적절한 게시글 삭제
+  deletePost(postId) {
+    const list = this.getPosts();
+    const updated = list.filter(p => p.id !== postId);
+    this.savePosts(updated);
+    return updated;
+  },
+
+  // 댓글 추가 (작성자 IP 자동 기록)
   addComment(postId, commentData) {
     const list = this.getPosts();
     const updated = list.map(post => {
@@ -159,10 +195,53 @@ export const storageService = {
             {
               id: `c-${Date.now()}`,
               author: commentData.author || '클래식 동행',
+              ip: commentData.ip || '121.134.45.10',
               content: commentData.content,
               createdAt: formatKSTDateTime(new Date())
             }
           ]
+        };
+      }
+      return post;
+    });
+    this.savePosts(updated);
+    return updated;
+  },
+
+  // 관리자: 부적절한 댓글 수정
+  updateComment(postId, commentId, newContent) {
+    const list = this.getPosts();
+    const updated = list.map(post => {
+      if (post.id === postId) {
+        return {
+          ...post,
+          comments: (post.comments || []).map(c => {
+            if (c.id === commentId) {
+              return {
+                ...c,
+                content: newContent,
+                editedAt: formatKSTDateTime(new Date()),
+                editedByAdmin: true
+              };
+            }
+            return c;
+          })
+        };
+      }
+      return post;
+    });
+    this.savePosts(updated);
+    return updated;
+  },
+
+  // 관리자: 부적절한 댓글 삭제
+  deleteComment(postId, commentId) {
+    const list = this.getPosts();
+    const updated = list.map(post => {
+      if (post.id === postId) {
+        return {
+          ...post,
+          comments: (post.comments || []).filter(c => c.id !== commentId)
         };
       }
       return post;
@@ -184,7 +263,61 @@ export const storageService = {
     return updated;
   },
 
-  // 테마 모드
+  // ───────────────────────── 차단 IP 관리 (IP Blocklist) ─────────────────────────
+  getBlockedIps() {
+    try {
+      const raw = localStorage.getItem(BLOCKED_IPS_KEY);
+      if (!raw) return [];
+      const parsed = safeParseJSON(raw, []);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (e) {
+      return [];
+    }
+  },
+
+  saveBlockedIps(list) {
+    try {
+      localStorage.setItem(BLOCKED_IPS_KEY, JSON.stringify(list || []));
+    } catch (e) {
+      console.error('[저장소 오류] 차단 IP 목록 저장 실패', e);
+    }
+  },
+
+  isIpBlocked(ip) {
+    if (!ip || typeof ip !== 'string') return false;
+    const cleanIp = ip.trim();
+    const blocked = this.getBlockedIps();
+    return blocked.some(b => b.ip === cleanIp);
+  },
+
+  blockIp(ip, reason = '커뮤니티 이용 규칙 위반 (정치/욕설/비방 등)') {
+    if (!ip || typeof ip !== 'string') return this.getBlockedIps();
+    const cleanIp = ip.trim();
+    const list = this.getBlockedIps();
+    if (list.some(b => b.ip === cleanIp)) {
+      return list; // 이미 차단됨
+    }
+    const newEntry = {
+      id: `block-${Date.now()}`,
+      ip: cleanIp,
+      reason: reason || '커뮤니티 운영 규칙 위반',
+      blockedAt: formatKSTDateTime(new Date())
+    };
+    const updated = [newEntry, ...list];
+    this.saveBlockedIps(updated);
+    return updated;
+  },
+
+  unblockIp(ip) {
+    if (!ip) return this.getBlockedIps();
+    const cleanIp = String(ip).trim();
+    const list = this.getBlockedIps();
+    const updated = list.filter(b => b.ip !== cleanIp);
+    this.saveBlockedIps(updated);
+    return updated;
+  },
+
+  // ───────────────────────── 테마 (Theme) ─────────────────────────
   getTheme() {
     return localStorage.getItem(THEME_KEY) || 'light';
   },
@@ -193,10 +326,10 @@ export const storageService = {
     localStorage.setItem(THEME_KEY, theme);
   },
 
-  // 공연 제보(Tip-off) 목록 조회 (일반 사용자 제보 -> 관리자 승인)
+  // ───────────────────────── 공연 제보 (Tips) ─────────────────────────
   getTips() {
     try {
-      const raw = localStorage.getItem('opus_korea_tips_v3');
+      const raw = localStorage.getItem(TIPS_KEY);
       if (!raw) return [];
       const parsed = safeParseJSON(raw, []);
       return Array.isArray(parsed) ? parsed : [];
@@ -207,13 +340,12 @@ export const storageService = {
 
   saveTips(tips) {
     try {
-      localStorage.setItem('opus_korea_tips_v3', JSON.stringify(tips));
+      localStorage.setItem(TIPS_KEY, JSON.stringify(tips));
     } catch (e) {
       console.error('[저장소 오류] 제보 목록 저장 실패', e);
     }
   },
 
-  // 일반 사용자의 공연 제보 등록
   addTip(tipData) {
     const list = this.getTips();
     const newTip = {
@@ -227,13 +359,11 @@ export const storageService = {
     return updated;
   },
 
-  // 관리자의 제보 승인 및 공식 공연 정식 등록
   approveTip(tipId) {
     const tips = this.getTips();
     const targetTip = tips.find(t => t.id === tipId);
     if (!targetTip) return { updatedTips: tips, updatedConcerts: this.getConcerts() };
 
-    // 공식 공연 객체로 변환하여 등록
     const newConcert = {
       title: targetTip.title,
       date: targetTip.date,
@@ -245,7 +375,7 @@ export const storageService = {
       composers: Array.isArray(targetTip.composers) ? targetTip.composers : [targetTip.composers || '클래식'],
       pieces: Array.isArray(targetTip.pieces) ? targetTip.pieces : [targetTip.pieces || '상세 프로그램'],
       price: targetTip.price || '추후 공지',
-      ticketUrl: targetTip.ticketUrl || 'https://www.sac.or.kr',
+      ticketUrl: targetTip.ticketUrl || '',
       status: '예매중',
       description: `[관람객 제보 등록] ${targetTip.note || '공연 일정입니다.'}`,
       imageUrl: targetTip.imageUrl || 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80',
@@ -254,14 +384,12 @@ export const storageService = {
     };
 
     const updatedConcerts = this.addConcert(newConcert);
-    // 제보 목록에서 승인 완료된 항목 제거
     const updatedTips = tips.filter(t => t.id !== tipId);
     this.saveTips(updatedTips);
 
     return { updatedTips, updatedConcerts, approvedConcert: newConcert };
   },
 
-  // 관리자의 제보 반려/삭제
   deleteTip(tipId) {
     const list = this.getTips();
     const updated = list.filter(t => t.id !== tipId);
@@ -269,11 +397,12 @@ export const storageService = {
     return updated;
   },
 
-  // 데이터 초기화
+  // 전체 데이터 리셋
   resetAll() {
     localStorage.removeItem(CONCERTS_KEY);
     localStorage.removeItem(HALLS_KEY);
     localStorage.removeItem(POSTS_KEY);
-    localStorage.removeItem('opus_korea_tips_v3');
+    localStorage.removeItem(TIPS_KEY);
+    localStorage.removeItem(BLOCKED_IPS_KEY);
   }
 };

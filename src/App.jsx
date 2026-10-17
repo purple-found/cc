@@ -26,6 +26,7 @@ export default function App() {
   const [halls, setHalls] = useState([]);
   const [posts, setPosts] = useState([]);
   const [tips, setTips] = useState([]);
+  const [blockedIps, setBlockedIps] = useState(() => storageService.getBlockedIps());
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [hasFatalError, setHasFatalError] = useState(false);
 
@@ -139,6 +140,13 @@ export default function App() {
     showToast('공연이 삭제되었습니다.', 'info');
   };
 
+  // 공연 전체 삭제 핸들러 (Admin)
+  const handleClearAllConcerts = () => {
+    const updated = storageService.clearAllConcerts();
+    setConcerts(updated);
+    showToast('모든 공연 데이터가 성공적으로 삭제되었습니다.', 'info');
+  };
+
   // 전체 공연장 수집 동기화 시뮬레이션
   const handleSyncAllHalls = () => {
     setIsSyncing(true);
@@ -174,6 +182,43 @@ export default function App() {
     const updated = storageService.toggleLike(postId);
     setPosts(updated);
     showToast('공감을 보냈습니다! ❤️');
+  };
+
+  // 관리자 커뮤니티 관리 핸들러 (글/댓글 수정 및 삭제, IP 차단/해제)
+  const handleUpdatePost = (postId, updatedData) => {
+    const updated = storageService.updatePost(postId, updatedData);
+    setPosts(updated);
+    showToast('게시글이 성공적으로 수정되었습니다.');
+  };
+
+  const handleDeletePost = (postId) => {
+    const updated = storageService.deletePost(postId);
+    setPosts(updated);
+    showToast('게시글이 삭제되었습니다.', 'info');
+  };
+
+  const handleUpdateComment = (postId, commentId, updatedData) => {
+    const updated = storageService.updateComment(postId, commentId, updatedData);
+    setPosts(updated);
+    showToast('댓글이 성공적으로 수정되었습니다.');
+  };
+
+  const handleDeleteComment = (postId, commentId) => {
+    const updated = storageService.deleteComment(postId, commentId);
+    setPosts(updated);
+    showToast('댓글이 삭제되었습니다.', 'info');
+  };
+
+  const handleBlockIp = (ip, reason) => {
+    const updated = storageService.blockIp(ip, reason);
+    setBlockedIps(updated);
+    showToast(`IP (${ip}) 이용자가 차단되었습니다.`, 'info');
+  };
+
+  const handleUnblockIp = (ip) => {
+    const updated = storageService.unblockIp(ip);
+    setBlockedIps(updated);
+    showToast(`IP (${ip}) 차단이 해제되었습니다.`);
   };
 
   // 필터링된 공연 목록 계산 (한국어/영어 양방향 다차원 검색)
@@ -375,14 +420,23 @@ export default function App() {
               halls={halls}
               concerts={concerts}
               tips={tips}
+              posts={posts}
+              blockedIps={blockedIps}
               onAddConcert={handleAddConcert}
               onUpdateConcert={handleUpdateConcert}
               onDeleteConcert={handleDeleteConcert}
+              onClearAllConcerts={handleClearAllConcerts}
               onApproveTip={handleApproveTip}
               onDeleteTip={handleDeleteTip}
               onSyncAllHalls={handleSyncAllHalls}
               isSyncing={isSyncing}
               onRefreshConcerts={(newList) => setConcerts(newList)}
+              onUpdatePost={handleUpdatePost}
+              onDeletePost={handleDeletePost}
+              onUpdateComment={handleUpdateComment}
+              onDeleteComment={handleDeleteComment}
+              onBlockIp={handleBlockIp}
+              onUnblockIp={handleUnblockIp}
               onLogout={() => {
                 setIsAdminAuthenticated(false);
                 setActiveTab('concerts');

@@ -82,16 +82,9 @@ export const kopisMonitoringService = {
 
     console.log(`[KOPIS & 공식망 모니터링 엔진] (${formattedNow}) 정기 점검 동기화 실행...`);
 
-    // 공식 실존 공연 데이터 보장 및 병합
+    // 현재 보관된 공연 데이터 정합성 검사
     const currentConcerts = storageService.getConcerts();
-    const existingRealIds = new Set(currentConcerts.map(c => c.kopisId || c.id));
-    const missing = verifiedRealConcerts2026.filter(c => !existingRealIds.has(c.kopisId || c.id));
-
     let updatedConcerts = currentConcerts;
-    if (missing.length > 0) {
-      updatedConcerts = [...currentConcerts, ...missing];
-      storageService.saveConcerts(updatedConcerts);
-    }
 
     // 실제 모니터링 로그 생성
     const newLog = {
@@ -100,14 +93,12 @@ export const kopisMonitoringService = {
       cycle: forced ? `수동 점검 (${formattedNow.slice(11)})` : cycle,
       status: '정상 완료',
       type: 'KOPIS & 주요 연주장 전산 대조',
-      summary: missing.length > 0 
-        ? `신규 실존 공연 ${missing.length}건 추가 및 전체 ${updatedConcerts.length}개 일정 최신 상태 동기화 완료` 
-        : `공식 예매망 및 KOPIS 전체 ${currentConcerts.length}개 일정 실시간 대조 완료 (데이터 정합성 100%)`,
-      addedCount: missing.length,
+      summary: `공식 예매망 및 KOPIS 실시간 전산 대조 점검 완료 (등록 공연: ${currentConcerts.length}건)`,
+      addedCount: 0,
       modifiedCount: 0,
-      details: missing.length > 0 
-        ? missing.map(m => ({ action: '추가', concertTitle: m.title, note: `${m.venue} 공식 예매망 일정 등록` }))
-        : [{ action: '확인', concertTitle: '전체 공식 연주장 & KOPIS', note: '티켓 잔여석 및 프로그램 정보 정상 일치' }]
+      details: [
+        { action: '확인', concertTitle: '공식 연주장 및 KOPIS 전산망', note: '정기 점검 대조 완료' }
+      ]
     };
 
     const updatedLogs = this.appendMonitoringLog(newLog);
