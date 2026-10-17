@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
   ShieldCheck,
+  RefreshCw,
   PlusCircle,
   Trash2,
   Calendar,
@@ -19,6 +20,7 @@ import {
   ChevronUp
 } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser.js';
+import { kopisCrawlerService } from '../services/kopisCrawlerService.js';
 
 export default function AdminCenter({
   concerts = [],
@@ -42,6 +44,7 @@ export default function AdminCenter({
 }) {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [editingConcert, setEditingConcert] = useState(null);
+  const [isSyncingKopis, setIsSyncingKopis] = useState(false);
 
   // 커뮤니티 및 IP 관리용 상태
   const [editingPost, setEditingPost] = useState(null);
@@ -49,6 +52,25 @@ export default function AdminCenter({
   const [expandedPostId, setExpandedPostId] = useState(null);
   const [manualBlockIp, setManualBlockIp] = useState('');
   const [manualBlockReason, setManualBlockReason] = useState('');
+
+  const handleSyncKopis = async () => {
+    setIsSyncingKopis(true);
+    try {
+      const res = await kopisCrawlerService.crawlKopisConcerts();
+      if (res.success && res.concerts) {
+        if (onRefreshConcerts) {
+          onRefreshConcerts(res.concerts);
+        }
+        alert(res.message);
+      } else {
+        alert(res.message || '공연 데이터를 수집하지 못했습니다.');
+      }
+    } catch (e) {
+      alert('KOPIS 전산망 수집 중 오류: ' + (e.message || '네트워크 오류'));
+    } finally {
+      setIsSyncingKopis(false);
+    }
+  };
   const [formData, setFormData] = useState({
     title: '',
     date: '',
@@ -225,6 +247,16 @@ export default function AdminCenter({
           </div>
 
           <div className="flex items-center gap-2.5">
+            <button
+              onClick={handleSyncKopis}
+              disabled={isSyncingKopis}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-800 dark:text-stone-200 text-xs font-semibold transition-all shrink-0 border border-stone-200 dark:border-hall-700"
+              title="공연예술통합전산망(KOPIS) 공식 실시간 클래식 공연 데이터를 수집합니다"
+            >
+              <RefreshCw className={`w-3.5 h-3.5 ${isSyncingKopis ? 'animate-spin text-concert-500' : ''}`} />
+              <span>{isSyncingKopis ? 'KOPIS 전산망 수집 중...' : 'KOPIS 공식 실시간 수집'}</span>
+            </button>
+
             <button
               onClick={() => setIsAddModalOpen(true)}
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-md shrink-0"

@@ -13,6 +13,7 @@ import ErrorFallback from './components/ErrorFallback';
 import Footer from './components/Footer';
 import { storageService } from './services/storageService';
 import { kopisMonitoringService } from './services/kopisMonitoringService.js';
+import { kopisCrawlerService } from './services/kopisCrawlerService.js';
 import { isPastConcert, formatKSTDateTime } from './utils/parser.js';
 import { Sparkles, Calendar, MessageSquare, AlertCircle } from 'lucide-react';
 
@@ -58,8 +59,8 @@ export default function App() {
     }
   }, [theme]);
 
-  // 초기 데이터 로드 (Gate 3, Gate 6)
-  const loadData = () => {
+  // 초기 데이터 로드 (Gate 3, Gate 6, KOPIS 실시간 자동 동기화)
+  const loadData = async () => {
     try {
       const c = storageService.getConcerts();
       const p = storageService.getPosts();
@@ -69,6 +70,19 @@ export default function App() {
       setTips(t);
       setIsDataLoaded(true);
       setHasFatalError(false);
+
+      // 공연 데이터가 비어있는 경우 KOPIS 정부 전산망에서 공식 실시간 데이터 자동 수집
+      if (c.length === 0) {
+        try {
+          const res = await kopisCrawlerService.crawlKopisConcerts();
+          if (res.success && res.concerts && res.concerts.length > 0) {
+            setConcerts(res.concerts);
+            showToast(`KOPIS 공식 전산망에서 ${res.concerts.length}건의 실제 공연을 성공적으로 수집했습니다.`);
+          }
+        } catch (crawlErr) {
+          console.warn('[KOPIS 자동 수집 알림]:', crawlErr.message);
+        }
+      }
     } catch (err) {
       console.error('데이터 초기화 중 오류 발생:', err);
       setHasFatalError(true);

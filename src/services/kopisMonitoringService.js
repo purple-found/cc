@@ -1,6 +1,6 @@
-import { verifiedRealConcerts2026 } from '../data/verifiedRealConcerts2026.js';
 import { storageService } from './storageService.js';
 import { formatKSTDateTime } from '../utils/parser.js';
+import { kopisCrawlerService } from './kopisCrawlerService.js';
 
 /**
  * kopisMonitoringService.js
@@ -73,40 +73,27 @@ export const kopisMonitoringService = {
     return [];
   },
 
-  // 수동 또는 정기 모니터링 실행 시 동기화 및 로그 기록 (KST 기준)
+  // 수동 또는 정기 모니터링 실행 시 KOPIS 실시간 크롤링 및 동기화
   async runScheduledSync(forced = false) {
     const now = new Date();
     const formattedNow = formatKSTDateTime(now);
-    const kstHour = parseInt(formattedNow.slice(11, 13), 10);
-    const cycle = kstHour < 12 ? '03:00 정기 점검' : '15:00 정기 점검';
+    console.log(`[KOPIS 공식망 모니터링 엔진] (${formattedNow}) 정기 점검 크롤링 실행...`);
 
-    console.log(`[KOPIS & 공식망 모니터링 엔진] (${formattedNow}) 정기 점검 동기화 실행...`);
+    let updatedConcerts = storageService.getConcerts();
+    let crawlResult = null;
 
-    // 현재 보관된 공연 데이터 정합성 검사
-    const currentConcerts = storageService.getConcerts();
-    let updatedConcerts = currentConcerts;
-
-    // 실제 모니터링 로그 생성
-    const newLog = {
-      id: `log-${Date.now()}`,
-      timestamp: formattedNow,
-      cycle: forced ? `수동 점검 (${formattedNow.slice(11)})` : cycle,
-      status: '정상 완료',
-      type: 'KOPIS & 주요 연주장 전산 대조',
-      summary: `공식 예매망 및 KOPIS 실시간 전산 대조 점검 완료 (등록 공연: ${currentConcerts.length}건)`,
-      addedCount: 0,
-      modifiedCount: 0,
-      details: [
-        { action: '확인', concertTitle: '공식 연주장 및 KOPIS 전산망', note: '정기 점검 대조 완료' }
-      ]
-    };
-
-    const updatedLogs = this.appendMonitoringLog(newLog);
+    try {
+      crawlResult = await kopisCrawlerService.crawlKopisConcerts();
+      if (crawlResult && crawlResult.concerts) {
+        updatedConcerts = crawlResult.concerts;
+      }
+    } catch (e) {
+      console.warn('[KOPIS 모니터링] 정기 수집 중 통신 오류:', e.message);
+    }
 
     return {
       success: true,
-      log: newLog,
-      logs: updatedLogs,
+      crawlResult,
       concerts: updatedConcerts
     };
   },
