@@ -1,31 +1,23 @@
 import React, { useState } from 'react';
 import {
   ShieldCheck,
-  ShieldAlert,
   RefreshCw,
   PlusCircle,
   Trash2,
   Calendar,
-  MapPin,
-  ExternalLink,
   CheckCircle2,
   AlertTriangle,
   Music,
   Inbox,
   Check,
-  UserCheck,
   Edit3,
   History,
-  ArrowRight,
   Globe,
   Ban,
   MessageSquare,
   MessageCircle,
   X,
   UserX,
-  Lock,
-  Unlock,
-  AlertOctagon,
   ChevronDown,
   ChevronUp
 } from 'lucide-react';
@@ -34,8 +26,7 @@ import { kopisMonitoringService } from '../services/kopisMonitoringService.js';
 import { kopisCrawlerService } from '../services/kopisCrawlerService.js';
 
 export default function AdminCenter({
-  halls,
-  concerts,
+  concerts = [],
   tips = [],
   posts = [],
   blockedIps = [],
@@ -45,8 +36,6 @@ export default function AdminCenter({
   onClearAllConcerts,
   onApproveTip,
   onDeleteTip,
-  onSyncAllHalls,
-  isSyncing,
   onLogout,
   onRefreshConcerts,
   onUpdatePost,
@@ -239,8 +228,6 @@ export default function AdminCenter({
 
     setEditingConcert(null);
   };
-
-  const blockedHallsCount = halls.filter((h) => h.blocked).length;
 
   return (
     <div className="space-y-8">
@@ -546,74 +533,7 @@ export default function AdminCenter({
         )}
       </div>
 
-      {/* Hall Monitoring Table */}
-      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 overflow-hidden shadow-sm">
-        <div className="p-5 border-b border-stone-100 dark:border-hall-800">
-          <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100">
-            주요 연주장 수집망 실시간 현황
-          </h3>
-        </div>
 
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs">
-            <thead className="bg-stone-50 dark:bg-hall-850 text-stone-500 dark:text-stone-400 font-bold border-b border-stone-100 dark:border-hall-800">
-              <tr>
-                <th className="py-3 px-4">연주장 명칭 / 위치</th>
-                <th className="py-3 px-4">수집 상태</th>
-                <th className="py-3 px-4">최근 동기화</th>
-                <th className="py-3 px-4">상세 점검 내용</th>
-                <th className="py-3 px-4 text-right">홈페이지</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-stone-100 dark:divide-hall-800">
-              {halls.map((hall) => (
-                <tr key={hall.id} className="hover:bg-stone-50/80 dark:hover:bg-hall-850/50">
-                  <td className="py-3.5 px-4">
-                    <span className="font-bold text-stone-900 dark:text-stone-100 block">
-                      {hall.name}
-                    </span>
-                    <span className="text-[11px] text-stone-400">{hall.city}</span>
-                  </td>
-
-                  <td className="py-3.5 px-4 whitespace-nowrap">
-                    {hall.blocked ? (
-                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300">
-                        <ShieldAlert className="w-3 h-3 text-amber-600 dark:text-amber-400" />
-                        <span>수집 차단됨</span>
-                      </span>
-                    ) : (
-                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
-                        <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
-                        <span>연동 정상</span>
-                      </span>
-                    )}
-                  </td>
-
-                  <td className="py-3.5 px-4 text-stone-500 dark:text-stone-400 whitespace-nowrap">
-                    {hall.lastSyncTime}
-                  </td>
-
-                  <td className="py-3.5 px-4 text-stone-600 dark:text-stone-300 max-w-xs truncate">
-                    {hall.syncNote}
-                  </td>
-
-                  <td className="py-3.5 px-4 text-right whitespace-nowrap">
-                    <a
-                      href={hall.officialUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-concert-600 dark:text-concert-400 hover:underline font-semibold"
-                    >
-                      <span>이동</span>
-                      <ExternalLink className="w-3 h-3" />
-                    </a>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
 
       {/* Registered Concerts Management Section */}
       <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">

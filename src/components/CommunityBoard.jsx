@@ -233,10 +233,10 @@ export default function CommunityBoard({
             <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1">
               <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                1. 상호 존중 및 비방·욕설 금지
+                1. 명예훼손·모욕 등 법적 분쟁 소지 발언 금지
               </span>
               <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
-                연주자, 지휘자, 오케스트라 및 다른 관람객을 향한 인신공격, 조롱, 혐오 표현을 엄격히 금지합니다.
+                연주자, 지휘자, 악단 및 타 관람객을 향한 악의적 인신공격, 사실 적시 또는 허위사실에 의한 명예훼손 등 법적으로 문제가 될 수 있는 발언을 엄격히 금지합니다. (건전한 연주 비평은 전면 보장됩니다)
               </p>
             </div>
 
@@ -262,8 +262,18 @@ export default function CommunityBoard({
 
             <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1">
               <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
+                <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                4. 기타 대한민국 법률 및 관계 법령 위반 금지
+              </span>
+              <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
+                음란물, 사기, 저작권 침해 등 기타 대한민국 실정법 및 관계 법령을 위반하는 모든 게시물은 사전 경고 없이 즉각 삭제 및 해당 IP가 차단될 수 있습니다.
+              </p>
+            </div>
+
+            <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1 md:col-span-2">
+              <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                4. 성숙한 클래식 공연 에티켓 준수
+                5. 성숙한 클래식 공연장 관람 에티켓 준수
               </span>
               <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
                 악장 간 박수 자제, 연주 중 스마트폰 무음 유지, 무단 녹음·촬영 금지 등 품격 있는 관람 문화를 함께 지켜주세요.
@@ -531,7 +541,7 @@ export default function CommunityBoard({
                   <span>이용 규칙 준수 안내</span>
                 </span>
                 <p className="leading-relaxed text-stone-600 dark:text-stone-300">
-                  정치적 논쟁, 특정인 비방·욕설, 불법 암표 거래 등 커뮤니티 이용 규칙을 위반할 경우 글이 삭제되며 해당 IP의 작성이 영구 차단될 수 있습니다.
+                  명예훼손·모욕 등 법적 침해, 정치적 논쟁, 불법 암표 거래 및 기타 대한민국 법률 위반 게시물은 무통보 삭제되며 해당 IP의 작성이 영구 차단될 수 있습니다.
                 </p>
               </div>
               {/* Category & Rating */}

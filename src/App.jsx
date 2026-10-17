@@ -23,7 +23,6 @@ export default function App() {
 
   // Core Data States
   const [concerts, setConcerts] = useState([]);
-  const [halls, setHalls] = useState([]);
   const [posts, setPosts] = useState([]);
   const [tips, setTips] = useState([]);
   const [blockedIps, setBlockedIps] = useState(() => storageService.getBlockedIps());
@@ -47,8 +46,6 @@ export default function App() {
   const [isAdminAuthModalOpen, setIsAdminAuthModalOpen] = useState(false);
   const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false);
 
-  // Async Simulator State
-  const [isSyncing, setIsSyncing] = useState(false);
   const [toast, setToast] = useState(null);
 
   // 테마 클래스 반영
@@ -65,11 +62,9 @@ export default function App() {
   const loadData = () => {
     try {
       const c = storageService.getConcerts();
-      const h = storageService.getHalls();
       const p = storageService.getPosts();
       const t = storageService.getTips();
       setConcerts(c);
-      setHalls(h);
       setPosts(p);
       setTips(t);
       setIsDataLoaded(true);
@@ -145,24 +140,6 @@ export default function App() {
     const updated = storageService.clearAllConcerts();
     setConcerts(updated);
     showToast('모든 공연 데이터가 성공적으로 삭제되었습니다.', 'info');
-  };
-
-  // 전체 공연장 수집 동기화 시뮬레이션
-  const handleSyncAllHalls = () => {
-    setIsSyncing(true);
-    showToast('전체 공연장 수집망 동기화를 시작합니다...', 'info');
-
-    setTimeout(() => {
-      const currentHalls = storageService.getHalls();
-      const updatedHalls = currentHalls.map((h) => ({
-        ...h,
-        lastSyncTime: formatKSTDateTime(new Date())
-      }));
-      storageService.saveHalls(updatedHalls);
-      setHalls(updatedHalls);
-      setIsSyncing(false);
-      showToast('공연장 수집망 동기화가 완료되었습니다. (차단 공연장 수동 관리 유지)');
-    }, 1200);
   };
 
   // 게시판 핸들러
@@ -417,7 +394,6 @@ export default function App() {
         {activeTab === 'admin' && (
           isAdminAuthenticated ? (
             <AdminCenter
-              halls={halls}
               concerts={concerts}
               tips={tips}
               posts={posts}
@@ -428,8 +404,6 @@ export default function App() {
               onClearAllConcerts={handleClearAllConcerts}
               onApproveTip={handleApproveTip}
               onDeleteTip={handleDeleteTip}
-              onSyncAllHalls={handleSyncAllHalls}
-              isSyncing={isSyncing}
               onRefreshConcerts={(newList) => setConcerts(newList)}
               onUpdatePost={handleUpdatePost}
               onDeletePost={handleDeletePost}
