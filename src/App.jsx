@@ -231,11 +231,32 @@ export default function App() {
         }
       }
 
-      // 2. 공연장 필터
+      // 2. 공연장 필터 (서울 예술의전당과 전국 지방 예술의전당 철저 분리 정밀 매칭)
       if (filters.venue !== 'all') {
-        const vQuery = filters.venue.toLowerCase();
-        if (!(c.venue || '').toLowerCase().includes(vQuery)) {
-          return false;
+        const v = (c.venue || '').trim();
+        const city = (c.city || '').trim();
+
+        if (filters.venue === '예술의전당') {
+          // 서울 서초동 '예술의전당 (Seoul Arts Center)' 전용 정밀 필터
+          // 1) 공식 명칭 '예술의전당 [서울]' 또는 '예술의전당(서울)'
+          const isExplicitSac = v.includes('예술의전당 [서울]') || v.includes('예술의전당(서울)') || v.includes('Seoul Arts Center');
+          // 2) '예술의전당'으로 시작하고 타 지명 접두어가 없는 경우
+          const isSacPrefix = /^예술의전당(\s|$|\[|\()/.test(v);
+          // 3) 도시가 '서울'이면서 예술의전당인 경우
+          const isSacCity = city === '서울' && v.includes('예술의전당') && !v.includes('문화예술의전당');
+
+          if (!isExplicitSac && !isSacPrefix && !isSacCity) {
+            return false;
+          }
+        } else if (filters.venue === '대전예술의전당') {
+          if (!v.includes('대전') || !v.includes('예술의전당')) return false;
+        } else if (filters.venue === '광주예술의전당') {
+          if (!v.includes('광주') || !v.includes('예술의전당')) return false;
+        } else {
+          const vQuery = filters.venue.toLowerCase();
+          if (!v.toLowerCase().includes(vQuery)) {
+            return false;
+          }
         }
       }
 

@@ -1,19 +1,25 @@
 import { safeParseJSON, formatKSTDateTime } from '../utils/parser.js';
 import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
+import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v8: 사용자 요청에 따라 기존 부정확한 공연 데이터를 일체 자동 로드하지 않고 빈 목록([])에서 시작
-const CONCERTS_KEY = 'opus_korea_concerts_v8';
+// v9: KOPIS 전산망 공식 인증키 전수 수집 데이터 (실존 클래식 공식 공연 999건 탑재)
+const CONCERTS_KEY = 'opus_korea_concerts_v9';
 const HALLS_KEY = 'opus_korea_halls_v3';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
 const TIPS_KEY = 'opus_korea_tips_v3';
 const BLOCKED_IPS_KEY = 'opus_korea_blocked_ips_v1';
 
-// 이전 버전의 부정확한 로컬 캐시 키 정리
+// 이전 버전의 로컬 캐시 키 정리
 try {
   if (typeof localStorage !== 'undefined') {
-    ['opus_korea_verified_real_concerts_v5', 'opus_korea_verified_real_concerts_v6', 'opus_korea_concerts_v7'].forEach(k => {
+    [
+      'opus_korea_verified_real_concerts_v5',
+      'opus_korea_verified_real_concerts_v6',
+      'opus_korea_concerts_v7',
+      'opus_korea_concerts_v8'
+    ].forEach((k) => {
       localStorage.removeItem(k);
     });
   }
@@ -21,24 +27,31 @@ try {
 
 export const storageService = {
   // ───────────────────────── 공연 (Concerts) ─────────────────────────
-  // 공연 목록 조회 (기존 데이터 비움: 기본값 빈 배열 [])
+  // 공연 목록 조회 (KOPIS 전산망 실존 공식 공연 기본 제공)
   getConcerts() {
     try {
+      if (typeof localStorage === 'undefined') {
+        return initialRealConcerts || [];
+      }
       const raw = localStorage.getItem(CONCERTS_KEY);
       if (!raw) {
-        return [];
+        // 최초 로드시 KOPIS 실존 공식 공연 999건 자동 캐싱
+        localStorage.setItem(CONCERTS_KEY, JSON.stringify(initialRealConcerts || []));
+        return initialRealConcerts || [];
       }
-      const parsed = safeParseJSON(raw, []);
-      return Array.isArray(parsed) ? parsed : [];
+      const parsed = safeParseJSON(raw, initialRealConcerts || []);
+      return Array.isArray(parsed) && parsed.length > 0 ? parsed : initialRealConcerts || [];
     } catch (e) {
-      return [];
+      return initialRealConcerts || [];
     }
   },
 
   // 공연 목록 저장
   saveConcerts(concerts) {
     try {
-      localStorage.setItem(CONCERTS_KEY, JSON.stringify(concerts || []));
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem(CONCERTS_KEY, JSON.stringify(concerts || []));
+      }
     } catch (e) {
       console.error('[저장소 오류] 공연 목록 저장 실패', e);
     }
@@ -47,7 +60,9 @@ export const storageService = {
   // 전체 공연 데이터 삭제 (사용자 요청 1번)
   clearAllConcerts() {
     try {
-      localStorage.setItem(CONCERTS_KEY, JSON.stringify([]));
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem(CONCERTS_KEY, JSON.stringify([]));
+      }
     } catch (e) {
       console.error('[저장소 오류] 공연 전체 삭제 실패', e);
     }
