@@ -260,12 +260,15 @@ export const kopisCrawlerService = {
     // 작곡가 지능형 감지
     const detectComposers = (title) => {
       const knownComposers = [
-        '말러', 'Mahler', '베토벤', 'Beethoven', '브람스', 'Brahms',
-        '쇼팽', 'Chopin', '라흐마니노프', 'Rachmaninoff', '차이콥스키', 'Tchaikovsky',
-        '바흐', 'Bach', '모차르트', 'Mozart', '헨델', 'Handel', '비발디', 'Vivaldi',
-        '슈베르트', 'Schubert', '슈만', 'Schumann', '멘델스존', 'Mendelssohn',
-        '라벨', 'Ravel', '드뷔시', 'Debussy', '드보르자크', 'Dvorak', '푸치니', 'Puccini',
-        '로시니', 'Rossini', '베르디', 'Verdi', '하이든', 'Haydn'
+        '비발디', 'Vivaldi', '바흐', 'Bach', '헨델', 'Handel',
+        '하이든', 'Haydn', '모차르트', 'Mozart', '베토벤', 'Beethoven',
+        '슈베르트', 'Schubert', '멘델스존', 'Mendelssohn', '쇼팽', 'Chopin',
+        '슈만', 'Schumann', '리스트', 'Liszt', '바그너', 'Wagner', '베르디', 'Verdi',
+        '브루크너', 'Bruckner', '브람스', 'Brahms', '차이콥스키', 'Tchaikovsky',
+        '드보르자크', 'Dvorak', '푸치니', 'Puccini', '말러', 'Mahler',
+        '드뷔시', 'Debussy', '시벨리우스', 'Sibelius', '라흐마니노프', 'Rachmaninoff',
+        '라벨', 'Ravel', '프로코피예프', 'Prokofiev', '쇼스타코비치', 'Shostakovich',
+        '로시니', 'Rossini'
       ];
 
       const detected = [];

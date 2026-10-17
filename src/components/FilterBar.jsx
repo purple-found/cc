@@ -59,19 +59,39 @@ export default function FilterBar({
     return [...primaryVenues, ...extraVenueOptions];
   }, [concerts]);
 
+  // 작곡가 목록: 바로크 -> 고전 -> 낭만 -> 근현대 음악사 시대순 완벽 정렬
   const composers = [
     { label: '전체 작곡가 (All Composers)', value: 'all' },
-    { label: '말러 (Gustav Mahler)', value: '말러' },
-    { label: '쇼팽 (Frédéric Chopin)', value: '쇼팽' },
-    { label: '베토벤 (Ludwig van Beethoven)', value: '베토벤' },
-    { label: '브람스 (Johannes Brahms)', value: '브람스' },
-    { label: '라흐마니노프 (Sergei Rachmaninoff)', value: '라흐마니노프' },
-    { label: '차이콥스키 (Pyotr Ilyich Tchaikovsky)', value: '차이콥스키' },
+    // 1. 바로크 (Baroque)
+    { label: '비발디 (Antonio Vivaldi)', value: '비발디' },
     { label: '바흐 (Johann Sebastian Bach)', value: '바흐' },
+    { label: '헨델 (George Frideric Handel)', value: '헨델' },
+    // 2. 고전파 (Classical)
+    { label: '하이든 (Joseph Haydn)', value: '하이든' },
     { label: '모차르트 (Wolfgang Amadeus Mozart)', value: '모차르트' },
-    { label: '라벨 (Maurice Ravel)', value: '라벨' },
+    { label: '베토벤 (Ludwig van Beethoven)', value: '베토벤' },
+    // 3. 전기/중기 낭만파 (Romantic)
+    { label: '슈베르트 (Franz Schubert)', value: '슈베르트' },
+    { label: '멘델스존 (Felix Mendelssohn)', value: '멘델스존' },
+    { label: '쇼팽 (Frédéric Chopin)', value: '쇼팽' },
     { label: '슈만 (Robert Schumann)', value: '슈만' },
-    { label: '브루크너 (Anton Bruckner)', value: '브루크너' }
+    { label: '리스트 (Franz Liszt)', value: '리스트' },
+    { label: '바그너 (Richard Wagner)', value: '바그너' },
+    { label: '베르디 (Giuseppe Verdi)', value: '베르디' },
+    // 4. 후기 낭만파 & 국민악파 (Late Romantic)
+    { label: '브루크너 (Anton Bruckner)', value: '브루크너' },
+    { label: '브람스 (Johannes Brahms)', value: '브람스' },
+    { label: '차이콥스키 (Pyotr Ilyich Tchaikovsky)', value: '차이콥스키' },
+    { label: '드보르자크 (Antonín Dvořák)', value: '드보르자크' },
+    { label: '푸치니 (Giacomo Puccini)', value: '푸치니' },
+    { label: '말러 (Gustav Mahler)', value: '말러' },
+    { label: '드뷔시 (C. Debussy)', value: '드뷔시' },
+    { label: '시벨리우스 (Jean Sibelius)', value: '시벨리우스' },
+    // 5. 20세기 & 근현대 (20th Century & Modern)
+    { label: '라흐마니노프 (Sergei Rachmaninoff)', value: '라흐마니노프' },
+    { label: '라벨 (Maurice Ravel)', value: '라벨' },
+    { label: '프로코피예프 (Sergei Prokofiev)', value: '프로코피예프' },
+    { label: '쇼스타코비치 (Dmitri Shostakovich)', value: '쇼스타코비치' }
   ];
 
   const handleReset = () => {
