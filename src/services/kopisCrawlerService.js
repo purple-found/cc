@@ -1,5 +1,6 @@
 import { storageService } from './storageService.js';
 import { formatKSTDateTime } from '../utils/parser.js';
+import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 
 /**
  * kopisCrawlerService.js
@@ -335,7 +336,7 @@ export const kopisCrawlerService = {
             composers: detectComposers(prfnm),
             pieces: [`${prfnm} 상세 프로그램`],
             price: '공식 예매처 참조',
-            ticketUrl: 'https://www.kopis.or.kr',
+            ticketUrl: getVenueOfficialUrl(fcltynm),
             status: prfstate === '공연예정' ? '예매중' : prfstate,
             source: 'KOPIS 전산망 공식 수집',
             sourceHall: fcltynm,
@@ -387,7 +388,7 @@ export const kopisCrawlerService = {
           composers: detectComposers(prfnm),
           pieces: [`${prfnm} 프로그램`],
           price: '공식 예매처 참조',
-          ticketUrl: 'https://www.kopis.or.kr',
+          ticketUrl: getVenueOfficialUrl(fcltynm),
           status: prfstate === '공연예정' ? '예매중' : prfstate,
           source: 'KOPIS 전산망 공식 수집',
           sourceHall: fcltynm,

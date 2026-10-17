@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { X, Calendar, MapPin, User, Music, Tag, ExternalLink, MessageSquarePlus, ShieldAlert, CheckCircle2, Clock, Sparkles } from 'lucide-react';
 import { formatKoreanDate, getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
+import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 
 export default function ConcertDetailModal({ concert, onClose, onOpenReview, relatedPosts }) {
   // ESC 키 이벤트 바인딩 (Gate 2 준수)
@@ -240,12 +241,13 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
             </button>
 
             <a
-              href={concert.ticketUrl}
+              href={getVenueOfficialUrl(concert)}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-md shrink-0"
+              title="해당 공연장의 공식 홈페이지 / 예매 시스템으로 이동합니다"
             >
-              <span>공식 예매처 이동</span>
+              <span>공연장 공식 예매처 이동</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>

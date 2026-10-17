@@ -18,7 +18,7 @@ export const initialRealConcerts = [
       "스테이지 M 신년 음악회: 캔들데이 콘서트 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80%EC%97%A0%20(STAGE%20M)%20(%EA%B5%AC.%ED%94%84%EB%9E%80%EC%B8%A0%ED%99%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "스테이지엠 (STAGE M) (구.프란츠홀)",
@@ -45,7 +45,7 @@ export const initialRealConcerts = [
       "스테이지엠 크리스마스 영화 음악 & 캐롤 콘서트 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80%EC%97%A0%20(STAGE%20M)%20(%EA%B5%AC.%ED%94%84%EB%9E%80%EC%B8%A0%ED%99%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "스테이지엠 (STAGE M) (구.프란츠홀)",
@@ -72,7 +72,7 @@ export const initialRealConcerts = [
       "오르간 오딧세이 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -99,7 +99,7 @@ export const initialRealConcerts = [
       "움라우트 뮤직 키즈 클래식 [창원] (13시) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%AA%B0%EC%9E%85%EA%B3%B5%EC%9C%A0%EC%97%B0%EC%8A%B5%EC%8B%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "몰입공유연습실",
@@ -126,7 +126,7 @@ export const initialRealConcerts = [
       "롯콘 마티네: 대니 구의 플레이리스트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -153,7 +153,7 @@ export const initialRealConcerts = [
       "성남아트센터 마티네 콘서트: 독일, 음악의 숲 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -180,7 +180,7 @@ export const initialRealConcerts = [
       "키즈인비또 스페셜, 클래식 어드벤처: 음악 왕국으로 떠나는 대모험! [용인] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.yicf.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "용인문화예술원",
@@ -207,7 +207,7 @@ export const initialRealConcerts = [
       "월간 하랑: 계절의 온도 [속초] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%86%8C%EA%B7%B9%EC%9E%A5%20%EC%B4%88%EC%86%8D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "소극장 초속",
@@ -234,7 +234,7 @@ export const initialRealConcerts = [
       "[패키지] 세종예술의전당 시크릿 콘서트 시즌4: 한 잔의 클래식 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -261,7 +261,7 @@ export const initialRealConcerts = [
       "Sunday Vibe (선데이 바이브) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9E%90%EC%96%91%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%85%98(%ED%8C%8C%EB%A6%AC%EB%AE%A4%EC%A7%81%ED%8F%AC%EB%9F%BC)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "자양스테이션(파리뮤직포럼)",
@@ -288,7 +288,7 @@ export const initialRealConcerts = [
       "해설이 있는 음악회, 서클스 (시즌권) [울산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%9A%B8%EC%A3%BC%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "서울주문화센터",
@@ -315,7 +315,7 @@ export const initialRealConcerts = [
       "제2회 피아노 앙상블 파스토랄 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -342,7 +342,7 @@ export const initialRealConcerts = [
       "후지타 마오 피아노 리사이틀 [경주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://garts.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경주예술의전당",
@@ -369,7 +369,7 @@ export const initialRealConcerts = [
       "제18회 에드 무지카 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -396,7 +396,7 @@ export const initialRealConcerts = [
       "바이올리니스트 옥유아 바흐 무반주 전곡 시리즈 I 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -423,7 +423,7 @@ export const initialRealConcerts = [
       "김우경 & 유신희 & 정다은 성악 트리오 리사이틀 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -450,7 +450,7 @@ export const initialRealConcerts = [
       "세계음악예술가협회 3 Generational Piano Concert 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -477,7 +477,7 @@ export const initialRealConcerts = [
       "W필하모닉오케스트라 마스터 시리즈 Ⅲ. 로맨틱 러시아: 차이코프스키 & 라흐마니노프 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -504,7 +504,7 @@ export const initialRealConcerts = [
       "아름다운 목요일 스페이스, 노부스 콰르텟 String Quartet 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -531,7 +531,7 @@ export const initialRealConcerts = [
       "제1회 피아스트링즈 정기연주회: 남겨진 여운 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%84%ED%8A%B8%EB%B8%8C%EB%A6%BF%EC%A7%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트브릿지",
@@ -558,7 +558,7 @@ export const initialRealConcerts = [
       "센텀아트홀, 베니앤 공동기획 콘서트 시리즈: 예술과 평안의 밤 Ⅰ. 세계예술가곡과 브람스의 리베스리더 왈츠 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%BC%ED%85%80%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "센텀아트홀",
@@ -585,7 +585,7 @@ export const initialRealConcerts = [
       "임호열 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%BF%88%EC%9D%98%EC%88%B2%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "꿈의숲아트센터",
@@ -612,7 +612,7 @@ export const initialRealConcerts = [
       "바리톤 유진백 독창회 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -639,7 +639,7 @@ export const initialRealConcerts = [
       "제8회 공연예술축제 그라제, 전남광주통합특별시립오페라단: 해설이 있는 즐거운 오페라 여행 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -666,7 +666,7 @@ export const initialRealConcerts = [
       "박성미 & 이미진 피아노 듀오 리사이틀: 교과서 속 클래식 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -693,7 +693,7 @@ export const initialRealConcerts = [
       "로열 윈드 뮤직, 리코더 앙상블 내한공연 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -720,7 +720,7 @@ export const initialRealConcerts = [
       "비올리스트 강동엽 보웬 전곡 시리즈 Ⅱ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -747,7 +747,7 @@ export const initialRealConcerts = [
       "KBS교향악단 x 정명훈의 말러 교향곡 4번 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -774,7 +774,7 @@ export const initialRealConcerts = [
       "제77회 이탈리아 성악회 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -801,7 +801,7 @@ export const initialRealConcerts = [
       "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -828,7 +828,7 @@ export const initialRealConcerts = [
       "리수스 콰르텟과 함께하는 반도네온 실내악의 밤 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -855,7 +855,7 @@ export const initialRealConcerts = [
       "제447회 인천시립교향악단 정기연주회: 인천시향의 버르토크 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -882,7 +882,7 @@ export const initialRealConcerts = [
       "대구시립교향악단, SIAA와 함께하는 특별 음악회: 어텀 갈라 콘서트 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -909,7 +909,7 @@ export const initialRealConcerts = [
       "피아니스트 노민영 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -936,7 +936,7 @@ export const initialRealConcerts = [
       "서울시립교향악단, 우리동네 실내악 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%95%EB%B6%81%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강북문화예술회관",
@@ -963,7 +963,7 @@ export const initialRealConcerts = [
       "제6회 고양레이디스싱어즈 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양어울림누리",
@@ -990,7 +990,7 @@ export const initialRealConcerts = [
       "작곡가 장은호 작품 발표회: 침묵의 밀도 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -1017,7 +1017,7 @@ export const initialRealConcerts = [
       "라율아트홀 한 잔의 여유 시리즈, K-Tea Classic Concert: Seoul Edition 다도 음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%9D%BC%EC%9C%A8%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "라율아트홀",
@@ -1044,7 +1044,7 @@ export const initialRealConcerts = [
       "제7회 창단10주년 로사리오합창단 정기연주회 [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EB%82%A8%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20(%EA%B5%AC.%20%EC%84%B1%EB%82%A8%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트리움 (구. 성남시민회관)",
@@ -1071,7 +1071,7 @@ export const initialRealConcerts = [
       "손예인 비올라 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1098,7 +1098,7 @@ export const initialRealConcerts = [
       "정상욱 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1125,7 +1125,7 @@ export const initialRealConcerts = [
       "제8회 공연예술축제 그라제, 온가족 클래식 콘서트: 엉클영버×백조의 호수 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -1152,7 +1152,7 @@ export const initialRealConcerts = [
       "안동관악페스타 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안동문화예술의전당",
@@ -1179,7 +1179,7 @@ export const initialRealConcerts = [
       "첼리스트 주연선 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1206,7 +1206,7 @@ export const initialRealConcerts = [
       "임현정의 베토벤 소나타 시리즈, 불멸 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1233,7 +1233,7 @@ export const initialRealConcerts = [
       "지브리 & 디즈니 영화음악 FESTA [서울] (10.03) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -1260,7 +1260,7 @@ export const initialRealConcerts = [
       "제4회 뮤제스트 앙상블 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -1287,7 +1287,7 @@ export const initialRealConcerts = [
       "회상 시리즈 Ⅱ, 기억의 결 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -1314,7 +1314,7 @@ export const initialRealConcerts = [
       "클래식 좀 들어라: playlist 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -1341,7 +1341,7 @@ export const initialRealConcerts = [
       "장윤화 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -1368,7 +1368,7 @@ export const initialRealConcerts = [
       "토요 클래식의 밤, 해설이 있는 클래식: 고별, 피아니스트 김민영 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EB%82%98%EB%88%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "콘서트홀 나누",
@@ -1395,7 +1395,7 @@ export const initialRealConcerts = [
       "쌀롱드무지끄: 가을, 당신을 향한 노래 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "쌀롱드무지끄",
@@ -1422,7 +1422,7 @@ export const initialRealConcerts = [
       "쌀롱드무지끄, 도시기억 Ⅱ: Prelude 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "쌀롱드무지끄",
@@ -1449,7 +1449,7 @@ export const initialRealConcerts = [
       "블래져 목관앙상블 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1476,7 +1476,7 @@ export const initialRealConcerts = [
       "클라비리아데 정기연주회: 국민대학교 피아노 페다고지 동문연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1503,7 +1503,7 @@ export const initialRealConcerts = [
       "서민정 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1530,7 +1530,7 @@ export const initialRealConcerts = [
       "피아니스트 안화영의 작곡가 시리즈 Ⅳ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1557,7 +1557,7 @@ export const initialRealConcerts = [
       "장한나의 대전그랜드페스티벌, 오프닝 콘서트: Joy of Collaboration 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -1584,7 +1584,7 @@ export const initialRealConcerts = [
       "후지타 마오 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1611,7 +1611,7 @@ export const initialRealConcerts = [
       "지브리 & 디즈니 오케스트라 콘서트 (10.04) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -1639,7 +1639,7 @@ export const initialRealConcerts = [
       "세종시즌, 정명훈 x KBS교향악단 x 김선욱: 베토벤 + 브람스 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -1666,7 +1666,7 @@ export const initialRealConcerts = [
       "장-기엔 케라스 첼로 리사이틀, 바흐: 무반주 첼로 모음곡 전곡 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -1693,7 +1693,7 @@ export const initialRealConcerts = [
       "안소연 피아노 독주회: 반주곡의 오후 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -1720,7 +1720,7 @@ export const initialRealConcerts = [
       "제3회 캄프 오케스트라 정기연주회 [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -1747,7 +1747,7 @@ export const initialRealConcerts = [
       "윈썸트리오의 첫 번째 울림 Post Classic Guitar: Trio Edition [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금정문화회관",
@@ -1774,7 +1774,7 @@ export const initialRealConcerts = [
       "장한나의 대전 그랜드 페스티벌, 율리우스 아살 피아노 리사이틀: Joy of Discovery 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -1801,7 +1801,7 @@ export const initialRealConcerts = [
       "문세희 피아노 독주회: 모차르트 피아노 소나타 전곡 시리즈 Ⅲ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -1828,7 +1828,7 @@ export const initialRealConcerts = [
       "이성경 플루트 귀국 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -1855,7 +1855,7 @@ export const initialRealConcerts = [
       "성현경 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -1882,7 +1882,7 @@ export const initialRealConcerts = [
       "OPERA IN CINEMA, 영화 속의 오페라 [춘천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%B6%98%EC%B2%9C%EC%9D%B8%ED%98%95%EA%B7%B9%EC%9E%A5%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "춘천인형극장",
@@ -1909,7 +1909,7 @@ export const initialRealConcerts = [
       "김원 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1936,7 +1936,7 @@ export const initialRealConcerts = [
       "송휘석 & 이영주의 피아노 듀오 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1963,7 +1963,7 @@ export const initialRealConcerts = [
       "아니마 체임버 앙상블 실내악 음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -1990,7 +1990,7 @@ export const initialRealConcerts = [
       "장한나의 대전그랜드페스티벌, 즐라토미르 펑 첼로 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -2017,7 +2017,7 @@ export const initialRealConcerts = [
       "장한나의 대전그랜드페스티벌, 에스메 콰르텟 리사이틀: Joy of Character 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -2044,7 +2044,7 @@ export const initialRealConcerts = [
       "제119회 강남 심포니 오케스트라 정기 연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -2071,7 +2071,7 @@ export const initialRealConcerts = [
       "오르간 시리즈 II. 올리비에 라트리 & 이신영: 포 핸즈 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -2098,7 +2098,7 @@ export const initialRealConcerts = [
       "소프라노 김경란 독창회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -2125,7 +2125,7 @@ export const initialRealConcerts = [
       "누구나 클래식 with 국립심포니오케스트라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -2152,7 +2152,7 @@ export const initialRealConcerts = [
       "월드 오케스트라 페스티벌, 대구 베누스토 오케스트라 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -2179,7 +2179,7 @@ export const initialRealConcerts = [
       "클래식 온, TRAGIC FATE: 비극적 운명 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -2206,7 +2206,7 @@ export const initialRealConcerts = [
       "오페라 하이라이트 콘서트: 오페라 애호가를 위한 음악회 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -2233,7 +2233,7 @@ export const initialRealConcerts = [
       "제1회 아가페유스콰이어 정기연주회: We Shine Together 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gdfac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강동아트센터",
@@ -2260,7 +2260,7 @@ export const initialRealConcerts = [
       "브릿지온 콘서트 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EB%9D%BC%EB%AF%B9%ED%8C%94%EB%A0%88%EC%8A%A4%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세라믹팔레스홀",
@@ -2287,7 +2287,7 @@ export const initialRealConcerts = [
       "바리톤 김봉중 정규 앨범 발매 기념 쇼케이스: 내가 사랑하는 클래식 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8F%84%EA%B3%A12%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "도곡2문화센터",
@@ -2314,7 +2314,7 @@ export const initialRealConcerts = [
       "쌀롱드무지끄, Experiment 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "쌀롱드무지끄",
@@ -2341,7 +2341,7 @@ export const initialRealConcerts = [
       "정다슬 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -2368,7 +2368,7 @@ export const initialRealConcerts = [
       "박민하 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -2395,7 +2395,7 @@ export const initialRealConcerts = [
       "제168회 군산시립교향악단 정기연주회: 베토벤 프로젝트 2 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "군산예술의전당",
@@ -2422,7 +2422,7 @@ export const initialRealConcerts = [
       "김도현 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -2449,7 +2449,7 @@ export const initialRealConcerts = [
       "장한나의 대전그랜드페스티벌, 킹스 싱어즈 콘서트: Joy of Singing 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -2476,7 +2476,7 @@ export const initialRealConcerts = [
       "장한나의 대전그랜드페스티벌, 박원민 바이올린 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -2503,7 +2503,7 @@ export const initialRealConcerts = [
       "안동문화예술의전당 브런치콘서트, 시대별 클래식 시리즈: 낭만주의 감성 Ⅱ 노스텔지어 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안동문화예술의전당",
@@ -2530,7 +2530,7 @@ export const initialRealConcerts = [
       "국군교향악단 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -2557,7 +2557,7 @@ export const initialRealConcerts = [
       "제22회 아카데미 열정과 나눔 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -2584,7 +2584,7 @@ export const initialRealConcerts = [
       "제14회 한국남성합창단 & 도쿄리더타펠 합동 연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -2611,7 +2611,7 @@ export const initialRealConcerts = [
       "클래식 오아시스, 인터미션: #울림 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -2638,7 +2638,7 @@ export const initialRealConcerts = [
       "윤희주 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -2665,7 +2665,7 @@ export const initialRealConcerts = [
       "CORE SAMPLE (코어샘플) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%EC%84%A4%EB%8F%99%20%EB%8F%99%EB%84%A4%EA%B7%B9%EC%9E%A5%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "신설동 동네극장",
@@ -2692,7 +2692,7 @@ export const initialRealConcerts = [
       "피아니스트 Koki Kuroiwa와 함께하는 한일국제교류음악회 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%EC%98%81%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "한영아트센터",
@@ -2719,7 +2719,7 @@ export const initialRealConcerts = [
       "창악회 기획 초청연주회: CMSS Festival Ⅳ. 대만앙상블 Succession Percussion Group 초청연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "푸르지오아트홀",
@@ -2746,7 +2746,7 @@ export const initialRealConcerts = [
       "라율아트홀 살롱클래식, Artist' s Room: Daniel Lee 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%9D%BC%EC%9C%A8%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "라율아트홀",
@@ -2773,7 +2773,7 @@ export const initialRealConcerts = [
       "김대욱 트럼펫 독주회: 미국 작곡가의 트럼펫 음악 시리즈 Ⅴ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -2800,7 +2800,7 @@ export const initialRealConcerts = [
       "피아니스 현영경 반주 리사이틀: 시의 숨결 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -2827,7 +2827,7 @@ export const initialRealConcerts = [
       "제18회 서울국제음악제 개막음악회: 숨, 그리고 삶 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -2854,7 +2854,7 @@ export const initialRealConcerts = [
       "장한나의 대전그랜드페스티벌, 김세현 & 디토 체임버 오케스트라 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -2881,7 +2881,7 @@ export const initialRealConcerts = [
       "한화생명과 함께하는 예술의전당 11시 콘서트 (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -2908,7 +2908,7 @@ export const initialRealConcerts = [
       "뷰티플마인드와 함께하는 가을음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -2935,7 +2935,7 @@ export const initialRealConcerts = [
       "한희준 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -2962,7 +2962,7 @@ export const initialRealConcerts = [
       "인천시립교향악단 기획연주회, 기록음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -2989,7 +2989,7 @@ export const initialRealConcerts = [
       "제12회 VP 정기연주회: R.Strauss & H.Duparc Art Song Concert: 두 개의 언어, 하나의 심연 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -3016,7 +3016,7 @@ export const initialRealConcerts = [
       "제33회 대구레이디스코러스 정기연주회: 아름다운 합창 & 음악으로 함께 누리는 힐링 타임 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -3043,7 +3043,7 @@ export const initialRealConcerts = [
       "제5회 아티스테 앙상블 정기 연주회 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -3070,7 +3070,7 @@ export const initialRealConcerts = [
       "금호 위너스, 정승호 Piano 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -3097,7 +3097,7 @@ export const initialRealConcerts = [
       "마음으로 부르는 노래, 화음 속의 꿈 [고양] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양어울림누리",
@@ -3124,7 +3124,7 @@ export const initialRealConcerts = [
       "손바닥 소극장 오페라 시리즈 Ⅰ. 코스모스를 죽였다 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B3%B5%ED%95%A9%EB%AC%B8%ED%99%94%EA%B3%B5%EA%B0%84%20%ED%94%8C%EB%9E%9C%EC%97%90%EC%9D%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "복합문화공간 플랜에이",
@@ -3151,7 +3151,7 @@ export const initialRealConcerts = [
       "창악회 기획 초청연주회: CMSS Festival Ⅴ. 피아니스트 3인 초청연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ilshinhall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "일신홀",
@@ -3178,7 +3178,7 @@ export const initialRealConcerts = [
       "부평구립여성합창단 연합 기획공연, Concentus Trinitatis: 세 개의 울림, 함께 부르는 노래 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%ED%8F%89%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부평아트센터",
@@ -3205,7 +3205,7 @@ export const initialRealConcerts = [
       "제15회 정기연주회 [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EB%82%A8%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20(%EA%B5%AC.%20%EC%84%B1%EB%82%A8%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트리움 (구. 성남시민회관)",
@@ -3232,7 +3232,7 @@ export const initialRealConcerts = [
       "유수현 피아노 독주회: All that Schumann Ⅱ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -3259,7 +3259,7 @@ export const initialRealConcerts = [
       "조윤정 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -3286,7 +3286,7 @@ export const initialRealConcerts = [
       "제18회 서울국제음악제, 인생의 여정: 세 개의 초상 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -3313,7 +3313,7 @@ export const initialRealConcerts = [
       "한스 짐머 영화음악 콘서트 [서울 (앵콜) ] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -3340,7 +3340,7 @@ export const initialRealConcerts = [
       "장한나의 대전그랜드 페스티벌, 김계희 바이올린 리사이틀: Joy of Virtuosity 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -3367,7 +3367,7 @@ export const initialRealConcerts = [
       "장한나의 대전그랜드페스티벌, 티네 팅 헬셋 트럼펫 리사이틀: Joy of Ensemble 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -3394,7 +3394,7 @@ export const initialRealConcerts = [
       "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [경기 광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "광주시문화예술의전당 (구. 남한산성아트홀)",
@@ -3421,7 +3421,7 @@ export const initialRealConcerts = [
       "아티스트 인 안동, 피아체볼레와 함께하는 음악동화 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안동문화예술의전당",
@@ -3448,7 +3448,7 @@ export const initialRealConcerts = [
       "말러리안 시리즈 10 FINALE, 말러 교향곡 2번: Ewiger Gesang 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -3475,7 +3475,7 @@ export const initialRealConcerts = [
       "제5회 앙상블 누보 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -3502,7 +3502,7 @@ export const initialRealConcerts = [
       "제14회 리에목관5중주 정기연주회 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -3529,7 +3529,7 @@ export const initialRealConcerts = [
       "질문이 있는 김민정 피아노 독주회 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -3556,7 +3556,7 @@ export const initialRealConcerts = [
       "김수정 피아노 독주회: 문학으로 만나는 피아노음악 시리즈 Ⅰ. E.T.A. 호프만 탄생 250주년 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -3583,7 +3583,7 @@ export const initialRealConcerts = [
       "조주연 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -3610,7 +3610,7 @@ export const initialRealConcerts = [
       "고양특례시 우수학생 연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양어울림누리",
@@ -3637,7 +3637,7 @@ export const initialRealConcerts = [
       "아람 클래식, 아트하우스 17 내한공연 리허설 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양아람누리",
@@ -3664,7 +3664,7 @@ export const initialRealConcerts = [
       "제3회 신아름 & 신이레 듀오콘서트: 우리가 만난 밤, 두 영혼의 라흐마니노프 [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -3691,7 +3691,7 @@ export const initialRealConcerts = [
       "제3회 영덕 군민오케스트라 정기연주회 & 교류음악회 with 당진시민오케스트라 [영덕] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예주문화예술회관",
@@ -3718,7 +3718,7 @@ export const initialRealConcerts = [
       "피아니스트 김선주 & 문세희 듀오 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -3745,7 +3745,7 @@ export const initialRealConcerts = [
       "앙상블위로 창단 10주년 기념 음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -3772,7 +3772,7 @@ export const initialRealConcerts = [
       "김진세 클래식 기타 독주회: 사적인 플레이리스트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -3799,7 +3799,7 @@ export const initialRealConcerts = [
       "강성주 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -3826,7 +3826,7 @@ export const initialRealConcerts = [
       "제18회 서울국제음악제, SIMF실내악: Serenade 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -3853,7 +3853,7 @@ export const initialRealConcerts = [
       "장한나의 대전그랜드페스티벌, 클로징 콘서트: Joy of Music 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -3880,7 +3880,7 @@ export const initialRealConcerts = [
       "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [경주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://garts.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경주예술의전당",
@@ -3907,7 +3907,7 @@ export const initialRealConcerts = [
       "이탈리아 Euregio Klassika 내한공연, 콘서트오페라: 라보엠 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -3934,7 +3934,7 @@ export const initialRealConcerts = [
       "제4회 독일 로스톡 국립음대 동문 음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -3961,7 +3961,7 @@ export const initialRealConcerts = [
       "ACI 키즈 콘서트, 클랩 그림책 콘서트 Ⅳ. 정말 으스스할까? [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -3988,7 +3988,7 @@ export const initialRealConcerts = [
       "제12회 마루한 필하모닉 오케스트라 정기연주회 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -4015,7 +4015,7 @@ export const initialRealConcerts = [
       "피아노의숲 피아노 콘서트 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -4042,7 +4042,7 @@ export const initialRealConcerts = [
       "김혜정 & 공수미 플루트 리사이틀: Women in Music with Flutes [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -4069,7 +4069,7 @@ export const initialRealConcerts = [
       "전성진 귀국 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -4096,7 +4096,7 @@ export const initialRealConcerts = [
       "제5회 앤 플루트 앙상블 & 앤 색소폰 앙승블 & 라라 플루트 앙상블 정기연주회 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -4123,7 +4123,7 @@ export const initialRealConcerts = [
       "토크 콘서트: 클래식 유럽여행, Music&Voyage [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B9%84%EC%9B%90%EB%AE%A4%EC%A7%81%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "비원뮤직홀",
@@ -4150,7 +4150,7 @@ export const initialRealConcerts = [
       "그린필오케스트라와 함께하는 대영교회 가을콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%98%81%EA%B5%90%ED%9A%8C%20%5B%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대영교회 [서울 송파]",
@@ -4177,7 +4177,7 @@ export const initialRealConcerts = [
       "춘천 실내악 페스티벌, 테너 조현호 독창회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EB%82%98%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예나아트홀",
@@ -4204,7 +4204,7 @@ export const initialRealConcerts = [
       "제2회 한국피아노교사협회 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -4231,7 +4231,7 @@ export const initialRealConcerts = [
       "쌀롱드무지끄: 가을에 듣는 기쁨, 모짜르트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "쌀롱드무지끄",
@@ -4258,7 +4258,7 @@ export const initialRealConcerts = [
       "홍석기 바이올린 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B3%B4%EC%8A%A4%ED%84%B4%EC%B2%B4%EC%9E%84%EB%B2%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "보스턴체임버",
@@ -4285,7 +4285,7 @@ export const initialRealConcerts = [
       "낭만주의 거장, 차이코프스키 & 라흐마니노프 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%ED%95%99%EC%83%9D%EA%B5%90%EC%9C%A1%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "인천학생교육문화회관",
@@ -4312,7 +4312,7 @@ export const initialRealConcerts = [
       "제5회 커넥션 플루트 앙상블 정기연주회: 플루트를 연주하는 백조의 호수 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%A8%EB%8F%99%EC%86%8C%EB%9E%98%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "남동소래아트홀",
@@ -4339,7 +4339,7 @@ export const initialRealConcerts = [
       "제23회 경남필하모닉 오케스트라 정기연주회: 평화와 화합의 하모니, 베토벤 교향곡 9번: 합창 [창원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성산아트홀",
@@ -4366,7 +4366,7 @@ export const initialRealConcerts = [
       "피아니스트 현석환과 제주 음악 친구들: 서귀포의 가을 [제주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "서귀포예술의전당",
@@ -4393,7 +4393,7 @@ export const initialRealConcerts = [
       "김규태 피아노 독주회: 모차르트 피아노 소나타 전곡 시리즈 5 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -4420,7 +4420,7 @@ export const initialRealConcerts = [
       "해설이 있는 김보라 피아노 독주회: 피아니스트 김보라의 고전음악의 이해 시리즈 Ⅳ. 리스트, 나르시시스트와 비르투오소 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -4447,7 +4447,7 @@ export const initialRealConcerts = [
       "제92회 코리아나 챔버 뮤직 소사이어티 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -4474,7 +4474,7 @@ export const initialRealConcerts = [
       "제18회 서울국제음악제, SIMF 오케스트라 : 빛과 그림자 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -4501,7 +4501,7 @@ export const initialRealConcerts = [
       "프레디 켐프 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -4528,7 +4528,7 @@ export const initialRealConcerts = [
       "서울시소년소녀합창단, 광화문 이야기: 한양에서 서울까지 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -4555,7 +4555,7 @@ export const initialRealConcerts = [
       "아트하우스17 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -4582,7 +4582,7 @@ export const initialRealConcerts = [
       "테너 김민석 리사이틀: Love & Destiny 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -4609,7 +4609,7 @@ export const initialRealConcerts = [
       "Journey to Europe chapter.III [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -4636,7 +4636,7 @@ export const initialRealConcerts = [
       "유지영 & 정현진 조인트 피아노 리사이틀 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -4663,7 +4663,7 @@ export const initialRealConcerts = [
       "Wine & Music Night, 4 CELLOS CONCERT [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://elimartcenter.co.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "엘림아트센터",
@@ -4690,7 +4690,7 @@ export const initialRealConcerts = [
       "제3회 조이에끌라 정기 연주회 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%A0%84%EC%8B%9C%EB%A6%BD%EC%97%B0%EC%A0%95%EA%B5%AD%EC%95%85%EC%9B%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전시립연정국악원",
@@ -4717,7 +4717,7 @@ export const initialRealConcerts = [
       "강남색소폰오케스트라 with 최희훈 색소폰 Concert 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -4744,7 +4744,7 @@ export const initialRealConcerts = [
       "정승연 첼로 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -4771,7 +4771,7 @@ export const initialRealConcerts = [
       "영덕보엠앙상블, 피터와 늑대 & 동물의 사육제 [영덕] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예주문화예술회관",
@@ -4798,7 +4798,7 @@ export const initialRealConcerts = [
       "선화음악동문회 프로젝트 음악회 시리즈 Ⅰ. 성악 페스티벌 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -4825,7 +4825,7 @@ export const initialRealConcerts = [
       "제7회 안단태오페라단 정기공연, 해설이 있는 오페라: 리골레토 [안동] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안동문화예술의전당",
@@ -4852,7 +4852,7 @@ export const initialRealConcerts = [
       "전남광주통합특별시립교향악단 체임버 시리즈 Ⅵ. Trio: Pathetique [전남 광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -4879,7 +4879,7 @@ export const initialRealConcerts = [
       "정푸름 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -4906,7 +4906,7 @@ export const initialRealConcerts = [
       "대전시립합창단 시니어 음악회: 낭만에 대하여 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -4933,7 +4933,7 @@ export const initialRealConcerts = [
       "임경원 첼로 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -4960,7 +4960,7 @@ export const initialRealConcerts = [
       "가을밤콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -4987,7 +4987,7 @@ export const initialRealConcerts = [
       "제198회 인천시립합창단 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -5014,7 +5014,7 @@ export const initialRealConcerts = [
       "염희선 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -5041,7 +5041,7 @@ export const initialRealConcerts = [
       "서예솔 피아노 귀국 독주회 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -5068,7 +5068,7 @@ export const initialRealConcerts = [
       "김죽현 귀국 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -5095,7 +5095,7 @@ export const initialRealConcerts = [
       "김영주 & 이한나 듀오 리사이틀 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -5122,7 +5122,7 @@ export const initialRealConcerts = [
       "제31회 성남시중원구여성합창단 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -5149,7 +5149,7 @@ export const initialRealConcerts = [
       "크리오 아트컴퍼니 초청 음악회, 소프라노 김성은 독창회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=JCC%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "JCC 아트센터",
@@ -5176,7 +5176,7 @@ export const initialRealConcerts = [
       "SEA: SONG 시리즈04. Fall in Classic [거제] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%A0%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "거제문화예술회관",
@@ -5203,7 +5203,7 @@ export const initialRealConcerts = [
       "제95회 예술공감, BRASS IN HARMONY 을숙도의 선율 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%84%EC%88%99%EB%8F%84%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "을숙도문화회관",
@@ -5230,7 +5230,7 @@ export const initialRealConcerts = [
       "김근화 바이올린 리사이틀: Night of Virtuosity [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -5258,7 +5258,7 @@ export const initialRealConcerts = [
       "큐리어스 (K'urius) 의 피아노 스펙트럼 Ⅲ. 韻 (운) ; 빛과 어둠의 울림 Schubert & Rachmaninoff 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -5285,7 +5285,7 @@ export const initialRealConcerts = [
       "아트하우스 17 내한공연 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -5312,7 +5312,7 @@ export const initialRealConcerts = [
       "제18회 서울국제음악제, 아르토 노라스와 김규연 리사이틀: 멋진 추억 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -5339,7 +5339,7 @@ export const initialRealConcerts = [
       "프레디 켐프: 쇼팽 피아노 협주곡 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -5366,7 +5366,7 @@ export const initialRealConcerts = [
       "신한라이프 프레스티지 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -5393,7 +5393,7 @@ export const initialRealConcerts = [
       "박준선 작곡발표회, 머리카락 보일라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -5420,7 +5420,7 @@ export const initialRealConcerts = [
       "월드오케스트라페스티벌, 경산시립교향악단 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -5447,7 +5447,7 @@ export const initialRealConcerts = [
       "부산시립합창단 예술교육공연, 딩동댕 합창여행 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -5474,7 +5474,7 @@ export const initialRealConcerts = [
       "소프라노 조화영 독창회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -5501,7 +5501,7 @@ export const initialRealConcerts = [
       "심송학 성악아카데미 15주년 정기연주회 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -5528,7 +5528,7 @@ export const initialRealConcerts = [
       "제3회 부산광역시의사회와 함께하는 자선음악회 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -5555,7 +5555,7 @@ export const initialRealConcerts = [
       "푸르지오 아트홀 수요 초대석 44. 문예진 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "푸르지오아트홀",
@@ -5582,7 +5582,7 @@ export const initialRealConcerts = [
       "독일 하노버 소녀합창단 초청공연 [거창] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%B0%BD%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "거창문화센터",
@@ -5609,7 +5609,7 @@ export const initialRealConcerts = [
       "제8회 브라보오페라앙상블 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -5636,7 +5636,7 @@ export const initialRealConcerts = [
       "놀부와 흥부 [영동] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EB%8F%99%EB%B3%B5%ED%95%A9%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영동복합문화예술회관",
@@ -5663,7 +5663,7 @@ export const initialRealConcerts = [
       "계절의 풍경을 선율로 만나는 콘서트: 사계, 음악으로 물들다 [안동] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안동문화예술의전당",
@@ -5690,7 +5690,7 @@ export const initialRealConcerts = [
       "손치호 콘트라베이스 독주회 Ⅸ. Ohne dich (너, 없이) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -5717,7 +5717,7 @@ export const initialRealConcerts = [
       "해오름동맹 합동공연 합창 오페라: 천년의 빛, 하나의 울림 [경주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://garts.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경주예술의전당",
@@ -5744,7 +5744,7 @@ export const initialRealConcerts = [
       "전남광주통합특별시예술의전당 기획공연, 그랜드스테이지: Into the New World 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -5771,7 +5771,7 @@ export const initialRealConcerts = [
       "제18회 서울 국제 음악제, 이안 보스트리지: 슈만 시인의 사랑 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -5798,7 +5798,7 @@ export const initialRealConcerts = [
       "제천 달빛아레 콘서트, 멜로디 오브 드라마 (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "제천예술의전당",
@@ -5825,7 +5825,7 @@ export const initialRealConcerts = [
       "유미향 피아노 독주회: 베토벤 피아노 소나타 전곡 연주회 Ⅳ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -5852,7 +5852,7 @@ export const initialRealConcerts = [
       "K-클래식 콘서트 6, 문화예술컴퍼니 아레나 [천안] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -5879,7 +5879,7 @@ export const initialRealConcerts = [
       "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -5906,7 +5906,7 @@ export const initialRealConcerts = [
       "서울시향 얍 판 츠베덴의 모차르트 주피터① 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -5933,7 +5933,7 @@ export const initialRealConcerts = [
       "가을 합창제 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -5960,7 +5960,7 @@ export const initialRealConcerts = [
       "제49회 신음악회 정기작품발표회, 이ㅅ음 Ⅵ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -5987,7 +5987,7 @@ export const initialRealConcerts = [
       "월드오케스트라페스티벌, 아트하우스 17 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -6014,7 +6014,7 @@ export const initialRealConcerts = [
       "아름다운 목요일 금호아트홀 상주음악가, 바리톤 김태한: 페르소나 Ⅳ. 고독 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -6041,7 +6041,7 @@ export const initialRealConcerts = [
       "극동방송 창사70주년 전국 대합창제 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -6068,7 +6068,7 @@ export const initialRealConcerts = [
       "베토벤, 운명을 연주하다 [울산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울주문화예술회관",
@@ -6095,7 +6095,7 @@ export const initialRealConcerts = [
       "신지아 & 디토 체임버 오케스트라: 두 번의 사계 [의성] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%98%EC%84%B1%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "의성문화회관",
@@ -6122,7 +6122,7 @@ export const initialRealConcerts = [
       "재능 혜화 마티네 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=JCC%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "JCC 아트센터",
@@ -6149,7 +6149,7 @@ export const initialRealConcerts = [
       "제195회 아트엠콘서트, 김정은 피아노 리사이틀: 선율에 마음을 싣고 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%EC%98%81%EC%B2%B4%EC%9E%84%EB%B2%84%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "신영체임버홀",
@@ -6176,7 +6176,7 @@ export const initialRealConcerts = [
       "Masters & Proteges 스승과 제자들: 윤홍천 & 유하준, 이지호 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%81%B4%EB%9E%98%EC%8B%9D%EA%B3%A0%ED%83%9D%20%EB%94%94%ED%86%A0%20(%EA%B5%AC.%EC%84%A0%EC%9D%B8%EC%9E%AC)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "클래식고택 디토 (구.선인재)",
@@ -6203,7 +6203,7 @@ export const initialRealConcerts = [
       "포항시립교향악단 협주곡의 밤: 영 아티스트 콘서트 [포항] (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://phcf.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "포항문화예술회관",
@@ -6230,7 +6230,7 @@ export const initialRealConcerts = [
       "GGAC CLASSIC 경기청년예술기회무대, 서양음악 [수원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ggac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경기아트센터(구. 경기도문화의전당)",
@@ -6257,7 +6257,7 @@ export const initialRealConcerts = [
       "김희정 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -6284,7 +6284,7 @@ export const initialRealConcerts = [
       "시네마 ost 콘서트: 그 추억 그 순간 속으로 [광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -6311,7 +6311,7 @@ export const initialRealConcerts = [
       "제205회 전남광주통합특별시립합창단 정기연주회: 가을의 서정 Ⅱ [전남 광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -6338,7 +6338,7 @@ export const initialRealConcerts = [
       "양민제 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -6366,7 +6366,7 @@ export const initialRealConcerts = [
       "박종해 피아노 리사이틀: Schubert Abend 슈베르트의 밤 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -6393,7 +6393,7 @@ export const initialRealConcerts = [
       "국립심포니콘서트오케스트라: 말러, 교향곡 4번 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -6420,7 +6420,7 @@ export const initialRealConcerts = [
       "대전시립교향악단 마스터즈 시리즈 8, 쇼스타코비치 교향곡 제7번: 레닌그라드 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -6447,7 +6447,7 @@ export const initialRealConcerts = [
       "서울시향 얍 판 츠베덴의 모차르트 주피터② 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -6474,7 +6474,7 @@ export const initialRealConcerts = [
       "제18회 서울국제음악제, 폐막음악회: SIMF오케스트라 with 크시슈토프 우르반스키 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -6501,7 +6501,7 @@ export const initialRealConcerts = [
       "홍지연 첼로 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -6528,7 +6528,7 @@ export const initialRealConcerts = [
       "제529회 대구시립교향악단 정기연주회: 월드오케스트라페스티벌 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -6555,7 +6555,7 @@ export const initialRealConcerts = [
       "강주희 플루트 리사이틀 JUHEE KANG FLUTE RECITAL 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -6582,7 +6582,7 @@ export const initialRealConcerts = [
       "소프라노 조주현 독창회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -6609,7 +6609,7 @@ export const initialRealConcerts = [
       "아이랑 나랑! 키즈클래식 콘서트: 어린왕자 [경산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%A7%80%ED%81%B4%EB%9E%98%EC%8B%9D%20%5B%EA%B2%BD%EC%82%B0%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "이지클래식 [경산]",
@@ -6636,7 +6636,7 @@ export const initialRealConcerts = [
       "비원뮤직홀 클래식 시리즈: Autumn Resonance, 가을의 울림 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B9%84%EC%9B%90%EB%AE%A4%EC%A7%81%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "비원뮤직홀",
@@ -6663,7 +6663,7 @@ export const initialRealConcerts = [
       "쌀롱드무지끄: 목소리, 시대의 문장을 입다 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "쌀롱드무지끄",
@@ -6690,7 +6690,7 @@ export const initialRealConcerts = [
       "문종인 프로젝트: 작곡가의 방 시리즈 Composer Ⅲ. 김빛나 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%9D%BC%EC%9C%A8%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "라율아트홀",
@@ -6717,7 +6717,7 @@ export const initialRealConcerts = [
       "제14회 서산시립합창단 기획연주회: 가로림만, 바다의 기다림 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%82%B0%EC%8B%9C%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "서산시문화회관",
@@ -6744,7 +6744,7 @@ export const initialRealConcerts = [
       "매헌 윤봉길: 1932 샹하이의 아침 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%B4%88%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80(%EA%B5%AC.%20%EC%84%9C%EC%B4%88%EA%B5%AC%EB%AF%BC%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "서초문화예술회관(구. 서초구민회관)",
@@ -6771,7 +6771,7 @@ export const initialRealConcerts = [
       "제13회 림스타악기 정기연주회 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -6798,7 +6798,7 @@ export const initialRealConcerts = [
       "제6회 광주시심포니오케스트라 정기연주회, 오페라 여행: 춘향 & 피가로 [경기 광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "광주시문화예술의전당 (구. 남한산성아트홀)",
@@ -6825,7 +6825,7 @@ export const initialRealConcerts = [
       "윤여민 색소폰 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -6852,7 +6852,7 @@ export const initialRealConcerts = [
       "조희창의 토요 클래식 살롱 Ⅴ. 우리 시대의 슈베르티아데 [경주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://garts.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경주예술의전당",
@@ -6879,7 +6879,7 @@ export const initialRealConcerts = [
       "손민수 피아노 리사이틀 [익산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://arts.iksan.go.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "익산예술의전당",
@@ -6906,7 +6906,7 @@ export const initialRealConcerts = [
       "이준서 비올라 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -6933,7 +6933,7 @@ export const initialRealConcerts = [
       "이상미 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -6960,7 +6960,7 @@ export const initialRealConcerts = [
       "피아트 초청 첼리스트 정재윤 리사이틀 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -6987,7 +6987,7 @@ export const initialRealConcerts = [
       "우리가 사랑한 시네마 뮤직 콘서트 [의정부] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "의정부예술의전당",
@@ -7014,7 +7014,7 @@ export const initialRealConcerts = [
       "예술의전당 토요콘서트, 프리뷰 베토벤 (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -7041,7 +7041,7 @@ export const initialRealConcerts = [
       "Humanity Concert Series, 삶과 나눔 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -7068,7 +7068,7 @@ export const initialRealConcerts = [
       "그라토 앙상블 정기연주회: JOURNEY 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -7095,7 +7095,7 @@ export const initialRealConcerts = [
       "너의 이름은. 필름 콘서트 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -7122,7 +7122,7 @@ export const initialRealConcerts = [
       "월드오케스트라페스티벌, 대구 비르투오조 챔버 & 신비한 콘서트: 행성과 궤도 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -7149,7 +7149,7 @@ export const initialRealConcerts = [
       "콘서트 오페라, 사랑의 묘약 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -7176,7 +7176,7 @@ export const initialRealConcerts = [
       "금호영아티스트콘서트, 최윤호 더블베이스 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -7203,7 +7203,7 @@ export const initialRealConcerts = [
       "금호영재콘서트, 박주혁 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -7230,7 +7230,7 @@ export const initialRealConcerts = [
       "제8회 일악장 정기 연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "푸르지오아트홀",
@@ -7257,7 +7257,7 @@ export const initialRealConcerts = [
       "제9회 대구중구문화원 시니어여성합창단 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B4%89%EC%82%B0%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "봉산문화회관",
@@ -7284,7 +7284,7 @@ export const initialRealConcerts = [
       "제2회 다원예술단체 뮤트 공연: 계절의 노래 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%84%EC%9D%B4%EC%BD%94%EB%8B%89%EB%AF%B8%EB%94%94%EC%96%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아이코닉미디어",
@@ -7311,7 +7311,7 @@ export const initialRealConcerts = [
       "김승연 작품 발표회: Affective Spectrum: 삶을 살아있게 하는 어떤 것들에 대하여 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -7338,7 +7338,7 @@ export const initialRealConcerts = [
       "춘천 실내악 페스티벌, 아투스뮤직: 프랑스 달빛 콘서트 1회차 (10.17) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EB%82%98%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예나아트홀",
@@ -7365,7 +7365,7 @@ export const initialRealConcerts = [
       "제2회 더音콘서트 정기연주회: 소리 (音) 의 정원 [전주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sori21.co.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "한국소리문화의전당",
@@ -7392,7 +7392,7 @@ export const initialRealConcerts = [
       "다니엘 델 피노 피아노 리사이틀 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%81%B4%EB%9E%98%EC%8B%9C%EC%B9%B4%20%EC%84%9C%EC%9A%B8%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "클래시카 서울",
@@ -7419,7 +7419,7 @@ export const initialRealConcerts = [
       "The Flip: Romance & Story 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%9C%EB%8D%B0%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "로데아트센터",
@@ -7446,7 +7446,7 @@ export const initialRealConcerts = [
       "Re: Vital Series, Re: conncet: Deep Vibes 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4%20%EB%B0%94%EC%9D%B4%ED%83%88%20%EB%B0%94%EC%9D%B4%EB%B8%8C%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "스튜디오 바이탈 바이브",
@@ -7473,7 +7473,7 @@ export const initialRealConcerts = [
       "거북이의 꾀 [경산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B2%BD%EC%82%B0%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경산시민회관",
@@ -7500,7 +7500,7 @@ export const initialRealConcerts = [
       "시네마 ost 콘서트: 그 추억 그 순간 속으로 [강진] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%95%EC%A7%84%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강진아트홀",
@@ -7527,7 +7527,7 @@ export const initialRealConcerts = [
       "제2회 포르비토 앙상블 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -7554,7 +7554,7 @@ export const initialRealConcerts = [
       "이석우 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "거암아트홀",
@@ -7581,7 +7581,7 @@ export const initialRealConcerts = [
       "이선아 피아노 독주회: J.S.Bach Keyboard Suite 전곡 시리즈 Ⅳ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -7608,7 +7608,7 @@ export const initialRealConcerts = [
       "김호정 귀국 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -7635,7 +7635,7 @@ export const initialRealConcerts = [
       "이진화 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -7662,7 +7662,7 @@ export const initialRealConcerts = [
       "유벨톤심포니오케스트라: 작곡가 시리즈 3. 프로코피에프, 얼어붙은 선율 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -7689,7 +7689,7 @@ export const initialRealConcerts = [
       "손열음 피아노 리사이틀 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -7716,7 +7716,7 @@ export const initialRealConcerts = [
       "이원해 첼로 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -7743,7 +7743,7 @@ export const initialRealConcerts = [
       "오페라 그란 갈라 콘서트: 오페라의 향연, 그 찬란한 순간들 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -7770,7 +7770,7 @@ export const initialRealConcerts = [
       "파보 예르비 & 에스토니안 페스티벌 오케스트라 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -7797,7 +7797,7 @@ export const initialRealConcerts = [
       "기타리스트 황민웅의 프로젝트, 헌정: 타레가에 바침 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -7824,7 +7824,7 @@ export const initialRealConcerts = [
       "설지영 바이올린 독주회: 브람스, 세 개의 시선 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -7851,7 +7851,7 @@ export const initialRealConcerts = [
       "쌀롱드무지끄, 벨 에포크의 오후 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "쌀롱드무지끄",
@@ -7878,7 +7878,7 @@ export const initialRealConcerts = [
       "제1회 블랑클래식 음악콩쿠르 수상자 연주회 [춘천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cccf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "춘천문화예술회관",
@@ -7905,7 +7905,7 @@ export const initialRealConcerts = [
       "평창동일번지 개관 기념 살롱 콘서트: 김정원 피아니스트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%EC%B0%BD%EB%8F%99%EC%9D%BC%EB%B2%88%EC%A7%80%20%EC%95%84%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "평창동일번지 아트하우스",
@@ -7932,7 +7932,7 @@ export const initialRealConcerts = [
       "지보이스 정기공연: 무지개 빛 날 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%BF%88%EC%9D%98%EC%88%B2%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "꿈의숲아트센터",
@@ -7959,7 +7959,7 @@ export const initialRealConcerts = [
       "제9회 SC브라이트 I AM Winner 마티네 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -7986,7 +7986,7 @@ export const initialRealConcerts = [
       "국민대학교 개교 80주년 기념 음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -8013,7 +8013,7 @@ export const initialRealConcerts = [
       "4인 사계 기타 콘서트: 독도의 사계 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -8040,7 +8040,7 @@ export const initialRealConcerts = [
       "김태훈 플루트 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -8067,7 +8067,7 @@ export const initialRealConcerts = [
       "김도윤 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -8094,7 +8094,7 @@ export const initialRealConcerts = [
       "제67회 대전피아노연구회 정기연주회 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -8121,7 +8121,7 @@ export const initialRealConcerts = [
       "GAC 기획공연, 11시 음악산책 단편선 시리즈 Ⅵ. 더블린 사람들 中 에블린 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -8148,7 +8148,7 @@ export const initialRealConcerts = [
       "경희 솔로이스츠 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -8175,7 +8175,7 @@ export const initialRealConcerts = [
       "율리우스 아살 피아노 리사이틀 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -8202,7 +8202,7 @@ export const initialRealConcerts = [
       "기아와 함께하는 파보 예르비 & 에스토니안 페스티벌 오케스트라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -8229,7 +8229,7 @@ export const initialRealConcerts = [
       "파시오네트 오케스트라 정기연주회: 라흐마니노프 교향곡 제2번 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -8256,7 +8256,7 @@ export const initialRealConcerts = [
       "제29회 한국성악예술학회 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -8283,7 +8283,7 @@ export const initialRealConcerts = [
       "월드오케스트라페스티벌, 양인모 & 헬싱키 필하모닉 오케스트라 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -8310,7 +8310,7 @@ export const initialRealConcerts = [
       "이정은 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -8337,7 +8337,7 @@ export const initialRealConcerts = [
       "피가로의 결혼 [논산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%85%BC%EC%82%B0%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0(%EA%B5%AC.%20%EB%85%BC%EC%82%B0%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "논산아트센터(구. 논산문화예술회관)",
@@ -8364,7 +8364,7 @@ export const initialRealConcerts = [
       "오페라 아리아와 가곡의 밤 [구미] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B5%AC%EB%AF%B8%EC%8B%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "구미시문화예술회관",
@@ -8391,7 +8391,7 @@ export const initialRealConcerts = [
       "제305회 수원시립교향악단 정기연주회 [수원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%88%98%EC%9B%90SK%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수원SK아트리움",
@@ -8418,7 +8418,7 @@ export const initialRealConcerts = [
       "제96회 예술공감: 사계의 빛깔, 트리오뉴의 울림 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%84%EC%88%99%EB%8F%84%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "을숙도문화회관",
@@ -8445,7 +8445,7 @@ export const initialRealConcerts = [
       "김남조 탄생 100년 기념 이영자 작품 연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -8472,7 +8472,7 @@ export const initialRealConcerts = [
       "김유빈 피아노 독주회: 여정 시리즈 4. 러시아 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -8499,7 +8499,7 @@ export const initialRealConcerts = [
       "라 칼라스 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -8526,7 +8526,7 @@ export const initialRealConcerts = [
       "양인모 & 헬싱키 필하모닉 오케스트라 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -8553,7 +8553,7 @@ export const initialRealConcerts = [
       "낭만주의 거장, 시벨리우스 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -8580,7 +8580,7 @@ export const initialRealConcerts = [
       "슈테른 필하모닉 더블 심포니 베토벤 7 & 5 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -8607,7 +8607,7 @@ export const initialRealConcerts = [
       "하트하트음악콩쿠르 수상자 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -8634,7 +8634,7 @@ export const initialRealConcerts = [
       "아름다운 목요일 금호아트홀, 인터내셔널 마스터즈: 모차르트 플러스 I. 폴 루이스 Piano (10.21) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -8661,7 +8661,7 @@ export const initialRealConcerts = [
       "아름다운 목요일 인터내셔널 마스터즈, 모차르트 플러스 Ⅰ: 폴 루이스 Piano 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -8688,7 +8688,7 @@ export const initialRealConcerts = [
       "제54회 범음악제, 콘서트 1. 역대 명예회장 작품전 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "거암아트홀",
@@ -8715,7 +8715,7 @@ export const initialRealConcerts = [
       "춘천 실내악 페스티벌, 아투스뮤직: 프랑스 달빛 콘서트 2회차 (10.21) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EB%82%98%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예나아트홀",
@@ -8742,7 +8742,7 @@ export const initialRealConcerts = [
       "제17회 민음회 정기연주회: Falling in Love with the Piano 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -8769,7 +8769,7 @@ export const initialRealConcerts = [
       "뮤직씨어터 슈바빙 정기연주회, 카르멘 [전주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A0%84%EB%B6%81%EB%8C%80%ED%95%99%EA%B5%90%20%EC%82%BC%EC%84%B1%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전북대학교 삼성문화회관",
@@ -8796,7 +8796,7 @@ export const initialRealConcerts = [
       "한낮의 유U;콘서트 (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.dureraum.org",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "(재) 영화의전당",
@@ -8823,7 +8823,7 @@ export const initialRealConcerts = [
       "손민수 Curated 32, 손민수 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%98%84%EB%8C%80%EC%B9%B4%EB%93%9C%20%EC%96%B8%EB%8D%94%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "현대카드 언더스테이지",
@@ -8850,7 +8850,7 @@ export const initialRealConcerts = [
       "푸르지오 아트홀 수요 초대석 45. Opera Collage: 애정과 우정, 그 사이 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "푸르지오아트홀",
@@ -8877,7 +8877,7 @@ export const initialRealConcerts = [
       "제224회 성남시립교향악단 정기 연주회 [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -8904,7 +8904,7 @@ export const initialRealConcerts = [
       "제80회 한국슈베르트협회 정기연주회: 슈베르트의 노래 속 소녀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -8931,7 +8931,7 @@ export const initialRealConcerts = [
       "코리안챔버오케스트라 콘트라스트 시리즈 5 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -8958,7 +8958,7 @@ export const initialRealConcerts = [
       "제4회 이화피아노앙상블 정기연주회: The Festival of Nature 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -8985,7 +8985,7 @@ export const initialRealConcerts = [
       "제220회 뉴서울필하모닉오케스트라 정기 연주회: 피아니스트 임동혁과 함께하는 차이코프스키 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -9012,7 +9012,7 @@ export const initialRealConcerts = [
       "제32회 안동시립합창단 정기연주회: 모차르트 레퀴엠 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안동문화예술의전당",
@@ -9039,7 +9039,7 @@ export const initialRealConcerts = [
       "천안예술의전당 회원음악회, 손민수 피아노 리사이틀: 바흐 평균율 클라비어 1권 음반발매기념 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -9066,7 +9066,7 @@ export const initialRealConcerts = [
       "유카페카 사라스테 & 헬싱키 필하모닉 오케스트라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -9093,7 +9093,7 @@ export const initialRealConcerts = [
       "인천시립교향악단 기획연주회, 과정음악회 Ⅲ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -9120,7 +9120,7 @@ export const initialRealConcerts = [
       "더 마스터즈: 강승민 첼로 리사이틀 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -9147,7 +9147,7 @@ export const initialRealConcerts = [
       "가을밤에 만나는 소프라노 박현진과 재즈피아니스트 허성우 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -9174,7 +9174,7 @@ export const initialRealConcerts = [
       "아름다운 목요일 인터내셔널 마스터즈, 모차르트 플러스 Ⅱ: 폴 루이스 Piano 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -9201,7 +9201,7 @@ export const initialRealConcerts = [
       "흑석동6인조 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%8C%EC%95%85%EA%B3%B5%EA%B0%84%20%EC%A4%91%EB%A0%A5%EC%9E%A5%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "음악공간 중력장",
@@ -9228,7 +9228,7 @@ export const initialRealConcerts = [
       "제38회 김천시립교향악단 정기연주회 [김천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%B2%9C%EC%8B%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김천시문화예술회관",
@@ -9255,7 +9255,7 @@ export const initialRealConcerts = [
       "(사) 서울윈드오케스트라 정기연주회: The Legacy Of Sound [청양] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%B2%AD%EC%96%91%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "청양문예회관",
@@ -9282,7 +9282,7 @@ export const initialRealConcerts = [
       "제57회 파주시립예술단 정기공연, 엘리야 [파주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8C%8C%EC%A3%BC%EC%9A%B4%EC%A0%95%ED%96%89%EB%B3%B5%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "파주운정행복센터",
@@ -9309,7 +9309,7 @@ export const initialRealConcerts = [
       "만능재치꾼 피가로, 세빌리아의 이발사 [해남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%B4%EB%82%A8%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "해남문화예술회관",
@@ -9336,7 +9336,7 @@ export const initialRealConcerts = [
       "Heritage Series; The Masters 피아니스트 손열음 & 고잉홈프로젝트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%EC%98%81%EC%B2%B4%EC%9E%84%EB%B2%84%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "신영체임버홀",
@@ -9363,7 +9363,7 @@ export const initialRealConcerts = [
       "제22회 음악에 기대어 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -9390,7 +9390,7 @@ export const initialRealConcerts = [
       "제22회 부산국제합창제, 그랜드 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -9417,7 +9417,7 @@ export const initialRealConcerts = [
       "이나현 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -9444,7 +9444,7 @@ export const initialRealConcerts = [
       "제94회 한국프랑스가곡연구회 정기연주회: 앙드레 카플레와 모리스 라벨 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -9471,7 +9471,7 @@ export const initialRealConcerts = [
       "더 테너스 콘서트: 테너들의 맛있는 한상!: 퓨전요리의 향연 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -9498,7 +9498,7 @@ export const initialRealConcerts = [
       "대전시립교향악단 챔버 시리즈3, 바이올린과 실내악 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -9525,7 +9525,7 @@ export const initialRealConcerts = [
       "대건챔버콰이어 창단 30주년 기념연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -9552,7 +9552,7 @@ export const initialRealConcerts = [
       "KT그룹희망나눔재단과 함께하는 예술의전당 마음을 담은 클래식 (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -9579,7 +9579,7 @@ export const initialRealConcerts = [
       "세종예술의전당 시크릿콘서트, 셰프 로시니의 식탁: 최원휘 & 홍혜란 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -9606,7 +9606,7 @@ export const initialRealConcerts = [
       "서울시향 얍 판 츠베덴의 모차르트: 레퀴엠 ① 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -9633,7 +9633,7 @@ export const initialRealConcerts = [
       "서울시합창단, 가곡시대 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -9660,7 +9660,7 @@ export const initialRealConcerts = [
       "제448회 인천시립교향악단 정기연주회: 인천시향의 브람스 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -9687,7 +9687,7 @@ export const initialRealConcerts = [
       "대구시립교향악단, 스쿨콘서트 3: 런던행 클래식 익스프레스 (10.23) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -9714,7 +9714,7 @@ export const initialRealConcerts = [
       "이준우 색소폰 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -9741,7 +9741,7 @@ export const initialRealConcerts = [
       "제54회 범음악제, 콘서트 2. 오디오 비주얼 콘서트: 소리를 보다 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=JCC%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "JCC 아트센터",
@@ -9768,7 +9768,7 @@ export const initialRealConcerts = [
       "아츠앤라이프 SSP 현대음악작곡가시리즈 Ⅳ. 김현민: 가벼운 멜랑콜리, 진지한 유희 (Airy Melancholy, Serious Playfulness) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%82%B4%EB%A1%B1%EC%BF%A4%EC%8A%A4%ED%8A%B8%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "살롱쿤스트",
@@ -9795,7 +9795,7 @@ export const initialRealConcerts = [
       "제2회 오페라 합창 페스티벌 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%A0%84%EC%8B%9C%EB%A6%BD%EC%97%B0%EC%A0%95%EA%B5%AD%EC%95%85%EC%9B%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전시립연정국악원",
@@ -9822,7 +9822,7 @@ export const initialRealConcerts = [
       "온: 콘서트, 앙상블 결의 노래로 건너는 계절 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%A8%EC%89%BC%ED%91%9C%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "온쉼표",
@@ -9849,7 +9849,7 @@ export const initialRealConcerts = [
       "제31회 살롱음악회, 피아니스트 안민혁과 친구들 Series Ⅲ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%82%B4%EB%A1%B1%EB%93%9C%20%ED%8C%8C%EC%A3%BC%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "살롱드 파주",
@@ -9876,7 +9876,7 @@ export const initialRealConcerts = [
       "전율의 메시아: 엘렉톤과 실내악으로 만나는 오라토리오 [서울 강북] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%BF%88%EC%9D%98%EC%88%B2%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "꿈의숲아트센터",
@@ -9903,7 +9903,7 @@ export const initialRealConcerts = [
       "제9회 콰르텟이즈 정기연주회, Romantic Echose: 낭만의울림 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B9%84%EC%98%A4%EC%BC%80%EC%9D%B4%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0(BOK%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "비오케이아트센터(BOK아트센터)",
@@ -9930,7 +9930,7 @@ export const initialRealConcerts = [
       "제4회 DMZ OPEN 국제음악제, Pulse - 시작의 박동 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양아람누리",
@@ -9957,7 +9957,7 @@ export const initialRealConcerts = [
       "이원복의 먼나라 이웃나라, 영국여행 [파주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8C%8C%EC%A3%BC%EC%9A%B4%EC%A0%95%ED%96%89%EB%B3%B5%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "파주운정행복센터",
@@ -9984,7 +9984,7 @@ export const initialRealConcerts = [
       "음악공방 피오레움, 윤피아노 클래스 초청 연주회: 장준호 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%94%BC%EC%98%A4%EB%A0%88%EC%95%84%ED%8A%B8%EC%95%A4%EC%97%94%ED%84%B0(%ED%94%BC%EC%98%A4%EB%A0%88%EC%9B%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "피오레아트앤엔터(피오레움)",
@@ -10011,7 +10011,7 @@ export const initialRealConcerts = [
       "제49회 굿모닝콘서트: 건반 위를 걷는 시간 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%84%EC%88%99%EB%8F%84%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "을숙도문화회관",
@@ -10038,7 +10038,7 @@ export const initialRealConcerts = [
       "The Class+, 인다코 콰르텟 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%EC%98%81%EC%B2%B4%EC%9E%84%EB%B2%84%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "신영체임버홀",
@@ -10065,7 +10065,7 @@ export const initialRealConcerts = [
       "피아노포르테 (PianoForte) : 교향곡 읽어주는 지휘자와 작곡가의 작업실 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%81%AC%EB%A0%88%EB%94%94%EC%95%84%20%ED%81%B4%EB%9E%98%EC%8B%9D%20%ED%81%B4%EB%9F%BD%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "크레디아 클래식 클럽",
@@ -10092,7 +10092,7 @@ export const initialRealConcerts = [
       "K심포니오케스트라 라온콘서트 Ⅷ: 별이 빛나던 그 밤 [전주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "http://www.woojin.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "우진문화공간",
@@ -10119,7 +10119,7 @@ export const initialRealConcerts = [
       "제4회 The ACCORD Cellos 정기연주회: Espressivo 2 [청주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cheongju.go.kr/ac/index.do",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "청주예술의전당",
@@ -10146,7 +10146,7 @@ export const initialRealConcerts = [
       "문진성 클라리넷 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -10173,7 +10173,7 @@ export const initialRealConcerts = [
       "최민지 첼로 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -10200,7 +10200,7 @@ export const initialRealConcerts = [
       "이지혜 x 김다솔: Beethoven Ⅱ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -10227,7 +10227,7 @@ export const initialRealConcerts = [
       "왕의 별 쇼케이스 [화성] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -10254,7 +10254,7 @@ export const initialRealConcerts = [
       "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [계룡] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "계룡문화예술의전당",
@@ -10281,7 +10281,7 @@ export const initialRealConcerts = [
       "사랑의묘약: 호텔아디나 [경기 광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "광주시문화예술의전당 (구. 남한산성아트홀)",
@@ -10308,7 +10308,7 @@ export const initialRealConcerts = [
       "제7회 뷔에르 앙상블 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -10335,7 +10335,7 @@ export const initialRealConcerts = [
       "서울시향 얍 판 츠베덴의 모차르트: 레퀴엠 ② 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -10362,7 +10362,7 @@ export const initialRealConcerts = [
       "함신익과 심포니 송 마스터즈 시리즈 VI, 차이코프스키 스페셜 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -10389,7 +10389,7 @@ export const initialRealConcerts = [
       "목관앙상블과 함께하는 윈드 뮤지컬 콘서트 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -10416,7 +10416,7 @@ export const initialRealConcerts = [
       "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -10443,7 +10443,7 @@ export const initialRealConcerts = [
       "강소연 바이올린 독주회: Time in Tango [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -10470,7 +10470,7 @@ export const initialRealConcerts = [
       "금호영재콘서트, 우수현 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -10497,7 +10497,7 @@ export const initialRealConcerts = [
       "금호영아티스트콘서트, 임승호 트롬본 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -10524,7 +10524,7 @@ export const initialRealConcerts = [
       "부산대학교 개교 80주년 기념음악회: 부산시민과 함께하는 클래식 여행 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -10551,7 +10551,7 @@ export const initialRealConcerts = [
       "쌀롱드무지끄, Fields in Motion: 움직이는 들판 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "쌀롱드무지끄",
@@ -10578,7 +10578,7 @@ export const initialRealConcerts = [
       "토들러 콘서트, 앙상블 모란의 6번째 이야기: 별 & 하늘 & 우주 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%98%EC%9A%B0%EC%8A%A4%EC%98%A4%EB%B8%8C%EB%B2%A0%EB%A5%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "하우스오브베르",
@@ -10605,7 +10605,7 @@ export const initialRealConcerts = [
       "제주체임버오케스트라의 가장 오래된 미래 [제주 서귀포] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김정문화회관",
@@ -10632,7 +10632,7 @@ export const initialRealConcerts = [
       "제15회 이 솔리스띠 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://klarts.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "광림아트센터",
@@ -10659,7 +10659,7 @@ export const initialRealConcerts = [
       "GYPSY TRAIN x SPAIN 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%9A%B8%EC%88%B2%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4301%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "서울숲 스튜디오301",
@@ -10686,7 +10686,7 @@ export const initialRealConcerts = [
       "길병민 리사이틀: 나의 행복 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "푸르지오아트홀",
@@ -10713,7 +10713,7 @@ export const initialRealConcerts = [
       "제31회 대구중등교사합창단 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%ED%95%99%EC%83%9D%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구학생문화센터",
@@ -10740,7 +10740,7 @@ export const initialRealConcerts = [
       "제4회 DMZ OPEN 국제음악제, Awaken: 깨어나는 평화 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양아람누리",
@@ -10767,7 +10767,7 @@ export const initialRealConcerts = [
       "제4회 DMZ OPEN 국제음악제, Connect: 연결되는 마음 [고양] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양아람누리",
@@ -10794,7 +10794,7 @@ export const initialRealConcerts = [
       "제11회 구로 클래식 페스타, 느티나무합창단 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "구로아트밸리",
@@ -10821,7 +10821,7 @@ export const initialRealConcerts = [
       "소프라노 김하영 독창회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ilshinhall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "일신홀",
@@ -10848,7 +10848,7 @@ export const initialRealConcerts = [
       "공간결 하우스 콘서트, 영아티스트콘서트: 결의 파동 vol.6 목관5중주 플레어 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%B5%EA%B0%84%EA%B2%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "공간결",
@@ -10875,7 +10875,7 @@ export const initialRealConcerts = [
       "제11회 구로 클래식 페스타, 더드림오케스트라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "구로아트밸리",
@@ -10902,7 +10902,7 @@ export const initialRealConcerts = [
       "장난감으로 음악을 만드는 키즈클래식, 언박싱! 음악택배 [남양주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%A8%EC%96%91%EC%A3%BC%20%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%B9%84%EC%A0%84%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "남양주 어린이비전센터",
@@ -10929,7 +10929,7 @@ export const initialRealConcerts = [
       "바리톤 김동규와 함께하는 10월의 어느 멋진날에 [광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B9%9B%EA%B3%A0%EC%9D%84%EC%8B%9C%EB%AF%BC%EB%AC%B8%ED%99%94%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "빛고을시민문화관",
@@ -10956,7 +10956,7 @@ export const initialRealConcerts = [
       "The Recite, 낭독이 있는 연주회 네 번째 이야기: 일요일의 예술가 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%9A%B8%EC%B2%B4%EC%9E%84%EB%B2%84%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "서울체임버홀",
@@ -10983,7 +10983,7 @@ export const initialRealConcerts = [
       "바이올리니스트 김민희 & 피아니스트 김진겸 듀오 리사이틀: 피아노와 바이올린을 위한 모차르트 소나타 전곡 연주회 Ⅰ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -11010,7 +11010,7 @@ export const initialRealConcerts = [
       "바비칸 콰르텟 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -11037,7 +11037,7 @@ export const initialRealConcerts = [
       "이창형 더블베이스 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -11064,7 +11064,7 @@ export const initialRealConcerts = [
       "불후의 명곡 브람스 [경기 광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "광주시문화예술의전당 (구. 남한산성아트홀)",
@@ -11091,7 +11091,7 @@ export const initialRealConcerts = [
       "하세연 첼로 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -11118,7 +11118,7 @@ export const initialRealConcerts = [
       "빈 필하모닉 내한공연 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -11145,7 +11145,7 @@ export const initialRealConcerts = [
       "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -11172,7 +11172,7 @@ export const initialRealConcerts = [
       "모두를 위한 OST 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -11199,7 +11199,7 @@ export const initialRealConcerts = [
       "한수진 & 잉글리시 체임버 오케스트라 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -11226,7 +11226,7 @@ export const initialRealConcerts = [
       "제4회 소아베 트리오 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -11253,7 +11253,7 @@ export const initialRealConcerts = [
       "제16회 충주가온피아노앙상블 피아노연주회: 모차르트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%B6%A9%EC%A3%BC%EC%8B%9C%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "충주시문화회관",
@@ -11280,7 +11280,7 @@ export const initialRealConcerts = [
       "김승희 교수 제자 음악회: 지음지연 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -11307,7 +11307,7 @@ export const initialRealConcerts = [
       "제11회 정혜진 클라리넷 독주회 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -11334,7 +11334,7 @@ export const initialRealConcerts = [
       "제4회 DMZ OPEN 국제음악제, Eternity: 계속될 평화 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양아람누리",
@@ -11361,7 +11361,7 @@ export const initialRealConcerts = [
       "신예의 밤, 피아니스트 이근영 (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%A4%EB%9F%AC%EB%A6%AC%20%EB%94%94%20%EC%95%84%EB%A5%B4%ED%85%8C%20%EC%B2%AD%EB%8B%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "갤러리 디 아르테 청담",
@@ -11388,7 +11388,7 @@ export const initialRealConcerts = [
       "제27회 성남 박태현 전국 창작동요제 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EB%82%A8%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20(%EA%B5%AC.%20%EC%84%B1%EB%82%A8%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트리움 (구. 성남시민회관)",
@@ -11415,7 +11415,7 @@ export const initialRealConcerts = [
       "제11회 구로 클래식 페스타, 필레오오케스트라 X 구로여성합창단 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "구로아트밸리",
@@ -11442,7 +11442,7 @@ export const initialRealConcerts = [
       "선데이콘서트, 장세인 첼로 독주회 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://elimartcenter.co.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "엘림아트센터",
@@ -11469,7 +11469,7 @@ export const initialRealConcerts = [
       "키즈 콘서트 Ⅲ, 클랩! 그림책 콘서트 (10.25) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gdfac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강동아트센터",
@@ -11496,7 +11496,7 @@ export const initialRealConcerts = [
       "제36회 아주여성합창단 & 제24회 아주남성합창단 정기연주회: 지금 여기, 그대로 빛나 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -11523,7 +11523,7 @@ export const initialRealConcerts = [
       "앙상블 공간 프로젝트 열 일곱 번째 이야기: 여행과 이방인 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -11550,7 +11550,7 @@ export const initialRealConcerts = [
       "피아니스트 한가야 추모 음악회 Ⅱ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -11577,7 +11577,7 @@ export const initialRealConcerts = [
       "CHONGA Piano AdventureⅠ: Did You Know These? 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8E%98%EB%A6%AC%EC%A7%80%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "페리지홀",
@@ -11604,7 +11604,7 @@ export const initialRealConcerts = [
       "제57주년 기념 21세기악회 작품발표회: 21세기음악 with K-STORY 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ilshinhall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "일신홀",
@@ -11631,7 +11631,7 @@ export const initialRealConcerts = [
       "제1200회 하우스콘서트, 듀오 얌니크 Duo Jamník 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EA%B0%80%EC%9D%98%20%EC%A7%91%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술가의 집",
@@ -11658,7 +11658,7 @@ export const initialRealConcerts = [
       "제39회 소정성악회 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EB%9D%BC%EB%AF%B9%ED%8C%94%EB%A0%88%EC%8A%A4%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세라믹팔레스홀",
@@ -11685,7 +11685,7 @@ export const initialRealConcerts = [
       "나는 바다가 되리라 [경주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://garts.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경주예술의전당",
@@ -11712,7 +11712,7 @@ export const initialRealConcerts = [
       "제11회 대전아트필하모닉오케스트라 정기연주회: 시대의 교향곡 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -11739,7 +11739,7 @@ export const initialRealConcerts = [
       "김세준 비올라 리사이틀: 계보의 소리: 프랑코-벨지언 (Legacy in Sound: Franco-Belgian) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -11766,7 +11766,7 @@ export const initialRealConcerts = [
       "더중앙플러스 클래식 시리즈: 손민수 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -11793,7 +11793,7 @@ export const initialRealConcerts = [
       "제2회 앙상블 오브 (Ensemble Aube (Of) ) 정기연주회: Sound of (Aube) Germany 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -11820,7 +11820,7 @@ export const initialRealConcerts = [
       "제377회 창원시립교향악단 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성산아트홀",
@@ -11847,7 +11847,7 @@ export const initialRealConcerts = [
       "제24회 람파스콰이어 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -11874,7 +11874,7 @@ export const initialRealConcerts = [
       "남양주시립합창단, 클래식 세계여행: 즐거운 낭만음악 (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%A4%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "다산아트홀",
@@ -11901,7 +11901,7 @@ export const initialRealConcerts = [
       "제54회 범음악제, 콘서트 3. C-Camerata Taipei 초청연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=JCC%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "JCC 아트센터",
@@ -11928,7 +11928,7 @@ export const initialRealConcerts = [
       "첼로 두오 헤르츠 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "거암아트홀",
@@ -11955,7 +11955,7 @@ export const initialRealConcerts = [
       "진해아트홀 개관기념, 코리아경남심포니오케스트라 특별공연 [창원 진해] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A7%84%ED%95%B4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "진해아트홀",
@@ -11982,7 +11982,7 @@ export const initialRealConcerts = [
       "라움 마티네 콘서트, 클래식으로 되살아나는 감동 (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%86%8C%EC%85%9C%EB%B2%A0%EB%89%B4%20%EB%9D%BC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "소셜베뉴 라움",
@@ -12009,7 +12009,7 @@ export const initialRealConcerts = [
       "아트 온 스크린, 아디나 [울산] (영상화) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울산중구문화의전당",
@@ -12036,7 +12036,7 @@ export const initialRealConcerts = [
       "클래식 판타지아 (with Korea Coop Orchestra) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90%20%EB%B0%B1%EC%A3%BC%EB%85%84%EA%B8%B0%EB%85%90%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "연세대학교 백주년기념관",
@@ -12063,7 +12063,7 @@ export const initialRealConcerts = [
       "제97회 예술공감, 디어뮤직의 별이 빛나는 밤에: 을숙도의 사계절 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%84%EC%88%99%EB%8F%84%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "을숙도문화회관",
@@ -12090,7 +12090,7 @@ export const initialRealConcerts = [
       "경기리베라오케스트라 피날레콘서트: OUR SYMPHONY: 우리의 교향곡 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ggac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경기아트센터(구. 경기도문화의전당)",
@@ -12117,7 +12117,7 @@ export const initialRealConcerts = [
       "제88회 서울오라토리오 정기연주회, 멘델스존: 엘리야 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -12144,7 +12144,7 @@ export const initialRealConcerts = [
       "오상은 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -12171,7 +12171,7 @@ export const initialRealConcerts = [
       "국립심포니콘서트오케스트라와 함께하는 11시 여민락콘서트, 음악이 있는 오전 2: 비엔나의 세 개 선율 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -12198,7 +12198,7 @@ export const initialRealConcerts = [
       "구자범의 가을 콘서트 렉쳐 1. The Sound of Music [안산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안산문화예술의전당",
@@ -12225,7 +12225,7 @@ export const initialRealConcerts = [
       "김우연 귀국 클라리넷 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -12252,7 +12252,7 @@ export const initialRealConcerts = [
       "제26회 알테무지크서울 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -12279,7 +12279,7 @@ export const initialRealConcerts = [
       "해설이 있는 11시 콘서트, 비올리니스트 박하양 (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -12306,7 +12306,7 @@ export const initialRealConcerts = [
       "제3회 숙명여자대학교 피아노교수학전공 동문음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -12333,7 +12333,7 @@ export const initialRealConcerts = [
       "낭만주의 거장, 차이코프스키 & 라흐마니노프 & 신세계로부터 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -12360,7 +12360,7 @@ export const initialRealConcerts = [
       "전통과 현대, 작곡가 김청묵 80세 기념 음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -12387,7 +12387,7 @@ export const initialRealConcerts = [
       "직장인을 위한 퇴근길 콘서트 Ⅳ, 뮤지컬의 밤 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -12414,7 +12414,7 @@ export const initialRealConcerts = [
       "월드오케스트라페스티벌, 한수진 & 잉글리시 챔버 오케스트라 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -12441,7 +12441,7 @@ export const initialRealConcerts = [
       "부산시립청소년교향악단 특별연주회: 어떤공연 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -12468,7 +12468,7 @@ export const initialRealConcerts = [
       "제4회 지역주민과 함께하는 Fall in Art: 그리스 로마 신화, 클래식을 만나다. (1회차) [나주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC%20%EB%B3%B8%EC%82%AC%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "한국전력공사 본사",
@@ -12495,7 +12495,7 @@ export const initialRealConcerts = [
       "빛과 여백 사이 .... 4 Promenades: ENTRE... lumiere & vide 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ilshinhall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "일신홀",
@@ -12522,7 +12522,7 @@ export const initialRealConcerts = [
       "8시 클래식 울주, 남매 기타 듀오 아크의 영화처럼, 클래식처럼 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울주문화예술회관",
@@ -12549,7 +12549,7 @@ export const initialRealConcerts = [
       "시흥윈드오케스트라와 함께하는 패밀리 음악회 [시흥] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%9C%ED%9D%A5%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "시흥아트센터",
@@ -12576,7 +12576,7 @@ export const initialRealConcerts = [
       "나루아티스트와 함께하는 살롱음악회 (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%98%EB%A3%A8%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "나루아트센터",
@@ -12603,7 +12603,7 @@ export const initialRealConcerts = [
       "꿈의 오케스트라 포항 정기 연주회: 푸른 파도 끝에서 [포항] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://phcf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "포항문화예술회관",
@@ -12630,7 +12630,7 @@ export const initialRealConcerts = [
       "이천에서 들린 하모니: 오페라 하이라이트 [이천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%B2%9C%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "이천아트홀",
@@ -12657,7 +12657,7 @@ export const initialRealConcerts = [
       "영도문화예술회관 수요상설 onStage, Voy a Buena: 탱고와 함께 걷는 부에노스아이레스의 시간들 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EB%8F%84%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영도문화예술회관",
@@ -12684,7 +12684,7 @@ export const initialRealConcerts = [
       "Sounds of the Oceans [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%84%9C%ED%95%B4%EA%B5%AC%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80(%EA%B5%AC.%20%EC%9D%B8%EC%B2%9C%EC%84%9C%EA%B5%AC%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "인천서해구문화회관(구. 인천서구문화회관)",
@@ -12711,7 +12711,7 @@ export const initialRealConcerts = [
       "최재원 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -12738,7 +12738,7 @@ export const initialRealConcerts = [
       "이새미 피아노 리사이틀 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -12765,7 +12765,7 @@ export const initialRealConcerts = [
       "대전시립합창단 가곡음악회: 가곡 전시회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -12792,7 +12792,7 @@ export const initialRealConcerts = [
       "파트리샤 코파친스카야 & 솔 가베타 듀오 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -12819,7 +12819,7 @@ export const initialRealConcerts = [
       "아레테 콰르텟 바르톡 현악사중주 전곡연주1 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -12846,7 +12846,7 @@ export const initialRealConcerts = [
       "국립오페라단 정기공연: 라인의 황금 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -12873,7 +12873,7 @@ export const initialRealConcerts = [
       "스미노 하야토 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -12900,7 +12900,7 @@ export const initialRealConcerts = [
       "제42회 소리울 앙상블 정기 연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -12927,7 +12927,7 @@ export const initialRealConcerts = [
       "제6회 인천국제고음악제 I. 베아트리스 마르탱 X 코리안 바로크 소사이어티: The Bach Family 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -12954,7 +12954,7 @@ export const initialRealConcerts = [
       "홍선화 피아노 리사이틀: Mozart Minor Silhouette [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -12981,7 +12981,7 @@ export const initialRealConcerts = [
       "만능재치꾼 피가로, 세빌리아의 이발사 [예산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%B6%A9%EB%82%A8%EB%8F%84%EC%B2%AD%20%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "충남도청 문예회관",
@@ -13008,7 +13008,7 @@ export const initialRealConcerts = [
       "모스틀리오케스트라 스토리가 있는 음악회: 내 사랑을 받아주세요 [상주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%83%81%EC%A3%BC%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "상주문화회관",
@@ -13035,7 +13035,7 @@ export const initialRealConcerts = [
       "제23회 울산 중구심포니오케스트라 기획연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울산중구문화의전당",
@@ -13062,7 +13062,7 @@ export const initialRealConcerts = [
       "제54회 범음악제, 콘서트 4. Kwartludium 초청연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ilshinhall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "일신홀",
@@ -13089,7 +13089,7 @@ export const initialRealConcerts = [
       "이현경의 살롱드같음 시즌2: 기타리스트 지호남의 속삭이는 선율, 기타가 들려주는 이야기 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8D%94%EA%B0%99%EC%9D%8C%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "더같음",
@@ -13116,7 +13116,7 @@ export const initialRealConcerts = [
       "신기환 도슨트와 함께하는 미술관 음악여행 vol.1, 빛과 감성의 울림 [제주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.jejusi.go.kr/acenter/index.do",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "제주아트센터",
@@ -13143,7 +13143,7 @@ export const initialRealConcerts = [
       "수성구여성합창단 정기연주회: 수성사랑음악회 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -13170,7 +13170,7 @@ export const initialRealConcerts = [
       "제51회 평택혼성합창단 정기연주회, 창단 30주년 기념 콘서트 [평택] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "평택아트센터",
@@ -13197,7 +13197,7 @@ export const initialRealConcerts = [
       "강릉시립교향악단 기획연주, 가곡의 밤 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gn.go.kr/gnart",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강릉아트센터 (구. 강릉문화예술관)",
@@ -13224,7 +13224,7 @@ export const initialRealConcerts = [
       "시가 흐르고, 음악과 영상이 머무는 문학콘서트: 살다가 보면 [당진] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%B9%EC%A7%84%EB%AC%B8%EC%98%88%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "당진문예의전당",
@@ -13251,7 +13251,7 @@ export const initialRealConcerts = [
       "DSAC 온 스테이지, 바람의 열정: Passione [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%AC%EC%84%9C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20(%EA%B5%AC.%20%EC%9B%83%EB%8A%94%EC%96%BC%EA%B5%B4%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "달서아트센터 (구. 웃는얼굴아트센터)",
@@ -13278,7 +13278,7 @@ export const initialRealConcerts = [
       "낙동아트센터 마티네 콘서트, 실내악시리즈 Ⅳ. 10월의 샤콘느 & 사계 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -13305,7 +13305,7 @@ export const initialRealConcerts = [
       "제10회 뮤직페스티벌창원, 첼리스트 김정아 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성산아트홀",
@@ -13332,7 +13332,7 @@ export const initialRealConcerts = [
       "천년의 빛, 하나의 울림 [울산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ucac.ulsan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울산문화예술회관",
@@ -13359,7 +13359,7 @@ export const initialRealConcerts = [
       "제54회 범음악제, 콘서트 6. C-Channel String Orchestra 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -13386,7 +13386,7 @@ export const initialRealConcerts = [
       "카운터테너 이동규 리사이틀: 바로크로그 [제천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "제천예술의전당",
@@ -13413,7 +13413,7 @@ export const initialRealConcerts = [
       "이루이사 피아노 & 쳄발로 리사이틀: 바흐 건반음악전곡시리즈 Ⅲ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -13440,7 +13440,7 @@ export const initialRealConcerts = [
       "천안예술의전당 씨네마 콘서트 with K-필하모닉오케스트라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -13467,7 +13467,7 @@ export const initialRealConcerts = [
       "아레테 콰르텟 바르톡 현악 사중주 전곡 연주2 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -13494,7 +13494,7 @@ export const initialRealConcerts = [
       "제831회 KBS교향악단 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -13521,7 +13521,7 @@ export const initialRealConcerts = [
       "한수진 x 잉글리시 체임버 오케스트라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -13548,7 +13548,7 @@ export const initialRealConcerts = [
       "SPO Day 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -13575,7 +13575,7 @@ export const initialRealConcerts = [
       "제25회 대구시립교향악단 대학생 협주곡의 밤 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -13602,7 +13602,7 @@ export const initialRealConcerts = [
       "대구 극음악 시리즈 Ⅲ. 목관앙상블로 재해석한 호두까기인형 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -13629,7 +13629,7 @@ export const initialRealConcerts = [
       "이주현 피아노 리사이틀 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -13656,7 +13656,7 @@ export const initialRealConcerts = [
       "piknic 무성영화극장, 오를락의 손 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%94%BC%ED%81%AC%EB%8B%89%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "피크닉",
@@ -13683,7 +13683,7 @@ export const initialRealConcerts = [
       "임호열 & 김수영 피아노 듀오 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ilshinhall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "일신홀",
@@ -13710,7 +13710,7 @@ export const initialRealConcerts = [
       "올라비올라 B to B with 길병민 [안양] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ayac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "평촌아트홀",
@@ -13737,7 +13737,7 @@ export const initialRealConcerts = [
       "손가슬 & 오재석 듀오 콘서트, Ambitus: 음역의 끝과 끝 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "푸르지오아트홀",
@@ -13764,7 +13764,7 @@ export const initialRealConcerts = [
       "공간결 하우스 콘서트 vol.7 앙상블 루치아: 별빛 동화, 디즈니 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%B5%EA%B0%84%EA%B2%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "공간결",
@@ -13791,7 +13791,7 @@ export const initialRealConcerts = [
       "서리풀 오페라 파노라마, Belcanto collage: 로시니 & 도니제티 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://seochocf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "반포심산아트홀",
@@ -13818,7 +13818,7 @@ export const initialRealConcerts = [
       "제188회 춘천시립교향악단 정기연주회, 시간의 유산6: 유산의 혁신 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cccf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "춘천문화예술회관",
@@ -13845,7 +13845,7 @@ export const initialRealConcerts = [
       "제10회 뮤직페스티벌창원, 첼리스타 첼로앙상블 [창원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성산아트홀",
@@ -13872,7 +13872,7 @@ export const initialRealConcerts = [
       "MUSICSCAPE, 치유의 밤: From here to everywhere... [광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.acc.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "국립아시아문화전당",
@@ -13899,7 +13899,7 @@ export const initialRealConcerts = [
       "바리톤 석상근의 음악동행 [진천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "진천예술의전당",
@@ -13926,7 +13926,7 @@ export const initialRealConcerts = [
       "김영애 플루트 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -13953,7 +13953,7 @@ export const initialRealConcerts = [
       "메조소프라노 권세연 독창회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -13980,7 +13980,7 @@ export const initialRealConcerts = [
       "소프라노 심윤지 독창회 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -14007,7 +14007,7 @@ export const initialRealConcerts = [
       "제4회 디 알토 앙상블 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -14034,7 +14034,7 @@ export const initialRealConcerts = [
       "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [안동] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안동문화예술의전당",
@@ -14061,7 +14061,7 @@ export const initialRealConcerts = [
       "바리톤 김주택 뮤직 라이브러리, Act 5. Le Canzoni 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -14088,7 +14088,7 @@ export const initialRealConcerts = [
       "바흐솔리스텐서울 기획연주시리즈2, 바흐 프로젝트 Ⅴ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -14115,7 +14115,7 @@ export const initialRealConcerts = [
       "모차르트, 마술피리 [의정부] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "의정부예술의전당",
@@ -14142,7 +14142,7 @@ export const initialRealConcerts = [
       "화성시 오케스트라 정기연주회, 마스터피스 시리즈 Ⅲ: 가을의 향기 [화성] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -14169,7 +14169,7 @@ export const initialRealConcerts = [
       "경기필 마스터피스 시리즈 Ⅴ, 말러 교향곡 1번 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -14196,7 +14196,7 @@ export const initialRealConcerts = [
       "DAZBEE ORCHESTRA CONCERT: SYMPHONIA 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -14223,7 +14223,7 @@ export const initialRealConcerts = [
       "리성야 , 류셴지 X 기타듀오 보티 (Botti) 콘서트 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -14250,7 +14250,7 @@ export const initialRealConcerts = [
       "월드오케스트라페스티벌, KBS교향악단 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -14277,7 +14277,7 @@ export const initialRealConcerts = [
       "금호영아티스트콘서트, 민경배 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -14304,7 +14304,7 @@ export const initialRealConcerts = [
       "금호영재콘서트, 김성온 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -14331,7 +14331,7 @@ export const initialRealConcerts = [
       "제13회 중구소년소녀합창단 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울산중구문화의전당",
@@ -14358,7 +14358,7 @@ export const initialRealConcerts = [
       "제7회 스케치 정기 연주회 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%AC%EC%84%9C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20(%EA%B5%AC.%20%EC%9B%83%EB%8A%94%EC%96%BC%EA%B5%B4%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "달서아트센터 (구. 웃는얼굴아트센터)",
@@ -14385,7 +14385,7 @@ export const initialRealConcerts = [
       "박지윤 바이올린 리사이틀 [시흥] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%9C%ED%9D%A5%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "시흥아트센터",
@@ -14412,7 +14412,7 @@ export const initialRealConcerts = [
       "모스크바홀 기획공연 시리즈, FLOS ensemble: Romantic & Modern 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%AA%A8%EC%8A%A4%ED%81%AC%EB%B0%94%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "모스크바홀",
@@ -14439,7 +14439,7 @@ export const initialRealConcerts = [
       "제20회 서울챔버싱어즈 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -14466,7 +14466,7 @@ export const initialRealConcerts = [
       "홍채린 오르간 리사이틀: 빛과 울림 [부천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -14493,7 +14493,7 @@ export const initialRealConcerts = [
       "앙상블 부산, 현의 물결 시리즈: 가을을 남기고 떠난사람 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "http://www.f1963.org",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "F1963",
@@ -14520,7 +14520,7 @@ export const initialRealConcerts = [
       "제11회 구로 클래식 페스타, 비바체 합창단 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "구로아트밸리",
@@ -14547,7 +14547,7 @@ export const initialRealConcerts = [
       "제11회 구로 클래식 페스타, 심포니앤조이오케스트라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "구로아트밸리",
@@ -14574,7 +14574,7 @@ export const initialRealConcerts = [
       "ONLY FOR YOU, 한예진 & 이지현의 CRAZY MOZART 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%97%90%EC%9D%B4%EC%B9%98%EC%95%84%EC%B8%A0%20(H-Art)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "에이치아츠 (H-Art)",
@@ -14601,7 +14601,7 @@ export const initialRealConcerts = [
       "음악공방 피오레움, 윤피아노클래스 초청 연주회: 신민규 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%94%BC%EC%98%A4%EB%A0%88%EC%95%84%ED%8A%B8%EC%95%A4%EC%97%94%ED%84%B0(%ED%94%BC%EC%98%A4%EB%A0%88%EC%9B%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "피오레아트앤엔터(피오레움)",
@@ -14628,7 +14628,7 @@ export const initialRealConcerts = [
       "박종성 with KCO의 하모니카 랩소디 [속초] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%86%8D%EC%B4%88%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "속초문화예술회관",
@@ -14655,7 +14655,7 @@ export const initialRealConcerts = [
       "앙상블 어우름의 Adagio Knitting 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%9D%BC%EC%9C%A8%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "라율아트홀",
@@ -14682,7 +14682,7 @@ export const initialRealConcerts = [
       "유령성의 비밀음악회 [화성] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%97%90%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%A7%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "에이페이지",
@@ -14710,7 +14710,7 @@ export const initialRealConcerts = [
       "NAC@시그니처클래식 Symphony No.5 & Choral Series Ⅵ. 말러 5번 & 모차르트 플루트 협주곡 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -14737,7 +14737,7 @@ export const initialRealConcerts = [
       "제8회 꿈의오케스트라 김해 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%B4%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김해문화의전당",
@@ -14764,7 +14764,7 @@ export const initialRealConcerts = [
       "토요 클래식의밤, 해설이 있는 클래식: 10월의 마지막날, 고전음악 동시통역 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EB%82%98%EB%88%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "콘서트홀 나누",
@@ -14791,7 +14791,7 @@ export const initialRealConcerts = [
       "로드 시그니처, 추교준 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%9C%EB%93%9C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%5B%EB%B6%80%EC%82%B0%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "로드아트센터 [부산]",
@@ -14818,7 +14818,7 @@ export const initialRealConcerts = [
       "월간실내악, Halo Trio (10월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%A4%EB%9F%AC%EB%A6%AC%20%EB%94%94%20%EC%95%84%EB%A5%B4%ED%85%8C%20%EC%B2%AD%EB%8B%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "갤러리 디 아르테 청담",
@@ -14845,7 +14845,7 @@ export const initialRealConcerts = [
       "제10회 뮤직페스티벌창원, 지브리 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성산아트홀",
@@ -14872,7 +14872,7 @@ export const initialRealConcerts = [
       "한빛예술단, 다크니스 투 라이트 [영덕] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예주문화예술회관",
@@ -14899,7 +14899,7 @@ export const initialRealConcerts = [
       "이상민 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -14926,7 +14926,7 @@ export const initialRealConcerts = [
       "소아암환우돕기 기부 희망콘서트: 백주영과 함께하는 가을, 협주의 선율 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -14953,7 +14953,7 @@ export const initialRealConcerts = [
       "에튀드 스펙트럼 Ⅰ: 지유경 리게티 피아노 에튀드 전곡 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -14980,7 +14980,7 @@ export const initialRealConcerts = [
       "비킹구르 올라프손 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -15007,7 +15007,7 @@ export const initialRealConcerts = [
       "KG필하모닉오케스트라 렉처 콘서트: K-CLASSIC 인사이트 시리즈, 음악의 신동 모차르트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -15034,7 +15034,7 @@ export const initialRealConcerts = [
       "제6회 인천국제고음악제 Ⅱ. 아망딘 베예 X 코리안 바로크 소사이어티: Galaxia Vivaldi 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -15061,7 +15061,7 @@ export const initialRealConcerts = [
       "바이올리니스트 박지영 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -15088,7 +15088,7 @@ export const initialRealConcerts = [
       "제4회 파주시민 합창제 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8C%8C%EC%A3%BC%EC%9A%B4%EC%A0%95%ED%96%89%EB%B3%B5%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "파주운정행복센터",
@@ -15115,7 +15115,7 @@ export const initialRealConcerts = [
       "제11회 구로 클래식 페스타, 베누스토 심포니 오케스트라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "구로아트밸리",
@@ -15142,7 +15142,7 @@ export const initialRealConcerts = [
       "제32회 꿈씨음악회: 나눔이 꿈이 될 때 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양아람누리",
@@ -15169,7 +15169,7 @@ export const initialRealConcerts = [
       "서울하모니카오케스트라 정기연주회: 우리들의 하모니카 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%86%8C%EC%9B%94%EC%95%84%ED%8A%B8%ED%99%80%20(%EC%84%B1%EB%8F%99%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "소월아트홀 (성동문화회관)",
@@ -15196,7 +15196,7 @@ export const initialRealConcerts = [
       "제5회 리비툼 오케스트라 정기 연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%BF%88%EC%9D%98%EC%88%B2%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "꿈의숲아트센터",
@@ -15223,7 +15223,7 @@ export const initialRealConcerts = [
       "서울대학교 개교 80주년 기념 SNU Symphony Orchestra 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -15250,7 +15250,7 @@ export const initialRealConcerts = [
       "제3회 (사) 한국예술가곡총연합회 정기연주회: 한국예술가곡의 향연 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -15277,7 +15277,7 @@ export const initialRealConcerts = [
       "제82회 (사) 한국페스티발앙상블 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -15304,7 +15304,7 @@ export const initialRealConcerts = [
       "성정문화재단 창립 45주년 기념 음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -15331,7 +15331,7 @@ export const initialRealConcerts = [
       "한양 윈드오케스트라 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -15358,7 +15358,7 @@ export const initialRealConcerts = [
       "신민정 리사이틀: 세상의 모든, 피아노 음악 #2. 신낭만을 꿈꾸다 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -15385,7 +15385,7 @@ export const initialRealConcerts = [
       "대구 비르투오조 챔버 특별음악회, 열린음악회: 모두를 위한 배리어프리 콘서트 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -15412,7 +15412,7 @@ export const initialRealConcerts = [
       "시문학과 예술가곡 리더아벤트 시리즈 11, 모차르트 예술가곡과 콘체르토 아리아의 밤 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -15439,7 +15439,7 @@ export const initialRealConcerts = [
       "제7회 CTS 장로합창단 정기연주회 [부천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -15467,7 +15467,7 @@ export const initialRealConcerts = [
       "제20회 공주시립합창단 정기연주회: 바로크 두 거장의 회동: 바흐와 헨델 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%B5%EC%A3%BC%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "공주문예회관",
@@ -15494,7 +15494,7 @@ export const initialRealConcerts = [
       "낙동아트센터 마티네 콘서트, 피아노 소나타 시리즈Ⅶ. 피아니스트 서형민의 베토벤소나타: 첼로와 함께 춤을 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -15521,7 +15521,7 @@ export const initialRealConcerts = [
       "On Stage Concert, Three Guitars [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%B4%EC%9A%B4%EB%8C%80%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "해운대문화회관",
@@ -15548,7 +15548,7 @@ export const initialRealConcerts = [
       "전남광주통합특별시립합창단 기획연주회 Ⅶ. 마티네콘서트: 어울림Ⅴ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -15575,7 +15575,7 @@ export const initialRealConcerts = [
       "제26회 현대음악앙상블 소리 정기연주회: Dream & Life 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -15602,7 +15602,7 @@ export const initialRealConcerts = [
       "제21회 이마에스트리 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -15629,7 +15629,7 @@ export const initialRealConcerts = [
       "희망 Dream NEXT Concert: STAGE 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -15656,7 +15656,7 @@ export const initialRealConcerts = [
       "제10회 클로리스 피아노 트리오 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -15683,7 +15683,7 @@ export const initialRealConcerts = [
       "김예원 플루트 독주회: 빛과 숨결의 유희 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -15710,7 +15710,7 @@ export const initialRealConcerts = [
       "월드오케스트라페스티벌, 경상북도 도립교향악단 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -15737,7 +15737,7 @@ export const initialRealConcerts = [
       "푸르지오 아트홀 수요 초대석 47. 바리톤 류승완 독창회: Tutto il Bel Canto! 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "푸르지오아트홀",
@@ -15764,7 +15764,7 @@ export const initialRealConcerts = [
       "제94회 제주특별자치도립 서귀포관악단 정기연주회 [제주 서귀포] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "서귀포예술의전당",
@@ -15791,7 +15791,7 @@ export const initialRealConcerts = [
       "제23회 한국피아노듀오협회 스페셜 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -15818,7 +15818,7 @@ export const initialRealConcerts = [
       "전남광주통합특별시립교향악단, 오티움 콘서트 Ⅴ. Flute 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -15845,7 +15845,7 @@ export const initialRealConcerts = [
       "제18회 세일 한국가곡의 밤 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -15872,7 +15872,7 @@ export const initialRealConcerts = [
       "지역 아티스트와 함께하는 K-클래식 콘서트7, 메즈클라리넷 [천안] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -15899,7 +15899,7 @@ export const initialRealConcerts = [
       "신영증권과 함께하는 예술의전당 THE NEXT, 송현정 오보에 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -15926,7 +15926,7 @@ export const initialRealConcerts = [
       "제5회 트리오 메리디오 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -15953,7 +15953,7 @@ export const initialRealConcerts = [
       "서울시오페라단, 라보엠 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -15980,7 +15980,7 @@ export const initialRealConcerts = [
       "필라델피아 오케스트라 마린 알솝 & 임윤찬 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -16007,7 +16007,7 @@ export const initialRealConcerts = [
       "소프라노 양세원 리사이틀 [고양] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양어울림누리",
@@ -16034,7 +16034,7 @@ export const initialRealConcerts = [
       "오유진 바이올린 독주회: Mozart 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ilshinhall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "일신홀",
@@ -16061,7 +16061,7 @@ export const initialRealConcerts = [
       "DSAC 브랜드 콘서트, 가곡열전: 노래가 된 풍경 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%AC%EC%84%9C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20(%EA%B5%AC.%20%EC%9B%83%EB%8A%94%EC%96%BC%EA%B5%B4%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "달서아트센터 (구. 웃는얼굴아트센터)",
@@ -16088,7 +16088,7 @@ export const initialRealConcerts = [
       "포항국제음악제, 아티스트 포항 Ⅰ. 마주보는 - 세계 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%AC%ED%95%AD%EC%8B%9C%EC%B2%AD%20%EB%8C%80%EC%9E%A0%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "포항시청 대잠홀",
@@ -16115,7 +16115,7 @@ export const initialRealConcerts = [
       "천세정 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -16142,7 +16142,7 @@ export const initialRealConcerts = [
       "베토벤 교향곡 9번 합창: 조화의 서 [전남광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -16169,7 +16169,7 @@ export const initialRealConcerts = [
       "조성현 바흐 플루트 소나타 전곡 리사이틀 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -16196,7 +16196,7 @@ export const initialRealConcerts = [
       "국립심포니콘서트오케스트라 심야음악회: 별 헤는 밤, 별 셋 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -16223,7 +16223,7 @@ export const initialRealConcerts = [
       "대전시립교향악단 마스터즈 시리즈 9, 라흐마니노프 교향곡 제2번 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -16250,7 +16250,7 @@ export const initialRealConcerts = [
       "유원합창단 연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -16277,7 +16277,7 @@ export const initialRealConcerts = [
       "이채영 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -16304,7 +16304,7 @@ export const initialRealConcerts = [
       "이진 바이올린 리사이틀: 브람스 바이올린 소나타 전곡 연주회: 세 개의 고백 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -16331,7 +16331,7 @@ export const initialRealConcerts = [
       "음악공방 피오레움, 윤피아노 클래스 초청 연주회: 이윤희 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%94%BC%EC%98%A4%EB%A0%88%EC%95%84%ED%8A%B8%EC%95%A4%EC%97%94%ED%84%B0(%ED%94%BC%EC%98%A4%EB%A0%88%EC%9B%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "피오레아트앤엔터(피오레움)",
@@ -16358,7 +16358,7 @@ export const initialRealConcerts = [
       "경성흥신소: 절영도, 사라진 그림자를 찾아라! [부산] (11.06) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EB%8F%84%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영도문화예술회관",
@@ -16385,7 +16385,7 @@ export const initialRealConcerts = [
       "제106회 명품 콘서트, 바이올리니스트 김희정의 사계: 비발디 & 피아졸라 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%84%EC%88%99%EB%8F%84%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "을숙도문화회관",
@@ -16412,7 +16412,7 @@ export const initialRealConcerts = [
       "서리풀 서초9 시리즈 7, 피아노 듀엣으로 만나는 베토벤 교향곡 운명과 환희 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://seochocf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "반포심산아트홀",
@@ -16439,7 +16439,7 @@ export const initialRealConcerts = [
       "오음일심 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8E%98%EB%A6%AC%EC%A7%80%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "페리지홀",
@@ -16466,7 +16466,7 @@ export const initialRealConcerts = [
       "재즈로 듣는 클래식: Bach To Gershwin [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -16493,7 +16493,7 @@ export const initialRealConcerts = [
       "[패키지] 서리풀 서초9 시리즈 (11월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://seochocf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "반포심산아트홀",
@@ -16520,7 +16520,7 @@ export const initialRealConcerts = [
       "두 명의 작곡가, 여덟 개의 계절: 신지아 & 디토 오케스트라 [평택] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%EC%8B%9C%EB%82%A8%EB%B6%80%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "평택시남부문예회관",
@@ -16547,7 +16547,7 @@ export const initialRealConcerts = [
       "임재성 이유현 듀오 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -16574,7 +16574,7 @@ export const initialRealConcerts = [
       "제44회 광주발칸토성악아카데미 정기연주회: 창작오페라, 충장 [광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -16601,7 +16601,7 @@ export const initialRealConcerts = [
       "제네시스와 함께하는 필라델피아 오케스트라 & 마린 알솝 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -16628,7 +16628,7 @@ export const initialRealConcerts = [
       "정보희 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -16655,7 +16655,7 @@ export const initialRealConcerts = [
       "제15회 대전페스티벌 윈드오케스트라 정기연주회: 위대한 여정, 찬란한 울림 (The Grand Journey) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -16682,7 +16682,7 @@ export const initialRealConcerts = [
       "변예진 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -16709,7 +16709,7 @@ export const initialRealConcerts = [
       "바딤 콜로덴코 피아노 리사이틀 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -16736,7 +16736,7 @@ export const initialRealConcerts = [
       "금호영재콘서트, 권대현 바순 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -16763,7 +16763,7 @@ export const initialRealConcerts = [
       "ACC 시민오케스트라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.acc.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "국립아시아문화전당",
@@ -16790,7 +16790,7 @@ export const initialRealConcerts = [
       "제10회 늠내 클래식 축제, 동화가 흐르는 호두까기 인형 [시흥] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%9C%ED%9D%A5ABC%ED%96%89%EB%B3%B5%ED%95%99%EC%8A%B5%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "시흥ABC행복학습센터",
@@ -16817,7 +16817,7 @@ export const initialRealConcerts = [
       "돈 파스콸레 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%95%EC%84%9C%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강서아트리움",
@@ -16844,7 +16844,7 @@ export const initialRealConcerts = [
       "경성흥신소: 절영도, 사라진 그림자를 찾아라! [부산] (11.07) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EB%8F%84%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영도문화예술회관",
@@ -16871,7 +16871,7 @@ export const initialRealConcerts = [
       "라보엠 [성주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성주문화예술회관",
@@ -16898,7 +16898,7 @@ export const initialRealConcerts = [
       "JYJ 피아노 앙상블 두 번째 리사이틀: 베토벤 피아노 소나타 전곡 시리즈 Ⅰ [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=JCC%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "JCC 아트센터",
@@ -16925,7 +16925,7 @@ export const initialRealConcerts = [
       "피가로 사용설명서 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금정문화회관",
@@ -16952,7 +16952,7 @@ export const initialRealConcerts = [
       "스피리또 앙상블과 함께하는 베토벤 Ⅹ 클림트: 운명의 키스 [여주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EC%A2%85%EA%B5%AD%EC%95%85%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종국악당",
@@ -16979,7 +16979,7 @@ export const initialRealConcerts = [
       "코리안챔버오케스트라 콘트라스트 시리즈 6 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ilshinhall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "일신홀",
@@ -17006,7 +17006,7 @@ export const initialRealConcerts = [
       "국립오페라단, 마술피리 [김천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%B2%9C%EC%8B%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김천시문화예술회관",
@@ -17033,7 +17033,7 @@ export const initialRealConcerts = [
       "정진아 클라리넷 독주회: 음악, 이야기가 되다 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B3%B5%ED%95%A9%EB%AC%B8%ED%99%94%EA%B3%B5%EA%B0%84%20%ED%94%8C%EB%9E%9C%EC%97%90%EC%9D%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "복합문화공간 플랜에이",
@@ -17060,7 +17060,7 @@ export const initialRealConcerts = [
       "김준희 피아노 독주회: 바람과 바다 그리고 그들의 대화 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -17087,7 +17087,7 @@ export const initialRealConcerts = [
       "제네시스와 함께하는 필라델피아 오케스트라 & 마린 알솝 with 임윤찬 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -17114,7 +17114,7 @@ export const initialRealConcerts = [
       "장우리 첼로 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -17141,7 +17141,7 @@ export const initialRealConcerts = [
       "피아졸라, 바흐를 만나다 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -17168,7 +17168,7 @@ export const initialRealConcerts = [
       "MelON 디즈니 + 지브리 오케스트라 콘서트 volume.3 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -17195,7 +17195,7 @@ export const initialRealConcerts = [
       "Wine & Music Night, All-Star Concert [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://elimartcenter.co.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "엘림아트센터",
@@ -17222,7 +17222,7 @@ export const initialRealConcerts = [
       "남성합창단 등대 창단 12주년 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -17249,7 +17249,7 @@ export const initialRealConcerts = [
       "클래디오 낭만주의 렉쳐콘서트: 로망스에서 우정의 암호까지 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%B5%EA%B0%84%EC%9A%B8%EB%A6%BC%EC%97%B0%EC%A3%BC%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "공간울림연주홀",
@@ -17276,7 +17276,7 @@ export const initialRealConcerts = [
       "제15회 LG필하모닉 오케스트라 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -17303,7 +17303,7 @@ export const initialRealConcerts = [
       "손지수, 김효근을 노래하다 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "거암아트홀",
@@ -17330,7 +17330,7 @@ export const initialRealConcerts = [
       "Tiffany & Co.와 함께하는 필라델피아 오케스트라 & 마린 알솝 with 임윤찬 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -17357,7 +17357,7 @@ export const initialRealConcerts = [
       "앵프라맹스 콘서트 열번째 시리즈, 마르셀 프루스트 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -17384,7 +17384,7 @@ export const initialRealConcerts = [
       "서형민의 베토벤 칸타빌레 with 더 칼리오페 심포니 오케스트라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "푸르지오아트홀",
@@ -17411,7 +17411,7 @@ export const initialRealConcerts = [
       "포항국제음악제, 포커스 스테이지 Ⅰ. 이한나 & 박영성 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%AC%ED%95%AD%EC%8B%9C%EC%B2%AD%20%EB%8C%80%EC%9E%A0%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "포항시청 대잠홀",
@@ -17438,7 +17438,7 @@ export const initialRealConcerts = [
       "제1201회 하우스콘서트, 제레드 레드몬드 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EA%B0%80%EC%9D%98%20%EC%A7%91%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술가의 집",
@@ -17465,7 +17465,7 @@ export const initialRealConcerts = [
       "소담예감, 콘서트가이드 안인모의 루브르에서 쇼팽을 듣다 [거제] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%A0%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "거제문화예술회관",
@@ -17492,7 +17492,7 @@ export const initialRealConcerts = [
       "서울바흐축제, 칸타타 시리즈 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -17519,7 +17519,7 @@ export const initialRealConcerts = [
       "제37회 여음목관5중주 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -17546,7 +17546,7 @@ export const initialRealConcerts = [
       "강초롱 플루트 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -17573,7 +17573,7 @@ export const initialRealConcerts = [
       "SAC ON SCREEN, 보컬 마스터 시리즈 Ⅲ. 베이스 바리톤 사무엘 윤 [화성] (영상화) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -17600,7 +17600,7 @@ export const initialRealConcerts = [
       "디 오리지널 시리즈, 임동혁 X 오케스트라 디 오리지널, 리부트: 라흐마니노프 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -17627,7 +17627,7 @@ export const initialRealConcerts = [
       "아침을 여는 클래식, 피아니스트 안종도 [대전] (11월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -17654,7 +17654,7 @@ export const initialRealConcerts = [
       "누구나 클래식 with 대전시립교향악단 (11월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -17681,7 +17681,7 @@ export const initialRealConcerts = [
       "제7회 블루밍 트리오 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -17708,7 +17708,7 @@ export const initialRealConcerts = [
       "바리톤 고성현이 부르는 김연준 가곡 콘서트: 시인의 사랑과 생애 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%96%B4%EC%9A%B8%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0(%EA%B5%AC.%20%EB%8C%80%EA%B5%AC%EB%B6%81%EA%B5%AC%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "어울아트센터(구. 대구북구문예회관)",
@@ -17735,7 +17735,7 @@ export const initialRealConcerts = [
       "포항국제음악제, 아티스트 포항 Ⅱ. 문성우 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://phcf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "포항문화예술회관",
@@ -17762,7 +17762,7 @@ export const initialRealConcerts = [
       "울산시립합창단 기획연주회: 한국가곡 토크콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ucac.ulsan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울산문화예술회관",
@@ -17789,7 +17789,7 @@ export const initialRealConcerts = [
       "영 프라미스 아티스트, 양진우 첼로 리사이틀 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -17816,7 +17816,7 @@ export const initialRealConcerts = [
       "리트플레이 겨울나그네 렉처 콘서트 (베스티클럽) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gdfac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강동아트센터",
@@ -17843,7 +17843,7 @@ export const initialRealConcerts = [
       "이영신 & 장진영 피아노 듀오리사이틀: 쌍쌍파티 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -17870,7 +17870,7 @@ export const initialRealConcerts = [
       "소현정 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -17897,7 +17897,7 @@ export const initialRealConcerts = [
       "전남광주통합특별시립교향악단 체임버 시리즈 Ⅶ. Souvenir [전남 광주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -17925,7 +17925,7 @@ export const initialRealConcerts = [
       "위대한 베토벤 (The Great Beethoven) [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -17952,7 +17952,7 @@ export const initialRealConcerts = [
       "월드오케스트라페스티벌, 대구유스오케스트라 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -17979,7 +17979,7 @@ export const initialRealConcerts = [
       "Sac On Screen, 테오팀 랑글로아 드 스와르테 & 토마스 던포드 듀오 콘서트 [안성] (영상화) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%84%B1%EB%A7%9E%EC%B6%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안성맞춤아트홀",
@@ -18006,7 +18006,7 @@ export const initialRealConcerts = [
       "TANTO 앙상블, 가을의 플레이리스트: 경계를 넘어온 선율들 [부산 동래] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8F%99%EB%9E%98%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "동래문화회관",
@@ -18033,7 +18033,7 @@ export const initialRealConcerts = [
       "마티네 콘서트, From Italy to Spain 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%95%EB%B6%81%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강북문화예술회관",
@@ -18060,7 +18060,7 @@ export const initialRealConcerts = [
       "마술피리 [화성] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -18087,7 +18087,7 @@ export const initialRealConcerts = [
       "장애예술인 기획공연 Ⅱ. 아르크 음악축제 [천안] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -18114,7 +18114,7 @@ export const initialRealConcerts = [
       "제85회 군산시립교향악단 기획연주회: Young Artist Concert 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "군산예술의전당",
@@ -18141,7 +18141,7 @@ export const initialRealConcerts = [
       "규니브라더스의 4번째 리사이틀, 열정: 탱고와 재즈의 만남 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -18168,7 +18168,7 @@ export const initialRealConcerts = [
       "사이먼 래틀 경 & 바이에른 방송교향악단 (11.12) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -18195,7 +18195,7 @@ export const initialRealConcerts = [
       "ACIx인천시향 공동기획, 조조 클래식 Ⅳ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -18222,7 +18222,7 @@ export const initialRealConcerts = [
       "아름다운 목요일 위대한 작곡가: 프란츠 슈베르트 X 문지영 Piano Ⅰ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -18249,7 +18249,7 @@ export const initialRealConcerts = [
       "KCO 트로이카콘서트 시리즈 36 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%9C%EB%8D%B0%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "로데아트센터",
@@ -18276,7 +18276,7 @@ export const initialRealConcerts = [
       "제206회 원주시립교향악단 정기연주회 [원주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9B%90%EC%A3%BC%EB%B0%B1%EC%9A%B4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "원주백운아트홀",
@@ -18303,7 +18303,7 @@ export const initialRealConcerts = [
       "낙동아트센터 마티네 콘서트, 실내악시리즈 V. 남미의 향기, 매혹의 탱고 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -18330,7 +18330,7 @@ export const initialRealConcerts = [
       "오페라 인 시네마: 빛나는 영화, 감동의 오페라 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%EB%B0%AD%EB%8C%80%ED%95%99%EA%B5%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "한밭대학교",
@@ -18357,7 +18357,7 @@ export const initialRealConcerts = [
       "ONCE UPON A TIME CLASSIC: 미디어 아트와 클래식으로 만나는 지브리와 디즈니 명곡 [인천 계양] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%84%EC%96%91%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "계양문화회관",
@@ -18384,7 +18384,7 @@ export const initialRealConcerts = [
       "보이지 않는 불꽃, 살아있는 선율 [과천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%BC%EC%B2%9C%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "과천시민회관",
@@ -18411,7 +18411,7 @@ export const initialRealConcerts = [
       "피아니스트 김정원과 함께 하는 가을 실내악 콘서트 [제천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "제천예술의전당",
@@ -18438,7 +18438,7 @@ export const initialRealConcerts = [
       "강지혜 피아노 독주회: 로베르트 슈만의 캐릭터피스 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -18465,7 +18465,7 @@ export const initialRealConcerts = [
       "시그니처대전, 스페셜 시리즈: 김미영 바이올린 독주회 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -18492,7 +18492,7 @@ export const initialRealConcerts = [
       "사이먼 래틀 경 & 바이에른 방송교향악단 (11.13) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -18519,7 +18519,7 @@ export const initialRealConcerts = [
       "재패니메이션 영화음악 콘서트: UNSTOPPABLE 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -18546,7 +18546,7 @@ export const initialRealConcerts = [
       "아다지에토 실내악 시리즈, 브란덴부르크 협주곡 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -18573,7 +18573,7 @@ export const initialRealConcerts = [
       "제6회 인천국제고음악제 Ⅲ. 브루누 지 사 X 코리안 바로크 소사이어티: Celestial Voices 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -18600,7 +18600,7 @@ export const initialRealConcerts = [
       "제530회 대구시립교향악단 정기연주회: 클래식, 경계를 넘어 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -18627,7 +18627,7 @@ export const initialRealConcerts = [
       "이정선 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -18654,7 +18654,7 @@ export const initialRealConcerts = [
       "제17회 정주연 플루트 독주회 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금정문화회관",
@@ -18681,7 +18681,7 @@ export const initialRealConcerts = [
       "음악공방 피오레움, The Master: 이진현 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%94%BC%EC%98%A4%EB%A0%88%EC%95%84%ED%8A%B8%EC%95%A4%EC%97%94%ED%84%B0(%ED%94%BC%EC%98%A4%EB%A0%88%EC%9B%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "피오레아트앤엔터(피오레움)",
@@ -18708,7 +18708,7 @@ export const initialRealConcerts = [
       "서리풀 서초9 시리즈 8, 소프라노 송강이 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://seochocf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "반포심산아트홀",
@@ -18735,7 +18735,7 @@ export const initialRealConcerts = [
       "제635회 부산시립교향악단 정기연주회: there is a crack in everything 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -18762,7 +18762,7 @@ export const initialRealConcerts = [
       "인디애나대학교 동문 갈라 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -18789,7 +18789,7 @@ export const initialRealConcerts = [
       "제191회 한국독일가곡연구회 정기연주회: 연가곡 시리즈 Ⅳ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -18816,7 +18816,7 @@ export const initialRealConcerts = [
       "김영준 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -18843,7 +18843,7 @@ export const initialRealConcerts = [
       "이서현 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -18870,7 +18870,7 @@ export const initialRealConcerts = [
       "국립심포니콘서트오케스트라, 드보르자크, 교향곡 9번 신세계로부터 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -18897,7 +18897,7 @@ export const initialRealConcerts = [
       "베르디 콘서트 오페라: 리골레토 & 아이다 & 라 트라비아타 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -18924,7 +18924,7 @@ export const initialRealConcerts = [
       "히사이시 조 영화음악 콘서트 파이널 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -18951,7 +18951,7 @@ export const initialRealConcerts = [
       "M & M 시리즈 Ⅳ. 시벨리우스 & 박수예 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -18978,7 +18978,7 @@ export const initialRealConcerts = [
       "금호영아티스트콘서트, 테너 정강한 독창회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -19005,7 +19005,7 @@ export const initialRealConcerts = [
       "금호영재콘서트, 오현승 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -19032,7 +19032,7 @@ export const initialRealConcerts = [
       "임형주와 함께하는 K팝페라 페스티벌 in 용산: K팝페라 갈라콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%A9%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "용산아트홀",
@@ -19059,7 +19059,7 @@ export const initialRealConcerts = [
       "NAC 렉처콘서트, 명견만리3. 나는 누구인가? 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -19086,7 +19086,7 @@ export const initialRealConcerts = [
       "신카이 마코토 하이라이트 필름콘서트 [김천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%B2%9C%EC%8B%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김천시문화예술회관",
@@ -19113,7 +19113,7 @@ export const initialRealConcerts = [
       "피아니스트 원재연 x 김수연: 네 손을 위한 환상곡 [화성] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%A8%EC%96%91%EC%84%B1%EB%AA%A8%EC%84%B1%EC%A7%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "남양성모성지",
@@ -19140,7 +19140,7 @@ export const initialRealConcerts = [
       "푸른 눈의 휴머니스트, 위트컴 장군 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -19167,7 +19167,7 @@ export const initialRealConcerts = [
       "앞산 살롱 콘서트: 그리스 로마 신화, 클래식을 만나다 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%8D%95%EB%AC%B8%ED%99%94%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대덕문화전당",
@@ -19194,7 +19194,7 @@ export const initialRealConcerts = [
       "GMC Chamber Series, 안용헌, 신동찬 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "http://www.f1963.org",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "F1963",
@@ -19221,7 +19221,7 @@ export const initialRealConcerts = [
       "제7회 사랑의 음악편지: 나눔꽃챔버오케스트라가 전하는 클래식, 지브리, 그리고 디즈니의 감동 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -19248,7 +19248,7 @@ export const initialRealConcerts = [
       "유쾌한 오페라, 사랑의 묘약 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%ED%95%99%EC%83%9D%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구학생문화센터",
@@ -19275,7 +19275,7 @@ export const initialRealConcerts = [
       "디토 오케스트라 정기연주회, 톡톡 클래식: BEETHOVEN 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "구로아트밸리",
@@ -19302,7 +19302,7 @@ export const initialRealConcerts = [
       "신카이마코토 공식 FILM & OST 하이라이트 필름 콘서트 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://daeguartscenter.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구문화예술회관",
@@ -19329,7 +19329,7 @@ export const initialRealConcerts = [
       "유송윤 귀국 플루트 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -19356,7 +19356,7 @@ export const initialRealConcerts = [
       "라 필하모니카 첫 내한공연 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -19383,7 +19383,7 @@ export const initialRealConcerts = [
       "윤유정 귀국 피아노 독주회 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -19410,7 +19410,7 @@ export const initialRealConcerts = [
       "제12회 대전음악제 폐막 공연, 화합의 하모니: 하나되어 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -19437,7 +19437,7 @@ export const initialRealConcerts = [
       "피아니스트 고연경의 해설이 있는 독주회: Key Words 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -19464,7 +19464,7 @@ export const initialRealConcerts = [
       "기타 줄리오 탐팔리니 & 바이올린 다비데 알로냐 듀오 콘서트: Fire of Strings: 파가니니의 불꽃, 현을 타고 흐르다 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -19491,7 +19491,7 @@ export const initialRealConcerts = [
       "제20회 한들물빛 갤러리아 오케스트라 정기연주회 : 금난새와 함께하는 클래식 여행 [천안] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -19519,7 +19519,7 @@ export const initialRealConcerts = [
       "멘델스존, 바흐를 만나다 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -19546,7 +19546,7 @@ export const initialRealConcerts = [
       "재패니메이션 영화음악 콘서트: UNSTOPPABLE [광주 (앵콜) ] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
@@ -19573,7 +19573,7 @@ export const initialRealConcerts = [
       "지브리 & 디즈니 오케스트라 콘서트 (11.15) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -19600,7 +19600,7 @@ export const initialRealConcerts = [
       "탈리스 스콜라스: 시스티나의 영감 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -19627,7 +19627,7 @@ export const initialRealConcerts = [
       "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 스페셜 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -19654,7 +19654,7 @@ export const initialRealConcerts = [
       "필름뮤직 콘서트: 영화음악 이야기 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -19681,7 +19681,7 @@ export const initialRealConcerts = [
       "함신익과 심포니 송 마스터즈 시리즈 Ⅶ, 브람스 페스티벌 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -19708,7 +19708,7 @@ export const initialRealConcerts = [
       "조수연 피아노 독주회: 선율 너머의 이야기 Ⅰ. Contrast [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -19735,7 +19735,7 @@ export const initialRealConcerts = [
       "유민아 귀국 플루트 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -19762,7 +19762,7 @@ export const initialRealConcerts = [
       "국립합창단 기획공연: 신진지휘자 초청연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -19789,7 +19789,7 @@ export const initialRealConcerts = [
       "레 벙 프랑세 내한공연 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -19816,7 +19816,7 @@ export const initialRealConcerts = [
       "테오도르 쿠렌치스 & 유토피아 오케스트라 (11.17) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -19843,7 +19843,7 @@ export const initialRealConcerts = [
       "박성모 첼로 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -19870,7 +19870,7 @@ export const initialRealConcerts = [
       "제27회 코리아합창페스티벌 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -19897,7 +19897,7 @@ export const initialRealConcerts = [
       "박혜준 첼로 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -19924,7 +19924,7 @@ export const initialRealConcerts = [
       "레 벙 프랑세 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -19951,7 +19951,7 @@ export const initialRealConcerts = [
       "테오도르 쿠렌치스 & 유토피아 오케스트라 (11.18) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -19978,7 +19978,7 @@ export const initialRealConcerts = [
       "유문선 클라리넷 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -20005,7 +20005,7 @@ export const initialRealConcerts = [
       "금지옥엽 [부산 해운대] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%B4%EC%9A%B4%EB%8C%80%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "해운대문화회관",
@@ -20032,7 +20032,7 @@ export const initialRealConcerts = [
       "웨스턴심포니오케스트라 콘서트: 11월 [용인] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.yicf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "용인포은아트홀",
@@ -20059,7 +20059,7 @@ export const initialRealConcerts = [
       "조윤정 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -20086,7 +20086,7 @@ export const initialRealConcerts = [
       "한화생명과 함께하는 예술의전당 11시 콘서트 (11월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -20113,7 +20113,7 @@ export const initialRealConcerts = [
       "서울시향 한누 린투의 프로코피예프: 로미오와 줄리엣 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -20140,7 +20140,7 @@ export const initialRealConcerts = [
       "윤용진 바순 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -20167,7 +20167,7 @@ export const initialRealConcerts = [
       "더 마스터즈: 소프라노 한경성 리사이틀 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -20194,7 +20194,7 @@ export const initialRealConcerts = [
       "아름다운 목요일 인터내셔널 마스터즈: 스티븐 허프 Piano 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -20221,7 +20221,7 @@ export const initialRealConcerts = [
       "세종예술의전당 시크릿콘서트, 김세일 & 김수연: 슈베르트와 맥주 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -20248,7 +20248,7 @@ export const initialRealConcerts = [
       "제449회 인천시립교향악단 정기연주회: 인천시향과 크리스토프 포펜 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -20275,7 +20275,7 @@ export const initialRealConcerts = [
       "이태리 만토바 체임버 오케스트라 with 테너 임형주 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%A9%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "용산아트홀",
@@ -20302,7 +20302,7 @@ export const initialRealConcerts = [
       "첼리스트 허정인 리사이틀 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -20329,7 +20329,7 @@ export const initialRealConcerts = [
       "서리풀 서초9 시리즈 9, 마태수난곡 하이라이트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://seochocf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "반포심산아트홀",
@@ -20356,7 +20356,7 @@ export const initialRealConcerts = [
       "라 트라비아타 [함안] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%A8%EC%95%88%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "함안문화예술회관",
@@ -20383,7 +20383,7 @@ export const initialRealConcerts = [
       "안드레아 쉐니에 [전주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sori21.co.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "한국소리문화의전당",
@@ -20410,7 +20410,7 @@ export const initialRealConcerts = [
       "서가콘서트: 참을 수 없는 존재의 가벼움 [수원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ggac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경기아트센터(구. 경기도문화의전당)",
@@ -20437,7 +20437,7 @@ export const initialRealConcerts = [
       "피아니스트 황예진의 환상속으로 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -20464,7 +20464,7 @@ export const initialRealConcerts = [
       "예술의전당 토요콘서트, 프리뷰 베토벤 (11월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -20491,7 +20491,7 @@ export const initialRealConcerts = [
       "헐리우드 블록버스터 & 디즈니 픽사 OST 오케스트라 콘서트 [대전 (앵콜) ] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -20518,7 +20518,7 @@ export const initialRealConcerts = [
       "샤를 뒤트와 & 마르타 아르헤리치 with KBS 교향악단 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -20545,7 +20545,7 @@ export const initialRealConcerts = [
       "서울시향 체임버 클래식스 Ⅵ: 대한민국 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -20572,7 +20572,7 @@ export const initialRealConcerts = [
       "월드 오케스트라 페스티벌, 대구 국제방송 교향악단 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -20599,7 +20599,7 @@ export const initialRealConcerts = [
       "금호영아티스트콘서트, 황성원 타악기 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -20626,7 +20626,7 @@ export const initialRealConcerts = [
       "금호영재콘서트, 강태이 호른 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -20653,7 +20653,7 @@ export const initialRealConcerts = [
       "서울*라보엠 [고양] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양아람누리",
@@ -20680,7 +20680,7 @@ export const initialRealConcerts = [
       "제7회 이화라스텔라앙상블 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -20707,7 +20707,7 @@ export const initialRealConcerts = [
       "과천시립소년소녀합창단 하모니시리즈4. AI와 친구찾기 대작전! [과천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%BC%EC%B2%9C%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "과천시민회관",
@@ -20734,7 +20734,7 @@ export const initialRealConcerts = [
       "피아니스트 박재오의 슬라브, 11월의 잔향 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%AA%A8%EC%8A%A4%ED%81%AC%EB%B0%94%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "모스크바홀",
@@ -20761,7 +20761,7 @@ export const initialRealConcerts = [
       "낭만주의 거장, 차이코프스키 & 라흐마니노프 [양산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%96%91%EC%82%B0%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "양산문화예술회관",
@@ -20788,7 +20788,7 @@ export const initialRealConcerts = [
       "송윤진 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -20815,7 +20815,7 @@ export const initialRealConcerts = [
       "국립심포니오케스트라, 실내악 시리즈 Ⅲ. 국립심포니 6 첼리스트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -20842,7 +20842,7 @@ export const initialRealConcerts = [
       "목관 앙상블과 함께하는 댄싱 클래식 콘서트 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -20869,7 +20869,7 @@ export const initialRealConcerts = [
       "전민주 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -20896,7 +20896,7 @@ export const initialRealConcerts = [
       "제6회 버디색소폰앙상블 정기연주회 [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -20923,7 +20923,7 @@ export const initialRealConcerts = [
       "선데이콘서트, 엘림 리사이틀 시리즈: 윤재빈 피아노 독주회 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://elimartcenter.co.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "엘림아트센터",
@@ -20950,7 +20950,7 @@ export const initialRealConcerts = [
       "현악본색 시즌 2, 현악본색 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "거암아트홀",
@@ -20977,7 +20977,7 @@ export const initialRealConcerts = [
       "제5회 코리안 닥터스 오케스트라 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -21004,7 +21004,7 @@ export const initialRealConcerts = [
       "제11회 부산솔로이스츠앙상블 정기연주회: Signature Concert XI. Reverie with 드미트리 로카렌코프 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금정문화회관",
@@ -21031,7 +21031,7 @@ export const initialRealConcerts = [
       "키즈 콘서트Ⅳ, 클랩! 그림책 콘서트 (11.22) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gdfac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강동아트센터",
@@ -21058,7 +21058,7 @@ export const initialRealConcerts = [
       "제14회 시노두스 심포니 오케스트라 정기 연주회 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금정문화회관",
@@ -21085,7 +21085,7 @@ export const initialRealConcerts = [
       "한화클래식: 르 포엠 아르모니크, 태양왕의 음악 [창원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cwcf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "3.15아트센터",
@@ -21112,7 +21112,7 @@ export const initialRealConcerts = [
       "제10회 월드비전과 함께하는 THE GIFT 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -21139,7 +21139,7 @@ export const initialRealConcerts = [
       "멈춰진 시간: 고요 속 울림 (Tempus Stans: Resonantia in Silentio) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -21166,7 +21166,7 @@ export const initialRealConcerts = [
       "현악본색 시즌 2, 이은빈 비올라 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "거암아트홀",
@@ -21193,7 +21193,7 @@ export const initialRealConcerts = [
       "김다솔 피아노 리사이틀: 슈만의 초상 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -21220,7 +21220,7 @@ export const initialRealConcerts = [
       "장은주 피아노 독주회: EVOCATION 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -21247,7 +21247,7 @@ export const initialRealConcerts = [
       "월드 오케스트라 페스티벌, 임현재 & 만토바 챔버 오케스트라 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -21274,7 +21274,7 @@ export const initialRealConcerts = [
       "한화클래식: 르 포엠 아르모니크, 태양왕의 음악 [거제] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%A0%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "거제문화예술회관",
@@ -21301,7 +21301,7 @@ export const initialRealConcerts = [
       "정승미 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -21328,7 +21328,7 @@ export const initialRealConcerts = [
       "구자범의 가을 콘서트 렉쳐 2. The Sound of Silence [안산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안산문화예술의전당",
@@ -21355,7 +21355,7 @@ export const initialRealConcerts = [
       "차이콥스키의 낭만 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -21382,7 +21382,7 @@ export const initialRealConcerts = [
       "왕쯔통 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -21409,7 +21409,7 @@ export const initialRealConcerts = [
       "해설이 있는 11시 콘서트, 호르니스트 김홍박 (11월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -21436,7 +21436,7 @@ export const initialRealConcerts = [
       "Piano Quartet 43: Late Autumn Resonance 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -21463,7 +21463,7 @@ export const initialRealConcerts = [
       "대구 비르투오조 챔버 아트 콘서트: 색채의 울림, 고흐 & 고갱 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -21490,7 +21490,7 @@ export const initialRealConcerts = [
       "안성맞춤아트홀 문화가 있는 날: 아트-데이, 트리오 반더러 콘서트 (영상화) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%84%B1%EB%A7%9E%EC%B6%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안성맞춤아트홀",
@@ -21517,7 +21517,7 @@ export const initialRealConcerts = [
       "브릿지 클래식 2. Light: 빛의 선율 [춘천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cccf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "춘천문화예술회관",
@@ -21544,7 +21544,7 @@ export const initialRealConcerts = [
       "움라우트 뮤직, 모차르트와 함께하는 키즈클래식 [창원] (7시) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%98%EB%B9%84%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "나비아트홀",
@@ -21571,7 +21571,7 @@ export const initialRealConcerts = [
       "용인필하모닉오케스트라 기획공연, 마스터피스 Ⅸ, 아를르의 여인 & 카르멘 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.yicf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "용인포은아트홀",
@@ -21598,7 +21598,7 @@ export const initialRealConcerts = [
       "ACC 브런치콘서트 플러스, 이서준 도슨트의 미술관으로 간 클래식: 프랑스 (11월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.acc.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "국립아시아문화전당",
@@ -21625,7 +21625,7 @@ export const initialRealConcerts = [
       "Now or Never 시리즈 Ⅲ, Illuminate: 윤은경 피아노 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -21652,7 +21652,7 @@ export const initialRealConcerts = [
       "임홍균 바이올린 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -21679,7 +21679,7 @@ export const initialRealConcerts = [
       "한화클래식: 르 포엠 아르모니크, 태양왕의 음악 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -21706,7 +21706,7 @@ export const initialRealConcerts = [
       "제82회 부산시립교향악단 기획음악회: 청소년 협주곡의 밤 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -21733,7 +21733,7 @@ export const initialRealConcerts = [
       "아름다운 목요일 요하네스: 김재영 & 문태국 & 박재홍 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -21760,7 +21760,7 @@ export const initialRealConcerts = [
       "제12회 대전아트필하모닉오케스트라 정기연주회: 브람스 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%A0%84%EC%8B%9C%EB%A6%BD%EC%97%B0%EC%A0%95%EA%B5%AD%EC%95%85%EC%9B%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전시립연정국악원",
@@ -21787,7 +21787,7 @@ export const initialRealConcerts = [
       "로열 콘세르트헤보우 오케스트라 브라스 앙상블 내한공연: 11월에 만나는 크리스마스 콘서트 [울산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ucac.ulsan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울산문화예술회관",
@@ -21814,7 +21814,7 @@ export const initialRealConcerts = [
       "로열 콘세르트헤바우 오케스트라 브라스 앙상블 내한공연 [울산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ucac.ulsan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울산문화예술회관",
@@ -21841,7 +21841,7 @@ export const initialRealConcerts = [
       "양방언 Evolution [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.incheon.go.kr/art",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "인천문화예술회관",
@@ -21868,7 +21868,7 @@ export const initialRealConcerts = [
       "임윤찬 피아노 리사이틀 [김해] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%B4%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김해문화의전당",
@@ -21895,7 +21895,7 @@ export const initialRealConcerts = [
       "피아노와친구들 PNF: 베토벤 피아노 사중주 전곡 Ⅲ. PNF with LvB 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -21922,7 +21922,7 @@ export const initialRealConcerts = [
       "11월의 크리스마스 콘서트: 로열 콘세르트헤바우 오케스트라 브라스 앙상블 [의정부] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "의정부예술의전당",
@@ -21949,7 +21949,7 @@ export const initialRealConcerts = [
       "안동, 공주 자매도시 교류음악회: 베토벤 합창 교향곡, 환희의 송가 [안동] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안동문화예술의전당",
@@ -21976,7 +21976,7 @@ export const initialRealConcerts = [
       "KT와 함께하는 예술의전당 마음을 담은 클래식 (11월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -22003,7 +22003,7 @@ export const initialRealConcerts = [
       "화성시 오케스트라 정기연주회, 마스터피스 시리즈 Ⅳ: 동화의 세계 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -22030,7 +22030,7 @@ export const initialRealConcerts = [
       "소프라노 변선아 독창회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -22057,7 +22057,7 @@ export const initialRealConcerts = [
       "오페라 스타파티, 돈죠반니의 초대 [평택] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%EC%8B%9C%EB%82%A8%EB%B6%80%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "평택시남부문예회관",
@@ -22084,7 +22084,7 @@ export const initialRealConcerts = [
       "임윤찬 피아노 리사이틀 [강릉시민전용] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gn.go.kr/gnart",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강릉아트센터 (구. 강릉문화예술관)",
@@ -22111,7 +22111,7 @@ export const initialRealConcerts = [
       "임윤찬 피아노 리사이틀 [강릉] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gn.go.kr/gnart",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강릉아트센터 (구. 강릉문화예술관)",
@@ -22138,7 +22138,7 @@ export const initialRealConcerts = [
       "최나경의 재스민 페스티벌: 셀레브레이션!, 마크 앙드레 더블베이스 리사이틀: 데뷔 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%9D%B8%ED%99%80(KIMIN%20HALL)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김인홀(KIMIN HALL)",
@@ -22165,7 +22165,7 @@ export const initialRealConcerts = [
       "국립심포니오케스트라, KNSO아카데미: 비상 飛上 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -22192,7 +22192,7 @@ export const initialRealConcerts = [
       "플로리안노악 피아노 리사이틀 [안산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안산문화예술의전당",
@@ -22219,7 +22219,7 @@ export const initialRealConcerts = [
       "Classic Mode, 대니 구 Violin 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -22246,7 +22246,7 @@ export const initialRealConcerts = [
       "Pokémon The Orchestra 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=KBS%20%5B%EB%B3%B8%EA%B4%80%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "KBS [본관]",
@@ -22273,7 +22273,7 @@ export const initialRealConcerts = [
       "NAC@해외초청기획, 로열 콘세르트헤바우 오케스트라 브라스 앙상블: 11월의 크리스마스 콘서트 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -22300,7 +22300,7 @@ export const initialRealConcerts = [
       "GMC Chamber Series, 금난새 & 페트로프 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "http://www.f1963.org",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "F1963",
@@ -22327,7 +22327,7 @@ export const initialRealConcerts = [
       "세종솔로이스츠 실내악 시리즈, 이스틴 데이비스와 김지연 그리고 신동훈 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%86%8C%EB%AC%B8%EC%84%B1%EC%A7%80%20%EC%97%AD%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "서소문성지 역사박물관",
@@ -22354,7 +22354,7 @@ export const initialRealConcerts = [
       "최나경의 재스민 페스티벌: 셀레브레이션!, 실내악 공연: Encounter 만남 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%9D%B8%ED%99%80(KIMIN%20HALL)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김인홀(KIMIN HALL)",
@@ -22381,7 +22381,7 @@ export const initialRealConcerts = [
       "첼룸 체임버 오케스트라 & 콰이어 송년 음악회: 황제의 환희 [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -22408,7 +22408,7 @@ export const initialRealConcerts = [
       "심삼종 색소폰 독주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -22435,7 +22435,7 @@ export const initialRealConcerts = [
       "제16회 건우회 정기연주회: Beethoven Symphony 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -22462,7 +22462,7 @@ export const initialRealConcerts = [
       "어쌔신 크리드 심포닉 콘서트: ASSASIN'S CREED SYMPHONIC ADVENTURE 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -22489,7 +22489,7 @@ export const initialRealConcerts = [
       "최나경의 재스민 페스티벌: 셀레브레이션!, 피날레 갈라 콘서트: Celebration 축배 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%9D%B8%ED%99%80(KIMIN%20HALL)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김인홀(KIMIN HALL)",
@@ -22516,7 +22516,7 @@ export const initialRealConcerts = [
       "송년 음악회, 환희: 그대 음성에 내 마음 열리고 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -22543,7 +22543,7 @@ export const initialRealConcerts = [
       "넥스트 스테이지: 신영호 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%A3%BC%EC%95%84%ED%8A%B8%20%EC%97%94%ED%84%B0%EB%AE%A4%EC%A7%81%202%ED%98%B8%EC%A0%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대주아트 엔터뮤직 2호점",
@@ -22570,7 +22570,7 @@ export const initialRealConcerts = [
       "제1204회 하우스콘서트, 함수연 (Piano) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EA%B0%80%EC%9D%98%20%EC%A7%91%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술가의 집",
@@ -22597,7 +22597,7 @@ export const initialRealConcerts = [
       "이수빈 하프 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -22624,7 +22624,7 @@ export const initialRealConcerts = [
       "작곡가 정덕기의 예술가곡 발표회: 아버지, 어머니가 서 계시네 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -22651,7 +22651,7 @@ export const initialRealConcerts = [
       "하남문화재단 송년음악회 Ⅰ. 손열음 & 고잉홈프로젝트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.hnart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "하남문화예술회관",
@@ -22678,7 +22678,7 @@ export const initialRealConcerts = [
       "인공몽 [과천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%BC%EC%B2%9C%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "과천시민회관",
@@ -22705,7 +22705,7 @@ export const initialRealConcerts = [
       "김은희 첼로 리사이틀 [부천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -22732,7 +22732,7 @@ export const initialRealConcerts = [
       "국립심포니콘서트오케스트라, 베토벤 교향곡 9번: 합창 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ntok.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "국립극장",
@@ -22759,7 +22759,7 @@ export const initialRealConcerts = [
       "국립심포니콘서트오케스트라: 베토벤, 교향곡 9번 합창 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -22786,7 +22786,7 @@ export const initialRealConcerts = [
       "안동문화예술의전당 브런치콘서트, 시대별 클래식 시리즈 - 근현대사의 산책: 빛을 듣다, 색을 연주하다 (12월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안동문화예술의전당",
@@ -22813,7 +22813,7 @@ export const initialRealConcerts = [
       "베이스 연광철, 겨울 나그네 [경남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gnart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경상남도문화예술회관",
@@ -22840,7 +22840,7 @@ export const initialRealConcerts = [
       "성남아트센터 오후의 콘서트: Viva Italia! 오페라 갈라 콘서트 (12월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -22867,7 +22867,7 @@ export const initialRealConcerts = [
       "국립오페라단 정기공연, 돈 카를로스 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -22894,7 +22894,7 @@ export const initialRealConcerts = [
       "제268회 국립심포니오케스트라 정기연주회: 멘델스존, 교향곡 3번 스코틀랜드 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -22921,7 +22921,7 @@ export const initialRealConcerts = [
       "부산시립 교향악단 기획 음악회, 세계 클래식 음악산책 Ⅳ [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -22948,7 +22948,7 @@ export const initialRealConcerts = [
       "아름다운 목요일: 고요, 그 너머에: 조진주 Violin Solo 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -22975,7 +22975,7 @@ export const initialRealConcerts = [
       "미국 텍사스 주립대학교 오스틴 동문 음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -23002,7 +23002,7 @@ export const initialRealConcerts = [
       "부산시립합창단 송년음악회: A Child of Our Time 우리 시대의 아이 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -23029,7 +23029,7 @@ export const initialRealConcerts = [
       "GS칼텍스 예울마루 브런치 콘서트, 찬란한 시작의 울림 [여수] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.yeulmaru.org",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "GS칼텍스 예울마루",
@@ -23056,7 +23056,7 @@ export const initialRealConcerts = [
       "알렉상드르 캉토로프 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -23083,7 +23083,7 @@ export const initialRealConcerts = [
       "인천시립교향악단 기획연주회, 실내악 콘서트 Ⅲ [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -23110,7 +23110,7 @@ export const initialRealConcerts = [
       "크리스마스 콘서트 with 첼로댁: 지브리 & 디즈니 & 무비 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -23137,7 +23137,7 @@ export const initialRealConcerts = [
       "리트 플레이, 겨울 나그네 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gdfac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강동아트센터",
@@ -23164,7 +23164,7 @@ export const initialRealConcerts = [
       "국립합창단, Cinema Classics [김해] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%B4%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김해문화의전당",
@@ -23191,7 +23191,7 @@ export const initialRealConcerts = [
       "조인혁 클라리넷 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -23218,7 +23218,7 @@ export const initialRealConcerts = [
       "크리스마스 지브리 & 디즈니 OST 콘서트 [세종] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종예술의전당",
@@ -23245,7 +23245,7 @@ export const initialRealConcerts = [
       "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [의정부 (앵콜) ] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "의정부예술의전당",
@@ -23272,7 +23272,7 @@ export const initialRealConcerts = [
       "롯데콘서트홀 마티네콘서트, 아이와 함께 듣는 겨울의 클래식 동화: 비발디에서 디즈니까지 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -23299,7 +23299,7 @@ export const initialRealConcerts = [
       "헐리우드 인 블록버스터 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -23326,7 +23326,7 @@ export const initialRealConcerts = [
       "이관욱 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -23353,7 +23353,7 @@ export const initialRealConcerts = [
       "송년음악회 [군포] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B5%B0%ED%8F%AC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "군포문화예술회관",
@@ -23380,7 +23380,7 @@ export const initialRealConcerts = [
       "윤아인 x 블라디미르 페트로프 듀오콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.youngsanarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
@@ -23407,7 +23407,7 @@ export const initialRealConcerts = [
       "김현철, 현마에 웃음과 감동의 오케스트라: 미리 크리스마스 [순천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%88%9C%EC%B2%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "순천문화예술회관",
@@ -23434,7 +23434,7 @@ export const initialRealConcerts = [
       "서리풀 고음악 시리즈, 바로크 노엘 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://seochocf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "반포심산아트홀",
@@ -23461,7 +23461,7 @@ export const initialRealConcerts = [
       "지브리 영화음악 FESTA [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -23488,7 +23488,7 @@ export const initialRealConcerts = [
       "(재) 전주문화재단 전주한벽문화관 우수작품시리즈 Ⅴ. 카운터테너 이동규 [전주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A0%84%EC%A3%BC%ED%95%9C%EB%B2%BD%EB%AC%B8%ED%99%94%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "전주한벽문화관",
@@ -23515,7 +23515,7 @@ export const initialRealConcerts = [
       "수성키즈클래식, 별이 빛나는 클래식 콘서트 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -23542,7 +23542,7 @@ export const initialRealConcerts = [
       "도슨트 이창용과 함께하는 아르츠 콘서트 시즌 2: 구스타프 클림트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -23569,7 +23569,7 @@ export const initialRealConcerts = [
       "제120회 강남심포니오케스트라 정기연주회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -23596,7 +23596,7 @@ export const initialRealConcerts = [
       "러브액츄얼리 인 콘서트 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -23623,7 +23623,7 @@ export const initialRealConcerts = [
       "지브리 & 디즈니 영화음악 FESTA [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -23650,7 +23650,7 @@ export const initialRealConcerts = [
       "크리스마스 지브리 & 디즈니 OST 콘서트 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -23677,7 +23677,7 @@ export const initialRealConcerts = [
       "NAC@해외초청기획, 라이너 호넥 & 윤홍천 첫 듀오 콘서트 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "낙동아트센터",
@@ -23704,7 +23704,7 @@ export const initialRealConcerts = [
       "고양상주단체 시리즈 2, 고잉홈프로젝트: 베토벤 교향곡 제9번 합창 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양아람누리",
@@ -23731,7 +23731,7 @@ export const initialRealConcerts = [
       "리드 테츨로프 피아노 리사이틀 [부천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -23758,7 +23758,7 @@ export const initialRealConcerts = [
       "알버트 카노 스미트 피아노 리사이틀 [춘천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cccf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "춘천문화예술회관",
@@ -23785,7 +23785,7 @@ export const initialRealConcerts = [
       "지브리 & 디즈니 영화음악 오케스트라 콘서트 [대구 (앵콜) ] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -23812,7 +23812,7 @@ export const initialRealConcerts = [
       "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [수원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ggac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경기아트센터(구. 경기도문화의전당)",
@@ -23839,7 +23839,7 @@ export const initialRealConcerts = [
       "한국·벨기에 수교 125주년 기념음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -23866,7 +23866,7 @@ export const initialRealConcerts = [
       "클래식 온: 포핸즈 오딧세이 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -23893,7 +23893,7 @@ export const initialRealConcerts = [
       "렉처콘서트 조우, 제4장 라 보엠 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울산중구문화의전당",
@@ -23920,7 +23920,7 @@ export const initialRealConcerts = [
       "리드 테츨로프 피아노 리사이틀 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -23947,7 +23947,7 @@ export const initialRealConcerts = [
       "알버트 카노 스미트 피아노 리사이틀 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ilshinhall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "일신홀",
@@ -23974,7 +23974,7 @@ export const initialRealConcerts = [
       "대구콘서트하우스 특별음악회: Ensemble Eins 현대음악 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -24001,7 +24001,7 @@ export const initialRealConcerts = [
       "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅵ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -24028,7 +24028,7 @@ export const initialRealConcerts = [
       "코원 필하모닉 오케스트라 정기 연주회: 브루크너 4번 [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -24055,7 +24055,7 @@ export const initialRealConcerts = [
       "안성맞춤아트홀 문화가 있는 날: 아트-데이, 코리안심포니오케스트라: 스피릿 오브 베토벤 (영상화) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%84%B1%EB%A7%9E%EC%B6%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안성맞춤아트홀",
@@ -24082,7 +24082,7 @@ export const initialRealConcerts = [
       "알버트 카노 스미트 피아노 리사이틀 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -24109,7 +24109,7 @@ export const initialRealConcerts = [
       "한화생명과 함께하는 예술의전당 11시 콘서트 (12월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -24136,7 +24136,7 @@ export const initialRealConcerts = [
       "금호 위너스, 김현서 Violin 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -24163,7 +24163,7 @@ export const initialRealConcerts = [
       "경기필 마스터피스 시리즈 Ⅵ. 무소륵스키 전람회의 그림 [수원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ggac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경기아트센터(구. 경기도문화의전당)",
@@ -24190,7 +24190,7 @@ export const initialRealConcerts = [
       "경기필 마스터피스 시리즈 Ⅵ. 무소륵스키 전람회의 그림 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -24217,7 +24217,7 @@ export const initialRealConcerts = [
       "더 베스트 오브 라흐마니노프 with 일리야 라쉬코프스키 & 세르게이 타라소프 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -24244,7 +24244,7 @@ export const initialRealConcerts = [
       "자양스테이션 살롱 오페라, 사랑의 묘약 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9E%90%EC%96%91%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%85%98(%ED%8C%8C%EB%A6%AC%EB%AE%A4%EC%A7%81%ED%8F%AC%EB%9F%BC)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "자양스테이션(파리뮤직포럼)",
@@ -24271,7 +24271,7 @@ export const initialRealConcerts = [
       "알버트 카노 스미트 피아노 리사이틀 [부천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -24298,7 +24298,7 @@ export const initialRealConcerts = [
       "고음악 오디세이, 음악의 언어: 극장 (Theatrum) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://seochocf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "반포심산아트홀",
@@ -24325,7 +24325,7 @@ export const initialRealConcerts = [
       "대니 구의 윈터 콘서트: HOME [부천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B3%B5%EC%82%AC%EA%B3%A8%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "복사골문화센터",
@@ -24352,7 +24352,7 @@ export const initialRealConcerts = [
       "지브리 & 디즈니 영화음악 오케스트라 콘서트 [익산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://arts.iksan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "익산예술의전당",
@@ -24379,7 +24379,7 @@ export const initialRealConcerts = [
       "욘 스토르고르스 & BBC 필하모닉 (협연: 김봄소리) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -24406,7 +24406,7 @@ export const initialRealConcerts = [
       "서울시오페라단, 오페라 갈라 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -24433,7 +24433,7 @@ export const initialRealConcerts = [
       "ACI 키즈 콘서트, 클랩 그림책 콘서트 Ⅴ. 겨울이 지나고 남는 것은? [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -24460,7 +24460,7 @@ export const initialRealConcerts = [
       "Classic Mode: 홍진호 Cello 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -24487,7 +24487,7 @@ export const initialRealConcerts = [
       "대니 구 윈터 콘서트: HOME [수원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%88%98%EC%9B%90SK%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수원SK아트리움",
@@ -24514,7 +24514,7 @@ export const initialRealConcerts = [
       "송년 오페라 갈라, 카르멘 VS 카르멘 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -24541,7 +24541,7 @@ export const initialRealConcerts = [
       "쇼팽으로 만나는 겨울왕국 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -24568,7 +24568,7 @@ export const initialRealConcerts = [
       "나 홀로 집에 인 콘서트 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -24595,7 +24595,7 @@ export const initialRealConcerts = [
       "크리스마스 영화음악 & 캐롤 콘서트 [천안] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -24622,7 +24622,7 @@ export const initialRealConcerts = [
       "한스 짐머 영화음악 콘서트 [서울 종로] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
@@ -24649,7 +24649,7 @@ export const initialRealConcerts = [
       "파리나무 십자가 소년합창단 특별 초청공연 [수원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%88%98%EC%9B%90SK%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수원SK아트리움",
@@ -24676,7 +24676,7 @@ export const initialRealConcerts = [
       "크리스마스 영화음악 & 캐롤 FESTA [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -24703,7 +24703,7 @@ export const initialRealConcerts = [
       "크리스마스 영화음악 & 캐롤 FESTA [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산콘서트홀",
@@ -24730,7 +24730,7 @@ export const initialRealConcerts = [
       "크리스마스 영화음악 & 캐롤 콘서트 [수원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ggac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경기아트센터(구. 경기도문화의전당)",
@@ -24757,7 +24757,7 @@ export const initialRealConcerts = [
       "코리안 영 아티스트 시리즈 Ⅵ, 유성호 피아노 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%AA%85%EB%8F%99%EB%8C%80%EC%84%B1%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "명동대성당",
@@ -24784,7 +24784,7 @@ export const initialRealConcerts = [
       "아티스트 시리즈 4, The Party 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EA%B0%80%EC%9D%98%20%EC%A7%91%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술가의 집",
@@ -24811,7 +24811,7 @@ export const initialRealConcerts = [
       "제210회 국립합창단 정기연주회: 헨델 메시아 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -24838,7 +24838,7 @@ export const initialRealConcerts = [
       "유키 구라모토 콘서트: Peacefully [김해] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%B4%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김해문화의전당",
@@ -24865,7 +24865,7 @@ export const initialRealConcerts = [
       "제28회 앙상블오푸스 정기연주회: The Octet 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -24892,7 +24892,7 @@ export const initialRealConcerts = [
       "해설이 있는 11시 콘서트, 바이올리니스트 김동현 (12월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -24919,7 +24919,7 @@ export const initialRealConcerts = [
       "고잉홈프로젝트: The Rebels 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -24946,7 +24946,7 @@ export const initialRealConcerts = [
       "명연주시리즈: 김봄소리 & BBC 필하모닉 오케스트라 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -24973,7 +24973,7 @@ export const initialRealConcerts = [
       "마티네 콘서트Ⅴ: 윈터 마티네 (Winter Matinee) 송영훈의 4 첼리스트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gdfac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강동아트센터",
@@ -25000,7 +25000,7 @@ export const initialRealConcerts = [
       "리처드 용재 오닐, 선물: Bach Society [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -25027,7 +25027,7 @@ export const initialRealConcerts = [
       "안성맞춤아트홀 문화가 있는 날: 아트-데이, 콜레기움 보칼레 서울: 헨델의 메시아 (영상화) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%84%B1%EB%A7%9E%EC%B6%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안성맞춤아트홀",
@@ -25054,7 +25054,7 @@ export const initialRealConcerts = [
       "유키 구라모토 콘서트: Peacefully [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%B2%9C%EB%A7%88%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천마아트센터",
@@ -25081,7 +25081,7 @@ export const initialRealConcerts = [
       "클래식 합창, 파리나무십자가 소년합창단 [울산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=HD%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0(%EA%B5%AC%20%ED%98%84%EB%8C%80%EC%98%88%EC%88%A0%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "HD아트센터(구 현대예술관)",
@@ -25108,7 +25108,7 @@ export const initialRealConcerts = [
       "제180회 부천시립합창단 정기연주회: 헨델, 메시아 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -25135,7 +25135,7 @@ export const initialRealConcerts = [
       "유키 구라모토 콘서트: Peacefully [안동] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안동문화예술의전당",
@@ -25162,7 +25162,7 @@ export const initialRealConcerts = [
       "한경아르떼필하모닉 송년음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -25189,7 +25189,7 @@ export const initialRealConcerts = [
       "더 마스터즈, 이혁 피아노 리사이틀 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -25216,7 +25216,7 @@ export const initialRealConcerts = [
       "더 마스터즈: 박수예 바이올린 리사이틀 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -25243,7 +25243,7 @@ export const initialRealConcerts = [
       "아름다운 목요일 금호솔로이스츠, 금호솔로이스츠: 선율의 항해 Ⅳ. 러시아, 영혼의 기록 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -25270,7 +25270,7 @@ export const initialRealConcerts = [
       "송년음악회, 손열음 & 고잉홈프로젝트 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산시민회관",
@@ -25297,7 +25297,7 @@ export const initialRealConcerts = [
       "저녁의음악회, 마스터즈 온 첼로 [김해] (12월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%B4%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김해문화의전당",
@@ -25324,7 +25324,7 @@ export const initialRealConcerts = [
       "수성아트피아 마티네시리즈, 겨울나그네 (12월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.ssartpia.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수성아트피아",
@@ -25351,7 +25351,7 @@ export const initialRealConcerts = [
       "제8회 서울챔버뮤직소사이어티 정기공연, 베토벤 서거 200주년 기념 공연: 인내와 극복 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -25378,7 +25378,7 @@ export const initialRealConcerts = [
       "인천시립교향악단 기획연주회, 과정음악회 Ⅳ 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -25405,7 +25405,7 @@ export const initialRealConcerts = [
       "프랑스 몽펠리에 국립오페라: 오페라 주니어 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
@@ -25432,7 +25432,7 @@ export const initialRealConcerts = [
       "아름다운 목요일 금호솔로이스츠: 선율의 항해 V. 독일, 위대한 시작 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -25459,7 +25459,7 @@ export const initialRealConcerts = [
       "울산시립교향악단 송년음악회: 환희의 송가 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://ucac.ulsan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "울산문화예술회관",
@@ -25486,7 +25486,7 @@ export const initialRealConcerts = [
       "예술의전당 토요콘서트, 프리뷰 베토벤 (12월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -25513,7 +25513,7 @@ export const initialRealConcerts = [
       "시네마 오케스트라 슈퍼콘서트: 영화를 듣는 밤 with 오르간 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -25540,7 +25540,7 @@ export const initialRealConcerts = [
       "제450회 인천시립교향악단 정기연주회: 인천시향의 말러 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -25567,7 +25567,7 @@ export const initialRealConcerts = [
       "스테이지M 크리스마스 영화음악 & 캐롤 콘서트 [대구 중구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스",
@@ -25594,7 +25594,7 @@ export const initialRealConcerts = [
       "금호 위너스, 박성민 Bass 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
@@ -25621,7 +25621,7 @@ export const initialRealConcerts = [
       "국립합창단, 헨델 메시아 [수원] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%88%98%EC%9B%90SK%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "수원SK아트리움",
@@ -25648,7 +25648,7 @@ export const initialRealConcerts = [
       "KBS교향악단 송년음악회 with 피아니스트 손민수 [창원 진해] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A7%84%ED%95%B4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "진해아트홀",
@@ -25675,7 +25675,7 @@ export const initialRealConcerts = [
       "BAC 특별기획: 파리나무십자가 소년합창단 [부천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -25702,7 +25702,7 @@ export const initialRealConcerts = [
       "월간 연주자, 피아니스트 손세혁 (12월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%A4%EB%9F%AC%EB%A6%AC%20%EB%94%94%20%EC%95%84%EB%A5%B4%ED%85%8C%20%EC%B2%AD%EB%8B%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "갤러리 디 아르테 청담",
@@ -25729,7 +25729,7 @@ export const initialRealConcerts = [
       "통영국제음악재단 기획공연, 크리스틴 정현 리 & 파비올라 김 듀오 리사이틀 [통영] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.timf.org",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "통영국제음악당",
@@ -25756,7 +25756,7 @@ export const initialRealConcerts = [
       "로데아트센터 개관 2주년 기념 FRIENDS 시리즈: 피피남 & Friends 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%9C%EB%8D%B0%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "로데아트센터",
@@ -25783,7 +25783,7 @@ export const initialRealConcerts = [
       "리처드 용재오닐, 선물: Bach Society [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산시민회관",
@@ -25810,7 +25810,7 @@ export const initialRealConcerts = [
       "키즈 마티네 콘서트: 빠라빠빰 신나는 브라스 콘서트 [김포] (12월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%8F%AC%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "김포아트홀",
@@ -25837,7 +25837,7 @@ export const initialRealConcerts = [
       "파리나무 십자가 소년 합창단 특별 초청 공연 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -25864,7 +25864,7 @@ export const initialRealConcerts = [
       "크리스마스 영화음악 & 캐롤 콘서트 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -25891,7 +25891,7 @@ export const initialRealConcerts = [
       "크리스마스 영화음악 & 캐롤 FESTA [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -25918,7 +25918,7 @@ export const initialRealConcerts = [
       "지브리가 건네는 크리스마스의 선물 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -25945,7 +25945,7 @@ export const initialRealConcerts = [
       "GAC 클래식 시리즈, 필하모닉스 내한공연 [서울 강동] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.gdfac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강동아트센터",
@@ -25972,7 +25972,7 @@ export const initialRealConcerts = [
       "서울오페라클럽 오페라갈라 시리즈 4, 카발레리아 루스티카나 & 토스카 갈라 공연 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "푸르지오아트홀",
@@ -25999,7 +25999,7 @@ export const initialRealConcerts = [
       "히사이시 조 영화음악 콘서트 [평택] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "평택아트센터",
@@ -26026,7 +26026,7 @@ export const initialRealConcerts = [
       "재패니메이션콘서트: 12월의선물 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%84%EC%96%91%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아양아트센터",
@@ -26053,7 +26053,7 @@ export const initialRealConcerts = [
       "니콜라이 루간스키 피아노 리사이틀 [통영] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.timf.org",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "통영국제음악당",
@@ -26080,7 +26080,7 @@ export const initialRealConcerts = [
       "크리스마스 지브리 & 디즈니 OST 콘서트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -26107,7 +26107,7 @@ export const initialRealConcerts = [
       "손세혁 피아노 독주회 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -26134,7 +26134,7 @@ export const initialRealConcerts = [
       "실험실 콘서트 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -26161,7 +26161,7 @@ export const initialRealConcerts = [
       "대전시립교향악단 마스터즈 시리즈 10, 송년음악회: 베토벤 교향곡 제9번 합창 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -26188,7 +26188,7 @@ export const initialRealConcerts = [
       "니콜라이 루간스키 피아노 리사이틀 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -26215,7 +26215,7 @@ export const initialRealConcerts = [
       "콘서트 오페라, 라보엠 (La Boheme) [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -26242,7 +26242,7 @@ export const initialRealConcerts = [
       "파리나무십자가소년합창단 특별초청 공연 [성남] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "성남아트센터",
@@ -26269,7 +26269,7 @@ export const initialRealConcerts = [
       "지브리를 품은 클래식: 우리의 겨울은 따스했다 [대구] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B9%84%EC%9B%90%EB%AE%A4%EC%A7%81%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "비원뮤직홀",
@@ -26296,7 +26296,7 @@ export const initialRealConcerts = [
       "크리스마스 영화음악 & 캐롤 콘서트 [부천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -26323,7 +26323,7 @@ export const initialRealConcerts = [
       "베토벤 교향곡 x 두 대의 피아노 #3 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -26350,7 +26350,7 @@ export const initialRealConcerts = [
       "리처드 용재 오닐: 바흐 소사이어티 [서울] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -26377,7 +26377,7 @@ export const initialRealConcerts = [
       "MAC 모닝 콘서트 #10 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.mfac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "마포아트센터",
@@ -26404,7 +26404,7 @@ export const initialRealConcerts = [
       "제342회 부천필하모닉오케스트라 정기연주회: 베토벤, 합창 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -26431,7 +26431,7 @@ export const initialRealConcerts = [
       "KBS교향악단 70주년 기념 송년음악회: 합창 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -26458,7 +26458,7 @@ export const initialRealConcerts = [
       "스테이지엠 크리스마스 영화음악 & 캐롤 콘서트 [경주] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://garts.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경주예술의전당",
@@ -26485,7 +26485,7 @@ export const initialRealConcerts = [
       "HAC Choice, 크리스마스 이브 콘서트: Winter Serenade [화성] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -26512,7 +26512,7 @@ export const initialRealConcerts = [
       "대니 구 크리스마스 콘서트: HOME [서울 송파] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -26539,7 +26539,7 @@ export const initialRealConcerts = [
       "팝페라테너 임형주 초청 독창회: Christmas in Love 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.artgy.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양아람누리",
@@ -26566,7 +26566,7 @@ export const initialRealConcerts = [
       "나의 아저씨가 들려주는 크리스마스의 선율 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.incheon.go.kr/art",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "인천문화예술회관",
@@ -26593,7 +26593,7 @@ export const initialRealConcerts = [
       "크리스마스 영화음악 & 캐롤 FESTA [부천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%B2%9C%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천시민회관",
@@ -26620,7 +26620,7 @@ export const initialRealConcerts = [
       "더 크리스마스: 송영훈의 4첼리스트 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -26647,7 +26647,7 @@ export const initialRealConcerts = [
       "크리스마스 콘서트: 유키 구라모토와 친구들 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
@@ -26674,7 +26674,7 @@ export const initialRealConcerts = [
       "크리스마스 영화음악 & 캐롤 콘서트 [인천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "아트센터 인천",
@@ -26701,7 +26701,7 @@ export const initialRealConcerts = [
       "KBS교향악단과 함께하는 여수음악제 송년음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.yeulmaru.org",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "GS칼텍스 예울마루",
@@ -26728,7 +26728,7 @@ export const initialRealConcerts = [
       "크리스마스 콘서트: 유키 구라모토와 친구들 [용인] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.yicf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "용인포은아트홀",
@@ -26755,7 +26755,7 @@ export const initialRealConcerts = [
       "인천시립교향악단 기획연주회: 송년음악회 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.incheon.go.kr/art",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "인천문화예술회관",
@@ -26782,7 +26782,7 @@ export const initialRealConcerts = [
       "월간듀오, 바이올리니스트 박정현 & 비올리스트 권오현 (12월) 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%A4%EB%9F%AC%EB%A6%AC%20%EB%94%94%20%EC%95%84%EB%A5%B4%ED%85%8C%20%EC%B2%AD%EB%8B%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "갤러리 디 아르테 청담",
@@ -26809,7 +26809,7 @@ export const initialRealConcerts = [
       "손세혁 피아노 독주회 [부천] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부천아트센터",
@@ -26836,7 +26836,7 @@ export const initialRealConcerts = [
       "MelON 디즈니 + 지브리 오케스트라 콘서트: 크리스마스 판타지 [대전] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대전예술의전당",
@@ -26863,7 +26863,7 @@ export const initialRealConcerts = [
       "크리스틴 정현 리 & 파비올라 김 듀오 리사이틀 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -26890,7 +26890,7 @@ export const initialRealConcerts = [
       "천안예술의전당 송년음악회: FROM MOZART TO BEETHOVEN [천안] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
@@ -26917,7 +26917,7 @@ export const initialRealConcerts = [
       "인디 스티빈 더블베이스 리사이틀: 인디 스티빈 & 예우니아 신포니에타 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%9C%EB%8D%B0%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "로데아트센터",
@@ -26944,7 +26944,7 @@ export const initialRealConcerts = [
       "함신익과 심포니 송 마스터즈 시리즈 Ⅷ, 송년음악회: 합창교향곡 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
@@ -26971,7 +26971,7 @@ export const initialRealConcerts = [
       "제야음악회 [부산] 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.kopis.or.kr",
+    "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산시민회관",

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, MapPin, User, Music2, ExternalLink, MessageSquarePlus, Info, CheckCircle2, ShieldAlert, Sparkles, Clock, Flame } from 'lucide-react';
 import { formatKoreanDate, getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
+import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 
 export default function ConcertCard({ concert, onSelect, onOpenReview }) {
   const isBlocked = concert.crawlerBlocked;
@@ -159,11 +160,11 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
           </button>
 
           <a
-            href={concert.ticketUrl}
+            href={getVenueOfficialUrl(concert)}
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-semibold transition-colors shrink-0 flex items-center justify-center"
-            title="공식 예매처 바로가기"
+            title="공연장 공식 홈페이지 / 예매처 바로가기"
           >
             <ExternalLink className="w-3.5 h-3.5" />
           </a>

@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v9: KOPIS 전산망 공식 인증키 전수 수집 데이터 (실존 클래식 공식 공연 999건 탑재)
-const CONCERTS_KEY = 'opus_korea_concerts_v9';
+// v10: 공연장별 공식 홈페이지/예매처 URL 100% 매핑 동기화
+const CONCERTS_KEY = 'opus_korea_concerts_v10';
 const HALLS_KEY = 'opus_korea_halls_v3';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -18,7 +18,8 @@ try {
       'opus_korea_verified_real_concerts_v5',
       'opus_korea_verified_real_concerts_v6',
       'opus_korea_concerts_v7',
-      'opus_korea_concerts_v8'
+      'opus_korea_concerts_v8',
+      'opus_korea_concerts_v9'
     ].forEach((k) => {
       localStorage.removeItem(k);
     });
