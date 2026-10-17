@@ -2,6 +2,76 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Music } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser';
 
+/**
+ * 클래식 공연 대표성 / 규모 / 인기 우선순위 점수 계산 알고리즘
+ * 1. 대형 콘서트홀(예: 예술의전당 콘서트홀 2,000석+) vs 소형 리사이틀홀
+ * 2. 대규모 오케스트라 / 심포니 / 페스티벌 / 내한 공연 가중치
+ * 3. 세계적 거장 지휘자 / 최정상 솔리스트 / 대표 악단 가중치
+ * 4. 개인 독주회 / 동문회 / 학위 리사이틀 상대적 후순위 조정
+ */
+function getConcertPriorityScore(c) {
+  let score = 0;
+  const title = (c.title || '').toLowerCase();
+  const venue = (c.venue || '').toLowerCase();
+  const desc = (c.description || '').toLowerCase();
+  const performers = (Array.isArray(c.performers) ? c.performers.join(' ') : (c.performers || '')).toLowerCase();
+  const fullText = `${title} ${venue} ${performers} ${desc}`;
+
+  // 1. 공연장/홀 규모 가중치 (대형 콘서트홀 vs 소형 리사이틀홀)
+  if (venue.includes('콘서트홀') || venue.includes('대극장') || venue.includes('오페라극장') || venue.includes('음악당')) {
+    score += 60;
+  }
+  if (venue.includes('챔버홀') || venue.includes('체임버홀') || venue.includes('소극장')) {
+    score += 20;
+  }
+  if (venue.includes('리사이틀홀') || venue.includes('인춘아트홀') || venue.includes('소강당')) {
+    score += 5;
+  }
+
+  // 2. 편성 규모 및 대형 이벤트 가중치 (오케스트라/교향악단/페스티벌)
+  if (
+    fullText.includes('오케스트라') ||
+    fullText.includes('교향악단') ||
+    fullText.includes('필하모닉') ||
+    fullText.includes('orchestra') ||
+    fullText.includes('philharmonic') ||
+    fullText.includes('symphony')
+  ) {
+    score += 70;
+  }
+  if (fullText.includes('페스티벌') || fullText.includes('festival') || fullText.includes('내한') || fullText.includes('정기연주회')) {
+    score += 40;
+  }
+  if (fullText.includes('협주곡') || fullText.includes('concerto') || fullText.includes('합창단')) {
+    score += 25;
+  }
+
+  // 3. 세계적 거장 지휘자 및 슈퍼스타 솔리스트 가중치
+  const masterKeywords = [
+    '파보 예르비', 'paavo järvi', 'paavo jarvi', '에스토니안', '사이먼 래틀', '래틀', '정명훈', '얍 판 츠베덴',
+    '두다멜', '카라얀', '빈 필', '베를린 필', '런던 심포니', '로열 콘세르트', '라이프치히', '바이에른',
+    '조성진', '임윤찬', '손열음', '백건우', '김선욱', '선우예권', '클라라 주미 강', '강주미', '양인모', '사라 장', '막심 벤게로프',
+    '서울시향', '서울시립교향악단', 'kbs교향악단', '국립심포니'
+  ];
+
+  for (const kw of masterKeywords) {
+    if (fullText.includes(kw)) {
+      score += 80;
+      break;
+    }
+  }
+
+  // 4. 소규모 개인 독주회/독창회/동문회 상대적 후순위 조정
+  if (title.includes('독주회') || title.includes('독창회') || title.includes('귀국')) {
+    score -= 20;
+  }
+  if (title.includes('동문') || title.includes('제자') || title.includes('학위') || title.includes('연구회')) {
+    score -= 30;
+  }
+
+  return score;
+}
+
 export default function ConcertCalendar({ concerts, onSelectConcert }) {
   // 기본 연월 설정 (2026년 10월)
   const [currentYear, setCurrentYear] = useState(2026);
@@ -32,7 +102,7 @@ export default function ConcertCalendar({ concerts, onSelectConcert }) {
   const firstDayOfWeek = new Date(currentYear, currentMonth - 1, 1).getDay(); // 0(일) ~ 6(토)
   const daysInMonth = new Date(currentYear, currentMonth, 0).getDate();
 
-  // 날짜별 공연 매핑
+  // 날짜별 공연 매핑 및 대표 공연 우선순위 자동 정렬
   const monthString = `${currentYear}-${String(currentMonth).padStart(2, '0')}`;
   const concertsThisMonth = concerts.filter((c) => c.date.startsWith(monthString));
 
@@ -40,6 +110,11 @@ export default function ConcertCalendar({ concerts, onSelectConcert }) {
   concertsThisMonth.forEach((c) => {
     if (!concertMap[c.date]) concertMap[c.date] = [];
     concertMap[c.date].push(c);
+  });
+
+  // 각 날짜별로 가장 규모가 크고 대표적인 메이저 공연이 1순위(대표 공연)로 오도록 우선순위 정렬
+  Object.keys(concertMap).forEach((dateKey) => {
+    concertMap[dateKey].sort((a, b) => getConcertPriorityScore(b) - getConcertPriorityScore(a));
   });
 
   const selectedConcerts = selectedDate ? (concertMap[selectedDate] || []) : [];
