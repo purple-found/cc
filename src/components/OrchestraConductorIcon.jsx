@@ -1,12 +1,14 @@
 import React from 'react';
 
 /**
- * OrchestraConductorIcon
+ * OrchestraConductorIcon (Opus Korea 상징 아이콘)
  * 
- * 오케스트라 앙상블 & 지휘자 형상화 심볼 아이콘
- * - 전면 좌측: 포디움(지휘대) 위에 서서 양손과 지휘봉(바톤)을 든 지휘자 (Conductor)
- * - 후면 우측: 나란히 앉아 악기(현악기/건반)를 연주하는 2인의 단원 (Performers / Musicians)
- * - 규격 및 스타일: Lucide 및 SVG 표준 벡터 (stroke, fill-none, rounded, strokeWidth 1.75~2)
+ * 클래식 공연의 정통성과 무대의 품격을 한눈에 직관적으로 상징하는 픽토그램:
+ * - 콘서트홀 무대 위 열린 상판(Open Lid)과 지지대(Prop Stick)를 갖춘 그랜드 피아노
+ * - 리드미컬하고 섬세한 피아노 건반부(Keyboards) 및 무대 다리
+ * - 그 위로 힘차고 우아하게 솟아오르는 마에스트로의 지휘봉(Conductor's Baton)과 선율
+ * 
+ * 규격: Lucide 및 SVG 표준 벡터 규격 (viewBox 0 0 24 24, strokeWidth 1.8, strokeLinecap round)
  */
 export default function OrchestraConductorIcon({ className = 'w-6 h-6', ...props }) {
   return (
@@ -22,36 +24,29 @@ export default function OrchestraConductorIcon({ className = 'w-6 h-6', ...props
       aria-hidden="true"
       {...props}
     >
-      {/* 1. 지휘자 (좌측 전면): 포디움 + 서 있는 지휘자 + 지휘봉 */}
-      {/* 지휘자 머리 */}
-      <circle cx="6" cy="6.5" r="1.5" />
-      {/* 지휘자 몸통 & 포디움 연결선 */}
-      <path d="M6 8v7.5" />
-      {/* 지휘자 지휘대(포디움) 발판 */}
-      <path d="M3.5 15.5h5" />
-      {/* 지휘자의 역동적인 팔 & 지휘봉(바톤) */}
-      <path d="M3.5 10.5c1.2-1 2.5-1 2.5 0l3-2.5" />
+      {/* 1. 활짝 열린 콘서트 그랜드 피아노 상판 뚜껑 (Open Lid) */}
+      <path d="M3.5 13L16 4.2c.8-.5 1.8-.4 2.4.2.5.5.6 1.3.2 1.8" />
 
-      {/* 2. 연주자 1 (중앙): 앉아서 연주하는 단원 */}
-      {/* 연주자 1 머리 */}
-      <circle cx="13" cy="8.5" r="1.3" />
-      {/* 연주자 1 상체 및 연주하는 팔 */}
-      <path d="M13 10v4.5" />
-      <path d="M11.5 12c.8.8 2 .8 2.5 0" />
-      {/* 연주자 1 의자/다리 */}
-      <path d="M11.5 14.5h3v4.5" />
+      {/* 2. 뚜껑 지지대 (Prop Stick) */}
+      <path d="M13.5 6l3.5 7" />
 
-      {/* 3. 연주자 2 (우측): 나란히 앉아서 연주하는 단원 */}
-      {/* 연주자 2 머리 */}
-      <circle cx="19" cy="8.5" r="1.3" />
-      {/* 연주자 2 상체 및 연주하는 팔 */}
-      <path d="M19 10v4.5" />
-      <path d="M17.5 12c.8.8 2 .8 2.5 0" />
-      {/* 연주자 2 의자/다리 */}
-      <path d="M17.5 14.5h3v4.5" />
+      {/* 3. 피아노 바디 케이스 (Piano Rim & Curved Body) */}
+      <path d="M3.5 13h16c.8 0 1.5.7 1.5 1.5v1.5H3v-1.5c0-.8.7-1.5 1.5-1.5z" />
 
-      {/* 4. 무대 베이스 라인 */}
-      <path d="M10 19h11.5" strokeOpacity="0.4" />
+      {/* 4. 피아노 건반부 (Keyboard bed & Keys) */}
+      <path d="M3 16h18v2.5H3z" />
+      <path d="M7.5 16v1.8" />
+      <path d="M12 16v1.8" />
+      <path d="M16.5 16v1.8" />
+
+      {/* 5. 피아노 다리 (Stage Legs) */}
+      <path d="M5.5 18.5V21" />
+      <path d="M18.5 18.5V21" />
+
+      {/* 6. 마에스트로 지휘봉 & 클래식 선율 아치 (Conductor's Baton & Melody) */}
+      <path d="M8 9.5l11-7" strokeWidth="2" />
+      <circle cx="7.5" cy="10" r="1" fill="currentColor" />
+      <path d="M19.5 2.5c.8.3 1.5 1 1.5 2" strokeOpacity="0.8" />
     </svg>
   );
 }

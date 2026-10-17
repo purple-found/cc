@@ -17,8 +17,11 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
             onClick={() => setActiveTab('concerts')}
             className="flex items-center gap-3 cursor-pointer group shrink-0"
           >
-            <div className="w-11 h-11 rounded-xl bg-concert-500 text-white flex items-center justify-center shadow-md shadow-concert-500/20 group-hover:scale-105 transition-transform">
-              <OrchestraConductorIcon className="w-6 h-6" />
+            <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-[#24140e] via-[#3d2015] to-[#1a0c07] text-[#f6e5c5] flex items-center justify-center shadow-lg shadow-[#1a0c07]/30 border border-[#753d22]/70 dark:border-[#874b26]/60 group-hover:scale-105 group-hover:border-[#b88648]/70 transition-all overflow-hidden shrink-0">
+              {/* 벨벳 질감 새틴 광택 오버레이 */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#874b26]/20 to-white/10 pointer-events-none" />
+              <div className="absolute -top-2 -right-2 w-7 h-7 bg-[#b88648]/20 rounded-full blur-xs pointer-events-none" />
+              <OrchestraConductorIcon className="w-6 h-6 relative z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] text-[#f6e5c5]" />
             </div>
             <div>
               <div className="flex items-center gap-2">
