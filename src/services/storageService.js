@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v10: 공연장별 공식 홈페이지/예매처 URL 100% 매핑 동기화
-const CONCERTS_KEY = 'opus_korea_concerts_v10';
+// v11: 세부 홀 정보 (콘서트홀, IBK챔버홀, 리사이틀홀, 인춘아트홀 등) 100% 동기화
+const CONCERTS_KEY = 'opus_korea_concerts_v11';
 const HALLS_KEY = 'opus_korea_halls_v3';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -19,7 +19,8 @@ try {
       'opus_korea_verified_real_concerts_v6',
       'opus_korea_concerts_v7',
       'opus_korea_concerts_v8',
-      'opus_korea_concerts_v9'
+      'opus_korea_concerts_v9',
+      'opus_korea_concerts_v10'
     ].forEach((k) => {
       localStorage.removeItem(k);
     });
@@ -36,12 +37,29 @@ export const storageService = {
       }
       const raw = localStorage.getItem(CONCERTS_KEY);
       if (!raw) {
-        // 최초 로드시 KOPIS 실존 공식 공연 999건 자동 캐싱
+        // 최초 로드시 KOPIS 실존 공식 공연 999건 자동 캐싱 (세부 홀 정보 포함)
         localStorage.setItem(CONCERTS_KEY, JSON.stringify(initialRealConcerts || []));
         return initialRealConcerts || [];
       }
       const parsed = safeParseJSON(raw, initialRealConcerts || []);
-      return Array.isArray(parsed) && parsed.length > 0 ? parsed : initialRealConcerts || [];
+      if (!Array.isArray(parsed) || parsed.length === 0) {
+        return initialRealConcerts || [];
+      }
+      // 세부 홀(hall) 정보가 누락된 경우 initialRealConcerts와 즉각 병합
+      const initialMap = new Map((initialRealConcerts || []).map(c => [c.id || c.kopisId, c]));
+      let hasUpdate = false;
+      const synced = parsed.map(c => {
+        const init = initialMap.get(c.id || c.kopisId);
+        if (init && (!c.hall || c.hall === '공연홀' || !c.venue.includes('('))) {
+          hasUpdate = true;
+          return { ...c, hall: init.hall || c.hall, venue: init.venue || c.venue };
+        }
+        return c;
+      });
+      if (hasUpdate) {
+        localStorage.setItem(CONCERTS_KEY, JSON.stringify(synced));
+      }
+      return synced;
     } catch (e) {
       return initialRealConcerts || [];
     }

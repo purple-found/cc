@@ -1,9 +1,9 @@
 import React from 'react';
-import { Calendar, MapPin, User, Music2, ExternalLink, MessageSquarePlus, Info, CheckCircle2, ShieldAlert, Sparkles, Clock, Flame } from 'lucide-react';
+import { Calendar, MapPin, User, Music2, ExternalLink, Info, CheckCircle2, ShieldAlert, Sparkles, Clock, Flame } from 'lucide-react';
 import { formatKoreanDate, getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 
-export default function ConcertCard({ concert, onSelect, onOpenReview }) {
+export default function ConcertCard({ concert, onSelect }) {
   const isBlocked = concert.crawlerBlocked;
   const isPast = isPastConcert(concert.date, concert.time);
   const isToday = isTodayConcert(concert.date);
@@ -118,16 +118,16 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
 
           {/* Details: Venue & Performers */}
           <div className="mt-3 space-y-1.5 text-xs text-stone-600 dark:text-stone-300 font-medium">
-            <div className="flex items-center gap-1.5 min-w-0">
+            <div className="flex items-center gap-1.5 flex-wrap min-w-0">
               <MapPin className="w-3.5 h-3.5 text-concert-500 shrink-0" />
-              <span className="truncate">
+              <span className="truncate max-w-[170px] sm:max-w-[210px]">
                 {concert.venue ? concert.venue.replace(/\s*\([^)]*\)$/, '').trim() : '공식 공연장'}
               </span>
               {(() => {
                 const hallName = concert.hall || (concert.venue && concert.venue.match(/\(([^)]+)\)/) ? concert.venue.match(/\(([^)]+)\)/)[1].trim() : null);
                 if (hallName && hallName !== '공연홀') {
                   return (
-                    <span className="px-1.5 py-0.2 rounded text-[10.5px] font-bold bg-amber-100/90 dark:bg-amber-950/70 text-amber-900 dark:text-amber-200 border border-amber-300/80 dark:border-amber-700/60 shrink-0">
+                    <span className="px-2 py-0.5 rounded-md text-[11px] font-bold bg-[#b88648]/20 dark:bg-[#b88648]/30 text-[#85531d] dark:text-[#f3d9b1] border border-[#b88648]/40 dark:border-[#b88648]/50 shrink-0 shadow-xs">
                       {hallName}
                     </span>
                   );
@@ -153,32 +153,24 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
           </div>
         </div>
 
-        {/* Action Buttons (Gate 2: Zero Dead-button, nowrap) */}
-        <div className="pt-2 flex items-center justify-between gap-2 border-t border-stone-100 dark:border-hall-800">
+        {/* Action Buttons: Clean & focused on Program Details & Venue Ticket */}
+        <div className="pt-2.5 flex items-center gap-2 border-t border-stone-100 dark:border-hall-800">
           <button
             onClick={() => onSelect(concert)}
-            className="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-800 dark:text-stone-200 text-xs font-semibold transition-colors shrink-0"
+            className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-800 dark:text-stone-200 text-xs font-semibold transition-colors shrink-0"
           >
             <Info className="w-3.5 h-3.5" />
-            <span className="shrink-0">상세 프로그램</span>
-          </button>
-
-          <button
-            onClick={() => onOpenReview(concert)}
-            className="flex items-center justify-center gap-1 py-2 px-3 rounded-xl bg-concert-50 hover:bg-concert-100 dark:bg-hall-800 dark:hover:bg-hall-750 text-concert-700 dark:text-concert-300 text-xs font-semibold transition-colors border border-concert-200/80 dark:border-hall-700 shrink-0"
-            title="이 공연에 기대평 및 관람 후기 남기기"
-          >
-            <MessageSquarePlus className="w-3.5 h-3.5" />
-            <span className="shrink-0">기대평</span>
+            <span className="shrink-0 font-medium">상세 프로그램</span>
           </button>
 
           <a
             href={getVenueOfficialUrl(concert)}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-semibold transition-colors shrink-0 flex items-center justify-center"
+            className="py-2.5 px-3.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-semibold transition-colors shrink-0 flex items-center gap-1.5 shadow-sm shadow-concert-500/20"
             title="공연장 공식 홈페이지 / 예매처 바로가기"
           >
+            <span className="shrink-0">예매처</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
