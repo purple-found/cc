@@ -3,13 +3,13 @@ import React from 'react';
 /**
  * OrchestraConductorIcon (Opus Korea 상징 아이콘)
  * 
- * 한눈에 클래식 공연임을 직관적으로 알아볼 수 있는 정통 클래식 심볼:
- * - 유려한 S/C자 허리 곡선(C-bout)과 상·하단 공명 바디를 지닌 클래식 바이올린/첼로
- * - 정교한 나선형 스크롤(Scroll) 헤드 및 튜닝 펙(Tuning Pegs), 기다란 지판(Fingerboard)
- * - 공명통 중앙의 상징적인 f-홀(f-holes)과 브릿지/현 라인
- * - 현악기를 우아하게 가로지르는 클래식 연주 활(Bow)의 조화
+ * 흔한 악기 단품(바이올린, 피아노 등)의 진부함을 탈피한 진정한 '오케스트라' 고유의 상징:
+ * - 지휘대(Podium)를 중심으로 방사형으로 펼쳐지는 오케스트라 전용 부채꼴 무대 배열(Orchestral Fan/Arc Tiers)
+ * - 현악기 층, 목관·금관 층, 타악기 층으로 웅장하게 확장되는 3단계 동심원 음향 아치
+ * - 각 파트별 악단원들이 호흡을 맞추며 질서정연하게 자리한 앙상블 노드(Ensemble Nodes)
+ * - 중앙에서 하늘을 향해 높고 유려하게 치솟아 100인의 소리를 하나로 이끄는 마에스트로의 지휘봉(Conductor's Baton)
  * 
- * 규격: Lucide 및 SVG 표준 벡터 규격 (viewBox 0 0 24 24, strokeWidth 1.8, strokeLinecap round)
+ * 규격: Lucide 및 SVG 표준 벡터 규격 (viewBox 0 0 24 24, strokeWidth 1.7~1.8, strokeLinecap round)
  */
 export default function OrchestraConductorIcon({ className = 'w-6 h-6', ...props }) {
   return (
@@ -25,30 +25,41 @@ export default function OrchestraConductorIcon({ className = 'w-6 h-6', ...props
       aria-hidden="true"
       {...props}
     >
-      {/* 1. 바이올린 헤드 스크롤 (Scroll Head) */}
-      <path d="M12 2c-.8 0-1.5.5-1.5 1.2 0 .7.6 1.3 1.5 1.3.6 0 1.2-.4 1.2-1" />
+      {/* 1. 오케스트라 무대 3단 부채꼴 음향 아치 (Orchestral Seating Arcs) */}
+      {/* 1열: 전면 현악 섹션 (Violin / Viola / Cello / Bass) */}
+      <path d="M7 16a6.5 6.5 0 0 1 10 0" strokeWidth="1.7" strokeOpacity="0.85" />
+      {/* 2열: 중앙 목관 및 금관 섹션 (Woodwinds & Brass) */}
+      <path d="M4.5 12.5a10 10 0 0 1 15 0" strokeWidth="1.7" strokeOpacity="0.9" />
+      {/* 3열: 후면 대편성 금관 및 팀파니/타악기 섹션 (Percussion & Timpani) */}
+      <path d="M2.5 9a13.5 13.5 0 0 1 19 0" strokeWidth="1.7" />
 
-      {/* 2. 조율 펙 (Tuning Pegs) & 펙박스 */}
-      <path d="M10.5 4.5h3" />
-      <path d="M9.5 5.8h5" strokeWidth="1.5" />
+      {/* 2. 각 파트별 오케스트라 단원 앙상블 (Ensemble Musicians) */}
+      {/* 1열 단원들 */}
+      <circle cx="8.5" cy="14.8" r="0.8" fill="currentColor" />
+      <circle cx="12" cy="14" r="0.8" fill="currentColor" />
+      <circle cx="15.5" cy="14.8" r="0.8" fill="currentColor" />
 
-      {/* 3. 네크 & 지판 (Neck & Fingerboard) */}
-      <path d="M11 6.8v4.5h2V6.8" />
+      {/* 2열 단원들 */}
+      <circle cx="5.8" cy="11.4" r="0.8" fill="currentColor" />
+      <circle cx="9.8" cy="9.8" r="0.8" fill="currentColor" />
+      <circle cx="14.2" cy="9.8" r="0.8" fill="currentColor" />
+      <circle cx="18.2" cy="11.4" r="0.8" fill="currentColor" />
 
-      {/* 4. 바이올린 공명 바디 (Violin Body - 상단 볼록, C-bout 허리 잘록, 하단 볼록) */}
-      <path d="M11 11.3c-2.4 0-4.2 1.4-4.2 3.4 0 1.4 1.2 1.8 1.2 2.8 0 1.2-1.5 2-1 3.5.7 1.5 3 2 5 2s4.3-.5 5-2c.5-1.5-1-2.3-1-3.5 0-1 1.2-1.4 1.2-2.8 0-2-1.8-3.4-4.2-3.4h-2z" />
+      {/* 3열 단원들 */}
+      <circle cx="3.8" cy="8" r="0.8" fill="currentColor" />
+      <circle cx="8" cy="6.2" r="0.8" fill="currentColor" />
+      <circle cx="16" cy="6.2" r="0.8" fill="currentColor" />
+      <circle cx="20.2" cy="8" r="0.8" fill="currentColor" />
 
-      {/* 5. 상징적 f-홀 (Acoustic f-holes) */}
-      <path d="M9.8 15.5c-.4.4-.4 1.2 0 1.6" strokeWidth="1.6" />
-      <path d="M14.2 15.5c.4.4.4 1.2 0 1.6" strokeWidth="1.6" />
-
-      {/* 6. 중앙 현 (Strings) & 테일피스 (Tailpiece) */}
-      <path d="M12 6.8v13.5" strokeWidth="1.2" strokeOpacity="0.8" />
-      <path d="M11 20.8l1 1.7 1-1.7z" fill="currentColor" fillOpacity="0.4" strokeWidth="1" />
-
-      {/* 7. 클래식 연주 활 (Violin Bow) - 사선으로 우아하게 가로지르는 활대와 활털 */}
-      <path d="M3.5 19.5L20.5 3.5" strokeWidth="1.8" />
-      <circle cx="4.2" cy="18.8" r="0.8" fill="currentColor" />
+      {/* 3. 지휘대(Podium) & 지휘자의 지휘봉(Conductor's Baton) */}
+      {/* 지휘대 발판 */}
+      <path d="M9.5 21.5h5" strokeWidth="2" />
+      {/* 지휘봉 손잡이(Bulb) */}
+      <circle cx="11.5" cy="19.5" r="1.1" fill="currentColor" />
+      {/* 하늘을 가르는 유려한 지휘봉 샤프트 */}
+      <path d="M11.5 19.5L14.2 3.8" strokeWidth="2" />
+      {/* 지휘봉 끝에서 피어나는 선율 악센트 */}
+      <path d="M15.5 3.5a1.8 1.8 0 0 1 1.8 1.8" strokeWidth="1.6" strokeOpacity="0.8" />
     </svg>
   );
 }
