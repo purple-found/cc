@@ -118,9 +118,22 @@ export default function ConcertCard({ concert, onSelect, onOpenReview }) {
 
           {/* Details: Venue & Performers */}
           <div className="mt-3 space-y-1.5 text-xs text-stone-600 dark:text-stone-300 font-medium">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 min-w-0">
               <MapPin className="w-3.5 h-3.5 text-concert-500 shrink-0" />
-              <span className="truncate">{concert.venue}</span>
+              <span className="truncate">
+                {concert.venue ? concert.venue.replace(/\s*\([^)]*\)$/, '').trim() : '공식 공연장'}
+              </span>
+              {(() => {
+                const hallName = concert.hall || (concert.venue && concert.venue.match(/\(([^)]+)\)/) ? concert.venue.match(/\(([^)]+)\)/)[1].trim() : null);
+                if (hallName && hallName !== '공연홀') {
+                  return (
+                    <span className="px-1.5 py-0.2 rounded text-[10.5px] font-bold bg-amber-100/90 dark:bg-amber-950/70 text-amber-900 dark:text-amber-200 border border-amber-300/80 dark:border-amber-700/60 shrink-0">
+                      {hallName}
+                    </span>
+                  );
+                }
+                return null;
+              })()}
             </div>
 
             <div className="flex items-center gap-2">

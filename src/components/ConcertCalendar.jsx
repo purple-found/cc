@@ -40,11 +40,23 @@ function getConcertPriorityScore(c) {
     score += 5;
   }
 
+  // 서울 3대 클래식 메카 가중치 (예술의전당, 롯데콘서트홀, 세종문화회관)
+  const isSeoulMecca =
+    venue.includes('예술의전당 [서울]') ||
+    venue.includes('예술의전당(서울)') ||
+    venue.includes('롯데콘서트홀') ||
+    venue.includes('세종문화회관');
+  if (isSeoulMecca) {
+    score += 25;
+  }
+
   // 2. 세계적 거장 및 슈퍼스타 솔리스트/지휘자/대표 국공립 악단
   const superstarKeywords = [
     '스미노 하야토', '스미노', 'sumino', 'cateen', 'hayato sumino',
+    '김규연', '아르토 노라스', '노라스', 'arto noras', '프레디 켐프', '켐프',
     '조성진', 'seong-jin cho', '임윤찬', 'yunchan lim', '손열음', 'yeol eum son',
     '백건우', '김선욱', '선우예권', '박재홍', '신창용', '임동혁',
+    '양성원', '송영훈', '백주영', '이경선', '김대진',
     '클라라 주미 강', '강주미', '양인모', '김봄소리', '사라 장', '장영주', '정경화', '신지아', '대니 구',
     '막심 벤게로프', 'vengerov', '파트리샤 코파친스카야', 'kopatchinskaja', '솔 가베타', 'sol gabetta',
     '한재민', '문태국', '유자 왕', 'yuja wang', '랑랑', 'lang lang', '키신', 'kissin', '트리포노프', 'trifonov',
@@ -64,7 +76,7 @@ function getConcertPriorityScore(c) {
   }
 
   // 3. '리사이틀' / '독주회'의 지능형 다이내믹 가중치
-  // 슈퍼스타의 리사이틀은 오케스트라를 능가하는 클래식계 최고 흥행 이벤트 (+80)
+  // 슈퍼스타/저명 솔리스트의 리사이틀은 클래식계 최고 흥행 이벤트 (+80)
   const isRecital = title.includes('리사이틀') || title.includes('recital') || title.includes('독주회') || title.includes('독창회');
   if (isRecital) {
     if (hasSuperstar) {
@@ -76,7 +88,7 @@ function getConcertPriorityScore(c) {
     }
   }
 
-  // 4. 대형 오케스트라 및 정기 연주회/페스티벌 가중치
+  // 4. 대형 오케스트라 및 음악제/페스티벌 가중치
   if (
     fullText.includes('오케스트라') ||
     fullText.includes('교향악단') ||
@@ -87,8 +99,14 @@ function getConcertPriorityScore(c) {
   ) {
     score += 45;
   }
-  if (fullText.includes('페스티벌') || fullText.includes('festival') || fullText.includes('내한') || fullText.includes('정기연주회')) {
-    score += 30;
+  if (
+    fullText.includes('음악제') ||
+    fullText.includes('페스티벌') ||
+    fullText.includes('festival') ||
+    fullText.includes('내한') ||
+    fullText.includes('정기연주회')
+  ) {
+    score += 40;
   }
   if (fullText.includes('협주곡') || fullText.includes('concerto') || fullText.includes('합창단')) {
     score += 15;
