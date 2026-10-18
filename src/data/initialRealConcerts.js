@@ -6204,8 +6204,8 @@ export const initialRealConcerts = [
     "title": "제3회 부산광역시의사회와 함께하는 자선음악회 [부산]",
     "date": "2026-10-14",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "제3회 부산광역시의사회와 함께하는 자선음악회"
     ],
@@ -6222,7 +6222,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302786_261008_110634.png",
@@ -6776,8 +6776,8 @@ export const initialRealConcerts = [
     "title": "극동방송 창사70주년 전국 대합창제",
     "date": "2026-10-15",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "극동방송 창사70주년 전국 대합창제"
     ],
@@ -6794,7 +6794,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303089_261012_184418.jpg",
@@ -10681,8 +10681,8 @@ export const initialRealConcerts = [
     "title": "제22회 부산국제합창제, 그랜드 콘서트",
     "date": "2026-10-22",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "제22회 부산국제합창제"
     ],
@@ -10699,7 +10699,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301900_260928_175127.jpg",
@@ -10745,8 +10745,8 @@ export const initialRealConcerts = [
     "title": "김정은 피아노 독주회: Night from Nocturne to Concerto [부산]",
     "date": "2026-10-22",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산광역시",
+    "venue": "부산콘서트홀 (챔버홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "김정은",
       "장은아",
@@ -10768,7 +10768,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
     "source": "KOPIS 전산망 새벽 3시 자동 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (챔버홀)",
     "crawlerBlocked": false,
     "description": "부산콘서트홀에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301184_260917_125304.png",
@@ -12040,8 +12040,8 @@ export const initialRealConcerts = [
     "title": "부산대학교 개교 80주년 기념음악회: 부산시민과 함께하는 클래식 여행",
     "date": "2026-10-24",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "부산대학교 개교 80주년 기념음악회"
     ],
@@ -12058,7 +12058,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303544_261016_111801.jpg",
@@ -22083,8 +22083,8 @@ export const initialRealConcerts = [
     "title": "푸른 눈의 휴머니스트, 위트컴 장군 [부산]",
     "date": "2026-11-14",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "푸른 눈의 휴머니스트"
     ],
@@ -22101,7 +22101,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303456_261015_135640.png",
@@ -23377,8 +23377,8 @@ export const initialRealConcerts = [
     "title": "HELLO ORGAN 3. 길 위의 노래 [부산]",
     "date": "2026-11-19",
     "time": "11:00",
-    "venue": "부산콘서트홀",
-    "city": "부산광역시",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "박준호",
       "최현우"
@@ -23395,7 +23395,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
     "source": "KOPIS 전산망 새벽 3시 자동 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "부산콘서트홀에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301723_260928_103953.jpg",
@@ -23528,8 +23528,8 @@ export const initialRealConcerts = [
     "title": "첼리스트 허정인 리사이틀 [부산]",
     "date": "2026-11-20",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (챔버홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "첼리스트 허정인 리사이틀"
     ],
@@ -23546,11 +23546,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303478_261015_143526.jpg",
-    "hall": "콘서트홀"
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF302950",
@@ -26658,8 +26658,8 @@ export const initialRealConcerts = [
     "title": "부산시립합창단 송년음악회: A Child of Our Time 우리 시대의 아이",
     "date": "2026-12-03",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "부산시립합창단 송년음악회"
     ],
@@ -26676,7 +26676,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301540_260922_112143.jpg",
@@ -26778,8 +26778,8 @@ export const initialRealConcerts = [
     "title": "크리스마스 콘서트 with 첼로댁: 지브리 & 디즈니 & 무비 [부산]",
     "date": "2026-12-04",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "크리스마스 콘서트 with 첼로댁"
     ],
@@ -26796,7 +26796,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303607_261016_140600.png",
@@ -27170,8 +27170,8 @@ export const initialRealConcerts = [
     "title": "지브리 영화음악 FESTA [부산]",
     "date": "2026-12-05",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "지브리 영화음악 FESTA"
     ],
@@ -27188,7 +27188,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294346_260622_153518.gif",
@@ -27680,8 +27680,8 @@ export const initialRealConcerts = [
     "title": "리드 테츨로프 피아노 리사이틀 [부산]",
     "date": "2026-12-08",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (챔버홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "리드 테츨로프 피아노 리사이틀"
     ],
@@ -27698,11 +27698,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301114_260916_155548.jpg",
-    "hall": "콘서트홀"
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF301003",
@@ -27860,8 +27860,8 @@ export const initialRealConcerts = [
     "title": "알버트 카노 스미트 피아노 리사이틀 [부산]",
     "date": "2026-12-09",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (챔버홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "알버트 카노 스미트 피아노 리사이틀"
     ],
@@ -27878,11 +27878,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301062_260916_134426.gif",
-    "hall": "콘서트홀"
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF300061",
@@ -28340,8 +28340,8 @@ export const initialRealConcerts = [
     "title": "송년 오페라 갈라, 카르멘 VS 카르멘 [부산]",
     "date": "2026-12-12",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "송년 오페라 갈라"
     ],
@@ -28358,7 +28358,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300857_260914_150241.gif",
@@ -28550,8 +28550,8 @@ export const initialRealConcerts = [
     "title": "크리스마스 영화음악 & 캐롤 FESTA [부산]",
     "date": "2026-12-13",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "크리스마스 영화음악 & 캐롤 FESTA"
     ],
@@ -28568,7 +28568,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부산콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298448_260813_141933.gif",
@@ -31401,8 +31401,8 @@ export const initialRealConcerts = [
     "title": "2027 부산콘서트홀 신년 오케스트라 페스티벌 (Busan Concert Hall New Year)",
     "date": "2027-01-29",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "최수열 (지휘)",
       "부산시립교향악단",
@@ -31423,7 +31423,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "2,000석 규모 빈야드형 부산콘서트홀에서 부산시민과 함께하는 2027 신년 클래식 대축제.",
     "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80",
@@ -31465,8 +31465,8 @@ export const initialRealConcerts = [
     "title": "부산콘서트홀 스프링 클래식: 스트라빈스키 봄의 제전",
     "date": "2027-03-27",
     "time": "19:30",
-    "venue": "부산콘서트홀",
-    "city": "부산/경남",
+    "venue": "부산콘서트홀 (콘서트홀)",
+    "city": "부산/울산/경남",
     "performers": [
       "김선욱 (지휘)",
       "KBS교향악단"
@@ -31485,7 +31485,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀",
+    "sourceHall": "부산콘서트홀 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "부산콘서트홀의 압도적인 음향으로 펼쳐지는 스트라빈스키 20세기 불멸의 걸작 봄의 제전.",
     "imageUrl": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80",

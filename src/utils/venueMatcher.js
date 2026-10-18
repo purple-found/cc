@@ -153,7 +153,34 @@ export function matchesVenueFilter(concert, filterVenue) {
     return true;
   }
 
-  // 4. 괄호가 포함된 일반 세부 홀 필터 처리 (예: '대전예술의전당 (아트홀)', '부천아트센터 (콘서트홀)', '성남아트센터 (앙상블씨어터)')
+  // 4. 부산콘서트홀 전용 정밀 매칭 (콘서트홀 vs 챔버홀 철저 분리)
+  if (filterVenue.includes('부산콘서트홀')) {
+    const normConcert = concertVenue.replace(/\s+/g, '');
+    if (!normConcert.includes('부산콘서트홀')) return false;
+
+    // 챔버홀 필터
+    if (filterVenue.includes('챔버홀') || filterVenue.includes('소공연장')) {
+      return (
+        concertHall.includes('챔버홀') ||
+        concertHall.includes('소공연장') ||
+        /\(챔버홀\)|\(소공연장\)/.test(concertVenue)
+      );
+    }
+
+    // 콘서트홀(메인홀) 필터
+    if (filterVenue.includes('(콘서트홀)') || filterVenue.includes('대공연장')) {
+      return (
+        (concertHall === '콘서트홀' || concertHall.includes('대공연장') || /\(콘서트홀\)|\(대공연장\)/.test(concertVenue)) &&
+        !concertHall.includes('챔버홀') &&
+        !concertVenue.includes('챔버홀')
+      );
+    }
+
+    // 부산콘서트홀 전체
+    return true;
+  }
+
+  // 5. 괄호가 포함된 일반 세부 홀 필터 처리 (예: '대전예술의전당 (아트홀)', '부천아트센터 (콘서트홀)', '성남아트센터 (앙상블씨어터)')
   const generalHallMatch = filterVenue.match(/^(.*?)\s*\(([^)]+)\)$/);
   if (generalHallMatch) {
     const baseVenue = generalHallMatch[1].trim();
