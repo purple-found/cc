@@ -13,5 +13,16 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api\/kopis/, '')
       }
     }
+  },
+  build: {
+    chunkSizeWarningLimit: 1200,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom'],
+          'vendor-icons': ['lucide-react']
+        }
+      }
+    }
   }
 });

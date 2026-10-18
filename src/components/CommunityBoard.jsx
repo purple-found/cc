@@ -40,7 +40,7 @@ export default function CommunityBoard({
   // New post form state
   const [formData, setFormData] = useState({
     title: '',
-    category: '관람 후기',
+    category: '클래식 수다',
     concertId: '',
     rating: 5,
     author: '',
@@ -58,7 +58,7 @@ export default function CommunityBoard({
     if (initialTargetConcert) {
       setFormData((prev) => ({
         ...prev,
-        category: '관람 후기',
+        category: '클래식 수다',
         concertId: initialTargetConcert.id
       }));
       setIsWriteModalOpen(true);
@@ -111,7 +111,7 @@ export default function CommunityBoard({
 
     setFormData({
       title: '',
-      category: '관람 후기',
+      category: '클래식 수다',
       concertId: '',
       rating: 5,
       author: '',
@@ -153,7 +153,7 @@ export default function CommunityBoard({
     setCommentInput({ author: '', content: '' });
   };
 
-  const categories = ['전체', '관람 후기', '클래식 수다'];
+  const categories = ['전체', '클래식 수다', '관람 후기'];
 
   return (
     <div className="space-y-6">
@@ -203,7 +203,7 @@ export default function CommunityBoard({
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="게시글 또는 공연명 검색"
+              placeholder="게시글 검색"
               className="w-full pl-9 pr-3 py-1.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-800 dark:text-stone-200 focus:outline-none focus:ring-2 focus:ring-concert-500"
             />
           </div>
@@ -559,8 +559,8 @@ export default function CommunityBoard({
                     onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                     className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                   >
-                    <option value="관람 후기">관람 후기</option>
                     <option value="클래식 수다">클래식 수다</option>
+                    <option value="관람 후기">관람 후기</option>
                   </select>
                 </div>
 

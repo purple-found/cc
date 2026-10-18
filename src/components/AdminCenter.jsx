@@ -1180,8 +1180,8 @@ export default function AdminCenter({
                   onChange={(e) => setEditingPost({ ...editingPost, category: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                 >
-                  <option value="관람 후기">관람 후기</option>
                   <option value="클래식 수다">클래식 수다</option>
+                  <option value="관람 후기">관람 후기</option>
                 </select>
               </div>
 
