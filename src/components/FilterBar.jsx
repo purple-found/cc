@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Search, RotateCcw, LayoutGrid, List, CalendarDays, Filter } from 'lucide-react';
 
 export default function FilterBar({
@@ -94,7 +94,21 @@ export default function FilterBar({
     { label: '쇼스타코비치 (Dmitri Shostakovich)', value: '쇼스타코비치' }
   ];
 
+  const [localSearch, setLocalSearch] = useState(filters.search || '');
+
+  // 외부(예: 초기화)에서 filters.search가 변경될 경우 localSearch 동기화
+  useEffect(() => {
+    setLocalSearch(filters.search || '');
+  }, [filters.search]);
+
+  // 검색 실행 핸들러 (검색 버튼 클릭 또는 엔터 키)
+  const handleSearchSubmit = (e) => {
+    if (e) e.preventDefault();
+    setFilters((prev) => ({ ...prev, search: localSearch.trim() }));
+  };
+
   const handleReset = () => {
+    setLocalSearch('');
     setFilters({
       search: '',
       venue: 'all',
@@ -107,6 +121,7 @@ export default function FilterBar({
 
   const isFiltered =
     filters.search ||
+    localSearch ||
     filters.venue !== 'all' ||
     filters.composer !== 'all' ||
     filters.dateRange !== 'all' ||
@@ -117,16 +132,23 @@ export default function FilterBar({
       {/* Top row: 검색창 바로 오른쪽에 초기화 & 보기 전환 버튼 항상 인라인 배치 */}
       <div className="flex items-center gap-2.5">
         {/* Bilingual Keyword Search (공연명, 작곡가, 연주자, 곡명 등) */}
-        <div className="relative flex-1 min-w-0">
-          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400 dark:text-stone-500" />
+        <form onSubmit={handleSearchSubmit} className="relative flex-1 min-w-0">
+          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400 dark:text-stone-500 pointer-events-none" />
           <input
             type="text"
-            value={filters.search}
-            onChange={(e) => setFilters({ ...filters, search: e.target.value })}
+            value={localSearch}
+            onChange={(e) => setLocalSearch(e.target.value)}
             placeholder="공연명, 작곡가, 연주자, 곡명 한글/영문 검색..."
-            className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs sm:text-sm text-stone-900 dark:text-stone-100 placeholder-stone-400 dark:placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-concert-500 truncate"
+            className="w-full pl-10 pr-20 py-2.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs sm:text-sm text-stone-900 dark:text-stone-100 placeholder-stone-400 dark:placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-concert-500 truncate"
           />
-        </div>
+          <button
+            type="submit"
+            className="absolute right-1.5 top-1/2 -translate-y-1/2 px-3.5 py-1.5 bg-concert-500 hover:bg-concert-600 active:scale-95 text-white rounded-lg text-xs font-semibold shadow-xs transition-all flex items-center gap-1 shrink-0 cursor-pointer"
+            title="검색 실행 (엔터키 또는 클릭)"
+          >
+            <span>검색</span>
+          </button>
+        </form>
 
         {/* View Mode & Reset Button (검색창 오른쪽 완벽 밀착) */}
         <div className="flex items-center gap-2 shrink-0">

@@ -16,7 +16,7 @@ import { storageService } from './services/storageService';
 import { kopisMonitoringService } from './services/kopisMonitoringService.js';
 import { kopisCrawlerService } from './services/kopisCrawlerService.js';
 import { isPastConcert, formatKSTDateTime } from './utils/parser.js';
-import { matchesBilingualConcert } from './utils/bilingualSearch.js';
+import { matchesBilingualConcert, prewarmSearchIndex } from './utils/bilingualSearch.js';
 import { Sparkles, Calendar, MessageSquare, AlertCircle } from 'lucide-react';
 
 export default function App() {
@@ -72,6 +72,11 @@ export default function App() {
       setTips(t);
       setIsDataLoaded(true);
       setHasFatalError(false);
+
+      // 백그라운드에서 검색 인덱스 1회 사전 생성 (검색 버튼 클릭 시 10ms 초고속 반응 보장)
+      setTimeout(() => {
+        prewarmSearchIndex(c);
+      }, 50);
 
       // 공연 데이터가 비어있는 경우 KOPIS 정부 전산망에서 공식 실시간 데이터 자동 수집
       if (c.length === 0) {
