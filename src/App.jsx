@@ -128,11 +128,11 @@ export default function App() {
   // 탭 변경 시 GA4 가상 페이지뷰 추적
   useEffect(() => {
     const tabTitles = {
-      concerts: '클래식 공연 탐색 | 오푸스 코리아',
-      community: '클래식 커뮤니티 | 오푸스 코리아',
-      admin: '관리자 센터 | 오푸스 코리아'
+      concerts: '클래식 공연 탐색 | CLASSICALENDER',
+      community: '클래식 커뮤니티 | CLASSICALENDER',
+      admin: '관리자 센터 | CLASSICALENDER'
     };
-    analyticsService.trackPageView(`/${activeTab}`, tabTitles[activeTab] || '오푸스 코리아');
+    analyticsService.trackPageView(`/${activeTab}`, tabTitles[activeTab] || 'CLASSICALENDER');
   }, [activeTab]);
 
   // 토스트 도우미

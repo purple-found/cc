@@ -26,11 +26,11 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-serif font-bold text-xl tracking-tight text-stone-900 dark:text-stone-100">
-                  OPUS KOREA
+                  CLASSICALENDER
                 </span>
               </div>
               <p className="text-xs text-stone-500 dark:text-stone-400 font-medium">
-                선율이 머무는 곳, 클래식 모아보기
+                선율이 머무는 곳, 클래식 공연 일정
               </p>
             </div>
           </div>

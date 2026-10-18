@@ -18,18 +18,18 @@ export default function Footer({ onOpenAdminAuth }) {
               <div>
                 <div className="flex items-center gap-2">
                   <span className="font-serif font-bold text-base tracking-tight text-stone-900 dark:text-stone-100">
-                    OPUS KOREA
+                    CLASSICALENDER
                   </span>
                 </div>
                 <p className="text-[10px] sm:text-[10.5px] text-stone-500 dark:text-stone-400 font-medium leading-tight">
-                  선율이 머무는 곳, 클래식 모아보기
+                  선율이 머무는 곳, 클래식 공연 일정
                 </p>
               </div>
             </div>
 
             {/* Bottom row: Copyright aligned with music icon starting line */}
             <div className="text-xs text-stone-400 dark:text-stone-500 tracking-tight text-left">
-              <span>© 2026 OPUS KOREA. 모든 음악의 울림과 함께합니다.</span>
+              <span>© 2026 CLASSICALENDER. 모든 음악의 울림과 함께합니다.</span>
             </div>
           </div>
         </div>
