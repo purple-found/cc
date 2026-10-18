@@ -143,7 +143,7 @@ export default function FilterBar({
           />
           <button
             type="submit"
-            className="absolute right-1.5 top-1/2 -translate-y-1/2 px-3.5 py-1.5 bg-concert-500 hover:bg-concert-600 active:scale-95 text-white rounded-lg text-xs font-semibold shadow-xs transition-all flex items-center gap-1 shrink-0 cursor-pointer"
+            className="absolute right-1.5 top-1/2 -translate-y-1/2 px-3.5 py-1.5 bg-gradient-to-br from-[#24140e] via-[#3d2015] to-[#1a0c07] text-[#f6e5c5] border border-[#753d22]/80 hover:border-[#b88648]/80 hover:from-[#2e1a12] hover:to-[#221009] active:scale-95 rounded-lg text-xs font-semibold shadow-xs transition-all flex items-center gap-1 shrink-0 cursor-pointer"
             title="검색 실행 (엔터키 또는 클릭)"
           >
             <span>검색</span>

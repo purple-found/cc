@@ -332,6 +332,19 @@ export default function App() {
           <section className="space-y-6">
             {/* Hero Banner: Satin Gloss Deep-Brown Instrument Wood Varnish Tone */}
             <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#24140e] via-[#3d2015] to-[#1a0c07] text-white p-8 sm:p-10 shadow-2xl border border-[#522b1c]/60">
+              {/* Semi-transparent artistic classical cello image on the right (Copyright-free asset) */}
+              <div className="absolute right-0 top-0 bottom-0 w-full sm:w-3/5 lg:w-1/2 pointer-events-none overflow-hidden select-none">
+                <img
+                  src="/images/banner_cello.jpg"
+                  alt="Classic Cello"
+                  className="w-full h-full object-cover object-right opacity-35 mix-blend-screen"
+                  style={{
+                    maskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 25%, black 100%)',
+                    WebkitMaskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 25%, black 100%)'
+                  }}
+                />
+              </div>
+
               {/* Satin gloss & wood shimmer overlay */}
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#874b26]/15 to-white/[0.08] pointer-events-none" />
               <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#9b582b]/20 rounded-full blur-3xl pointer-events-none" />
