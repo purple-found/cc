@@ -11,8 +11,8 @@ export default function InitialDiscoveryGuide({
   const quickVenues = [
     { label: '예술의전당', value: '예술의전당' },
     { label: '롯데콘서트홀', value: '롯데콘서트홀' },
-    { label: '부산콘서트홀', value: '부산콘서트홀' },
     { label: '부천아트센터', value: '부천아트센터' },
+    { label: '부산콘서트홀', value: '부산콘서트홀' },
     { label: '대구콘서트하우스', value: '대구콘서트하우스' }
   ];
 
