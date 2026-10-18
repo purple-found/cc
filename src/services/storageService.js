@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v11: 세부 홀 정보 (콘서트홀, IBK챔버홀, 리사이틀홀, 인춘아트홀 등) 100% 동기화
-const CONCERTS_KEY = 'opus_korea_concerts_v11';
+// v13: 예술의전당 및 대한민국 주요 복합공연장 세부 홀 및 실제 클래식 연주 프로그램 100% 동기화
+const CONCERTS_KEY = 'opus_korea_concerts_v13';
 const HALLS_KEY = 'opus_korea_halls_v3';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -20,7 +20,9 @@ try {
       'opus_korea_concerts_v7',
       'opus_korea_concerts_v8',
       'opus_korea_concerts_v9',
-      'opus_korea_concerts_v10'
+      'opus_korea_concerts_v10',
+      'opus_korea_concerts_v11',
+      'opus_korea_concerts_v12'
     ].forEach((k) => {
       localStorage.removeItem(k);
     });
@@ -37,7 +39,7 @@ export const storageService = {
       }
       const raw = localStorage.getItem(CONCERTS_KEY);
       if (!raw) {
-        // 최초 로드시 KOPIS 실존 공식 공연 999건 자동 캐싱 (세부 홀 정보 포함)
+        // 최초 로드시 KOPIS 실존 공식 공연 999건 자동 캐싱 (세부 홀 정보 및 실제 레퍼토리 포함)
         localStorage.setItem(CONCERTS_KEY, JSON.stringify(initialRealConcerts || []));
         return initialRealConcerts || [];
       }
@@ -45,14 +47,23 @@ export const storageService = {
       if (!Array.isArray(parsed) || parsed.length === 0) {
         return initialRealConcerts || [];
       }
-      // 세부 홀(hall) 정보가 누락된 경우 initialRealConcerts와 즉각 병합
+      // 세부 홀(hall) 정보나 프로그램이 최신화되지 않은 경우 initialRealConcerts와 즉각 병합
       const initialMap = new Map((initialRealConcerts || []).map(c => [c.id || c.kopisId, c]));
       let hasUpdate = false;
       const synced = parsed.map(c => {
         const init = initialMap.get(c.id || c.kopisId);
-        if (init && (!c.hall || c.hall === '공연홀' || !c.venue.includes('('))) {
-          hasUpdate = true;
-          return { ...c, hall: init.hall || c.hall, venue: init.venue || c.venue };
+        if (init) {
+          const needsHallUpdate = init.hall && c.hall !== init.hall;
+          const needsPiecesUpdate = init.pieces && (!c.pieces || c.pieces.length === 0 || c.pieces[0].endsWith('프로그램'));
+          if (needsHallUpdate || needsPiecesUpdate) {
+            hasUpdate = true;
+            return {
+              ...c,
+              hall: init.hall !== undefined ? init.hall : c.hall,
+              venue: init.venue || c.venue,
+              pieces: init.pieces || c.pieces
+            };
+          }
         }
         return c;
       });
