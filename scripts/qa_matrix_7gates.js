@@ -200,7 +200,7 @@ try {
     title: '동기화 테스트 글',
     content: '내용입니다',
     author: '테스터',
-    category: '기대평',
+    category: '관람 후기',
     ip: '192.168.0.10'
   });
   const postId = newPost[0].id;
@@ -396,12 +396,12 @@ try {
   const bilingualStravinskyPassed = matchesBilingualConcert(stravinskyConcert, '스트라빈스키') && matchesBilingualConcert(stravinskyConcert, '봄의 제전');
   const bilingualSearchPassed = bilingualChopinPassed && bilingualStravinskyPassed;
 
-  // 페르소나 2: 관람객 커뮤니티 활동 (기대평 작성 -> 공감 클릭 -> 댓글 작성 -> IP 기록)
+  // 페르소나 2: 관람객 커뮤니티 활동 (관람 후기 작성 -> 공감 클릭 -> 댓글 작성 -> IP 기록)
   const userPost = storageService.addPost({
-    title: 'E2E 테스트 기대평: 꼭 가고 싶습니다!',
+    title: 'E2E 테스트 관람 후기: 꼭 가고 싶습니다!',
     content: '무대 음향이 너무나 기대됩니다.',
     author: '관람객1호',
-    category: '기대평',
+    category: '관람 후기',
     ip: '112.170.50.1',
     concertId: filteredBrahms[0]?.id
   });
@@ -472,7 +472,7 @@ try {
   if (foundBrahmsConcert && foundMahlerEnglish && bilingualSearchPassed && persona2Success && hasBlockedHallDetected && persona3Success && persona4Success && persona5Success) {
     gateResults.gate7 = true;
     console.log(`  ${GREEN}✓${RESET} 페르소나 1 (일반 관람객): 한글/영문 양방향 필터링(쇼팽<->Chopin, 스트라빈스키<->Stravinsky) 통과`);
-    console.log(`  ${GREEN}✓${RESET} 페르소나 2 (커뮤니티 유저): 기대평 작성-댓글-공감 및 IP 로깅 라이프사이클 통과`);
+    console.log(`  ${GREEN}✓${RESET} 페르소나 2 (커뮤니티 유저): 관람 후기 작성-댓글-공감 및 IP 로깅 라이프사이클 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 3 (공연장 관리자): 차단 공연장 감지 및 수동 등록-실시간 반영 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 4 (권한 격리 워크플로우): 일반 사용자 공연 제보 -> 관리자 승인 후 공식 등록 완주`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 5 (관리자 거버넌스): 부적절 글/댓글 수정·삭제 및 악성 이용자 IP 차단 워크플로우 완주`);

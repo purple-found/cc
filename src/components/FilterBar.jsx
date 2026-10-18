@@ -138,7 +138,7 @@ export default function FilterBar({
             type="text"
             value={localSearch}
             onChange={(e) => setLocalSearch(e.target.value)}
-            placeholder="공연명, 작곡가, 연주자, 곡명 한글/영문 검색..."
+            placeholder="공연명, 작곡가, 연주자, 곡명 한글/영문 검색"
             className="w-full pl-10 pr-20 py-2.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs sm:text-sm text-stone-900 dark:text-stone-100 placeholder-stone-400 dark:placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-concert-500 truncate"
           />
           <button

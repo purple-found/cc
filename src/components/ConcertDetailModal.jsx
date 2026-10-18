@@ -210,7 +210,7 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
           <div className="pt-2 border-t border-stone-200 dark:border-hall-800 space-y-3">
             <div className="flex items-center justify-between">
               <h4 className="font-serif font-bold text-sm text-stone-900 dark:text-stone-100">
-                이 공연에 남겨진 기대평 & 후기 ({relatedPosts.length}개)
+                이 공연에 남겨진 관람 후기 ({relatedPosts.length}개)
               </h4>
               <button
                 onClick={() => {
@@ -226,7 +226,7 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
 
             {relatedPosts.length === 0 ? (
               <p className="text-xs text-stone-400 dark:text-stone-500 py-3 text-center">
-                아직 등록된 후기나 기대평이 없습니다. 첫 번째 이야기를 남겨보세요!
+                아직 등록된 관람 후기가 없습니다. 첫 번째 이야기를 남겨보세요!
               </p>
             ) : (
               <div className="space-y-2">

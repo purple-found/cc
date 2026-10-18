@@ -68,7 +68,7 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
             <button
               onClick={onOpenTipModal}
               className="flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-lg bg-concert-50 dark:bg-hall-800 border border-concert-300/80 dark:border-hall-700 text-concert-800 dark:text-concert-300 hover:bg-concert-100 dark:hover:bg-hall-700 transition-colors shrink-0"
-              title="누락되었거나 크롤링 차단된 공연 일정을 관리자에게 제보하기"
+              title="누락된 공연이나 정보를 관리자에게 제보해주세요"
             >
               <Sparkles className="w-3.5 h-3.5 text-concert-600 dark:text-concert-400" />
               <span>공연 제보하기</span>

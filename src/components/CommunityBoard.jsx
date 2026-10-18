@@ -40,7 +40,7 @@ export default function CommunityBoard({
   // New post form state
   const [formData, setFormData] = useState({
     title: '',
-    category: '기대평',
+    category: '관람 후기',
     concertId: '',
     rating: 5,
     author: '',
@@ -58,7 +58,7 @@ export default function CommunityBoard({
     if (initialTargetConcert) {
       setFormData((prev) => ({
         ...prev,
-        category: '기대평',
+        category: '관람 후기',
         concertId: initialTargetConcert.id
       }));
       setIsWriteModalOpen(true);
@@ -111,7 +111,7 @@ export default function CommunityBoard({
 
     setFormData({
       title: '',
-      category: '기대평',
+      category: '관람 후기',
       concertId: '',
       rating: 5,
       author: '',
@@ -153,7 +153,7 @@ export default function CommunityBoard({
     setCommentInput({ author: '', content: '' });
   };
 
-  const categories = ['전체', '기대평', '관람 후기', '클래식 수다'];
+  const categories = ['전체', '관람 후기', '클래식 수다'];
 
   return (
     <div className="space-y-6">
@@ -203,7 +203,7 @@ export default function CommunityBoard({
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="게시글 또는 공연명 검색..."
+              placeholder="게시글 또는 공연명 검색"
               className="w-full pl-9 pr-3 py-1.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-800 dark:text-stone-200 focus:outline-none focus:ring-2 focus:ring-concert-500"
             />
           </div>
@@ -297,11 +297,11 @@ export default function CommunityBoard({
               <MessageCircle className="w-7 h-7" />
             </div>
             <h3 className="text-base font-serif font-bold text-stone-800 dark:text-stone-200">
-              아직 등록된 후기 및 기대평이 없습니다
+              아직 등록된 게시글이 없습니다
             </h3>
             <p className="text-xs text-stone-500 dark:text-stone-400 max-w-sm mx-auto leading-relaxed">
               관람객 여러분의 실제 목소리로 채워지는 공간입니다.<br />
-              무대에 대한 설렘이나 감상을 첫 번째로 남겨보세요!
+              무대에 대한 감상이나 이야기를 첫 번째로 남겨보세요!
             </p>
             <button
               onClick={() => setIsWriteModalOpen(true)}
@@ -322,11 +322,9 @@ export default function CommunityBoard({
                 <div className="flex items-center gap-2">
                   <span
                     className={`px-2.5 py-0.5 rounded-md text-[11px] font-bold ${
-                      post.category === '기대평'
+                      post.category === '관람 후기'
                         ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300'
-                        : post.category === '관람 후기'
-                        ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300'
-                        : 'bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300'
+                        : 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300'
                     }`}
                   >
                     {post.category}
@@ -561,7 +559,6 @@ export default function CommunityBoard({
                     onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                     className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                   >
-                    <option value="기대평">기대평</option>
                     <option value="관람 후기">관람 후기</option>
                     <option value="클래식 수다">클래식 수다</option>
                   </select>
