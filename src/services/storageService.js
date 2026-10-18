@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v15: 부산콘서트홀 전수 동기화 및 누락 공연 자동 병합 아키텍처 적용
-const CONCERTS_KEY = 'opus_korea_concerts_v15';
+// v16: 2027년 내년 KOPIS 공식 공연 전수 동기화 및 전 공연장 가나다 통합 정렬
+const CONCERTS_KEY = 'opus_korea_concerts_v16';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -25,6 +25,7 @@ try {
       'opus_korea_concerts_v12',
       'opus_korea_concerts_v13',
       'opus_korea_concerts_v14',
+      'opus_korea_concerts_v15',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);

@@ -17,17 +17,18 @@ export default function InitialDiscoveryGuide({
   ];
 
   const quickComposers = [
-    { label: '쇼팽', value: '쇼팽' },
     { label: '베토벤', value: '베토벤' },
-    { label: '라흐마니노프', value: '라흐마니노프' },
+    { label: '쇼팽', value: '쇼팽' },
+    { label: '브람스', value: '브람스' },
     { label: '말러', value: '말러' },
-    { label: '브람스', value: '브람스' }
+    { label: '라흐마니노프', value: '라흐마니노프' }
   ];
 
   const quickDates = [
     { label: '2026년 10월', value: '2026-10' },
     { label: '2026년 11월', value: '2026-11' },
-    { label: '2026년 12월', value: '2026-12' }
+    { label: '2026년 12월', value: '2026-12' },
+    { label: '2027년 (내년)', value: '2027' }
   ];
 
   return (

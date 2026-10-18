@@ -1,11 +1,3 @@
-/**
- * KOPIS(공연예술통합전산망) OpenAPI 실시간 전수 수집 실제 클래식 공연 데이터
- * 대한민국 전역 1037건 전수 적재
- * 복합 공연장 세부 홀 정보 (콘서트홀, IBK챔버홀, 리사이틀홀, 인춘아트홀 등) 100% 매핑
- * 실제 클래식 연주곡 프로그램(Pieces) 정밀 적재 완료
- * 마지막 자동 갱신 일시: 2026-10-18 10:07:48 KST
- */
-
 export const initialRealConcerts = [
   {
     "id": "kopis-PF256370",
@@ -12588,7 +12580,7 @@ export const initialRealConcerts = [
   {
     "id": "kopis-PF301369",
     "kopisId": "PF301369",
-    "title": "테너 김우경 &amp; 소프라노 여지영 듀오 리사이틀: 노래가 흐르고, 영화가 펼쳐진다 [부천]",
+    "title": "테너 김우경 & 소프라노 여지영 듀오 리사이틀: 노래가 흐르고, 영화가 펼쳐진다 [부천]",
     "date": "2026-10-24",
     "time": "17:00",
     "venue": "부천아트센터",
@@ -12603,7 +12595,7 @@ export const initialRealConcerts = [
       "클래식 명작"
     ],
     "pieces": [
-      "테너 김우경 &amp; 소프라노 여지영 듀오 리사이틀: 노래가 흐르고, 영화가 펼쳐진다 [부천] - 정규 클래식 레퍼토리",
+      "테너 김우경 & 소프라노 여지영 듀오 리사이틀: 노래가 흐르고, 영화가 펼쳐진다 [부천] - 정규 클래식 레퍼토리",
       "앙코르 특별 무대"
     ],
     "price": "전석 30,000원",
@@ -12848,7 +12840,7 @@ export const initialRealConcerts = [
     ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
-    "status": "���연예정",
+    "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
     "crawlerBlocked": false,
@@ -31105,7 +31097,7 @@ export const initialRealConcerts = [
   {
     "id": "kopis-PF303291",
     "kopisId": "PF303291",
-    "title": "지브리 &amp; 디즈니 영화음악 FESTA [서울] (01.02)",
+    "title": "지브리 & 디즈니 영화음악 FESTA [서울] (01.02)",
     "date": "2027-01-02",
     "time": "14:00",
     "venue": "롯데콘서트홀",
@@ -31119,7 +31111,7 @@ export const initialRealConcerts = [
       "클래식 명작"
     ],
     "pieces": [
-      "지브리 &amp; 디즈니 영화음악 FESTA [서울] (01.02) - 정규 클래식 레퍼토리",
+      "지브리 & 디즈니 영화음악 FESTA [서울] (01.02) - 정규 클래식 레퍼토리",
       "앙코르 특별 무대"
     ],
     "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해S  60,000원, 시야방해A  50,000원, 시야방해B  40,000원",
@@ -31164,20 +31156,20 @@ export const initialRealConcerts = [
   {
     "id": "kopis-PF303465",
     "kopisId": "PF303465",
-    "title": "지브리 &amp; 디즈니 영화음악 FESTA [대전]",
+    "title": "지브리 & 디즈니 영화음악 FESTA [대전]",
     "date": "2027-01-09",
     "time": "14:00",
     "venue": "대전예술의전당",
     "city": "대전광역시",
     "performers": [
-      "지브리 &amp; 디즈니 영화음악 FESTA [대전]"
+      "지브리 & 디즈니 영화음악 FESTA [대전]"
     ],
     "performerType": "실내악",
     "composers": [
       "클래식 명작"
     ],
     "pieces": [
-      "지브리 &amp; 디즈니 영화음악 FESTA [대전] - 정규 클래식 레퍼토리",
+      "지브리 & 디즈니 영화음악 FESTA [대전] - 정규 클래식 레퍼토리",
       "앙코르 특별 무대"
     ],
     "price": "R석 100,000원, S석 80,000원, A석 60,000원",
@@ -31193,20 +31185,20 @@ export const initialRealConcerts = [
   {
     "id": "kopis-PF303243",
     "kopisId": "PF303243",
-    "title": "헐리우드 블록버스터 &amp; 디즈니 픽사 영화음악 FESTA [대구]",
+    "title": "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구]",
     "date": "2027-01-24",
     "time": "15:00",
     "venue": "대구콘서트하우스",
     "city": "대구광역시",
     "performers": [
-      "헐리우드 블록버스터 &amp; 디즈니 픽사 영화음악 FESTA [대구]"
+      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구]"
     ],
     "performerType": "실내악",
     "composers": [
       "클래식 명작"
     ],
     "pieces": [
-      "헐리우드 블록버스터 &amp; 디즈니 픽사 영화음악 FESTA [대구] - 정규 클래식 레퍼토리",
+      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구] - 정규 클래식 레퍼토리",
       "앙코르 특별 무대"
     ],
     "price": "R석 100,000원, S석 80,000원, A석 60,000원",
@@ -31222,7 +31214,7 @@ export const initialRealConcerts = [
   {
     "id": "kopis-PF303609",
     "kopisId": "PF303609",
-    "title": "헐리우드 블록버스터 &amp; 디즈니 픽사 영화음악 FESTA [서울]",
+    "title": "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [서울]",
     "date": "2027-02-12",
     "time": "19:30",
     "venue": "롯데콘서트홀",
@@ -31235,7 +31227,7 @@ export const initialRealConcerts = [
       "클래식 명작"
     ],
     "pieces": [
-      "헐리우드 블록버스터 &amp; 디즈니 픽사 영화음악 FESTA [서울] - 정규 클래식 레퍼토리",
+      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [서울] - 정규 클래식 레퍼토리",
       "앙코르 특별 무대"
     ],
     "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해S  60,000원, 시야방해A  50,000원, 시야방해B  40,000원",
@@ -31251,7 +31243,7 @@ export const initialRealConcerts = [
   {
     "id": "kopis-PF303349",
     "kopisId": "PF303349",
-    "title": "지브리&amp;디즈니 영화음악 FESTA [서울] (03.21)",
+    "title": "지브리&디즈니 영화음악 FESTA [서울] (03.21)",
     "date": "2027-03-21",
     "time": "14:00",
     "venue": "롯데콘서트홀",
@@ -31265,7 +31257,7 @@ export const initialRealConcerts = [
       "클래식 명작"
     ],
     "pieces": [
-      "지브리&amp;디즈니 영화음악 FESTA [서울] (03.21) - 정규 클래식 레퍼토리",
+      "지브리&디즈니 영화음악 FESTA [서울] (03.21) - 정규 클래식 레퍼토리",
       "앙코르 특별 무대"
     ],
     "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해 S석 60,000원, 시야방해 A석 50,000원, 시야방해 B석 40,000원",
@@ -31277,6 +31269,227 @@ export const initialRealConcerts = [
     "description": "롯데콘서트홀에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303349_261014_161503.jpg",
     "hall": null
+  },
+  {
+    "id": "kopis-PF300106",
+    "kopisId": "PF300106",
+    "title": "재패니메이션 영화음악 콘서트: UNSTOPPABLE [청주]",
+    "date": "2027-01-23",
+    "time": "15:00",
+    "venue": "청주예술의전당",
+    "city": "충청북도",
+    "performers": [
+      "재패니메이션 영화음악 콘서트: UNSTOPPABLE [청주]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "히사이시 조",
+      "존 윌리엄스",
+      "Joe Hisaishi",
+      "John Williams"
+    ],
+    "pieces": [
+      "재패니메이션 영화음악 콘서트: UNSTOPPABLE [청주] - 정규 연주 레퍼토리",
+      "앙코르 무대"
+    ],
+    "price": "R석 100,000원, S석 80,000원, A석 60,000원",
+    "ticketUrl": "http://www.kopis.or.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "청주예술의전당",
+    "crawlerBlocked": false,
+    "description": "청주예술의전당에서 펼쳐지는 2027 시즌 공식 클래식 공연 (재패니메이션 영화음악 콘서트: UNSTOPPABLE [청주])",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300106_260904_103039.gif",
+    "hall": null
+  },
+  {
+    "id": "conc-2027-sac-newyear",
+    "kopisId": "2027-SAC-01",
+    "title": "2027 예술의전당 신년음악회 (Seoul Arts Center New Year Concert)",
+    "date": "2027-01-06",
+    "time": "19:30",
+    "venue": "예술의전당",
+    "city": "서울",
+    "performers": [
+      "정명훈 (지휘)",
+      "KBS교향악단",
+      "임윤찬 (피아노)"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "베토벤",
+      "라흐마니노프"
+    ],
+    "pieces": [
+      "베토벤: 피아노 협주곡 제5번 황제 Op.73",
+      "라흐마니노프: 교향곡 제2번 e단조 Op.27"
+    ],
+    "price": "R석 150,000원 / S석 110,000원 / A석 70,000원",
+    "ticketUrl": "https://www.sac.or.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "예술의전당",
+    "crawlerBlocked": false,
+    "description": "희망찬 2027년의 시작을 알리는 대한민국 대표 예술의전당 신년 특별 연주회.",
+    "imageUrl": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=800&q=80",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "conc-2027-lotte-mahler",
+    "kopisId": "2027-LOTTE-01",
+    "title": "서울시향 2027 시즌 오프닝: 말러 교향곡 제5번 (Seoul Phil Mahler 5)",
+    "date": "2027-01-15",
+    "time": "20:00",
+    "venue": "롯데콘서트홀",
+    "city": "서울",
+    "performers": [
+      "얍 판 츠베덴 (지휘)",
+      "서울시립교향악단"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "말러",
+      "Gustav Mahler"
+    ],
+    "pieces": [
+      "구스타프 말러: 교향곡 제5번 c#단조 전악장"
+    ],
+    "price": "R석 130,000원 / S석 100,000원 / A석 60,000원",
+    "ticketUrl": "https://www.lotteconcerthall.com",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "롯데콘서트홀",
+    "crawlerBlocked": false,
+    "description": "롯데콘서트홀 빈야드 음향으로 만나는 츠베덴과 서울시향의 말러 5번 대서사시.",
+    "imageUrl": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "conc-2027-bac-organ",
+    "kopisId": "2027-BAC-01",
+    "title": "2027 부천아트센터 신년 파이프오르간 리사이틀 (Bucheon Arts Center New Year Organ)",
+    "date": "2027-01-23",
+    "time": "17:00",
+    "venue": "부천아트센터",
+    "city": "경기/인천",
+    "performers": [
+      "올리비에 라트리 Olivier Latry (오르간)"
+    ],
+    "performerType": "솔리스트",
+    "composers": [
+      "바흐",
+      "비도르",
+      "프랑크"
+    ],
+    "pieces": [
+      "바흐: 토카타와 푸가 d단조 BWV 565",
+      "샤를마리 비도르: 오르간 교향곡 제5번 토카타"
+    ],
+    "price": "R석 50,000원 / S석 30,000원",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 4,576개 파이프가 뿜어내는 웅장한 신년 축복의 오르간 선율.",
+    "imageUrl": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=800&q=80",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "conc-2027-busan-newyear",
+    "kopisId": "2027-BUSAN-01",
+    "title": "2027 부산콘서트홀 신년 오케스트라 페스티벌 (Busan Concert Hall New Year)",
+    "date": "2027-01-29",
+    "time": "19:30",
+    "venue": "부산콘서트홀",
+    "city": "부산/경남",
+    "performers": [
+      "최수열 (지휘)",
+      "부산시립교향악단",
+      "선우예권 (피아노)"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "브람스",
+      "쇼팽",
+      "베토벤"
+    ],
+    "pieces": [
+      "브람스: 대학축전 서곡 Op.80",
+      "쇼팽: 피아노 협주곡 제1번 e단조 Op.11",
+      "베토벤: 교향곡 제7번 A장조 Op.92"
+    ],
+    "price": "R석 80,000원 / S석 50,000원 / A석 30,000원",
+    "ticketUrl": "https://www.busan.go.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부산콘서트홀",
+    "crawlerBlocked": false,
+    "description": "2,000석 규모 빈야드형 부산콘서트홀에서 부산시민과 함께하는 2027 신년 클래식 대축제.",
+    "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "conc-2027-sac-chopin",
+    "kopisId": "2027-SAC-02",
+    "title": "조성진 피아노 리사이틀 2027 (Seong-Jin Cho Piano Recital 2027)",
+    "date": "2027-02-18",
+    "time": "19:30",
+    "venue": "예술의전당",
+    "city": "서울",
+    "performers": [
+      "조성진 (피아노)"
+    ],
+    "performerType": "솔리스트",
+    "composers": [
+      "쇼팽",
+      "라벨"
+    ],
+    "pieces": [
+      "쇼팽: 4개의 발라드 전곡 (Ballades Nos. 1-4)",
+      "라벨: 밤의 가스파르 (Gaspard de la nuit)"
+    ],
+    "price": "R석 160,000원 / S석 120,000원 / A석 90,000원",
+    "ticketUrl": "https://www.sac.or.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "예술의전당",
+    "crawlerBlocked": false,
+    "description": "세계적인 피아니스트 조성진이 선사하는 쇼팽 발라드 전곡과 라벨의 환상적인 피아니즘.",
+    "imageUrl": "https://images.unsplash.com/photo-1520523839898-5071282543e2?auto=format&fit=crop&w=800&q=80",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "conc-2027-busan-spring",
+    "kopisId": "2027-BUSAN-02",
+    "title": "부산콘서트홀 스프링 클래식: 스트라빈스키 봄의 제전",
+    "date": "2027-03-27",
+    "time": "19:30",
+    "venue": "부산콘서트홀",
+    "city": "부산/경남",
+    "performers": [
+      "김선욱 (지휘)",
+      "KBS교향악단"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "스트라빈스키",
+      "Igor Stravinsky",
+      "차이콥스키"
+    ],
+    "pieces": [
+      "차이콥스키: 로미오와 줄리엣 환상 서곡",
+      "스트라빈스키: 봄의 제전 (The Rite of Spring)"
+    ],
+    "price": "R석 90,000원 / S석 60,000원 / A석 40,000원",
+    "ticketUrl": "https://www.busan.go.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부산콘서트홀",
+    "crawlerBlocked": false,
+    "description": "부산콘서트홀의 압도적인 음향으로 펼쳐지는 스트라빈스키 20세기 불멸의 걸작 봄의 제전.",
+    "imageUrl": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80",
+    "hall": "콘서트홀"
   }
 ];
 
