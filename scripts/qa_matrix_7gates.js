@@ -382,6 +382,20 @@ try {
   );
   const foundMahlerEnglish = filteredMahlerEnglish.length > 0;
 
+  // 양방향 지능형 검색 (한글 작품 -> 영문 검색, 영문 작품 -> 한글 검색, vice-versa) 검증
+  const { matchesBilingualConcert } = await import('../src/utils/bilingualSearch.js');
+  const chopinConcert = {
+    title: '손열음 피아노 리사이틀',
+    pieces: ['쇼팽: 24개의 전주곡 Op.28 전곡']
+  };
+  const stravinskyConcert = {
+    title: '현대음악 페스티벌',
+    pieces: ['Igor Stravinsky: The Rite of Spring']
+  };
+  const bilingualChopinPassed = matchesBilingualConcert(chopinConcert, 'chopin') && matchesBilingualConcert(chopinConcert, 'chopin prelude');
+  const bilingualStravinskyPassed = matchesBilingualConcert(stravinskyConcert, '스트라빈스키') && matchesBilingualConcert(stravinskyConcert, '봄의 제전');
+  const bilingualSearchPassed = bilingualChopinPassed && bilingualStravinskyPassed;
+
   // 페르소나 2: 관람객 커뮤니티 활동 (기대평 작성 -> 공감 클릭 -> 댓글 작성 -> IP 기록)
   const userPost = storageService.addPost({
     title: 'E2E 테스트 기대평: 꼭 가고 싶습니다!',
@@ -455,9 +469,9 @@ try {
   const postsAfterDelete = storageService.deletePost(abusivePostId);
   const persona5Success = isAbusiveIpBlocked && !postsAfterDelete.some(p => p.id === abusivePostId);
 
-  if (foundBrahmsConcert && foundMahlerEnglish && persona2Success && hasBlockedHallDetected && persona3Success && persona4Success && persona5Success) {
+  if (foundBrahmsConcert && foundMahlerEnglish && bilingualSearchPassed && persona2Success && hasBlockedHallDetected && persona3Success && persona4Success && persona5Success) {
     gateResults.gate7 = true;
-    console.log(`  ${GREEN}✓${RESET} 페르소나 1 (일반 관람객): 한글/영문 양방향 필터링 및 2026년 10월 공연 탐색 통과`);
+    console.log(`  ${GREEN}✓${RESET} 페르소나 1 (일반 관람객): 한글/영문 양방향 필터링(쇼팽<->Chopin, 스트라빈스키<->Stravinsky) 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 2 (커뮤니티 유저): 기대평 작성-댓글-공감 및 IP 로깅 라이프사이클 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 3 (공연장 관리자): 차단 공연장 감지 및 수동 등록-실시간 반영 통과`);
     console.log(`  ${GREEN}✓${RESET} 페르소나 4 (권한 격리 워크플로우): 일반 사용자 공연 제보 -> 관리자 승인 후 공식 등록 완주`);

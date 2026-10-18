@@ -21,6 +21,7 @@ import {
 import { formatKSTDateTime } from '../utils/parser.js';
 import { ipService } from '../services/ipService.js';
 import { storageService } from '../services/storageService.js';
+import { matchesBilingualConcert } from '../utils/bilingualSearch.js';
 
 export default function CommunityBoard({
   posts,
@@ -64,15 +65,20 @@ export default function CommunityBoard({
     }
   }, [initialTargetConcert]);
 
-  // 카테고리 필터링 및 검색
+  // 카테고리 필터링 및 검색 (한국어/영문 양방향 지능형 검색 적용)
   const filteredPosts = posts.filter((p) => {
     const matchCat = selectedCategory === '전체' || p.category === selectedCategory;
     const matchSearch =
       !searchQuery ||
-      p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.content.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (p.concertTitle && p.concertTitle.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      p.author.toLowerCase().includes(searchQuery.toLowerCase());
+      matchesBilingualConcert(
+        {
+          title: p.title,
+          description: p.content,
+          pieces: p.concertTitle ? [p.concertTitle] : [],
+          performers: [p.author]
+        },
+        searchQuery
+      );
     return matchCat && matchSearch;
   });
 

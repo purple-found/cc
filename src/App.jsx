@@ -16,6 +16,7 @@ import { storageService } from './services/storageService';
 import { kopisMonitoringService } from './services/kopisMonitoringService.js';
 import { kopisCrawlerService } from './services/kopisCrawlerService.js';
 import { isPastConcert, formatKSTDateTime } from './utils/parser.js';
+import { matchesBilingualConcert } from './utils/bilingualSearch.js';
 import { Sparkles, Calendar, MessageSquare, AlertCircle } from 'lucide-react';
 
 export default function App() {
@@ -216,18 +217,10 @@ export default function App() {
   // 필터링된 공연 목록 계산 (한국어/영어 양방향 다차원 검색)
   const filteredConcerts = useMemo(() => {
     return concerts.filter((c) => {
-      // 1. 한국어/영문 통합 검색어 필터 (제목, 작곡가, 협연자, 연주곡, 공연장, 도시, 설명)
+      // 1. 한국어/영문 완벽 양방향 통합 검색 (작품명, 작곡가, 연주자, 공연장, 세부홀, 도시, 설명)
+      // 예: 작품에 '쇼팽' -> 'chopin' 검색 시 매칭, 작품에 'stravinsky' -> '스트라빈스키' 검색 시 매칭
       if (filters.search) {
-        const query = filters.search.trim().toLowerCase();
-        const titleMatch = (c.title || '').toLowerCase().includes(query);
-        const composerMatch = (c.composers || []).some((comp) => comp.toLowerCase().includes(query));
-        const performerMatch = (c.performers || []).some((perf) => perf.toLowerCase().includes(query));
-        const pieceMatch = (c.pieces || []).some((pc) => pc.toLowerCase().includes(query));
-        const venueMatch = (c.venue || '').toLowerCase().includes(query);
-        const cityMatch = (c.city || '').toLowerCase().includes(query);
-        const descMatch = (c.description || '').toLowerCase().includes(query);
-
-        if (!titleMatch && !composerMatch && !performerMatch && !pieceMatch && !venueMatch && !cityMatch && !descMatch) {
+        if (!matchesBilingualConcert(c, filters.search)) {
           return false;
         }
       }
@@ -263,10 +256,12 @@ export default function App() {
         }
       }
 
-      // 3. 작곡가 필터
+      // 3. 작곡가 필터 (한/영 양방향 매칭)
       if (filters.composer !== 'all') {
         const cQuery = filters.composer.toLowerCase();
-        const hasComp = (c.composers || []).some((comp) => comp.toLowerCase().includes(cQuery));
+        const hasComp =
+          (c.composers || []).some((comp) => comp.toLowerCase().includes(cQuery)) ||
+          matchesBilingualConcert({ composers: c.composers, pieces: c.pieces }, filters.composer);
         if (!hasComp) return false;
       }
 
