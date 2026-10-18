@@ -1,5 +1,6 @@
 import React from 'react';
 import { Music, MapPin, Sparkles, Calendar, Eye } from 'lucide-react';
+import BrandIcon from './BrandIcon';
 
 export default function InitialDiscoveryGuide({
   totalCount = 0,
@@ -36,7 +37,7 @@ export default function InitialDiscoveryGuide({
       {/* Icon & Hero Instruction */}
       <div className="space-y-3.5 max-w-xl mx-auto">
         <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500/15 via-concert-500/15 to-amber-700/20 dark:from-amber-400/20 dark:to-concert-600/30 border border-concert-500/30 dark:border-concert-500/40 flex items-center justify-center text-concert-600 dark:text-concert-400 mx-auto shadow-xs">
-          <Music className="w-8 h-8" />
+          <BrandIcon className="w-9 h-9" />
         </div>
         <h2 className="font-serif font-black text-xl sm:text-2xl text-stone-900 dark:text-stone-100 tracking-tight">
           원하시는 공연을 검색하거나 조건을 선택해보세요

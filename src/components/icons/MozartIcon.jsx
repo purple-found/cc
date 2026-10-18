@@ -9,8 +9,7 @@ import React from 'react';
  * 3. 이목구비를 배제한 모던하고 정갈한 페이스리스(Faceless) 실루엣 윤곽
  * 4. 목 아래로 우아하게 떨어지는 클래식 레이스 프릴 자보(Ruffled Jabot)와 연주복 깃
  * 
- * 저작권 안내:
- * - 1791년 서거한 역사적 작곡가를 모티브로 순수 창작된 100% 오리지널 벡터 코드로 저작권 침해 우려 제로
+ * 정제된 선 두께(strokeWidth 1.35)를 적용하여 섬세하고 세련된 클래식 판화 감성을 구현합니다.
  */
 export default function MozartIcon({ className = 'w-7 h-7', ...props }) {
   return (
@@ -19,7 +18,7 @@ export default function MozartIcon({ className = 'w-7 h-7', ...props }) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.8"
+      strokeWidth="1.35"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
@@ -33,9 +32,9 @@ export default function MozartIcon({ className = 'w-7 h-7', ...props }) {
         fillOpacity="0.16"
       />
       {/* 가발 상단 볼륨 웨이브 라인 */}
-      <path d="M8 4.6 C9.8 3.8, 14.2 3.8, 16 4.6" strokeWidth="1.3" />
+      <path d="M8 4.6 C9.8 3.8, 14.2 3.8, 16 4.6" strokeWidth="1.1" />
 
-      {/* 2. 좌측 모차르트 시그니처 가발 롤 2단 (Boucles) - 크기 확장 */}
+      {/* 2. 좌측 모차르트 시그니처 가발 롤 2단 (Boucles) */}
       <rect
         x="1.8"
         y="7.2"
@@ -45,7 +44,7 @@ export default function MozartIcon({ className = 'w-7 h-7', ...props }) {
         fill="currentColor"
         fillOpacity="0.25"
         stroke="currentColor"
-        strokeWidth="1.6"
+        strokeWidth="1.25"
       />
       <rect
         x="1.4"
@@ -56,10 +55,10 @@ export default function MozartIcon({ className = 'w-7 h-7', ...props }) {
         fill="currentColor"
         fillOpacity="0.25"
         stroke="currentColor"
-        strokeWidth="1.6"
+        strokeWidth="1.25"
       />
 
-      {/* 3. 우측 모차르트 시그니처 가발 롤 2단 (Boucles) - 크기 확장 */}
+      {/* 3. 우측 모차르트 시그니처 가발 롤 2단 (Boucles) */}
       <rect
         x="17"
         y="7.2"
@@ -69,7 +68,7 @@ export default function MozartIcon({ className = 'w-7 h-7', ...props }) {
         fill="currentColor"
         fillOpacity="0.25"
         stroke="currentColor"
-        strokeWidth="1.6"
+        strokeWidth="1.25"
       />
       <rect
         x="17"
@@ -80,7 +79,7 @@ export default function MozartIcon({ className = 'w-7 h-7', ...props }) {
         fill="currentColor"
         fillOpacity="0.25"
         stroke="currentColor"
-        strokeWidth="1.6"
+        strokeWidth="1.25"
       />
 
       {/* 4. 이목구비 없는 미니멀 실루엣 얼굴 윤곽선 (볼과 단정한 턱선) */}
@@ -91,21 +90,21 @@ export default function MozartIcon({ className = 'w-7 h-7', ...props }) {
       />
 
       {/* 5. 클래식 연주복 깃 & 3단 프릴 자보(Ruffled Jabot) */}
-      <path d="M9.2 17.2 L7 22" strokeWidth="1.6" />
-      <path d="M14.8 17.2 L17 22" strokeWidth="1.6" />
+      <path d="M9.2 17.2 L7 22" strokeWidth="1.25" />
+      <path d="M14.8 17.2 L17 22" strokeWidth="1.25" />
       <path
         d="M10.2 17.2 C11 18.4, 13 18.4, 13.8 17.2"
         fill="currentColor"
         fillOpacity="0.3"
-        strokeWidth="1.4"
+        strokeWidth="1.15"
       />
       <path
         d="M10.8 18.7 C11.4 19.9, 12.6 19.9, 13.2 18.7"
         fill="currentColor"
         fillOpacity="0.3"
-        strokeWidth="1.4"
+        strokeWidth="1.15"
       />
-      <path d="M11.5 20.2 L12 22" strokeWidth="1.4" />
+      <path d="M11.5 20.2 L12 22" strokeWidth="1.15" />
     </svg>
   );
 }
