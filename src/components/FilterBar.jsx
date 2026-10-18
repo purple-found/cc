@@ -20,7 +20,7 @@ export default function FilterBar({
       ['경기아트센터', '경기아트센터 (Gyeonggi Arts Center)'],
       ['고양아람누리', '고양아람누리 (Goyang Aram Nuri)'],
       ['광주예술의전당', '광주예술의전당 (Gwangju Arts Center)'],
-      ['금호아트홀', '금호아트홀 연세 (Kumho Art Hall)'],
+      ['금호아트홀 연세', '금호아트홀 연세 (Kumho Art Hall)'],
       ['대구콘서트하우스', '대구콘서트하우스 (Daegu Concert House)'],
       ['대전예술의전당', '대전예술의전당 (Daejeon Arts Center)'],
       ['롯데콘서트홀', '롯데콘서트홀 (Lotte Concert Hall)'],
@@ -46,6 +46,21 @@ export default function FilterBar({
       // '예술의전당 [서울]' 단독 표기는 랜드마크 '예술의전당 (Seoul Arts Center)'으로 통합
       if (v === '예술의전당 [서울]') {
         v = '예술의전당';
+      }
+      if (v.startsWith('아트센터 인천')) {
+        v = v.replace('아트센터 인천', '아트센터인천');
+      }
+      if (v === '롯데콘서트홀 (롯데콘서트홀)') {
+        v = '롯데콘서트홀';
+      }
+      if (v.includes('금호아트홀')) {
+        v = '금호아트홀 연세';
+      }
+      if (v.includes('강릉아트센터')) {
+        v = '강릉아트센터';
+      }
+      if (v.includes('꿈의숲아트센터')) {
+        v = '꿈의숲아트센터';
       }
       if (v && v !== '공식 공연장') {
         allVenueSet.add(v);

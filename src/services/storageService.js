@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v17: 공연장 세부 홀 다차원 정밀 매칭 및 2027년 예술의전당 콘서트홀 동기화
-const CONCERTS_KEY = 'opus_korea_concerts_v17';
+// v18: 대구콘서트하우스/아트센터인천/성남/부천/경주 세부홀 및 예매처 링크 전수 정규화
+const CONCERTS_KEY = 'opus_korea_concerts_v18';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -27,6 +27,7 @@ try {
       'opus_korea_concerts_v14',
       'opus_korea_concerts_v15',
       'opus_korea_concerts_v16',
+      'opus_korea_concerts_v17',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);

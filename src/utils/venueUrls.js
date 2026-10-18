@@ -319,7 +319,31 @@ export function getVenueOfficialUrl(concertOrVenue) {
 
   const vLower = venueName.toLowerCase();
 
-  // 1. 타 지역 예술의전당 우선 판별 (청주, 대전, 광주, 세종, 천안 등)
+  // 1. 전국 지방 예술의전당 우선 정밀 판별 (서울 예술의전당 오연결 원천 방지)
+  if (vLower.includes('군산') && vLower.includes('예술')) {
+    return 'https://www.gunsan.go.kr/arts';
+  }
+  if (vLower.includes('서귀포') && vLower.includes('예술')) {
+    return 'https://culture.seogwipo.go.kr/sori';
+  }
+  if (vLower.includes('제천') && vLower.includes('예술')) {
+    return 'https://www.jecheon.go.kr/jcart';
+  }
+  if (vLower.includes('의정부') && vLower.includes('예술')) {
+    return 'https://www.uac.or.kr';
+  }
+  if (vLower.includes('화성') && vLower.includes('예술')) {
+    return 'https://www.hcf.or.kr';
+  }
+  if (vLower.includes('안산') && vLower.includes('예술')) {
+    return 'https://www.ansanart.com';
+  }
+  if (vLower.includes('진천') && vLower.includes('예술')) {
+    return 'https://www.jincheon.go.kr';
+  }
+  if (vLower.includes('계룡') && vLower.includes('예술')) {
+    return 'https://www.gyeryong.go.kr/art';
+  }
   if (vLower.includes('청주') && vLower.includes('예술')) {
     return 'https://www.cheongju.go.kr/ac/index.do';
   }
@@ -345,18 +369,26 @@ export function getVenueOfficialUrl(concertOrVenue) {
     return 'https://arts.iksan.go.kr';
   }
 
-  // 2. 서울 예술의전당 판별
-  if (vLower.includes('예술의전당') || vLower.includes('sac') || vLower.includes('seoul arts center')) {
-    return 'https://www.sac.or.kr';
-  }
-
-  // 3. 주요 공연장 테이블 매핑
+  // 2. 주요 공연장 테이블 매핑 (서울 예술의전당 제외 타 공연장 우선)
   for (const item of VENUE_OFFICIAL_URLS) {
+    if (item.name === '예술의전당') continue;
     for (const kw of item.keywords) {
       if (vLower.includes(kw)) {
         return item.url;
       }
     }
+  }
+
+  // 3. 서울 예술의전당 판별 (순수 서울 예술의전당만 매칭)
+  if (
+    vLower.includes('예술의전당 [서울]') ||
+    vLower.includes('예술의전당(서울)') ||
+    vLower.includes('sac') ||
+    vLower.includes('seoul arts center') ||
+    vLower === '예술의전당' ||
+    /^예술의전당(\s|$|\[|\()/.test(venueName.trim())
+  ) {
+    return 'https://www.sac.or.kr';
   }
 
   // 4. 만약 기존 ticketUrl이 인터파크나 특정 공식 예매처 등으로 직접 지정되어 있다면 사용

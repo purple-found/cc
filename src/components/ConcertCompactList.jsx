@@ -20,7 +20,7 @@ export default function ConcertCompactList({ concerts = [], onSelectConcert }) {
         {concerts.map((concert) => {
           const cleanVenue = concert.venue ? concert.venue.replace(/\s*\([^)]*\)$/, '').trim() : '공식 공연장';
           const hallName = concert.hall || (concert.venue && concert.venue.match(/\(([^)]+)\)/) ? concert.venue.match(/\(([^)]+)\)/)[1].trim() : null);
-          const showHallBadge = hallName && hallName !== '공연홀' && !cleanVenue.includes('롯데콘서트홀');
+          const showHallBadge = hallName && hallName !== '공연홀' && !cleanVenue.includes('롯데콘서트홀') && !cleanVenue.includes('꿈의숲아트센터');
 
           return (
             <div

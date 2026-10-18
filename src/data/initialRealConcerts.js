@@ -65,7 +65,7 @@ export const initialRealConcerts = [
     "title": "오르간 오딧세이",
     "date": "2026-02-25",
     "time": "19:30",
-    "venue": "롯데콘서트홀 (롯데콘서트홀)",
+    "venue": "롯데콘서트홀",
     "city": "서울",
     "performers": [
       "안갑성",
@@ -126,7 +126,7 @@ export const initialRealConcerts = [
     "title": "롯콘 마티네: 대니 구의 플레이리스트",
     "date": "2026-03-05",
     "time": "19:30",
-    "venue": "롯데콘서트홀 (롯데콘서트홀)",
+    "venue": "롯데콘서트홀",
     "city": "서울",
     "performers": [
       "롯콘 마티네"
@@ -157,7 +157,7 @@ export const initialRealConcerts = [
     "date": "2026-03-19",
     "time": "19:30",
     "venue": "성남아트센터 (콘서트홀)",
-    "city": "경기/인천",
+    "city": "경기",
     "performers": [
       "성남아트센터 마티네 콘서트"
     ],
@@ -174,7 +174,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285984_260227_140158.gif",
@@ -376,7 +376,7 @@ export const initialRealConcerts = [
     "date": "2026-10-01",
     "time": "19:30",
     "venue": "경주예술의전당 (대공연장(화랑홀))",
-    "city": "전국",
+    "city": "대구/경북",
     "performers": [
       "후지타 마오 피아노 리사이틀"
     ],
@@ -393,7 +393,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://garts.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "경주예술의전당",
+    "sourceHall": "경주예술의전당 (대공연장(화랑홀))",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (경주예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300176_260904_141435.png",
@@ -502,7 +502,7 @@ export const initialRealConcerts = [
     "title": "세계음악예술가협회 3 Generational Piano Concert",
     "date": "2026-10-01",
     "time": "19:30",
-    "venue": "롯데콘서트홀 (롯데콘서트홀)",
+    "venue": "롯데콘서트홀",
     "city": "서울",
     "performers": [
       "세계음악예술가협회 3 Generational "
@@ -562,7 +562,7 @@ export const initialRealConcerts = [
     "title": "아름다운 목요일 스페이스, 노부스 콰르텟 String Quartet",
     "date": "2026-10-01",
     "time": "19:30",
-    "venue": "금호아트홀 연세 (금호아트홀 연세)",
+    "venue": "금호아트홀 연세",
     "city": "서울",
     "performers": [
       "아름다운 목요일 스페이스"
@@ -652,7 +652,7 @@ export const initialRealConcerts = [
     "title": "임호열 피아노 독주회",
     "date": "2026-10-01",
     "time": "19:30",
-    "venue": "꿈의숲아트센터 (콘서트홀)",
+    "venue": "꿈의숲아트센터",
     "city": "서울",
     "performers": [
       "임호열"
@@ -674,7 +674,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (꿈의숲아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301461_260921_151623.png",
-    "hall": "콘서트홀"
+    "hall": null
   },
   {
     "id": "kopis-PF301758",
@@ -956,8 +956,8 @@ export const initialRealConcerts = [
     "title": "제447회 인천시립교향악단 정기연주회: 인천시향의 버르토크",
     "date": "2026-10-02",
     "time": "19:30",
-    "venue": "아트센터 인천 (콘서트홀)",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "제447회 인천시립교향악단 정기연주회"
     ],
@@ -974,7 +974,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF281688_251216_140406.png",
@@ -986,7 +986,7 @@ export const initialRealConcerts = [
     "title": "대구시립교향악단, SIAA와 함께하는 특별 음악회: 어텀 갈라 콘서트 [대구]",
     "date": "2026-10-02",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (그랜드홀 (대공연장) )",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "대구시립교향악단"
@@ -1004,11 +1004,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300160_260904_133832.gif",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF299830",
@@ -1445,8 +1445,8 @@ export const initialRealConcerts = [
     "title": "회상 시리즈 Ⅱ, 기억의 결 [인천]",
     "date": "2026-10-03",
     "time": "19:30",
-    "venue": "아트센터 인천 (콘서트홀)",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "회상 시리즈 Ⅱ"
     ],
@@ -1463,7 +1463,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299260_260824_152313.jpg",
@@ -1872,8 +1872,8 @@ export const initialRealConcerts = [
     "title": "장-기엔 케라스 첼로 리사이틀, 바흐: 무반주 첼로 모음곡 전곡 [인천]",
     "date": "2026-10-04",
     "time": "19:30",
-    "venue": "아트센터 인천 (콘서트홀)",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "장-기엔 케라스 첼로 리사이틀"
     ],
@@ -1890,7 +1890,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF289115_260410_140314.gif",
@@ -1933,7 +1933,7 @@ export const initialRealConcerts = [
     "date": "2026-10-04",
     "time": "19:30",
     "venue": "성남아트센터 (콘서트홀)",
-    "city": "경기/인천",
+    "city": "경기",
     "performers": [
       "제3회 캄프 오케스트라 정기연주회"
     ],
@@ -1950,7 +1950,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302001_260929_143519.jpg",
@@ -2423,7 +2423,7 @@ export const initialRealConcerts = [
     "title": "월드 오케스트라 페스티벌, 대구 베누스토 오케스트라 [대구]",
     "date": "2026-10-06",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (그랜드홀 (대공연장) )",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "월드 오케스트라 페스티벌"
@@ -2441,11 +2441,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298891_260819_153420.gif",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF295288",
@@ -2453,7 +2453,7 @@ export const initialRealConcerts = [
     "title": "클래식 온, TRAGIC FATE: 비극적 운명 [대구]",
     "date": "2026-10-06",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (챔버홀 (소공연장) )",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "클래식 온"
@@ -2471,11 +2471,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295288_260703_133944.gif",
-    "hall": "소공연장"
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF300406",
@@ -2694,7 +2694,7 @@ export const initialRealConcerts = [
     "title": "제168회 군산시립교향악단 정기연주회: 베토벤 프로젝트 2",
     "date": "2026-10-07",
     "time": "19:30",
-    "venue": "군산예술의전당 (대공연장)",
+    "venue": "군산예술의전당",
     "city": "광주/전라",
     "performers": [
       "제168회 군산시립교향악단 정기연주회"
@@ -2709,10 +2709,10 @@ export const initialRealConcerts = [
       "당일 무대 앙코르 특별 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.gunsan.go.kr/arts",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "군산예술의전당",
+    "sourceHall": "군산예술의전당 (대공연장)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (군산예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299393_260826_111517.jpg",
@@ -2956,7 +2956,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (로비 및 야외)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299542_260827_143727.gif",
@@ -3328,8 +3328,8 @@ export const initialRealConcerts = [
     "title": "인천시립교향악단 기획연주회, 기록음악회",
     "date": "2026-10-08",
     "time": "19:30",
-    "venue": "아트센터 인천 (콘서트홀)",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "인천시립교향악단 기획연주회"
     ],
@@ -3346,7 +3346,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299520_260827_135541.png",
@@ -3358,7 +3358,7 @@ export const initialRealConcerts = [
     "title": "제12회 VP 정기연주회: R.Strauss & H.Duparc Art Song Concert: 두 개의 언어, 하나의 심연",
     "date": "2026-10-08",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (챔버홀 (소공연장) )",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "제12회 VP 정기연주회"
@@ -3376,11 +3376,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302000_260929_143352.jpg",
-    "hall": "소공연장"
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF301966",
@@ -3388,7 +3388,7 @@ export const initialRealConcerts = [
     "title": "제33회 대구레이디스코러스 정기연주회: 아름다운 합창 & 음악으로 함께 누리는 힐링 타임",
     "date": "2026-10-08",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (그랜드홀 (대공연장) )",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "제33회 대구레이디스코러스 정기연주회"
@@ -3406,11 +3406,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301966_260929_132701.jpg",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF300666",
@@ -3935,7 +3935,7 @@ export const initialRealConcerts = [
     "title": "제14회 리에목관5중주 정기연주회 [대구]",
     "date": "2026-10-09",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (챔버홀 (소공연장) )",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "제14회 리에목관5중주 정기연주회"
@@ -3953,11 +3953,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301403_260921_132008.png",
-    "hall": "소공연장"
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF301481",
@@ -4116,7 +4116,7 @@ export const initialRealConcerts = [
     "date": "2026-10-09",
     "time": "19:30",
     "venue": "성남아트센터 (앙상블씨어터)",
-    "city": "경기/인천",
+    "city": "경기",
     "performers": [
       "제3회 신아름 & 신이레 듀오콘서트"
     ],
@@ -4133,7 +4133,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (앙상블씨어터)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302009_260929_145835.gif",
@@ -4363,7 +4363,7 @@ export const initialRealConcerts = [
     "date": "2026-10-10",
     "time": "19:30",
     "venue": "경주예술의전당 (소공연장(원화홀))",
-    "city": "전국",
+    "city": "대구/경북",
     "performers": [
       "지브리와 사랑에 빠지다"
     ],
@@ -4380,7 +4380,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://garts.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "경주예술의전당",
+    "sourceHall": "경주예술의전당 (소공연장(원화홀))",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (경주예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295322_260703_145014.png",
@@ -4458,8 +4458,8 @@ export const initialRealConcerts = [
     "title": "ACI 키즈 콘서트, 클랩 그림책 콘서트 Ⅳ. 정말 으스스할까? [인천]",
     "date": "2026-10-10",
     "time": "19:30",
-    "venue": "아트센터 인천 (다목적홀)",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (다목적홀)",
+    "city": "인천",
     "performers": [
       "ACI 키즈 콘서트"
     ],
@@ -4476,7 +4476,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (다목적홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286272_260304_141336.gif",
@@ -4488,7 +4488,7 @@ export const initialRealConcerts = [
     "title": "제12회 마루한 필하모닉 오케스트라 정기연주회 [대구]",
     "date": "2026-10-10",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (그랜드홀 (대공연장) )",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "제12회 마루한 필하모닉 오케스트라 정기연주회"
@@ -4506,11 +4506,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300949_260915_110815.jpg",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF292758",
@@ -4518,7 +4518,7 @@ export const initialRealConcerts = [
     "title": "피아노의숲 피아노 콘서트 [대구]",
     "date": "2026-10-10",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (챔버홀 (소공연장) )",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "피아노의숲 피아노 콘서트"
@@ -4536,11 +4536,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292758_260602_110829.gif",
-    "hall": "소공연장"
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF302024",
@@ -4923,7 +4923,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://culture.seogwipo.go.kr/sori",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "서귀포예술의전당",
@@ -5118,8 +5118,8 @@ export const initialRealConcerts = [
     "title": "아트하우스17 [인천]",
     "date": "2026-10-11",
     "time": "19:30",
-    "venue": "아트센터 인천 (콘서트홀)",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "아트하우스17"
     ],
@@ -5136,7 +5136,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297538_260803_143800.gif",
@@ -5179,7 +5179,7 @@ export const initialRealConcerts = [
     "date": "2026-10-11",
     "time": "19:30",
     "venue": "성남아트센터 (앙상블씨어터)",
-    "city": "경기/인천",
+    "city": "경기",
     "performers": [
       "Journey to Europe chapter"
     ],
@@ -5196,7 +5196,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (앙상블씨어터)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302687_261007_124913.png",
@@ -5663,7 +5663,7 @@ export const initialRealConcerts = [
     "title": "서예솔 피아노 귀국 독주회 [대구]",
     "date": "2026-10-13",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (챔버홀 (소공연장) )",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "서예솔 피아노 귀국 독주회"
@@ -5681,11 +5681,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301962_260929_131826.jpg",
-    "hall": "소공연장"
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF302581",
@@ -5754,7 +5754,7 @@ export const initialRealConcerts = [
     "date": "2026-10-13",
     "time": "19:30",
     "venue": "성남아트센터 (콘서트홀)",
-    "city": "경기/인천",
+    "city": "경기",
     "performers": [
       "제31회 성남시중원구여성합창단 정기연주회"
     ],
@@ -5771,7 +5771,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303094_261012_185356.png",
@@ -6084,7 +6084,7 @@ export const initialRealConcerts = [
     "title": "월드오케스트라페스티벌, 경산시립교향악단 [대구]",
     "date": "2026-10-14",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (그랜드홀 (대공연장) )",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "월드오케스트라페스티벌"
@@ -6102,11 +6102,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298859_260819_140444.gif",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF303421",
@@ -6415,7 +6415,7 @@ export const initialRealConcerts = [
     "date": "2026-10-15",
     "time": "19:30",
     "venue": "경주예술의전당 (대공연장(화랑홀))",
-    "city": "전국",
+    "city": "대구/경북",
     "performers": [
       "해오름동맹 합동공연 합창 오페라"
     ],
@@ -6432,7 +6432,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://garts.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "경주예술의전당",
+    "sourceHall": "경주예술의전당 (대공연장(화랑홀))",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (경주예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301015_260915_153055.jpg",
@@ -6519,7 +6519,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.jecheon.go.kr/jcart",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "제천예술의전당",
@@ -6716,7 +6716,7 @@ export const initialRealConcerts = [
     "title": "월드오케스트라페스티벌, 아트하우스 17 [대구]",
     "date": "2026-10-15",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (그랜드홀 (대공연장) )",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "월드오케스트라페스티벌"
@@ -6734,11 +6734,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298877_260819_143955.gif",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF279482",
@@ -7320,7 +7320,7 @@ export const initialRealConcerts = [
     "title": "제529회 대구시립교향악단 정기연주회: 월드오케스트라페스티벌",
     "date": "2026-10-16",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (그랜드홀 (대공연장) )",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "제529회 대구시립교향악단 정기연주회"
@@ -7338,11 +7338,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301374_260921_113722.png",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF302267",
@@ -7687,7 +7687,7 @@ export const initialRealConcerts = [
     "date": "2026-10-17",
     "time": "19:30",
     "venue": "경주예술의전당 (소공연장(원화홀))",
-    "city": "전국",
+    "city": "대구/경북",
     "performers": [
       "조희창의 토요 클래식 살롱 Ⅴ. 우리 시대의 "
     ],
@@ -7704,7 +7704,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://garts.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "경주예술의전당",
+    "sourceHall": "경주예술의전당 (소공연장(원화홀))",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (경주예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301008_260915_150323.png",
@@ -7853,7 +7853,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.uac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "의정부예술의전당",
@@ -7958,8 +7958,8 @@ export const initialRealConcerts = [
     "title": "너의 이름은. 필름 콘서트 [인천]",
     "date": "2026-10-17",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "너의 이름은. 필름 콘서트"
     ],
@@ -7976,11 +7976,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292010_260522_102847.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF298873",
@@ -7988,7 +7988,7 @@ export const initialRealConcerts = [
     "title": "월드오케스트라페스티벌, 대구 비르투오조 챔버 & 신비한 콘서트: 행성과 궤도 [대구]",
     "date": "2026-10-17",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "월드오케스트라페스티벌"
@@ -8006,11 +8006,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298873_260819_142958.gif",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF301618",
@@ -8438,8 +8438,8 @@ export const initialRealConcerts = [
     "title": "제2회 포르비토 앙상블 정기연주회",
     "date": "2026-10-17",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기",
     "performers": [
       "제2회 포르비토 앙상블 정기연주회"
     ],
@@ -8456,7 +8456,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (소공연장)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302116_260930_133535.jpg",
@@ -8708,8 +8708,8 @@ export const initialRealConcerts = [
     "title": "파보 예르비 & 에스토니안 페스티벌 오케스트라 [인천]",
     "date": "2026-10-18",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "파보 예르비 & 에스토니안 페스티벌 오케스트라"
     ],
@@ -8726,11 +8726,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299130_260821_172018.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF301050",
@@ -8760,7 +8760,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (금호아트홀 연세)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301050_260916_130834.gif",
-    "hall": "연세아트홀"
+    "hall": null
   },
   {
     "id": "kopis-PF297267",
@@ -8790,7 +8790,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (금호아트홀 연세)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297267_260730_105604.gif",
-    "hall": "연세아트홀"
+    "hall": null
   },
   {
     "id": "kopis-PF303236",
@@ -9064,7 +9064,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (금호아트홀 연세)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302048_260929_172923.gif",
-    "hall": "연세아트홀"
+    "hall": null
   },
   {
     "id": "kopis-PF301406",
@@ -9347,7 +9347,7 @@ export const initialRealConcerts = [
     "title": "월드오케스트라페스티벌, 양인모 & 헬싱키 필하모닉 오케스트라 [대구]",
     "date": "2026-10-20",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "월드오케스트라페스티벌"
@@ -9364,7 +9364,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298805_260819_105832.gif",
@@ -9398,7 +9398,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (금호아트홀 연세)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301844_260928_154152.gif",
-    "hall": "연세아트홀"
+    "hall": null
   },
   {
     "id": "kopis-PF303008",
@@ -9827,7 +9827,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (금호아트홀 연세)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF289260_260413_151059.png",
-    "hall": "연세아트홀"
+    "hall": null
   },
   {
     "id": "kopis-PF279448",
@@ -9857,7 +9857,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (금호아트홀 연세)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF279448_251118_124224.png",
-    "hall": "연세아트홀"
+    "hall": null
   },
   {
     "id": "kopis-PF303430",
@@ -10075,8 +10075,8 @@ export const initialRealConcerts = [
     "title": "제224회 성남시립교향악단 정기 연주회 [성남]",
     "date": "2026-10-21",
     "time": "19:30",
-    "venue": "성남아트센터",
-    "city": "경기/인천",
+    "venue": "성남아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "제224회 성남시립교향악단 정기 연주회"
     ],
@@ -10093,7 +10093,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301498_260921_165844.gif",
@@ -10351,8 +10351,8 @@ export const initialRealConcerts = [
     "title": "인천시립교향악단 기획연주회, 과정음악회 Ⅲ",
     "date": "2026-10-22",
     "time": "19:30",
-    "venue": "아트센터 인천 (콘서트홀)",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "인천시립교향악단 기획연주회"
     ],
@@ -10369,7 +10369,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF281670_251216_130108.jpg",
@@ -10381,7 +10381,7 @@ export const initialRealConcerts = [
     "title": "더 마스터즈: 강승민 첼로 리사이틀 [대구]",
     "date": "2026-10-22",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (챔버홀 (소공연장) )",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "더 마스터즈"
@@ -10399,11 +10399,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295330_260703_154743.gif",
-    "hall": "소공연장"
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF299163",
@@ -11050,8 +11050,8 @@ export const initialRealConcerts = [
     "title": "제448회 인천시립교향악단 정기연주회: 인천시향의 브람스",
     "date": "2026-10-23",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "제448회 인천시립교향악단 정기연주회"
     ],
@@ -11068,11 +11068,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF281689_251216_140856.png",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303581",
@@ -11080,7 +11080,7 @@ export const initialRealConcerts = [
     "title": "대구시립교향악단, 스쿨콘서트 3: 런던행 클래식 익스프레스 (10.23)",
     "date": "2026-10-23",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "대구시립교향악단"
@@ -11098,11 +11098,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303581_261016_132225.jpg",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF301443",
@@ -11725,7 +11725,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.hcf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -11755,7 +11755,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.gyeryong.go.kr/art",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "계룡문화예술의전당",
@@ -11890,8 +11890,8 @@ export const initialRealConcerts = [
     "title": "목관앙상블과 함께하는 윈드 뮤지컬 콘서트 [인천]",
     "date": "2026-10-24",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "목관앙상블과 함께하는 윈드 뮤지컬 콘서트"
     ],
@@ -11908,11 +11908,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297061_260727_153546.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF292248",
@@ -11920,8 +11920,8 @@ export const initialRealConcerts = [
     "title": "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [인천]",
     "date": "2026-10-24",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "일리야 라쉬코프스키"
     ],
@@ -11938,11 +11938,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292248_260526_154145.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF301525",
@@ -12583,8 +12583,8 @@ export const initialRealConcerts = [
     "title": "테너 김우경 & 소프라노 여지영 듀오 리사이틀: 노래가 흐르고, 영화가 펼쳐진다 [부천]",
     "date": "2026-10-24",
     "time": "17:00",
-    "venue": "부천아트센터",
-    "city": "경기도",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기",
     "performers": [
       "김우경",
       "여지영",
@@ -12602,7 +12602,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%B2%9C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
     "source": "KOPIS 전산망 새벽 3시 자동 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (소공연장)",
     "crawlerBlocked": false,
     "description": "부천아트센터에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301369_260921_112131.png",
@@ -12854,8 +12854,8 @@ export const initialRealConcerts = [
     "title": "한수진 & 잉글리시 체임버 오케스트라 [인천]",
     "date": "2026-10-25",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "한수진 & 잉글리시 체임버 오케스트라"
     ],
@@ -12872,11 +12872,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299143_260821_184602.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF300933",
@@ -13455,8 +13455,8 @@ export const initialRealConcerts = [
     "title": "나는 바다가 되리라 [경주]",
     "date": "2026-10-27",
     "time": "19:30",
-    "venue": "경주예술의전당",
-    "city": "전국",
+    "venue": "경주예술의전당 (대공연장(화랑홀))",
+    "city": "대구/경북",
     "performers": [
       "나는 바다가 되리라"
     ],
@@ -13473,11 +13473,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://garts.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "경주예술의전당",
+    "sourceHall": "경주예술의전당 (대공연장(화랑홀))",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (경주예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303333_261014_151411.png",
-    "hall": null
+    "hall": "화랑홀"
   },
   {
     "id": "kopis-PF300603",
@@ -14040,7 +14040,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.ansanart.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안산문화예술의전당",
@@ -14235,8 +14235,8 @@ export const initialRealConcerts = [
     "title": "직장인을 위한 퇴근길 콘서트 Ⅳ, 뮤지컬의 밤 [인천]",
     "date": "2026-10-28",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "직장인을 위한 퇴근길 콘서트 Ⅳ"
     ],
@@ -14253,11 +14253,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286681_260309_163146.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF298868",
@@ -14265,7 +14265,7 @@ export const initialRealConcerts = [
     "title": "월드오케스트라페스티벌, 한수진 & 잉글리시 챔버 오케스트라 [대구]",
     "date": "2026-10-28",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "월드오케스트라페스티벌"
@@ -14283,11 +14283,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298868_260819_142024.gif",
-    "hall": null
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF301435",
@@ -14836,8 +14836,8 @@ export const initialRealConcerts = [
     "title": "제6회 인천국제고음악제 I. 베아트리스 마르탱 X 코리안 바로크 소사이어티: The Bach Family",
     "date": "2026-10-29",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "제6회 인천국제고음악제 I. 베아트리스 마르탱 X 코리안 바로크 소사이어티"
     ],
@@ -14854,11 +14854,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299240_260824_144810.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302426",
@@ -15136,7 +15136,7 @@ export const initialRealConcerts = [
     "title": "강릉시립교향악단 기획연주, 가곡의 밤",
     "date": "2026-10-29",
     "time": "19:30",
-    "venue": "강릉아트센터 (구. 강릉문화예술관)",
+    "venue": "강릉아트센터",
     "city": "강원",
     "performers": [
       "강릉시립교향악단 기획연주"
@@ -15154,11 +15154,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.gn.go.kr/gnart",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "강릉아트센터 (구. 강릉문화예술관)",
+    "sourceHall": "강릉아트센터 (사임당홀)",
     "crawlerBlocked": false,
-    "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (강릉아트센터 (구. 강릉문화예술관))",
+    "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (강릉아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302296_261002_103133.jpg",
-    "hall": null
+    "hall": "사임당홀"
   },
   {
     "id": "kopis-PF302157",
@@ -15361,7 +15361,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.jecheon.go.kr/jcart",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "제천예술의전당",
@@ -15556,7 +15556,7 @@ export const initialRealConcerts = [
     "title": "제25회 대구시립교향악단 대학생 협주곡의 밤",
     "date": "2026-10-30",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "제25회 대구시립교향악단 대학생 협주곡의 밤"
@@ -15574,11 +15574,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302377_261002_142509.gif",
-    "hall": null
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF302329",
@@ -15586,7 +15586,7 @@ export const initialRealConcerts = [
     "title": "대구 극음악 시리즈 Ⅲ. 목관앙상블로 재해석한 호두까기인형",
     "date": "2026-10-30",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "대구 극음악 시리즈 Ⅲ. 목관앙상블로 재해석한"
@@ -15604,11 +15604,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302329_261002_122349.jpg",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF300729",
@@ -16022,7 +16022,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.jincheon.go.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "진천예술의전당",
@@ -16262,7 +16262,7 @@ export const initialRealConcerts = [
       "당일 무대 앙코르 특별 프로그램"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.uac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "의정부예술의전당",
@@ -16292,7 +16292,7 @@ export const initialRealConcerts = [
       "오케스트라 협주곡 앙상블"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.hcf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -16397,7 +16397,7 @@ export const initialRealConcerts = [
     "title": "월드오케스트라페스티벌, KBS교향악단 [대구]",
     "date": "2026-10-31",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "월드오케스트라페스티벌"
@@ -16415,11 +16415,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303228_261013_154820.jpg",
-    "hall": null
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF299984",
@@ -16637,8 +16637,8 @@ export const initialRealConcerts = [
     "title": "홍채린 오르간 리사이틀: 빛과 울림 [부천]",
     "date": "2026-10-31",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "홍채린 오르간 리사이틀"
     ],
@@ -16655,11 +16655,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302965_261012_143841.png",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302874",
@@ -17186,8 +17186,8 @@ export const initialRealConcerts = [
     "title": "쿤스트 페스티벌 [성남]",
     "date": "2026-10-31",
     "time": "19:00",
-    "venue": "성남아트센터",
-    "city": "경기도",
+    "venue": "성남아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "노동준",
       "최원정 등"
@@ -17204,7 +17204,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EB%82%A8%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
     "source": "KOPIS 전산망 새벽 3시 자동 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "성남아트센터에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301213_260917_140831.jpg",
@@ -17366,8 +17366,8 @@ export const initialRealConcerts = [
     "title": "제6회 인천국제고음악제 Ⅱ. 아망딘 베예 X 코리안 바로크 소사이어티: Galaxia Vivaldi",
     "date": "2026-11-01",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "제6회 인천국제고음악제 Ⅱ. 아망딘 베예 X 코리안 바로크 소사이어티"
     ],
@@ -17384,11 +17384,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299273_260824_161122.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303250",
@@ -17756,7 +17756,7 @@ export const initialRealConcerts = [
     "title": "대구 비르투오조 챔버 특별음악회, 열린음악회: 모두를 위한 배리어프리 콘서트 [대구]",
     "date": "2026-11-03",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "대구 비르투오조 챔버 특별음악회"
@@ -17774,11 +17774,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300609_260910_134533.gif",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF302035",
@@ -17816,8 +17816,8 @@ export const initialRealConcerts = [
     "title": "제7회 CTS 장로합창단 정기연주회 [부천]",
     "date": "2026-11-03",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "제7회 CTS 장로합창단 정기연주회"
     ],
@@ -17834,11 +17834,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303569_261016_130231.png",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303030",
@@ -18087,7 +18087,7 @@ export const initialRealConcerts = [
     "title": "김예원 플루트 독주회: 빛과 숨결의 유희 [대구]",
     "date": "2026-11-04",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "김예원 플루트 독주회"
@@ -18105,11 +18105,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303315_261014_142458.png",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF298871",
@@ -18117,7 +18117,7 @@ export const initialRealConcerts = [
     "title": "월드오케스트라페스티벌, 경상북도 도립교향악단 [대구]",
     "date": "2026-11-04",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "월드오케스트라페스티벌"
@@ -18135,11 +18135,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298871_260819_142329.gif",
-    "hall": null
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF303306",
@@ -18192,7 +18192,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://culture.seogwipo.go.kr/sori",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "서귀포예술의전당",
@@ -18420,8 +18420,8 @@ export const initialRealConcerts = [
     "title": "필라델피아 오케스트라 마린 알솝 & 임윤찬 [인천]",
     "date": "2026-11-05",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "필라델피아 오케스트라 마린 알솝 & 임윤찬"
     ],
@@ -18438,11 +18438,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301160_260917_105200.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302989",
@@ -19295,8 +19295,8 @@ export const initialRealConcerts = [
     "title": "바딤 콜로덴코 피아노 리사이틀 [인천]",
     "date": "2026-11-07",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "바딤 콜로덴코 피아노 리사이틀"
     ],
@@ -19313,11 +19313,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF289135_260410_144618.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF299978",
@@ -19863,8 +19863,8 @@ export const initialRealConcerts = [
     "title": "MelON 디즈니 + 지브리 오케스트라 콘서트 volume.3 [인천]",
     "date": "2026-11-08",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "MelON 디즈니 + 지브리 오케스트라 콘서트"
     ],
@@ -19881,11 +19881,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300514_260909_151907.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303256",
@@ -19923,8 +19923,8 @@ export const initialRealConcerts = [
     "title": "남성합창단 등대 창단 12주년 콘서트",
     "date": "2026-11-08",
     "time": "19:30",
-    "venue": "성남아트센터",
-    "city": "경기/인천",
+    "venue": "성남아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "남성합창단 등대 창단 12주년 콘서트"
     ],
@@ -19941,11 +19941,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303239_261013_160603.jpeg",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302818",
@@ -19983,8 +19983,8 @@ export const initialRealConcerts = [
     "title": "제15회 LG필하모닉 오케스트라 정기연주회",
     "date": "2026-11-08",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "제15회 LG필하모닉 오케스트라 정기연주회"
     ],
@@ -20001,11 +20001,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302100_260930_130512.jpg",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF301894",
@@ -20357,7 +20357,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.hcf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -20763,7 +20763,7 @@ export const initialRealConcerts = [
     "title": "월드오케스트라페스티벌, 대구유스오케스트라 [대구]",
     "date": "2026-11-11",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "월드오케스트라페스티벌"
@@ -20781,11 +20781,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298856_260819_135719.gif",
-    "hall": null
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF303240",
@@ -20898,7 +20898,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.hcf.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -20958,14 +20958,14 @@ export const initialRealConcerts = [
       "오케스트라 협주곡 앙상블"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.gunsan.go.kr/arts",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "군산예술의전당",
+    "sourceHall": "군산예술의전당 (대공연장)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (군산예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301695_260923_140053.jpg",
-    "hall": "콘서트홀"
+    "hall": "대공연장"
   },
   {
     "id": "kopis-PF300261",
@@ -21033,8 +21033,8 @@ export const initialRealConcerts = [
     "title": "ACIx인천시향 공동기획, 조조 클래식 Ⅳ",
     "date": "2026-11-12",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (다목적홀)",
+    "city": "인천",
     "performers": [
       "ACIx인천시향 공동기획"
     ],
@@ -21051,11 +21051,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (다목적홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284175_260130_144401.gif",
-    "hall": null
+    "hall": "다목적홀"
   },
   {
     "id": "kopis-PF279438",
@@ -21288,7 +21288,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.jecheon.go.kr/jcart",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "제천예술의전당",
@@ -21453,8 +21453,8 @@ export const initialRealConcerts = [
     "title": "제6회 인천국제고음악제 Ⅲ. 브루누 지 사 X 코리안 바로크 소사이어티: Celestial Voices",
     "date": "2026-11-13",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "제6회 인천국제고음악제 Ⅲ. 브루누 지 사 X 코리안 바로크 소사이어티"
     ],
@@ -21471,11 +21471,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299246_260824_150212.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303234",
@@ -21483,7 +21483,7 @@ export const initialRealConcerts = [
     "title": "제530회 대구시립교향악단 정기연주회: 클래식, 경계를 넘어",
     "date": "2026-11-13",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "제530회 대구시립교향악단 정기연주회"
@@ -21501,11 +21501,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303234_261013_155518.gif",
-    "hall": null
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF302679",
@@ -21873,8 +21873,8 @@ export const initialRealConcerts = [
     "title": "M & M 시리즈 Ⅳ. 시벨리우스 & 박수예 [인천]",
     "date": "2026-11-14",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "M & M 시리즈 Ⅳ. 시벨리우스 & 박수예"
     ],
@@ -21891,11 +21891,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286624_260309_150218.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF299987",
@@ -22174,7 +22174,7 @@ export const initialRealConcerts = [
     "date": "2026-11-14",
     "time": "19:30",
     "venue": "부천아트센터 (소공연장)",
-    "city": "경기/인천",
+    "city": "경기",
     "performers": [
       "제7회 사랑의 음악편지"
     ],
@@ -22191,7 +22191,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (소공연장)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303044_261012_171325.jpg",
@@ -22624,8 +22624,8 @@ export const initialRealConcerts = [
     "title": "탈리스 스콜라스: 시스티나의 영감 [인천]",
     "date": "2026-11-15",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "탈리스 스콜라스"
     ],
@@ -22642,11 +22642,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF288841_260602_165545.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF295771",
@@ -22654,7 +22654,7 @@ export const initialRealConcerts = [
     "title": "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 스페셜 [대구]",
     "date": "2026-11-15",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "지브리와 사랑에 빠지다"
@@ -22672,11 +22672,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295771_260710_111405.gif",
-    "hall": null
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF303565",
@@ -22924,8 +22924,8 @@ export const initialRealConcerts = [
     "title": "제27회 코리아합창페스티벌",
     "date": "2026-11-17",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "제27회 코리아합창페스티벌"
     ],
@@ -22942,11 +22942,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303088_261012_184411.jpg",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF301574",
@@ -23317,7 +23317,7 @@ export const initialRealConcerts = [
     "title": "더 마스터즈: 소프라노 한경성 리사이틀 [대구]",
     "date": "2026-11-19",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "더 마스터즈"
@@ -23335,11 +23335,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295311_260703_142539.gif",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF279455",
@@ -23468,8 +23468,8 @@ export const initialRealConcerts = [
     "title": "제449회 인천시립교향악단 정기연주회: 인천시향과 크리스토프 포펜",
     "date": "2026-11-20",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "제449회 인천시립교향악단 정기연주회"
     ],
@@ -23486,11 +23486,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF281690_251216_141335.png",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303513",
@@ -23863,7 +23863,7 @@ export const initialRealConcerts = [
     "title": "월드 오케스트라 페스티벌, 대구 국제방송 교향악단 [대구]",
     "date": "2026-11-21",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (그랜드홀 (대공연장) )",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "월드 오케스트라 페스티벌"
@@ -23881,11 +23881,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298889_260819_152607.gif",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF299989",
@@ -24198,8 +24198,8 @@ export const initialRealConcerts = [
     "title": "목관 앙상블과 함께하는 댄싱 클래식 콘서트 [인천]",
     "date": "2026-11-22",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (다목적홀)",
+    "city": "인천",
     "performers": [
       "목관 앙상블과 함께하는 댄싱 클래식 콘서트"
     ],
@@ -24216,11 +24216,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (다목적홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296961_260727_111028.gif",
-    "hall": null
+    "hall": "다목적홀"
   },
   {
     "id": "kopis-PF303547",
@@ -24259,7 +24259,7 @@ export const initialRealConcerts = [
     "date": "2026-11-22",
     "time": "19:30",
     "venue": "성남아트센터 (콘서트홀)",
-    "city": "경기/인천",
+    "city": "경기",
     "performers": [
       "제6회 버디색소폰앙상블 정기연주회"
     ],
@@ -24276,7 +24276,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303542_261016_111038.jpg",
@@ -24349,7 +24349,7 @@ export const initialRealConcerts = [
     "date": "2026-11-22",
     "time": "19:30",
     "venue": "부천아트센터 (콘서트홀)",
-    "city": "경기/인천",
+    "city": "경기",
     "performers": [
       "홍석원",
       "김두민 등"
@@ -24367,7 +24367,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302506_261006_132554.gif",
@@ -24679,7 +24679,7 @@ export const initialRealConcerts = [
     "title": "월드 오케스트라 페스티벌, 임현재 & 만토바 챔버 오케스트라 [대구]",
     "date": "2026-11-24",
     "time": "19:30",
-    "venue": "대구콘서트하우스 (그랜드홀 (대공연장) )",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "월드 오케스트라 페스티벌"
@@ -24697,11 +24697,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298885_260819_150630.gif",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF301820",
@@ -24784,7 +24784,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.ansanart.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안산문화예술의전당",
@@ -24919,7 +24919,7 @@ export const initialRealConcerts = [
     "title": "대구 비르투오조 챔버 아트 콘서트: 색채의 울림, 고흐 & 고갱 [대구]",
     "date": "2026-11-25",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "대구 비르투오조 챔버 아트 콘서트"
@@ -24937,11 +24937,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300636_260910_145747.gif",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF303203",
@@ -25473,7 +25473,7 @@ export const initialRealConcerts = [
       "오케스트라 협주곡 앙상블"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.uac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "의정부예술의전당",
@@ -25563,7 +25563,7 @@ export const initialRealConcerts = [
       "오케스트라 협주곡 앙상블"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.hcf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -25638,7 +25638,7 @@ export const initialRealConcerts = [
     "title": "임윤찬 피아노 리사이틀 [강릉시민전용]",
     "date": "2026-11-27",
     "time": "19:30",
-    "venue": "강릉아트센터 (구. 강릉문화예술관)",
+    "venue": "강릉아트센터",
     "city": "강원",
     "performers": [
       "임윤찬 피아노 리사이틀"
@@ -25656,11 +25656,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.gn.go.kr/gnart",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "강릉아트센터 (구. 강릉문화예술관)",
+    "sourceHall": "강릉아트센터 (사임당홀)",
     "crawlerBlocked": false,
-    "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (강릉아트센터 (구. 강릉문화예술관))",
+    "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (강릉아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303117_261013_101020.jpg",
-    "hall": null
+    "hall": "사임당홀"
   },
   {
     "id": "kopis-PF303020",
@@ -25668,7 +25668,7 @@ export const initialRealConcerts = [
     "title": "임윤찬 피아노 리사이틀 [강릉]",
     "date": "2026-11-27",
     "time": "19:30",
-    "venue": "강릉아트센터 (구. 강릉문화예술관)",
+    "venue": "강릉아트센터",
     "city": "강원",
     "performers": [
       "임윤찬 피아노 리사이틀"
@@ -25686,11 +25686,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.gn.go.kr/gnart",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "강릉아트센터 (구. 강릉문화예술관)",
+    "sourceHall": "강릉아트센터 (사임당홀)",
     "crawlerBlocked": false,
-    "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (강릉아트센터 (구. 강릉문화예술관))",
+    "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (강릉아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303020_261012_162503.png",
-    "hall": null
+    "hall": "사임당홀"
   },
   {
     "id": "kopis-PF302058",
@@ -25773,7 +25773,7 @@ export const initialRealConcerts = [
       "드뷔시: 달빛 및 영상(Images) 모음곡"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.ansanart.com",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안산문화예술의전당",
@@ -25968,8 +25968,8 @@ export const initialRealConcerts = [
     "title": "첼룸 체임버 오케스트라 & 콰이어 송년 음악회: 황제의 환희 [성남]",
     "date": "2026-11-28",
     "time": "19:30",
-    "venue": "성남아트센터",
-    "city": "경기/인천",
+    "venue": "성남아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "첼룸 체임버 오케스트라 & 콰이어 송년 음악회"
     ],
@@ -25986,11 +25986,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301968_260929_133222.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302120",
@@ -26328,8 +26328,8 @@ export const initialRealConcerts = [
     "title": "김은희 첼로 리사이틀 [부천]",
     "date": "2026-12-01",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기",
     "performers": [
       "김은희 첼로 리사이틀"
     ],
@@ -26346,11 +26346,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (소공연장)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299597_260828_113532.jpg",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF295927",
@@ -26478,8 +26478,8 @@ export const initialRealConcerts = [
     "title": "성남아트센터 오후의 콘서트: Viva Italia! 오페라 갈라 콘서트 (12월)",
     "date": "2026-12-02",
     "time": "19:30",
-    "venue": "성남아트센터",
-    "city": "경기/인천",
+    "venue": "성남아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "성남아트센터 오후의 콘서트"
     ],
@@ -26496,11 +26496,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285128_260213_101625.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF285072",
@@ -26748,8 +26748,8 @@ export const initialRealConcerts = [
     "title": "인천시립교향악단 기획연주회, 실내악 콘서트 Ⅲ [인천]",
     "date": "2026-12-04",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (다목적홀)",
+    "city": "인천",
     "performers": [
       "인천시립교향악단 기획연주회"
     ],
@@ -26766,11 +26766,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (다목적홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF290296_260428_141208.jpg",
-    "hall": null
+    "hall": "다목적홀"
   },
   {
     "id": "kopis-PF303607",
@@ -26945,7 +26945,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.uac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "의정부예술의전당",
@@ -27380,8 +27380,8 @@ export const initialRealConcerts = [
     "title": "크리스마스 지브리 & 디즈니 OST 콘서트 [인천]",
     "date": "2026-12-06",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "크리스마스 지브리 & 디즈니 OST 콘서트"
     ],
@@ -27398,11 +27398,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302912_261012_125151.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303492",
@@ -27470,8 +27470,8 @@ export const initialRealConcerts = [
     "title": "리드 테츨로프 피아노 리사이틀 [부천]",
     "date": "2026-12-06",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기",
     "performers": [
       "리드 테츨로프 피아노 리사이틀"
     ],
@@ -27488,11 +27488,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (소공연장)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300863_260914_152025.gif",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF298335",
@@ -27620,7 +27620,7 @@ export const initialRealConcerts = [
     "title": "클래식 온: 포핸즈 오딧세이 [대구]",
     "date": "2026-12-08",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "클래식 온"
@@ -27638,11 +27638,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300631_260910_144124.gif",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF303317",
@@ -27740,7 +27740,7 @@ export const initialRealConcerts = [
     "title": "대구콘서트하우스 특별음악회: Ensemble Eins 현대음악 콘서트",
     "date": "2026-12-09",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "대구콘서트하우스 특별음악회"
@@ -27758,11 +27758,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303224_261013_154201.gif",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF303330",
@@ -27770,8 +27770,8 @@ export const initialRealConcerts = [
     "title": "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅵ",
     "date": "2026-12-09",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기",
     "performers": [
       "BAC 브런치"
     ],
@@ -27788,11 +27788,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (소공연장)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303330_261014_150659.jpg",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF303037",
@@ -27800,8 +27800,8 @@ export const initialRealConcerts = [
     "title": "코원 필하모닉 오케스트라 정기 연주회: 브루크너 4번 [성남]",
     "date": "2026-12-09",
     "time": "19:30",
-    "venue": "성남아트센터",
-    "city": "경기/인천",
+    "venue": "성남아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "코원 필하모닉 오케스트라 정기 연주회"
     ],
@@ -27818,11 +27818,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303037_261012_165734.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302979",
@@ -28070,8 +28070,8 @@ export const initialRealConcerts = [
     "title": "알버트 카노 스미트 피아노 리사이틀 [부천]",
     "date": "2026-12-11",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기",
     "performers": [
       "알버트 카노 스미트 피아노 리사이틀"
     ],
@@ -28088,11 +28088,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (소공연장)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300832_260914_140506.jpg",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF300640",
@@ -28250,8 +28250,8 @@ export const initialRealConcerts = [
     "title": "ACI 키즈 콘서트, 클랩 그림책 콘서트 Ⅴ. 겨울이 지나고 남는 것은? [인천]",
     "date": "2026-12-12",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (다목적홀)",
+    "city": "인천",
     "performers": [
       "ACI 키즈 콘서트"
     ],
@@ -28268,11 +28268,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (다목적홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286305_260304_153949.gif",
-    "hall": null
+    "hall": "다목적홀"
   },
   {
     "id": "kopis-PF299178",
@@ -28820,7 +28820,7 @@ export const initialRealConcerts = [
     "title": "명연주시리즈: 김봄소리 & BBC 필하모닉 오케스트라 [대구]",
     "date": "2026-12-16",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (그랜드홀)",
     "city": "대구/경북",
     "performers": [
       "명연주시리즈"
@@ -28838,11 +28838,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295242_260714_144558.gif",
-    "hall": null
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF303475",
@@ -28880,8 +28880,8 @@ export const initialRealConcerts = [
     "title": "리처드 용재 오닐, 선물: Bach Society [성남]",
     "date": "2026-12-16",
     "time": "19:30",
-    "venue": "성남아트센터",
-    "city": "경기/인천",
+    "venue": "성남아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "리처드 용재 오닐"
     ],
@@ -28898,11 +28898,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303051_261012_172800.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302981",
@@ -29000,8 +29000,8 @@ export const initialRealConcerts = [
     "title": "제180회 부천시립합창단 정기연주회: 헨델, 메시아",
     "date": "2026-12-16",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "제180회 부천시립합창단 정기연주회"
     ],
@@ -29018,11 +29018,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280845_251203_144550.jpg",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF296273",
@@ -29090,7 +29090,7 @@ export const initialRealConcerts = [
     "title": "더 마스터즈, 이혁 피아노 리사이틀 [대구]",
     "date": "2026-12-17",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "더 마스터즈"
@@ -29108,11 +29108,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303063_261012_174625.gif",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF295317",
@@ -29120,7 +29120,7 @@ export const initialRealConcerts = [
     "title": "더 마스터즈: 박수예 바이올린 리사이틀 [대구]",
     "date": "2026-12-17",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "더 마스터즈"
@@ -29138,11 +29138,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295317_260703_143822.gif",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF279473",
@@ -29300,8 +29300,8 @@ export const initialRealConcerts = [
     "title": "인천시립교향악단 기획연주회, 과정음악회 Ⅳ",
     "date": "2026-12-18",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "인천시립교향악단 기획연주회"
     ],
@@ -29318,11 +29318,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF281668_251216_125648.jpg",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF297893",
@@ -29480,8 +29480,8 @@ export const initialRealConcerts = [
     "title": "제450회 인천시립교향악단 정기연주회: 인천시향의 말러",
     "date": "2026-12-19",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "제450회 인천시립교향악단 정기연주회"
     ],
@@ -29498,11 +29498,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF281691_251216_141758.png",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF297601",
@@ -29510,7 +29510,7 @@ export const initialRealConcerts = [
     "title": "스테이지M 크리스마스 영화음악 & 캐롤 콘서트 [대구 중구]",
     "date": "2026-12-19",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
+    "venue": "대구콘서트하우스 (챔버홀)",
     "city": "대구/경북",
     "performers": [
       "스테이지M 크리스마스 영화음악 & 캐롤 콘서트"
@@ -29528,11 +29528,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대구콘서트하우스)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297601_260804_105853.jpg",
-    "hall": null
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF297769",
@@ -29630,8 +29630,8 @@ export const initialRealConcerts = [
     "title": "BAC 특별기획: 파리나무십자가 소년합창단 [부천]",
     "date": "2026-12-19",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "BAC 특별기획"
     ],
@@ -29648,11 +29648,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303297_261014_132906.jpg",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302697",
@@ -29900,8 +29900,8 @@ export const initialRealConcerts = [
     "title": "지브리가 건네는 크리스마스의 선물 [인천]",
     "date": "2026-12-20",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "지브리가 건네는 크리스마스의 선물"
     ],
@@ -29918,11 +29918,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303207_261013_143857.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303347",
@@ -30230,8 +30230,8 @@ export const initialRealConcerts = [
     "title": "콘서트 오페라, 라보엠 (La Boheme) [인천]",
     "date": "2026-12-22",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "콘서트 오페라"
     ],
@@ -30248,11 +30248,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297869_260806_133632.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF299537",
@@ -30260,8 +30260,8 @@ export const initialRealConcerts = [
     "title": "파리나무십자가소년합창단 특별초청 공연 [성남]",
     "date": "2026-12-22",
     "time": "19:30",
-    "venue": "성남아트센터",
-    "city": "경기/인천",
+    "venue": "성남아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "파리나무십자가소년합창단 특별초청 공연"
     ],
@@ -30278,11 +30278,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "성남아트센터",
+    "sourceHall": "성남아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299537_260827_142753.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF298121",
@@ -30320,8 +30320,8 @@ export const initialRealConcerts = [
     "title": "크리스마스 영화음악 & 캐롤 콘서트 [부천]",
     "date": "2026-12-22",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "크리스마스 영화음악 & 캐롤 콘서트"
     ],
@@ -30338,11 +30338,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298070_260810_131328.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302198",
@@ -30440,8 +30440,8 @@ export const initialRealConcerts = [
     "title": "제342회 부천필하모닉오케스트라 정기연주회: 베토벤, 합창",
     "date": "2026-12-23",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "제342회 부천필하모닉오케스트라 정기연주회"
     ],
@@ -30458,11 +30458,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280816_251203_134157.jpg",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303450",
@@ -30500,8 +30500,8 @@ export const initialRealConcerts = [
     "title": "스테이지엠 크리스마스 영화음악 & 캐롤 콘서트 [경주]",
     "date": "2026-12-24",
     "time": "19:30",
-    "venue": "경주예술의전당",
-    "city": "전국",
+    "venue": "경주예술의전당 (소공연장(원화홀))",
+    "city": "대구/경북",
     "performers": [
       "스테이지엠 크리스마스 영화음악 & 캐롤 콘서트"
     ],
@@ -30518,11 +30518,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://garts.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "경주예술의전당",
+    "sourceHall": "경주예술의전당 (소공연장(원화홀))",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (경주예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302154_260930_150630.png",
-    "hall": null
+    "hall": "원화홀"
   },
   {
     "id": "kopis-PF296045",
@@ -30545,7 +30545,7 @@ export const initialRealConcerts = [
       "앙코르 특별 무대"
     ],
     "price": "공식 예매처 참조",
-    "ticketUrl": "https://www.sac.or.kr",
+    "ticketUrl": "https://www.hcf.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "화성예술의전당",
@@ -30740,8 +30740,8 @@ export const initialRealConcerts = [
     "title": "크리스마스 영화음악 & 캐롤 콘서트 [인천]",
     "date": "2026-12-25",
     "time": "19:30",
-    "venue": "아트센터 인천",
-    "city": "경기/인천",
+    "venue": "아트센터인천 (콘서트홀)",
+    "city": "인천",
     "performers": [
       "크리스마스 영화음악 & 캐롤 콘서트"
     ],
@@ -30758,11 +30758,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "아트센터 인천",
+    "sourceHall": "아트센터인천 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (아트센터 인천)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297763_260805_135750.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303552",
@@ -30890,8 +30890,8 @@ export const initialRealConcerts = [
     "title": "손세혁 피아노 독주회 [부천]",
     "date": "2026-12-26",
     "time": "19:30",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기",
     "performers": [
       "손세혁 피아노 독주회"
     ],
@@ -30908,11 +30908,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (소공연장)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302169_260930_154308.jpeg",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF303600",
@@ -31101,7 +31101,7 @@ export const initialRealConcerts = [
     "date": "2027-01-02",
     "time": "14:00",
     "venue": "롯데콘서트홀",
-    "city": "서울특별시",
+    "city": "서울",
     "performers": [
       "백윤학",
       "이희주 등"
@@ -31130,8 +31130,8 @@ export const initialRealConcerts = [
     "title": "손세혁 피아노 독주회 [대구]",
     "date": "2027-01-08",
     "time": "19:30",
-    "venue": "대구콘서트하우스",
-    "city": "대구광역시",
+    "venue": "대구콘서트하우스 (챔버홀)",
+    "city": "대구/경북",
     "performers": [
       "손세혁"
     ],
@@ -31147,11 +31147,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EC%BD%98%EC%84%9C%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
     "source": "KOPIS 전산망 새벽 3시 자동 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
     "description": "대구콘서트하우스에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302139_260930_142943.png",
-    "hall": "소공연장"
+    "hall": "챔버홀"
   },
   {
     "id": "kopis-PF303465",
@@ -31188,8 +31188,8 @@ export const initialRealConcerts = [
     "title": "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구]",
     "date": "2027-01-24",
     "time": "15:00",
-    "venue": "대구콘서트하우스",
-    "city": "대구광역시",
+    "venue": "대구콘서트하우스 (그랜드홀)",
+    "city": "대구/경북",
     "performers": [
       "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구]"
     ],
@@ -31205,11 +31205,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EC%BD%98%EC%84%9C%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
     "source": "KOPIS 전산망 새벽 3시 자동 수집",
-    "sourceHall": "대구콘서트하우스",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
     "crawlerBlocked": false,
     "description": "대구콘서트하우스에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303243_261013_161743.gif",
-    "hall": "대공연장"
+    "hall": "그랜드홀"
   },
   {
     "id": "kopis-PF303609",
@@ -31218,7 +31218,7 @@ export const initialRealConcerts = [
     "date": "2027-02-12",
     "time": "19:30",
     "venue": "롯데콘서트홀",
-    "city": "서울특별시",
+    "city": "서울",
     "performers": [
       "백윤학 등"
     ],
@@ -31247,7 +31247,7 @@ export const initialRealConcerts = [
     "date": "2027-03-21",
     "time": "14:00",
     "venue": "롯데콘서트홀",
-    "city": "서울특별시",
+    "city": "서울",
     "performers": [
       "백윤학",
       "이희주 등"
@@ -31362,7 +31362,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "롯데콘서트홀 빈야드 음향으로 만나는 츠베덴과 서울시향의 말러 5번 대서사시.",
     "imageUrl": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80",
-    "hall": "콘서트홀"
+    "hall": null
   },
   {
     "id": "conc-2027-bac-organ",
@@ -31370,8 +31370,8 @@ export const initialRealConcerts = [
     "title": "2027 부천아트센터 신년 파이프오르간 리사이틀 (Bucheon Arts Center New Year Organ)",
     "date": "2027-01-23",
     "time": "17:00",
-    "venue": "부천아트센터",
-    "city": "경기/인천",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기",
     "performers": [
       "올리비에 라트리 Olivier Latry (오르간)"
     ],
@@ -31389,7 +31389,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "부천아트센터 4,576개 파이프가 뿜어내는 웅장한 신년 축복의 오르간 선율.",
     "imageUrl": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=800&q=80",

@@ -119,7 +119,41 @@ export function matchesVenueFilter(concert, filterVenue) {
     }
   }
 
-  // 3. 괄호가 포함된 일반 세부 홀 필터 처리 (예: '대전예술의전당 (아트홀)', '부천아트센터 (콘서트홀)')
+  // 3. 대구콘서트하우스 전용 정밀 매칭 (소공연장/챔버홀 vs 대공연장/그랜드홀 철저 분리)
+  if (filterVenue.includes('대구콘서트하우스')) {
+    const normConcert = concertVenue.replace(/\s+/g, '');
+    if (!normConcert.includes('대구콘서트하우스')) return false;
+
+    // 소공연장 / 챔버홀 필터
+    if (filterVenue.includes('소공연장') || filterVenue.includes('챔버홀')) {
+      const isChamber =
+        concertHall.includes('챔버홀') ||
+        concertHall.includes('소공연장') ||
+        concertVenue.includes('챔버홀') ||
+        concertVenue.includes('소공연장');
+      return isChamber;
+    }
+
+    // 대공연장 / 그랜드홀 필터
+    if (filterVenue.includes('대공연장') || filterVenue.includes('그랜드홀')) {
+      const isGrand =
+        concertHall.includes('그랜드홀') ||
+        concertHall.includes('대공연장') ||
+        concertVenue.includes('그랜드홀') ||
+        concertVenue.includes('대공연장');
+      return isGrand;
+    }
+
+    // 로비 및 야외 필터
+    if (filterVenue.includes('로비')) {
+      return concertHall.includes('로비') || concertVenue.includes('로비');
+    }
+
+    // 대구콘서트하우스 전체
+    return true;
+  }
+
+  // 4. 괄호가 포함된 일반 세부 홀 필터 처리 (예: '대전예술의전당 (아트홀)', '부천아트센터 (콘서트홀)', '성남아트센터 (앙상블씨어터)')
   const generalHallMatch = filterVenue.match(/^(.*?)\s*\(([^)]+)\)$/);
   if (generalHallMatch) {
     const baseVenue = generalHallMatch[1].trim();
@@ -139,8 +173,8 @@ export function matchesVenueFilter(concert, filterVenue) {
     return normConcertVenue.includes(normTargetHall) || normConcertHall.includes(normTargetHall);
   }
 
-  // 4. 일반 공연장명 단순 정규화 매칭
+  // 5. 일반 공연장명 단순 정규화 매칭
   const normFilter = filterVenue.replace(/\s+/g, '').toLowerCase();
   const normConcert = concertVenue.replace(/\s+/g, '').toLowerCase();
-  return normConcert.includes(normFilter) || normFilter.includes(normConcert);
+  return normConcert.includes(normFilter) || (normFilter.includes(normConcert) && !normFilter.includes('('));
 }

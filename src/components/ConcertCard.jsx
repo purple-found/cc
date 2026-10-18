@@ -125,7 +125,7 @@ export default function ConcertCard({ concert, onSelect }) {
               </span>
               {(() => {
                 const cleanVenue = concert.venue ? concert.venue.replace(/\s*\([^)]*\)$/, '').trim() : '';
-                if (cleanVenue.includes('롯데콘서트홀')) return null;
+                if (cleanVenue.includes('롯데콘서트홀') || cleanVenue.includes('꿈의숲아트센터')) return null;
                 const hallName = concert.hall || (concert.venue && concert.venue.match(/\(([^)]+)\)/) ? concert.venue.match(/\(([^)]+)\)/)[1].trim() : null);
                 if (hallName && hallName !== '공연홀') {
                   return (
