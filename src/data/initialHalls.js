@@ -86,5 +86,16 @@ export const initialHalls = [
     lastSyncTime: "2026-10-07 09:30",
     activeConcerts: 1,
     syncNote: "영남권 대표 클래식 전용홀 백건우 리사이틀 일정 연동 완료"
+  },
+  {
+    id: "hall-09",
+    name: "부산콘서트홀 (Busan Concert Hall)",
+    city: "부산 부산진구 (Busan)",
+    officialUrl: "https://www.busan.go.kr",
+    crawlerStatus: "연동 정상",
+    blocked: false,
+    lastSyncTime: "2026-10-18 09:30",
+    activeConcerts: 15,
+    syncNote: "영남권 최초 2,000석 규모 빈야드형 파이프오르간 클래식 전용홀 공식 일정 정상 연동 중"
   }
 ];

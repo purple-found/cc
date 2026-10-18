@@ -11,8 +11,8 @@ export default function InitialDiscoveryGuide({
   const quickVenues = [
     { label: '예술의전당', value: '예술의전당' },
     { label: '롯데콘서트홀', value: '롯데콘서트홀' },
+    { label: '부산콘서트홀', value: '부산콘서트홀' },
     { label: '부천아트센터', value: '부천아트센터' },
-    { label: '세종문화회관', value: '세종문화회관' },
     { label: '대구콘서트하우스', value: '대구콘서트하우스' }
   ];
 
@@ -41,7 +41,7 @@ export default function InitialDiscoveryGuide({
           원하시는 공연을 검색하거나 조건을 선택해보세요
         </h2>
         <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 leading-relaxed break-keep">
-          상단 검색창에 검색어를 입력하거나 공연장·작곡가·공연시기 필터를 선택하시면 맞춤 공연 일정이 빠르게 펼쳐집니다.
+          상단 검색창에 검색어를 입력하거나 공연장·작곡가·공연시기 필터를 선택하시면<br />맞춤 공연 일정이 빠르게 펼쳐집니다.
         </p>
       </div>
 

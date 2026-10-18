@@ -3,9 +3,9 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v14: 매일 새벽 3시 KOPIS 공식 OpenAPI 자동 수집 및 실시간 최신 공연 전수 동기화
-const CONCERTS_KEY = 'opus_korea_concerts_v14';
-const HALLS_KEY = 'opus_korea_halls_v3';
+// v15: 부산콘서트홀 전수 동기화 및 누락 공연 자동 병합 아키텍처 적용
+const CONCERTS_KEY = 'opus_korea_concerts_v15';
+const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
 const TIPS_KEY = 'opus_korea_tips_v3';
@@ -23,7 +23,9 @@ try {
       'opus_korea_concerts_v10',
       'opus_korea_concerts_v11',
       'opus_korea_concerts_v12',
-      'opus_korea_concerts_v13'
+      'opus_korea_concerts_v13',
+      'opus_korea_concerts_v14',
+      'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
     });
@@ -68,6 +70,15 @@ export const storageService = {
         }
         return c;
       });
+
+      // initialRealConcerts에는 있으나 캐시에 누락된 신규 공연(예: 부산콘서트홀 등) 전수 즉시 자동 병합
+      const existingIds = new Set(synced.map(c => c.id || c.kopisId));
+      const missingConcerts = (initialRealConcerts || []).filter(c => !existingIds.has(c.id || c.kopisId));
+      if (missingConcerts.length > 0) {
+        hasUpdate = true;
+        synced.push(...missingConcerts);
+      }
+
       if (hasUpdate) {
         localStorage.setItem(CONCERTS_KEY, JSON.stringify(synced));
       }
