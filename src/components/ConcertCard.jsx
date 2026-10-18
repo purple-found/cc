@@ -83,8 +83,7 @@ export default function ConcertCard({ concert, onSelect }) {
         <div>
           {/* Title: Break line after '-' */}
           <h3 
-            onClick={() => onSelect(concert)}
-            className="font-serif font-bold text-base md:text-lg text-stone-900 dark:text-stone-50 hover:text-concert-600 dark:hover:text-concert-400 cursor-pointer transition-colors leading-snug"
+            className="font-serif font-bold text-base md:text-lg text-stone-900 dark:text-stone-50 leading-snug"
           >
             {(() => {
               const dashIdx = concert.title.indexOf(' - ');
@@ -145,42 +144,43 @@ export default function ConcertCard({ concert, onSelect }) {
             </div>
           </div>
 
-          {/* Key Piece summary */}
-          <div className="mt-3 pt-3 border-t border-stone-100 dark:border-hall-800">
-            <div className="flex items-start gap-1.5 text-xs text-stone-600 dark:text-stone-400">
-              <Music2 className="w-3.5 h-3.5 text-concert-500 shrink-0 mt-0.5" />
-              {concert.pieces && concert.pieces.length > 0 ? (
-                <p className="line-clamp-2 font-serif text-[11.5px] leading-relaxed">
-                  {concert.pieces[0]} {concert.pieces.length > 1 && `외 ${concert.pieces.length - 1}곡`}
-                </p>
-              ) : (
-                <p className="line-clamp-1 font-serif text-[11px] leading-relaxed text-stone-400 dark:text-stone-500">
-                  상세 프로그램은 공식 예매처 안내 참조
-                </p>
-              )}
+          {/* All Program Pieces directly on each card */}
+          <div className="mt-3.5 pt-3 border-t border-stone-100 dark:border-hall-800">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-stone-700 dark:text-stone-300 mb-2">
+              <Music2 className="w-3.5 h-3.5 text-concert-500 shrink-0" />
+              <span>프로그램 (Program)</span>
             </div>
+            {concert.pieces && concert.pieces.length > 0 ? (
+              <ul className="space-y-1.5 pl-0.5">
+                {concert.pieces.map((piece, idx) => (
+                  <li
+                    key={idx}
+                    className="font-serif text-[11.5px] text-stone-700 dark:text-stone-300 leading-snug flex items-start gap-1.5"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-concert-500 shrink-0 mt-1.5" />
+                    <span className="break-keep">{piece}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="font-serif text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 pl-0.5">
+                공식 프로그램은 공연장 및 예매처 안내 참조
+              </p>
+            )}
           </div>
         </div>
 
-        {/* Action Buttons: Clean & focused on Program Details & Venue Ticket */}
-        <div className="pt-2.5 flex items-center gap-2 border-t border-stone-100 dark:border-hall-800">
-          <button
-            onClick={() => onSelect(concert)}
-            className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-800 dark:text-stone-200 text-xs font-semibold transition-colors shrink-0"
-          >
-            <Info className="w-3.5 h-3.5" />
-            <span className="shrink-0 font-medium">상세 프로그램</span>
-          </button>
-
+        {/* Action Button: 공식 예매처 바로가기 */}
+        <div className="pt-2.5 border-t border-stone-100 dark:border-hall-800">
           <a
             href={getVenueOfficialUrl(concert)}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => analyticsService.trackTicketClick(concert, getVenueOfficialUrl(concert))}
-            className="py-2.5 px-3.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-semibold transition-colors shrink-0 flex items-center gap-1.5 shadow-sm shadow-concert-500/20"
+            className="w-full py-2.5 px-3.5 rounded-xl bg-concert-500 hover:bg-concert-600 active:scale-[0.99] text-white text-xs font-semibold transition-all flex items-center justify-center gap-1.5 shadow-sm shadow-concert-500/20"
             title="공연장 공식 홈페이지 / 예매처 바로가기"
           >
-            <span className="shrink-0">예매처</span>
+            <span>공식 예매처 바로가기</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>

@@ -325,7 +325,7 @@ export default function ConcertCalendar({ concerts, onSelectConcert }) {
                 <button
                   className="px-3 py-1.5 rounded-lg bg-concert-50 dark:bg-hall-800 text-concert-700 dark:text-concert-300 text-xs font-semibold shrink-0"
                 >
-                  상세보기
+                  프로그램
                 </button>
               </div>
             ))}

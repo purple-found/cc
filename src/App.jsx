@@ -39,6 +39,7 @@ export default function App() {
   const [filters, setFilters] = useState({
     search: '',
     venue: 'all',
+    performerType: 'all',
     composer: 'all',
     performer: 'all',
     dateRange: 'all',
@@ -49,6 +50,7 @@ export default function App() {
   const hasActiveCondition = Boolean(
     filters.search ||
     filters.venue !== 'all' ||
+    (filters.performerType && filters.performerType !== 'all') ||
     filters.composer !== 'all' ||
     filters.performer !== 'all' ||
     filters.dateRange !== 'all' ||
@@ -278,7 +280,35 @@ export default function App() {
         }
       }
 
-      // 3. 작곡가 필터 (한/영 양방향 매칭)
+      // 3. 연주 편성 필터 (오케스트라 / 실내악)
+      if (filters.performerType && filters.performerType !== 'all') {
+        const pType = (c.performerType || '').trim();
+        const title = (c.title || '');
+        if (filters.performerType === '오케스트라') {
+          const isOrch =
+            pType === '오케스트라' ||
+            title.includes('오케스트라') ||
+            title.includes('교향악단') ||
+            title.includes('필하모닉') ||
+            title.includes('필하모니') ||
+            title.includes('심포니');
+          if (!isOrch) return false;
+        } else if (filters.performerType === '실내악') {
+          const isChamber =
+            pType === '실내악' ||
+            pType === '솔리스트' ||
+            title.includes('실내악') ||
+            title.includes('앙상블') ||
+            title.includes('체임버') ||
+            title.includes('콰르텟') ||
+            title.includes('트리오') ||
+            title.includes('독주회') ||
+            title.includes('리사이틀');
+          if (!isChamber) return false;
+        }
+      }
+
+      // 4. 작곡가 필터 (한/영 양방향 매칭)
       if (filters.composer !== 'all') {
         const cQuery = filters.composer.toLowerCase();
         const hasComp =
@@ -415,6 +445,7 @@ export default function App() {
                       setFilters({
                         search: '',
                         venue: 'all',
+                        performerType: 'all',
                         composer: 'all',
                         performer: 'all',
                         dateRange: 'all',
@@ -433,7 +464,6 @@ export default function App() {
                     <ConcertCard
                       key={concert.id}
                       concert={concert}
-                      onSelect={handleSelectConcert}
                     />
                   ))}
                 </div>
@@ -539,16 +569,10 @@ export default function App() {
         }}
       />
 
-      {/* Detail Modal */}
+      {/* Program Modal (간략보기 등에서 프로그램 버튼 클릭 시 작동) */}
       <ConcertDetailModal
         concert={selectedConcert}
         onClose={() => setSelectedConcert(null)}
-        onOpenReview={(c) => {
-          setSelectedConcert(null);
-          setReviewTargetConcert(c);
-          setActiveTab('community');
-        }}
-        relatedPosts={selectedConcertPosts}
       />
 
       {/* Toast Notification */}

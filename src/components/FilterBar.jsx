@@ -139,6 +139,7 @@ export default function FilterBar({
     setFilters({
       search: '',
       venue: 'all',
+      performerType: 'all',
       composer: 'all',
       performer: 'all',
       dateRange: 'all',
@@ -151,6 +152,7 @@ export default function FilterBar({
     filters.search ||
     localSearch ||
     filters.venue !== 'all' ||
+    (filters.performerType && filters.performerType !== 'all') ||
     filters.composer !== 'all' ||
     filters.dateRange !== 'all' ||
     filters.customDate
@@ -237,8 +239,8 @@ export default function FilterBar({
         </div>
       </div>
 
-      {/* Select Dropdowns Row: 3분할 깔끔한 구조 (공연장 / 작곡가 / 시기) */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1 border-t border-stone-100 dark:border-hall-800">
+      {/* Select Dropdowns Row: 4분할 구조 (공연장 / 연주 편성 / 작곡가 / 시기) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1 border-t border-stone-100 dark:border-hall-800">
         {/* 장소 필터 (청주예술의전당 등 소형/지역 공연장 전수 포함) */}
         <div>
           <label className="block text-[11px] font-bold text-stone-500 dark:text-stone-400 mb-1">
@@ -254,6 +256,22 @@ export default function FilterBar({
                 {v.label}
               </option>
             ))}
+          </select>
+        </div>
+
+        {/* 연주 편성 필터 (오케스트라 / 실내악) */}
+        <div>
+          <label className="block text-[11px] font-bold text-stone-500 dark:text-stone-400 mb-1">
+            연주 편성 (Formation)
+          </label>
+          <select
+            value={filters.performerType || 'all'}
+            onChange={(e) => setFilters({ ...filters, performerType: e.target.value })}
+            className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs font-medium text-stone-800 dark:text-stone-200 focus:outline-none focus:ring-2 focus:ring-concert-500 truncate"
+          >
+            <option value="all">전체 편성 (All Formations)</option>
+            <option value="오케스트라">오케스트라 (Orchestra)</option>
+            <option value="실내악">실내악 (Chamber Music)</option>
           </select>
         </div>
 
@@ -316,7 +334,6 @@ export default function FilterBar({
           <span>
             {shouldShowConcerts ? (
               <>
-                총 <strong className="text-stone-900 dark:text-stone-100 font-bold">{totalCount}</strong>편의 클래식 공연 중{' '}
                 <strong className="text-concert-600 dark:text-concert-400 font-bold">{filteredCount}</strong>편이 검색되었습니다.
               </>
             ) : (

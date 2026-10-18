@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MapPin, ExternalLink, ChevronRight } from 'lucide-react';
+import { Calendar, MapPin, ExternalLink, ChevronRight, Music2 } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
@@ -77,10 +77,12 @@ export default function ConcertCompactList({ concerts = [], onSelectConcert }) {
               <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
                 <button
                   onClick={() => onSelectConcert(concert)}
-                  className="px-3 py-1.5 rounded-lg bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-800 dark:text-stone-200 text-xs font-semibold transition-colors flex items-center gap-1"
+                  className="px-3 py-1.5 rounded-lg bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-800 dark:text-stone-200 text-xs font-semibold transition-colors flex items-center gap-1.5 cursor-pointer shrink-0"
+                  title="프로그램 안내 보기"
                 >
+                  <Music2 className="w-3.5 h-3.5 text-concert-500" />
                   <span>프로그램</span>
-                  <ChevronRight className="w-3.5 h-3.5" />
+                  <ChevronRight className="w-3 h-3 text-stone-400" />
                 </button>
 
                 <a
