@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Search, RotateCcw, LayoutGrid, CalendarDays, Filter } from 'lucide-react';
+import { Search, RotateCcw, LayoutGrid, List, CalendarDays, Filter } from 'lucide-react';
 
 export default function FilterBar({
   filters,
@@ -149,10 +149,23 @@ export default function FilterBar({
                   ? 'bg-white dark:bg-hall-700 text-stone-900 dark:text-stone-50 shadow-sm'
                   : 'text-stone-500 dark:text-stone-400 hover:text-stone-800'
               }`}
-              title="목록 보기"
-              aria-label="목록 보기"
+              title="카드 목록보기"
+              aria-label="카드 목록보기"
             >
               <LayoutGrid className="w-4 h-4 text-concert-500" />
+            </button>
+
+            <button
+              onClick={() => setViewMode('compact')}
+              className={`p-2 rounded-lg text-xs font-semibold transition-all shrink-0 ${
+                viewMode === 'compact'
+                  ? 'bg-white dark:bg-hall-700 text-stone-900 dark:text-stone-50 shadow-sm'
+                  : 'text-stone-500 dark:text-stone-400 hover:text-stone-800'
+              }`}
+              title="간략보기"
+              aria-label="간략보기"
+            >
+              <List className="w-4 h-4 text-concert-500" />
             </button>
 
             <button

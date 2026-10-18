@@ -130,10 +130,12 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
                     {concert.venue ? concert.venue.replace(/\s*\([^)]*\)$/, '').trim() : '공식 공연장'} ({concert.city})
                   </span>
                   {(() => {
+                    const cleanVenue = concert.venue ? concert.venue.replace(/\s*\([^)]*\)$/, '').trim() : '';
+                    if (cleanVenue.includes('롯데콘서트홀')) return null;
                     const hallName = concert.hall || (concert.venue && concert.venue.match(/\(([^)]+)\)/) ? concert.venue.match(/\(([^)]+)\)/)[1].trim() : null);
                     if (hallName && hallName !== '공연홀') {
                       return (
-                        <span className="px-1.5 py-0.2 rounded text-[11px] font-bold bg-amber-100/90 dark:bg-amber-950/70 text-amber-900 dark:text-amber-200 border border-amber-300/80 dark:border-amber-700/60 shrink-0">
+                        <span className="px-2 py-0.5 rounded-md text-[11px] font-bold bg-[#b88648]/20 dark:bg-[#b88648]/30 text-[#85531d] dark:text-[#f3d9b1] border border-[#b88648]/40 dark:border-[#b88648]/50 shrink-0 shadow-xs">
                           {hallName}
                         </span>
                       );

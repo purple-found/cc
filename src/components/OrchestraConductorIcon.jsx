@@ -3,10 +3,10 @@ import React from 'react';
 /**
  * OrchestraConductorIcon (Opus Korea 상징 아이콘)
  * 
- * 한눈에 클래식 공연 무대임을 알 수 있는 '클래식 콘서트홀 무대 & 벨벳 드레이프 커튼 (The Classic Stage)':
- * 1. 좌우 및 상단: 클래식 오페라하우스와 콘서트홀을 상징하는 우아한 벨벳 드레이프 커튼 (Velvet Stage Curtains & Valance)
- * 2. 중앙 하단: 커튼 사이로 펼쳐진 정통 클래식 연주 무대 플랫폼 (The Concert Stage Platform)
- * 3. 무대 위: 100인의 호흡을 이끄는 마에스트로의 지휘봉(Conductor's Baton)과 피어오르는 클래식 선율의 빛
+ * 클래식 무대와 음악의 정통성을 한눈에 상징하는 '클래식 보면대 & 오푸스 악보 & 지휘봉':
+ * 1. 무대 중앙의 보면대(Music Stand) 위에 당당하게 펼쳐진 클래식 오케스트라 총보 악보 책 (Opus Score)
+ * 2. 섬세한 오선지 선율과 견고한 무대 삼각 다리 베이스 (Tripod Base & Shelf)
+ * 3. 악보 위를 가로지르며 오케스트라를 하나로 지휘하는 마에스트로의 지휘봉 (Conductor's Baton)
  * 
  * 규격: Lucide 및 SVG 표준 벡터 규격 (viewBox 0 0 24 24, strokeWidth 1.8, strokeLinecap round)
  */
@@ -24,28 +24,25 @@ export default function OrchestraConductorIcon({ className = 'w-6 h-6', ...props
       aria-hidden="true"
       {...props}
     >
-      {/* 1. 상단 무대 밸런스 커튼 아치 (Upper Stage Curtain Valance) */}
-      <path d="M2 3h20v2c-3.3 1.6-6.7 1.6-10 0-3.3 1.6-6.7 1.6-10 0V3z" fill="currentColor" fillOpacity="0.18" />
+      {/* 1. 보면대 위 펼쳐진 클래식 악보 책 (Open Opus Score) */}
+      <path d="M4 5h7c.8 0 1.2.6 1.2 1.4v7.8c0-.8-.6-1.4-1.2-1.4H4V5z" />
+      <path d="M20 5h-7c-.8 0-1.2.6-1.2 1.4v7.8c0-.8.6-1.4 1.2-1.4h7V5z" />
+      {/* 악보 오선지 라인 */}
+      <path d="M6 7.8h3.8" strokeWidth="1.2" strokeOpacity="0.75" />
+      <path d="M6 10.2h3.8" strokeWidth="1.2" strokeOpacity="0.75" />
+      <path d="M14.2 7.8h3.8" strokeWidth="1.2" strokeOpacity="0.75" />
+      <path d="M14.2 10.2h3.8" strokeWidth="1.2" strokeOpacity="0.75" />
 
-      {/* 2. 좌측 벨벳 드레이프 커튼 (Left Velvet Drape Curtain) */}
-      <path d="M2 5c2 2 3.5 5.5 2 10.5-.6 2-1.4 3-2 3.5V5z" fill="currentColor" fillOpacity="0.12" />
-      <path d="M2 12.5c1.4 0 2.4-.4 2.8-.7" strokeWidth="1.5" />
+      {/* 2. 보면대 받침 선반 & 중심 기둥 (Stand Shelf & Telescopic Pole) */}
+      <path d="M2.5 14.2h19" strokeWidth="2" />
+      <path d="M12 14.2v6.5" strokeWidth="2" />
 
-      {/* 3. 우측 벨벳 드레이프 커튼 (Right Velvet Drape Curtain) */}
-      <path d="M22 5c-2 2-3.5 5.5-2 10.5.6 2 1.4 3 2 3.5V5z" fill="currentColor" fillOpacity="0.12" />
-      <path d="M22 12.5c-1.4 0-2.4-.4-2.8-.7" strokeWidth="1.5" />
+      {/* 3. 보면대 삼각 다리 베이스 (Tripod Base) */}
+      <path d="M7.5 21.5l4.5-.8 4.5.8" strokeWidth="2" />
 
-      {/* 4. 클래식 연주 무대 바닥 플랫폼 (The Concert Stage Platform) */}
-      <path d="M4.5 18.5h15l1.5 2.5H3l1.5-2.5z" />
-
-      {/* 5. 무대 위 마에스트로 지휘봉 & 클래식 선율의 울림 (Conductor's Baton & Rising Harmony) */}
-      {/* 지휘대 포디움 */}
-      <path d="M10.5 18.5h3" strokeWidth="2" />
-      {/* 지휘봉 */}
-      <path d="M11 18.5L14 8" strokeWidth="2" />
-      <circle cx="10.8" cy="18.5" r="0.8" fill="currentColor" />
-      {/* 지휘봉 끝에서 피어오르는 클래식 선율 아치 */}
-      <path d="M14 7.5c1.6-1.2 3.2 0 2.2 2.2" strokeWidth="1.6" strokeOpacity="0.85" />
+      {/* 4. 마에스트로의 지휘봉 (Conductor's Baton) */}
+      <path d="M4.5 17.5L19.5 2.5" strokeWidth="2" />
+      <circle cx="4.5" cy="17.5" r="1.1" fill="currentColor" />
     </svg>
   );
 }

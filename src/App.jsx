@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header';
 import FilterBar from './components/FilterBar';
 import ConcertCard from './components/ConcertCard';
+import ConcertCompactList from './components/ConcertCompactList';
 import ConcertCalendar from './components/ConcertCalendar';
 import ConcertDetailModal from './components/ConcertDetailModal';
 import TipConcertModal from './components/TipConcertModal';
@@ -358,7 +359,7 @@ export default function App() {
               concerts={concerts}
             />
 
-            {/* View Mode: Cards vs Calendar */}
+            {/* View Mode: Cards vs Compact vs Calendar */}
             {viewMode === 'cards' ? (
               filteredConcerts.length === 0 ? (
                 <div className="p-16 text-center bg-white dark:bg-hall-900 rounded-3xl border border-stone-200 dark:border-hall-800">
@@ -392,14 +393,15 @@ export default function App() {
                       key={concert.id}
                       concert={concert}
                       onSelect={(c) => setSelectedConcert(c)}
-                      onOpenReview={(c) => {
-                        setReviewTargetConcert(c);
-                        setActiveTab('community');
-                      }}
                     />
                   ))}
                 </div>
               )
+            ) : viewMode === 'compact' ? (
+              <ConcertCompactList
+                concerts={filteredConcerts}
+                onSelectConcert={(c) => setSelectedConcert(c)}
+              />
             ) : (
               <ConcertCalendar
                 concerts={filteredConcerts}
