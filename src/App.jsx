@@ -267,8 +267,9 @@ export default function App() {
         } else if (filters.venue === '청주예술의전당') {
           if (!v.includes('청주') || !v.includes('예술의전당')) return false;
         } else {
-          const vQuery = filters.venue.toLowerCase();
-          if (!v.toLowerCase().includes(vQuery)) {
+          const normV = v.replace(/\s+/g, '').toLowerCase();
+          const normQuery = filters.venue.replace(/\s+/g, '').toLowerCase();
+          if (!normV.includes(normQuery)) {
             return false;
           }
         }

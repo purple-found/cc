@@ -12,30 +12,30 @@ export default function FilterBar({
   shouldShowConcerts = true,
   onReset
 }) {
-  // 1. 주요 랜드마크 공연장 기본 목록
+  // 1. 주요 랜드마크 공연장 기본 목록 (ㄱㄴㄷ 가나다 순 정렬)
   const primaryVenues = [
     { label: '전체 장소 (All Venues)', value: 'all' },
-    { label: '예술의전당 (Seoul Arts Center)', value: '예술의전당' },
-    { label: '롯데콘서트홀 (Lotte Concert Hall)', value: '롯데콘서트홀' },
-    { label: '부천아트센터 (Bucheon Arts Center)', value: '부천아트센터' },
-    { label: '부산콘서트홀 (Busan Concert Hall)', value: '부산콘서트홀' },
-    { label: '아트센터인천 (Art Center Incheon)', value: '아트센터인천' },
-    { label: '금호아트홀 연세 (Kumho Art Hall)', value: '금호아트홀' },
-    { label: 'LG아트센터 서울 (LG Arts Center)', value: 'LG아트센터' },
+    { label: '강릉아트센터 (Gangneung Arts Center)', value: '강릉아트센터' },
     { label: '경기아트센터 (Gyeonggi Arts Center)', value: '경기아트센터' },
+    { label: '고양아람누리 (Goyang Aram Nuri)', value: '고양아람누리' },
+    { label: '광주예술의전당 (Gwangju Arts Center)', value: '광주예술의전당' },
+    { label: '금호아트홀 연세 (Kumho Art Hall)', value: '금호아트홀' },
     { label: '대구콘서트하우스 (Daegu Concert House)', value: '대구콘서트하우스' },
     { label: '대전예술의전당 (Daejeon Arts Center)', value: '대전예술의전당' },
-    { label: '광주예술의전당 (Gwangju Arts Center)', value: '광주예술의전당' },
-    { label: '청주예술의전당 (Cheongju Arts Center)', value: '청주예술의전당' },
+    { label: '롯데콘서트홀 (Lotte Concert Hall)', value: '롯데콘서트홀' },
     { label: '부산문화회관 (Busan Cultural Center)', value: '부산문화회관' },
-    { label: '통영국제음악당 (Tongyeong Music Hall)', value: '통영국제음악당' },
-    { label: '강릉아트센터 (Gangneung Arts Center)', value: '강릉아트센터' },
+    { label: '부산콘서트홀 (Busan Concert Hall)', value: '부산콘서트홀' },
+    { label: '부천아트센터 (Bucheon Arts Center)', value: '부천아트센터' },
     { label: '성남아트센터 (Seongnam Arts Center)', value: '성남아트센터' },
-    { label: '고양아람누리 (Goyang Aram Nuri)', value: '고양아람누리' },
-    { label: '수성아트피아 (Suseong Artpia)', value: '수성아트피아' },
-    { label: '천안예술의전당 (Cheonan Arts Center)', value: '천안예술의전당' },
     { label: '세종예술의전당 (Sejong Arts Center)', value: '세종예술의전당' },
-    { label: '안동문화예술의전당 (Andong Arts Center)', value: '안동문화예술의전당' }
+    { label: '수성아트피아 (Suseong Artpia)', value: '수성아트피아' },
+    { label: '아트센터인천 (Art Center Incheon)', value: '아트센터인천' },
+    { label: '안동문화예술의전당 (Andong Arts Center)', value: '안동문화예술의전당' },
+    { label: '예술의전당 (Seoul Arts Center)', value: '예술의전당' },
+    { label: '천안예술의전당 (Cheonan Arts Center)', value: '천안예술의전당' },
+    { label: '청주예술의전당 (Cheongju Arts Center)', value: '청주예술의전당' },
+    { label: '통영국제음악당 (Tongyeong Music Hall)', value: '통영국제음악당' },
+    { label: 'LG아트센터 서울 (LG Arts Center)', value: 'LG아트센터' }
   ];
 
   // 2. 실제 데이터에 존재하는 전국의 모든 소형/중형/지역 공연장 전수 자동 통합
