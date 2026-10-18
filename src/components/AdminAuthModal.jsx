@@ -47,14 +47,11 @@ export default function AdminAuthModal({ isOpen, onClose, onAuthenticate }) {
         className="bg-white dark:bg-hall-900 rounded-3xl max-w-sm w-full border border-stone-200 dark:border-hall-750 shadow-2xl p-6 sm:p-7 space-y-5"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between pb-3 border-b border-stone-100 dark:border-hall-800">
+        <div className="flex items-center justify-between pb-2 border-b border-stone-100 dark:border-hall-800">
           <div className="flex items-center gap-2">
             <div className="p-2 rounded-xl bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300">
               <Lock className="w-4 h-4 text-concert-500" />
             </div>
-            <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100">
-              관리자 보안 인증
-            </h3>
           </div>
           <button
             onClick={onClose}
@@ -65,11 +62,7 @@ export default function AdminAuthModal({ isOpen, onClose, onAuthenticate }) {
           </button>
         </div>
 
-        <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed">
-          공연장 관리 및 등록 시스템에 접근하려면 관리자 암호를 입력하세요.
-        </p>
-
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 pt-1">
           <div>
             <div className="relative">
               <KeyRound className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
@@ -107,7 +100,7 @@ export default function AdminAuthModal({ isOpen, onClose, onAuthenticate }) {
               type="submit"
               className="px-5 py-2 rounded-xl bg-stone-900 hover:bg-black dark:bg-stone-100 dark:hover:bg-white dark:text-stone-900 text-white text-xs font-bold transition-all shadow-md"
             >
-              인증 확인
+              확인
             </button>
           </div>
         </form>
