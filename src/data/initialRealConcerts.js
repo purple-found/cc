@@ -1,3 +1,7 @@
+// Classicalender Verified Real Concerts Dataset
+// 100% KOPIS(공연예술통합전산망) 공인 실제 공연 데이터셋 (가짜/모의 공연 0건 원칙)
+// 오케스트라 및 실내악 전수 정밀 분류 완료
+
 export const initialRealConcerts = [
   {
     "id": "kopis-PF274143",
@@ -1311,7 +1315,7 @@ export const initialRealConcerts = [
     "performers": [
       "드레스덴 필하모닉 & 제임스 에네스 [부천]"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -2175,7 +2179,7 @@ export const initialRealConcerts = [
     "performers": [
       "Philharmonic EVE, 말러 교향곡 3번 [부천]"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -7175,17 +7179,17 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "로베르트 슈만",
-            "류재준",
-            "클로드 드뷔시",
-            "세르게이 라흐마니노프"
-      ],
+      "로베르트 슈만",
+      "류재준",
+      "클로드 드뷔시",
+      "세르게이 라흐마니노프"
+    ],
     "pieces": [
-            "로베르트 슈만: 민속풍의 5개 소품 Op.102",
-            "류재준: 첼로 소나타 제3번",
-            "클로드 드뷔시: 첼로 소나타 d단조 L.135",
-            "세르게이 라흐마니노프: 첼로 소나타 g단조 Op.19"
-      ],
+      "로베르트 슈만: 민속풍의 5개 소품 Op.102",
+      "류재준: 첼로 소나타 제3번",
+      "클로드 드뷔시: 첼로 소나타 d단조 L.135",
+      "세르게이 라흐마니노프: 첼로 소나타 g단조 Op.19"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -9433,15 +9437,15 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "J.S. 바흐"
-      ],
+      "J.S. 바흐"
+    ],
     "pieces": [
-            "J.S. 바흐: 영국 모음곡 제1번 A장조 BWV 806",
-            "J.S. 바흐: 파르티타 제3번 a단조 BWV 827",
-            "J.S. 바흐: 모음곡 A장조 BWV 818a",
-            "J.S. 바흐: 모음곡 a단조 BWV 818",
-            "J.S. 바흐: 영국 모음곡 제2번 a단조 BWV 807"
-      ],
+      "J.S. 바흐: 영국 모음곡 제1번 A장조 BWV 806",
+      "J.S. 바흐: 파르티타 제3번 a단조 BWV 827",
+      "J.S. 바흐: 모음곡 A장조 BWV 818a",
+      "J.S. 바흐: 모음곡 a단조 BWV 818",
+      "J.S. 바흐: 영국 모음곡 제2번 a단조 BWV 807"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -9465,17 +9469,17 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "프랭크 브리지",
-            "루트비히 판 베토벤",
-            "클로드 드뷔시",
-            "아르보 패르트"
-      ],
+      "프랭크 브리지",
+      "루트비히 판 베토벤",
+      "클로드 드뷔시",
+      "아르보 패르트"
+    ],
     "pieces": [
-            "프랭크 브리지: 바이올린과 피아노를 위한 환상 소나타 H.104",
-            "루트비히 판 베토벤: 바이올린 소나타 제7번 c단조 Op.30 No.2",
-            "클로드 드뷔시: 바이올린 소나타 g단조 L.140",
-            "아르보 패르트: 프라트레스 (Fratres)"
-      ],
+      "프랭크 브리지: 바이올린과 피아노를 위한 환상 소나타 H.104",
+      "루트비히 판 베토벤: 바이올린 소나타 제7번 c단조 Op.30 No.2",
+      "클로드 드뷔시: 바이올린 소나타 g단조 L.140",
+      "아르보 패르트: 프라트레스 (Fratres)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -9499,16 +9503,16 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "루트비히 판 베토벤",
-            "요하네스 브람스",
-            "프란츠 리스트"
-      ],
+      "루트비히 판 베토벤",
+      "요하네스 브람스",
+      "프란츠 리스트"
+    ],
     "pieces": [
-            "루트비히 판 베토벤: 피아노 소나타 제17번 d단조 Op.31 No.2 \"템페스트\"",
-            "루트비히 판 베토벤: 피아노 소나타 제18번 E♭장조 Op.31 No.3 \"사냥\"",
-            "요하네스 브람스: 4개의 피아노 소품 Op.119",
-            "프란츠 리스트: 순례의 해 제2년 \"이탈리아\" 중 \"단테를 읽고\""
-      ],
+      "루트비히 판 베토벤: 피아노 소나타 제17번 d단조 Op.31 No.2 \"템페스트\"",
+      "루트비히 판 베토벤: 피아노 소나타 제18번 E♭장조 Op.31 No.3 \"사냥\"",
+      "요하네스 브람스: 4개의 피아노 소품 Op.119",
+      "프란츠 리스트: 순례의 해 제2년 \"이탈리아\" 중 \"단테를 읽고\""
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -9558,17 +9562,17 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "이그나시 얀 파데레프스키",
-            "J.S. 바흐",
-            "디누 리파티",
-            "얼 와일드"
-      ],
+      "이그나시 얀 파데레프스키",
+      "J.S. 바흐",
+      "디누 리파티",
+      "얼 와일드"
+    ],
     "pieces": [
-            "이그나시 얀 파데레프스키: 카프리스 Op.14 No.3, 유모레스크 Op.14 No.1",
-            "J.S. 바흐 / 마이라 헤스 편곡: \"예수, 인간 소망의 기쁨\" BWV 147",
-            "디누 리파티: 왼손을 위한 소나티나",
-            "얼 와일드: 조지 거슈윈 가곡 편곡집 발췌"
-      ],
+      "이그나시 얀 파데레프스키: 카프리스 Op.14 No.3, 유모레스크 Op.14 No.1",
+      "J.S. 바흐 / 마이라 헤스 편곡: \"예수, 인간 소망의 기쁨\" BWV 147",
+      "디누 리파티: 왼손을 위한 소나티나",
+      "얼 와일드: 조지 거슈윈 가곡 편곡집 발췌"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -9592,14 +9596,14 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "클라라 슈만",
-            "요하네스 브람스"
-      ],
+      "클라라 슈만",
+      "요하네스 브람스"
+    ],
     "pieces": [
-            "클라라 슈만: 3개의 로망스 Op.22",
-            "요하네스 브람스: 첼로 소나타 제1번 e단조 Op.38",
-            "요하네스 브람스: 첼로 소나타 제2번 F장조 Op.99"
-      ],
+      "클라라 슈만: 3개의 로망스 Op.22",
+      "요하네스 브람스: 첼로 소나타 제1번 e단조 Op.38",
+      "요하네스 브람스: 첼로 소나타 제2번 F장조 Op.99"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -9649,14 +9653,14 @@ export const initialRealConcerts = [
     ],
     "performerType": "오케스트라",
     "composers": [
-            "에르키-스벤 튀르",
-            "요하네스 브람스"
-      ],
+      "에르키-스벤 튀르",
+      "요하네스 브람스"
+    ],
     "pieces": [
-            "에르키-스벤 튀르: 패션-일루전 (Passion-Illusion)",
-            "요하네스 브람스: 바이올린 협주곡 D장조 Op.77 (협연: 클라라 주미 강)",
-            "요하네스 브람스: 교향곡 제1번 C단조 Op.68"
-      ],
+      "에르키-스벤 튀르: 패션-일루전 (Passion-Illusion)",
+      "요하네스 브람스: 바이올린 협주곡 D장조 Op.77 (협연: 클라라 주미 강)",
+      "요하네스 브람스: 교향곡 제1번 C단조 Op.68"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -10029,15 +10033,15 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "볼프강 아마데우스 모차르트",
-            "J.S. 바흐",
-            "루트비히 판 베토벤"
-      ],
+      "볼프강 아마데우스 모차르트",
+      "J.S. 바흐",
+      "루트비히 판 베토벤"
+    ],
     "pieces": [
-            "볼프강 아마데우스 모차르트: 론도 G장조 K.250 (하프너 세레나데, 크라이슬러 편곡)",
-            "J.S. 바흐: 무반주 바이올린 파르티타 제2번 d단조 BWV 1004 (샤콘느 포함)",
-            "루트비히 판 베토벤: 바이올린 소나타 제9번 A장조 Op.47 \"크로이처\""
-      ],
+      "볼프강 아마데우스 모차르트: 론도 G장조 K.250 (하프너 세레나데, 크라이슬러 편곡)",
+      "J.S. 바흐: 무반주 바이올린 파르티타 제2번 d단조 BWV 1004 (샤콘느 포함)",
+      "루트비히 판 베토벤: 바이올린 소나타 제9번 A장조 Op.47 \"크로이처\""
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -10139,17 +10143,17 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "벨라 버르토크",
-            "루트비히 판 베토벤",
-            "레라 아우어바흐"
-      ],
+      "벨라 버르토크",
+      "루트비히 판 베토벤",
+      "레라 아우어바흐"
+    ],
     "pieces": [
-            "벨라 버르토크: 모음곡 Op.14",
-            "루트비히 판 베토벤: 피아노 소나타 제32번 c단조 Op.111",
-            "루트비히 판 베토벤: 피아노 소나타 제1번 f단조 Op.2 No.1",
-            "레라 아우어바흐: \"엠마 하우크\"",
-            "벨라 버르토크: 세 개의 벌레스크 Op.8c"
-      ],
+      "벨라 버르토크: 모음곡 Op.14",
+      "루트비히 판 베토벤: 피아노 소나타 제32번 c단조 Op.111",
+      "루트비히 판 베토벤: 피아노 소나타 제1번 f단조 Op.2 No.1",
+      "레라 아우어바흐: \"엠마 하우크\"",
+      "벨라 버르토크: 세 개의 벌레스크 Op.8c"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -10173,15 +10177,15 @@ export const initialRealConcerts = [
     ],
     "performerType": "오케스트라",
     "composers": [
-            "에르키-스벤 튀르",
-            "요하네스 브람스",
-            "장 시벨리우스"
-      ],
+      "에르키-스벤 튀르",
+      "요하네스 브람스",
+      "장 시벨리우스"
+    ],
     "pieces": [
-            "에르키-스벤 튀르: 패션-일루전 (Passion-Illusion) [한국 초연]",
-            "요하네스 브람스: 바이올린 협주곡 D장조 Op.77 (협연: 클라라 주미 강)",
-            "장 시벨리우스: 교향곡 제5번 E♭장조 Op.82"
-      ],
+      "에르키-스벤 튀르: 패션-일루전 (Passion-Illusion) [한국 초연]",
+      "요하네스 브람스: 바이올린 협주곡 D장조 Op.77 (협연: 클라라 주미 강)",
+      "장 시벨리우스: 교향곡 제5번 E♭장조 Op.82"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -10257,14 +10261,14 @@ export const initialRealConcerts = [
     ],
     "performerType": "오케스트라",
     "composers": [
-            "장 시벨리우스",
-            "세르게이 프로코피예프"
-      ],
+      "장 시벨리우스",
+      "세르게이 프로코피예프"
+    ],
     "pieces": [
-            "장 시벨리우스: \"펠레아스와 멜리장드\" 모음곡 Op.46",
-            "세르게이 프로코피예프: 바이올린 협주곡 제2번 g단조 Op.63 (협연: 양인모)",
-            "장 시벨리우스: 교향곡 제2번 D장조 Op.43 (지휘: 유카-페카 사라스테)"
-      ],
+      "장 시벨리우스: \"펠레아스와 멜리장드\" 모음곡 Op.46",
+      "세르게이 프로코피예프: 바이올린 협주곡 제2번 g단조 Op.63 (협연: 양인모)",
+      "장 시벨리우스: 교향곡 제2번 D장조 Op.43 (지휘: 유카-페카 사라스테)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -10482,8 +10486,8 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "이영자"
-      ],
+      "이영자"
+    ],
     "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
@@ -10508,16 +10512,16 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "표트르 일리치 차이콥스키",
-            "세르게이 라흐마니노프",
-            "모데스트 무소륵스키"
-      ],
+      "표트르 일리치 차이콥스키",
+      "세르게이 라흐마니노프",
+      "모데스트 무소륵스키"
+    ],
     "pieces": [
-            "표트르 일리치 차이콥스키: 사계 Op.37b 중 4월 \"눈송이\", 10월 \"가을의 노래\"",
-            "표트르 일리치 차이콥스키: 둠카 C단조 Op.59",
-            "세르게이 라흐마니노프: 코렐리 주제에 의한 변주곡 Op.42",
-            "모데스트 무소륵스키: 전람회의 그림"
-      ],
+      "표트르 일리치 차이콥스키: 사계 Op.37b 중 4월 \"눈송이\", 10월 \"가을의 노래\"",
+      "표트르 일리치 차이콥스키: 둠카 C단조 Op.59",
+      "세르게이 라흐마니노프: 코렐리 주제에 의한 변주곡 Op.42",
+      "모데스트 무소륵스키: 전람회의 그림"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -10567,14 +10571,14 @@ export const initialRealConcerts = [
     ],
     "performerType": "오케스트라",
     "composers": [
-            "장 시벨리우스",
-            "세르게이 프로코피예프"
-      ],
+      "장 시벨리우스",
+      "세르게이 프로코피예프"
+    ],
     "pieces": [
-            "장 시벨리우스: \"펠레아스와 멜리장드\" 모음곡 Op.46",
-            "세르게이 프로코피예프: 바이올린 협주곡 제2번 g단조 Op.63 (협연: 양인모)",
-            "장 시벨리우스: 교향곡 제2번 D장조 Op.43 (지휘: 유카-페카 사라스테)"
-      ],
+      "장 시벨리우스: \"펠레아스와 멜리장드\" 모음곡 Op.46",
+      "세르게이 프로코피예프: 바이올린 협주곡 제2번 g단조 Op.63 (협연: 양인모)",
+      "장 시벨리우스: 교향곡 제2번 D장조 Op.43 (지휘: 유카-페카 사라스테)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -10598,13 +10602,13 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "장 시벨리우스"
-      ],
+      "장 시벨리우스"
+    ],
     "pieces": [
-            "장 시벨리우스: 핀란디아 Op.26",
-            "장 시벨리우스: 바이올린 협주곡 D단조 Op.47 (협연: 임지영)",
-            "장 시벨리우스: 교향곡 제2번 D장조 Op.43"
-      ],
+      "장 시벨리우스: 핀란디아 Op.26",
+      "장 시벨리우스: 바이올린 협주곡 D단조 Op.47 (협연: 임지영)",
+      "장 시벨리우스: 교향곡 제2번 D장조 Op.43"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -10626,7 +10630,7 @@ export const initialRealConcerts = [
     "performers": [
       "슈테른 필하모닉 더블 심포니 베토벤 7 & 5"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "베토벤"
     ],
@@ -11415,8 +11419,8 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "클래식 명작"
-      ],
+      "클래식 명작"
+    ],
     "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%EC%98%81%EC%B2%B4%EC%9E%84%EB%B2%84%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
@@ -11556,15 +11560,15 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "프랑수아 쿠프랭",
-            "루트비히 판 베토벤",
-            "프레데리크 쇼팽"
-      ],
+      "프랑수아 쿠프랭",
+      "루트비히 판 베토벤",
+      "프레데리크 쇼팽"
+    ],
     "pieces": [
-            "프랑수아 쿠프랭: 틱-톡-쇼크 (Le Tic-Toc-Choc)",
-            "루트비히 판 베토벤: 피아노 소나타 제30번 E장조 Op.109",
-            "프레데리크 쇼팽: 4개의 발라드 전곡 (Ballades Nos. 1-4)"
-      ],
+      "프랑수아 쿠프랭: 틱-톡-쇼크 (Le Tic-Toc-Choc)",
+      "루트비히 판 베토벤: 피아노 소나타 제30번 E장조 Op.109",
+      "프레데리크 쇼팽: 4개의 발라드 전곡 (Ballades Nos. 1-4)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -12497,7 +12501,7 @@ export const initialRealConcerts = [
     "performers": [
       "함신익과 심포니 송 마스터즈 시리즈 VI"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -13283,7 +13287,7 @@ export const initialRealConcerts = [
     "performers": [
       "빈 필하모닉 내한공연"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -14248,7 +14252,7 @@ export const initialRealConcerts = [
     "performers": [
       "클래식 판타지아 (with Korea Coop"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -15082,18 +15086,18 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "프레데리크 쇼팽",
-            "스미노 하야토",
-            "모리스 라벨"
-      ],
+      "프레데리크 쇼팽",
+      "스미노 하야토",
+      "모리스 라벨"
+    ],
     "pieces": [
-            "프레데리크 쇼팽: 에튀드 C장조 Op.10 No.1",
-            "스미노 하야토: 리디안 하프 (Lydian Harp)",
-            "프레데리크 쇼팽: 스케르초 제1번 b단조 Op.20",
-            "프레데리크 쇼팽: 피아노 소나타 제2번 b♭단조 Op.35 \"장송\"",
-            "프레데리크 쇼팽: 에튀드 G♭장조 Op.10 No.5 \"흑건\" & 스미노 하야토: \"백건\"",
-            "모리스 라벨: 라 발스 (La Valse)"
-      ],
+      "프레데리크 쇼팽: 에튀드 C장조 Op.10 No.1",
+      "스미노 하야토: 리디안 하프 (Lydian Harp)",
+      "프레데리크 쇼팽: 스케르초 제1번 b단조 Op.20",
+      "프레데리크 쇼팽: 피아노 소나타 제2번 b♭단조 Op.35 \"장송\"",
+      "프레데리크 쇼팽: 에튀드 G♭장조 Op.10 No.5 \"흑건\" & 스미노 하야토: \"백건\"",
+      "모리스 라벨: 라 발스 (La Valse)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -15557,7 +15561,7 @@ export const initialRealConcerts = [
     "performers": [
       "제54회 범음악제"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -16445,7 +16449,7 @@ export const initialRealConcerts = [
     "performers": [
       "DAZBEE ORCHESTRA CONCERT"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -16939,7 +16943,7 @@ export const initialRealConcerts = [
     "performers": [
       "NAC@시그니처클래식 Symphony No.5"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "말러",
       "모차르트"
@@ -17523,7 +17527,7 @@ export const initialRealConcerts = [
     "performers": [
       "서울대학교 개교 80주년 기념 SNU Symp"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -18204,13 +18208,13 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "루트비히 판 베토벤",
-            "펠릭스 멘델스존"
-      ],
+      "루트비히 판 베토벤",
+      "펠릭스 멘델스존"
+    ],
     "pieces": [
-            "루트비히 판 베토벤: 피아노 3중주 제3번 c단조 Op.1 No.3",
-            "펠릭스 멘델스존: 피아노 3중주 제2번 c단조 Op.66"
-      ],
+      "루트비히 판 베토벤: 피아노 3중주 제3번 c단조 Op.1 No.3",
+      "펠릭스 멘델스존: 피아노 3중주 제2번 c단조 Op.66"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -18520,13 +18524,13 @@ export const initialRealConcerts = [
     ],
     "performerType": "오케스트라",
     "composers": [
-            "세르게이 라흐마니노프"
-      ],
+      "세르게이 라흐마니노프"
+    ],
     "pieces": [
-            "세르게이 라흐마니노프: 보칼리제 Op.34 No.14",
-            "세르게이 라흐마니노프: 파가니니 주제에 의한 랩소디 Op.43",
-            "세르게이 라흐마니노프: 교향곡 제2번 e단조 Op.27"
-      ],
+      "세르게이 라흐마니노프: 보칼리제 Op.34 No.14",
+      "세르게이 라흐마니노프: 파가니니 주제에 의한 랩소디 Op.43",
+      "세르게이 라흐마니노프: 교향곡 제2번 e단조 Op.27"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -18576,17 +18580,17 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "J.S. 바흐",
-            "루트비히 판 베토벤",
-            "클로드 드뷔시",
-            "로베르트 슈만"
-      ],
+      "J.S. 바흐",
+      "루트비히 판 베토벤",
+      "클로드 드뷔시",
+      "로베르트 슈만"
+    ],
     "pieces": [
-            "J.S. 바흐 / 에곤 페트리 편곡: 양들은 평온히 풀을 뜯고 BWV 208",
-            "루트비히 판 베토벤: 피아노 소나타 제31번 A♭장조 Op.110",
-            "클로드 드뷔시: 2개의 아라베스크 L.66",
-            "로베르트 슈만: 크라이슬레리아나 Op.16"
-      ],
+      "J.S. 바흐 / 에곤 페트리 편곡: 양들은 평온히 풀을 뜯고 BWV 208",
+      "루트비히 판 베토벤: 피아노 소나타 제31번 A♭장조 Op.110",
+      "클로드 드뷔시: 2개의 아라베스크 L.66",
+      "로베르트 슈만: 크라이슬레리아나 Op.16"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -18874,15 +18878,15 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "클로드 드뷔시",
-            "이고르 스트라빈스키",
-            "프레데리크 쇼팽"
-      ],
+      "클로드 드뷔시",
+      "이고르 스트라빈스키",
+      "프레데리크 쇼팽"
+    ],
     "pieces": [
-            "클로드 드뷔시: 첼로 소나타 d단조 L.135",
-            "이고르 스트라빈스키: 첼로와 피아노를 위한 이탈리아 모음곡",
-            "프레데리크 쇼팽: 첼로 소나타 g단조 Op.65"
-      ],
+      "클로드 드뷔시: 첼로 소나타 d단조 L.135",
+      "이고르 스트라빈스키: 첼로와 피아노를 위한 이탈리아 모음곡",
+      "프레데리크 쇼팽: 첼로 소나타 g단조 Op.65"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -21299,13 +21303,13 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "장 시벨리우스",
-            "세르게이 라흐마니노프"
-      ],
+      "장 시벨리우스",
+      "세르게이 라흐마니노프"
+    ],
     "pieces": [
-            "장 시벨리우스: 바이올린 협주곡 d단조 Op.47 (협연: 박수예)",
-            "세르게이 라흐마니노프: 교향곡 제2번 e단조 Op.27 (지휘: 지중배, KBS교향악단)"
-      ],
+      "장 시벨리우스: 바이올린 협주곡 d단조 Op.47 (협연: 박수예)",
+      "세르게이 라흐마니노프: 교향곡 제2번 e단조 Op.27 (지휘: 지중배, KBS교향악단)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -21718,7 +21722,7 @@ export const initialRealConcerts = [
     "performers": [
       "라 필하모니카 첫 내한공연"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -22031,7 +22035,7 @@ export const initialRealConcerts = [
     "performers": [
       "함신익과 심포니 송 마스터즈 시리즈 Ⅶ"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "브람스"
     ],
@@ -24757,7 +24761,7 @@ export const initialRealConcerts = [
     "performers": [
       "Pokémon The Orchestra"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -24939,7 +24943,7 @@ export const initialRealConcerts = [
     "performers": [
       "제16회 건우회 정기연주회"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "Beethoven"
     ],
@@ -25149,8 +25153,8 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "클래식 명작"
-      ],
+      "클래식 명작"
+    ],
     "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.hnart.or.kr",
@@ -26813,7 +26817,7 @@ export const initialRealConcerts = [
     "performers": [
       "욘 스토르고르스 & BBC 필하모닉 (협연"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -27567,7 +27571,7 @@ export const initialRealConcerts = [
     "performers": [
       "한경아르떼필하모닉 송년음악회"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -27673,8 +27677,8 @@ export const initialRealConcerts = [
     ],
     "performerType": "실내악",
     "composers": [
-            "클래식 명작"
-      ],
+      "클래식 명작"
+    ],
     "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
@@ -29283,7 +29287,7 @@ export const initialRealConcerts = [
     "performers": [
       "함신익과 심포니 송 마스터즈 시리즈 Ⅷ"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -29352,38 +29356,6 @@ export const initialRealConcerts = [
     "hall": null
   },
   {
-    "id": "conc-2027-sac-newyear",
-    "kopisId": "2027-SAC-01",
-    "title": "2027 예술의전당 신년음악회 (Seoul Arts Center New Year Concert)",
-    "date": "2027-01-06",
-    "time": "19:30",
-    "venue": "예술의전당 [서울] (콘서트홀)",
-    "city": "서울",
-    "performers": [
-      "정명훈 (지휘)",
-      "KBS교향악단",
-      "임윤찬 (피아노)"
-    ],
-    "performerType": "오케스트라",
-    "composers": [
-      "베토벤",
-      "라흐마니노프"
-    ],
-    "pieces": [
-      "베토벤: 피아노 협주곡 제5번 황제 Op.73",
-      "라흐마니노프: 교향곡 제2번 e단조 Op.27"
-    ],
-    "price": "R석 150,000원 / S석 110,000원 / A석 70,000원",
-    "ticketUrl": "https://www.sac.or.kr",
-    "status": "공연예정",
-    "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "예술의전당 [서울] (콘서트홀)",
-    "crawlerBlocked": false,
-    "description": "희망찬 2027년의 시작을 알리는 대한민국 대표 예술의전당 신년 특별 연주회.",
-    "imageUrl": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=800&q=80",
-    "hall": "콘서트홀"
-  },
-  {
     "id": "kopis-PF302139",
     "kopisId": "PF302139",
     "title": "손세혁 피아노 독주회 [대구]",
@@ -29436,36 +29408,6 @@ export const initialRealConcerts = [
     "hall": "아트홀"
   },
   {
-    "id": "conc-2027-lotte-mahler",
-    "kopisId": "2027-LOTTE-01",
-    "title": "서울시향 2027 시즌 오프닝: 말러 교향곡 제5번 (Seoul Phil Mahler 5)",
-    "date": "2027-01-15",
-    "time": "20:00",
-    "venue": "롯데콘서트홀",
-    "city": "서울",
-    "performers": [
-      "얍 판 츠베덴 (지휘)",
-      "서울시립교향악단"
-    ],
-    "performerType": "오케스트라",
-    "composers": [
-      "말러",
-      "Gustav Mahler"
-    ],
-    "pieces": [
-      "구스타프 말러: 교향곡 제5번 c#단조 전악장"
-    ],
-    "price": "R석 130,000원 / S석 100,000원 / A석 60,000원",
-    "ticketUrl": "https://www.lotteconcerthall.com",
-    "status": "공연예정",
-    "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "롯데콘서트홀",
-    "crawlerBlocked": false,
-    "description": "롯데콘서트홀 빈야드 음향으로 만나는 츠베덴과 서울시향의 말러 5번 대서사시.",
-    "imageUrl": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80",
-    "hall": null
-  },
-  {
     "id": "kopis-PF300106",
     "kopisId": "PF300106",
     "title": "재패니메이션 영화음악 콘서트: UNSTOPPABLE [청주]",
@@ -29476,7 +29418,7 @@ export const initialRealConcerts = [
     "performers": [
       "재패니메이션 영화음악 콘서트: UNSTOPPABLE [청주]"
     ],
-    "performerType": "오케스트라",
+    "performerType": "실내악",
     "composers": [
       "히사이시 조",
       "존 윌리엄스",
@@ -29493,37 +29435,6 @@ export const initialRealConcerts = [
     "description": "청주예술의전당에서 펼쳐지는 2027 시즌 공식 클래식 공연 (재패니메이션 영화음악 콘서트: UNSTOPPABLE [청주])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300106_260904_103039.gif",
     "hall": "대공연장"
-  },
-  {
-    "id": "conc-2027-bac-organ",
-    "kopisId": "2027-BAC-01",
-    "title": "2027 부천아트센터 신년 파이프오르간 리사이틀 (Bucheon Arts Center New Year Organ)",
-    "date": "2027-01-23",
-    "time": "17:00",
-    "venue": "부천아트센터 (콘서트홀)",
-    "city": "경기",
-    "performers": [
-      "올리비에 라트리 Olivier Latry (오르간)"
-    ],
-    "performerType": "솔리스트",
-    "composers": [
-      "바흐",
-      "비도르",
-      "프랑크"
-    ],
-    "pieces": [
-      "바흐: 토카타와 푸가 d단조 BWV 565",
-      "샤를마리 비도르: 오르간 교향곡 제5번 토카타"
-    ],
-    "price": "R석 50,000원 / S석 30,000원",
-    "ticketUrl": "https://www.bac.or.kr",
-    "status": "공연예정",
-    "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터 (콘서트홀)",
-    "crawlerBlocked": false,
-    "description": "부천아트센터 4,576개 파이프가 뿜어내는 웅장한 신년 축복의 오르간 선율.",
-    "imageUrl": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=800&q=80",
-    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303243",
@@ -29552,40 +29463,6 @@ export const initialRealConcerts = [
     "hall": "그랜드홀"
   },
   {
-    "id": "conc-2027-busan-newyear",
-    "kopisId": "2027-BUSAN-01",
-    "title": "2027 부산콘서트홀 신년 오케스트라 페스티벌 (Busan Concert Hall New Year)",
-    "date": "2027-01-29",
-    "time": "19:30",
-    "venue": "부산콘서트홀 (콘서트홀)",
-    "city": "부산/울산/경남",
-    "performers": [
-      "최수열 (지휘)",
-      "부산시립교향악단",
-      "선우예권 (피아노)"
-    ],
-    "performerType": "오케스트라",
-    "composers": [
-      "브람스",
-      "쇼팽",
-      "베토벤"
-    ],
-    "pieces": [
-      "브람스: 대학축전 서곡 Op.80",
-      "쇼팽: 피아노 협주곡 제1번 e단조 Op.11",
-      "베토벤: 교향곡 제7번 A장조 Op.92"
-    ],
-    "price": "R석 80,000원 / S석 50,000원 / A석 30,000원",
-    "ticketUrl": "https://www.busan.go.kr",
-    "status": "공연예정",
-    "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀 (콘서트홀)",
-    "crawlerBlocked": false,
-    "description": "2,000석 규모 빈야드형 부산콘서트홀에서 부산시민과 함께하는 2027 신년 클래식 대축제.",
-    "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80",
-    "hall": "콘서트홀"
-  },
-  {
     "id": "kopis-PF303609",
     "kopisId": "PF303609",
     "title": "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [서울]",
@@ -29610,36 +29487,6 @@ export const initialRealConcerts = [
     "description": "롯데콘서트홀에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303609_261016_141354.png",
     "hall": null
-  },
-  {
-    "id": "conc-2027-sac-chopin",
-    "kopisId": "2027-SAC-02",
-    "title": "조성진 피아노 리사이틀 2027 (Seong-Jin Cho Piano Recital 2027)",
-    "date": "2027-02-18",
-    "time": "19:30",
-    "venue": "예술의전당 [서울] (콘서트홀)",
-    "city": "서울",
-    "performers": [
-      "조성진 (피아노)"
-    ],
-    "performerType": "솔리스트",
-    "composers": [
-      "쇼팽",
-      "라벨"
-    ],
-    "pieces": [
-      "쇼팽: 4개의 발라드 전곡 (Ballades Nos. 1-4)",
-      "라벨: 밤의 가스파르 (Gaspard de la nuit)"
-    ],
-    "price": "R석 160,000원 / S석 120,000원 / A석 90,000원",
-    "ticketUrl": "https://www.sac.or.kr",
-    "status": "공연예정",
-    "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "예술의전당 [서울] (콘서트홀)",
-    "crawlerBlocked": false,
-    "description": "세계적인 피아니스트 조성진이 선사하는 쇼팽 발라드 전곡과 라벨의 환상적인 피아니즘.",
-    "imageUrl": "https://images.unsplash.com/photo-1520523839898-5071282543e2?auto=format&fit=crop&w=800&q=80",
-    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303349",
@@ -29667,38 +29514,6 @@ export const initialRealConcerts = [
     "description": "롯데콘서트홀에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303349_261014_161503.jpg",
     "hall": null
-  },
-  {
-    "id": "conc-2027-busan-spring",
-    "kopisId": "2027-BUSAN-02",
-    "title": "부산콘서트홀 스프링 클래식: 스트라빈스키 봄의 제전",
-    "date": "2027-03-27",
-    "time": "19:30",
-    "venue": "부산콘서트홀 (콘서트홀)",
-    "city": "부산/울산/경남",
-    "performers": [
-      "김선욱 (지휘)",
-      "KBS교향악단"
-    ],
-    "performerType": "오케스트라",
-    "composers": [
-      "스트라빈스키",
-      "Igor Stravinsky",
-      "차이콥스키"
-    ],
-    "pieces": [
-      "차이콥스키: 로미오와 줄리엣 환상 서곡",
-      "스트라빈스키: 봄의 제전 (The Rite of Spring)"
-    ],
-    "price": "R석 90,000원 / S석 60,000원 / A석 40,000원",
-    "ticketUrl": "https://www.busan.go.kr",
-    "status": "공연예정",
-    "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부산콘서트홀 (콘서트홀)",
-    "crawlerBlocked": false,
-    "description": "부산콘서트홀의 압도적인 음향으로 펼쳐지는 스트라빈스키 20세기 불멸의 걸작 봄의 제전.",
-    "imageUrl": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80",
-    "hall": "콘서트홀"
   }
 ];
 

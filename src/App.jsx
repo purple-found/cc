@@ -282,29 +282,8 @@ export default function App() {
 
       // 3. 연주 편성 필터 (오케스트라 / 실내악)
       if (filters.performerType && filters.performerType !== 'all') {
-        const pType = (c.performerType || '').trim();
-        const title = (c.title || '');
-        if (filters.performerType === '오케스트라') {
-          const isOrch =
-            pType === '오케스트라' ||
-            title.includes('오케스트라') ||
-            title.includes('교향악단') ||
-            title.includes('필하모닉') ||
-            title.includes('필하모니') ||
-            title.includes('심포니');
-          if (!isOrch) return false;
-        } else if (filters.performerType === '실내악') {
-          const isChamber =
-            pType === '실내악' ||
-            pType === '솔리스트' ||
-            title.includes('실내악') ||
-            title.includes('앙상블') ||
-            title.includes('체임버') ||
-            title.includes('콰르텟') ||
-            title.includes('트리오') ||
-            title.includes('독주회') ||
-            title.includes('리사이틀');
-          if (!isChamber) return false;
+        if (c.performerType !== filters.performerType) {
+          return false;
         }
       }
 

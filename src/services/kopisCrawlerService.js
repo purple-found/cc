@@ -292,6 +292,18 @@ export const kopisCrawlerService = {
       return [clean.slice(0, 25)];
     };
 
+    // 연주 편성 (오케스트라 vs 실내악) 정밀 판별
+    const detectPerformerType = (title) => {
+      const t = (title || '').toLowerCase();
+      if (t.includes('필하모닉스') && !t.includes('오케스트라')) return '실내악';
+      const isOrch = [
+        '오케스트라', '교향악단', '필하모닉', '필하모니', '심포니', '관현악단', '관현악',
+        '합창교향곡', '윈드오케스트라', '챔버오케스트라', '체임버오케스트라',
+        'orchestra', 'philharmonic', 'symphony'
+      ].some(k => t.includes(k));
+      return isOrch ? '오케스트라' : '실내악';
+    };
+
     try {
       // 1. 브라우저 환경 DOMParser
       if (typeof window !== 'undefined' && window.DOMParser) {
@@ -332,7 +344,7 @@ export const kopisCrawlerService = {
             venue: fcltynm,
             city: normalizeCity(area, fcltynm),
             performers: detectPerformers(prfnm),
-            performerType: prfnm.includes('오케스트라') || prfnm.includes('교향악단') ? '오케스트라' : prfnm.includes('독창회') || prfnm.includes('리사이틀') ? '솔리스트' : '실내악',
+            performerType: detectPerformerType(prfnm),
             composers: detectComposers(prfnm),
             pieces: [],
             price: '공식 예매처 참조',
@@ -384,7 +396,7 @@ export const kopisCrawlerService = {
           venue: fcltynm,
           city: normalizeCity(area, fcltynm),
           performers: detectPerformers(prfnm),
-          performerType: prfnm.includes('오케스트라') || prfnm.includes('교향악단') ? '오케스트라' : '실내악',
+          performerType: detectPerformerType(prfnm),
           composers: detectComposers(prfnm),
           pieces: [],
           price: '공식 예매처 참조',

@@ -159,9 +159,12 @@ async function main() {
           time: '19:30',
           venue: venue,
           city: area,
-          performers: [title],
-          performerType: title.includes('오케스트라') || title.includes('교향악단') ? '오케스트라' : '실내악',
-          composers: ['클래식 명작'],
+          performerType: (() => {
+            const t = (title || '').toLowerCase();
+            if (t.includes('필하모닉스') && !t.includes('오케스트라')) return '실내악';
+            const isOrch = ['오케스트라', '교향악단', '필하모닉', '필하모니', '심포니', '관현악단', '관현악', '합창교향곡', 'orchestra', 'philharmonic', 'symphony'].some(k => t.includes(k));
+            return isOrch ? '오케스트라' : '실내악';
+          })(),
           pieces: [],
           price: '공식 예매처 참조',
           ticketUrl: `https://search.naver.com/search.naver?query=${encodeURIComponent(venue + ' 공식 예매')}`,
