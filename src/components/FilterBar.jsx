@@ -320,10 +320,7 @@ export default function FilterBar({
                 <strong className="text-concert-600 dark:text-concert-400 font-bold">{filteredCount}</strong>편이 검색되었습니다.
               </>
             ) : (
-              <>
-                검색어를 입력하거나 필터를 선택하시면 맞춤 공연 일정이 표시됩니다. (등록된 총 공연:{' '}
-                <strong className="text-stone-900 dark:text-stone-100 font-bold">{totalCount}</strong>편)
-              </>
+              <span>검색어를 입력하거나 필터를 선택하시면 맞춤 공연 일정이 표시됩니다.</span>
             )}
           </span>
         </div>

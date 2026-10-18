@@ -111,7 +111,7 @@ export default function InitialDiscoveryGuide({
           className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-stone-900 via-stone-850 to-stone-900 dark:from-hall-800 dark:via-hall-750 dark:to-hall-800 text-stone-100 hover:text-white border border-stone-700/60 dark:border-hall-700 text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all active:scale-98 cursor-pointer"
         >
           <Eye className="w-4 h-4 text-concert-400 shrink-0" />
-          <span>전체 공연 한눈에 보기 ({totalCount}편)</span>
+          <span>전체 공연 한눈에 보기</span>
         </button>
       </div>
     </div>

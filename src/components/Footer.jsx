@@ -13,7 +13,7 @@ export default function Footer({ onOpenAdminAuth }) {
             <div className="flex items-center gap-2.5">
               <div className="relative w-9 h-9 rounded-lg bg-gradient-to-br from-[#24140e] via-[#3d2015] to-[#1a0c07] text-[#f6e5c5] flex items-center justify-center shadow-md shadow-[#1a0c07]/30 border border-[#753d22]/70 dark:border-[#874b26]/60 overflow-hidden shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#874b26]/20 to-white/10 pointer-events-none" />
-                <BrandIcon className="w-6.5 h-6.5 relative z-10 drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] text-[#f6e5c5]" />
+                <BrandIcon className="w-6 h-6 relative z-10 drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] text-[#f6e5c5]" />
               </div>
               <div>
                 <div className="flex items-center gap-2">
@@ -34,12 +34,11 @@ export default function Footer({ onOpenAdminAuth }) {
           </div>
         </div>
 
-        {/* Hidden admin access trigger positioned unobtrusively on bottom-right corner */}
-        <div className="absolute right-4 sm:right-8 bottom-6">
+        {/* Hidden admin access trigger positioned unobtrusively on bottom-left corner */}
+        <div className="absolute left-4 sm:left-8 bottom-6">
           <button
             onClick={onOpenAdminAuth}
             className="p-1 text-stone-300 hover:text-stone-500 dark:text-hall-700 dark:hover:text-hall-400 transition-colors rounded opacity-40 hover:opacity-100 focus:outline-none shrink-0"
-            title="운영진 관리"
             aria-label="운영진 관리"
           >
             <Shield className="w-3.5 h-3.5" />

@@ -75,9 +75,18 @@ export const storageService = {
         return c;
       });
 
-      // initialRealConcerts에는 있으나 캐시에 누락된 신규 공연(예: 부산콘서트홀 등) 전수 즉시 자동 병합
+      // initialRealConcerts에는 있으나 캐시에 누락된 신규 공연(예: 부산콘서트홀 등) 전수 즉시 자동 병합 (1년 이상 지난 공연은 자동 배제)
       const existingIds = new Set(synced.map(c => c.id || c.kopisId));
-      const missingConcerts = (initialRealConcerts || []).filter(c => !existingIds.has(c.id || c.kopisId));
+      const oneYearCutoff = new Date();
+      oneYearCutoff.setFullYear(oneYearCutoff.getFullYear() - 1);
+      const missingConcerts = (initialRealConcerts || []).filter(c => {
+        if (existingIds.has(c.id || c.kopisId)) return false;
+        if (c.date) {
+          const d = new Date(String(c.date).slice(0, 10));
+          if (!isNaN(d.getTime()) && d < oneYearCutoff) return false;
+        }
+        return true;
+      });
       if (missingConcerts.length > 0) {
         hasUpdate = true;
         synced.push(...missingConcerts);
@@ -153,6 +162,69 @@ export const storageService = {
     });
     this.saveConcerts(updated);
     return updated;
+  },
+
+  // 1년 이상 지난 공연 자동 정리 (매월 1일 새벽 2시 또는 정기 실행)
+  cleanupOldConcerts(years = 1) {
+    try {
+      const list = this.getConcerts();
+      const now = new Date();
+      const cutoffDate = new Date(now.getFullYear() - years, now.getMonth(), now.getDate(), 0, 0, 0);
+      const pad = n => String(n).padStart(2, '0');
+      const cutoffStr = `${cutoffDate.getFullYear()}-${pad(cutoffDate.getMonth() + 1)}-${pad(cutoffDate.getDate())}`;
+
+      const remaining = [];
+      const removed = [];
+
+      for (const concert of list) {
+        const dateStr = concert.date || concert.endDate;
+        if (!dateStr) {
+          remaining.push(concert);
+          continue;
+        }
+        const d = new Date(String(dateStr).slice(0, 10));
+        if (!isNaN(d.getTime()) && d < cutoffDate) {
+          removed.push(concert);
+        } else {
+          remaining.push(concert);
+        }
+      }
+
+      if (removed.length > 0) {
+        this.saveConcerts(remaining);
+      }
+
+      return {
+        success: true,
+        removedCount: removed.length,
+        remainingCount: remaining.length,
+        cutoffDate: cutoffStr,
+        removedConcerts: removed
+      };
+    } catch (e) {
+      console.error('[저장소 오류] 1년 이상 지난 공연 정리 실패:', e);
+      return { success: false, removedCount: 0, remainingCount: 0, error: e.message };
+    }
+  },
+
+  // 매월 1일 새벽 2시 또는 월초 클라이언트 실행 시 자동 클린업
+  checkAndRunMonthlyCleanup() {
+    try {
+      if (typeof localStorage === 'undefined') return null;
+      const now = new Date();
+      const currentMonthKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+      const lastCleanup = localStorage.getItem('classicalender_last_monthly_cleanup');
+
+      if (lastCleanup !== currentMonthKey) {
+        const result = this.cleanupOldConcerts(1);
+        localStorage.setItem('classicalender_last_monthly_cleanup', currentMonthKey);
+        localStorage.setItem('classicalender_last_monthly_cleanup_at', now.toISOString());
+        return result;
+      }
+      return null;
+    } catch (e) {
+      return null;
+    }
   },
 
   // ───────────────────────── 공연장 (Halls) ─────────────────────────

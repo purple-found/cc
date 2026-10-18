@@ -114,6 +114,10 @@ export default function App() {
   useEffect(() => {
     // GA4 방문자 분석 서비스 초기화
     analyticsService.init();
+
+    // 매월 1일 주기: 1년 이상 경과된 과거 공연 자동 정리 점검
+    storageService.checkAndRunMonthlyCleanup();
+
     loadData();
 
     // 매일 새벽 3시 / 오후 3시 (15:00) KOPIS 및 공식망 자동 모니터링 배치 타이머 등록

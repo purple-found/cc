@@ -1,35 +1,5 @@
 export const initialRealConcerts = [
   {
-    "id": "kopis-PF256370",
-    "kopisId": "PF256370",
-    "title": "스테이지 M 신년 음악회: 캔들데이 콘서트 [대구]",
-    "date": "2025-01-17",
-    "time": "19:30",
-    "venue": "스테이지엠 (STAGE M) (구.프란츠홀) (스테이지 엠 (STAGE M) )",
-    "city": "대구/경북",
-    "performers": [
-      "스테이지 M 신년 음악회"
-    ],
-    "performerType": "실내악",
-    "composers": [
-      "클래식 명작"
-    ],
-    "pieces": [
-      "스테이지 M 신년 음악회: 캔들데이 콘서트 [대구] - 1부 클래식 정규 레퍼토리",
-      "스테이지 M 신년 음악회: 캔들데이 콘서트 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
-    "price": "공식 예매처 참조",
-    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80%EC%97%A0%20(STAGE%20M)%20(%EA%B5%AC.%ED%94%84%EB%9E%80%EC%B8%A0%ED%99%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
-    "status": "공연중",
-    "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "스테이지엠 (STAGE M) (구.프란츠홀)",
-    "crawlerBlocked": false,
-    "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (스테이지엠 (STAGE M) (구.프란츠홀))",
-    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF256370_250108_161156.gif",
-    "hall": "STAGE M"
-  },
-  {
     "id": "kopis-PF274143",
     "kopisId": "PF274143",
     "title": "스테이지엠 크리스마스 영화 음악 & 캐롤 콘서트 [대구]",

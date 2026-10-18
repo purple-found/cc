@@ -1,0 +1,17 @@
+[
+  {
+    "executedAt": "2026-10-18 22:38:21 KST",
+    "cutoffDate": "2025-10-18",
+    "totalBefore": 1044,
+    "removedCount": 1,
+    "remainingCount": 1043,
+    "sampleRemoved": [
+      {
+        "id": "kopis-PF256370",
+        "title": "스테이지 M 신년 음악회: 캔들데이 콘서트 [대구]",
+        "date": "2025-01-17",
+        "venue": "스테이지엠 (STAGE M) (구.프란츠홀) (스테이지 엠 (STAGE M) )"
+      }
+    ]
+  }
+]
