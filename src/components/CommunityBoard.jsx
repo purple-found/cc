@@ -32,7 +32,9 @@ export default function CommunityBoard({
   initialTargetConcert
 }) {
   const [selectedCategory, setSelectedCategory] = useState('전체');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchInput, setSearchInput] = useState('');
+  const [searchScope, setSearchScope] = useState('title_content'); // 'title_content', 'author', 'comments'
+  const [appliedSearch, setAppliedSearch] = useState({ query: '', scope: 'title_content' });
   const [isWriteModalOpen, setIsWriteModalOpen] = useState(false);
   const [isRulesExpanded, setIsRulesExpanded] = useState(true);
   const [activePost, setActivePost] = useState(null);
@@ -65,28 +67,73 @@ export default function CommunityBoard({
     }
   }, [initialTargetConcert]);
 
-  // 카테고리 필터링 및 검색 (한국어/영문 양방향 지능형 검색 적용)
+  // 검색 실행 핸들러 (타이핑 완료 후 검색 버튼 클릭 또는 엔터 키)
+  const handleExecuteSearch = (e) => {
+    if (e) e.preventDefault();
+    setAppliedSearch({
+      query: searchInput.trim(),
+      scope: searchScope
+    });
+  };
+
+  // 검색 초기화
+  const handleResetSearch = () => {
+    setSearchInput('');
+    setAppliedSearch({ query: '', scope: searchScope });
+  };
+
+  // 카테고리 필터링 및 검색 (제목+내용 / 작성자 / 댓글 구분 검색)
   const filteredPosts = posts.filter((p) => {
     const matchCat = selectedCategory === '전체' || p.category === selectedCategory;
-    const matchSearch =
-      !searchQuery ||
-      matchesBilingualConcert(
-        {
-          title: p.title,
-          description: p.content,
-          pieces: p.concertTitle ? [p.concertTitle] : [],
-          performers: [p.author]
-        },
-        searchQuery
+    if (!matchCat) return false;
+
+    if (!appliedSearch.query) return true;
+
+    const query = appliedSearch.query.toLowerCase();
+
+    // 1. 작성자 검색
+    if (appliedSearch.scope === 'author') {
+      return (p.author || '').toLowerCase().includes(query);
+    }
+
+    // 2. 댓글 검색
+    if (appliedSearch.scope === 'comments') {
+      return (p.comments || []).some(
+        (c) =>
+          (c.content || '').toLowerCase().includes(query) ||
+          (c.author || '').toLowerCase().includes(query)
       );
-    return matchCat && matchSearch;
+    }
+
+    // 3. 제목 + 내용 검색 (기본값)
+    const titleMatch = (p.title || '').toLowerCase().includes(query);
+    const contentMatch = (p.content || '').toLowerCase().includes(query);
+    const concertTitleMatch = (p.concertTitle || '').toLowerCase().includes(query);
+    const bilingualMatch = matchesBilingualConcert(
+      {
+        title: p.title,
+        description: p.content,
+        pieces: p.concertTitle ? [p.concertTitle] : [],
+        performers: [p.author]
+      },
+      appliedSearch.query
+    );
+
+    return titleMatch || contentMatch || concertTitleMatch || bilingualMatch;
   });
 
-  // 글 등록 핸들러 (IP 확인 및 차단 여부 검사)
+  // 글 등록 핸들러 (IP 확인 및 도배 방지 레이트 리밋 검사)
   const handleCreatePost = async (e) => {
     e.preventDefault();
     if (!formData.title.trim() || !formData.content.trim()) {
       alert('제목과 내용을 입력해주세요.');
+      return;
+    }
+
+    // 도배 방지: 게시글 10초 쿨다운
+    const rateCheck = storageService.checkPostRateLimit();
+    if (!rateCheck.allowed) {
+      alert(`[도배 방지 안내]\n게시글은 10초에 1개만 작성하실 수 있습니다.\n잠시 후 다시 시도해주세요. (${rateCheck.remainingSeconds}초 남음)`);
       return;
     }
 
@@ -120,10 +167,17 @@ export default function CommunityBoard({
     setIsWriteModalOpen(false);
   };
 
-  // 댓글 등록 핸들러 (IP 확인 및 차단 여부 검사)
+  // 댓글 등록 핸들러 (IP 확인 및 도배 방지 레이트 리밋 검사)
   const handleCreateComment = async (e) => {
     e.preventDefault();
     if (!commentInput.content.trim()) return;
+
+    // 도배 방지: 댓글 5초 쿨다운
+    const rateCheck = storageService.checkCommentRateLimit();
+    if (!rateCheck.allowed) {
+      alert(`[도배 방지 안내]\n댓글은 5초에 1개만 작성하실 수 있습니다.\n잠시 후 다시 시도해주세요. (${rateCheck.remainingSeconds}초 남음)`);
+      return;
+    }
 
     const clientIp = await ipService.getMyIp();
     if (storageService.isIpBlocked(clientIp)) {
@@ -197,17 +251,86 @@ export default function CommunityBoard({
             ))}
           </div>
 
-          <div className="relative w-full md:w-72">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="게시글 검색"
-              className="w-full pl-9 pr-3 py-1.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-800 dark:text-stone-200 focus:outline-none focus:ring-2 focus:ring-concert-500"
-            />
-          </div>
+          {/* Multi-Scope Search Form with dedicated Search Button */}
+          <form
+            onSubmit={handleExecuteSearch}
+            className="flex items-center gap-1.5 w-full md:w-auto bg-stone-50 dark:bg-hall-850 p-1 rounded-xl border border-stone-200 dark:border-hall-700 shadow-xs"
+          >
+            {/* Search Scope Selector */}
+            <select
+              value={searchScope}
+              onChange={(e) => setSearchScope(e.target.value)}
+              className="bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 text-xs font-semibold px-2.5 py-1.5 rounded-lg border-none focus:outline-none focus:ring-1 focus:ring-concert-500 cursor-pointer shrink-0"
+              title="검색 범위 선택"
+            >
+              <option value="title_content">제목+내용</option>
+              <option value="author">작성자</option>
+              <option value="comments">댓글</option>
+            </select>
+
+            {/* Search Text Input */}
+            <div className="relative flex-1 min-w-[140px] sm:min-w-[180px]">
+              <input
+                type="text"
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
+                placeholder={
+                  searchScope === 'author'
+                    ? '작성자 닉네임 검색'
+                    : searchScope === 'comments'
+                    ? '댓글 내용 검색'
+                    : '제목 또는 본문 검색'
+                }
+                className="w-full bg-transparent pl-2.5 pr-7 py-1 text-xs text-stone-800 dark:text-stone-200 placeholder:text-stone-400 focus:outline-none"
+              />
+              {searchInput && (
+                <button
+                  type="button"
+                  onClick={handleResetSearch}
+                  className="absolute right-1 top-1/2 -translate-y-1/2 p-1 text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 rounded transition-colors"
+                  title="검색어 지우기"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
+
+            {/* Explicit Search Button */}
+            <button
+              type="submit"
+              className="flex items-center gap-1 px-3.5 py-1.5 rounded-lg bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold shadow-xs transition-colors shrink-0"
+              title="검색 실행"
+            >
+              <Search className="w-3.5 h-3.5" />
+              <span>검색</span>
+            </button>
+          </form>
         </div>
+
+        {/* Active Search Result Summary & Reset */}
+        {appliedSearch.query && (
+          <div className="flex items-center justify-between px-3.5 py-2 bg-concert-50/70 dark:bg-concert-950/40 rounded-xl border border-concert-200/60 dark:border-concert-900/40 text-xs">
+            <span className="text-concert-800 dark:text-concert-200">
+              <span className="font-bold">
+                {appliedSearch.scope === 'author'
+                  ? '작성자'
+                  : appliedSearch.scope === 'comments'
+                  ? '댓글'
+                  : '제목+내용'}
+              </span>
+              {' 검색 결과: '}
+              <span className="font-bold underline">"{appliedSearch.query}"</span>
+              {` (${filteredPosts.length}건)`}
+            </span>
+            <button
+              type="button"
+              onClick={handleResetSearch}
+              className="text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-100 font-semibold underline text-[11px]"
+            >
+              전체 보기 (검색 해제)
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Community Guidelines Banner (클래식 커뮤니티 이용 규칙) */}

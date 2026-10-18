@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Sparkles, X, Send, Calendar, MapPin, Music } from 'lucide-react';
+import { storageService } from '../services/storageService.js';
 
 export default function TipConcertModal({ isOpen, onClose, onSubmitTip }) {
   const [formData, setFormData] = useState({
@@ -29,6 +30,13 @@ export default function TipConcertModal({ isOpen, onClose, onSubmitTip }) {
     e.preventDefault();
     if (!formData.title.trim() || !formData.date) {
       alert('공연명과 공연 날짜를 입력해주세요.');
+      return;
+    }
+
+    // 도배 방지: 공연 제보 1분 (60초) 쿨다운
+    const rateCheck = storageService.checkTipRateLimit();
+    if (!rateCheck.allowed) {
+      alert(`[도배 방지 안내]\n공연 제보는 1분에 1회만 등록하실 수 있습니다.\n잠시 후 다시 시도해주세요. (${rateCheck.remainingSeconds}초 남음)`);
       return;
     }
 

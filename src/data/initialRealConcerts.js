@@ -30,6 +30,267 @@ export const initialRealConcerts = [
     "hall": "STAGE M"
   },
   {
+    "id": "kopis-PF280958",
+    "kopisId": "PF280958",
+    "title": "청소년을 위한 음악여행 [부천]",
+    "date": "2025-12-10",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "청소년을 위한 음악여행 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "청소년을 위한 음악여행 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280958_251205_104603.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF281056",
+    "kopisId": "PF281056",
+    "title": "유니온필하모닉오케스트라 정기연주회, 차이콥스키 시리즈: 백조의 호수와 비창",
+    "date": "2025-12-28",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "유니온필하모닉오케스트라 정기연주회, 차이콥스키 시리즈: 백조의 호수와 비창"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "유니온필하모닉오케스트라 정기연주회, 차이콥스키 시리즈: 백조의 호수와 비창 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF281056_251208_110017.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF282273",
+    "kopisId": "PF282273",
+    "title": "AOU 신년음악회: L'amour",
+    "date": "2026-01-10",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "AOU 신년음악회: L'amour"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "AOU 신년음악회: L'amour - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF282273_251229_103935.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF282336",
+    "kopisId": "PF282336",
+    "title": "제9회 한양 솔로이스츠 정기연주회: 베토벤 피아노 소나타 전곡시리즈 #5",
+    "date": "2026-01-11",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "제9회 한양 솔로이스츠 정기연주회: 베토벤 피아노 소나타 전곡시리즈 #5"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제9회 한양 솔로이스츠 정기연주회: 베토벤 피아노 소나타 전곡시리즈 #5 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF282336_251229_151524.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF281862",
+    "kopisId": "PF281862",
+    "title": "제10회 Andy Phil 정기연주회",
+    "date": "2026-01-17",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제10회 Andy Phil 정기연주회"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제10회 Andy Phil 정기연주회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF281862_251219_104349.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF282305",
+    "kopisId": "PF282305",
+    "title": "제2회 아마티챔버오케스트라 정기연주회 [부천]",
+    "date": "2026-01-18",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "제2회 아마티챔버오케스트라 정기연주회 [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제2회 아마티챔버오케스트라 정기연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF282305_251229_125102.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF283299",
+    "kopisId": "PF283299",
+    "title": "부천시립예술단 신년음악회",
+    "date": "2026-01-22",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "부천시립예술단 신년음악회"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "부천시립예술단 신년음악회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF283299_260116_110922.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF283757",
+    "kopisId": "PF283757",
+    "title": "제3회 이데아 프로젝트 [부천]",
+    "date": "2026-02-07",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제3회 이데아 프로젝트 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제3회 이데아 프로젝트 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF283757_260123_124316.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF284052",
+    "kopisId": "PF284052",
+    "title": "IGNIS MUSICAE 연주회 [부천]",
+    "date": "2026-02-12",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "IGNIS MUSICAE 연주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "IGNIS MUSICAE 연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284052_260129_103235.jpg",
+    "hall": "소공연장"
+  },
+  {
     "id": "kopis-PF281769",
     "kopisId": "PF281769",
     "title": "오르간 오딧세이",
@@ -59,6 +320,64 @@ export const initialRealConcerts = [
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (롯데콘서트홀)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF281769_251217_135219.gif",
     "hall": null
+  },
+  {
+    "id": "kopis-PF284279",
+    "kopisId": "PF284279",
+    "title": "BAC 후원회와 함께하는 NEW YEAR'S CONCERT",
+    "date": "2026-02-25",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 후원회와 함께하는 NEW YEAR'S CONCERT"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 후원회와 함께하는 NEW YEAR'S CONCERT - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284279_260202_143917.png",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF283130",
+    "kopisId": "PF283130",
+    "title": "피아니스트 박상욱과 함께하는 브런치콘서트 Ⅰ [부천]",
+    "date": "2026-02-25",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "피아니스트 박상욱과 함께하는 브런치콘서트 Ⅰ [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "피아니스트 박상욱과 함께하는 브런치콘서트 Ⅰ [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF283130_260114_103635.gif",
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF284880",
@@ -91,6 +410,35 @@ export const initialRealConcerts = [
     "hall": "몰입공유연습실"
   },
   {
+    "id": "kopis-PF285641",
+    "kopisId": "PF285641",
+    "title": "제45회 KUCO 경희대학교 국제캠퍼스 아마추어 오케스트라 정기연주회",
+    "date": "2026-03-01",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제45회 KUCO 경희대학교 국제캠퍼스 아마추어 오케스트라 정기연주회"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제45회 KUCO 경희대학교 국제캠퍼스 아마추어 오케스트라 정기연주회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285641_260224_095832.png",
+    "hall": "콘서트홀"
+  },
+  {
     "id": "kopis-PF281822",
     "kopisId": "PF281822",
     "title": "롯콘 마티네: 대니 구의 플레이리스트",
@@ -121,6 +469,122 @@ export const initialRealConcerts = [
     "hall": null
   },
   {
+    "id": "kopis-PF283590",
+    "kopisId": "PF283590",
+    "title": "한불 수교 140주년 기념, 부천필하모닉오케스트라 with 프랑스대사관 [부천]",
+    "date": "2026-03-07",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "한불 수교 140주년 기념, 부천필하모닉오케스트라 with 프랑스대사관 [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "한불 수교 140주년 기념, 부천필하모닉오케스트라 with 프랑스대사관 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF283590_260205_154804.gif",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF283195",
+    "kopisId": "PF283195",
+    "title": "BAC 클래식 시리즈, WDR 쾰른 방송 오케스트라 [부천]",
+    "date": "2026-03-08",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 클래식 시리즈, WDR 쾰른 방송 오케스트라 [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 클래식 시리즈, WDR 쾰른 방송 오케스트라 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF283195_260114_141418.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF285163",
+    "kopisId": "PF285163",
+    "title": "제7회 TENUTO 정기연주회 [부천]",
+    "date": "2026-03-14",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "제7회 TENUTO 정기연주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제7회 TENUTO 정기연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285163_260213_123503.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF287372",
+    "kopisId": "PF287372",
+    "title": "교보 노블리에 포유콘서트: 상상이 음악이 되는 순간 [부천]",
+    "date": "2026-03-18",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "교보 노블리에 포유콘서트: 상상이 음악이 되는 순간 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "교보 노블리에 포유콘서트: 상상이 음악이 되는 순간 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF287372_260318_125204.jpg",
+    "hall": "콘서트홀"
+  },
+  {
     "id": "kopis-PF285984",
     "kopisId": "PF285984",
     "title": "성남아트센터 마티네 콘서트: 독일, 음악의 숲",
@@ -148,6 +612,151 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (성남아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285984_260227_140158.gif",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF285757",
+    "kopisId": "PF285757",
+    "title": "제33회 서울시민교향악단 정기연주회 [부천]",
+    "date": "2026-03-21",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제33회 서울시민교향악단 정기연주회 [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제33회 서울시민교향악단 정기연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285757_260225_130158.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF285843",
+    "kopisId": "PF285843",
+    "title": "제3회 오케스트라 syncope 정기연주회: 차이코프스키 시리즈",
+    "date": "2026-03-22",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제3회 오케스트라 syncope 정기연주회: 차이코프스키 시리즈"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제3회 오케스트라 syncope 정기연주회: 차이코프스키 시리즈 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285843_260226_111107.png",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF284955",
+    "kopisId": "PF284955",
+    "title": "브리즈앙상블과 엘로퀸텟의 모차르트 시리즈 [부천]",
+    "date": "2026-03-22",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "브리즈앙상블과 엘로퀸텟의 모차르트 시리즈 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "브리즈앙상블과 엘로퀸텟의 모차르트 시리즈 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284955_260211_141357.png",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF286518",
+    "kopisId": "PF286518",
+    "title": "project 유성우 창단연주회",
+    "date": "2026-03-28",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "project 유성우 창단연주회"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "project 유성우 창단연주회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286518_260309_104741.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF284435",
+    "kopisId": "PF284435",
+    "title": "BAC 오르간: 카메론 카펜터 오르간 리사이틀",
+    "date": "2026-04-05",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 오르간: 카메론 카펜터 오르간 리사이틀"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 오르간: 카메론 카펜터 오르간 리사이틀 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284435_260204_125922.gif",
     "hall": "콘서트홀"
   },
   {
@@ -181,6 +790,789 @@ export const initialRealConcerts = [
     "hall": "마루홀"
   },
   {
+    "id": "kopis-PF287970",
+    "kopisId": "PF287970",
+    "title": "제22회 페스티벌 앙상블 가우디움 정기연주회 [부천]",
+    "date": "2026-04-11",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제22회 페스티벌 앙상블 가우디움 정기연주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제22회 페스티벌 앙상블 가우디움 정기연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF287970_260325_114212.png",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF286114",
+    "kopisId": "PF286114",
+    "title": "제2회 조아클래스 정기연주회: 봄, Voice Palette: 목소리로 그리는 색채",
+    "date": "2026-04-11",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "제2회 조아클래스 정기연주회: 봄, Voice Palette: 목소리로 그리는 색채"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제2회 조아클래스 정기연주회: 봄, Voice Palette: 목소리로 그리는 색채 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286114_260303_141519.png",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF284605",
+    "kopisId": "PF284605",
+    "title": "베토벤 & 라흐마니노프 [부천]",
+    "date": "2026-04-12",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "베토벤 & 라흐마니노프 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "베토벤 & 라흐마니노프 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284605_260206_113051.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF289195",
+    "kopisId": "PF289195",
+    "title": "제54회 한국소년소녀합창제",
+    "date": "2026-04-18",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제54회 한국소년소녀합창제"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제54회 한국소년소녀합창제 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF289195_260413_120235.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF288152",
+    "kopisId": "PF288152",
+    "title": "함께Grin합창단 창단연주회 [부천]",
+    "date": "2026-04-18",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "함께Grin합창단 창단연주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "함께Grin합창단 창단연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF288152_260327_114504.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF286865",
+    "kopisId": "PF286865",
+    "title": "BAC 초이스, 디토 오케스트라 with 신지아",
+    "date": "2026-04-19",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 초이스, 디토 오케스트라 with 신지아"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 초이스, 디토 오케스트라 with 신지아 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286865_260311_144510.gif",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF284450",
+    "kopisId": "PF284450",
+    "title": "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅱ [부천]",
+    "date": "2026-04-22",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅱ [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅱ [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284450_260204_141101.gif",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF288640",
+    "kopisId": "PF288640",
+    "title": "김보람 피아노 독주회: 베토벤 피아노 소나타 전곡 시리즈 Ⅱ",
+    "date": "2026-04-25",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "김보람 피아노 독주회: 베토벤 피아노 소나타 전곡 시리즈 Ⅱ"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "김보람 피아노 독주회: 베토벤 피아노 소나타 전곡 시리즈 Ⅱ - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF288640_260403_141747.png",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF286007",
+    "kopisId": "PF286007",
+    "title": "우리가 사랑한 한국영화 OST 콘서트 [부천]",
+    "date": "2026-04-26",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "우리가 사랑한 한국영화 OST 콘서트 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "우리가 사랑한 한국영화 OST 콘서트 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286007_260227_150234.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF287076",
+    "kopisId": "PF287076",
+    "title": "MelON 디즈니 + 지브리 오케스트라 콘서트 (어린이날 edition) [부천]",
+    "date": "2026-05-05",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "MelON 디즈니 + 지브리 오케스트라 콘서트 (어린이날 edition) [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "MelON 디즈니 + 지브리 오케스트라 콘서트 (어린이날 edition) [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF287076_260313_155735.png",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF287522",
+    "kopisId": "PF287522",
+    "title": "어린이날 기념, 지브리 & 디즈니 OST 콘서트 [부천]",
+    "date": "2026-05-10",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "어린이날 기념, 지브리 & 디즈니 OST 콘서트 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "어린이날 기념, 지브리 & 디즈니 OST 콘서트 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF287522_260319_135038.gif",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF289635",
+    "kopisId": "PF289635",
+    "title": "제5회 은혜로운 창작성가 발표회: In His Harmony",
+    "date": "2026-05-12",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "제5회 은혜로운 창작성가 발표회: In His Harmony"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제5회 은혜로운 창작성가 발표회: In His Harmony - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF289635_260417_134044.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF289664",
+    "kopisId": "PF289664",
+    "title": "테너 최성수 독창회 [부천]",
+    "date": "2026-05-14",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "테너 최성수 독창회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "테너 최성수 독창회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF289664_260417_161400.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF287336",
+    "kopisId": "PF287336",
+    "title": "부천아트센터 개관 3주년 페스티벌: 조수미 세계무대 데뷔 40주년 기념 콘서트",
+    "date": "2026-05-15",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "부천아트센터 개관 3주년 페스티벌: 조수미 세계무대 데뷔 40주년 기념 콘서트"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "부천아트센터 개관 3주년 페스티벌: 조수미 세계무대 데뷔 40주년 기념 콘서트 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF287336_260318_111114.gif",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF287446",
+    "kopisId": "PF287446",
+    "title": "부천아트센터 개관 3주년 페스티벌: 클라라 주미 강 & 김선욱 듀오 리사이틀 [부천]",
+    "date": "2026-05-21",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "부천아트센터 개관 3주년 페스티벌: 클라라 주미 강 & 김선욱 듀오 리사이틀 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "부천아트센터 개관 3주년 페스티벌: 클라라 주미 강 & 김선욱 듀오 리사이틀 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF287446_260318_154032.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF291269",
+    "kopisId": "PF291269",
+    "title": "BAC 공동기획: SNU 심포니 오케스트라 연주회 [부천]",
+    "date": "2026-05-27",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 공동기획: SNU 심포니 오케스트라 연주회 [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 공동기획: SNU 심포니 오케스트라 연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF291269_260513_120846.png",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF290720",
+    "kopisId": "PF290720",
+    "title": "송문희 피아노 독주회 [부천]",
+    "date": "2026-06-02",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "송문희 피아노 독주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "송문희 피아노 독주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF290720_260506_132036.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF291788",
+    "kopisId": "PF291788",
+    "title": "Trio Armone 정기연주회 (아르모네 피아노 트리오)",
+    "date": "2026-06-06",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "Trio Armone 정기연주회 (아르모네 피아노 트리오)"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "Trio Armone 정기연주회 (아르모네 피아노 트리오) - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF291788_260520_101738.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF291547",
+    "kopisId": "PF291547",
+    "title": "제15회 서울대학교 졸업생 오케스트라 정기연주회 [부천]",
+    "date": "2026-06-06",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제15회 서울대학교 졸업생 오케스트라 정기연주회 [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제15회 서울대학교 졸업생 오케스트라 정기연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF291547_260515_155641.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF290858",
+    "kopisId": "PF290858",
+    "title": "프로젝트 부활 (Projekt Auferstehung) [부천]",
+    "date": "2026-06-07",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "프로젝트 부활 (Projekt Auferstehung) [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "프로젝트 부활 (Projekt Auferstehung) [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF290858_260507_144742.png",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF290405",
+    "kopisId": "PF290405",
+    "title": "제5회 스마일 오케스트라 스마일 앙상블 연주회 [부천]",
+    "date": "2026-06-07",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "제5회 스마일 오케스트라 스마일 앙상블 연주회 [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제5회 스마일 오케스트라 스마일 앙상블 연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF290405_260430_095612.png",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF292446",
+    "kopisId": "PF292446",
+    "title": "제27회 소사필하모닉오케스트라 정기연주회: 창단 20주년 기념",
+    "date": "2026-06-13",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제27회 소사필하모닉오케스트라 정기연주회: 창단 20주년 기념"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제27회 소사필하모닉오케스트라 정기연주회: 창단 20주년 기념 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292446_260528_135116.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF292401",
+    "kopisId": "PF292401",
+    "title": "유니온필하모닉오케스트라, 드보르작 시리즈: 신세계로부터",
+    "date": "2026-06-14",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "유니온필하모닉오케스트라, 드보르작 시리즈: 신세계로부터"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "유니온필하모닉오케스트라, 드보르작 시리즈: 신세계로부터 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292401_260528_110338.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF288934",
+    "kopisId": "PF288934",
+    "title": "드레스덴 필하모닉 & 제임스 에네스 [부천]",
+    "date": "2026-06-16",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "드레스덴 필하모닉 & 제임스 에네스 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "드레스덴 필하모닉 & 제임스 에네스 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF288934_260408_135032.gif",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF286637",
+    "kopisId": "PF286637",
+    "title": "히사이시 조 영화음악 콘서트 [부천]",
+    "date": "2026-06-20",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "히사이시 조 영화음악 콘서트 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "히사이시 조 영화음악 콘서트 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286637_260309_152234.gif",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF291826",
+    "kopisId": "PF291826",
+    "title": "제20회 팡세오케스트라 정기연주회",
+    "date": "2026-06-21",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제20회 팡세오케스트라 정기연주회"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제20회 팡세오케스트라 정기연주회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF291826_260520_112552.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF288903",
+    "kopisId": "PF288903",
+    "title": "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅲ [부천]",
+    "date": "2026-06-24",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅲ [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅲ [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF288903_260408_112213.jpg",
+    "hall": "소공연장"
+  },
+  {
     "id": "kopis-PF292279",
     "kopisId": "PF292279",
     "title": "월간 하랑: 계절의 온도 [속초]",
@@ -209,6 +1601,209 @@ export const initialRealConcerts = [
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (소극장 초속)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292279_260527_101019.jpg",
     "hall": "소극장 초속(B1"
+  },
+  {
+    "id": "kopis-PF294839",
+    "kopisId": "PF294839",
+    "title": "제4회 일피노콰이어 정기연주회",
+    "date": "2026-06-27",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "제4회 일피노콰이어 정기연주회"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제4회 일피노콰이어 정기연주회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294839_260629_145502.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF295726",
+    "kopisId": "PF295726",
+    "title": "북한이탈주민과 함께하는 여름밤의 평화 소나타 [부천]",
+    "date": "2026-07-15",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "북한이탈주민과 함께하는 여름밤의 평화 소나타 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "북한이탈주민과 함께하는 여름밤의 평화 소나타 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295726_260716_161048.png",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF293988",
+    "kopisId": "PF293988",
+    "title": "BAC 클래식시리즈, 피아니스트 조성진 체임버 콘서트 [부천]",
+    "date": "2026-07-16",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 클래식시리즈, 피아니스트 조성진 체임버 콘서트 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 클래식시리즈, 피아니스트 조성진 체임버 콘서트 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293988_260617_160032.gif",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF294996",
+    "kopisId": "PF294996",
+    "title": "무지커 영 아티스트 콘서트 [부천]",
+    "date": "2026-07-19",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "무지커 영 아티스트 콘서트 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "무지커 영 아티스트 콘서트 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294996_260701_105217.png",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF295685",
+    "kopisId": "PF295685",
+    "title": "제36회 메리 정기연주회: 동행 (同行) : 차이콥스키 5번 & 한중 합동 연주회",
+    "date": "2026-07-25",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제36회 메리 정기연주회: 동행 (同行) : 차이콥스키 5번 & 한중 합동 연주회"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제36회 메리 정기연주회: 동행 (同行) : 차이콥스키 5번 & 한중 합동 연주회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295685_260709_103201.gif",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF295026",
+    "kopisId": "PF295026",
+    "title": "박은경 피아노 독주회: My Beloved Chopin [부천]",
+    "date": "2026-07-25",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "박은경 피아노 독주회: My Beloved Chopin [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "박은경 피아노 독주회: My Beloved Chopin [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295026_260701_130923.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF295751",
+    "kopisId": "PF295751",
+    "title": "AOU 프로젝트 연주회: HORIZON [부천]",
+    "date": "2026-07-26",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "AOU 프로젝트 연주회: HORIZON [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "AOU 프로젝트 연주회: HORIZON [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295751_260710_100524.png",
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF295668",
@@ -305,6 +1900,586 @@ export const initialRealConcerts = [
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (서울주문화센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295864_260713_112324.jpg",
     "hall": "공연장"
+  },
+  {
+    "id": "kopis-PF294779",
+    "kopisId": "PF294779",
+    "title": "부천필하모닉오케스트라, 바그너 니벨룽의 반지 하이라이트",
+    "date": "2026-08-14",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "부천필하모닉오케스트라, 바그너 니벨룽의 반지 하이라이트"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "부천필하모닉오케스트라, 바그너 니벨룽의 반지 하이라이트 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294779_260629_123446.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF298631",
+    "kopisId": "PF298631",
+    "title": "Erster Klang (첫 시작) [부천]",
+    "date": "2026-08-15",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "Erster Klang (첫 시작) [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "Erster Klang (첫 시작) [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298631_260818_110144.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF296857",
+    "kopisId": "PF296857",
+    "title": "제7회 CHAOS 오케스트라 정기연주회",
+    "date": "2026-08-15",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제7회 CHAOS 오케스트라 정기연주회"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제7회 CHAOS 오케스트라 정기연주회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296857_260724_105751.png",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF294693",
+    "kopisId": "PF294693",
+    "title": "독일에서 온 음악 친구들 [부천]",
+    "date": "2026-08-16",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "독일에서 온 음악 친구들 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "독일에서 온 음악 친구들 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294693_260626_130513.jpeg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF296904",
+    "kopisId": "PF296904",
+    "title": "제10회 경기예술고등학교 클래식기타 전공 동문 연주회 [부천]",
+    "date": "2026-08-22",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "제10회 경기예술고등학교 클래식기타 전공 동문 연주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제10회 경기예술고등학교 클래식기타 전공 동문 연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296904_260724_140122.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF294558",
+    "kopisId": "PF294558",
+    "title": "BAC 클래식: 김유빈 & 리처드 이가 듀오 리사이틀 [부천]",
+    "date": "2026-08-22",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 클래식: 김유빈 & 리처드 이가 듀오 리사이틀 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 클래식: 김유빈 & 리처드 이가 듀오 리사이틀 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294558_260624_140948.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF294686",
+    "kopisId": "PF294686",
+    "title": "노현진 피아노 독주회 [부천]",
+    "date": "2026-08-23",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "노현진 피아노 독주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "노현진 피아노 독주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294686_260626_113419.jpeg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF294528",
+    "kopisId": "PF294528",
+    "title": "BAC 오르간, 벤자�� 리게티 오르간 리사이틀",
+    "date": "2026-08-23",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 오르간, 벤자�� 리게티 오르간 리사이틀"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 오르간, 벤자�� 리게티 오르간 리사이틀 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294528_260624_131431.jpeg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF294535",
+    "kopisId": "PF294535",
+    "title": "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅳ [부천]",
+    "date": "2026-08-26",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅳ [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅳ [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294535_260624_133000.gif",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF298517",
+    "kopisId": "PF298517",
+    "title": "제23회 경기예술고등학교 정기연주회",
+    "date": "2026-08-27",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제23회 경기예술고등학교 정기연주회"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제23회 경기예술고등학교 정기연주회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298517_260814_110851.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF298095",
+    "kopisId": "PF298095",
+    "title": "테너 박찬우 독창회 [부천]",
+    "date": "2026-08-27",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "테너 박찬우 독창회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "테너 박찬우 독창회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298095_260810_140647.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF298714",
+    "kopisId": "PF298714",
+    "title": "슈베르티아데 창단 연주회: 우연 [부천]",
+    "date": "2026-08-30",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "슈베르티아데 창단 연주회: 우연 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "슈베르티아데 창단 연주회: 우연 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298714_260818_142746.png",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF298688",
+    "kopisId": "PF298688",
+    "title": "서울 시립대학교 칸타빌레 창단 20주년 정기 연주회 [부천]",
+    "date": "2026-08-30",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "서울 시립대학교 칸타빌레 창단 20주년 정기 연주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "서울 시립대학교 칸타빌레 창단 20주년 정기 연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298688_260818_133904.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF298513",
+    "kopisId": "PF298513",
+    "title": "제40주년 성균관대학교 오케스트라 정기 가을 연주회",
+    "date": "2026-09-06",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제40주년 성균관대학교 오케스트라 정기 가을 연주회"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제40주년 성균관대학교 오케스트라 정기 가을 연주회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298513_260814_105426.png",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF299615",
+    "kopisId": "PF299615",
+    "title": "제6회 카파츠그린나래합창단 정기연주회 [부천]",
+    "date": "2026-09-12",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "제6회 카파츠그린나래합창단 정기연주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제6회 카파츠그린나래합창단 정기연주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299615_260828_131825.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF294542",
+    "kopisId": "PF294542",
+    "title": "BAC 클래식: 손열음 피아노 리사이틀 [부천]",
+    "date": "2026-09-12",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 클래식: 손열음 피아노 리사이틀 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 클래식: 손열음 피아노 리사이틀 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294542_260624_134050.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF299893",
+    "kopisId": "PF299893",
+    "title": "노선형 피아노 독주회 [부천]",
+    "date": "2026-09-17",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "노선형 피아노 독주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "노선형 피아노 독주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299893_260902_133129.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF300318",
+    "kopisId": "PF300318",
+    "title": "Autumn Echoes: Cello & Harp [부천]",
+    "date": "2026-09-19",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "Autumn Echoes: Cello & Harp [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "Autumn Echoes: Cello & Harp [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300318_260907_153110.jpg",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF299611",
+    "kopisId": "PF299611",
+    "title": "Philharmonic EVE, 말러 교향곡 3번 [부천]",
+    "date": "2026-09-19",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "Philharmonic EVE, 말러 교향곡 3번 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "Philharmonic EVE, 말러 교향곡 3번 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299611_260828_130953.jpg",
+    "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF295052",
+    "kopisId": "PF295052",
+    "title": "에스토니아 국립 오케스트라 with 선우예권 [부천]",
+    "date": "2026-09-20",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "에스토니아 국립 오케스트라 with 선우예권 [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "에스토니아 국립 오케스트라 with 선우예권 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295052_260701_141702.gif",
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF300763",
@@ -1955,6 +4130,35 @@ export const initialRealConcerts = [
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (금정문화회관)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301742_260928_112820.gif",
     "hall": null
+  },
+  {
+    "id": "kopis-PF298341",
+    "kopisId": "PF298341",
+    "title": "BAC 클래식: 서울비르투오지 챔버 오케스트라 with 반도네오니스트 J.P. 조프레",
+    "date": "2026-10-04",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 클래식: 서울비르투오지 챔버 오케스트라 with 반도네오니스트 J.P. 조프레"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 클래식: 서울비르투오지 챔버 오케스트라 with 반도네오니스트 J.P. 조프레 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298341_260812_134612.jpg",
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF296664",
@@ -4138,6 +6342,35 @@ export const initialRealConcerts = [
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예주문화예술회관)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301688_260923_134211.jpg",
     "hall": null
+  },
+  {
+    "id": "kopis-PF300913",
+    "kopisId": "PF300913",
+    "title": "사운드 오브 BAC, 오르간 유니버스 [부천]",
+    "date": "2026-10-09",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "사운드 오브 BAC, 오르간 유니버스 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "사운드 오브 BAC, 오르간 유니버스 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300913_260914_172351.jpg",
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302594",
@@ -6981,6 +9214,35 @@ export const initialRealConcerts = [
     "hall": "소극장"
   },
   {
+    "id": "kopis-PF301329",
+    "kopisId": "PF301329",
+    "title": "성덕현 클라리넷 독주회 [부천]",
+    "date": "2026-10-15",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "성덕현 클라리넷 독주회 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "성덕현 클라리넷 독주회 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301329_260918_143006.jpg",
+    "hall": "소공연장"
+  },
+  {
     "id": "kopis-PF301871",
     "kopisId": "PF301871",
     "title": "김희정 피아노 독주회",
@@ -8463,6 +10725,35 @@ export const initialRealConcerts = [
     "hall": "아트홀"
   },
   {
+    "id": "kopis-PF298298",
+    "kopisId": "PF298298",
+    "title": "BAC 클래식: 파질 사이 피아노 리사이틀",
+    "date": "2026-10-17",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 클래식: 파질 사이 피아노 리사이틀"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 클래식: 파질 사이 피아노 리사이틀 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연완료",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298298_260812_105058.gif",
+    "hall": "콘서트홀"
+  },
+  {
     "id": "kopis-PF300324",
     "kopisId": "PF300324",
     "title": "이선아 피아노 독주회: J.S.Bach Keyboard Suite 전곡 시리즈 Ⅳ",
@@ -8915,6 +11206,35 @@ export const initialRealConcerts = [
     "description": "낙동아트센터에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301317_260918_140740.jpg",
     "hall": "앙상블극장"
+  },
+  {
+    "id": "kopis-PF300821",
+    "kopisId": "PF300821",
+    "title": "제4회 오케스트라 syncope 정기연주회: 라흐마니노프와 생상스 [부천]",
+    "date": "2026-10-18",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "제4회 오케스트라 syncope 정기연주회: 라흐마니노프와 생상스 [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "제4회 오케스트라 syncope 정기연주회: 라흐마니노프와 생상스 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연중",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300821_260914_134114.png",
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302784",
@@ -10100,6 +12420,35 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "연천수레울아트홀에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301338_260918_145815.gif",
+    "hall": "소공연장"
+  },
+  {
+    "id": "kopis-PF298331",
+    "kopisId": "PF298331",
+    "title": "BAC 브런치, 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅴ",
+    "date": "2026-10-21",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "BAC 브런치, 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅴ"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "BAC 브런치, 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅴ - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298331_260814_133607.gif",
     "hall": "소공연장"
   },
   {
@@ -13210,6 +15559,35 @@ export const initialRealConcerts = [
     "hall": "GMC금난새뮤직센터"
   },
   {
+    "id": "kopis-PF298528",
+    "kopisId": "PF298528",
+    "title": "코랄 TGY 15주년 기념 음악회",
+    "date": "2026-10-25",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "코랄 TGY 15주년 기념 음악회"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "코랄 TGY 15주년 기념 음악회 - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298528_260814_114141.gif",
+    "hall": "콘서트홀"
+  },
+  {
     "id": "kopis-PF302251",
     "kopisId": "PF302251",
     "title": "제36회 아주여성합창단 & 제24회 아주남성합창단 정기연주회: 지금 여기, 그대로 빛나",
@@ -13898,6 +16276,35 @@ export const initialRealConcerts = [
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (경기아트센터(구. 경기도문화의전당))",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301551_260922_125658.gif",
     "hall": null
+  },
+  {
+    "id": "kopis-PF294690",
+    "kopisId": "PF294690",
+    "title": "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [부천]",
+    "date": "2026-10-27",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294690_260626_122419.jpg",
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302079",
@@ -17800,7 +20207,7 @@ export const initialRealConcerts = [
       "제7회 CTS 장로합창단 정기연주회 [부천] - 2부 실내악 & 협주곡 하모니",
       "앙코르 특별 무대"
     ],
-    "price": "공식 예매처 참조",
+    "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
@@ -19706,6 +22113,35 @@ export const initialRealConcerts = [
     "description": "성산아트홀에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301700_260923_140613.jpg",
     "hall": "소극장"
+  },
+  {
+    "id": "kopis-PF296240",
+    "kopisId": "PF296240",
+    "title": "스테이지M 시네마 시리즈, 우리가 사랑한 시네마 뮤직 콘서트 [부천]",
+    "date": "2026-11-07",
+    "time": "19:30",
+    "venue": "부천아트센터 (소공연장)",
+    "city": "경기/인천",
+    "performers": [
+      "스테이지M 시네마 시리즈, 우리가 사랑한 시네마 뮤직 콘서트 [부천]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "스테이지M 시네마 시리즈, 우리가 사랑한 시네마 뮤직 콘서트 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (소공연장)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296240_260716_130446.gif",
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF302920",
@@ -24103,6 +26539,35 @@ export const initialRealConcerts = [
     "hall": "화성아트홀"
   },
   {
+    "id": "kopis-PF299431",
+    "kopisId": "PF299431",
+    "title": "만토바 체임버 오케스트라 [부천]",
+    "date": "2026-11-21",
+    "time": "19:30",
+    "venue": "부천아트센터 (콘서트홀)",
+    "city": "경기/인천",
+    "performers": [
+      "만토바 체임버 오케스트라 [부천]"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "만토바 체임버 오케스트라 [부천] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://www.bac.or.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터 (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "부천아트센터 콘서트홀의 세계적인 어쿠스틱 음향으로 울려 퍼지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299431_260826_140620.jpg",
+    "hall": "콘서트홀"
+  },
+  {
     "id": "kopis-PF302578",
     "kopisId": "PF302578",
     "title": "송윤진 피아노 독주회",
@@ -27440,7 +29905,7 @@ export const initialRealConcerts = [
     "title": "리드 테츨로프 피아노 리사이틀 [부천]",
     "date": "2026-12-06",
     "time": "19:30",
-    "venue": "부천아트센터 (소공연장)",
+    "venue": "부천아트센터 (콘서트홀)",
     "city": "경기",
     "performers": [
       "리드 테츨로프 피아노 리사이틀"
@@ -27458,11 +29923,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터 (소공연장)",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300863_260914_152025.gif",
-    "hall": "소공연장"
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF298335",
@@ -28040,7 +30505,7 @@ export const initialRealConcerts = [
     "title": "알버트 카노 스미트 피아노 리사이틀 [부천]",
     "date": "2026-12-11",
     "time": "19:30",
-    "venue": "부천아트센터 (소공연장)",
+    "venue": "부천아트센터 (콘서트홀)",
     "city": "경기",
     "performers": [
       "알버트 카노 스미트 피아노 리사이틀"
@@ -28058,11 +30523,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터 (소공연장)",
+    "sourceHall": "부천아트센터 (콘서트홀)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300832_260914_140506.jpg",
-    "hall": "소공연장"
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF300640",
@@ -30290,7 +32755,7 @@ export const initialRealConcerts = [
     "title": "크리스마스 영화음악 & 캐롤 콘서트 [부천]",
     "date": "2026-12-22",
     "time": "19:30",
-    "venue": "부천아트센터 (콘서트홀)",
+    "venue": "부천아트센터 (소공연장)",
     "city": "경기",
     "performers": [
       "크리스마스 영화음악 & 캐롤 콘서트"
@@ -30308,11 +32773,11 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "부천아트센터 (콘서트홀)",
+    "sourceHall": "부천아트센터 (소공연장)",
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (부천아트센터)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298070_260810_131328.gif",
-    "hall": "콘서트홀"
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF302198",
@@ -31095,6 +33560,38 @@ export const initialRealConcerts = [
     "hall": null
   },
   {
+    "id": "conc-2027-sac-newyear",
+    "kopisId": "2027-SAC-01",
+    "title": "2027 예술의전당 신년음악회 (Seoul Arts Center New Year Concert)",
+    "date": "2027-01-06",
+    "time": "19:30",
+    "venue": "예술의전당 [서울] (콘서트홀)",
+    "city": "서울",
+    "performers": [
+      "정명훈 (지휘)",
+      "KBS교향악단",
+      "임윤찬 (피아노)"
+    ],
+    "performerType": "오케스트라",
+    "composers": [
+      "베토벤",
+      "라흐마니노프"
+    ],
+    "pieces": [
+      "베토벤: 피아노 협주곡 제5번 황제 Op.73",
+      "라흐마니노프: 교향곡 제2번 e단조 Op.27"
+    ],
+    "price": "R석 150,000원 / S석 110,000원 / A석 70,000원",
+    "ticketUrl": "https://www.sac.or.kr",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "예술의전당 [서울] (콘서트홀)",
+    "crawlerBlocked": false,
+    "description": "희망찬 2027년의 시작을 알리는 대한민국 대표 예술의전당 신년 특별 연주회.",
+    "imageUrl": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=800&q=80",
+    "hall": "콘서트홀"
+  },
+  {
     "id": "kopis-PF302139",
     "kopisId": "PF302139",
     "title": "손세혁 피아노 독주회 [대구]",
@@ -31153,91 +33650,33 @@ export const initialRealConcerts = [
     "hall": "아트홀"
   },
   {
-    "id": "kopis-PF303243",
-    "kopisId": "PF303243",
-    "title": "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구]",
-    "date": "2027-01-24",
-    "time": "15:00",
-    "venue": "대구콘서트하우스 (그랜드홀)",
-    "city": "대구/경북",
-    "performers": [
-      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구]"
-    ],
-    "performerType": "실내악",
-    "composers": [
-      "클래식 명작"
-    ],
-    "pieces": [
-      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
-    "price": "R석 100,000원, S석 80,000원, A석 60,000원",
-    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EC%BD%98%EC%84%9C%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
-    "status": "공연예정",
-    "source": "KOPIS 전산망 새벽 3시 자동 수집",
-    "sourceHall": "대구콘서트하우스 (그랜드홀)",
-    "crawlerBlocked": false,
-    "description": "대구콘서트하우스에서 펼쳐지는 정통 클래식 무대.",
-    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303243_261013_161743.gif",
-    "hall": "그랜드홀"
-  },
-  {
-    "id": "kopis-PF303609",
-    "kopisId": "PF303609",
-    "title": "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [서울]",
-    "date": "2027-02-12",
-    "time": "19:30",
+    "id": "conc-2027-lotte-mahler",
+    "kopisId": "2027-LOTTE-01",
+    "title": "서울시향 2027 시즌 오프닝: 말러 교향곡 제5번 (Seoul Phil Mahler 5)",
+    "date": "2027-01-15",
+    "time": "20:00",
     "venue": "롯데콘서트홀",
     "city": "서울",
     "performers": [
-      "백윤학 등"
+      "얍 판 츠베덴 (지휘)",
+      "서울시립교향악단"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
-      "클래식 명작"
+      "말러",
+      "Gustav Mahler"
     ],
     "pieces": [
-      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [서울] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
+      "구스타프 말러: 교향곡 제5번 c#단조 전악장"
     ],
-    "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해S  60,000원, 시야방해A  50,000원, 시야방해B  40,000원",
-    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%AF%EB%8D%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "price": "R석 130,000원 / S석 100,000원 / A석 60,000원",
+    "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
-    "source": "KOPIS 전산망 새벽 3시 자동 수집",
+    "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "롯데콘서트홀",
     "crawlerBlocked": false,
-    "description": "롯데콘서트홀에서 펼쳐지는 정통 클래식 무대.",
-    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303609_261016_141354.png",
-    "hall": null
-  },
-  {
-    "id": "kopis-PF303349",
-    "kopisId": "PF303349",
-    "title": "지브리&디즈니 영화음악 FESTA [서울] (03.21)",
-    "date": "2027-03-21",
-    "time": "14:00",
-    "venue": "롯데콘서트홀",
-    "city": "서울",
-    "performers": [
-      "백윤학",
-      "이희주 등"
-    ],
-    "performerType": "실내악",
-    "composers": [
-      "클래식 명작"
-    ],
-    "pieces": [
-      "지브리&디즈니 영화음악 FESTA [서울] (03.21) - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
-    "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해 S석 60,000원, 시야방해 A석 50,000원, 시야방해 B석 40,000원",
-    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%AF%EB%8D%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
-    "status": "공연예정",
-    "source": "KOPIS 전산망 새벽 3시 자동 수집",
-    "sourceHall": "롯데콘서트홀",
-    "crawlerBlocked": false,
-    "description": "롯데콘서트홀에서 펼쳐지는 정통 클래식 무대.",
-    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303349_261014_161503.jpg",
+    "description": "롯데콘서트홀 빈야드 음향으로 만나는 츠베덴과 서울시향의 말러 5번 대서사시.",
+    "imageUrl": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80",
     "hall": null
   },
   {
@@ -31273,68 +33712,6 @@ export const initialRealConcerts = [
     "hall": "대공연장"
   },
   {
-    "id": "conc-2027-sac-newyear",
-    "kopisId": "2027-SAC-01",
-    "title": "2027 예술의전당 신년음악회 (Seoul Arts Center New Year Concert)",
-    "date": "2027-01-06",
-    "time": "19:30",
-    "venue": "예술의전당 [서울] (콘서트홀)",
-    "city": "서울",
-    "performers": [
-      "정명훈 (지휘)",
-      "KBS교향악단",
-      "임윤찬 (피아노)"
-    ],
-    "performerType": "오케스트라",
-    "composers": [
-      "베토벤",
-      "라흐마니노프"
-    ],
-    "pieces": [
-      "베토벤: 피아노 협주곡 제5번 황제 Op.73",
-      "라흐마니노프: 교향곡 제2번 e단조 Op.27"
-    ],
-    "price": "R석 150,000원 / S석 110,000원 / A석 70,000원",
-    "ticketUrl": "https://www.sac.or.kr",
-    "status": "공연예정",
-    "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "예술의전당 [서울] (콘서트홀)",
-    "crawlerBlocked": false,
-    "description": "희망찬 2027년의 시작을 알리는 대한민국 대표 예술의전당 신년 특별 연주회.",
-    "imageUrl": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=800&q=80",
-    "hall": "콘서트홀"
-  },
-  {
-    "id": "conc-2027-lotte-mahler",
-    "kopisId": "2027-LOTTE-01",
-    "title": "서울시향 2027 시즌 오프닝: 말러 교향곡 제5번 (Seoul Phil Mahler 5)",
-    "date": "2027-01-15",
-    "time": "20:00",
-    "venue": "롯데콘서트홀",
-    "city": "서울",
-    "performers": [
-      "얍 판 츠베덴 (지휘)",
-      "서울시립교향악단"
-    ],
-    "performerType": "오케스트라",
-    "composers": [
-      "말러",
-      "Gustav Mahler"
-    ],
-    "pieces": [
-      "구스타프 말러: 교향곡 제5번 c#단조 전악장"
-    ],
-    "price": "R석 130,000원 / S석 100,000원 / A석 60,000원",
-    "ticketUrl": "https://www.lotteconcerthall.com",
-    "status": "공연예정",
-    "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "롯데콘서트홀",
-    "crawlerBlocked": false,
-    "description": "롯데콘서트홀 빈야드 음향으로 만나는 츠베덴과 서울시향의 말러 5번 대서사시.",
-    "imageUrl": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80",
-    "hall": null
-  },
-  {
     "id": "conc-2027-bac-organ",
     "kopisId": "2027-BAC-01",
     "title": "2027 부천아트센터 신년 파이프오르간 리사이틀 (Bucheon Arts Center New Year Organ)",
@@ -31364,6 +33741,35 @@ export const initialRealConcerts = [
     "description": "부천아트센터 4,576개 파이프가 뿜어내는 웅장한 신년 축복의 오르간 선율.",
     "imageUrl": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=800&q=80",
     "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF303243",
+    "kopisId": "PF303243",
+    "title": "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구]",
+    "date": "2027-01-24",
+    "time": "15:00",
+    "venue": "대구콘서트하우스 (그랜드홀)",
+    "city": "대구/경북",
+    "performers": [
+      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구]"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "R석 100,000원, S석 80,000원, A석 60,000원",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EC%BD%98%EC%84%9C%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 새벽 3시 자동 수집",
+    "sourceHall": "대구콘서트하우스 (그랜드홀)",
+    "crawlerBlocked": false,
+    "description": "대구콘서트하우스에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303243_261013_161743.gif",
+    "hall": "그랜드홀"
   },
   {
     "id": "conc-2027-busan-newyear",
@@ -31400,6 +33806,35 @@ export const initialRealConcerts = [
     "hall": "콘서트홀"
   },
   {
+    "id": "kopis-PF303609",
+    "kopisId": "PF303609",
+    "title": "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [서울]",
+    "date": "2027-02-12",
+    "time": "19:30",
+    "venue": "롯데콘서트홀",
+    "city": "서울",
+    "performers": [
+      "백윤학 등"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [서울] - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해S  60,000원, 시야방해A  50,000원, 시야방해B  40,000원",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%AF%EB%8D%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 새벽 3시 자동 수집",
+    "sourceHall": "롯데콘서트홀",
+    "crawlerBlocked": false,
+    "description": "롯데콘서트홀에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303609_261016_141354.png",
+    "hall": null
+  },
+  {
     "id": "conc-2027-sac-chopin",
     "kopisId": "2027-SAC-02",
     "title": "조성진 피아노 리사이틀 2027 (Seong-Jin Cho Piano Recital 2027)",
@@ -31428,6 +33863,36 @@ export const initialRealConcerts = [
     "description": "세계적인 피아니스트 조성진이 선사하는 쇼팽 발라드 전곡과 라벨의 환상적인 피아니즘.",
     "imageUrl": "https://images.unsplash.com/photo-1520523839898-5071282543e2?auto=format&fit=crop&w=800&q=80",
     "hall": "콘서트홀"
+  },
+  {
+    "id": "kopis-PF303349",
+    "kopisId": "PF303349",
+    "title": "지브리&디즈니 영화음악 FESTA [서울] (03.21)",
+    "date": "2027-03-21",
+    "time": "14:00",
+    "venue": "롯데콘서트홀",
+    "city": "서울",
+    "performers": [
+      "백윤학",
+      "이희주 등"
+    ],
+    "performerType": "실내악",
+    "composers": [
+      "클래식 명작"
+    ],
+    "pieces": [
+      "지브리&디즈니 영화음악 FESTA [서울] (03.21) - 정규 클래식 레퍼토리",
+      "앙코르 특별 무대"
+    ],
+    "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해 S석 60,000원, 시야방해 A석 50,000원, 시야방해 B석 40,000원",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%AF%EB%8D%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 새벽 3시 자동 수집",
+    "sourceHall": "롯데콘서트홀",
+    "crawlerBlocked": false,
+    "description": "롯데콘서트홀에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303349_261014_161503.jpg",
+    "hall": null
   },
   {
     "id": "conc-2027-busan-spring",

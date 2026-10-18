@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v20: 예술의전당(콘서트홀, IBK챔버홀, 리사이틀홀, 인춘아트홀 등) 전수 세부 홀 보강 완료
-const CONCERTS_KEY = 'opus_korea_concerts_v20';
+// v21: 부천아트센터 콘서트홀/소공연장 세부 홀 전수 KOPIS 연동 보강 완료
+const CONCERTS_KEY = 'opus_korea_concerts_v21';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -30,6 +30,7 @@ try {
       'opus_korea_concerts_v17',
       'opus_korea_concerts_v18',
       'opus_korea_concerts_v19',
+      'opus_korea_concerts_v20',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
@@ -529,6 +530,70 @@ export const storageService = {
     const updated = list.filter(t => t.id !== tipId);
     this.saveTips(updated);
     return updated;
+  },
+
+  // ───────────────────────── 도배 방지 레이트 리밋 (Anti-Spam Rate Limits) ─────────────────────────
+  // 커뮤니티 게시글: 10초 쿨다운
+  checkPostRateLimit() {
+    try {
+      if (typeof localStorage === 'undefined') return { allowed: true };
+      const last = localStorage.getItem('classicalender_last_post_time');
+      const now = Date.now();
+      const COOLDOWN_MS = 10000; // 10초
+      if (last) {
+        const diff = now - parseInt(last, 10);
+        if (diff < COOLDOWN_MS) {
+          const remaining = Math.ceil((COOLDOWN_MS - diff) / 1000);
+          return { allowed: false, remainingSeconds: remaining };
+        }
+      }
+      localStorage.setItem('classicalender_last_post_time', String(now));
+      return { allowed: true };
+    } catch {
+      return { allowed: true };
+    }
+  },
+
+  // 커뮤니티 댓글: 5초 쿨다운
+  checkCommentRateLimit() {
+    try {
+      if (typeof localStorage === 'undefined') return { allowed: true };
+      const last = localStorage.getItem('classicalender_last_comment_time');
+      const now = Date.now();
+      const COOLDOWN_MS = 5000; // 5초
+      if (last) {
+        const diff = now - parseInt(last, 10);
+        if (diff < COOLDOWN_MS) {
+          const remaining = Math.ceil((COOLDOWN_MS - diff) / 1000);
+          return { allowed: false, remainingSeconds: remaining };
+        }
+      }
+      localStorage.setItem('classicalender_last_comment_time', String(now));
+      return { allowed: true };
+    } catch {
+      return { allowed: true };
+    }
+  },
+
+  // 공연 제보하기: 1분 (60초) 쿨다운
+  checkTipRateLimit() {
+    try {
+      if (typeof localStorage === 'undefined') return { allowed: true };
+      const last = localStorage.getItem('classicalender_last_tip_time');
+      const now = Date.now();
+      const COOLDOWN_MS = 60000; // 1분 (60초)
+      if (last) {
+        const diff = now - parseInt(last, 10);
+        if (diff < COOLDOWN_MS) {
+          const remaining = Math.ceil((COOLDOWN_MS - diff) / 1000);
+          return { allowed: false, remainingSeconds: remaining };
+        }
+      }
+      localStorage.setItem('classicalender_last_tip_time', String(now));
+      return { allowed: true };
+    } catch {
+      return { allowed: true };
+    }
   },
 
   // 전체 데이터 리셋
