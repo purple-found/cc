@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v13: 예술의전당 및 대한민국 주요 복합공연장 세부 홀 및 실제 클래식 연주 프로그램 100% 동기화
-const CONCERTS_KEY = 'opus_korea_concerts_v13';
+// v14: 매일 새벽 3시 KOPIS 공식 OpenAPI 자동 수집 및 실시간 최신 공연 전수 동기화
+const CONCERTS_KEY = 'opus_korea_concerts_v14';
 const HALLS_KEY = 'opus_korea_halls_v3';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -22,7 +22,8 @@ try {
       'opus_korea_concerts_v9',
       'opus_korea_concerts_v10',
       'opus_korea_concerts_v11',
-      'opus_korea_concerts_v12'
+      'opus_korea_concerts_v12',
+      'opus_korea_concerts_v13'
     ].forEach((k) => {
       localStorage.removeItem(k);
     });
