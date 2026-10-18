@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v22: 임의 생성 작품 목록 전수 제거 및 빈 배열 정제 완료
-const CONCERTS_KEY = 'opus_korea_concerts_v22';
+// v23: 10/20 파보 예르비 및 공인 실존 프로그램 100% 팩트체크 교정 반영
+const CONCERTS_KEY = 'opus_korea_concerts_v23';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -32,6 +32,7 @@ try {
       'opus_korea_concerts_v19',
       'opus_korea_concerts_v20',
       'opus_korea_concerts_v21',
+      'opus_korea_concerts_v22',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
