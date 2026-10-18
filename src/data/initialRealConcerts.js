@@ -7800,7 +7800,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대전예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296556_260721_144912.gif",
-    "hall": null
+    "hall": "앙상블홀"
   },
   {
     "id": "kopis-PF293869",
@@ -7860,7 +7860,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293483_260611_152321.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302795",
@@ -10802,7 +10802,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302880_261012_110700.gif",
-    "hall": null
+    "hall": "리사이틀홀"
   },
   {
     "id": "kopis-PF301766",
@@ -10952,7 +10952,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (세종예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295636_260708_142416.gif",
-    "hall": null
+    "hall": "시크릿씨어터"
   },
   {
     "id": "kopis-PF277338",
@@ -11582,7 +11582,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (청주예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303341_261014_153430.jpg",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF303267",
@@ -11672,7 +11672,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299871_260902_111743.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF299339",
@@ -11732,7 +11732,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (계룡문화예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299195_260824_131839.png",
-    "hall": null
+    "hall": "대공연장"
   },
   {
     "id": "kopis-PF299190",
@@ -11822,7 +11822,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF277435_260721_163908.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF283070",
@@ -12606,7 +12606,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302601_261006_162021.gif",
-    "hall": null
+    "hall": "인춘아트홀"
   },
   {
     "id": "kopis-PF301133",
@@ -12666,7 +12666,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301071_260916_140623.gif",
-    "hall": null
+    "hall": "리사이틀홀"
   },
   {
     "id": "kopis-PF300787",
@@ -12786,7 +12786,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대전예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294559_260624_141108.gif",
-    "hall": null
+    "hall": "아트홀"
   },
   {
     "id": "kopis-PF302328",
@@ -13507,7 +13507,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298796_260819_103734.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF293214",
@@ -13537,7 +13537,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293214_260716_141024.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302652",
@@ -13927,7 +13927,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302079_260930_111528.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302021",
@@ -14017,7 +14017,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (안산문화예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300645_260911_101308.jpg",
-    "hall": null
+    "hall": "별무리극장"
   },
   {
     "id": "kopis-PF300118",
@@ -14077,7 +14077,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299876_260902_113904.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF295039",
@@ -14107,7 +14107,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (천안예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295039_260701_134138.gif",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF302993",
@@ -14617,7 +14617,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (세종예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301975_260929_134408.gif",
-    "hall": null
+    "hall": "대공연장"
   },
   {
     "id": "kopis-PF300228",
@@ -14647,7 +14647,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대전예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300228_261006_173112.gif",
-    "hall": null
+    "hall": "앙상블홀"
   },
   {
     "id": "kopis-PF298506",
@@ -14677,7 +14677,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298506_260814_103624.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF296173",
@@ -14737,7 +14737,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285002_260212_102037.gif",
-    "hall": null
+    "hall": "오페라극장"
   },
   {
     "id": "kopis-PF296224",
@@ -15308,7 +15308,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303515_261016_101532.gif",
-    "hall": null
+    "hall": "리사이틀홀"
   },
   {
     "id": "kopis-PF302236",
@@ -15338,7 +15338,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (제천예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302236_261001_133154.gif",
-    "hall": null
+    "hall": "대공연장"
   },
   {
     "id": "kopis-PF302197",
@@ -15368,7 +15368,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302197_261001_111033.gif",
-    "hall": null
+    "hall": "인춘아트홀"
   },
   {
     "id": "kopis-PF300503",
@@ -15999,7 +15999,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (진천예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302904_261012_123222.png",
-    "hall": null
+    "hall": "진아트홀"
   },
   {
     "id": "kopis-PF302478",
@@ -16029,7 +16029,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302478_261006_115139.gif",
-    "hall": null
+    "hall": "리사이틀홀"
   },
   {
     "id": "kopis-PF301835",
@@ -16059,7 +16059,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301835_260928_151148.gif",
-    "hall": null
+    "hall": "인춘아트홀"
   },
   {
     "id": "kopis-PF301337",
@@ -16089,7 +16089,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대전예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301337_260918_145216.gif",
-    "hall": null
+    "hall": "앙상블홀"
   },
   {
     "id": "kopis-PF301295",
@@ -16149,7 +16149,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (안동문화예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300294_260907_143606.gif",
-    "hall": null
+    "hall": "백조홀"
   },
   {
     "id": "kopis-PF300122",
@@ -16179,7 +16179,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300122_260904_110905.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF299584",
@@ -16209,7 +16209,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299584_260828_105956.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF299492",
@@ -16239,7 +16239,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (의정부예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299492_260827_125205.gif",
-    "hall": null
+    "hall": "대극장"
   },
   {
     "id": "kopis-PF296933",
@@ -16299,7 +16299,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293732_260615_140605.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302078",
@@ -17238,7 +17238,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303298_261014_132907.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF300314",
@@ -17268,7 +17268,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300314_260907_151743.gif",
-    "hall": null
+    "hall": "리사이틀홀"
   },
   {
     "id": "kopis-PF297166",
@@ -17298,7 +17298,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297166_260729_102208.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302311",
@@ -17658,7 +17658,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298692_260818_134647.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302221",
@@ -17929,7 +17929,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (전남광주통합특별시 예술의전당 (구. 광주예술의전당))",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303494_261015_151631.jpg",
-    "hall": null
+    "hall": "로비"
   },
   {
     "id": "kopis-PF302611",
@@ -17989,7 +17989,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302117_261014_134119.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302788",
@@ -18169,7 +18169,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (서귀포예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303403_261015_105203.jpg",
-    "hall": null
+    "hall": "대극장"
   },
   {
     "id": "kopis-PF303111",
@@ -18199,7 +18199,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303111_261012_200830.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF302234",
@@ -18259,7 +18259,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302088_260930_114240.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF294972",
@@ -18289,7 +18289,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (천안예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294972_260701_100250.gif",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF287353",
@@ -18319,7 +18319,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF287353_260318_114001.gif",
-    "hall": null
+    "hall": "리사이틀홀"
   },
   {
     "id": "kopis-PF301851",
@@ -19197,7 +19197,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301982_260929_135535.gif",
-    "hall": null
+    "hall": "인춘아트홀"
   },
   {
     "id": "kopis-PF301976",
@@ -20244,7 +20244,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303378_261014_175831.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF303362",
@@ -20274,7 +20274,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303362_261014_165510.gif",
-    "hall": null
+    "hall": "리사이틀홀"
   },
   {
     "id": "kopis-PF303248",
@@ -20304,7 +20304,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303248_261013_163903.gif",
-    "hall": null
+    "hall": "인춘아트홀"
   },
   {
     "id": "kopis-PF299347",
@@ -20334,7 +20334,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (화성예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299347_260825_140634.gif",
-    "hall": null
+    "hall": "동탄아트홀"
   },
   {
     "id": "kopis-PF298862",
@@ -20394,7 +20394,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대전예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293997_260617_164241.gif",
-    "hall": null
+    "hall": "앙상블홀"
   },
   {
     "id": "kopis-PF302457",
@@ -20634,7 +20634,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303384_261015_100441.gif",
-    "hall": null
+    "hall": "인춘아트홀"
   },
   {
     "id": "kopis-PF303305",
@@ -20875,7 +20875,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (화성예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303163_261013_130859.gif",
-    "hall": null
+    "hall": "동탄아트홀"
   },
   {
     "id": "kopis-PF302658",
@@ -20905,7 +20905,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (천안예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302658_261007_105455.gif",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF301695",
@@ -20965,7 +20965,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300261_260907_132043.gif",
-    "hall": null
+    "hall": "인춘아트홀"
   },
   {
     "id": "kopis-PF291837",
@@ -21265,7 +21265,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (제천예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303420_261015_113745.gif",
-    "hall": null
+    "hall": "대공연장"
   },
   {
     "id": "kopis-PF301541",
@@ -21655,7 +21655,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303126_261013_103002.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF302878",
@@ -21685,7 +21685,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302878_261012_110403.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF301392",
@@ -22405,7 +22405,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대전예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302925_261012_131719.gif",
-    "hall": null
+    "hall": "아트홀"
   },
   {
     "id": "kopis-PF302875",
@@ -22435,7 +22435,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302875_261012_105747.gif",
-    "hall": null
+    "hall": "인춘아트홀"
   },
   {
     "id": "kopis-PF300573",
@@ -22465,7 +22465,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대전예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300573_260910_111914.gif",
-    "hall": null
+    "hall": "앙상블홀"
   },
   {
     "id": "kopis-PF299878",
@@ -22526,7 +22526,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298556_260814_140123.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF293945",
@@ -22556,7 +22556,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (전남광주통합특별시 예술의전당 (구. 광주예술의전당))",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293945_260617_135958.gif",
-    "hall": null
+    "hall": "대공연장"
   },
   {
     "id": "kopis-PF300213",
@@ -22796,7 +22796,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303309_261014_140914.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF299529",
@@ -22826,7 +22826,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (세종예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299529_260827_141309.gif",
-    "hall": null
+    "hall": "대공연장"
   },
   {
     "id": "kopis-PF297330",
@@ -23007,7 +23007,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298398_260813_113811.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF297326",
@@ -23219,7 +23219,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300068_260903_135857.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF277462",
@@ -23430,7 +23430,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (세종예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295630_260708_141038.gif",
-    "hall": null
+    "hall": "시크릿씨어터"
   },
   {
     "id": "kopis-PF281690",
@@ -23705,7 +23705,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303237_261013_160035.gif",
-    "hall": null
+    "hall": "리사이틀홀"
   },
   {
     "id": "kopis-PF298970",
@@ -24761,7 +24761,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (안산문화예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300647_260911_101901.jpg",
-    "hall": null
+    "hall": "별무리극장"
   },
   {
     "id": "kopis-PF300453",
@@ -24791,7 +24791,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300453_260909_112430.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF299971",
@@ -24821,7 +24821,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299971_260902_162959.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF295037",
@@ -24851,7 +24851,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (천안예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295037_260701_133636.gif",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF303260",
@@ -25180,7 +25180,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301773_260928_131338.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF303299",
@@ -25420,7 +25420,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302937_261012_133927.gif",
-    "hall": null
+    "hall": "리사이틀홀"
   },
   {
     "id": "kopis-PF301376",
@@ -25480,7 +25480,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (안동문화예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298921_260820_111456.jpg",
-    "hall": null
+    "hall": "웅부홀"
   },
   {
     "id": "kopis-PF297765",
@@ -25510,7 +25510,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297765_260805_140556.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF296900",
@@ -25750,7 +25750,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (안산문화예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300788_260914_120658.jpg",
-    "hall": null
+    "hall": "달맞이극장"
   },
   {
     "id": "kopis-PF299258",
@@ -25990,7 +25990,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302120_260930_134133.gif",
-    "hall": null
+    "hall": "리사이틀홀"
   },
   {
     "id": "kopis-PF301346",
@@ -26020,7 +26020,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301346_260921_103149.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF303616",
@@ -26200,7 +26200,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303000_261012_155011.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF302069",
@@ -26410,7 +26410,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (안동문화예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293855_260616_140825.jpg",
-    "hall": null
+    "hall": "백조홀"
   },
   {
     "id": "kopis-PF295457",
@@ -26500,7 +26500,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285072_260212_132347.gif",
-    "hall": null
+    "hall": "오페라극장"
   },
   {
     "id": "kopis-PF281239",
@@ -26710,7 +26710,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300600_260910_132314.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF290296",
@@ -27252,7 +27252,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301250_260918_104029.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF294057",
@@ -27582,7 +27582,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302914_261012_125714.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF300631",
@@ -27882,7 +27882,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300061_260903_134430.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF297780",
@@ -27972,7 +27972,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293713_260615_132644.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF301446",
@@ -28362,7 +28362,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300689_260911_131555.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF297987",
@@ -28392,7 +28392,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297987_260807_142629.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF297885",
@@ -28422,7 +28422,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (천안예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297885_260810_131709.gif",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF299647",
@@ -28662,7 +28662,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF287053_260313_150405.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302331",
@@ -28752,7 +28752,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (천안예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295057_260701_144021.gif",
-    "hall": null
+    "hall": "소공연장"
   },
   {
     "id": "kopis-PF293081",
@@ -28782,7 +28782,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293081_260608_140449.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF295242",
@@ -29022,7 +29022,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (안동문화예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296273_260716_142835.jpg",
-    "hall": null
+    "hall": "웅부홀"
   },
   {
     "id": "kopis-PF299383",
@@ -29412,7 +29412,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298967_260820_135721.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF302798",
@@ -29802,7 +29802,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299436_260826_142103.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF297883",
@@ -29832,7 +29832,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대전예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297883_260806_142341.gif",
-    "hall": null
+    "hall": "앙상블홀"
   },
   {
     "id": "kopis-PF294284",
@@ -29862,7 +29862,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대전예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294284_260622_132400.gif",
-    "hall": null
+    "hall": "아트홀"
   },
   {
     "id": "kopis-PF303207",
@@ -30132,7 +30132,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (대전예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301134_260916_172123.gif",
-    "hall": null
+    "hall": "앙상블홀"
   },
   {
     "id": "kopis-PF284818",
@@ -30342,7 +30342,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302198_261001_111509.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF301266",
@@ -30372,7 +30372,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301266_260918_111836.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF297394",
@@ -30522,7 +30522,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (화성예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296045_260714_113325.gif",
-    "hall": null
+    "hall": "동탄아트홀"
   },
   {
     "id": "kopis-PF303502",
@@ -30672,7 +30672,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303490_261015_150455.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF303355",
@@ -30942,7 +30942,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303381_261014_181524.gif",
-    "hall": null
+    "hall": "IBK챔버홀"
   },
   {
     "id": "kopis-PF303278",
@@ -30972,7 +30972,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (천안예술의전당)",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303278_261014_112314.gif",
-    "hall": null
+    "hall": "대공연장"
   },
   {
     "id": "kopis-PF301458",
@@ -31032,7 +31032,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "공연예술통합전산망(KOPIS) 정부 공식 등록 클래식 공연 (예술의전당 [서울])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF283864_260126_135701.gif",
-    "hall": null
+    "hall": "콘서트홀"
   },
   {
     "id": "kopis-PF299920",
@@ -31270,7 +31270,7 @@ export const initialRealConcerts = [
     "crawlerBlocked": false,
     "description": "청주예술의전당에서 펼쳐지는 2027 시즌 공식 클래식 공연 (재패니메이션 영화음악 콘서트: UNSTOPPABLE [청주])",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300106_260904_103039.gif",
-    "hall": null
+    "hall": "대공연장"
   },
   {
     "id": "conc-2027-sac-newyear",

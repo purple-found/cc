@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v19: 부산콘서트홀 콘서트홀/챔버홀 세부홀 옵션 분리 및 데이터 정규화
-const CONCERTS_KEY = 'opus_korea_concerts_v19';
+// v20: 예술의전당(콘서트홀, IBK챔버홀, 리사이틀홀, 인춘아트홀 등) 전수 세부 홀 보강 완료
+const CONCERTS_KEY = 'opus_korea_concerts_v20';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -29,6 +29,7 @@ try {
       'opus_korea_concerts_v16',
       'opus_korea_concerts_v17',
       'opus_korea_concerts_v18',
+      'opus_korea_concerts_v19',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
