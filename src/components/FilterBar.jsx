@@ -8,7 +8,9 @@ export default function FilterBar({
   setViewMode,
   totalCount,
   filteredCount,
-  concerts = []
+  concerts = [],
+  shouldShowConcerts = true,
+  onReset
 }) {
   // 1. 주요 랜드마크 공연장 기본 목록
   const primaryVenues = [
@@ -117,15 +119,19 @@ export default function FilterBar({
       dateRange: 'all',
       customDate: ''
     });
+    if (onReset) onReset();
   };
 
-  const isFiltered =
+  const hasActiveConditions = Boolean(
     filters.search ||
     localSearch ||
     filters.venue !== 'all' ||
     filters.composer !== 'all' ||
     filters.dateRange !== 'all' ||
-    filters.customDate;
+    filters.customDate
+  );
+
+  const isFiltered = hasActiveConditions || shouldShowConcerts;
 
   return (
     <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-5 shadow-sm space-y-4 transition-colors">
@@ -279,8 +285,17 @@ export default function FilterBar({
         <div className="flex items-center gap-1.5">
           <Filter className="w-3.5 h-3.5 text-concert-500" />
           <span>
-            총 <strong className="text-stone-900 dark:text-stone-100 font-bold">{totalCount}</strong>편의 클래식 공연 중{' '}
-            <strong className="text-concert-600 dark:text-concert-400 font-bold">{filteredCount}</strong>편이 검색되었습니다.
+            {shouldShowConcerts ? (
+              <>
+                총 <strong className="text-stone-900 dark:text-stone-100 font-bold">{totalCount}</strong>편의 클래식 공연 중{' '}
+                <strong className="text-concert-600 dark:text-concert-400 font-bold">{filteredCount}</strong>편이 검색되었습니다.
+              </>
+            ) : (
+              <>
+                검색어를 입력하거나 필터를 선택하시면 맞춤 공연 일정이 표시됩니다. (등록된 총 공연:{' '}
+                <strong className="text-stone-900 dark:text-stone-100 font-bold">{totalCount}</strong>편)
+              </>
+            )}
           </span>
         </div>
       </div>

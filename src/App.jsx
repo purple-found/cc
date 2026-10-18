@@ -6,6 +6,7 @@ import ConcertCompactList from './components/ConcertCompactList';
 import ConcertCalendar from './components/ConcertCalendar';
 import ConcertDetailModal from './components/ConcertDetailModal';
 import TipConcertModal from './components/TipConcertModal';
+import InitialDiscoveryGuide from './components/InitialDiscoveryGuide';
 import CommunityBoard from './components/CommunityBoard';
 import AdminCenter from './components/AdminCenter';
 import AdminAuthModal from './components/AdminAuthModal';
@@ -41,6 +42,18 @@ export default function App() {
     dateRange: 'all',
     customDate: ''
   });
+  const [showAllConcerts, setShowAllConcerts] = useState(false);
+
+  const hasActiveCondition = Boolean(
+    filters.search ||
+    filters.venue !== 'all' ||
+    filters.composer !== 'all' ||
+    filters.performer !== 'all' ||
+    filters.dateRange !== 'all' ||
+    filters.customDate
+  );
+
+  const shouldShowConcerts = hasActiveCondition || showAllConcerts;
 
   // Modal & Target states
   const [selectedConcert, setSelectedConcert] = useState(null);
@@ -370,10 +383,20 @@ export default function App() {
               totalCount={concerts.length}
               filteredCount={filteredConcerts.length}
               concerts={concerts}
+              shouldShowConcerts={shouldShowConcerts}
+              onReset={() => setShowAllConcerts(false)}
             />
 
-            {/* View Mode: Cards vs Compact vs Calendar */}
-            {viewMode === 'cards' ? (
+            {/* View Mode: Initial Discovery Guide vs Cards vs Compact vs Calendar */}
+            {!shouldShowConcerts ? (
+              <InitialDiscoveryGuide
+                totalCount={concerts.length}
+                onSelectVenue={(venue) => setFilters((prev) => ({ ...prev, venue }))}
+                onSelectComposer={(composer) => setFilters((prev) => ({ ...prev, composer }))}
+                onSelectDateRange={(dateRange) => setFilters((prev) => ({ ...prev, dateRange }))}
+                onShowAll={() => setShowAllConcerts(true)}
+              />
+            ) : viewMode === 'cards' ? (
               filteredConcerts.length === 0 ? (
                 <div className="p-16 text-center bg-white dark:bg-hall-900 rounded-3xl border border-stone-200 dark:border-hall-800">
                   <AlertCircle className="w-12 h-12 mx-auto text-stone-300 dark:text-stone-600 mb-3" />
@@ -384,7 +407,7 @@ export default function App() {
                     필터 조건을 변경하거나 검색어를 재설정해보세요.
                   </p>
                   <button
-                    onClick={() =>
+                    onClick={() => {
                       setFilters({
                         search: '',
                         venue: 'all',
@@ -392,8 +415,9 @@ export default function App() {
                         performer: 'all',
                         dateRange: 'all',
                         customDate: ''
-                      })
-                    }
+                      });
+                      setShowAllConcerts(true);
+                    }}
                     className="mt-4 px-4 py-2 rounded-xl bg-concert-50 dark:bg-hall-800 text-concert-700 dark:text-concert-300 text-xs font-bold hover:bg-concert-100 transition-colors"
                   >
                     전체 공연 다시 보기
