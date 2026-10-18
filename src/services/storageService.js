@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v21: 부천아트센터 콘서트홀/소공연장 세부 홀 전수 KOPIS 연동 보강 완료
-const CONCERTS_KEY = 'opus_korea_concerts_v21';
+// v22: 임의 생성 작품 목록 전수 제거 및 빈 배열 정제 완료
+const CONCERTS_KEY = 'opus_korea_concerts_v22';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -31,6 +31,7 @@ try {
       'opus_korea_concerts_v18',
       'opus_korea_concerts_v19',
       'opus_korea_concerts_v20',
+      'opus_korea_concerts_v21',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
@@ -48,7 +49,7 @@ export const storageService = {
       }
       const raw = localStorage.getItem(CONCERTS_KEY);
       if (!raw) {
-        // 최초 로드시 KOPIS 실존 공식 공연 999건 자동 캐싱 (세부 홀 정보 및 실제 레퍼토리 포함)
+        // 최초 로드시 KOPIS 실존 공식 공연 전수 캐싱
         localStorage.setItem(CONCERTS_KEY, JSON.stringify(initialRealConcerts || []));
         return initialRealConcerts || [];
       }
@@ -56,21 +57,23 @@ export const storageService = {
       if (!Array.isArray(parsed) || parsed.length === 0) {
         return initialRealConcerts || [];
       }
-      // 세부 홀(hall) 정보나 프로그램이 최신화되지 않은 경우 initialRealConcerts와 즉각 병합
+      // 세부 홀(hall) 정보나 작품 목록이 최신화되지 않은 경우 initialRealConcerts와 즉각 병합
       const initialMap = new Map((initialRealConcerts || []).map(c => [c.id || c.kopisId, c]));
       let hasUpdate = false;
       const synced = parsed.map(c => {
         const init = initialMap.get(c.id || c.kopisId);
         if (init) {
           const needsHallUpdate = init.hall && c.hall !== init.hall;
-          const needsPiecesUpdate = init.pieces && (!c.pieces || c.pieces.length === 0 || c.pieces[0].endsWith('프로그램'));
-          if (needsHallUpdate || needsPiecesUpdate) {
+          const hasFakePieces = Array.isArray(c.pieces) && c.pieces.some(p =>
+            p.includes('앙코르') || p.includes('레퍼토리') || p.includes('하모니') || p.includes('협주곡 앙상블') || p.includes('소나타 및 모음곡') || p.includes('실내악 선율') || p.endsWith('프로그램')
+          );
+          if (needsHallUpdate || hasFakePieces) {
             hasUpdate = true;
             return {
               ...c,
               hall: init.hall !== undefined ? init.hall : c.hall,
               venue: init.venue || c.venue,
-              pieces: init.pieces || c.pieces
+              pieces: init.pieces || []
             };
           }
         }

@@ -14,11 +14,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "스테이지엠 크리스마스 영화 음악 & 캐롤 콘서트 [대구] - 1부 클래식 정규 레퍼토리",
-      "스테이지엠 크리스마스 영화 음악 & 캐롤 콘서트 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80%EC%97%A0%20(STAGE%20M)%20(%EA%B5%AC.%ED%94%84%EB%9E%80%EC%B8%A0%ED%99%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -44,10 +40,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "청소년을 위한 음악여행 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -73,10 +66,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유니온필하모닉오케스트라 정기연주회, 차이콥스키 시리즈: 백조의 호수와 비창 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -102,10 +92,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "AOU 신년음악회: L'amour - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -131,10 +118,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제9회 한양 솔로이스츠 정기연주회: 베토벤 피아노 소나타 전곡시리즈 #5 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -160,10 +144,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제10회 Andy Phil 정기연주회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -189,10 +170,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제2회 아마티챔버오케스트라 정기연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -218,10 +196,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "부천시립예술단 신년음악회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -247,10 +222,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제3회 이데아 프로젝트 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -276,10 +248,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "IGNIS MUSICAE 연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -306,11 +275,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "오르간 오딧세이 - 1부 클래식 정규 레퍼토리",
-      "오르간 오딧세이 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연중",
@@ -336,10 +301,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 후원회와 함께하는 NEW YEAR'S CONCERT - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -365,10 +327,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 박상욱과 함께하는 브런치콘서트 Ⅰ [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -394,11 +353,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "움라우트 뮤직 키즈 클래식 [창원] (13시) - 1부 클래식 정규 레퍼토리",
-      "움라우트 뮤직 키즈 클래식 [창원] (13시) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%AA%B0%EC%9E%85%EA%B3%B5%EC%9C%A0%EC%97%B0%EC%8A%B5%EC%8B%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -424,10 +379,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제45회 KUCO 경희대학교 국제캠퍼스 아마추어 오케스트라 정기연주회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -453,11 +405,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "롯콘 마티네: 대니 구의 플레이리스트 - 1부 클래식 정규 레퍼토리",
-      "롯콘 마티네: 대니 구의 플레이리스트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연중",
@@ -483,10 +431,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한불 수교 140주년 기념, 부천필하모닉오케스트라 with 프랑스대사관 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -512,10 +457,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 클래식 시리즈, WDR 쾰른 방송 오케스트라 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -541,10 +483,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제7회 TENUTO 정기연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -570,10 +509,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "교보 노블리에 포유콘서트: 상상이 음악이 되는 순간 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -599,11 +535,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "성남아트센터 마티네 콘서트: 독일, 음악의 숲 - 1부 클래식 정규 레퍼토리",
-      "성남아트센터 마티네 콘서트: 독일, 음악의 숲 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연중",
@@ -629,10 +561,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제33회 서울시민교향악단 정기연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -658,10 +587,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제3회 오케스트라 syncope 정기연주회: 차이코프스키 시리즈 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -687,10 +613,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "브리즈앙상블과 엘로퀸텟의 모차르트 시리즈 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -716,10 +639,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "project 유성우 창단연주회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -745,10 +665,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 오르간: 카메론 카펜터 오르간 리사이틀 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -774,11 +691,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "키즈인비또 스페셜, 클래식 어드벤처: 음악 왕국으로 떠나는 대모험! [용인] - 1부 클래식 정규 레퍼토리",
-      "키즈인비또 스페셜, 클래식 어드벤처: 음악 왕국으로 떠나는 대모험! [용인] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.yicf.or.kr",
     "status": "공연중",
@@ -804,10 +717,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제22회 페스티벌 앙상블 가우디움 정기연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -833,10 +743,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제2회 조아클래스 정기연주회: 봄, Voice Palette: 목소리로 그리는 색채 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -862,10 +769,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "베토벤 & 라흐마니노프 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -891,10 +795,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제54회 한국소년소녀합창제 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -920,10 +821,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "함께Grin합창단 창단연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -949,10 +847,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 초이스, 디토 오케스트라 with 신지아 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -978,10 +873,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅱ [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1007,10 +899,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김보람 피아노 독주회: 베토벤 피아노 소나타 전곡 시리즈 Ⅱ - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1036,10 +925,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "우리가 사랑한 한국영화 OST 콘서트 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1065,10 +951,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "MelON 디즈니 + 지브리 오케스트라 콘서트 (어린이날 edition) [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1094,10 +977,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "어린이날 기념, 지브리 & 디즈니 OST 콘서트 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1123,10 +1003,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제5회 은혜로운 창작성가 발표회: In His Harmony - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1152,10 +1029,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "테너 최성수 독창회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1181,10 +1055,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "부천아트센터 개관 3주년 페스티벌: 조수미 세계무대 데뷔 40주년 기념 콘서트 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1210,10 +1081,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "부천아트센터 개관 3주년 페스티벌: 클라라 주미 강 & 김선욱 듀오 리사이틀 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1239,10 +1107,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 공동기획: SNU 심포니 오케스트라 연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1268,10 +1133,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "송문희 피아노 독주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1297,10 +1159,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Trio Armone 정기연주회 (아르모네 피아노 트리오) - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1326,10 +1185,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제15회 서울대학교 졸업생 오케스트라 정기연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1355,10 +1211,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "프로젝트 부활 (Projekt Auferstehung) [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1384,10 +1237,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제5회 스마일 오케스트라 스마일 앙상블 연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1413,10 +1263,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제27회 소사필하모닉오케스트라 정기연주회: 창단 20주년 기념 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1442,10 +1289,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유니온필하모닉오케스트라, 드보르작 시리즈: 신세계로부터 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1471,10 +1315,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "드레스덴 필하모닉 & 제임스 에네스 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1500,10 +1341,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "히사이시 조 영화음악 콘서트 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1529,10 +1367,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제20회 팡세오케스트라 정기연주회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1558,10 +1393,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅲ [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1587,11 +1419,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "월간 하랑: 계절의 온도 [속초] - 1부 클래식 정규 레퍼토리",
-      "월간 하랑: 계절의 온도 [속초] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%86%8C%EA%B7%B9%EC%9E%A5%20%EC%B4%88%EC%86%8D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -1617,10 +1445,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 일피노콰이어 정기연주회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1646,10 +1471,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "북한이탈주민과 함께하는 여름밤의 평화 소나타 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1675,10 +1497,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 클래식시리즈, 피아니스트 조성진 체임버 콘서트 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1704,10 +1523,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "무지커 영 아티스트 콘서트 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1733,10 +1549,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제36회 메리 정기연주회: 동행 (同行) : 차이콥스키 5번 & 한중 합동 연주회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1762,10 +1575,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "박은경 피아노 독주회: My Beloved Chopin [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1791,10 +1601,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "AOU 프로젝트 연주회: HORIZON [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1820,11 +1627,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "[패키지] 세종예술의전당 시크릿 콘서트 시즌4: 한 잔의 클래식 - 1부 클래식 정규 레퍼토리",
-      "[패키지] 세종예술의전당 시크릿 콘서트 시즌4: 한 잔의 클래식 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연중",
@@ -1856,11 +1659,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Sunday Vibe (선데이 바이브) - 1부 클래식 정규 레퍼토리",
-      "Sunday Vibe (선데이 바이브) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9E%90%EC%96%91%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%85%98(%ED%8C%8C%EB%A6%AC%EB%AE%A4%EC%A7%81%ED%8F%AC%EB%9F%BC)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -1886,11 +1685,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "해설이 있는 음악회, 서클스 (시즌권) [울산] - 1부 클래식 정규 레퍼토리",
-      "해설이 있는 음악회, 서클스 (시즌권) [울산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%9A%B8%EC%A3%BC%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -1916,10 +1711,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "부천필하모닉오케스트라, 바그너 니벨룽의 반지 하이라이트 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1945,10 +1737,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Erster Klang (첫 시작) [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -1974,10 +1763,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제7회 CHAOS 오케스트라 정기연주회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2003,10 +1789,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "독일에서 온 음악 친구들 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2032,10 +1815,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제10회 경기예술고등학교 클래식기타 전공 동문 연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2061,10 +1841,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 클래식: 김유빈 & 리처드 이가 듀오 리사이틀 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2090,10 +1867,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "노현진 피아노 독주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2119,10 +1893,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 오르간, 벤자�� 리게티 오르간 리사이틀 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2148,10 +1919,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅳ [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2177,10 +1945,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제23회 경기예술고등학교 정기연주회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2206,10 +1971,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "테너 박찬우 독창회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2235,10 +1997,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "슈베르티아데 창단 연주회: 우연 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2264,10 +2023,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울 시립대학교 칸타빌레 창단 20주년 정기 연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2293,10 +2049,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제40주년 성균관대학교 오케스트라 정기 가을 연주회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2322,10 +2075,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제6회 카파츠그린나래합창단 정기연주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2351,10 +2101,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 클래식: 손열음 피아노 리사이틀 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2380,10 +2127,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "노선형 피아노 독주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2409,10 +2153,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Autumn Echoes: Cello & Harp [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2438,10 +2179,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Philharmonic EVE, 말러 교향곡 3번 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2467,10 +2205,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "에스토니아 국립 오케스트라 with 선우예권 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -2499,11 +2234,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -2529,11 +2260,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://garts.kr",
     "status": "공연완료",
@@ -2596,11 +2323,7 @@ export const initialRealConcerts = [
     "composers": [
       "바흐"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -2626,11 +2349,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김우경 & 유신희 & 정다은 성악 트리오 리사이틀 [대전] - 1부 클래식 정규 레퍼토리",
-      "김우경 & 유신희 & 정다은 성악 트리오 리사이틀 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -2656,11 +2375,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "세계음악예술가협회 3 Generational Piano Concert - 1부 클래식 정규 레퍼토리",
-      "세계음악예술가협회 3 Generational Piano Concert - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -2686,11 +2401,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -2716,11 +2427,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아름다운 목요일 스페이스, 노부스 콰르텟 String Quartet - 1부 클래식 정규 레퍼토리",
-      "아름다운 목요일 스페이스, 노부스 콰르텟 String Quartet - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -2746,11 +2453,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제1회 피아스트링즈 정기연주회: 남겨진 여운 [대전] - 1부 클래식 정규 레퍼토리",
-      "제1회 피아스트링즈 정기연주회: 남겨진 여운 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%84%ED%8A%B8%EB%B8%8C%EB%A6%BF%EC%A7%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -2776,11 +2479,7 @@ export const initialRealConcerts = [
     "composers": [
       "브람스"
     ],
-    "pieces": [
-      "브람스: 클래식 명작 소나타 및 모음곡",
-      "브람스: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%BC%ED%85%80%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -2806,11 +2505,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%BF%88%EC%9D%98%EC%88%B2%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -2836,11 +2531,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바리톤 유진백 독창회 [대전] - 1부 클래식 정규 레퍼토리",
-      "바리톤 유진백 독창회 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -2866,11 +2557,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제8회 공연예술축제 그라제, 전남광주통합특별시립오페라단: 해설이 있는 즐거운 오페라 여행 - 1부 클래식 정규 레퍼토리",
-      "제8회 공연예술축제 그라제, 전남광주통합특별시립오페라단: 해설이 있는 즐거운 오페라 여행 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
@@ -2896,11 +2583,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -2926,11 +2609,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "로열 윈드 뮤직, 리코더 앙상블 내한공연 - 1부 클래식 정규 레퍼토리",
-      "로열 윈드 뮤직, 리코더 앙상블 내한공연 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -2957,11 +2636,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "비올리스트 강동엽 보웬 전곡 시리즈 Ⅱ - 1부 클래식 정규 레퍼토리",
-      "비올리스트 강동엽 보웬 전곡 시리즈 Ⅱ - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -3016,11 +2691,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제77회 이탈리아 성악회 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제77회 이탈리아 성악회 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -3046,11 +2717,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -3080,11 +2747,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "리수스 콰르텟과 함께하는 반도네온 실내악의 밤 - 1부 클래식 정규 레퍼토리",
-      "리수스 콰르텟과 함께하는 반도네온 실내악의 밤 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -3110,11 +2773,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
@@ -3140,11 +2799,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -3170,11 +2825,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 노민영 독주회 - 1부 클래식 정규 레퍼토리",
-      "피아니스트 노민영 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -3200,11 +2851,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%95%EB%B6%81%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -3230,11 +2877,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제6회 고양레이디스싱어즈 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제6회 고양레이디스싱어즈 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연완료",
@@ -3260,11 +2903,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "작곡가 장은호 작품 발표회: 침묵의 밀도 [대구] - 1부 클래식 정규 레퍼토리",
-      "작곡가 장은호 작품 발표회: 침묵의 밀도 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연완료",
@@ -3290,11 +2929,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "라율아트홀 한 잔의 여유 시리즈, K-Tea Classic Concert: Seoul Edition 다도 음악회 - 1부 클래식 정규 레퍼토리",
-      "라율아트홀 한 잔의 여유 시리즈, K-Tea Classic Concert: Seoul Edition 다도 음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%9D%BC%EC%9C%A8%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -3320,11 +2955,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제7회 창단10주년 로사리오합창단 정기연주회 [성남] - 1부 클래식 정규 레퍼토리",
-      "제7회 창단10주년 로사리오합창단 정기연주회 [성남] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EB%82%A8%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20(%EA%B5%AC.%20%EC%84%B1%EB%82%A8%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -3351,11 +2982,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "손예인 비올라 독주회 - 1부 클래식 정규 레퍼토리",
-      "손예인 비올라 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -3381,11 +3008,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -3411,11 +3034,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제8회 공연예술축제 그라제, 온가족 클래식 콘서트: 엉클영버×백조의 호수 - 1부 클래식 정규 레퍼토리",
-      "제8회 공연예술축제 그라제, 온가족 클래식 콘서트: 엉클영버×백조의 호수 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
@@ -3441,11 +3060,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "안동관악페스타 - 1부 클래식 정규 레퍼토리",
-      "안동관악페스타 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "공연완료",
@@ -3473,11 +3088,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "첼리스트 주연선 리사이틀 - 1부 클래식 정규 레퍼토리",
-      "첼리스트 주연선 리사이틀 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -3503,11 +3114,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -3533,11 +3140,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리 & 디즈니 영화음악 FESTA [서울] (10.03) - 1부 클래식 정규 레퍼토리",
-      "지브리 & 디즈니 영화음악 FESTA [서울] (10.03) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -3569,11 +3172,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 뮤제스트 앙상블 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제4회 뮤제스트 앙상블 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -3599,11 +3198,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "회상 시리즈 Ⅱ, 기억의 결 [인천] - 1부 클래식 정규 레퍼토리",
-      "회상 시리즈 Ⅱ, 기억의 결 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
@@ -3629,11 +3224,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "클래식 좀 들어라: playlist - 1부 클래식 정규 레퍼토리",
-      "클래식 좀 들어라: playlist - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -3659,11 +3250,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -3689,11 +3276,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "토요 클래식의 밤, 해설이 있는 클래식: 고별, 피아니스트 김민영 - 1부 클래식 정규 레퍼토리",
-      "토요 클래식의 밤, 해설이 있는 클래식: 고별, 피아니스트 김민영 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EB%82%98%EB%88%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -3719,11 +3302,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쌀롱드무지끄: 가을, 당신을 향한 노래 - 1부 클래식 정규 레퍼토리",
-      "쌀롱드무지끄: 가을, 당신을 향한 노래 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -3749,11 +3328,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쌀롱드무지끄, 도시기억 Ⅱ: Prelude - 1부 클래식 정규 레퍼토리",
-      "쌀롱드무지끄, 도시기억 Ⅱ: Prelude - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -3784,11 +3359,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "블래져 목관앙상블 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "블래져 목관앙상블 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -3814,11 +3385,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -3845,11 +3412,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -3875,11 +3438,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 안화영의 작곡가 시리즈 Ⅳ - 1부 클래식 정규 레퍼토리",
-      "피아니스트 안화영의 작곡가 시리즈 Ⅳ - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -3905,11 +3464,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "장한나의 대전그랜드페스티벌, 오프닝 콘서트: Joy of Collaboration - 1부 클래식 정규 레퍼토리",
-      "장한나의 대전그랜드페스티벌, 오프닝 콘서트: Joy of Collaboration - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -3935,11 +3490,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -3965,11 +3516,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -3996,11 +3543,7 @@ export const initialRealConcerts = [
       "베토벤",
       "브람스"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -4026,11 +3569,7 @@ export const initialRealConcerts = [
     "composers": [
       "바흐"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
@@ -4056,11 +3595,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -4086,11 +3621,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
@@ -4116,11 +3647,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "윈썸트리오의 첫 번째 울림 Post Classic Guitar: Trio Edition [부산] - 1부 클래식 정규 레퍼토리",
-      "윈썸트리오의 첫 번째 울림 Post Classic Guitar: Trio Edition [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -4146,10 +3673,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 클래식: 서울비르투오지 챔버 오케스트라 with 반도네오니스트 J.P. 조프레 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -4205,11 +3729,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -4235,11 +3755,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "이성경 플루트 귀국 독주회 - 1부 클래식 정규 레퍼토리",
-      "이성경 플루트 귀국 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -4265,11 +3781,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연완료",
@@ -4295,11 +3807,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "OPERA IN CINEMA, 영화 속의 오페라 [춘천] - 1부 클래식 정규 레퍼토리",
-      "OPERA IN CINEMA, 영화 속의 오페라 [춘천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%B6%98%EC%B2%9C%EC%9D%B8%ED%98%95%EA%B7%B9%EC%9E%A5%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -4325,11 +3833,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -4356,11 +3860,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -4392,11 +3892,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아니마 체임버 앙상블 실내악 음악회 - 1부 클래식 정규 레퍼토리",
-      "아니마 체임버 앙상블 실내악 음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -4422,11 +3918,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -4452,11 +3944,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "장한나의 대전그랜드페스티벌, 에스메 콰르텟 리사이틀: Joy of Character - 1부 클래식 정규 레퍼토리",
-      "장한나의 대전그랜드페스티벌, 에스메 콰르텟 리사이틀: Joy of Character - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -4483,11 +3971,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -4513,11 +3997,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "오르간 시리즈 II. 올리비에 라트리 & 이신영: 포 핸즈 - 1부 클래식 정규 레퍼토리",
-      "오르간 시리즈 II. 올리비에 라트리 & 이신영: 포 핸즈 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -4544,11 +4024,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "소프라노 김경란 독창회 - 1부 클래식 정규 레퍼토리",
-      "소프라노 김경란 독창회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -4576,11 +4052,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -4606,11 +4078,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -4636,11 +4104,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "클래식 온, TRAGIC FATE: 비극적 운명 [대구] - 1부 클래식 정규 레퍼토리",
-      "클래식 온, TRAGIC FATE: 비극적 운명 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -4666,11 +4130,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "오페라 하이라이트 콘서트: 오페라 애호가를 위한 음악회 [부산] - 1부 클래식 정규 레퍼토리",
-      "오페라 하이라이트 콘서트: 오페라 애호가를 위한 음악회 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연완료",
@@ -4696,11 +4156,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제1회 아가페유스콰이어 정기연주회: We Shine Together - 1부 클래식 정규 레퍼토리",
-      "제1회 아가페유스콰이어 정기연주회: We Shine Together - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gdfac.or.kr",
     "status": "공연완료",
@@ -4726,11 +4182,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "브릿지온 콘서트 [서울] - 1부 클래식 정규 레퍼토리",
-      "브릿지온 콘서트 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EB%9D%BC%EB%AF%B9%ED%8C%94%EB%A0%88%EC%8A%A4%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -4756,11 +4208,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바리톤 김봉중 정규 앨범 발매 기념 쇼케이스: 내가 사랑하는 클래식 - 1부 클래식 정규 레퍼토리",
-      "바리톤 김봉중 정규 앨범 발매 기념 쇼케이스: 내가 사랑하는 클래식 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8F%84%EA%B3%A12%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -4786,11 +4234,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쌀롱드무지끄, Experiment - 1부 클래식 정규 레퍼토리",
-      "쌀롱드무지끄, Experiment - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -4816,11 +4260,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -4847,11 +4287,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -4877,11 +4313,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gunsan.go.kr/arts",
     "status": "공연완료",
@@ -4907,11 +4339,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -4937,11 +4365,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "장한나의 대전그랜드페스티벌, 킹스 싱어즈 콘서트: Joy of Singing - 1부 클래식 정규 레퍼토리",
-      "장한나의 대전그랜드페스티벌, 킹스 싱어즈 콘서트: Joy of Singing - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -4967,11 +4391,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -4997,11 +4417,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "안동문화예술의전당 브런치콘서트, 시대별 클래식 시리즈: 낭만주의 감성 Ⅱ 노스텔지어 - 1부 클래식 정규 레퍼토리",
-      "안동문화예술의전당 브런치콘서트, 시대별 클래식 시리즈: 낭만주의 감성 Ⅱ 노스텔지어 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "공연완료",
@@ -5027,11 +4443,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -5061,11 +4473,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제22회 아카데미 열정과 나눔 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제22회 아카데미 열정과 나눔 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -5091,11 +4499,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제14회 한국남성합창단 & 도쿄리더타펠 합동 연주회 - 1부 클래식 정규 레퍼토리",
-      "제14회 한국남성합창단 & 도쿄리더타펠 합동 연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -5121,11 +4525,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "클래식 오아시스, 인터미션: #울림 [대구] - 1부 클래식 정규 레퍼토리",
-      "클래식 오아시스, 인터미션: #울림 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -5151,11 +4551,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -5181,11 +4577,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "CORE SAMPLE (코어샘플) - 1부 클래식 정규 레퍼토리",
-      "CORE SAMPLE (코어샘플) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%EC%84%A4%EB%8F%99%20%EB%8F%99%EB%84%A4%EA%B7%B9%EC%9E%A5%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -5211,11 +4603,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 Koki Kuroiwa와 함께하는 한일국제교류음악회 [대구] - 1부 클래식 정규 레퍼토리",
-      "피아니스트 Koki Kuroiwa와 함께하는 한일국제교류음악회 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%EC%98%81%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -5241,11 +4629,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "창악회 기획 초청연주회: CMSS Festival Ⅳ. 대만앙상블 Succession Percussion Group 초청연주회 - 1부 클래식 정규 레퍼토리",
-      "창악회 기획 초청연주회: CMSS Festival Ⅳ. 대만앙상블 Succession Percussion Group 초청연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -5271,11 +4655,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "라율아트홀 살롱클래식, Artist' s Room: Daniel Lee - 1부 클래식 정규 레퍼토리",
-      "라율아트홀 살롱클래식, Artist' s Room: Daniel Lee - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%9D%BC%EC%9C%A8%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -5301,11 +4681,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김대욱 트럼펫 독주회: 미국 작곡가의 트럼펫 음악 시리즈 Ⅴ - 1부 클래식 정규 레퍼토리",
-      "김대욱 트럼펫 독주회: 미국 작곡가의 트럼펫 음악 시리즈 Ⅴ - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -5331,11 +4707,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스 현영경 반주 리사이틀: 시의 숨결 - 1부 클래식 정규 레퍼토리",
-      "피아니스 현영경 반주 리사이틀: 시의 숨결 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -5361,11 +4733,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제18회 서울국제음악제 개막음악회: 숨, 그리고 삶 - 1부 클래식 정규 레퍼토리",
-      "제18회 서울국제음악제 개막음악회: 숨, 그리고 삶 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -5391,11 +4759,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -5421,11 +4785,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한화생명과 함께하는 예술의전당 11시 콘서트 (10월) - 1부 클래식 정규 레퍼토리",
-      "한화생명과 함께하는 예술의전당 11시 콘서트 (10월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -5451,11 +4811,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "뷰티플마인드와 함께하는 가을음악회 - 1부 클래식 정규 레퍼토리",
-      "뷰티플마인드와 함께하는 가을음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -5481,11 +4837,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -5511,11 +4863,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
@@ -5541,11 +4889,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제12회 VP 정기연주회: R.Strauss & H.Duparc Art Song Concert: 두 개의 언어, 하나의 심연 - 1부 클래식 정규 레퍼토리",
-      "제12회 VP 정기연주회: R.Strauss & H.Duparc Art Song Concert: 두 개의 언어, 하나의 심연 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -5571,11 +4915,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제33회 대구레이디스코러스 정기연주회: 아름다운 합창 & 음악으로 함께 누리는 힐링 타임 - 1부 클래식 정규 레퍼토리",
-      "제33회 대구레이디스코러스 정기연주회: 아름다운 합창 & 음악으로 함께 누리는 힐링 타임 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -5601,11 +4941,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제5회 아티스테 앙상블 정기 연주회 [부산] - 1부 클래식 정규 레퍼토리",
-      "제5회 아티스테 앙상블 정기 연주회 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연완료",
@@ -5631,11 +4967,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "금호 위너스, 정승호 Piano - 1부 클래식 정규 레퍼토리",
-      "금호 위너스, 정승호 Piano - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -5661,11 +4993,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "마음으로 부르는 노래, 화음 속의 꿈 [고양] - 1부 클래식 정규 레퍼토리",
-      "마음으로 부르는 노래, 화음 속의 꿈 [고양] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연완료",
@@ -5691,11 +5019,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "손바닥 소극장 오페라 시리즈 Ⅰ. 코스모스를 죽였다 [대전] - 1부 클래식 정규 레퍼토리",
-      "손바닥 소극장 오페라 시리즈 Ⅰ. 코스모스를 죽였다 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B3%B5%ED%95%A9%EB%AC%B8%ED%99%94%EA%B3%B5%EA%B0%84%20%ED%94%8C%EB%9E%9C%EC%97%90%EC%9D%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -5721,11 +5045,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "창악회 기획 초청연주회: CMSS Festival Ⅴ. 피아니스트 3인 초청연주회 - 1부 클래식 정규 레퍼토리",
-      "창악회 기획 초청연주회: CMSS Festival Ⅴ. 피아니스트 3인 초청연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ilshinhall.com",
     "status": "공연완료",
@@ -5751,11 +5071,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "부평구립여성합창단 연합 기획공연, Concentus Trinitatis: 세 개의 울림, 함께 부르는 노래 [인천] - 1부 클래식 정규 레퍼토리",
-      "부평구립여성합창단 연합 기획공연, Concentus Trinitatis: 세 개의 울림, 함께 부르는 노래 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%ED%8F%89%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -5781,11 +5097,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제15회 정기연주회 [성남] - 1부 클래식 정규 레퍼토리",
-      "제15회 정기연주회 [성남] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EB%82%A8%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20(%EA%B5%AC.%20%EC%84%B1%EB%82%A8%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -5811,11 +5123,7 @@ export const initialRealConcerts = [
     "composers": [
       "Schumann"
     ],
-    "pieces": [
-      "Schumann: 클래식 명작 소나타 및 모음곡",
-      "Schumann: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -5842,11 +5150,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -5872,11 +5176,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제18회 서울국제음악제, 인생의 여정: 세 개의 초상 - 1부 클래식 정규 레퍼토리",
-      "제18회 서울국제음악제, 인생의 여정: 세 개의 초상 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -5902,11 +5202,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한스 짐머 영화음악 콘서트 [서울 (앵콜) ] - 1부 클래식 정규 레퍼토리",
-      "한스 짐머 영화음악 콘서트 [서울 (앵콜) ] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -5932,11 +5228,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -5962,11 +5254,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "장한나의 대전그랜드페스티벌, 티네 팅 헬셋 트럼펫 리사이틀: Joy of Ensemble - 1부 클래식 정규 레퍼토리",
-      "장한나의 대전그랜드페스티벌, 티네 팅 헬셋 트럼펫 리사이틀: Joy of Ensemble - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -5992,11 +5280,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [경기 광주] - 1부 클래식 정규 레퍼토리",
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [경기 광주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
@@ -6022,11 +5306,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아티스트 인 안동, 피아체볼레와 함께하는 음악동화 - 1부 클래식 정규 레퍼토리",
-      "아티스트 인 안동, 피아체볼레와 함께하는 음악동화 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "공연완료",
@@ -6052,11 +5332,7 @@ export const initialRealConcerts = [
     "composers": [
       "말러"
     ],
-    "pieces": [
-      "말러: 클래식 명작 소나타 및 모음곡",
-      "말러: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -6088,11 +5364,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제5회 앙상블 누보 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제5회 앙상블 누보 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -6118,11 +5390,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제14회 리에목관5중주 정기연주회 [대구] - 1부 클래식 정규 레퍼토리",
-      "제14회 리에목관5중주 정기연주회 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -6148,11 +5416,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연완료",
@@ -6178,11 +5442,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -6208,11 +5468,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -6238,11 +5494,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "고양특례시 우수학생 연주회 - 1부 클래식 정규 레퍼토리",
-      "고양특례시 우수학생 연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연완료",
@@ -6268,11 +5520,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아람 클래식, 아트하우스 17 내한공연 리허설 - 1부 클래식 정규 레퍼토리",
-      "아람 클래식, 아트하우스 17 내한공연 리허설 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연완료",
@@ -6298,11 +5546,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
@@ -6328,11 +5572,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -6358,10 +5598,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "사운드 오브 BAC, 오르간 유니버스 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -6388,11 +5625,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 김선주 & 문세희 듀오 콘서트 - 1부 클래식 정규 레퍼토리",
-      "피아니스트 김선주 & 문세희 듀오 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -6424,11 +5657,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "앙상블위로 창단 10주년 기념 음악회 - 1부 클래식 정규 레퍼토리",
-      "앙상블위로 창단 10주년 기념 음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -6454,11 +5683,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김진세 클래식 기타 독주회: 사적인 플레이리스트 - 1부 클래식 정규 레퍼토리",
-      "김진세 클래식 기타 독주회: 사적인 플레이리스트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -6484,11 +5709,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -6514,11 +5735,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제18회 서울국제음악제, SIMF실내악: Serenade - 1부 클래식 정규 레퍼토리",
-      "제18회 서울국제음악제, SIMF실내악: Serenade - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -6544,11 +5761,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "장한나의 대전그랜드페스티벌, 클로징 콘서트: Joy of Music - 1부 클래식 정규 레퍼토리",
-      "장한나의 대전그랜드페스티벌, 클로징 콘서트: Joy of Music - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -6574,11 +5787,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [경주] - 1부 클래식 정규 레퍼토리",
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [경주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://garts.kr",
     "status": "공연완료",
@@ -6604,11 +5813,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "이탈리아 Euregio Klassika 내한공연, 콘서트오페라: 라보엠 - 1부 클래식 정규 레퍼토리",
-      "이탈리아 Euregio Klassika 내한공연, 콘서트오페라: 라보엠 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -6640,11 +5845,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 독일 로스톡 국립음대 동문 음악회 - 1부 클래식 정규 레퍼토리",
-      "제4회 독일 로스톡 국립음대 동문 음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -6670,11 +5871,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "ACI 키즈 콘서트, 클랩 그림책 콘서트 Ⅳ. 정말 으스스할까? [인천] - 1부 클래식 정규 레퍼토리",
-      "ACI 키즈 콘서트, 클랩 그림책 콘서트 Ⅳ. 정말 으스스할까? [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
@@ -6700,11 +5897,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -6730,11 +5923,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -6760,11 +5949,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김혜정 & 공수미 플루트 리사이틀: Women in Music with Flutes [부산] - 1부 클래식 정규 레퍼토리",
-      "김혜정 & 공수미 플루트 리사이틀: Women in Music with Flutes [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연완료",
@@ -6790,11 +5975,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -6820,11 +6001,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제5회 앤 플루트 앙상블 & 앤 색소폰 앙승블 & 라라 플루트 앙상블 정기연주회 [대구] - 1부 클래식 정규 레퍼토리",
-      "제5회 앤 플루트 앙상블 & 앤 색소폰 앙승블 & 라라 플루트 앙상블 정기연주회 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연완료",
@@ -6850,11 +6027,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "토크 콘서트: 클래식 유럽여행, Music&Voyage [대구] - 1부 클래식 정규 레퍼토리",
-      "토크 콘서트: 클래식 유럽여행, Music&Voyage [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B9%84%EC%9B%90%EB%AE%A4%EC%A7%81%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -6880,11 +6053,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%98%81%EA%B5%90%ED%9A%8C%20%5B%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -6910,11 +6079,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "춘천 실내악 페스티벌, 테너 조현호 독창회 - 1부 클래식 정규 레퍼토리",
-      "춘천 실내악 페스티벌, 테너 조현호 독창회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EB%82%98%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -6940,11 +6105,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연완료",
@@ -6970,11 +6131,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쌀롱드무지끄: 가을에 듣는 기쁨, 모짜르트 - 1부 클래식 정규 레퍼토리",
-      "쌀롱드무지끄: 가을에 듣는 기쁨, 모짜르트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -7000,11 +6157,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B3%B4%EC%8A%A4%ED%84%B4%EC%B2%B4%EC%9E%84%EB%B2%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -7030,11 +6183,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%ED%95%99%EC%83%9D%EA%B5%90%EC%9C%A1%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -7060,11 +6209,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제5회 커넥션 플루트 앙상블 정기연주회: 플루트를 연주하는 백조의 호수 - 1부 클래식 정규 레퍼토리",
-      "제5회 커넥션 플루트 앙상블 정기연주회: 플루트를 연주하는 백조의 호수 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%A8%EB%8F%99%EC%86%8C%EB%9E%98%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -7090,11 +6235,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -7120,11 +6261,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 현석환과 제주 음악 친구들: 서귀포의 가을 [제주] - 1부 클래식 정규 레퍼토리",
-      "피아니스트 현석환과 제주 음악 친구들: 서귀포의 가을 [제주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://culture.seogwipo.go.kr/sori",
     "status": "공연완료",
@@ -7150,11 +6287,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -7180,11 +6313,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -7210,11 +6339,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제92회 코리아나 챔버 뮤직 소사이어티 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제92회 코리아나 챔버 뮤직 소사이어티 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -7240,11 +6365,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -7270,11 +6391,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 피아노 협주곡 제1번 E단조 Op.11",
-      "쇼팽: 피아노 협주곡 제2번 F단조 Op.21",
-      "쇼팽: 안단테 스피아나토와 화려한 대폴로네이즈 Op.22"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -7300,11 +6417,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울시소년소녀합창단, 광화문 이야기: 한양에서 서울까지 - 1부 클래식 정규 레퍼토리",
-      "서울시소년소녀합창단, 광화문 이야기: 한양에서 서울까지 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -7330,11 +6443,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아트하우스17 [인천] - 1부 클래식 정규 레퍼토리",
-      "아트하우스17 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연완료",
@@ -7360,11 +6469,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "테너 김민석 리사이틀: Love & Destiny - 1부 클래식 정규 레퍼토리",
-      "테너 김민석 리사이틀: Love & Destiny - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -7390,11 +6495,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Journey to Europe chapter.III [성남] - 1부 클래식 정규 레퍼토리",
-      "Journey to Europe chapter.III [성남] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
@@ -7420,11 +6521,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연완료",
@@ -7450,11 +6547,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Wine & Music Night, 4 CELLOS CONCERT [인천] - 1부 클래식 정규 레퍼토리",
-      "Wine & Music Night, 4 CELLOS CONCERT [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://elimartcenter.co.kr",
     "status": "공연완료",
@@ -7480,11 +6573,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제3회 조이에끌라 정기 연주회 [대전] - 1부 클래식 정규 레퍼토리",
-      "제3회 조이에끌라 정기 연주회 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%A0%84%EC%8B%9C%EB%A6%BD%EC%97%B0%EC%A0%95%EA%B5%AD%EC%95%85%EC%9B%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -7510,11 +6599,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -7541,11 +6626,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -7571,11 +6652,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "영덕보엠앙상블, 피터와 늑대 & 동물의 사육제 [영덕] - 1부 클래식 정규 레퍼토리",
-      "영덕보엠앙상블, 피터와 늑대 & 동물의 사육제 [영덕] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -7601,11 +6678,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "선화음악동문회 프로젝트 음악회 시리즈 Ⅰ. 성악 페스티벌 - 1부 클래식 정규 레퍼토리",
-      "선화음악동문회 프로젝트 음악회 시리즈 Ⅰ. 성악 페스티벌 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -7631,11 +6704,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제7회 안단태오페라단 정기공연, 해설이 있는 오페라: 리골레토 [안동] - 1부 클래식 정규 레퍼토리",
-      "제7회 안단태오페라단 정기공연, 해설이 있는 오페라: 리골레토 [안동] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "공연완료",
@@ -7661,11 +6730,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
@@ -7691,11 +6756,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -7721,11 +6782,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "대전시립합창단 시니어 음악회: 낭만에 대하여 [대전] - 1부 클래식 정규 레퍼토리",
-      "대전시립합창단 시니어 음악회: 낭만에 대하여 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -7752,11 +6809,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -7785,11 +6838,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "가을밤콘서트 - 1부 클래식 정규 레퍼토리",
-      "가을밤콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -7815,11 +6864,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제198회 인천시립합창단 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제198회 인천시립합창단 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -7845,11 +6890,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -7875,11 +6916,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -7905,11 +6942,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -7935,11 +6968,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김영주 & 이한나 듀오 리사이틀 [대구] - 1부 클래식 정규 레퍼토리",
-      "김영주 & 이한나 듀오 리사이틀 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연완료",
@@ -7965,11 +6994,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제31회 성남시중원구여성합창단 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제31회 성남시중원구여성합창단 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연완료",
@@ -7995,11 +7020,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리오 아트컴퍼니 초청 음악회, 소프라노 김성은 독창회 - 1부 클래식 정규 레퍼토리",
-      "크리오 아트컴퍼니 초청 음악회, 소프라노 김성은 독창회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=JCC%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -8025,11 +7046,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "SEA: SONG 시리즈04. Fall in Classic [거제] - 1부 클래식 정규 레퍼토리",
-      "SEA: SONG 시리즈04. Fall in Classic [거제] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%A0%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -8055,11 +7072,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제95회 예술공감, BRASS IN HARMONY 을숙도의 선율 - 1부 클래식 정규 레퍼토리",
-      "제95회 예술공감, BRASS IN HARMONY 을숙도의 선율 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%84%EC%88%99%EB%8F%84%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -8085,11 +7098,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -8116,11 +7125,7 @@ export const initialRealConcerts = [
       "Rachmaninoff",
       "Schubert"
     ],
-    "pieces": [
-      "Rachmaninoff: 클래식 명작 소나타 및 모음곡",
-      "Rachmaninoff: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -8146,11 +7151,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아트하우스 17 내한공연 [세종] - 1부 클래식 정규 레퍼토리",
-      "아트하우스 17 내한공연 [세종] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연완료",
@@ -8206,11 +7207,7 @@ export const initialRealConcerts = [
     "composers": [
       "쇼팽"
     ],
-    "pieces": [
-      "쇼팽: 피아노 협주곡 제1번 E단조 Op.11",
-      "쇼팽: 피아노 협주곡 제2번 F단조 Op.21",
-      "쇼팽: 안단테 스피아나토와 화려한 대폴로네이즈 Op.22"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -8236,11 +7233,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "신한라이프 프레스티지 콘서트 - 1부 클래식 정규 레퍼토리",
-      "신한라이프 프레스티지 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -8266,11 +7259,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "박준선 작곡발표회, 머리카락 보일라 - 1부 클래식 정규 레퍼토리",
-      "박준선 작곡발표회, 머리카락 보일라 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -8296,11 +7285,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -8326,11 +7311,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "부산시립합창단 예술교육공연, 딩동댕 합창여행 [부산] - 1부 클래식 정규 레퍼토리",
-      "부산시립합창단 예술교육공연, 딩동댕 합창여행 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연완료",
@@ -8356,11 +7337,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "소프라노 조화영 독창회 - 1부 클래식 정규 레퍼토리",
-      "소프라노 조화영 독창회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -8386,11 +7363,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "심송학 성악아카데미 15주년 정기연주회 [대구] - 1부 클래식 정규 레퍼토리",
-      "심송학 성악아카데미 15주년 정기연주회 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연완료",
@@ -8416,11 +7389,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제3회 부산광역시의사회와 함께하는 자선음악회 [부산] - 1부 클래식 정규 레퍼토리",
-      "제3회 부산광역시의사회와 함께하는 자선음악회 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연완료",
@@ -8446,11 +7415,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -8476,11 +7441,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "독일 하노버 소녀합창단 초청공연 [거창] - 1부 클래식 정규 레퍼토리",
-      "독일 하노버 소녀합창단 초청공연 [거창] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%B0%BD%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -8506,11 +7467,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제8회 브라보오페라앙상블 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제8회 브라보오페라앙상블 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연완료",
@@ -8536,11 +7493,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "놀부와 흥부 [영동] - 1부 클래식 정규 레퍼토리",
-      "놀부와 흥부 [영동] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EB%8F%99%EB%B3%B5%ED%95%A9%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -8566,11 +7519,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "계절의 풍경을 선율로 만나는 콘서트: 사계, 음악으로 물들다 [안동] - 1부 클래식 정규 레퍼토리",
-      "계절의 풍경을 선율로 만나는 콘서트: 사계, 음악으로 물들다 [안동] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "공연완료",
@@ -8596,11 +7545,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "손치호 콘트라베이스 독주회 Ⅸ. Ohne dich (너, 없이) - 1부 클래식 정규 레퍼토리",
-      "손치호 콘트라베이스 독주회 Ⅸ. Ohne dich (너, 없이) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -8626,11 +7571,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "해오름동맹 합동공연 합창 오페라: 천년의 빛, 하나의 울림 [경주] - 1부 클래식 정규 레퍼토리",
-      "해오름동맹 합동공연 합창 오페라: 천년의 빛, 하나의 울림 [경주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://garts.kr",
     "status": "공연완료",
@@ -8656,11 +7597,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "전남광주통합특별시예술의전당 기획공연, 그랜드스테이지: Into the New World - 1부 클래식 정규 레퍼토리",
-      "전남광주통합특별시예술의전당 기획공연, 그랜드스테이지: Into the New World - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
@@ -8686,11 +7623,7 @@ export const initialRealConcerts = [
     "composers": [
       "슈만"
     ],
-    "pieces": [
-      "슈만: 클래식 명작 소나타 및 모음곡",
-      "슈만: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -8716,11 +7649,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제천 달빛아레 콘서트, 멜로디 오브 드라마 (10월) - 1부 클래식 정규 레퍼토리",
-      "제천 달빛아레 콘서트, 멜로디 오브 드라마 (10월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.jecheon.go.kr/jcart",
     "status": "공연완료",
@@ -8746,11 +7675,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -8776,11 +7701,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "K-클래식 콘서트 6, 문화예술컴퍼니 아레나 [천안] - 1부 클래식 정규 레퍼토리",
-      "K-클래식 콘서트 6, 문화예술컴퍼니 아레나 [천안] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "공연완료",
@@ -8806,11 +7727,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연완료",
@@ -8838,11 +7755,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -8868,11 +7781,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "가을 합창제 - 1부 클래식 정규 레퍼토리",
-      "가을 합창제 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -8898,11 +7807,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제49회 신음악회 정기작품발표회, 이ㅅ음 Ⅵ - 1부 클래식 정규 레퍼토리",
-      "제49회 신음악회 정기작품발표회, 이ㅅ음 Ⅵ - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -8928,11 +7833,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -8958,11 +7859,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아름다운 목요일 금호아트홀 상주음악가, 바리톤 김태한: 페르소나 Ⅳ. 고독 - 1부 클래식 정규 레퍼토리",
-      "아름다운 목요일 금호아트홀 상주음악가, 바리톤 김태한: 페르소나 Ⅳ. 고독 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -8988,11 +7885,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "극동방송 창사70주년 전국 대합창제 - 1부 클래식 정규 레퍼토리",
-      "극동방송 창사70주년 전국 대합창제 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연완료",
@@ -9018,11 +7911,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9048,11 +7937,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%98%EC%84%B1%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9078,11 +7963,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "재능 혜화 마티네 - 1부 클래식 정규 레퍼토리",
-      "재능 혜화 마티네 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=JCC%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9108,11 +7989,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%EC%98%81%EC%B2%B4%EC%9E%84%EB%B2%84%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9138,11 +8015,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Masters & Proteges 스승과 제자들: 윤홍천 & 유하준, 이지호 - 1부 클래식 정규 레퍼토리",
-      "Masters & Proteges 스승과 제자들: 윤홍천 & 유하준, 이지호 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%81%B4%EB%9E%98%EC%8B%9D%EA%B3%A0%ED%83%9D%20%EB%94%94%ED%86%A0%20(%EA%B5%AC.%EC%84%A0%EC%9D%B8%EC%9E%AC)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9168,11 +8041,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://phcf.or.kr",
     "status": "공연완료",
@@ -9198,11 +8067,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "GGAC CLASSIC 경기청년예술기회무대, 서양음악 [수원] - 1부 클래식 정규 레퍼토리",
-      "GGAC CLASSIC 경기청년예술기회무대, 서양음악 [수원] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ggac.or.kr",
     "status": "공연중",
@@ -9228,10 +8093,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "성덕현 클라리넷 독주회 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -9257,11 +8119,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -9287,11 +8145,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "시네마 ost 콘서트: 그 추억 그 순간 속으로 [광주] - 1부 클래식 정규 레퍼토리",
-      "시네마 ost 콘서트: 그 추억 그 순간 속으로 [광주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
@@ -9317,11 +8171,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제205회 전남광주통합특별시립합창단 정기연주회: 가을의 서정 Ⅱ [전남 광주] - 1부 클래식 정규 레퍼토리",
-      "제205회 전남광주통합특별시립합창단 정기연주회: 가을의 서정 Ⅱ [전남 광주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연완료",
@@ -9347,11 +8197,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -9378,11 +8224,7 @@ export const initialRealConcerts = [
       "슈베르트",
       "Schubert"
     ],
-    "pieces": [
-      "슈베르트: 클래식 명작 소나타 및 모음곡",
-      "슈베르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -9408,11 +8250,7 @@ export const initialRealConcerts = [
     "composers": [
       "말러"
     ],
-    "pieces": [
-      "말러: 클래식 명작 소나타 및 모음곡",
-      "말러: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연완료",
@@ -9438,11 +8276,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연완료",
@@ -9470,11 +8304,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연완료",
@@ -9500,11 +8330,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연완료",
@@ -9531,11 +8357,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연완료",
@@ -9561,11 +8383,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연완료",
@@ -9591,11 +8409,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "강주희 플루트 리사이틀 JUHEE KANG FLUTE RECITAL - 1부 클래식 정규 레퍼토리",
-      "강주희 플루트 리사이틀 JUHEE KANG FLUTE RECITAL - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -9621,11 +8435,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "소프라노 조주현 독창회 - 1부 클래식 정규 레퍼토리",
-      "소프라노 조주현 독창회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연완료",
@@ -9651,11 +8461,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아이랑 나랑! 키즈클래식 콘서트: 어린왕자 [경산] - 1부 클래식 정규 레퍼토리",
-      "아이랑 나랑! 키즈클래식 콘서트: 어린왕자 [경산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%A7%80%ED%81%B4%EB%9E%98%EC%8B%9D%20%5B%EA%B2%BD%EC%82%B0%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9681,11 +8487,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "비원뮤직홀 클래식 시리즈: Autumn Resonance, 가을의 울림 [대구] - 1부 클래식 정규 레퍼토리",
-      "비원뮤직홀 클래식 시리즈: Autumn Resonance, 가을의 울림 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B9%84%EC%9B%90%EB%AE%A4%EC%A7%81%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9711,11 +8513,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쌀롱드무지끄: 목소리, 시대의 문장을 입다 - 1부 클래식 정규 레퍼토리",
-      "쌀롱드무지끄: 목소리, 시대의 문장을 입다 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9741,11 +8539,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "문종인 프로젝트: 작곡가의 방 시리즈 Composer Ⅲ. 김빛나 - 1부 클래식 정규 레퍼토리",
-      "문종인 프로젝트: 작곡가의 방 시리즈 Composer Ⅲ. 김빛나 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%9D%BC%EC%9C%A8%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9771,11 +8565,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제14회 서산시립합창단 기획연주회: 가로림만, 바다의 기다림 - 1부 클래식 정규 레퍼토리",
-      "제14회 서산시립합창단 기획연주회: 가로림만, 바다의 기다림 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%82%B0%EC%8B%9C%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9801,11 +8591,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "매헌 윤봉길: 1932 샹하이의 아침 [서울] - 1부 클래식 정규 레퍼토리",
-      "매헌 윤봉길: 1932 샹하이의 아침 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%B4%88%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80(%EA%B5%AC.%20%EC%84%9C%EC%B4%88%EA%B5%AC%EB%AF%BC%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -9831,11 +8617,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제13회 림스타악기 정기연주회 [대전] - 1부 클래식 정규 레퍼토리",
-      "제13회 림스타악기 정기연주회 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연중",
@@ -9861,11 +8643,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연중",
@@ -9897,11 +8675,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "윤여민 색소폰 독주회 - 1부 클래식 정규 레퍼토리",
-      "윤여민 색소폰 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연중",
@@ -9927,11 +8701,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "조희창의 토요 클래식 살롱 Ⅴ. 우리 시대의 슈베르티아데 [경주] - 1부 클래식 정규 레퍼토리",
-      "조희창의 토요 클래식 살롱 Ⅴ. 우리 시대의 슈베르티아데 [경주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://garts.kr",
     "status": "공연중",
@@ -9957,11 +8727,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://arts.iksan.go.kr",
     "status": "공연중",
@@ -9989,11 +8755,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "이준서 비올라 독주회 - 1부 클래식 정규 레퍼토리",
-      "이준서 비올라 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연중",
@@ -10019,11 +8781,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연중",
@@ -10049,11 +8807,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아트 초청 첼리스트 정재윤 리사이틀 [대전] - 1부 클래식 정규 레퍼토리",
-      "피아트 초청 첼리스트 정재윤 리사이틀 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연중",
@@ -10079,11 +8833,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "우리가 사랑한 시네마 뮤직 콘서트 [의정부] - 1부 클래식 정규 레퍼토리",
-      "우리가 사랑한 시네마 뮤직 콘서트 [의정부] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.uac.or.kr",
     "status": "공연중",
@@ -10109,11 +8859,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연중",
@@ -10139,11 +8885,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Humanity Concert Series, 삶과 나눔 콘서트 - 1부 클래식 정규 레퍼토리",
-      "Humanity Concert Series, 삶과 나눔 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연중",
@@ -10169,11 +8911,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "그라토 앙상블 정기연주회: JOURNEY - 1부 클래식 정규 레퍼토리",
-      "그라토 앙상블 정기연주회: JOURNEY - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연중",
@@ -10199,11 +8937,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "너의 이름은. 필름 콘서트 [인천] - 1부 클래식 정규 레퍼토리",
-      "너의 이름은. 필름 콘서트 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연중",
@@ -10229,11 +8963,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연중",
@@ -10259,11 +8989,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "콘서트 오페라, 사랑의 묘약 [부산] - 1부 클래식 정규 레퍼토리",
-      "콘서트 오페라, 사랑의 묘약 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연중",
@@ -10289,11 +9015,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "금호영아티스트콘서트, 최윤호 더블베이스 독주회 - 1부 클래식 정규 레퍼토리",
-      "금호영아티스트콘서트, 최윤호 더블베이스 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연중",
@@ -10319,11 +9041,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연중",
@@ -10349,11 +9067,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제8회 일악장 정기 연주회 - 1부 클래식 정규 레퍼토리",
-      "제8회 일악장 정기 연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -10379,11 +9093,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제9회 대구중구문화원 시니어여성합창단 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제9회 대구중구문화원 시니어여성합창단 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B4%89%EC%82%B0%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -10409,11 +9119,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제2회 다원예술단체 뮤트 공연: 계절의 노래 - 1부 클래식 정규 레퍼토리",
-      "제2회 다원예술단체 뮤트 공연: 계절의 노래 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%84%EC%9D%B4%EC%BD%94%EB%8B%89%EB%AF%B8%EB%94%94%EC%96%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -10439,11 +9145,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김승연 작품 발표회: Affective Spectrum: 삶을 살아있게 하는 어떤 것들에 대하여 - 1부 클래식 정규 레퍼토리",
-      "김승연 작품 발표회: Affective Spectrum: 삶을 살아있게 하는 어떤 것들에 대하여 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연중",
@@ -10469,11 +9171,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "춘천 실내악 페스티벌, 아투스뮤직: 프랑스 달빛 콘서트 1회차 (10.17) - 1부 클래식 정규 레퍼토리",
-      "춘천 실내악 페스티벌, 아투스뮤직: 프랑스 달빛 콘서트 1회차 (10.17) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EB%82%98%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -10499,11 +9197,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제2회 더音콘서트 정기연주회: 소리 (音) 의 정원 [전주] - 1부 클래식 정규 레퍼토리",
-      "제2회 더音콘서트 정기연주회: 소리 (音) 의 정원 [전주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sori21.co.kr",
     "status": "공연중",
@@ -10529,11 +9223,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%81%B4%EB%9E%98%EC%8B%9C%EC%B9%B4%20%EC%84%9C%EC%9A%B8%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -10559,11 +9249,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "The Flip: Romance & Story - 1부 클래식 정규 레퍼토리",
-      "The Flip: Romance & Story - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%9C%EB%8D%B0%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -10589,11 +9275,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Re: Vital Series, Re: conncet: Deep Vibes - 1부 클래식 정규 레퍼토리",
-      "Re: Vital Series, Re: conncet: Deep Vibes - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4%20%EB%B0%94%EC%9D%B4%ED%83%88%20%EB%B0%94%EC%9D%B4%EB%B8%8C%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -10619,11 +9301,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "거북이의 꾀 [경산] - 1부 클래식 정규 레퍼토리",
-      "거북이의 꾀 [경산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B2%BD%EC%82%B0%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -10649,11 +9327,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "시네마 ost 콘서트: 그 추억 그 순간 속으로 [강진] - 1부 클래식 정규 레퍼토리",
-      "시네마 ost 콘서트: 그 추억 그 순간 속으로 [강진] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%95%EC%A7%84%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -10679,11 +9353,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제2회 포르비토 앙상블 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제2회 포르비토 앙상블 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연중",
@@ -10709,11 +9379,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -10739,10 +9405,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 클래식: 파질 사이 피아노 리사이틀 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연완료",
@@ -10858,11 +9521,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -10948,11 +9607,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "오페라 그란 갈라 콘서트: 오페라의 향연, 그 찬란한 순간들 - 1부 클래식 정규 레퍼토리",
-      "오페라 그란 갈라 콘서트: 오페라의 향연, 그 찬란한 순간들 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연중",
@@ -11008,11 +9663,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "기타리스트 황민웅의 프로젝트, 헌정: 타레가에 바침 - 1부 클래식 정규 레퍼토리",
-      "기타리스트 황민웅의 프로젝트, 헌정: 타레가에 바침 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -11038,11 +9689,7 @@ export const initialRealConcerts = [
     "composers": [
       "브람스"
     ],
-    "pieces": [
-      "브람스: 클래식 명작 소나타 및 모음곡",
-      "브람스: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -11068,11 +9715,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쌀롱드무지끄, 벨 에포크의 오후 - 1부 클래식 정규 레퍼토리",
-      "쌀롱드무지끄, 벨 에포크의 오후 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -11098,11 +9741,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제1회 블랑클래식 음악콩쿠르 수상자 연주회 [춘천] - 1부 클래식 정규 레퍼토리",
-      "제1회 블랑클래식 음악콩쿠르 수상자 연주회 [춘천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cccf.or.kr",
     "status": "공연중",
@@ -11128,11 +9767,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "평창동일번지 개관 기념 살롱 콘서트: 김정원 피아니스트 - 1부 클래식 정규 레퍼토리",
-      "평창동일번지 개관 기념 살롱 콘서트: 김정원 피아니스트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%EC%B0%BD%EB%8F%99%EC%9D%BC%EB%B2%88%EC%A7%80%20%EC%95%84%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -11158,11 +9793,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지보이스 정기공연: 무지개 빛 날 - 1부 클래식 정규 레퍼토리",
-      "지보이스 정기공연: 무지개 빛 날 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%BF%88%EC%9D%98%EC%88%B2%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -11193,10 +9824,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "NAC 문화예술교육 공연 및 체험, 악기체험 클클클 Ⅴ. 동물원에 간 오케스트라 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연중",
@@ -11222,10 +9850,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 오케스트라 syncope 정기연주회: 라흐마니노프와 생상스 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연중",
@@ -11251,11 +9876,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제9회 SC브라이트 I AM Winner 마티네 콘서트 - 1부 클래식 정규 레퍼토리",
-      "제9회 SC브라이트 I AM Winner 마티네 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -11281,11 +9902,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "국민대학교 개교 80주년 기념 음악회 - 1부 클래식 정규 레퍼토리",
-      "국민대학교 개교 80주년 기념 음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -11311,11 +9928,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "4인 사계 기타 콘서트: 독도의 사계 - 1부 클래식 정규 레퍼토리",
-      "4인 사계 기타 콘서트: 독도의 사계 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -11341,11 +9954,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김태훈 플루트 독주회 - 1부 클래식 정규 레퍼토리",
-      "김태훈 플루트 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -11377,10 +9986,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "씨에노 기획연주회, 음악과 철학: 사유의 울림 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%BC%EC%8B%A0%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -11436,11 +10042,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연예정",
@@ -11466,11 +10068,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "GAC 기획공연, 11시 음악산책 단편선 시리즈 Ⅵ. 더블린 사람들 中 에블린 - 1부 클래식 정규 레퍼토리",
-      "GAC 기획공연, 11시 음악산책 단편선 시리즈 Ⅵ. 더블린 사람들 中 에블린 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연예정",
@@ -11496,11 +10094,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "경희 솔로이스츠 - 1부 클래식 정규 레퍼토리",
-      "경희 솔로이스츠 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -11586,11 +10180,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -11616,11 +10206,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제29회 한국성악예술학회 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제29회 한국성악예술학회 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -11675,11 +10261,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -11705,11 +10287,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피가로의 결혼 [논산] - 1부 클래식 정규 레퍼토리",
-      "피가로의 결혼 [논산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%85%BC%EC%82%B0%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0(%EA%B5%AC.%20%EB%85%BC%EC%82%B0%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -11735,11 +10313,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "오페라 아리아와 가곡의 밤 [구미] - 1부 클래식 정규 레퍼토리",
-      "오페라 아리아와 가곡의 밤 [구미] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B5%AC%EB%AF%B8%EC%8B%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -11765,11 +10339,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%88%98%EC%9B%90SK%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -11795,11 +10365,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제96회 예술공감: 사계의 빛깔, 트리오뉴의 울림 [부산] - 1부 클래식 정규 레퍼토리",
-      "제96회 예술공감: 사계의 빛깔, 트리오뉴의 울림 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%84%EC%88%99%EB%8F%84%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -11831,10 +10397,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "NAC@성악시리즈: 한국슈베르트협회 노래하는 도시, 빈 [부산] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -11866,10 +10429,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "씨에노 10주년 정기연주회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%BC%EC%8B%A0%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -11955,11 +10515,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "라 칼라스 [세종] - 1부 클래식 정규 레퍼토리",
-      "라 칼라스 [세종] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
@@ -12044,11 +10600,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -12074,11 +10626,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "하트하트음악콩쿠르 수상자 콘서트 - 1부 클래식 정규 레퍼토리",
-      "하트하트음악콩쿠르 수상자 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -12104,11 +10652,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -12134,11 +10678,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -12164,11 +10704,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제54회 범음악제, 콘서트 1. 역대 명예회장 작품전 - 1부 클래식 정규 레퍼토리",
-      "제54회 범음악제, 콘서트 1. 역대 명예회장 작품전 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12194,11 +10730,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "춘천 실내악 페스티벌, 아투스뮤직: 프랑스 달빛 콘서트 2회차 (10.21) - 1부 클래식 정규 레퍼토리",
-      "춘천 실내악 페스티벌, 아투스뮤직: 프랑스 달빛 콘서트 2회차 (10.21) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EB%82%98%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12224,11 +10756,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제17회 민음회 정기연주회: Falling in Love with the Piano - 1부 클래식 정규 레퍼토리",
-      "제17회 민음회 정기연주회: Falling in Love with the Piano - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연예정",
@@ -12254,11 +10782,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "뮤직씨어터 슈바빙 정기연주회, 카르멘 [전주] - 1부 클래식 정규 레퍼토리",
-      "뮤직씨어터 슈바빙 정기연주회, 카르멘 [전주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A0%84%EB%B6%81%EB%8C%80%ED%95%99%EA%B5%90%20%EC%82%BC%EC%84%B1%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12284,11 +10808,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한낮의 유U;콘서트 (10월) - 1부 클래식 정규 레퍼토리",
-      "한낮의 유U;콘서트 (10월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.dureraum.org",
     "status": "공연예정",
@@ -12314,11 +10834,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "손민수 Curated 32, 손민수 - 1부 클래식 정규 레퍼토리",
-      "손민수 Curated 32, 손민수 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%98%84%EB%8C%80%EC%B9%B4%EB%93%9C%20%EC%96%B8%EB%8D%94%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12344,11 +10860,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "푸르지오 아트홀 수요 초대석 45. Opera Collage: 애정과 우정, 그 사이 - 1부 클래식 정규 레퍼토리",
-      "푸르지오 아트홀 수요 초대석 45. Opera Collage: 애정과 우정, 그 사이 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12374,11 +10886,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
@@ -12408,10 +10916,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "수요일엔 수레울 콘서트, 수수콘 Vol.3: 탱고 살롱 [연천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 15,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%97%B0%EC%B2%9C%EC%88%98%EB%A0%88%EC%9A%B8%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12437,10 +10942,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 브런치, 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅴ - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -12466,11 +10968,7 @@ export const initialRealConcerts = [
     "composers": [
       "슈베르트"
     ],
-    "pieces": [
-      "슈베르트: 클래식 명작 소나타 및 모음곡",
-      "슈베르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -12499,11 +10997,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "하이든: 교향곡 제44번 E단조 슬픔 (Trauer)",
-      "쇼스타코비치: 실내교향곡 C단조 Op.110a",
-      "모차르트: 디베르티멘토 K.136"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -12529,11 +11023,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -12559,11 +11049,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -12589,11 +11075,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "예매중",
@@ -12619,11 +11101,7 @@ export const initialRealConcerts = [
     "composers": [
       "바흐"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
@@ -12649,11 +11127,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -12679,11 +11153,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -12709,11 +11179,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -12739,11 +11205,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "가을밤에 만나는 소프라노 박현진과 재즈피아니스트 허성우 [부산] - 1부 클래식 정규 레퍼토리",
-      "가을밤에 만나는 소프라노 박현진과 재즈피아니스트 허성우 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
@@ -12769,11 +11231,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -12799,11 +11257,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "흑석동6인조 - 1부 클래식 정규 레퍼토리",
-      "흑석동6인조 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%8C%EC%95%85%EA%B3%B5%EA%B0%84%20%EC%A4%91%EB%A0%A5%EC%9E%A5%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12829,11 +11283,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%B2%9C%EC%8B%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12859,11 +11309,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%B2%AD%EC%96%91%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12889,11 +11335,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제57회 파주시립예술단 정기공연, 엘리야 [파주] - 1부 클래식 정규 레퍼토리",
-      "제57회 파주시립예술단 정기공연, 엘리야 [파주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8C%8C%EC%A3%BC%EC%9A%B4%EC%A0%95%ED%96%89%EB%B3%B5%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12919,11 +11361,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "만능재치꾼 피가로, 세빌리아의 이발사 [해남] - 1부 클래식 정규 레퍼토리",
-      "만능재치꾼 피가로, 세빌리아의 이발사 [해남] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%B4%EB%82%A8%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -12979,11 +11417,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제22회 음악에 기대어 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제22회 음악에 기대어 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연예정",
@@ -13009,11 +11443,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제22회 부산국제합창제, 그랜드 콘서트 - 1부 클래식 정규 레퍼토리",
-      "제22회 부산국제합창제, 그랜드 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
@@ -13044,10 +11474,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "마티네콘서트: 클래식 아틀리에 [시흥] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%9C%ED%9D%A5%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13079,10 +11506,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김정은 피아노 독주회: Night from Nocturne to Concerto [부산] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 30,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13138,11 +11562,7 @@ export const initialRealConcerts = [
     "composers": [
       "라벨"
     ],
-    "pieces": [
-      "라벨: 클래식 명작 소나타 및 모음곡",
-      "라벨: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -13168,11 +11588,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "더 테너스 콘서트: 테너들의 맛있는 한상!: 퓨전요리의 향연 [대전] - 1부 클래식 정규 레퍼토리",
-      "더 테너스 콘서트: 테너들의 맛있는 한상!: 퓨전요리의 향연 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연예정",
@@ -13198,11 +11614,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연예정",
@@ -13228,11 +11640,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "대건챔버콰이어 창단 30주년 기념연주회 - 1부 클래식 정규 레퍼토리",
-      "대건챔버콰이어 창단 30주년 기념연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -13258,11 +11666,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "KT그룹희망나눔재단과 함께하는 예술의전당 마음을 담은 클래식 (10월) - 1부 클래식 정규 레퍼토리",
-      "KT그룹희망나눔재단과 함께하는 예술의전당 마음을 담은 클래식 (10월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -13288,11 +11692,7 @@ export const initialRealConcerts = [
     "composers": [
       "로시니"
     ],
-    "pieces": [
-      "로시니: 클래식 명작 소나타 및 모음곡",
-      "로시니: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
@@ -13318,11 +11718,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -13348,11 +11744,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울시합창단, 가곡시대 - 1부 클래식 정규 레퍼토리",
-      "서울시합창단, 가곡시대 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
@@ -13378,11 +11770,7 @@ export const initialRealConcerts = [
     "composers": [
       "브람스"
     ],
-    "pieces": [
-      "브람스: 클래식 명작 소나타 및 모음곡",
-      "브람스: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -13408,11 +11796,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
@@ -13438,11 +11822,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "이준우 색소폰 독주회 - 1부 클래식 정규 레퍼토리",
-      "이준우 색소폰 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -13468,11 +11848,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제54회 범음악제, 콘서트 2. 오디오 비주얼 콘서트: 소리를 보다 - 1부 클래식 정규 레퍼토리",
-      "제54회 범음악제, 콘서트 2. 오디오 비주얼 콘서트: 소리를 보다 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=JCC%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13498,11 +11874,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아츠앤라이프 SSP 현대음악작곡가시리즈 Ⅳ. 김현민: 가벼운 멜랑콜리, 진지한 유희 (Airy Melancholy, Serious Playfulness) - 1부 클래식 정규 레퍼토리",
-      "아츠앤라이프 SSP 현대음악작곡가시리즈 Ⅳ. 김현민: 가벼운 멜랑콜리, 진지한 유희 (Airy Melancholy, Serious Playfulness) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%82%B4%EB%A1%B1%EC%BF%A4%EC%8A%A4%ED%8A%B8%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13528,11 +11900,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제2회 오페라 합창 페스티벌 [대전] - 1부 클래식 정규 레퍼토리",
-      "제2회 오페라 합창 페스티벌 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%A0%84%EC%8B%9C%EB%A6%BD%EC%97%B0%EC%A0%95%EA%B5%AD%EC%95%85%EC%9B%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13558,11 +11926,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "온: 콘서트, 앙상블 결의 노래로 건너는 계절 - 1부 클래식 정규 레퍼토리",
-      "온: 콘서트, 앙상블 결의 노래로 건너는 계절 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%A8%EC%89%BC%ED%91%9C%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13588,11 +11952,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제31회 살롱음악회, 피아니스트 안민혁과 친구들 Series Ⅲ - 1부 클래식 정규 레퍼토리",
-      "제31회 살롱음악회, 피아니스트 안민혁과 친구들 Series Ⅲ - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%82%B4%EB%A1%B1%EB%93%9C%20%ED%8C%8C%EC%A3%BC%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13618,11 +11978,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "전율의 메시아: 엘렉톤과 실내악으로 만나는 오라토리오 [서울 강북] - 1부 클래식 정규 레퍼토리",
-      "전율의 메시아: 엘렉톤과 실내악으로 만나는 오라토리오 [서울 강북] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%BF%88%EC%9D%98%EC%88%B2%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13648,11 +12004,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제9회 콰르텟이즈 정기연주회, Romantic Echose: 낭만의울림 [세종] - 1부 클래식 정규 레퍼토리",
-      "제9회 콰르텟이즈 정기연주회, Romantic Echose: 낭만의울림 [세종] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B9%84%EC%98%A4%EC%BC%80%EC%9D%B4%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0(BOK%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13678,11 +12030,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 DMZ OPEN 국제음악제, Pulse - 시작의 박동 - 1부 클래식 정규 레퍼토리",
-      "제4회 DMZ OPEN 국제음악제, Pulse - 시작의 박동 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연예정",
@@ -13708,11 +12056,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "이원복의 먼나라 이웃나라, 영국여행 [파주] - 1부 클래식 정규 레퍼토리",
-      "이원복의 먼나라 이웃나라, 영국여행 [파주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8C%8C%EC%A3%BC%EC%9A%B4%EC%A0%95%ED%96%89%EB%B3%B5%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13738,11 +12082,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%94%BC%EC%98%A4%EB%A0%88%EC%95%84%ED%8A%B8%EC%95%A4%EC%97%94%ED%84%B0(%ED%94%BC%EC%98%A4%EB%A0%88%EC%9B%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13768,11 +12108,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제49회 굿모닝콘서트: 건반 위를 걷는 시간 - 1부 클래식 정규 레퍼토리",
-      "제49회 굿모닝콘서트: 건반 위를 걷는 시간 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%84%EC%88%99%EB%8F%84%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13798,11 +12134,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "The Class+, 인다코 콰르텟 - 1부 클래식 정규 레퍼토리",
-      "The Class+, 인다코 콰르텟 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%EC%98%81%EC%B2%B4%EC%9E%84%EB%B2%84%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13828,11 +12160,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%81%AC%EB%A0%88%EB%94%94%EC%95%84%20%ED%81%B4%EB%9E%98%EC%8B%9D%20%ED%81%B4%EB%9F%BD%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13858,11 +12186,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "http://www.woojin.or.kr",
     "status": "공연예정",
@@ -13889,10 +12213,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제411회 전남광주통합특별시립교향악단 정기연주회: Heritage Series Ⅹ. Nordic Echo - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A0%84%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20%EB%AF%BC%EC%A3%BC%EB%A7%88%EB%A3%A8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -13918,11 +12239,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 The ACCORD Cellos 정기연주회: Espressivo 2 [청주] - 1부 클래식 정규 레퍼토리",
-      "제4회 The ACCORD Cellos 정기연주회: Espressivo 2 [청주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cheongju.go.kr/ac/index.do",
     "status": "공연예정",
@@ -13948,11 +12265,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "문진성 클라리넷 독주회 - 1부 클래식 정규 레퍼토리",
-      "문진성 클라리넷 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -13978,11 +12291,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -14008,11 +12317,7 @@ export const initialRealConcerts = [
     "composers": [
       "Beethoven"
     ],
-    "pieces": [
-      "Beethoven: 클래식 명작 소나타 및 모음곡",
-      "Beethoven: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -14038,11 +12343,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "왕의 별 쇼케이스 [화성] - 1부 클래식 정규 레퍼토리",
-      "왕의 별 쇼케이스 [화성] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.hcf.or.kr",
     "status": "예매중",
@@ -14068,11 +12369,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [계룡] - 1부 클래식 정규 레퍼토리",
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [계룡] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gyeryong.go.kr/art",
     "status": "예매중",
@@ -14098,11 +12395,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "사랑의묘약: 호텔아디나 [경기 광주] - 1부 클래식 정규 레퍼토리",
-      "사랑의묘약: 호텔아디나 [경기 광주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
@@ -14128,11 +12421,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제7회 뷔에르 앙상블 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제7회 뷔에르 앙상블 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -14158,11 +12447,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -14188,11 +12473,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "함신익과 심포니 송 마스터즈 시리즈 VI, 차이코프스키 스페셜 - 1부 클래식 정규 레퍼토리",
-      "함신익과 심포니 송 마스터즈 시리즈 VI, 차이코프스키 스페셜 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -14218,11 +12499,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "목관앙상블과 함께하는 윈드 뮤지컬 콘서트 [인천] - 1부 클래식 정규 레퍼토리",
-      "목관앙상블과 함께하는 윈드 뮤지컬 콘서트 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -14248,11 +12525,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -14278,11 +12551,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연예정",
@@ -14308,11 +12577,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -14338,11 +12603,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "금호영아티스트콘서트, 임승호 트롬본 독주회 - 1부 클래식 정규 레퍼토리",
-      "금호영아티스트콘서트, 임승호 트롬본 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -14368,11 +12629,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "부산대학교 개교 80주년 기념음악회: 부산시민과 함께하는 클래식 여행 - 1부 클래식 정규 레퍼토리",
-      "부산대학교 개교 80주년 기념음악회: 부산시민과 함께하는 클래식 여행 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
@@ -14398,11 +12655,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쌀롱드무지끄, Fields in Motion: 움직이는 들판 - 1부 클래식 정규 레퍼토리",
-      "쌀롱드무지끄, Fields in Motion: 움직이는 들판 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8C%80%EB%A1%B1%EB%93%9C%EB%AC%B4%EC%A7%80%EB%81%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14428,11 +12681,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "토들러 콘서트, 앙상블 모란의 6번째 이야기: 별 & 하늘 & 우주 [부산] - 1부 클래식 정규 레퍼토리",
-      "토들러 콘서트, 앙상블 모란의 6번째 이야기: 별 & 하늘 & 우주 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%98%EC%9A%B0%EC%8A%A4%EC%98%A4%EB%B8%8C%EB%B2%A0%EB%A5%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14458,11 +12707,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14488,11 +12733,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제15회 이 솔리스띠 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제15회 이 솔리스띠 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://klarts.kr",
     "status": "공연예정",
@@ -14518,11 +12759,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "GYPSY TRAIN x SPAIN - 1부 클래식 정규 레퍼토리",
-      "GYPSY TRAIN x SPAIN - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%9A%B8%EC%88%B2%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4301%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14548,11 +12785,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "길병민 리사이틀: 나의 행복 - 1부 클래식 정규 레퍼토리",
-      "길병민 리사이틀: 나의 행복 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14578,11 +12811,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제31회 대구중등교사합창단 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제31회 대구중등교사합창단 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%ED%95%99%EC%83%9D%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14608,11 +12837,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 DMZ OPEN 국제음악제, Awaken: 깨어나는 평화 - 1부 클래식 정규 레퍼토리",
-      "제4회 DMZ OPEN 국제음악제, Awaken: 깨어나는 평화 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연예정",
@@ -14638,11 +12863,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 DMZ OPEN 국제음악제, Connect: 연결되는 마음 [고양] - 1부 클래식 정규 레퍼토리",
-      "제4회 DMZ OPEN 국제음악제, Connect: 연결되는 마음 [고양] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연예정",
@@ -14668,11 +12889,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제11회 구로 클래식 페스타, 느티나무합창단 - 1부 클래식 정규 레퍼토리",
-      "제11회 구로 클래식 페스타, 느티나무합창단 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "공연예정",
@@ -14698,11 +12915,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "소프라노 김하영 독창회 - 1부 클래식 정규 레퍼토리",
-      "소프라노 김하영 독창회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ilshinhall.com",
     "status": "공연예정",
@@ -14728,11 +12941,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "공간결 하우스 콘서트, 영아티스트콘서트: 결의 파동 vol.6 목관5중주 플레어 [부산] - 1부 클래식 정규 레퍼토리",
-      "공간결 하우스 콘서트, 영아티스트콘서트: 결의 파동 vol.6 목관5중주 플레어 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%B5%EA%B0%84%EA%B2%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14758,11 +12967,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "공연예정",
@@ -14788,11 +12993,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "장난감으로 음악을 만드는 키즈클래식, 언박싱! 음악택배 [남양주] - 1부 클래식 정규 레퍼토리",
-      "장난감으로 음악을 만드는 키즈클래식, 언박싱! 음악택배 [남양주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%A8%EC%96%91%EC%A3%BC%20%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%B9%84%EC%A0%84%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14818,11 +13019,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바리톤 김동규와 함께하는 10월의 어느 멋진날에 [광주] - 1부 클래식 정규 레퍼토리",
-      "바리톤 김동규와 함께하는 10월의 어느 멋진날에 [광주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B9%9B%EA%B3%A0%EC%9D%84%EC%8B%9C%EB%AF%BC%EB%AC%B8%ED%99%94%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14848,11 +13045,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "The Recite, 낭독이 있는 연주회 네 번째 이야기: 일요일의 예술가 - 1부 클래식 정규 레퍼토리",
-      "The Recite, 낭독이 있는 연주회 네 번째 이야기: 일요일의 예술가 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%9A%B8%EC%B2%B4%EC%9E%84%EB%B2%84%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14882,10 +13075,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "음악오늘, 스물한 번째 이야기: 전기의 맛 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%9A%B8%EC%83%9D%ED%99%9C%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EC%84%9C%EA%B5%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14913,10 +13103,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "테너 김우경 & 소프라노 여지영 듀오 리사이틀: 노래가 흐르고, 영화가 펼쳐진다 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 30,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%B2%9C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -14942,11 +13129,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -14972,11 +13155,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바비칸 콰르텟 - 1부 클래식 정규 레퍼토리",
-      "바비칸 콰르텟 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -15002,11 +13181,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "이창형 더블베이스 독주회 - 1부 클래식 정규 레퍼토리",
-      "이창형 더블베이스 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -15032,11 +13207,7 @@ export const initialRealConcerts = [
     "composers": [
       "브람스"
     ],
-    "pieces": [
-      "브람스: 클래식 명작 소나타 및 모음곡",
-      "브람스: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
@@ -15062,11 +13233,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -15092,11 +13259,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "빈 필하모닉 내한공연 - 1부 클래식 정규 레퍼토리",
-      "빈 필하모닉 내한공연 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -15122,11 +13285,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -15152,11 +13311,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모두를 위한 OST 콘서트 - 1부 클래식 정규 레퍼토리",
-      "모두를 위한 OST 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -15182,11 +13337,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -15212,11 +13363,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 소아베 트리오 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제4회 소아베 트리오 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -15242,11 +13389,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%B6%A9%EC%A3%BC%EC%8B%9C%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -15272,11 +13415,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김승희 교수 제자 음악회: 지음지연 - 1부 클래식 정규 레퍼토리",
-      "김승희 교수 제자 음악회: 지음지연 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연예정",
@@ -15302,11 +13441,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제11회 정혜진 클라리넷 독주회 [대구] - 1부 클래식 정규 레퍼토리",
-      "제11회 정혜진 클라리넷 독주회 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연예정",
@@ -15332,11 +13467,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 DMZ OPEN 국제음악제, Eternity: 계속될 평화 - 1부 클래식 정규 레퍼토리",
-      "제4회 DMZ OPEN 국제음악제, Eternity: 계속될 평화 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연예정",
@@ -15362,11 +13493,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "신예의 밤, 피아니스트 이근영 (10월) - 1부 클래식 정규 레퍼토리",
-      "신예의 밤, 피아니스트 이근영 (10월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%A4%EB%9F%AC%EB%A6%AC%20%EB%94%94%20%EC%95%84%EB%A5%B4%ED%85%8C%20%EC%B2%AD%EB%8B%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -15392,11 +13519,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제27회 성남 박태현 전국 창작동요제 - 1부 클래식 정규 레퍼토리",
-      "제27회 성남 박태현 전국 창작동요제 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EB%82%A8%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20(%EA%B5%AC.%20%EC%84%B1%EB%82%A8%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -15422,11 +13545,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "공연예정",
@@ -15452,11 +13571,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://elimartcenter.co.kr",
     "status": "공연예정",
@@ -15482,11 +13597,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "키즈 콘서트 Ⅲ, 클랩! 그림책 콘서트 (10.25) - 1부 클래식 정규 레퍼토리",
-      "키즈 콘서트 Ⅲ, 클랩! 그림책 콘서트 (10.25) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gdfac.or.kr",
     "status": "공연예정",
@@ -15515,10 +13626,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "에코스테이지크루 정기연주회: 싱잉볼, 낙원으로 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EB%A6%BC%EB%8B%B9%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -15544,10 +13652,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "프레디 켐프 피아노 리사이틀 [부산] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 30,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=F1963%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -15573,10 +13678,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "코랄 TGY 15주년 기념 음악회 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -15602,11 +13704,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제36회 아주여성합창단 & 제24회 아주남성합창단 정기연주회: 지금 여기, 그대로 빛나 - 1부 클래식 정규 레퍼토리",
-      "제36회 아주여성합창단 & 제24회 아주남성합창단 정기연주회: 지금 여기, 그대로 빛나 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -15632,11 +13730,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "앙상블 공간 프로젝트 열 일곱 번째 이야기: 여행과 이방인 - 1부 클래식 정규 레퍼토리",
-      "앙상블 공간 프로젝트 열 일곱 번째 이야기: 여행과 이방인 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
@@ -15662,11 +13756,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 한가야 추모 음악회 Ⅱ - 1부 클래식 정규 레퍼토리",
-      "피아니스트 한가야 추모 음악회 Ⅱ - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -15692,11 +13782,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "CHONGA Piano AdventureⅠ: Did You Know These? - 1부 클래식 정규 레퍼토리",
-      "CHONGA Piano AdventureⅠ: Did You Know These? - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8E%98%EB%A6%AC%EC%A7%80%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -15722,11 +13808,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제57주년 기념 21세기악회 작품발표회: 21세기음악 with K-STORY - 1부 클래식 정규 레퍼토리",
-      "제57주년 기념 21세기악회 작품발표회: 21세기음악 with K-STORY - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ilshinhall.com",
     "status": "공연예정",
@@ -15752,11 +13834,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제1200회 하우스콘서트, 듀오 얌니크 Duo Jamník - 1부 클래식 정규 레퍼토리",
-      "제1200회 하우스콘서트, 듀오 얌니크 Duo Jamník - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EA%B0%80%EC%9D%98%20%EC%A7%91%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -15782,11 +13860,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제39회 소정성악회 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제39회 소정성악회 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EB%9D%BC%EB%AF%B9%ED%8C%94%EB%A0%88%EC%8A%A4%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -15812,11 +13886,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "나는 바다가 되리라 [경주] - 1부 클래식 정규 레퍼토리",
-      "나는 바다가 되리라 [경주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://garts.kr",
     "status": "공연예정",
@@ -15842,11 +13912,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -15872,11 +13938,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김세준 비올라 리사이틀: 계보의 소리: 프랑코-벨지언 (Legacy in Sound: Franco-Belgian) - 1부 클래식 정규 레퍼토리",
-      "김세준 비올라 리사이틀: 계보의 소리: 프랑코-벨지언 (Legacy in Sound: Franco-Belgian) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -15902,11 +13964,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -15932,11 +13990,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제2회 앙상블 오브 (Ensemble Aube (Of) ) 정기연주회: Sound of (Aube) Germany - 1부 클래식 정규 레퍼토리",
-      "제2회 앙상블 오브 (Ensemble Aube (Of) ) 정기연주회: Sound of (Aube) Germany - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -15962,11 +14016,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -15992,11 +14042,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제24회 람파스콰이어 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제24회 람파스콰이어 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연예정",
@@ -16022,11 +14068,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "남양주시립합창단, 클래식 세계여행: 즐거운 낭만음악 (10월) - 1부 클래식 정규 레퍼토리",
-      "남양주시립합창단, 클래식 세계여행: 즐거운 낭만음악 (10월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%A4%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16052,11 +14094,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제54회 범음악제, 콘서트 3. C-Camerata Taipei 초청연주회 - 1부 클래식 정규 레퍼토리",
-      "제54회 범음악제, 콘서트 3. C-Camerata Taipei 초청연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=JCC%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16082,11 +14120,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16112,11 +14146,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A7%84%ED%95%B4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16142,11 +14172,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "라움 마티네 콘서트, 클래식으로 되살아나는 감동 (10월) - 1부 클래식 정규 레퍼토리",
-      "라움 마티네 콘서트, 클래식으로 되살아나는 감동 (10월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%86%8C%EC%85%9C%EB%B2%A0%EB%89%B4%20%EB%9D%BC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16172,11 +14198,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아트 온 스크린, 아디나 [울산] (영상화) - 1부 클래식 정규 레퍼토리",
-      "아트 온 스크린, 아디나 [울산] (영상화) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16202,11 +14224,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "클래식 판타지아 (with Korea Coop Orchestra) - 1부 클래식 정규 레퍼토리",
-      "클래식 판타지아 (with Korea Coop Orchestra) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90%20%EB%B0%B1%EC%A3%BC%EB%85%84%EA%B8%B0%EB%85%90%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16232,11 +14250,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제97회 예술공감, 디어뮤직의 별이 빛나는 밤에: 을숙도의 사계절 - 1부 클래식 정규 레퍼토리",
-      "제97회 예술공감, 디어뮤직의 별이 빛나는 밤에: 을숙도의 사계절 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%84%EC%88%99%EB%8F%84%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16262,11 +14276,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ggac.or.kr",
     "status": "공연예정",
@@ -16292,10 +14302,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -16321,11 +14328,7 @@ export const initialRealConcerts = [
     "composers": [
       "멘델스존"
     ],
-    "pieces": [
-      "멘델스존: 클래식 명작 소나타 및 모음곡",
-      "멘델스존: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -16351,11 +14354,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -16381,11 +14380,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
@@ -16411,11 +14406,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "구자범의 가을 콘서트 렉쳐 1. The Sound of Music [안산] - 1부 클래식 정규 레퍼토리",
-      "구자범의 가을 콘서트 렉쳐 1. The Sound of Music [안산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ansanart.com",
     "status": "예매중",
@@ -16441,11 +14432,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김우연 귀국 클라리넷 독주회 - 1부 클래식 정규 레퍼토리",
-      "김우연 귀국 클라리넷 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -16471,11 +14458,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제26회 알테무지크서울 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제26회 알테무지크서울 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -16501,11 +14484,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "해설이 있는 11시 콘서트, 비올리니스트 박하양 (10월) - 1부 클래식 정규 레퍼토리",
-      "해설이 있는 11시 콘서트, 비올리니스트 박하양 (10월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
@@ -16531,11 +14510,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -16561,11 +14536,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -16591,11 +14562,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "전통과 현대, 작곡가 김청묵 80세 기념 음악회 - 1부 클래식 정규 레퍼토리",
-      "전통과 현대, 작곡가 김청묵 80세 기념 음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -16621,11 +14588,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "직장인을 위한 퇴근길 콘서트 Ⅳ, 뮤지컬의 밤 [인천] - 1부 클래식 정규 레퍼토리",
-      "직장인을 위한 퇴근길 콘서트 Ⅳ, 뮤지컬의 밤 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -16651,11 +14614,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -16681,11 +14640,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연예정",
@@ -16711,11 +14666,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 지역주민과 함께하는 Fall in Art: 그리스 로마 신화, 클래식을 만나다. (1회차) [나주] - 1부 클래식 정규 레퍼토리",
-      "제4회 지역주민과 함께하는 Fall in Art: 그리스 로마 신화, 클래식을 만나다. (1회차) [나주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC%20%EB%B3%B8%EC%82%AC%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16741,11 +14692,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "빛과 여백 사이 .... 4 Promenades: ENTRE... lumiere & vide - 1부 클래식 정규 레퍼토리",
-      "빛과 여백 사이 .... 4 Promenades: ENTRE... lumiere & vide - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ilshinhall.com",
     "status": "공연예정",
@@ -16771,11 +14718,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "8시 클래식 울주, 남매 기타 듀오 아크의 영화처럼, 클래식처럼 - 1부 클래식 정규 레퍼토리",
-      "8시 클래식 울주, 남매 기타 듀오 아크의 영화처럼, 클래식처럼 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16801,11 +14744,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%9C%ED%9D%A5%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16831,11 +14770,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "나루아티스트와 함께하는 살롱음악회 (10월) - 1부 클래식 정규 레퍼토리",
-      "나루아티스트와 함께하는 살롱음악회 (10월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%98%EB%A3%A8%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16861,11 +14796,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://phcf.or.kr",
     "status": "공연예정",
@@ -16891,11 +14822,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "이천에서 들린 하모니: 오페라 하이라이트 [이천] - 1부 클래식 정규 레퍼토리",
-      "이천에서 들린 하모니: 오페라 하이라이트 [이천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%B2%9C%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16921,11 +14848,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "영도문화예술회관 수요상설 onStage, Voy a Buena: 탱고와 함께 걷는 부에노스아이레스의 시간들 [부산] - 1부 클래식 정규 레퍼토리",
-      "영도문화예술회관 수요상설 onStage, Voy a Buena: 탱고와 함께 걷는 부에노스아이레스의 시간들 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EB%8F%84%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16951,11 +14874,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Sounds of the Oceans [인천] - 1부 클래식 정규 레퍼토리",
-      "Sounds of the Oceans [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%84%9C%ED%95%B4%EA%B5%AC%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80(%EA%B5%AC.%20%EC%9D%B8%EC%B2%9C%EC%84%9C%EA%B5%AC%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -16981,11 +14900,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -17011,11 +14926,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연예정",
@@ -17041,11 +14952,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "대전시립합창단 가곡음악회: 가곡 전시회 - 1부 클래식 정규 레퍼토리",
-      "대전시립합창단 가곡음악회: 가곡 전시회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -17071,11 +14978,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "파트리샤 코파친스카야 & 솔 가베타 듀오 콘서트 - 1부 클래식 정규 레퍼토리",
-      "파트리샤 코파친스카야 & 솔 가베타 듀오 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -17101,11 +15004,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아레테 콰르텟 바르톡 현악사중주 전곡연주1 - 1부 클래식 정규 레퍼토리",
-      "아레테 콰르텟 바르톡 현악사중주 전곡연주1 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -17131,11 +15030,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "국립오페라단 정기공연: 라인의 황금 - 1부 클래식 정규 레퍼토리",
-      "국립오페라단 정기공연: 라인의 황금 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -17192,11 +15087,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제42회 소리울 앙상블 정기 연주회 - 1부 클래식 정규 레퍼토리",
-      "제42회 소리울 앙상블 정기 연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
@@ -17222,11 +15113,7 @@ export const initialRealConcerts = [
     "composers": [
       "Bach"
     ],
-    "pieces": [
-      "Bach: 클래식 명작 소나타 및 모음곡",
-      "Bach: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -17252,11 +15139,7 @@ export const initialRealConcerts = [
     "composers": [
       "Mozart"
     ],
-    "pieces": [
-      "Mozart: 클래식 명작 소나타 및 모음곡",
-      "Mozart: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연예정",
@@ -17282,11 +15165,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "만능재치꾼 피가로, 세빌리아의 이발사 [예산] - 1부 클래식 정규 레퍼토리",
-      "만능재치꾼 피가로, 세빌리아의 이발사 [예산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%B6%A9%EB%82%A8%EB%8F%84%EC%B2%AD%20%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -17312,11 +15191,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%83%81%EC%A3%BC%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -17342,11 +15217,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -17372,11 +15243,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제54회 범음악제, 콘서트 4. Kwartludium 초청연주회 - 1부 클래식 정규 레퍼토리",
-      "제54회 범음악제, 콘서트 4. Kwartludium 초청연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ilshinhall.com",
     "status": "공연예정",
@@ -17402,11 +15269,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "이현경의 살롱드같음 시즌2: 기타리스트 지호남의 속삭이는 선율, 기타가 들려주는 이야기 - 1부 클래식 정규 레퍼토리",
-      "이현경의 살롱드같음 시즌2: 기타리스트 지호남의 속삭이는 선율, 기타가 들려주는 이야기 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8D%94%EA%B0%99%EC%9D%8C%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -17432,11 +15295,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "신기환 도슨트와 함께하는 미술관 음악여행 vol.1, 빛과 감성의 울림 [제주] - 1부 클래식 정규 레퍼토리",
-      "신기환 도슨트와 함께하는 미술관 음악여행 vol.1, 빛과 감성의 울림 [제주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.jejusi.go.kr/acenter/index.do",
     "status": "공연예정",
@@ -17462,11 +15321,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "수성구여성합창단 정기연주회: 수성사랑음악회 [대구] - 1부 클래식 정규 레퍼토리",
-      "수성구여성합창단 정기연주회: 수성사랑음악회 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "공연예정",
@@ -17492,11 +15347,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제51회 평택혼성합창단 정기연주회, 창단 30주년 기념 콘서트 [평택] - 1부 클래식 정규 레퍼토리",
-      "제51회 평택혼성합창단 정기연주회, 창단 30주년 기념 콘서트 [평택] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -17522,11 +15373,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gn.go.kr/gnart",
     "status": "공연예정",
@@ -17552,11 +15399,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "시가 흐르고, 음악과 영상이 머무는 문학콘서트: 살다가 보면 [당진] - 1부 클래식 정규 레퍼토리",
-      "시가 흐르고, 음악과 영상이 머무는 문학콘서트: 살다가 보면 [당진] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%B9%EC%A7%84%EB%AC%B8%EC%98%88%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -17582,11 +15425,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "DSAC 온 스테이지, 바람의 열정: Passione [대구] - 1부 클래식 정규 레퍼토리",
-      "DSAC 온 스테이지, 바람의 열정: Passione [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%AC%EC%84%9C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20(%EA%B5%AC.%20%EC%9B%83%EB%8A%94%EC%96%BC%EA%B5%B4%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -17612,11 +15451,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "낙동아트센터 마티네 콘서트, 실내악시리즈 Ⅳ. 10월의 샤콘느 & 사계 - 1부 클래식 정규 레퍼토리",
-      "낙동아트센터 마티네 콘서트, 실내악시리즈 Ⅳ. 10월의 샤콘느 & 사계 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -17642,11 +15477,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제10회 뮤직페스티벌창원, 첼리스트 김정아 - 1부 클래식 정규 레퍼토리",
-      "제10회 뮤직페스티벌창원, 첼리스트 김정아 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -17672,11 +15503,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "천년의 빛, 하나의 울림 [울산] - 1부 클래식 정규 레퍼토리",
-      "천년의 빛, 하나의 울림 [울산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ucac.ulsan.go.kr",
     "status": "공연예정",
@@ -17702,11 +15529,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제54회 범음악제, 콘서트 6. C-Channel String Orchestra - 1부 클래식 정규 레퍼토리",
-      "제54회 범음악제, 콘서트 6. C-Channel String Orchestra - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -17732,11 +15555,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "카운터테너 이동규 리사이틀: 바로크로그 [제천] - 1부 클래식 정규 레퍼토리",
-      "카운터테너 이동규 리사이틀: 바로크로그 [제천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.jecheon.go.kr/jcart",
     "status": "공연예정",
@@ -17762,11 +15581,7 @@ export const initialRealConcerts = [
     "composers": [
       "바흐"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -17792,11 +15607,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
@@ -17822,11 +15633,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아레테 콰르텟 바르톡 현악 사중주 전곡 연주2 - 1부 클래식 정규 레퍼토리",
-      "아레테 콰르텟 바르톡 현악 사중주 전곡 연주2 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -17852,11 +15659,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -17882,11 +15685,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -17912,11 +15711,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "SPO Day - 1부 클래식 정규 레퍼토리",
-      "SPO Day - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -17942,11 +15737,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
@@ -17972,11 +15763,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "대구 극음악 시리즈 Ⅲ. 목관앙상블로 재해석한 호두까기인형 - 1부 클래식 정규 레퍼토리",
-      "대구 극음악 시리즈 Ⅲ. 목관앙상블로 재해석한 호두까기인형 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
@@ -18002,11 +15789,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
@@ -18032,11 +15815,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "piknic 무성영화극장, 오를락의 손 - 1부 클래식 정규 레퍼토리",
-      "piknic 무성영화극장, 오를락의 손 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%94%BC%ED%81%AC%EB%8B%89%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18062,11 +15841,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ilshinhall.com",
     "status": "공연예정",
@@ -18092,11 +15867,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "올라비올라 B to B with 길병민 [안양] - 1부 클래식 정규 레퍼토리",
-      "올라비올라 B to B with 길병민 [안양] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ayac.or.kr",
     "status": "공연예정",
@@ -18122,11 +15893,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "손가슬 & 오재석 듀오 콘서트, Ambitus: 음역의 끝과 끝 - 1부 클래식 정규 레퍼토리",
-      "손가슬 & 오재석 듀오 콘서트, Ambitus: 음역의 끝과 끝 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18152,11 +15919,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "공간결 하우스 콘서트 vol.7 앙상블 루치아: 별빛 동화, 디즈니 [부산] - 1부 클래식 정규 레퍼토리",
-      "공간결 하우스 콘서트 vol.7 앙상블 루치아: 별빛 동화, 디즈니 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%B5%EA%B0%84%EA%B2%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18182,11 +15945,7 @@ export const initialRealConcerts = [
     "composers": [
       "로시니"
     ],
-    "pieces": [
-      "로시니: 클래식 명작 소나타 및 모음곡",
-      "로시니: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://seochocf.or.kr",
     "status": "공연예정",
@@ -18212,11 +15971,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cccf.or.kr",
     "status": "공연예정",
@@ -18242,11 +15997,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18272,11 +16023,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "MUSICSCAPE, 치유의 밤: From here to everywhere... [광주] - 1부 클래식 정규 레퍼토리",
-      "MUSICSCAPE, 치유의 밤: From here to everywhere... [광주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.acc.go.kr",
     "status": "공연예정",
@@ -18303,10 +16050,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울챔버앙상블 기획콘서트: 음악의 혁명 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B4%91%EB%A6%BC%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18333,10 +16077,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "리성야, 류셴지 X 기타듀오 보티 (Botti) 콘서트 [대구] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 30,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18364,10 +16105,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Ensemble SYNC - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EB%82%98%EB%88%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18393,11 +16131,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바리톤 석상근의 음악동행 [진천] - 1부 클래식 정규 레퍼토리",
-      "바리톤 석상근의 음악동행 [진천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.jincheon.go.kr",
     "status": "공연예정",
@@ -18423,11 +16157,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김영애 플루트 독주회 - 1부 클래식 정규 레퍼토리",
-      "김영애 플루트 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -18453,11 +16183,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "메조소프라노 권세연 독창회 - 1부 클래식 정규 레퍼토리",
-      "메조소프라노 권세연 독창회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -18483,11 +16209,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "소프라노 심윤지 독창회 [대전] - 1부 클래식 정규 레퍼토리",
-      "소프라노 심윤지 독창회 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연예정",
@@ -18513,11 +16235,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 디 알토 앙상블 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제4회 디 알토 앙상블 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -18543,11 +16261,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [안동] - 1부 클래식 정규 레퍼토리",
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [안동] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "예매중",
@@ -18573,11 +16287,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바리톤 김주택 뮤직 라이브러리, Act 5. Le Canzoni - 1부 클래식 정규 레퍼토리",
-      "바리톤 김주택 뮤직 라이브러리, Act 5. Le Canzoni - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -18603,11 +16313,7 @@ export const initialRealConcerts = [
     "composers": [
       "바흐"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -18633,11 +16339,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.uac.or.kr",
     "status": "예매중",
@@ -18663,11 +16365,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.hcf.or.kr",
     "status": "예매중",
@@ -18693,11 +16391,7 @@ export const initialRealConcerts = [
     "composers": [
       "말러"
     ],
-    "pieces": [
-      "말러: 클래식 명작 소나타 및 모음곡",
-      "말러: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -18723,11 +16417,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "DAZBEE ORCHESTRA CONCERT: SYMPHONIA - 1부 클래식 정규 레퍼토리",
-      "DAZBEE ORCHESTRA CONCERT: SYMPHONIA - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -18753,11 +16443,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "리성야 , 류셴지 X 기타듀오 보티 (Botti) 콘서트 [서울] - 1부 클래식 정규 레퍼토리",
-      "리성야 , 류셴지 X 기타듀오 보티 (Botti) 콘서트 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
@@ -18783,11 +16469,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
@@ -18813,11 +16495,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -18843,11 +16521,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -18873,11 +16547,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제13회 중구소년소녀합창단 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제13회 중구소년소녀합창단 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18903,11 +16573,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제7회 스케치 정기 연주회 [대구] - 1부 클래식 정규 레퍼토리",
-      "제7회 스케치 정기 연주회 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%AC%EC%84%9C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20(%EA%B5%AC.%20%EC%9B%83%EB%8A%94%EC%96%BC%EA%B5%B4%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18933,11 +16599,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%9C%ED%9D%A5%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18963,11 +16625,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모스크바홀 기획공연 시리즈, FLOS ensemble: Romantic & Modern - 1부 클래식 정규 레퍼토리",
-      "모스크바홀 기획공연 시리즈, FLOS ensemble: Romantic & Modern - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%AA%A8%EC%8A%A4%ED%81%AC%EB%B0%94%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -18993,11 +16651,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제20회 서울챔버싱어즈 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제20회 서울챔버싱어즈 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연예정",
@@ -19023,11 +16677,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "홍채린 오르간 리사이틀: 빛과 울림 [부천] - 1부 클래식 정규 레퍼토리",
-      "홍채린 오르간 리사이틀: 빛과 울림 [부천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -19053,11 +16703,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "앙상블 부산, 현의 물결 시리즈: 가을을 남기고 떠난사람 [부산] - 1부 클래식 정규 레퍼토리",
-      "앙상블 부산, 현의 물결 시리즈: 가을을 남기고 떠난사람 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "http://www.f1963.org",
     "status": "공연예정",
@@ -19083,11 +16729,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제11회 구로 클래식 페스타, 비바체 합창단 - 1부 클래식 정규 레퍼토리",
-      "제11회 구로 클래식 페스타, 비바체 합창단 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "공연예정",
@@ -19113,11 +16755,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "공연예정",
@@ -19143,11 +16781,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "ONLY FOR YOU, 한예진 & 이지현의 CRAZY MOZART - 1부 클래식 정규 레퍼토리",
-      "ONLY FOR YOU, 한예진 & 이지현의 CRAZY MOZART - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%97%90%EC%9D%B4%EC%B9%98%EC%95%84%EC%B8%A0%20(H-Art)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19173,11 +16807,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%94%BC%EC%98%A4%EB%A0%88%EC%95%84%ED%8A%B8%EC%95%A4%EC%97%94%ED%84%B0(%ED%94%BC%EC%98%A4%EB%A0%88%EC%9B%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19203,11 +16833,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "박종성 with KCO의 하모니카 랩소디 [속초] - 1부 클래식 정규 레퍼토리",
-      "박종성 with KCO의 하모니카 랩소디 [속초] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%86%8D%EC%B4%88%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19233,11 +16859,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "앙상블 어우름의 Adagio Knitting - 1부 클래식 정규 레퍼토리",
-      "앙상블 어우름의 Adagio Knitting - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%9D%BC%EC%9C%A8%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19263,11 +16885,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유령성의 비밀음악회 [화성] - 1부 클래식 정규 레퍼토리",
-      "유령성의 비밀음악회 [화성] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%97%90%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%A7%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19294,11 +16912,7 @@ export const initialRealConcerts = [
       "말러",
       "모차르트"
     ],
-    "pieces": [
-      "말러: 클래식 명작 소나타 및 모음곡",
-      "말러: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19324,11 +16938,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%B4%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19354,11 +16964,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "토요 클래식의밤, 해설이 있는 클래식: 10월의 마지막날, 고전음악 동시통역 - 1부 클래식 정규 레퍼토리",
-      "토요 클래식의밤, 해설이 있는 클래식: 10월의 마지막날, 고전음악 동시통역 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EB%82%98%EB%88%84%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19384,11 +16990,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%9C%EB%93%9C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%5B%EB%B6%80%EC%82%B0%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19414,11 +17016,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "월간실내악, Halo Trio (10월) - 1부 클래식 정규 레퍼토리",
-      "월간실내악, Halo Trio (10월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%A4%EB%9F%AC%EB%A6%AC%20%EB%94%94%20%EC%95%84%EB%A5%B4%ED%85%8C%20%EC%B2%AD%EB%8B%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19444,11 +17042,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제10회 뮤직페스티벌창원, 지브리 콘서트 - 1부 클래식 정규 레퍼토리",
-      "제10회 뮤직페스티벌창원, 지브리 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19474,11 +17068,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한빛예술단, 다크니스 투 라이트 [영덕] - 1부 클래식 정규 레퍼토리",
-      "한빛예술단, 다크니스 투 라이트 [영덕] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19508,10 +17098,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "내곁에, 클래식: 멘델스존과 비제 [제주] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 25,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%A0%EC%9B%94%EB%AE%A4%EC%A7%81%ED%8C%A9%ED%86%A0%EB%A6%AC%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19543,10 +17130,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "패밀리 콘서트: K-POP으로 만나는 클래식 [대구] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%8D%95%EB%AC%B8%ED%99%94%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19573,10 +17157,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쿤스트 페스티벌 [성남] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석무료",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EB%82%A8%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19602,11 +17183,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -19632,11 +17209,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "소아암환우돕기 기부 희망콘서트: 백주영과 함께하는 가을, 협주의 선율 - 1부 클래식 정규 레퍼토리",
-      "소아암환우돕기 기부 희망콘서트: 백주영과 함께하는 가을, 협주의 선율 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -19662,11 +17235,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -19692,11 +17261,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -19722,11 +17287,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -19752,11 +17313,7 @@ export const initialRealConcerts = [
     "composers": [
       "Vivaldi"
     ],
-    "pieces": [
-      "Vivaldi: 클래식 명작 소나타 및 모음곡",
-      "Vivaldi: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -19782,11 +17339,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바이올리니스트 박지영 독주회 - 1부 클래식 정규 레퍼토리",
-      "바이올리니스트 박지영 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -19812,11 +17365,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제4회 파주시민 합창제 - 1부 클래식 정규 레퍼토리",
-      "제4회 파주시민 합창제 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8C%8C%EC%A3%BC%EC%9A%B4%EC%A0%95%ED%96%89%EB%B3%B5%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19842,11 +17391,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "공연예정",
@@ -19872,11 +17417,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제32회 꿈씨음악회: 나눔이 꿈이 될 때 - 1부 클래식 정규 레퍼토리",
-      "제32회 꿈씨음악회: 나눔이 꿈이 될 때 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연예정",
@@ -19902,11 +17443,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%86%8C%EC%9B%94%EC%95%84%ED%8A%B8%ED%99%80%20(%EC%84%B1%EB%8F%99%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19932,11 +17469,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%BF%88%EC%9D%98%EC%88%B2%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -19962,11 +17495,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울대학교 개교 80주년 기념 SNU Symphony Orchestra 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "서울대학교 개교 80주년 기념 SNU Symphony Orchestra 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -19992,11 +17521,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제3회 (사) 한국예술가곡총연합회 정기연주회: 한국예술가곡의 향연 - 1부 클래식 정규 레퍼토리",
-      "제3회 (사) 한국예술가곡총연합회 정기연주회: 한국예술가곡의 향연 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -20022,11 +17547,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제82회 (사) 한국페스티발앙상블 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제82회 (사) 한국페스티발앙상블 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -20052,11 +17573,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "성정문화재단 창립 45주년 기념 음악회 - 1부 클래식 정규 레퍼토리",
-      "성정문화재단 창립 45주년 기념 음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -20082,11 +17599,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -20112,11 +17625,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -20142,11 +17651,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "대구 비르투오조 챔버 특별음악회, 열린음악회: 모두를 위한 배리어프리 콘서트 [대구] - 1부 클래식 정규 레퍼토리",
-      "대구 비르투오조 챔버 특별음악회, 열린음악회: 모두를 위한 배리어프리 콘서트 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -20172,11 +17677,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -20202,11 +17703,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제7회 CTS 장로합창단 정기연주회 [부천] - 1부 클래식 정규 레퍼토리",
-      "제7회 CTS 장로합창단 정기연주회 [부천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -20233,11 +17730,7 @@ export const initialRealConcerts = [
       "바흐",
       "헨델"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%B5%EC%A3%BC%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -20263,11 +17756,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -20293,11 +17782,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "On Stage Concert, Three Guitars [부산] - 1부 클래식 정규 레퍼토리",
-      "On Stage Concert, Three Guitars [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%B4%EC%9A%B4%EB%8C%80%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -20323,11 +17808,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "전남광주통합특별시립합창단 기획연주회 Ⅶ. 마티네콘서트: 어울림Ⅴ - 1부 클래식 정규 레퍼토리",
-      "전남광주통합특별시립합창단 기획연주회 Ⅶ. 마티네콘서트: 어울림Ⅴ - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연예정",
@@ -20353,11 +17834,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제26회 현대음악앙상블 소리 정기연주회: Dream & Life - 1부 클래식 정규 레퍼토리",
-      "제26회 현대음악앙상블 소리 정기연주회: Dream & Life - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -20383,11 +17860,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제21회 이마에스트리 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제21회 이마에스트리 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -20413,11 +17886,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "희망 Dream NEXT Concert: STAGE - 1부 클래식 정규 레퍼토리",
-      "희망 Dream NEXT Concert: STAGE - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -20443,11 +17912,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -20473,11 +17938,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "김예원 플루트 독주회: 빛과 숨결의 유희 [대구] - 1부 클래식 정규 레퍼토리",
-      "김예원 플루트 독주회: 빛과 숨결의 유희 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
@@ -20503,11 +17964,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -20533,11 +17990,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "푸르지오 아트홀 수요 초대석 47. 바리톤 류승완 독창회: Tutto il Bel Canto! - 1부 클래식 정규 레퍼토리",
-      "푸르지오 아트홀 수요 초대석 47. 바리톤 류승완 독창회: Tutto il Bel Canto! - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -20563,11 +18016,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제94회 제주특별자치도립 서귀포관악단 정기연주회 [제주 서귀포] - 1부 클래식 정규 레퍼토리",
-      "제94회 제주특별자치도립 서귀포관악단 정기연주회 [제주 서귀포] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://culture.seogwipo.go.kr/sori",
     "status": "공연예정",
@@ -20593,11 +18042,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -20623,11 +18068,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연예정",
@@ -20653,11 +18094,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제18회 세일 한국가곡의 밤 - 1부 클래식 정규 레퍼토리",
-      "제18회 세일 한국가곡의 밤 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -20683,11 +18120,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지역 아티스트와 함께하는 K-클래식 콘서트7, 메즈클라리넷 [천안] - 1부 클래식 정규 레퍼토리",
-      "지역 아티스트와 함께하는 K-클래식 콘서트7, 메즈클라리넷 [천안] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
@@ -20713,11 +18146,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "신영증권과 함께하는 예술의전당 THE NEXT, 송현정 오보에 리사이틀 - 1부 클래식 정규 레퍼토리",
-      "신영증권과 함께하는 예술의전당 THE NEXT, 송현정 오보에 리사이틀 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -20776,11 +18205,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울시오페라단, 라보엠 - 1부 클래식 정규 레퍼토리",
-      "서울시오페라단, 라보엠 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
@@ -20806,11 +18231,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -20836,11 +18257,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "소프라노 양세원 리사이틀 [고양] - 1부 클래식 정규 레퍼토리",
-      "소프라노 양세원 리사이틀 [고양] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연예정",
@@ -20866,11 +18283,7 @@ export const initialRealConcerts = [
     "composers": [
       "Mozart"
     ],
-    "pieces": [
-      "Mozart: 클래식 명작 소나타 및 모음곡",
-      "Mozart: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ilshinhall.com",
     "status": "공연예정",
@@ -20896,11 +18309,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "DSAC 브랜드 콘서트, 가곡열전: 노래가 된 풍경 [대구] - 1부 클래식 정규 레퍼토리",
-      "DSAC 브랜드 콘서트, 가곡열전: 노래가 된 풍경 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%AC%EC%84%9C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20(%EA%B5%AC.%20%EC%9B%83%EB%8A%94%EC%96%BC%EA%B5%B4%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -20926,11 +18335,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "포항국제음악제, 아티스트 포항 Ⅰ. 마주보는 - 세계 - 1부 클래식 정규 레퍼토리",
-      "포항국제음악제, 아티스트 포항 Ⅰ. 마주보는 - 세계 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%AC%ED%95%AD%EC%8B%9C%EC%B2%AD%20%EB%8C%80%EC%9E%A0%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -20956,10 +18361,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제10회 뮤직페스티벌창원, 피아니스트 손열음 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 60,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -20985,11 +18387,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -21015,11 +18413,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연예정",
@@ -21045,11 +18439,7 @@ export const initialRealConcerts = [
     "composers": [
       "바흐"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -21075,11 +18465,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
@@ -21135,11 +18521,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유원합창단 연주회 - 1부 클래식 정규 레퍼토리",
-      "유원합창단 연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -21196,11 +18578,7 @@ export const initialRealConcerts = [
     "composers": [
       "브람스"
     ],
-    "pieces": [
-      "브람스: 클래식 명작 소나타 및 모음곡",
-      "브람스: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연예정",
@@ -21226,11 +18604,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%94%BC%EC%98%A4%EB%A0%88%EC%95%84%ED%8A%B8%EC%95%A4%EC%97%94%ED%84%B0(%ED%94%BC%EC%98%A4%EB%A0%88%EC%9B%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21256,11 +18630,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "경성흥신소: 절영도, 사라진 그림자를 찾아라! [부산] (11.06) - 1부 클래식 정규 레퍼토리",
-      "경성흥신소: 절영도, 사라진 그림자를 찾아라! [부산] (11.06) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EB%8F%84%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21286,11 +18656,7 @@ export const initialRealConcerts = [
     "composers": [
       "비발디"
     ],
-    "pieces": [
-      "비발디: 클래식 명작 소나타 및 모음곡",
-      "비발디: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%84%EC%88%99%EB%8F%84%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21316,11 +18682,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://seochocf.or.kr",
     "status": "공연예정",
@@ -21346,11 +18708,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "오음일심 - 1부 클래식 정규 레퍼토리",
-      "오음일심 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8E%98%EB%A6%AC%EC%A7%80%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21376,11 +18734,7 @@ export const initialRealConcerts = [
     "composers": [
       "Bach"
     ],
-    "pieces": [
-      "Bach: 클래식 명작 소나타 및 모음곡",
-      "Bach: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21406,11 +18760,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "[패키지] 서리풀 서초9 시리즈 (11월) - 1부 클래식 정규 레퍼토리",
-      "[패키지] 서리풀 서초9 시리즈 (11월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://seochocf.or.kr",
     "status": "공연예정",
@@ -21436,11 +18786,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%EC%8B%9C%EB%82%A8%EB%B6%80%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21469,10 +18815,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제10회 뮤직페스티벌창원, 창원시립교향악단 with Vn.김덕우 X Vc.주연선 X Pf.이주은 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21531,11 +18874,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제44회 광주발칸토성악아카데미 정기연주회: 창작오페라, 충장 [광주] - 1부 클래식 정규 레퍼토리",
-      "제44회 광주발칸토성악아카데미 정기연주회: 창작오페라, 충장 [광주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연예정",
@@ -21561,11 +18900,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -21591,11 +18926,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -21621,11 +18952,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연예정",
@@ -21651,11 +18978,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -21681,11 +19004,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -21711,11 +19030,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "금호영재콘서트, 권대현 바순 독주회 - 1부 클래식 정규 레퍼토리",
-      "금호영재콘서트, 권대현 바순 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -21741,11 +19056,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.acc.go.kr",
     "status": "공연예정",
@@ -21771,11 +19082,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제10회 늠내 클래식 축제, 동화가 흐르는 호두까기 인형 [시흥] - 1부 클래식 정규 레퍼토리",
-      "제10회 늠내 클래식 축제, 동화가 흐르는 호두까기 인형 [시흥] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%9C%ED%9D%A5ABC%ED%96%89%EB%B3%B5%ED%95%99%EC%8A%B5%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21801,11 +19108,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "돈 파스콸레 - 1부 클래식 정규 레퍼토리",
-      "돈 파스콸레 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%95%EC%84%9C%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21831,11 +19134,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "경성흥신소: 절영도, 사라진 그림자를 찾아라! [부산] (11.07) - 1부 클래식 정규 레퍼토리",
-      "경성흥신소: 절영도, 사라진 그림자를 찾아라! [부산] (11.07) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EB%8F%84%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21861,11 +19160,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "라보엠 [성주] - 1부 클래식 정규 레퍼토리",
-      "라보엠 [성주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%A3%BC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21891,11 +19186,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=JCC%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21921,11 +19212,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피가로 사용설명서 [부산] - 1부 클래식 정규 레퍼토리",
-      "피가로 사용설명서 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21951,11 +19238,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EC%A2%85%EA%B5%AD%EC%95%85%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -21981,11 +19264,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "하이든: 교향곡 제44번 E단조 슬픔 (Trauer)",
-      "쇼스타코비치: 실내교향곡 C단조 Op.110a",
-      "모차르트: 디베르티멘토 K.136"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ilshinhall.com",
     "status": "공연예정",
@@ -22011,11 +19290,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "국립오페라단, 마술피리 [김천] - 1부 클래식 정규 레퍼토리",
-      "국립오페라단, 마술피리 [김천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%B2%9C%EC%8B%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22041,11 +19316,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "정진아 클라리넷 독주회: 음악, 이야기가 되다 [대전] - 1부 클래식 정규 레퍼토리",
-      "정진아 클라리넷 독주회: 음악, 이야기가 되다 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B3%B5%ED%95%A9%EB%AC%B8%ED%99%94%EA%B3%B5%EA%B0%84%20%ED%94%8C%EB%9E%9C%EC%97%90%EC%9D%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22071,10 +19342,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "일리야 라쉬코프스키, 라흐마니노프 두 개의 피아노협주곡 [시흥] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%9C%ED%9D%A5%EC%8B%9C%EC%B2%AD%20%EB%8A%A0%EB%82%B4%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22100,10 +19368,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제10회 뮤직페스티벌창원, 창원시민과 함께하는 앙상블 PACE - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22129,10 +19394,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "스테이지M 시네마 시리즈, 우리가 사랑한 시네마 뮤직 콘서트 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -22158,11 +19420,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -22188,11 +19446,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -22218,11 +19472,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -22248,11 +19498,7 @@ export const initialRealConcerts = [
     "composers": [
       "바흐"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -22278,11 +19524,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -22308,11 +19550,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Wine & Music Night, All-Star Concert [인천] - 1부 클래식 정규 레퍼토리",
-      "Wine & Music Night, All-Star Concert [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://elimartcenter.co.kr",
     "status": "공연예정",
@@ -22338,11 +19576,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "남성합창단 등대 창단 12주년 콘서트 - 1부 클래식 정규 레퍼토리",
-      "남성합창단 등대 창단 12주년 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
@@ -22368,11 +19602,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "클래디오 낭만주의 렉쳐콘서트: 로망스에서 우정의 암호까지 [대구] - 1부 클래식 정규 레퍼토리",
-      "클래디오 낭만주의 렉쳐콘서트: 로망스에서 우정의 암호까지 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%B5%EA%B0%84%EC%9A%B8%EB%A6%BC%EC%97%B0%EC%A3%BC%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22398,11 +19628,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -22428,11 +19654,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "손지수, 김효근을 노래하다 - 1부 클래식 정규 레퍼토리",
-      "손지수, 김효근을 노래하다 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22458,10 +19680,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "카운터테너 최성훈 리사이틀 Avec: The Baroque - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 110,000원, S석 88,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22487,11 +19706,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -22517,11 +19732,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "앵프라맹스 콘서트 열번째 시리즈, 마르셀 프루스트 콘서트 - 1부 클래식 정규 레퍼토리",
-      "앵프라맹스 콘서트 열번째 시리즈, 마르셀 프루스트 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -22547,11 +19758,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22577,11 +19784,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "포항국제음악제, 포커스 스테이지 Ⅰ. 이한나 & 박영성 - 1부 클래식 정규 레퍼토리",
-      "포항국제음악제, 포커스 스테이지 Ⅰ. 이한나 & 박영성 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%AC%ED%95%AD%EC%8B%9C%EC%B2%AD%20%EB%8C%80%EC%9E%A0%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22607,11 +19810,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제1201회 하우스콘서트, 제레드 레드몬드 - 1부 클래식 정규 레퍼토리",
-      "제1201회 하우스콘서트, 제레드 레드몬드 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EA%B0%80%EC%9D%98%20%EC%A7%91%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22637,11 +19836,7 @@ export const initialRealConcerts = [
     "composers": [
       "쇼팽"
     ],
-    "pieces": [
-      "쇼팽: 클래식 명작 소나타 및 모음곡",
-      "쇼팽: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%A0%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22667,11 +19862,7 @@ export const initialRealConcerts = [
     "composers": [
       "바흐"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -22697,11 +19888,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제37회 여음목관5중주 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제37회 여음목관5중주 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -22727,11 +19914,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "강초롱 플루트 독주회 - 1부 클래식 정규 레퍼토리",
-      "강초롱 플루트 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -22757,11 +19940,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "SAC ON SCREEN, 보컬 마스터 시리즈 Ⅲ. 베이스 바리톤 사무엘 윤 [화성] (영상화) - 1부 클래식 정규 레퍼토리",
-      "SAC ON SCREEN, 보컬 마스터 시리즈 Ⅲ. 베이스 바리톤 사무엘 윤 [화성] (영상화) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.hcf.or.kr",
     "status": "예매중",
@@ -22787,11 +19966,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -22817,11 +19992,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아침을 여는 클래식, 피아니스트 안종도 [대전] (11월) - 1부 클래식 정규 레퍼토리",
-      "아침을 여는 클래식, 피아니스트 안종도 [대전] (11월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -22847,11 +20018,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -22877,11 +20044,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제7회 블루밍 트리오 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제7회 블루밍 트리오 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -22907,11 +20070,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바리톤 고성현이 부르는 김연준 가곡 콘서트: 시인의 사랑과 생애 [대구] - 1부 클래식 정규 레퍼토리",
-      "바리톤 고성현이 부르는 김연준 가곡 콘서트: 시인의 사랑과 생애 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%96%B4%EC%9A%B8%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0(%EA%B5%AC.%20%EB%8C%80%EA%B5%AC%EB%B6%81%EA%B5%AC%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -22937,11 +20096,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "포항국제음악제, 아티스트 포항 Ⅱ. 문성우 - 1부 클래식 정규 레퍼토리",
-      "포항국제음악제, 아티스트 포항 Ⅱ. 문성우 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://phcf.or.kr",
     "status": "공연예정",
@@ -22967,11 +20122,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "울산시립합창단 기획연주회: 한국가곡 토크콘서트 - 1부 클래식 정규 레퍼토리",
-      "울산시립합창단 기획연주회: 한국가곡 토크콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ucac.ulsan.go.kr",
     "status": "공연예정",
@@ -22997,11 +20148,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23027,11 +20174,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "리트플레이 겨울나그네 렉처 콘서트 (베스티클럽) - 1부 클래식 정규 레퍼토리",
-      "리트플레이 겨울나그네 렉처 콘서트 (베스티클럽) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gdfac.or.kr",
     "status": "공연예정",
@@ -23057,11 +20200,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -23087,11 +20226,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -23117,11 +20252,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "공연예정",
@@ -23148,11 +20279,7 @@ export const initialRealConcerts = [
       "베토벤",
       "Beethoven"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -23178,11 +20305,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -23208,11 +20331,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Sac On Screen, 테오팀 랑글로아 드 스와르테 & 토마스 던포드 듀오 콘서트 [안성] (영상화) - 1부 클래식 정규 레퍼토리",
-      "Sac On Screen, 테오팀 랑글로아 드 스와르테 & 토마스 던포드 듀오 콘서트 [안성] (영상화) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%84%B1%EB%A7%9E%EC%B6%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23238,11 +20357,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "TANTO 앙상블, 가을의 플레이리스트: 경계를 넘어온 선율들 [부산 동래] - 1부 클래식 정규 레퍼토리",
-      "TANTO 앙상블, 가을의 플레이리스트: 경계를 넘어온 선율들 [부산 동래] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8F%99%EB%9E%98%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23268,11 +20383,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "마티네 콘서트, From Italy to Spain - 1부 클래식 정규 레퍼토리",
-      "마티네 콘서트, From Italy to Spain - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%95%EB%B6%81%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23298,11 +20409,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "마술피리 [화성] - 1부 클래식 정규 레퍼토리",
-      "마술피리 [화성] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.hcf.or.kr",
     "status": "공연예정",
@@ -23328,11 +20435,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "장애예술인 기획공연 Ⅱ. 아르크 음악축제 [천안] - 1부 클래식 정규 레퍼토리",
-      "장애예술인 기획공연 Ⅱ. 아르크 음악축제 [천안] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "공연예정",
@@ -23358,11 +20461,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gunsan.go.kr/arts",
     "status": "공연예정",
@@ -23388,11 +20487,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "규니브라더스의 4번째 리사이틀, 열정: 탱고와 재즈의 만남 - 1부 클래식 정규 레퍼토리",
-      "규니브라더스의 4번째 리사이틀, 열정: 탱고와 재즈의 만남 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -23418,11 +20513,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -23448,11 +20539,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "ACIx인천시향 공동기획, 조조 클래식 Ⅳ - 1부 클래식 정규 레퍼토리",
-      "ACIx인천시향 공동기획, 조조 클래식 Ⅳ - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -23478,11 +20565,7 @@ export const initialRealConcerts = [
     "composers": [
       "슈베르트"
     ],
-    "pieces": [
-      "슈베르트: 클래식 명작 소나타 및 모음곡",
-      "슈베르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -23508,11 +20591,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "KCO 트로이카콘서트 시리즈 36 - 1부 클래식 정규 레퍼토리",
-      "KCO 트로이카콘서트 시리즈 36 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%9C%EB%8D%B0%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23538,11 +20617,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9B%90%EC%A3%BC%EB%B0%B1%EC%9A%B4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23568,11 +20643,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "낙동아트센터 마티네 콘서트, 실내악시리즈 V. 남미의 향기, 매혹의 탱고 [부산] - 1부 클래식 정규 레퍼토리",
-      "낙동아트센터 마티네 콘서트, 실내악시리즈 V. 남미의 향기, 매혹의 탱고 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23598,11 +20669,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "오페라 인 시네마: 빛나는 영화, 감동의 오페라 [대전] - 1부 클래식 정규 레퍼토리",
-      "오페라 인 시네마: 빛나는 영화, 감동의 오페라 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%EB%B0%AD%EB%8C%80%ED%95%99%EA%B5%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23628,11 +20695,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "ONCE UPON A TIME CLASSIC: 미디어 아트와 클래식으로 만나는 지브리와 디즈니 명곡 [인천 계양] - 1부 클래식 정규 레퍼토리",
-      "ONCE UPON A TIME CLASSIC: 미디어 아트와 클래식으로 만나는 지브리와 디즈니 명곡 [인천 계양] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%84%EC%96%91%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23658,11 +20721,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "보이지 않는 불꽃, 살아있는 선율 [과천] - 1부 클래식 정규 레퍼토리",
-      "보이지 않는 불꽃, 살아있는 선율 [과천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%BC%EC%B2%9C%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23688,11 +20747,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 김정원과 함께 하는 가을 실내악 콘서트 [제천] - 1부 클래식 정규 레퍼토리",
-      "피아니스트 김정원과 함께 하는 가을 실내악 콘서트 [제천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.jecheon.go.kr/jcart",
     "status": "공연예정",
@@ -23718,11 +20773,7 @@ export const initialRealConcerts = [
     "composers": [
       "슈만"
     ],
-    "pieces": [
-      "슈만: 클래식 명작 소나타 및 모음곡",
-      "슈만: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -23748,11 +20799,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -23778,11 +20825,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -23808,11 +20851,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "재패니메이션 영화음악 콘서트: UNSTOPPABLE - 1부 클래식 정규 레퍼토리",
-      "재패니메이션 영화음악 콘서트: UNSTOPPABLE - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -23838,11 +20877,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아다지에토 실내악 시리즈, 브란덴부르크 협주곡 - 1부 클래식 정규 레퍼토리",
-      "아다지에토 실내악 시리즈, 브란덴부르크 협주곡 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -23868,11 +20903,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제6회 인천국제고음악제 Ⅲ. 브루누 지 사 X 코리안 바로크 소사이어티: Celestial Voices - 1부 클래식 정규 레퍼토리",
-      "제6회 인천국제고음악제 Ⅲ. 브루누 지 사 X 코리안 바로크 소사이어티: Celestial Voices - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -23898,11 +20929,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
@@ -23928,11 +20955,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -23958,11 +20981,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제17회 정주연 플루트 독주회 [부산] - 1부 클래식 정규 레퍼토리",
-      "제17회 정주연 플루트 독주회 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -23988,11 +21007,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "음악공방 피오레움, The Master: 이진현 - 1부 클래식 정규 레퍼토리",
-      "음악공방 피오레움, The Master: 이진현 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%94%BC%EC%98%A4%EB%A0%88%EC%95%84%ED%8A%B8%EC%95%A4%EC%97%94%ED%84%B0(%ED%94%BC%EC%98%A4%EB%A0%88%EC%9B%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -24018,11 +21033,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서리풀 서초9 시리즈 8, 소프라노 송강이 리사이틀 - 1부 클래식 정규 레퍼토리",
-      "서리풀 서초9 시리즈 8, 소프라노 송강이 리사이틀 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://seochocf.or.kr",
     "status": "공연예정",
@@ -24048,11 +21059,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -24078,11 +21085,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "인디애나대학교 동문 갈라 콘서트 - 1부 클래식 정규 레퍼토리",
-      "인디애나대학교 동문 갈라 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -24108,11 +21111,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제191회 한국독일가곡연구회 정기연주회: 연가곡 시리즈 Ⅳ - 1부 클래식 정규 레퍼토리",
-      "제191회 한국독일가곡연구회 정기연주회: 연가곡 시리즈 Ⅳ - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -24138,11 +21137,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -24168,11 +21163,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -24198,11 +21189,7 @@ export const initialRealConcerts = [
     "composers": [
       "드보르자크"
     ],
-    "pieces": [
-      "드보르자크: 클래식 명작 소나타 및 모음곡",
-      "드보르자크: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
@@ -24228,11 +21215,7 @@ export const initialRealConcerts = [
     "composers": [
       "베르디"
     ],
-    "pieces": [
-      "베르디: 클래식 명작 소나타 및 모음곡",
-      "베르디: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -24258,11 +21241,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "히사이시 조 영화음악 콘서트 파이널 [서울] - 1부 클래식 정규 레퍼토리",
-      "히사이시 조 영화음악 콘서트 파이널 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -24318,11 +21297,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "금호영아티스트콘서트, 테너 정강한 독창회 - 1부 클래식 정규 레퍼토리",
-      "금호영아티스트콘서트, 테너 정강한 독창회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -24348,11 +21323,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -24378,11 +21349,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "임형주와 함께하는 K팝페라 페스티벌 in 용산: K팝페라 갈라콘서트 - 1부 클래식 정규 레퍼토리",
-      "임형주와 함께하는 K팝페라 페스티벌 in 용산: K팝페라 갈라콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%A9%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -24408,11 +21375,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "NAC 렉처콘서트, 명견만리3. 나는 누구인가? - 1부 클래식 정규 레퍼토리",
-      "NAC 렉처콘서트, 명견만리3. 나는 누구인가? - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -24438,11 +21401,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "신카이 마코토 하이라이트 필름콘서트 [김천] - 1부 클래식 정규 레퍼토리",
-      "신카이 마코토 하이라이트 필름콘서트 [김천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%B2%9C%EC%8B%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -24468,11 +21427,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 원재연 x 김수연: 네 손을 위한 환상곡 [화성] - 1부 클래식 정규 레퍼토리",
-      "피아니스트 원재연 x 김수연: 네 손을 위한 환상곡 [화성] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%A8%EC%96%91%EC%84%B1%EB%AA%A8%EC%84%B1%EC%A7%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -24498,11 +21453,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "푸른 눈의 휴머니스트, 위트컴 장군 [부산] - 1부 클래식 정규 레퍼토리",
-      "푸른 눈의 휴머니스트, 위트컴 장군 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
@@ -24528,11 +21479,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "앞산 살롱 콘서트: 그리스 로마 신화, 클래식을 만나다 [대구] - 1부 클래식 정규 레퍼토리",
-      "앞산 살롱 콘서트: 그리스 로마 신화, 클래식을 만나다 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%8D%95%EB%AC%B8%ED%99%94%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -24558,11 +21505,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "GMC Chamber Series, 안용헌, 신동찬 - 1부 클래식 정규 레퍼토리",
-      "GMC Chamber Series, 안용헌, 신동찬 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "http://www.f1963.org",
     "status": "공연예정",
@@ -24588,11 +21531,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -24618,11 +21557,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유쾌한 오페라, 사랑의 묘약 [대구] - 1부 클래식 정규 레퍼토리",
-      "유쾌한 오페라, 사랑의 묘약 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%ED%95%99%EC%83%9D%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -24648,11 +21583,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.guroartsvalley.or.kr",
     "status": "공연예정",
@@ -24678,11 +21609,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "신카이마코토 공식 FILM & OST 하이라이트 필름 콘서트 [대구] - 1부 클래식 정규 레퍼토리",
-      "신카이마코토 공식 FILM & OST 하이라이트 필름 콘서트 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://daeguartscenter.or.kr",
     "status": "공연예정",
@@ -24708,10 +21635,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "성악가 고희전의 음악 토크콘서트: 인생은 칸타빌레 [안성] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "VIP석 50,000원, R석 30,000원, S석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%84%B1%EB%A7%9E%EC%B6%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -24738,11 +21662,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유송윤 귀국 플루트 독주회 - 1부 클래식 정규 레퍼토리",
-      "유송윤 귀국 플루트 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -24768,11 +21688,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "라 필하모니카 첫 내한공연 [서울] - 1부 클래식 정규 레퍼토리",
-      "라 필하모니카 첫 내한공연 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -24798,11 +21714,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -24828,11 +21740,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제12회 대전음악제 폐막 공연, 화합의 하모니: 하나되어 - 1부 클래식 정규 레퍼토리",
-      "제12회 대전음악제 폐막 공연, 화합의 하모니: 하나되어 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연예정",
@@ -24858,11 +21766,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 고연경의 해설이 있는 독주회: Key Words - 1부 클래식 정규 레퍼토리",
-      "피아니스트 고연경의 해설이 있는 독주회: Key Words - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -24888,11 +21792,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -24918,11 +21818,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
@@ -24949,11 +21845,7 @@ export const initialRealConcerts = [
       "바흐",
       "멘델스존"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -24979,11 +21871,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "재패니메이션 영화음악 콘서트: UNSTOPPABLE [광주 (앵콜) ] - 1부 클래식 정규 레퍼토리",
-      "재패니메이션 영화음악 콘서트: UNSTOPPABLE [광주 (앵콜) ] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://gjart.gwangju.go.kr",
     "status": "예매중",
@@ -25009,11 +21897,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -25039,11 +21923,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "탈리스 스콜라스: 시스티나의 영감 [인천] - 1부 클래식 정규 레퍼토리",
-      "탈리스 스콜라스: 시스티나의 영감 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -25069,11 +21949,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 스페셜 [대구] - 1부 클래식 정규 레퍼토리",
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 스페셜 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -25099,11 +21975,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "필름뮤직 콘서트: 영화음악 이야기 [부산] - 1부 클래식 정규 레퍼토리",
-      "필름뮤직 콘서트: 영화음악 이야기 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -25129,11 +22001,7 @@ export const initialRealConcerts = [
     "composers": [
       "브람스"
     ],
-    "pieces": [
-      "브람스: 클래식 명작 소나타 및 모음곡",
-      "브람스: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -25159,11 +22027,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -25189,11 +22053,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유민아 귀국 플루트 독주회 - 1부 클래식 정규 레퍼토리",
-      "유민아 귀국 플루트 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -25219,11 +22079,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "국립합창단 기획공연: 신진지휘자 초청연주회 - 1부 클래식 정규 레퍼토리",
-      "국립합창단 기획공연: 신진지휘자 초청연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -25249,11 +22105,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "레 벙 프랑세 내한공연 [세종] - 1부 클래식 정규 레퍼토리",
-      "레 벙 프랑세 내한공연 [세종] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
@@ -25279,11 +22131,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -25309,11 +22157,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -25339,11 +22183,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제27회 코리아합창페스티벌 - 1부 클래식 정규 레퍼토리",
-      "제27회 코리아합창페스티벌 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -25371,10 +22211,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "클래식 인터루드, 브런치 콘서트: 하프 듀오 [음성] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%8C%EC%84%B1%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -25400,11 +22237,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -25430,11 +22263,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "레 벙 프랑세 - 1부 클래식 정규 레퍼토리",
-      "레 벙 프랑세 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -25460,11 +22289,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -25490,11 +22315,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유문선 클라리넷 독주회 - 1부 클래식 정규 레퍼토리",
-      "유문선 클라리넷 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -25520,11 +22341,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "금지옥엽 [부산 해운대] - 1부 클래식 정규 레퍼토리",
-      "금지옥엽 [부산 해운대] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%B4%EC%9A%B4%EB%8C%80%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -25550,11 +22367,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.yicf.or.kr",
     "status": "공연예정",
@@ -25583,10 +22396,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쿠웅따 사안책 [세종] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "아기+보호자 1인 입장권 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -25612,11 +22422,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -25642,11 +22448,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한화생명과 함께하는 예술의전당 11시 콘서트 (11월) - 1부 클래식 정규 레퍼토리",
-      "한화생명과 함께하는 예술의전당 11시 콘서트 (11월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -25672,11 +22474,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울시향 한누 린투의 프로코피예프: 로미오와 줄리엣 - 1부 클래식 정규 레퍼토리",
-      "서울시향 한누 린투의 프로코피예프: 로미오와 줄리엣 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -25702,11 +22500,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "윤용진 바순 독주회 - 1부 클래식 정규 레퍼토리",
-      "윤용진 바순 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -25732,11 +22526,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "더 마스터즈: 소프라노 한경성 리사이틀 [대구] - 1부 클래식 정규 레퍼토리",
-      "더 마스터즈: 소프라노 한경성 리사이틀 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -25762,11 +22552,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아름다운 목요일 인터내셔널 마스터즈: 스티븐 허프 Piano - 1부 클래식 정규 레퍼토리",
-      "아름다운 목요일 인터내셔널 마스터즈: 스티븐 허프 Piano - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -25793,10 +22579,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "HELLO ORGAN 3. 길 위의 노래 [부산] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 30,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -25824,10 +22607,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "카메라타 필 앙상블 여성작곡가 시리즈 Ⅱ. Piano Trio: 나의 이름으로 [당진] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8B%B9%EC%A7%84%EB%AC%B8%EC%98%88%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -25853,11 +22633,7 @@ export const initialRealConcerts = [
     "composers": [
       "슈베르트"
     ],
-    "pieces": [
-      "슈베르트: 클래식 명작 소나타 및 모음곡",
-      "슈베르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
@@ -25883,11 +22659,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -25913,11 +22685,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%A9%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -25943,11 +22711,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "첼리스트 허정인 리사이틀 [부산] - 1부 클래식 정규 레퍼토리",
-      "첼리스트 허정인 리사이틀 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
@@ -25973,11 +22737,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서리풀 서초9 시리즈 9, 마태수난곡 하이라이트 - 1부 클래식 정규 레퍼토리",
-      "서리풀 서초9 시리즈 9, 마태수난곡 하이라이트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://seochocf.or.kr",
     "status": "공연예정",
@@ -26003,11 +22763,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "라 트라비아타 [함안] - 1부 클래식 정규 레퍼토리",
-      "라 트라비아타 [함안] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%95%A8%EC%95%88%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -26033,11 +22789,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "안드레아 쉐니에 [전주] - 1부 클래식 정규 레퍼토리",
-      "안드레아 쉐니에 [전주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sori21.co.kr",
     "status": "공연예정",
@@ -26063,11 +22815,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서가콘서트: 참을 수 없는 존재의 가벼움 [수원] - 1부 클래식 정규 레퍼토리",
-      "서가콘서트: 참을 수 없는 존재의 가벼움 [수원] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ggac.or.kr",
     "status": "공연예정",
@@ -26099,10 +22847,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "헬로!오페라, 마술피리 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 50,000원, S석 30,000원, 학생전석  10,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=GS%EC%B9%BC%ED%85%8D%EC%8A%A4%20%EC%98%88%EC%9A%B8%EB%A7%88%EB%A3%A8%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -26128,11 +22873,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 황예진의 환상속으로 - 1부 클래식 정규 레퍼토리",
-      "피아니스트 황예진의 환상속으로 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -26158,11 +22899,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -26188,11 +22925,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -26218,11 +22951,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -26248,11 +22977,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울시향 체임버 클래식스 Ⅵ: 대한민국 - 1부 클래식 정규 레퍼토리",
-      "서울시향 체임버 클래식스 Ⅵ: 대한민국 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
@@ -26278,11 +23003,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -26308,11 +23029,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "금호영아티스트콘서트, 황성원 타악기 독주회 - 1부 클래식 정규 레퍼토리",
-      "금호영아티스트콘서트, 황성원 타악기 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -26338,11 +23055,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "금호영재콘서트, 강태이 호른 독주회 - 1부 클래식 정규 레퍼토리",
-      "금호영재콘서트, 강태이 호른 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -26368,11 +23081,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울*라보엠 [고양] - 1부 클래식 정규 레퍼토리",
-      "서울*라보엠 [고양] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연예정",
@@ -26398,11 +23107,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제7회 이화라스텔라앙상블 정기연주회 - 1부 클래식 정규 레퍼토리",
-      "제7회 이화라스텔라앙상블 정기연주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연예정",
@@ -26428,11 +23133,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "과천시립소년소녀합창단 하모니시리즈4. AI와 친구찾기 대작전! [과천] - 1부 클래식 정규 레퍼토리",
-      "과천시립소년소녀합창단 하모니시리즈4. AI와 친구찾기 대작전! [과천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%BC%EC%B2%9C%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -26458,11 +23159,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "피아니스트 박재오의 슬라브, 11월의 잔향 - 1부 클래식 정규 레퍼토리",
-      "피아니스트 박재오의 슬라브, 11월의 잔향 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%AA%A8%EC%8A%A4%ED%81%AC%EB%B0%94%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -26488,11 +23185,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%96%91%EC%82%B0%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -26524,10 +23217,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "세상에서 가장 아름다운 오페라, 라보엠 [화성] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 40,000원, S석 30,000원, A석 20,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%99%94%EC%84%B1%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -26553,10 +23243,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "만토바 체임버 오케스트라 [부천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -26582,11 +23269,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -26612,11 +23295,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -26642,11 +23321,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "목관 앙상블과 함께하는 댄싱 클래식 콘서트 [인천] - 1부 클래식 정규 레퍼토리",
-      "목관 앙상블과 함께하는 댄싱 클래식 콘서트 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -26672,11 +23347,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -26702,11 +23373,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제6회 버디색소폰앙상블 정기연주회 [성남] - 1부 클래식 정규 레퍼토리",
-      "제6회 버디색소폰앙상블 정기연주회 [성남] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
@@ -26732,11 +23399,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://elimartcenter.co.kr",
     "status": "공연예정",
@@ -26762,11 +23425,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "현악본색 시즌 2, 현악본색 - 1부 클래식 정규 레퍼토리",
-      "현악본색 시즌 2, 현악본색 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -26793,11 +23452,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -26823,11 +23478,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제11회 부산솔로이스츠앙상블 정기연주회: Signature Concert XI. Reverie with 드미트리 로카렌코프 [부산] - 1부 클래식 정규 레퍼토리",
-      "제11회 부산솔로이스츠앙상블 정기연주회: Signature Concert XI. Reverie with 드미트리 로카렌코프 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -26853,11 +23504,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "키즈 콘서트Ⅳ, 클랩! 그림책 콘서트 (11.22) - 1부 클래식 정규 레퍼토리",
-      "키즈 콘서트Ⅳ, 클랩! 그림책 콘서트 (11.22) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gdfac.or.kr",
     "status": "공연예정",
@@ -26883,11 +23530,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%EC%A0%95%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -26913,11 +23556,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한화클래식: 르 포엠 아르모니크, 태양왕의 음악 [창원] - 1부 클래식 정규 레퍼토리",
-      "한화클래식: 르 포엠 아르모니크, 태양왕의 음악 [창원] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cwcf.or.kr",
     "status": "공연예정",
@@ -26943,11 +23582,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제10회 월드비전과 함께하는 THE GIFT - 1부 클래식 정규 레퍼토리",
-      "제10회 월드비전과 함께하는 THE GIFT - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -26973,11 +23608,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "멈춰진 시간: 고요 속 울림 (Tempus Stans: Resonantia in Silentio) - 1부 클래식 정규 레퍼토리",
-      "멈춰진 시간: 고요 속 울림 (Tempus Stans: Resonantia in Silentio) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -27003,11 +23634,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "현악본색 시즌 2, 이은빈 비올라 리사이틀 - 1부 클래식 정규 레퍼토리",
-      "현악본색 시즌 2, 이은빈 비올라 리사이틀 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%95%94%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -27034,10 +23661,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제1203회 하우스콘서트, 타악듀오 모아티에 - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 40,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EA%B0%80%EC%9D%98%20%EC%A7%91%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -27063,11 +23687,7 @@ export const initialRealConcerts = [
     "composers": [
       "슈만"
     ],
-    "pieces": [
-      "슈만: 클래식 명작 소나타 및 모음곡",
-      "슈만: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -27093,11 +23713,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -27123,11 +23739,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -27153,11 +23765,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한화클래식: 르 포엠 아르모니크, 태양왕의 음악 [거제] - 1부 클래식 정규 레퍼토리",
-      "한화클래식: 르 포엠 아르모니크, 태양왕의 음악 [거제] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B1%B0%EC%A0%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -27183,11 +23791,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -27213,11 +23817,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "구자범의 가을 콘서트 렉쳐 2. The Sound of Silence [안산] - 1부 클래식 정규 레퍼토리",
-      "구자범의 가을 콘서트 렉쳐 2. The Sound of Silence [안산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ansanart.com",
     "status": "예매중",
@@ -27243,11 +23843,7 @@ export const initialRealConcerts = [
     "composers": [
       "차이콥스키"
     ],
-    "pieces": [
-      "차이콥스키: 클래식 명작 소나타 및 모음곡",
-      "차이콥스키: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -27273,11 +23869,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -27303,11 +23895,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "해설이 있는 11시 콘서트, 호르니스트 김홍박 (11월) - 1부 클래식 정규 레퍼토리",
-      "해설이 있는 11시 콘서트, 호르니스트 김홍박 (11월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
@@ -27333,11 +23921,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Piano Quartet 43: Late Autumn Resonance - 1부 클래식 정규 레퍼토리",
-      "Piano Quartet 43: Late Autumn Resonance - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -27363,11 +23947,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "대구 비르투오조 챔버 아트 콘서트: 색채의 울림, 고흐 & 고갱 [대구] - 1부 클래식 정규 레퍼토리",
-      "대구 비르투오조 챔버 아트 콘서트: 색채의 울림, 고흐 & 고갱 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -27393,11 +23973,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "안성맞춤아트홀 문화가 있는 날: 아트-데이, 트리오 반더러 콘서트 (영상화) - 1부 클래식 정규 레퍼토리",
-      "안성맞춤아트홀 문화가 있는 날: 아트-데이, 트리오 반더러 콘서트 (영상화) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%84%B1%EB%A7%9E%EC%B6%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -27423,11 +23999,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "브릿지 클래식 2. Light: 빛의 선율 [춘천] - 1부 클래식 정규 레퍼토리",
-      "브릿지 클래식 2. Light: 빛의 선율 [춘천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cccf.or.kr",
     "status": "공연예정",
@@ -27453,11 +24025,7 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [
-      "모차르트: 클래식 명작 소나타 및 모음곡",
-      "모차르트: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%98%EB%B9%84%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -27483,11 +24051,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.yicf.or.kr",
     "status": "공연예정",
@@ -27513,11 +24077,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "ACC 브런치콘서트 플러스, 이서준 도슨트의 미술관으로 간 클래식: 프랑스 (11월) - 1부 클래식 정규 레퍼토리",
-      "ACC 브런치콘서트 플러스, 이서준 도슨트의 미술관으로 간 클래식: 프랑스 (11월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.acc.go.kr",
     "status": "공연예정",
@@ -27543,10 +24103,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "이천문화재단 마티네 콘서트: 음미, 기타리스트 드니 성호 [이천] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%B2%9C%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -27572,11 +24129,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -27602,11 +24155,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -27632,11 +24181,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한화클래식: 르 포엠 아르모니크, 태양왕의 음악 [서울] - 1부 클래식 정규 레퍼토리",
-      "한화클래식: 르 포엠 아르모니크, 태양왕의 음악 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -27662,11 +24207,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연예정",
@@ -27692,11 +24233,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아름다운 목요일 요하네스: 김재영 & 문태국 & 박재홍 - 1부 클래식 정규 레퍼토리",
-      "아름다운 목요일 요하네스: 김재영 & 문태국 & 박재홍 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -27722,11 +24259,7 @@ export const initialRealConcerts = [
     "composers": [
       "브람스"
     ],
-    "pieces": [
-      "브람스: 클래식 명작 소나타 및 모음곡",
-      "브람스: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%A0%84%EC%8B%9C%EB%A6%BD%EC%97%B0%EC%A0%95%EA%B5%AD%EC%95%85%EC%9B%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -27752,11 +24285,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ucac.ulsan.go.kr",
     "status": "공연예정",
@@ -27782,11 +24311,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ucac.ulsan.go.kr",
     "status": "공연예정",
@@ -27812,11 +24337,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "양방언 Evolution [인천] - 1부 클래식 정규 레퍼토리",
-      "양방언 Evolution [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.incheon.go.kr/art",
     "status": "공연예정",
@@ -27842,11 +24363,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%B4%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -27872,11 +24389,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -27902,11 +24415,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.uac.or.kr",
     "status": "공연예정",
@@ -27932,11 +24441,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "예매중",
@@ -27962,11 +24467,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "KT와 함께하는 예술의전당 마음을 담은 클래식 (11월) - 1부 클래식 정규 레퍼토리",
-      "KT와 함께하는 예술의전당 마음을 담은 클래식 (11월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -27992,11 +24493,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.hcf.or.kr",
     "status": "예매중",
@@ -28022,11 +24519,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "소프라노 변선아 독창회 - 1부 클래식 정규 레퍼토리",
-      "소프라노 변선아 독창회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -28052,11 +24545,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "오페라 스타파티, 돈죠반니의 초대 [평택] - 1부 클래식 정규 레퍼토리",
-      "오페라 스타파티, 돈죠반니의 초대 [평택] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%EC%8B%9C%EB%82%A8%EB%B6%80%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -28082,11 +24571,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gn.go.kr/gnart",
     "status": "공연예정",
@@ -28112,11 +24597,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gn.go.kr/gnart",
     "status": "공연예정",
@@ -28142,11 +24623,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "최나경의 재스민 페스티벌: 셀레브레이션!, 마크 앙드레 더블베이스 리사이틀: 데뷔 [대전] - 1부 클래식 정규 레퍼토리",
-      "최나경의 재스민 페스티벌: 셀레브레이션!, 마크 앙드레 더블베이스 리사이틀: 데뷔 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%9D%B8%ED%99%80(KIMIN%20HALL)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -28172,11 +24649,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연예정",
@@ -28202,11 +24675,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ansanart.com",
     "status": "예매중",
@@ -28232,11 +24701,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Classic Mode, 대니 구 Violin - 1부 클래식 정규 레퍼토리",
-      "Classic Mode, 대니 구 Violin - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -28262,11 +24727,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Pokémon The Orchestra - 1부 클래식 정규 레퍼토리",
-      "Pokémon The Orchestra - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=KBS%20%5B%EB%B3%B8%EA%B4%80%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -28292,11 +24753,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -28322,11 +24779,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "GMC Chamber Series, 금난새 & 페트로프 [부산] - 1부 클래식 정규 레퍼토리",
-      "GMC Chamber Series, 금난새 & 페트로프 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "http://www.f1963.org",
     "status": "공연예정",
@@ -28352,11 +24805,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "세종솔로이스츠 실내악 시리즈, 이스틴 데이비스와 김지연 그리고 신동훈 - 1부 클래식 정규 레퍼토리",
-      "세종솔로이스츠 실내악 시리즈, 이스틴 데이비스와 김지연 그리고 신동훈 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%86%8C%EB%AC%B8%EC%84%B1%EC%A7%80%20%EC%97%AD%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -28382,11 +24831,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "최나경의 재스민 페스티벌: 셀레브레이션!, 실내악 공연: Encounter 만남 [대전] - 1부 클래식 정규 레퍼토리",
-      "최나경의 재스민 페스티벌: 셀레브레이션!, 실내악 공연: Encounter 만남 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%9D%B8%ED%99%80(KIMIN%20HALL)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -28412,11 +24857,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
@@ -28442,11 +24883,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "심삼종 색소폰 독주회 - 1부 클래식 정규 레퍼토리",
-      "심삼종 색소폰 독주회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -28472,11 +24909,7 @@ export const initialRealConcerts = [
     "composers": [
       "Beethoven"
     ],
-    "pieces": [
-      "Beethoven: 클래식 명작 소나타 및 모음곡",
-      "Beethoven: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -28502,11 +24935,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "어쌔신 크리드 심포닉 콘서트: ASSASIN'S CREED SYMPHONIC ADVENTURE - 1부 클래식 정규 레퍼토리",
-      "어쌔신 크리드 심포닉 콘서트: ASSASIN'S CREED SYMPHONIC ADVENTURE - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -28532,11 +24961,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "최나경의 재스민 페스티벌: 셀레브레이션!, 피날레 갈라 콘서트: Celebration 축배 [대전] - 1부 클래식 정규 레퍼토리",
-      "최나경의 재스민 페스티벌: 셀레브레이션!, 피날레 갈라 콘서트: Celebration 축배 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%9D%B8%ED%99%80(KIMIN%20HALL)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -28562,11 +24987,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "송년 음악회, 환희: 그대 음성에 내 마음 열리고 - 1부 클래식 정규 레퍼토리",
-      "송년 음악회, 환희: 그대 음성에 내 마음 열리고 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -28592,11 +25013,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%A3%BC%EC%95%84%ED%8A%B8%20%EC%97%94%ED%84%B0%EB%AE%A4%EC%A7%81%202%ED%98%B8%EC%A0%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -28622,11 +25039,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제1204회 하우스콘서트, 함수연 (Piano) - 1부 클래식 정규 레퍼토리",
-      "제1204회 하우스콘서트, 함수연 (Piano) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EA%B0%80%EC%9D%98%20%EC%A7%91%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -28652,11 +25065,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "이수빈 하프 리사이틀 - 1부 클래식 정규 레퍼토리",
-      "이수빈 하프 리사이틀 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -28682,11 +25091,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "작곡가 정덕기의 예술가곡 발표회: 아버지, 어머니가 서 계시네 - 1부 클래식 정규 레퍼토리",
-      "작곡가 정덕기의 예술가곡 발표회: 아버지, 어머니가 서 계시네 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -28742,11 +25147,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "인공몽 [과천] - 1부 클래식 정규 레퍼토리",
-      "인공몽 [과천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%BC%EC%B2%9C%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -28772,11 +25173,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
@@ -28802,11 +25199,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ntok.go.kr",
     "status": "예매중",
@@ -28832,11 +25225,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "예매중",
@@ -28862,11 +25251,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "안동문화예술의전당 브런치콘서트, 시대별 클래식 시리즈 - 근현대사의 산책: 빛을 듣다, 색을 연주하다 (12월) - 1부 클래식 정규 레퍼토리",
-      "안동문화예술의전당 브런치콘서트, 시대별 클래식 시리즈 - 근현대사의 산책: 빛을 듣다, 색을 연주하다 (12월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "예매중",
@@ -28892,11 +25277,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "베이스 연광철, 겨울 나그네 [경남] - 1부 클래식 정규 레퍼토리",
-      "베이스 연광철, 겨울 나그네 [경남] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gnart.or.kr",
     "status": "예매중",
@@ -28922,11 +25303,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "성남아트센터 오후의 콘서트: Viva Italia! 오페라 갈라 콘서트 (12월) - 1부 클래식 정규 레퍼토리",
-      "성남아트센터 오후의 콘서트: Viva Italia! 오페라 갈라 콘서트 (12월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
@@ -28952,11 +25329,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "국립오페라단 정기공연, 돈 카를로스 - 1부 클래식 정규 레퍼토리",
-      "국립오페라단 정기공연, 돈 카를로스 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -28982,11 +25355,7 @@ export const initialRealConcerts = [
     "composers": [
       "멘델스존"
     ],
-    "pieces": [
-      "멘델스존: 클래식 명작 소나타 및 모음곡",
-      "멘델스존: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -29012,11 +25381,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "공연예정",
@@ -29042,11 +25407,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아름다운 목요일: 고요, 그 너머에: 조진주 Violin Solo - 1부 클래식 정규 레퍼토리",
-      "아름다운 목요일: 고요, 그 너머에: 조진주 Violin Solo - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -29072,11 +25433,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "미국 텍사스 주립대학교 오스틴 동문 음악회 - 1부 클래식 정규 레퍼토리",
-      "미국 텍사스 주립대학교 오스틴 동문 음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연예정",
@@ -29102,11 +25459,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "부산시립합창단 송년음악회: A Child of Our Time 우리 시대의 아이 - 1부 클래식 정규 레퍼토리",
-      "부산시립합창단 송년음악회: A Child of Our Time 우리 시대의 아이 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
@@ -29132,11 +25485,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "GS칼텍스 예울마루 브런치 콘서트, 찬란한 시작의 울림 [여수] - 1부 클래식 정규 레퍼토리",
-      "GS칼텍스 예울마루 브런치 콘서트, 찬란한 시작의 울림 [여수] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.yeulmaru.org",
     "status": "예매중",
@@ -29162,11 +25511,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -29192,11 +25537,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -29222,11 +25563,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "공연예정",
@@ -29252,11 +25589,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "리트 플레이, 겨울 나그네 - 1부 클래식 정규 레퍼토리",
-      "리트 플레이, 겨울 나그네 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gdfac.or.kr",
     "status": "공연예정",
@@ -29282,11 +25615,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "국립합창단, Cinema Classics [김해] - 1부 클래식 정규 레퍼토리",
-      "국립합창단, Cinema Classics [김해] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%B4%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -29314,11 +25643,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "조인혁 클라리넷 리사이틀 - 1부 클래식 정규 레퍼토리",
-      "조인혁 클라리넷 리사이틀 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -29344,11 +25669,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 지브리 & 디즈니 OST 콘서트 [세종] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 지브리 & 디즈니 OST 콘서트 [세종] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sjac.or.kr",
     "status": "공연예정",
@@ -29374,11 +25695,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [의정부 (앵콜) ] - 1부 클래식 정규 레퍼토리",
-      "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [의정부 (앵콜) ] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.uac.or.kr",
     "status": "예매중",
@@ -29404,11 +25721,7 @@ export const initialRealConcerts = [
     "composers": [
       "비발디"
     ],
-    "pieces": [
-      "비발디: 클래식 명작 소나타 및 모음곡",
-      "비발디: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -29434,11 +25747,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "헐리우드 인 블록버스터 [서울] - 1부 클래식 정규 레퍼토리",
-      "헐리우드 인 블록버스터 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -29464,11 +25773,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "공연예정",
@@ -29494,11 +25799,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "송년음악회 [군포] - 1부 클래식 정규 레퍼토리",
-      "송년음악회 [군포] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B5%B0%ED%8F%AC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -29524,11 +25825,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "윤아인 x 블라디미르 페트로프 듀오콘서트 - 1부 클래식 정규 레퍼토리",
-      "윤아인 x 블라디미르 페트로프 듀오콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.youngsanarthall.com",
     "status": "공연예정",
@@ -29554,11 +25851,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%88%9C%EC%B2%9C%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -29584,11 +25877,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서리풀 고음악 시리즈, 바로크 노엘 - 1부 클래식 정규 레퍼토리",
-      "서리풀 고음악 시리즈, 바로크 노엘 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://seochocf.or.kr",
     "status": "예매중",
@@ -29614,11 +25903,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리 영화음악 FESTA [부산] - 1부 클래식 정규 레퍼토리",
-      "지브리 영화음악 FESTA [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
@@ -29644,11 +25929,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "(재) 전주문화재단 전주한벽문화관 우수작품시리즈 Ⅴ. 카운터테너 이동규 [전주] - 1부 클래식 정규 레퍼토리",
-      "(재) 전주문화재단 전주한벽문화관 우수작품시리즈 Ⅴ. 카운터테너 이동규 [전주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A0%84%EC%A3%BC%ED%95%9C%EB%B2%BD%EB%AC%B8%ED%99%94%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -29674,11 +25955,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "수성키즈클래식, 별이 빛나는 클래식 콘서트 [대구] - 1부 클래식 정규 레퍼토리",
-      "수성키즈클래식, 별이 빛나는 클래식 콘서트 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "예매중",
@@ -29704,11 +25981,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "도슨트 이창용과 함께하는 아르츠 콘서트 시즌 2: 구스타프 클림트 - 1부 클래식 정규 레퍼토리",
-      "도슨트 이창용과 함께하는 아르츠 콘서트 시즌 2: 구스타프 클림트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -29734,11 +26007,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -29764,11 +26033,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "러브액츄얼리 인 콘서트 [서울] - 1부 클래식 정규 레퍼토리",
-      "러브액츄얼리 인 콘서트 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -29794,11 +26059,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리 & 디즈니 영화음악 FESTA [서울] - 1부 클래식 정규 레퍼토리",
-      "지브리 & 디즈니 영화음악 FESTA [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "공연예정",
@@ -29824,11 +26085,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 지브리 & 디즈니 OST 콘서트 [인천] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 지브리 & 디즈니 OST 콘서트 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연예정",
@@ -29854,11 +26111,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "NAC@해외초청기획, 라이너 호넥 & 윤홍천 첫 듀오 콘서트 [부산] - 1부 클래식 정규 레퍼토리",
-      "NAC@해외초청기획, 라이너 호넥 & 윤홍천 첫 듀오 콘서트 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%82%99%EB%8F%99%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -29884,11 +26137,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연예정",
@@ -29914,11 +26163,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
@@ -29944,11 +26189,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cccf.or.kr",
     "status": "예매중",
@@ -29974,11 +26215,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "예매중",
@@ -30004,11 +26241,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ggac.or.kr",
     "status": "예매중",
@@ -30034,11 +26267,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한국·벨기에 수교 125주년 기념음악회 - 1부 클래식 정규 레퍼토리",
-      "한국·벨기에 수교 125주년 기념음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -30064,11 +26293,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "클래식 온: 포핸즈 오딧세이 [대구] - 1부 클래식 정규 레퍼토리",
-      "클래식 온: 포핸즈 오딧세이 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -30094,11 +26319,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "렉처콘서트 조우, 제4장 라 보엠 - 1부 클래식 정규 레퍼토리",
-      "렉처콘서트 조우, 제4장 라 보엠 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -30124,11 +26345,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
@@ -30154,11 +26371,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ilshinhall.com",
     "status": "예매중",
@@ -30184,11 +26397,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "대구콘서트하우스 특별음악회: Ensemble Eins 현대음악 콘서트 - 1부 클래식 정규 레퍼토리",
-      "대구콘서트하우스 특별음악회: Ensemble Eins 현대음악 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
@@ -30214,11 +26423,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅵ - 1부 클래식 정규 레퍼토리",
-      "BAC 브런치: 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅵ - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -30244,11 +26449,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
@@ -30274,11 +26475,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%84%B1%EB%A7%9E%EC%B6%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -30304,11 +26501,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
@@ -30334,11 +26527,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한화생명과 함께하는 예술의전당 11시 콘서트 (12월) - 1부 클래식 정규 레퍼토리",
-      "한화생명과 함께하는 예술의전당 11시 콘서트 (12월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -30364,11 +26553,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "금호 위너스, 김현서 Violin - 1부 클래식 정규 레퍼토리",
-      "금호 위너스, 김현서 Violin - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -30394,11 +26579,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "경기필 마스터피스 시리즈 Ⅵ. 무소륵스키 전람회의 그림 [수원] - 1부 클래식 정규 레퍼토리",
-      "경기필 마스터피스 시리즈 Ⅵ. 무소륵스키 전람회의 그림 [수원] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ggac.or.kr",
     "status": "예매중",
@@ -30424,11 +26605,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "경기필 마스터피스 시리즈 Ⅵ. 무소륵스키 전람회의 그림 [서울] - 1부 클래식 정규 레퍼토리",
-      "경기필 마스터피스 시리즈 Ⅵ. 무소륵스키 전람회의 그림 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -30454,11 +26631,7 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [
-      "라흐마니노프: 클래식 명작 소나타 및 모음곡",
-      "라흐마니노프: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -30484,11 +26657,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "자양스테이션 살롱 오페라, 사랑의 묘약 - 1부 클래식 정규 레퍼토리",
-      "자양스테이션 살롱 오페라, 사랑의 묘약 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9E%90%EC%96%91%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%85%98(%ED%8C%8C%EB%A6%AC%EB%AE%A4%EC%A7%81%ED%8F%AC%EB%9F%BC)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -30514,11 +26683,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
@@ -30544,11 +26709,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "고음악 오디세이, 음악의 언어: 극장 (Theatrum) - 1부 클래식 정규 레퍼토리",
-      "고음악 오디세이, 음악의 언어: 극장 (Theatrum) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://seochocf.or.kr",
     "status": "예매중",
@@ -30574,11 +26735,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "대니 구의 윈터 콘서트: HOME [부천] - 1부 클래식 정규 레퍼토리",
-      "대니 구의 윈터 콘서트: HOME [부천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B3%B5%EC%82%AC%EA%B3%A8%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -30604,11 +26761,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://arts.iksan.go.kr",
     "status": "예매중",
@@ -30634,11 +26787,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "욘 스토르고르스 & BBC 필하모닉 (협연: 김봄소리) - 1부 클래식 정규 레퍼토리",
-      "욘 스토르고르스 & BBC 필하모닉 (협연: 김봄소리) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -30664,11 +26813,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울시오페라단, 오페라 갈라 - 1부 클래식 정규 레퍼토리",
-      "서울시오페라단, 오페라 갈라 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
@@ -30694,11 +26839,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "ACI 키즈 콘서트, 클랩 그림책 콘서트 Ⅴ. 겨울이 지나고 남는 것은? [인천] - 1부 클래식 정규 레퍼토리",
-      "ACI 키즈 콘서트, 클랩 그림책 콘서트 Ⅴ. 겨울이 지나고 남는 것은? [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -30724,11 +26865,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "Classic Mode: 홍진호 Cello - 1부 클래식 정규 레퍼토리",
-      "Classic Mode: 홍진호 Cello - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -30754,11 +26891,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "대니 구 윈터 콘서트: HOME [수원] - 1부 클래식 정규 레퍼토리",
-      "대니 구 윈터 콘서트: HOME [수원] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%88%98%EC%9B%90SK%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -30784,11 +26917,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "송년 오페라 갈라, 카르멘 VS 카르멘 [부산] - 1부 클래식 정규 레퍼토리",
-      "송년 오페라 갈라, 카르멘 VS 카르멘 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
@@ -30814,11 +26943,7 @@ export const initialRealConcerts = [
     "composers": [
       "쇼팽"
     ],
-    "pieces": [
-      "쇼팽: 클래식 명작 소나타 및 모음곡",
-      "쇼팽: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -30844,11 +26969,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "나 홀로 집에 인 콘서트 [서울] - 1부 클래식 정규 레퍼토리",
-      "나 홀로 집에 인 콘서트 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -30874,11 +26995,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 영화음악 & 캐롤 콘서트 [천안] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 영화음악 & 캐롤 콘서트 [천안] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
@@ -30904,11 +27021,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한스 짐머 영화음악 콘서트 [서울 종로] - 1부 클래식 정규 레퍼토리",
-      "한스 짐머 영화음악 콘서트 [서울 종로] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sejongpac.or.kr",
     "status": "예매중",
@@ -30934,11 +27047,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "파리나무 십자가 소년합창단 특별 초청공연 [수원] - 1부 클래식 정규 레퍼토리",
-      "파리나무 십자가 소년합창단 특별 초청공연 [수원] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%88%98%EC%9B%90SK%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -30964,11 +27073,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 영화음악 & 캐롤 FESTA [대구] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 영화음악 & 캐롤 FESTA [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "예매중",
@@ -30994,11 +27099,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 영화음악 & 캐롤 FESTA [부산] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 영화음악 & 캐롤 FESTA [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.busan.go.kr",
     "status": "예매중",
@@ -31024,11 +27125,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 영화음악 & 캐롤 콘서트 [수원] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 영화음악 & 캐롤 콘서트 [수원] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ggac.or.kr",
     "status": "예매중",
@@ -31054,11 +27151,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%AA%85%EB%8F%99%EB%8C%80%EC%84%B1%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -31084,11 +27177,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아티스트 시리즈 4, The Party - 1부 클래식 정규 레퍼토리",
-      "아티스트 시리즈 4, The Party - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EA%B0%80%EC%9D%98%20%EC%A7%91%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -31114,11 +27203,7 @@ export const initialRealConcerts = [
     "composers": [
       "헨델"
     ],
-    "pieces": [
-      "헨델: 클래식 명작 소나타 및 모음곡",
-      "헨델: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -31144,11 +27229,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유키 구라모토 콘서트: Peacefully [김해] - 1부 클래식 정규 레퍼토리",
-      "유키 구라모토 콘서트: Peacefully [김해] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%B4%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -31174,11 +27255,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제28회 앙상블오푸스 정기연주회: The Octet - 1부 클래식 정규 레퍼토리",
-      "제28회 앙상블오푸스 정기연주회: The Octet - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -31204,11 +27281,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "해설이 있는 11시 콘서트, 바이올리니스트 김동현 (12월) - 1부 클래식 정규 레퍼토리",
-      "해설이 있는 11시 콘서트, 바이올리니스트 김동현 (12월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "예매중",
@@ -31234,11 +27307,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "고잉홈프로젝트: The Rebels - 1부 클래식 정규 레퍼토리",
-      "고잉홈프로젝트: The Rebels - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -31264,11 +27333,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -31294,11 +27359,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "마티네 콘서트Ⅴ: 윈터 마티네 (Winter Matinee) 송영훈의 4 첼리스트 - 1부 클래식 정규 레퍼토리",
-      "마티네 콘서트Ⅴ: 윈터 마티네 (Winter Matinee) 송영훈의 4 첼리스트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gdfac.or.kr",
     "status": "공연예정",
@@ -31324,11 +27385,7 @@ export const initialRealConcerts = [
     "composers": [
       "Bach"
     ],
-    "pieces": [
-      "Bach: 클래식 명작 소나타 및 모음곡",
-      "Bach: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "공연예정",
@@ -31354,11 +27411,7 @@ export const initialRealConcerts = [
     "composers": [
       "헨델"
     ],
-    "pieces": [
-      "헨델: 클래식 명작 소나타 및 모음곡",
-      "헨델: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%84%B1%EB%A7%9E%EC%B6%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -31384,11 +27437,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유키 구라모토 콘서트: Peacefully [대구] - 1부 클래식 정규 레퍼토리",
-      "유키 구라모토 콘서트: Peacefully [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%B2%9C%EB%A7%88%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -31414,11 +27463,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "클래식 합창, 파리나무십자가 소년합창단 [울산] - 1부 클래식 정규 레퍼토리",
-      "클래식 합창, 파리나무십자가 소년합창단 [울산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=HD%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0(%EA%B5%AC%20%ED%98%84%EB%8C%80%EC%98%88%EC%88%A0%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -31444,11 +27489,7 @@ export const initialRealConcerts = [
     "composers": [
       "헨델"
     ],
-    "pieces": [
-      "헨델: 클래식 명작 소나타 및 모음곡",
-      "헨델: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
@@ -31474,11 +27515,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "유키 구라모토 콘서트: Peacefully [안동] - 1부 클래식 정규 레퍼토리",
-      "유키 구라모토 콘서트: Peacefully [안동] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.andong.go.kr/arts",
     "status": "예매중",
@@ -31504,11 +27541,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "한경아르떼필하모닉 송년음악회 - 1부 클래식 정규 레퍼토리",
-      "한경아르떼필하모닉 송년음악회 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -31534,11 +27567,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "공연예정",
@@ -31564,11 +27593,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 바이올린 파르티타 발췌",
-      "브람스: 바이올린 소나타 선율",
-      "생상스: 서주와 론도 카프리치오소"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -31594,11 +27619,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아름다운 목요일 금호솔로이스츠, 금호솔로이스츠: 선율의 항해 Ⅳ. 러시아, 영혼의 기록 - 1부 클래식 정규 레퍼토리",
-      "아름다운 목요일 금호솔로이스츠, 금호솔로이스츠: 선율의 항해 Ⅳ. 러시아, 영혼의 기록 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -31654,11 +27675,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "바흐: 무반주 첼로 모음곡 G장조 BWV 1007",
-      "슈만: 환상소곡집 Op.73",
-      "라흐마니노프: 첼로 소나타 G단조"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%B4%EB%AC%B8%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -31684,11 +27701,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "수성아트피아 마티네시리즈, 겨울나그네 (12월) - 1부 클래식 정규 레퍼토리",
-      "수성아트피아 마티네시리즈, 겨울나그네 (12월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.ssartpia.kr",
     "status": "예매중",
@@ -31714,11 +27727,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -31744,11 +27753,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -31774,11 +27779,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "프랑스 몽펠리에 국립오페라: 오페라 주니어 [부산] - 1부 클래식 정규 레퍼토리",
-      "프랑스 몽펠리에 국립오페라: 오페라 주니어 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
@@ -31804,11 +27805,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "아름다운 목요일 금호솔로이스츠: 선율의 항해 V. 독일, 위대한 시작 - 1부 클래식 정규 레퍼토리",
-      "아름다운 목요일 금호솔로이스츠: 선율의 항해 V. 독일, 위대한 시작 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -31834,11 +27831,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://ucac.ulsan.go.kr",
     "status": "예매중",
@@ -31864,11 +27857,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -31894,11 +27883,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -31924,11 +27909,7 @@ export const initialRealConcerts = [
     "composers": [
       "말러"
     ],
-    "pieces": [
-      "말러: 클래식 명작 소나타 및 모음곡",
-      "말러: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -31954,11 +27935,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "스테이지M 크리스마스 영화음악 & 캐롤 콘서트 [대구 중구] - 1부 클래식 정규 레퍼토리",
-      "스테이지M 크리스마스 영화음악 & 캐롤 콘서트 [대구 중구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daeguconcerthouse.or.kr",
     "status": "예매중",
@@ -31984,11 +27961,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "금호 위너스, 박성민 Bass - 1부 클래식 정규 레퍼토리",
-      "금호 위너스, 박성민 Bass - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.kumhoarthall.com",
     "status": "예매중",
@@ -32014,11 +27987,7 @@ export const initialRealConcerts = [
     "composers": [
       "헨델"
     ],
-    "pieces": [
-      "헨델: 클래식 명작 소나타 및 모음곡",
-      "헨델: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%88%98%EC%9B%90SK%EC%95%84%ED%8A%B8%EB%A6%AC%EC%9B%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -32044,11 +28013,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A7%84%ED%95%B4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -32074,11 +28039,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "BAC 특별기획: 파리나무십자가 소년합창단 [부천] - 1부 클래식 정규 레퍼토리",
-      "BAC 특별기획: 파리나무십자가 소년합창단 [부천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -32104,11 +28065,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "월간 연주자, 피아니스트 손세혁 (12월) - 1부 클래식 정규 레퍼토리",
-      "월간 연주자, 피아니스트 손세혁 (12월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%A4%EB%9F%AC%EB%A6%AC%20%EB%94%94%20%EC%95%84%EB%A5%B4%ED%85%8C%20%EC%B2%AD%EB%8B%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -32134,11 +28091,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "통영국제음악재단 기획공연, 크리스틴 정현 리 & 파비올라 김 듀오 리사이틀 [통영] - 1부 클래식 정규 레퍼토리",
-      "통영국제음악재단 기획공연, 크리스틴 정현 리 & 파비올라 김 듀오 리사이틀 [통영] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.timf.org",
     "status": "예매중",
@@ -32164,11 +28117,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "로데아트센터 개관 2주년 기념 FRIENDS 시리즈: 피피남 & Friends - 1부 클래식 정규 레퍼토리",
-      "로데아트센터 개관 2주년 기념 FRIENDS 시리즈: 피피남 & Friends - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%9C%EB%8D%B0%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -32194,11 +28143,7 @@ export const initialRealConcerts = [
     "composers": [
       "Bach"
     ],
-    "pieces": [
-      "Bach: 클래식 명작 소나타 및 모음곡",
-      "Bach: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
@@ -32224,11 +28169,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "키즈 마티네 콘서트: 빠라빠빰 신나는 브라스 콘서트 [김포] (12월) - 1부 클래식 정규 레퍼토리",
-      "키즈 마티네 콘서트: 빠라빠빰 신나는 브라스 콘서트 [김포] (12월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%8F%AC%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -32254,11 +28195,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "파리나무 십자가 소년 합창단 특별 초청 공연 [서울] - 1부 클래식 정규 레퍼토리",
-      "파리나무 십자가 소년 합창단 특별 초청 공연 [서울] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -32284,11 +28221,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 영화음악 & 캐롤 콘서트 [대전] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 영화음악 & 캐롤 콘서트 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -32314,11 +28247,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 영화음악 & 캐롤 FESTA [대전] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 영화음악 & 캐롤 FESTA [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -32344,11 +28273,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리가 건네는 크리스마스의 선물 [인천] - 1부 클래식 정규 레퍼토리",
-      "지브리가 건네는 크리스마스의 선물 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "공연예정",
@@ -32374,11 +28299,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "GAC 클래식 시리즈, 필하모닉스 내한공연 [서울 강동] - 1부 클래식 정규 레퍼토리",
-      "GAC 클래식 시리즈, 필하모닉스 내한공연 [서울 강동] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.gdfac.or.kr",
     "status": "공연예정",
@@ -32404,11 +28325,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "서울오페라클럽 오페라갈라 시리즈 4, 카발레리아 루스티카나 & 토스카 갈라 공연 - 1부 클래식 정규 레퍼토리",
-      "서울오페라클럽 오페라갈라 시리즈 4, 카발레리아 루스티카나 & 토스카 갈라 공연 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%95%84%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -32434,11 +28351,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "히사이시 조 영화음악 콘서트 [평택] - 1부 클래식 정규 레퍼토리",
-      "히사이시 조 영화음악 콘서트 [평택] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -32464,11 +28377,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "재패니메이션콘서트: 12월의선물 [대구] - 1부 클래식 정규 레퍼토리",
-      "재패니메이션콘서트: 12월의선물 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%84%EC%96%91%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -32494,11 +28403,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.timf.org",
     "status": "예매중",
@@ -32524,11 +28429,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 지브리 & 디즈니 OST 콘서트 - 1부 클래식 정규 레퍼토리",
-      "크리스마스 지브리 & 디즈니 OST 콘서트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -32554,11 +28455,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -32584,11 +28481,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "실험실 콘서트 [대전] - 1부 클래식 정규 레퍼토리",
-      "실험실 콘서트 [대전] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -32614,11 +28507,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "예매중",
@@ -32644,11 +28533,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "예매중",
@@ -32674,11 +28559,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "콘서트 오페라, 라보엠 (La Boheme) [인천] - 1부 클래식 정규 레퍼토리",
-      "콘서트 오페라, 라보엠 (La Boheme) [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -32704,11 +28585,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "파리나무십자가소년합창단 특별초청 공연 [성남] - 1부 클래식 정규 레퍼토리",
-      "파리나무십자가소년합창단 특별초청 공연 [성남] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.snart.or.kr",
     "status": "예매중",
@@ -32734,11 +28611,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리를 품은 클래식: 우리의 겨울은 따스했다 [대구] - 1부 클래식 정규 레퍼토리",
-      "지브리를 품은 클래식: 우리의 겨울은 따스했다 [대구] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B9%84%EC%9B%90%EB%AE%A4%EC%A7%81%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -32764,11 +28637,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 영화음악 & 캐롤 콘서트 [부천] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 영화음악 & 캐롤 콘서트 [부천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
@@ -32794,11 +28663,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -32824,11 +28689,7 @@ export const initialRealConcerts = [
     "composers": [
       "바흐"
     ],
-    "pieces": [
-      "바흐: 클래식 명작 소나타 및 모음곡",
-      "바흐: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -32854,11 +28715,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "MAC 모닝 콘서트 #10 - 1부 클래식 정규 레퍼토리",
-      "MAC 모닝 콘서트 #10 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.mfac.or.kr",
     "status": "예매중",
@@ -32884,11 +28741,7 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [
-      "베토벤: 클래식 명작 소나타 및 모음곡",
-      "베토벤: 대표 레퍼토리 오케스트라/실내악 선율",
-      "당일 무대 앙코르 특별 프로그램"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "예매중",
@@ -32914,11 +28767,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -32944,11 +28793,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "스테이지엠 크리스마스 영화음악 & 캐롤 콘서트 [경주] - 1부 클래식 정규 레퍼토리",
-      "스테이지엠 크리스마스 영화음악 & 캐롤 콘서트 [경주] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://garts.kr",
     "status": "공연예정",
@@ -32974,11 +28819,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "HAC Choice, 크리스마스 이브 콘서트: Winter Serenade [화성] - 1부 클래식 정규 레퍼토리",
-      "HAC Choice, 크리스마스 이브 콘서트: Winter Serenade [화성] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.hcf.or.kr",
     "status": "예매중",
@@ -33004,11 +28845,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "대니 구 크리스마스 콘서트: HOME [서울 송파] - 1부 클래식 정규 레퍼토리",
-      "대니 구 크리스마스 콘서트: HOME [서울 송파] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -33034,11 +28871,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "팝페라테너 임형주 초청 독창회: Christmas in Love - 1부 클래식 정규 레퍼토리",
-      "팝페라테너 임형주 초청 독창회: Christmas in Love - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.artgy.or.kr",
     "status": "공연예정",
@@ -33064,11 +28897,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "나의 아저씨가 들려주는 크리스마스의 선율 [인천] - 1부 클래식 정규 레퍼토리",
-      "나의 아저씨가 들려주는 크리스마스의 선율 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.incheon.go.kr/art",
     "status": "공연예정",
@@ -33094,11 +28923,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 영화음악 & 캐롤 FESTA [부천] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 영화음악 & 캐롤 FESTA [부천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%B2%9C%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "예매중",
@@ -33124,11 +28949,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "더 크리스마스: 송영훈의 4첼리스트 - 1부 클래식 정규 레퍼토리",
-      "더 크리스마스: 송영훈의 4첼리스트 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -33154,11 +28975,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 콘서트: 유키 구라모토와 친구들 - 1부 클래식 정규 레퍼토리",
-      "크리스마스 콘서트: 유키 구라모토와 친구들 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.lotteconcerthall.com",
     "status": "공연예정",
@@ -33184,11 +29001,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 영화음악 & 캐롤 콘서트 [인천] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 영화음악 & 캐롤 콘서트 [인천] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.aci.or.kr",
     "status": "예매중",
@@ -33214,11 +29027,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.yeulmaru.org",
     "status": "공연예정",
@@ -33244,11 +29053,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스마스 콘서트: 유키 구라모토와 친구들 [용인] - 1부 클래식 정규 레퍼토리",
-      "크리스마스 콘서트: 유키 구라모토와 친구들 [용인] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.yicf.or.kr",
     "status": "공연예정",
@@ -33274,11 +29079,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.incheon.go.kr/art",
     "status": "공연예정",
@@ -33304,11 +29105,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "월간듀오, 바이올리니스트 박정현 & 비올리스트 권오현 (12월) - 1부 클래식 정규 레퍼토리",
-      "월간듀오, 바이올리니스트 박정현 & 비올리스트 권오현 (12월) - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%A4%EB%9F%AC%EB%A6%AC%20%EB%94%94%20%EC%95%84%EB%A5%B4%ED%85%8C%20%EC%B2%AD%EB%8B%B4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -33334,11 +29131,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "쇼팽: 야상곡(녹턴) 및 발라드 선곡",
-      "베토벤: 피아노 소나타 걸작선",
-      "드뷔시: 달빛 및 영상(Images) 모음곡"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bac.or.kr",
     "status": "공연예정",
@@ -33364,11 +29157,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "모차르트: 피가로의 결혼 서곡 K.492",
-      "차이콥스키: 교향곡 제5번 E단조 Op.64",
-      "오케스트라 협주곡 앙상블"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.daejeon.go.kr/djac",
     "status": "공연예정",
@@ -33394,11 +29183,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "크리스틴 정현 리 & 파비올라 김 듀오 리사이틀 - 1부 클래식 정규 레퍼토리",
-      "크리스틴 정현 리 & 파비올라 김 듀오 리사이틀 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
@@ -33424,11 +29209,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "천안예술의전당 송년음악회: FROM MOZART TO BEETHOVEN [천안] - 1부 클래식 정규 레퍼토리",
-      "천안예술의전당 송년음악회: FROM MOZART TO BEETHOVEN [천안] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.cnac.or.kr",
     "status": "공연예정",
@@ -33454,11 +29235,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "인디 스티빈 더블베이스 리사이틀: 인디 스티빈 & 예우니아 신포니에타 - 1부 클래식 정규 레퍼토리",
-      "인디 스티빈 더블베이스 리사이틀: 인디 스티빈 & 예우니아 신포니에타 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%9C%EB%8D%B0%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -33484,11 +29261,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "함신익과 심포니 송 마스터즈 시리즈 Ⅷ, 송년음악회: 합창교향곡 - 1부 클래식 정규 레퍼토리",
-      "함신익과 심포니 송 마스터즈 시리즈 Ⅷ, 송년음악회: 합창교향곡 - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.sac.or.kr",
     "status": "예매중",
@@ -33514,11 +29287,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "제야음악회 [부산] - 1부 클래식 정규 레퍼토리",
-      "제야음악회 [부산] - 2부 실내악 & 협주곡 하모니",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://www.bscc.or.kr",
     "status": "예매중",
@@ -33545,10 +29314,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리 & 디즈니 영화음악 FESTA [서울] (01.02) - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해S  60,000원, 시야방해A  50,000원, 시야방해B  40,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%AF%EB%8D%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -33606,10 +29372,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "손세혁 피아노 독주회 [대구] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "전석 40,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EC%BD%98%EC%84%9C%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -33635,10 +29398,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리 & 디즈니 영화음악 FESTA [대전] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 100,000원, S석 80,000원, A석 60,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%A0%84%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -33697,10 +29457,7 @@ export const initialRealConcerts = [
       "Joe Hisaishi",
       "John Williams"
     ],
-    "pieces": [
-      "재패니메이션 영화음악 콘서트: UNSTOPPABLE [청주] - 정규 연주 레퍼토리",
-      "앙코르 무대"
-    ],
+    "pieces": [],
     "price": "R석 100,000원, S석 80,000원, A석 60,000원",
     "ticketUrl": "http://www.kopis.or.kr",
     "status": "공연예정",
@@ -33757,10 +29514,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [대구] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 100,000원, S석 80,000원, A석 60,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EC%BD%98%EC%84%9C%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -33820,10 +29574,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "헐리우드 블록버스터 & 디즈니 픽사 영화음악 FESTA [서울] - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해S  60,000원, 시야방해A  50,000원, 시야방해B  40,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%AF%EB%8D%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -33880,10 +29631,7 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [
-      "지브리&디즈니 영화음악 FESTA [서울] (03.21) - 정규 클래식 레퍼토리",
-      "앙코르 특별 무대"
-    ],
+    "pieces": [],
     "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해 S석 60,000원, 시야방해 A석 50,000원, 시야방해 B석 40,000원",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%AF%EB%8D%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",

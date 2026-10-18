@@ -138,7 +138,7 @@ async function run() {
         performers: performers,
         performerType: title.includes('오케스트라') || title.includes('교향악단') ? '오케스트라' : '실내악',
         composers: ['클래식 명작'],
-        pieces: [`${title} - 정규 클래식 레퍼토리`, '앙코르 특별 무대'],
+        pieces: [],
         price: price || '공식 예매처 참조',
         ticketUrl: 'https://www.bac.or.kr',
         status: status,

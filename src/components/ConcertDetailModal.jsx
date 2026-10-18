@@ -176,19 +176,25 @@ export default function ConcertDetailModal({ concert, onClose, onOpenReview, rel
             </h3>
 
             <div className="space-y-2">
-              {concert.pieces.map((piece, idx) => (
-                <div
-                  key={idx}
-                  className="p-3 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 flex items-start gap-3"
-                >
-                  <span className="w-5 h-5 rounded-full bg-concert-100 dark:bg-hall-700 text-concert-700 dark:text-concert-300 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
-                    {idx + 1}
-                  </span>
-                  <div className="text-xs sm:text-sm font-serif font-medium text-stone-800 dark:text-stone-200 leading-relaxed">
-                    {piece}
+              {concert.pieces && concert.pieces.length > 0 ? (
+                concert.pieces.map((piece, idx) => (
+                  <div
+                    key={idx}
+                    className="p-3 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 flex items-start gap-3"
+                  >
+                    <span className="w-5 h-5 rounded-full bg-concert-100 dark:bg-hall-700 text-concert-700 dark:text-concert-300 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                      {idx + 1}
+                    </span>
+                    <div className="text-xs sm:text-sm font-serif font-medium text-stone-800 dark:text-stone-200 leading-relaxed">
+                      {piece}
+                    </div>
                   </div>
+                ))
+              ) : (
+                <div className="p-4 rounded-xl bg-stone-50 dark:bg-hall-850 border border-dashed border-stone-200 dark:border-hall-800 text-center text-xs text-stone-500 dark:text-stone-400 font-serif">
+                  공식 전산망에 등록된 상세 연주곡 정보가 없습니다. 공연장 공식 예매처 안내를 확인해주세요.
                 </div>
-              ))}
+              )}
             </div>
           </div>
 

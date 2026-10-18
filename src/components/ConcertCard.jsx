@@ -149,9 +149,15 @@ export default function ConcertCard({ concert, onSelect }) {
           <div className="mt-3 pt-3 border-t border-stone-100 dark:border-hall-800">
             <div className="flex items-start gap-1.5 text-xs text-stone-600 dark:text-stone-400">
               <Music2 className="w-3.5 h-3.5 text-concert-500 shrink-0 mt-0.5" />
-              <p className="line-clamp-2 font-serif text-[11.5px] leading-relaxed">
-                {concert.pieces[0]} {concert.pieces.length > 1 && `외 ${concert.pieces.length - 1}곡`}
-              </p>
+              {concert.pieces && concert.pieces.length > 0 ? (
+                <p className="line-clamp-2 font-serif text-[11.5px] leading-relaxed">
+                  {concert.pieces[0]} {concert.pieces.length > 1 && `외 ${concert.pieces.length - 1}곡`}
+                </p>
+              ) : (
+                <p className="line-clamp-1 font-serif text-[11px] leading-relaxed text-stone-400 dark:text-stone-500">
+                  상세 프로그램은 공식 예매처 안내 참조
+                </p>
+              )}
             </div>
           </div>
         </div>
