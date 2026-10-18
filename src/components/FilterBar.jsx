@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Search, RotateCcw, LayoutGrid, List, CalendarDays, Filter } from 'lucide-react';
+import { analyticsService } from '../services/analyticsService.js';
 
 export default function FilterBar({
   filters,
@@ -126,7 +127,11 @@ export default function FilterBar({
   // 검색 실행 핸들러 (검색 버튼 클릭 또는 엔터 키)
   const handleSearchSubmit = (e) => {
     if (e) e.preventDefault();
-    setFilters((prev) => ({ ...prev, search: localSearch.trim() }));
+    const query = localSearch.trim();
+    setFilters((prev) => ({ ...prev, search: query }));
+    if (query) {
+      analyticsService.trackSearch(query, filters);
+    }
   };
 
   const handleReset = () => {

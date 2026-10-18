@@ -17,10 +17,14 @@ import {
   X,
   UserX,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  BarChart3,
+  ExternalLink,
+  Activity
 } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser.js';
 import { kopisCrawlerService } from '../services/kopisCrawlerService.js';
+import { analyticsService } from '../services/analyticsService.js';
 
 export default function AdminCenter({
   concerts = [],
@@ -52,6 +56,39 @@ export default function AdminCenter({
   const [expandedPostId, setExpandedPostId] = useState(null);
   const [manualBlockIp, setManualBlockIp] = useState('');
   const [manualBlockReason, setManualBlockReason] = useState('');
+
+  // 구글 애널리틱스 4 (GA4) 연동 상태
+  const [gaMeasurementId, setGaMeasurementId] = useState(() => analyticsService.getMeasurementId() || '');
+  const [gaFeedback, setGaFeedback] = useState(null);
+
+  const handleSaveGaId = (e) => {
+    e.preventDefault();
+    const cleanId = gaMeasurementId.trim().toUpperCase();
+    if (cleanId && !cleanId.startsWith('G-')) {
+      setGaFeedback({ type: 'error', message: '측정 ID는 반드시 "G-"로 시작해야 합니다. (예: G-XXXXXXXXXX)' });
+      return;
+    }
+    analyticsService.setMeasurementId(cleanId);
+    setGaFeedback({
+      type: 'success',
+      message: cleanId ? `GA4 측정 ID (${cleanId})가 성공적으로 저장 및 즉시 활성화되었습니다!` : '측정 ID가 초기화되었습니다.'
+    });
+  };
+
+  const handleSendTestEvent = () => {
+    if (!analyticsService.isConfigured()) {
+      setGaFeedback({ type: 'error', message: '측정 ID를 먼저 입력하고 저장한 후 테스트를 진행해주세요.' });
+      return;
+    }
+    analyticsService.trackEvent('admin_verification_test', {
+      timestamp: new Date().toISOString(),
+      test_note: '관리자 센터 GA4 실시간 연동 정상 테스트'
+    });
+    setGaFeedback({
+      type: 'success',
+      message: '테스트 이벤트(admin_verification_test)가 전송되었습니다! 구글 애널리틱스 [실시간] 메뉴에서 확인하실 수 있습니다.'
+    });
+  };
 
   const handleSyncKopis = async () => {
     setIsSyncingKopis(true);
@@ -751,6 +788,116 @@ export default function AdminCenter({
             </table>
           </div>
         )}
+      </div>
+
+      {/* Google Analytics 4 (GA4) Analytics & Statistics Section (방문자 통계 연동 관리) */}
+      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-5">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="flex items-center gap-2.5">
+            <div className="w-9 h-9 rounded-xl bg-amber-50 dark:bg-amber-950/60 border border-amber-200/60 dark:border-amber-800/60 flex items-center justify-center text-amber-600 dark:text-amber-400 shrink-0">
+              <BarChart3 className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100">
+                  사이트 방문자 분석 및 통계 관리 (Google Analytics 4)
+                </h3>
+                {analyticsService.isConfigured() ? (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    실시간 통계 수집 중
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800">
+                    측정 식별 번호 설정 대기 중
+                  </span>
+                )}
+              </div>
+              <p className="text-xs text-stone-500 dark:text-stone-400 mt-0.5 font-medium">
+                일간/월간 방문객 수, 인기 공연 조회 순위, 검색 키워드 분석을 구글 공식 통계 센터와 실시간 연동합니다.
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="https://analytics.google.com/analytics/web/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-750 text-stone-800 dark:text-stone-200 text-xs font-semibold transition-all shrink-0 border border-stone-200 dark:border-hall-700 self-start sm:self-center"
+          >
+            <span>구글 통계 센터 바로가기</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
+        {/* Input & Form */}
+        <form onSubmit={handleSaveGaId} className="space-y-3 pt-2 border-t border-stone-100 dark:border-hall-800">
+          <div className="flex flex-col sm:flex-row gap-2.5">
+            <div className="flex-1">
+              <label htmlFor="ga-measurement-id" className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                구글 애널리틱스 측정 식별 번호 (Measurement ID)
+              </label>
+              <input
+                id="ga-measurement-id"
+                type="text"
+                value={gaMeasurementId}
+                onChange={(e) => setGaMeasurementId(e.target.value)}
+                placeholder="예: G-XXXXXXXXXX"
+                className="w-full px-4 py-2.5 rounded-xl border border-stone-300 dark:border-hall-700 bg-white dark:bg-hall-800 text-stone-900 dark:text-stone-100 text-xs focus:ring-2 focus:ring-concert-500 focus:outline-none font-mono"
+              />
+            </div>
+            <div className="flex items-end gap-2">
+              <button
+                type="submit"
+                className="px-5 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-xs shrink-0"
+              >
+                저장 및 즉시 활성화
+              </button>
+              <button
+                type="button"
+                onClick={handleSendTestEvent}
+                className="px-4 py-2.5 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-750 text-stone-700 dark:text-stone-300 text-xs font-semibold transition-all shrink-0 border border-stone-200 dark:border-hall-700 flex items-center gap-1.5"
+                title="통계 연동이 정상 작동하는지 테스트 신호를 전송합니다"
+              >
+                <Activity className="w-3.5 h-3.5 text-concert-500" />
+                <span>연동 테스트</span>
+              </button>
+            </div>
+          </div>
+
+          {gaFeedback && (
+            <div
+              className={`p-3 rounded-xl text-xs font-medium ${
+                gaFeedback.type === 'success'
+                  ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-200 border border-emerald-200 dark:border-emerald-800'
+                  : 'bg-red-50 dark:bg-red-950/60 text-red-800 dark:text-red-200 border border-red-200 dark:border-red-800'
+              }`}
+            >
+              {gaFeedback.message}
+            </div>
+          )}
+        </form>
+
+        {/* 3-Step Setup Guide */}
+        <div className="p-4 rounded-xl bg-stone-50/80 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 text-xs space-y-2">
+          <span className="font-bold text-stone-800 dark:text-stone-200 block">
+            📌 1분 만에 끝내는 구글 애널리틱스 연동 순서:
+          </span>
+          <ol className="list-decimal list-inside space-y-1 text-stone-600 dark:text-stone-400 leading-relaxed">
+            <li>
+              <a href="https://analytics.google.com" target="_blank" rel="noopener noreferrer" className="text-concert-600 dark:text-concert-400 font-bold underline">
+                구글 애널리틱스(무료)
+              </a>
+              에 접속하여 구글 계정으로 로그인합니다.
+            </li>
+            <li>
+              좌측 하단 <strong>[관리] → [데이터 스트림] → [웹]</strong>을 누르고 본 서비스의 홈페이지 주소를 입력합니다.
+            </li>
+            <li>
+              화면에 나타나는 <strong>'G-'로 시작하는 측정 식별 번호</strong>를 복사하여 위 입력창에 붙여넣고 <strong>[저장 및 즉시 활성화]</strong>를 누르면 즉시 통계가 집계됩니다.
+            </li>
+          </ol>
+        </div>
       </div>
 
       {/* Manual Registration Modal (Admin Only) */}

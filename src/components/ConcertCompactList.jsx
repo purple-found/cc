@@ -2,6 +2,7 @@ import React from 'react';
 import { Calendar, MapPin, ExternalLink, ChevronRight } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
+import { analyticsService } from '../services/analyticsService.js';
 
 export default function ConcertCompactList({ concerts = [], onSelectConcert }) {
   if (concerts.length === 0) {
@@ -86,6 +87,7 @@ export default function ConcertCompactList({ concerts = [], onSelectConcert }) {
                   href={getVenueOfficialUrl(concert)}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => analyticsService.trackTicketClick(concert, getVenueOfficialUrl(concert))}
                   className="px-3 py-1.5 rounded-lg bg-concert-500 hover:bg-concert-600 text-white text-xs font-semibold transition-colors flex items-center gap-1 shadow-xs"
                   title="공식 예매처 바로가기"
                 >

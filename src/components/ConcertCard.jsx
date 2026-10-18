@@ -2,6 +2,7 @@ import React from 'react';
 import { Calendar, MapPin, User, Music2, ExternalLink, Info, CheckCircle2, ShieldAlert, Sparkles, Clock, Flame } from 'lucide-react';
 import { formatKoreanDate, getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
+import { analyticsService } from '../services/analyticsService.js';
 
 export default function ConcertCard({ concert, onSelect }) {
   const isBlocked = concert.crawlerBlocked;
@@ -169,6 +170,7 @@ export default function ConcertCard({ concert, onSelect }) {
             href={getVenueOfficialUrl(concert)}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => analyticsService.trackTicketClick(concert, getVenueOfficialUrl(concert))}
             className="py-2.5 px-3.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-semibold transition-colors shrink-0 flex items-center gap-1.5 shadow-sm shadow-concert-500/20"
             title="공연장 공식 홈페이지 / 예매처 바로가기"
           >

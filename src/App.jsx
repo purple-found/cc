@@ -19,6 +19,7 @@ import { kopisCrawlerService } from './services/kopisCrawlerService.js';
 import { isPastConcert, formatKSTDateTime } from './utils/parser.js';
 import { matchesBilingualConcert, prewarmSearchIndex } from './utils/bilingualSearch.js';
 import { matchesVenueFilter } from './utils/venueMatcher.js';
+import { analyticsService } from './services/analyticsService.js';
 import { Sparkles, Calendar, MessageSquare, AlertCircle } from 'lucide-react';
 
 export default function App() {
@@ -111,6 +112,8 @@ export default function App() {
   };
 
   useEffect(() => {
+    // GA4 방문자 분석 서비스 초기화
+    analyticsService.init();
     loadData();
 
     // 매일 새벽 3시 / 오후 3시 (15:00) KOPIS 및 공식망 자동 모니터링 배치 타이머 등록
@@ -122,6 +125,16 @@ export default function App() {
     return () => clearInterval(timerId);
   }, []);
 
+  // 탭 변경 시 GA4 가상 페이지뷰 추적
+  useEffect(() => {
+    const tabTitles = {
+      concerts: '클래식 공연 탐색 | 오푸스 코리아',
+      community: '클래식 커뮤니티 | 오푸스 코리아',
+      admin: '관리자 센터 | 오푸스 코리아'
+    };
+    analyticsService.trackPageView(`/${activeTab}`, tabTitles[activeTab] || '오푸스 코리아');
+  }, [activeTab]);
+
   // 토스트 도우미
   const showToast = (message, type = 'success') => {
     setToast({ message, type });
@@ -131,6 +144,7 @@ export default function App() {
   const handleSubmitTip = (tipData) => {
     const updatedTips = storageService.addTip(tipData);
     setTips(updatedTips);
+    analyticsService.trackTipSubmit(tipData);
     showToast('소중한 공연 제보가 관리자에게 전달되었습니다. 검토 후 공식 일정으로 등록됩니다.');
   };
 
@@ -181,7 +195,16 @@ export default function App() {
   const handleAddPost = (newPost) => {
     const updated = storageService.addPost(newPost);
     setPosts(updated);
+    analyticsService.trackCommunityPost(newPost.category, newPost.title);
     showToast('소중한 이야기가 등록되었습니다.');
+  };
+
+  // 공연 선택 및 GA4 조회 추적 핸들러
+  const handleSelectConcert = (concert) => {
+    setSelectedConcert(concert);
+    if (concert) {
+      analyticsService.trackSelectConcert(concert);
+    }
   };
 
   const handleAddComment = (postId, comment) => {
@@ -406,7 +429,7 @@ export default function App() {
                     <ConcertCard
                       key={concert.id}
                       concert={concert}
-                      onSelect={(c) => setSelectedConcert(c)}
+                      onSelect={handleSelectConcert}
                     />
                   ))}
                 </div>
@@ -414,12 +437,12 @@ export default function App() {
             ) : viewMode === 'compact' ? (
               <ConcertCompactList
                 concerts={filteredConcerts}
-                onSelectConcert={(c) => setSelectedConcert(c)}
+                onSelectConcert={handleSelectConcert}
               />
             ) : (
               <ConcertCalendar
                 concerts={filteredConcerts}
-                onSelectConcert={(c) => setSelectedConcert(c)}
+                onSelectConcert={handleSelectConcert}
               />
             )}
           </section>
