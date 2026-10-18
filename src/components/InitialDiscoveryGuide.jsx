@@ -42,9 +42,6 @@ export default function InitialDiscoveryGuide({
         <h2 className="font-serif font-black text-xl sm:text-2xl text-stone-900 dark:text-stone-100 tracking-tight">
           원하시는 공연을 검색하거나 조건을 선택해보세요
         </h2>
-        <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 leading-relaxed break-keep">
-          상단 검색창에 검색어를 입력하거나 공연장·작곡가·공연시기 필터를 선택하시면<br />맞춤 공연 일정이 빠르게 펼쳐집니다.
-        </p>
       </div>
 
       {/* Quick Recommendation Section */}

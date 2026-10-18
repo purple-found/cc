@@ -13,7 +13,7 @@ export default function Footer({ onOpenAdminAuth }) {
             <div className="flex items-center gap-2.5">
               <div className="relative w-9 h-9 rounded-lg bg-gradient-to-br from-[#24140e] via-[#3d2015] to-[#1a0c07] text-[#f6e5c5] flex items-center justify-center shadow-md shadow-[#1a0c07]/30 border border-[#753d22]/70 dark:border-[#874b26]/60 overflow-hidden shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#874b26]/20 to-white/10 pointer-events-none" />
-                <BrandIcon className="w-5 h-5 relative z-10 drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] text-[#f6e5c5]" />
+                <BrandIcon className="w-6.5 h-6.5 relative z-10 drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] text-[#f6e5c5]" />
               </div>
               <div>
                 <div className="flex items-center gap-2">
@@ -22,7 +22,7 @@ export default function Footer({ onOpenAdminAuth }) {
                   </span>
                 </div>
                 <p className="text-[10px] sm:text-[10.5px] text-stone-500 dark:text-stone-400 font-medium leading-tight">
-                  선율이 머무는 곳, 클래식 공연 일정
+                  선율이 머무는 곳, 클린더
                 </p>
               </div>
             </div>
