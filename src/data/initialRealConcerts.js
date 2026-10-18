@@ -31308,7 +31308,7 @@ export const initialRealConcerts = [
     "title": "2027 예술의전당 신년음악회 (Seoul Arts Center New Year Concert)",
     "date": "2027-01-06",
     "time": "19:30",
-    "venue": "예술의전당",
+    "venue": "예술의전당 [서울] (콘서트홀)",
     "city": "서울",
     "performers": [
       "정명훈 (지휘)",
@@ -31328,7 +31328,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "예술의전당",
+    "sourceHall": "예술의전당 [서울] (콘서트홀)",
     "crawlerBlocked": false,
     "description": "희망찬 2027년의 시작을 알리는 대한민국 대표 예술의전당 신년 특별 연주회.",
     "imageUrl": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=800&q=80",
@@ -31435,7 +31435,7 @@ export const initialRealConcerts = [
     "title": "조성진 피아노 리사이틀 2027 (Seong-Jin Cho Piano Recital 2027)",
     "date": "2027-02-18",
     "time": "19:30",
-    "venue": "예술의전당",
+    "venue": "예술의전당 [서울] (콘서트홀)",
     "city": "서울",
     "performers": [
       "조성진 (피아노)"
@@ -31453,7 +31453,7 @@ export const initialRealConcerts = [
     "ticketUrl": "https://www.sac.or.kr",
     "status": "공연예정",
     "source": "KOPIS 전산망 공식 수집",
-    "sourceHall": "예술의전당",
+    "sourceHall": "예술의전당 [서울] (콘서트홀)",
     "crawlerBlocked": false,
     "description": "세계적인 피아니스트 조성진이 선사하는 쇼팽 발라드 전곡과 라벨의 환상적인 피아니즘.",
     "imageUrl": "https://images.unsplash.com/photo-1520523839898-5071282543e2?auto=format&fit=crop&w=800&q=80",

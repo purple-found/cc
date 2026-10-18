@@ -42,7 +42,11 @@ export default function FilterBar({
     const allVenueSet = new Set(landmarkLabelMap.keys());
 
     (concerts || []).forEach((c) => {
-      const v = (c.venue || '').trim();
+      let v = (c.venue || '').trim();
+      // '예술의전당 [서울]' 단독 표기는 랜드마크 '예술의전당 (Seoul Arts Center)'으로 통합
+      if (v === '예술의전당 [서울]') {
+        v = '예술의전당';
+      }
       if (v && v !== '공식 공연장') {
         allVenueSet.add(v);
       }

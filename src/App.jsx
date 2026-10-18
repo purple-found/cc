@@ -18,6 +18,7 @@ import { kopisMonitoringService } from './services/kopisMonitoringService.js';
 import { kopisCrawlerService } from './services/kopisCrawlerService.js';
 import { isPastConcert, formatKSTDateTime } from './utils/parser.js';
 import { matchesBilingualConcert, prewarmSearchIndex } from './utils/bilingualSearch.js';
+import { matchesVenueFilter } from './utils/venueMatcher.js';
 import { Sparkles, Calendar, MessageSquare, AlertCircle } from 'lucide-react';
 
 export default function App() {
@@ -243,35 +244,10 @@ export default function App() {
         }
       }
 
-      // 2. 공연장 필터 (서울 예술의전당과 전국 지방 예술의전당 철저 분리 정밀 매칭)
+      // 2. 공연장 및 세부 홀 정밀 다차원 필터 (서울 예술의전당/지방 전당 엄격 분리 및 세부 홀 교차 검증)
       if (filters.venue !== 'all') {
-        const v = (c.venue || '').trim();
-        const city = (c.city || '').trim();
-
-        if (filters.venue === '예술의전당') {
-          // 서울 서초동 '예술의전당 (Seoul Arts Center)' 전용 정밀 필터
-          // 1) 공식 명칭 '예술의전당 [서울]' 또는 '예술의전당(서울)'
-          const isExplicitSac = v.includes('예술의전당 [서울]') || v.includes('예술의전당(서울)') || v.includes('Seoul Arts Center');
-          // 2) '예술의전당'으로 시작하고 타 지명 접두어가 없는 경우
-          const isSacPrefix = /^예술의전당(\s|$|\[|\()/.test(v);
-          // 3) 도시가 '서울'이면서 예술의전당인 경우
-          const isSacCity = city === '서울' && v.includes('예술의전당') && !v.includes('문화예술의전당');
-
-          if (!isExplicitSac && !isSacPrefix && !isSacCity) {
-            return false;
-          }
-        } else if (filters.venue === '대전예술의전당') {
-          if (!v.includes('대전') || !v.includes('예술의전당')) return false;
-        } else if (filters.venue === '광주예술의전당') {
-          if (!v.includes('광주') || !v.includes('예술의전당')) return false;
-        } else if (filters.venue === '청주예술의전당') {
-          if (!v.includes('청주') || !v.includes('예술의전당')) return false;
-        } else {
-          const normV = v.replace(/\s+/g, '').toLowerCase();
-          const normQuery = filters.venue.replace(/\s+/g, '').toLowerCase();
-          if (!normV.includes(normQuery)) {
-            return false;
-          }
+        if (!matchesVenueFilter(c, filters.venue)) {
+          return false;
         }
       }
 
