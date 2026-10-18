@@ -21,7 +21,7 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
               {/* 벨벳 질감 새틴 광택 오버레이 */}
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#874b26]/20 to-white/10 pointer-events-none" />
               <div className="absolute -top-2 -right-2 w-7 h-7 bg-[#b88648]/20 rounded-full blur-xs pointer-events-none" />
-              <BrandIcon className="w-6 h-6 relative z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] text-[#f6e5c5]" />
+              <BrandIcon className="w-8 h-8 relative z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] text-[#f6e5c5]" />
             </div>
             <div>
               <div className="flex items-center gap-2">
