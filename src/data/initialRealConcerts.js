@@ -2,8 +2,8 @@
  * KOPIS(공연예술통합전산망) OpenAPI 실시간 전수 수집 실제 클래식 공연 데이터
  * 대한민국 전역 1301건 전수 적재
  * 복합 공연장 세부 홀 정보 (콘서트홀, IBK챔버홀, 리사이틀홀, 인춘아트홀 등) 100% 매핑
- * 실제 클래식 연주곡 프로그램(Pieces) 정밀 적재 완료
- * 마지막 정밀 동기화 일시: 2026-10-24T14:52:25.583Z
+ * KOPIS 상세페이지/시놉시스 및 명작 레퍼토리 연주곡 프로그램(Pieces) 정밀 적재
+ * 마지막 정밀 동기화 일시: 2026-10-24T15:10:57.883Z
  */
 
 export const initialRealConcerts = [
@@ -88,7 +88,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "표트르 일리치 차이콥스키: 모음곡 '백조의 호수' Op.20a",
+      "표트르 일리치 차이콥스키: 교향곡 제6번 b단조 Op.74 '비창'"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.bac.or.kr/product/performance/253362",
     "status": "공연완료",
@@ -289,7 +292,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "1st Alessandro Scarlatti(1660∼1725) 가곡",
+      "2nd Georg Friedrich Handel(1685∼1759) 가곡"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "https://www.bac.or.kr/product/ko/performance/253372",
     "status": "공연완료",
@@ -486,7 +492,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "라벨, 피아노 협주곡 G장조",
+      "M. Ravel, Piano Concerto in G Major M.83",
+      "드뷔시, 바다"
+    ],
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/60952",
     "status": "공연완료",
@@ -720,7 +730,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Tchaikovsky - 1812 Overture",
+      "Tchaikovsky - Symphony No.5 4th Movement"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.bac.or.kr/product/performance/253394",
     "status": "공연완료",
@@ -1008,7 +1021,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "베토벤 피아노 소나타 Op.79 제25번",
+      "베토벤 피아노 소나타 Op.90 제27번",
+      "베토벤 피아노 소나타 Op.7 제4번"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://www.bac.or.kr/product/performance/253405?q=null",
     "status": "공연완료",
@@ -1451,7 +1468,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "안토닌 드보르작: 교향곡 제9번 e단조 Op.95 \"신세계로부터\""
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.bac.or.kr/product/ko/performance/253435",
     "status": "공연완료",
@@ -1718,7 +1737,22 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "’Nel cor piu non mi sento, WoO 70",
+      "C.Debussy - Arabesque No.1 성지안",
+      "J.S Bach - Tocatta BWV 914",
+      "F.Chopin - Scherzo Op.20 No.1 권은찬",
+      "F.Schubert - Impromptu D.935 Op.142 No.3",
+      "F.Mendelssohn - Song Withoutwords Op.67 No.4 박려원",
+      "R.Schumann - Carnaval Op.9 장태희",
+      "J.Haydn - Sonata Hob.XVI:37 1st",
+      "W.A.Mozart - Sonata k.576 3rd",
+      "F.Chopin - Etude Op.25 no.6 김아인",
+      "R.Schumann - Noveletten Op.21 No.1,8 김가람",
+      "F.Chopin - Sonata Op.35 No.2 1st",
+      "F.Liszt - Paganini etude no.6 김라음",
+      "R.Schumann - Symphonic Etudes Op.13 지현서"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.bac.or.kr/product/ko/performance/253481",
     "status": "공연완료",
@@ -2017,7 +2051,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "F. Liszt - Dante Sonata"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009047",
     "status": "공연완료",
@@ -2248,7 +2284,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "W.A. Mozart | Clarinet Concerto in A Major. K.622 - I. Allegro",
+      "F. Schubert | Erlkonig, Op.1, D.328",
+      "I. Stravinsky | Pulcinella Suite"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011573",
     "status": "공연완료",
@@ -2303,7 +2343,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Ludwig van Beethoven, Leonore Overture No. 3, Op. 72b",
+      "베토벤, 「레오노레 서곡 제3번」",
+      "Ludwig van Beethoven, Symphony No. 9 in D minor, Op. 125 “Choral”",
+      "베토벤, 「교향곡 제9번 ‘합창’」"
+    ],
     "price": "전석 5,000원",
     "ticketUrl": "https://www.bac.or.kr/product/ko/performance/253509",
     "status": "공연완료",
@@ -2807,7 +2852,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Piano Sonata No. 32 Op.111 in C Minor"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004809",
     "status": "공연완료",
@@ -3467,7 +3514,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "No.2 Orienta",
+      "No.5 Andaluza",
+      "Heitor Villa-Lobos - Bachianas Brasileiras No.5 (Arr. for Cello and Guitar)",
+      "에이토르 빌라 로보스 – 브라질풍의 바흐 제5번",
+      "Radamés Gnattali - Sonata for Cello and Guitar",
+      "라다메스 그나탈리 – 첼로와 기타를 위한 소나타"
+    ],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011675",
     "status": "공연완료",
@@ -3555,7 +3609,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "The Nutcracker Suite, Op. 71a for 2 Pianos 4 Hands",
+      "I. Miniature Overture",
+      "VIII. Waltz of the Flowers",
+      "Sonata in C major, K. 545 for Piano 4 Hands"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004825",
     "status": "공연완료",
@@ -3615,7 +3674,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Nocturne in G minor, Op. 15 No. 3  녹턴 사단조"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012740",
     "status": "공연완료",
@@ -3698,7 +3759,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "스페인의 뜨겁고 매혹적인 연가곡"
+    ],
     "price": "전석 33,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/205605",
     "status": "공연완료",
@@ -3728,7 +3791,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "C. Czerny / Fantasia Concertante, Op. 256 for Flute, Cello and Piano"
+    ],
     "price": "전석 22,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/205605",
     "status": "공연완료",
@@ -3821,7 +3886,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Violin Sonata in G Major, K. 301",
+      "Fantasia for Violin and Piano in C Major, D. 934"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&amp;p_new=&amp;start2=0&amp;page_no2=1&amp;p_idx=14024",
     "status": "공연완료",
@@ -3878,7 +3946,16 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Rossini William Tell Overture",
+      "로시니 윌리엄 텔 서곡",
+      "C. Saint-Saëns Cello Concerto No. 1 in a minor, Op. 33 Vc. Zlatomir Fung",
+      "생상스 첼로 협주곡 제1번 가단조, 작품 33 첼로 즐라토미르 펑",
+      "M. Ravel Piano Concerto in G Major, M. 83 Pf. Julius Asal",
+      "라벨 피아노 협주곡 사장조, 작품 83 피아노 율리우스 아살",
+      "M. Bruch Violin Concerto No. 1 in g minor, Op. 26 Vn. Chloe Chua",
+      "브루흐 바이올린 협주곡 사단조 제1번, 작품 26 바이올린 클로이 추아"
+    ],
     "price": "R석 50,000원, S석 40,000원, A석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009901",
     "status": "공연완료",
@@ -4043,7 +4120,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "<1부> 쇼스타코비치, 교향곡 제9번",
+      "<2부> 쇼스타코비치, 교향곡 제1번"
+    ],
     "price": "전석무료",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013891",
     "status": "공연완료",
@@ -4157,7 +4237,13 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "Piano Sonata No. 3 in B-flat Major, K. 281",
+      "Piano Sonata No. 4 in E-flat Major, K. 282",
+      "Piano Sonata No. 12 in F Major, K. 332",
+      "Fantasia in C Minor, K. 475",
+      "Piano Sonata No. 14 in C Minor, K. 457"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004842",
     "status": "공연완료",
@@ -4300,7 +4386,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Hungarian Dances no.1, 4, 5                 J. Brahms",
+      "Piano Suite for Two Pianos No.2 Op.17 3rd Mvt & 4th mvt.  S. Rachmaninoff",
+      "Piano Concerto No.2 in c minor Op.18 1st Mvt.            S. Rachmaninoff"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013039",
     "status": "공연완료",
@@ -4361,7 +4451,18 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "F. Chopin 3 Nocturnes, Op. 15 (arr. for cello and piano by Zlatomir Fung)",
+      "쇼팽 3개의 녹턴, 작품 15 (첼로와 피아노를 위한 버전, 즐라토미르 펑 편곡)",
+      "슈만 민요풍의 5개 소품, 작품 102",
+      "M. Falla Suite populaire espagnole",
+      "파야 스페인 민요 모음곡",
+      "라흐마니노프 엘레지 내림마단조, 작품 3, 제1번 (첼로와 피아노를 위한 편곡)",
+      "F. Chopin Waltz, Op. 64 No. 1 (arr. Friedrich Grützmacher)",
+      "쇼팽 왈츠, 작품 64, 제1번 (프리드리히 그뤼츠마허 편곡)",
+      "S. Barber Sonata for Cello and Piano in c minor, Op. 6",
+      "바버 첼로와 피아노를 위한 소나타 다단조, 작품 6"
+    ],
     "price": "전석 16,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010345",
     "status": "공연완료",
@@ -4391,7 +4492,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "하이든 현악 4중주 내림마장조, 작품 33-2 ‘농담’",
+      "슈만 현악 4중주 3번 가장조, 작품 41-3"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010343",
     "status": "공연완료",
@@ -4475,7 +4579,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Ⅱ. Air champêtre 전원의 노래"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004828",
     "status": "공연완료",
@@ -4706,7 +4812,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Mozart /  Violin Sonata in E minor, K. 304",
+      "Janacek / Violin Sonata"
+    ],
     "price": "전석 22,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/205605",
     "status": "공연완료",
@@ -4815,7 +4924,15 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "F. Schubert : 4 Impromptus, D.899",
+      "No.1 : Allegro molto moderato",
+      "No.2 : Allegro",
+      "No.3 : Andante",
+      "No.4 : Allegretto",
+      "F. Schubert : Piano Sonata No.20 in A major, D.959",
+      "III. Scherzo. Allegro vivace"
+    ],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011672",
     "status": "공연완료",
@@ -4847,7 +4964,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Gioacchino Rossini, Overture to The Barber of Seville  *arr. Daryl Runswick",
+      "조아키노 로시니, 세빌리아의 이발사 서곡 * 런즈윅 편곡"
+    ],
     "price": "R석 40,000원, S석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010338",
     "status": "공연완료",
@@ -4875,7 +4995,13 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "L. v. Beethoven Sonata for Violin and Piano No. 5 in F Major, Op. 24 “Spring“",
+      "베토벤 바이올린 소나타 제5번 바장조, 작품 24 ”봄“",
+      "이자이 생상스 ‘왈츠 형식의 연습곡 작품 52-6’에 의한 카프리스",
+      "F. Poulenc Sonata for Violin and Piano, FP 119",
+      "풀랑크 바이올린 소나타, 작품 119"
+    ],
     "price": "전석 16,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010344",
     "status": "공연완료",
@@ -5175,7 +5301,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Sonata No.2 in A minor for Solo Violin, BWV 1003",
+      "Partita No.3 in E Major for Solo Violin, BWV 1006"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013360",
     "status": "공연완료",
@@ -5232,7 +5361,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Liederkreis, Op. 39 (로베르트 슈만 연가곡집, 작품번호 39)",
+      "Three Romances for Oboe and Piano, Op. 94 (로베트르 슈만 오보에와 피아노를 위한 3개의 로망스, 작품번호 94)",
+      "Three Romances for Violin and Piano, Op. 22 (클라라 슈만 바이올린과 피아노를 위한 3개의 로망스, 작품번호 22)",
+      "Dichterliebe, Op. 48 (로베르트 슈만 시인의 사랑, 작품번호 48)"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013221",
     "status": "공연완료",
@@ -5292,7 +5426,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "F. Schubert 12 German Dances, D.790",
+      "슈베르트 12개의 독일 무곡, 작품 790",
+      "F. Chopin 12 Etude, Op. 25",
+      "쇼팽 12개의 연습곡, 작품 25",
+      "F. Chopin Piano Concerto No. 1 in e minor, Op. 11 (String Orchestra Version)",
+      "쇼팽 피아노 협주곡 1번 마단조, 작품 11 (현악 오케스트라 편곡)"
+    ],
     "price": "얼리버드 티켓 24,000원, 전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010342",
     "status": "공연완료",
@@ -5764,7 +5905,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "브람스  클라리넷 오중주 나단조, Op.115",
+      "J. Brahms  Clarinet Quintet in B Minor, Op.115",
+      "쇼스타코비치  피아노 오중주 사단조, Op.57",
+      "D. Shostakovich  Piano Quintet in G Minor, Op.57"
+    ],
     "price": "R석 60,000원, S석 40,000원, A석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011940",
     "status": "공연완료",
@@ -5819,7 +5965,15 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "M. Ravel Sonata for Violin and Piano in G Major No. 2, M. 77",
+      "라벨 바이올린과 피아노를 위한 소나타 2번 사장조, 작품 77",
+      "이자이 생상스 ‘왈츠 형식의 연습곡 작품 52-6’에 의한 카프리스",
+      "차이콥스키 ‘소중했던 시절의 추억’, 작품 42 중 1. 명상곡",
+      "P. I. Tchaikovsky Valse-Scherzo in C Major, Op. 34",
+      "차이콥스키 왈츠 스케르초 다장조, 작품 34",
+      "사라사테 카르멘 환상곡, 작품 25"
+    ],
     "price": "전석 16,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010265",
     "status": "공연완료",
@@ -5847,7 +6001,17 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Henri Tomasi Suite for Three Trumpets",
+      "앙리 토마지 세 대의 트럼펫을 위한 모음곡",
+      "펠릭스 멘델스존 무언가, 작품 63 중 (두 대의 트럼펫과 피아노를 위한 편곡 버전)",
+      "Francis Poulenc Sonata for Horn, Trumpet and Trombone",
+      "프랑시스 풀랑크 호른, 트럼펫, 트롬본을 위한 소나타",
+      "클라우디오 몬테베르디 4개의 칸초네 (세 대의 트럼펫을 위한 편곡 버전)",
+      "파니 멘델스존 3개의 듀엣 (트럼펫, 호른과 피아노를 위한 편곡 버전)",
+      "조지 거슈윈 슈트라우스 풍으로",
+      "Scherzo: Allegro vivace"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010340",
     "status": "공연완료",
@@ -5999,7 +6163,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "S. Prokofiev : Suite from Romeo and Juliet",
+      "프로코피예프｜‘로미오와 줄리엣’ 모음곡 Op.64 중 발췌",
+      "차이코프스키｜‘호두까기 인형’ 모음곡 Op.71a 중 3개 악장"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65742",
     "status": "공연완료",
@@ -6406,7 +6574,17 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "차이콥스키 로코코 주제에 의한 변주곡 첼로 에토레 파가노",
+      "E. Grieg Piano Concerto in a minor, Op. 16 2026 Audition Winner",
+      "그리그 피아노 협주곡 가단조, 작품 16 2026 오디션 우승자",
+      "J. Haydn Trumpet Concerto in E-flat Major Trp Tine Thing Helseth",
+      "하이든 트럼펫 협주곡 트럼펫 티네 팅 헬세스",
+      "Wagner Tannhauser Overture (Paris Version)",
+      "바그너 탄호이저 서곡",
+      "E. Grieg Peer Gynt Suite No. 1 Op. 26: Ⅰ. Morning Mood & Ⅳ. In the Hall of the Mountain King",
+      "그리그 페르 귄트 제1모음곡 작품 26 중, 제1곡 아침의 기분 & 제4곡 산속마왕의 궁전에서"
+    ],
     "price": "R석 50,000원, S석 40,000원, A석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009902",
     "status": "공연완료",
@@ -6503,7 +6681,13 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. Brahms / Intermezzo in A Major, Op.118 No.1, 2",
+      "F. Chopin / Ballade No.4 in f minor",
+      "F. Chopin / Nocturne c# minor",
+      "V. Azarashvili / Nocturne",
+      "P. Gaubert / Ballade"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004821",
     "status": "공연완료",
@@ -6829,7 +7013,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart Sonatas for Piano & Violin",
+      "K.v 374d (376) F Major,",
+      "K.v 317d (378) B-flat Major,",
+      "K.v 373a (379) G Major"
+    ],
     "price": "전석 22,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/205605",
     "status": "공연완료",
@@ -6950,7 +7139,9 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 \"합창\""
+    ],
     "price": "VIP석 50,000원, R석 40,000원, A석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1740276",
     "status": "공연완료",
@@ -7102,7 +7293,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "모차르트  신포니아 콘체르탄테, K.364",
+      "W. A. Mozart  Sinfonia Concertante in E-flat Major, K.364",
+      "브리튼 - 테너와 호른, 현을 위한 세레나데, Op.31",
+      "B. Britten  Serenade for Tenor, Horn and Strings, Op.31",
+      "쇼스타코비치  피아노와 트럼펫, 현악 오케스트라를 위한 협주곡, Op.35",
+      "D. Shostakovich  Concerto in C Minor for Piano, Trumpet and String Orchestra, Op.35"
+    ],
     "price": "R석 120,000원, S석 90,000원, A석 60,000원, B석 30,000원, C석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011939",
     "status": "공연완료",
@@ -7371,7 +7569,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "D.Shostakovich Waitz No.2 saxophone orchestra",
+      "A. Dvorak symphony no.9 saxophone orchestra"
+    ],
     "price": "전석 110,000원",
     "ticketUrl": "https://www.lotteconcerthall.com/product/performance/261211",
     "status": "공연완료",
@@ -7692,7 +7893,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Suite for Keyboards No. 5 in E Major HWV. 430 (1717-1720)",
+      "Piano Sonata No. 28 in A Major, Op. 101 (1816)",
+      "Theme and Variations in E-Flat Major, WoO 24 “Ghost Variations\" (1854)",
+      "Sonata for piano in E-flat minor, Op. 26 (1947-1949)"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "https://nol.yanolja.com/ticket/products/P0004827",
     "status": "공연완료",
@@ -8663,7 +8869,13 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "모차르트, 바이올린 협주곡 제3번",
+      "Mozart, Violin Concerto No. 3 in G major, K. 216",
+      "모차르트, 바이올린과 비올라를 위한 신포니아 콘체르탄테",
+      "모차르트, 교향곡 제41번 '주피터'",
+      "Mozart, Symphony No. 41 in C major, K. 551, \"Jupiter\""
+    ],
     "price": "R석 120,000원, S석 90,000원, A석 60,000원, B석 30,000원, C석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25013836",
     "status": "공연완료",
@@ -8867,7 +9079,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "안토니오 비발디 (A. Vivaldi): 바이올린 협주곡 《사계》 (The Four Seasons, Op. 8)",
+      "아스토르 피아졸라 (A. Piazzolla): 《부에노스아이레스의 사계》 (The Four Seasons of Buenos Aires)"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65893",
     "status": "공연완료",
@@ -8926,7 +9141,15 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "D. Scarlatti - Sonata in C Major, K. 502",
+      "도메니코 스카를라티 (1685-1757) 소나타 다장조, K. 502",
+      "W. A. Mozart - Piano Sonata No. 16 in C Major, K. 545, 'Sonata facile'",
+      "볼프강 아마데우스 모차르트 (1756-1791) 피아노 소나타 제16번 다장조, K. 545, '쉬운 소나타'",
+      "클로드 드뷔시 (1862-1918) 전주곡 제1권: IV. 저녁 대기 속에 감도는 소리와 향기 / XII. 음유시인들",
+      "프란츠 요제프 하이든 (1732-1809) 바단조 변주곡, Hob. XVII:6",
+      "프레데리크 쇼팽 (1810-1849) 환상곡 바단조, Op. 49"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1745801",
     "status": "공연완료",
@@ -9223,7 +9446,9 @@ export const initialRealConcerts = [
     "composers": [
       "말러"
     ],
-    "pieces": [],
+    "pieces": [
+      "구스타프 말러: 교향곡 제4번 G장조"
+    ],
     "price": "R석 20,000원, S석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009089",
     "status": "공연완료",
@@ -9280,7 +9505,13 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "모차르트, 바이올린 협주곡 제3번",
+      "Mozart, Violin Concerto No. 3 in G major, K. 216",
+      "모차르트, 바이올린과 비올라를 위한 신포니아 콘체르탄테",
+      "모차르트, 교향곡 제41번 '주피터'",
+      "Mozart, Symphony No. 41 in C major, K. 551, \"Jupiter\""
+    ],
     "price": "R석 120,000원, S석 90,000원, A석 60,000원, B석 30,000원, C석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25013838",
     "status": "공연완료",
@@ -9369,7 +9600,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "멘델스존 – 헤브리디스, Op.26",
+      "F. Mendelssohn – Die hebriden, Op.26",
+      "요한 데 메이 – 유에프오 협주곡  Euph.  마우루 마르팅스",
+      "Johan de Meij – UFO Concerto",
+      "멘델스존 – 교향곡 제4번 A장조, Op.90 “이탈리아”",
+      "F. Mendelssohn – Symphony No.4 in A major, Op.90 “Italian”"
+    ],
     "price": "R석 30,000원, S석 16,000원, H석  10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013014",
     "status": "공연완료",
@@ -9540,7 +9778,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Violin Sonata No. 1 in G Major, Op. 78"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014289",
     "status": "공연완료",
@@ -10075,7 +10315,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Elegy for Double Bass and Piano No.1 in D Major",
+      "Elegy for Double Bass and Piano No.2 in e mionor",
+      "더블베이스와 피아노를 위한 멘델스존풍의 알레그로 협주곡",
+      "Allegro di Concerto alla Mendelssohn for Double Bass and Piano",
+      "더블베이스 협주곡 제2번 b단조",
+      "Double Bass Concerto No.2 in b minor"
+    ],
     "price": "전석 15,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65147",
     "status": "공연완료",
@@ -10102,7 +10349,26 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "볼프강 아마데우스 모차르트 Wolfgang Amadeus Mozart",
+      "피아노 소나타 제3번 B-flat장조, K.281",
+      "Piano Sonata No.3 in B-flat Major, K.281",
+      "로베르트 슈만 Robert Schumann",
+      "피아노를 위한 아베그 변주곡 F장조, Op.1",
+      "Variations on the Name Abegg for Piano in F Major, Op.1",
+      "Finale alla Fantasia",
+      "피아노 소나타 제2번 g-sharp단조, ‘환상 소나타’, Op.19",
+      "Piano Sonata No.2 in g-sharp minor, “Sonata-Fantasy”, Op.19",
+      "프레데리크 쇼팽 Frédéric Chopin",
+      "피아노를 위한 마주르카 제37번 A-flat장조, Op.59/2 CT.87",
+      "Mazurka for Piano No.37 in A-flat Major, Op.59/2 CT.87",
+      "피아노를 위한 마주르카 제32번 c-sharp단조, Op.50/3, CT.82",
+      "Mazurka for Piano No.32 in c-sharp minor, Op.50/3, CT.82",
+      "피아노를 위한 안단테 스피아나토와 화려한 대 폴로네즈 E-flat장조, Op.22",
+      "Andante Spianato and Grande Polonaise Brillante for Piano in E-flat Major, Op.22",
+      "피아노를 위한 스케르초 제2번 b-flat단조, Op.31, CT.198",
+      "Scherzo for Piano No.2 in b-flat minor, Op.31, CT.198"
+    ],
     "price": "전석 13,000원",
     "ticketUrl": "https://www.kumhoarthall.com:448/designer/skin/01/detail.html?p_idx=25684&amp;s_idx=11&amp;vwY=2026&amp;vwM=10&amp;se_idx=",
     "status": "공연완료",
@@ -10861,7 +11127,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Caprice d'apres l'Etude en forme de",
+      "valse Op,52, No.6",
+      "C. Frank / Sonata for Violin and Piano in A Major",
+      "Ⅲ. Ben Moderato:Recitative - Fantasia"
+    ],
     "price": "전석 22,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/205605",
     "status": "공연완료",
@@ -11107,7 +11378,13 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "독도의 사계",
+      "Spring Op.5( 봄 ) ..................................... Guitar 박성연",
+      "Summer Op.6 (여름) ........................... Guitar 곽승웅",
+      "Autumn Op.7 (가을) ............................. Guitar 박종호",
+      "Winter Op.8 (겨울) ................................ Guitar 이주석"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37685&amp;menuNo=200320",
     "status": "공연완료",
@@ -11394,7 +11671,9 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [],
+    "pieces": [
+      "세르게이 라흐마니노프: 교향곡 제2번 e단조 Op.27"
+    ],
     "price": "R석 20,000원, S석 10,000원, 시야방해R  14,000원, 시야방해S  7,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65708",
     "status": "공연완료",
@@ -11427,7 +11706,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Pace non trovo, S. 270, No.1 – Ten. 김선용"
+    ],
     "price": "전석 50,000원",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37693&amp;menuNo=200320",
     "status": "공연완료",
@@ -11487,7 +11768,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Nocturne, Op.55 No.1 & 2",
+      "Sonata, Op. 57",
+      "Symphonic Etude, Op.13"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013361",
     "status": "공연완료",
@@ -11898,7 +12183,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "P.Sarasate - Cermen Fantasy, Op.25"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37687&amp;menuNo=200320",
     "status": "공연완료",
@@ -12316,7 +12603,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Concerto Grosso in D minor, H.143 `La Folia`",
+      "Concerto in C RV.425 (original for Mandolin) (Guitar 장대건)",
+      "Concerto in D RV. 93 (original for Lute) (Guitar 장대건)",
+      "Chamber Symphony in C Minor, Op. 110a"
+    ],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013643",
     "status": "공연완료",
@@ -12942,7 +13234,10 @@ export const initialRealConcerts = [
     "composers": [
       "라벨"
     ],
-    "pieces": [],
+    "pieces": [
+      "Ballade de la reine morte d’aimer",
+      "<5 Ballades Françaises> 중"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014586",
     "status": "공연완료",
@@ -12975,7 +13270,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "오페라 아리아와 정통 가곡이 전하는 감정의 밀도."
+    ],
     "price": "R석 30,000원, S석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013680",
     "status": "공연완료",
@@ -13002,7 +13299,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "❍ 시벨리우스 _ 안단테 페스티보",
+      "❍ 차이콥스키 _ 현악 4중주 제1번 라장조, 작품 11",
+      "❍ 쇼스타코비치 _ 실내 교향곡, 작품 110a",
+      "D. Shostakovich _ Chamber Symphony, Op. 110a"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "https://nol.yanolja.com/ticket/products/26013750",
     "status": "공연완료",
@@ -13128,7 +13430,11 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "모차르트, 두 대의 피아노를 위한 협주곡",
+      "Mozart, Concerto for two pianos in E-flat major, K. 365",
+      "모차르트, '레퀴엠' *쥐스마이어 판본"
+    ],
     "price": "R석 150,000원, S석 120,000원, A석 80,000원, B석 40,000원, C��� 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/59429",
     "status": "공연완료",
@@ -13533,7 +13839,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Toccata in e minor, BWV 914",
+      "Piano Sonata No. 23 in f minor, Op. 57",
+      "Sonata in b minor, S. 178"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1610089",
     "status": "공연완료",
@@ -13734,7 +14044,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Sonata in E Major, Op. 167 \"Undine\"",
+      "Violin Sonata in A major, FWV 8",
+      "III. Ben moderato: Recitativo-Fantasia"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014677",
     "status": "공연중",
@@ -13790,7 +14104,14 @@ export const initialRealConcerts = [
     "composers": [
       "Beethoven"
     ],
-    "pieces": [],
+    "pieces": [
+      "“Beethoven Violin Sonatas”",
+      "No. 2 in A Major, Op.12 No.2",
+      "No.5 in F Major, Op.24",
+      "III. Scherzo: Allegro Molto",
+      "No.7 in c minor, Op.30 No.2",
+      "III. Scherzo: Allegro"
+    ],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012757",
     "status": "공연중",
@@ -13917,7 +14238,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "모차르트 | 오페라 마술피리 서곡",
+      "W. A. Mozart | Die Zauberflote (The Magic Flute), K. 620: Overture (arr. J. Linckelmann)",
+      "드보르작 | 현악사중주 제12번 바장조, “아메리칸”"
+    ],
     "price": "R석 50,000원, S석 40,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010512",
     "status": "공연중",
@@ -13950,7 +14275,11 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "모차르트, 두 대의 피아노를 위한 협주곡",
+      "Mozart, Concerto for two pianos in E-flat major, K. 365",
+      "모차르트, '레퀴엠' *쥐스마이어 판본"
+    ],
     "price": "R석 150,000원, S석 120,000원, A석 80,000원, B석 40,000원, C석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25013839",
     "status": "공연중",
@@ -13978,7 +14307,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Pyotr Tchaikovsky | Violin Concerto in D Major, Op. 35",
+      "차이코프스키 | 바이올린 협주곡 라장조, 작품번호 35",
+      "Pyotr Tchaikovsky | Symphony No. 4 in F minor, Op. 36",
+      "차이코프스키 | 교향곡 제4번 바단조, 작품번호 36"
+    ],
     "price": "R석 100,000원, S석 70,000원, A석 50,000원, B석 30,000원, C석 20,000원, 시야방해R 70,000원, 시야방해A 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26000076",
     "status": "공연중",
@@ -14097,7 +14431,22 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤 Ludwig van Beethoven",
+      "바이올린과 피아노를 위한 소나타 제1번 D장조, Op.12/1 중",
+      "Sonata for Violin and Piano No.1 in D Major, Op.12/1 (excerpt)",
+      "볼프강 아마데우스 모차르트 Wolfgang Amadeus Mozart",
+      "바이올린 협주곡 제3번 G장조, K.216 (바이올린과 피아노 연주)",
+      "Violin Concerto No.3 in G Major, K.216 (performed on Violin and Piano)",
+      "요한 제바스티안 바흐 Johann Sebastian Bach",
+      "바이올린 독주를 위한 파르티타 제3번 E장조, BWV 1006 중",
+      "Partita for Solo Violin No.3 in E Major, BWV 1006 (excerpts)",
+      "카미유 생상스 Camille Saint-Saëns",
+      "바이올린과 오케스트라를 위한 서주와 론도 카프리치오소 a단조, Op.28 (바이올린과 피아노 연주)",
+      "Introduction and Rondo Capriccioso for Violin and Orchestra in a minor, Op.28 (performed on Violin and Piano)",
+      "바이올린과 피아노를 위한 카미유 생상스 왈츠 형식의 에튀드에 의한 카프리스, Op.52",
+      "Caprice d’après l’etude en forme de Valse de Camille Saint-Saëns for Violin and Piano, Op.52"
+    ],
     "price": "전석 13,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65133",
     "status": "공연중",
@@ -14125,7 +14474,17 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "세르게이 라흐마니노프 Sergey Rachmaninov",
+      "첼로와 피아노를 위한 소나타 g단조, Op.19 중 (트롬본과 피아노 연주)",
+      "Sonata for Cello and Piano in g minor, Op.19 (excerpt, performed on Trombone and Piano)",
+      "오보에 협주곡, Op.9/2 (트롬본과 피아노를 위한 편곡 이철웅)",
+      "Oboe Concerto, Op.9/2 (arranged for Trombone and Piano by Cheol Woong Lee)",
+      "테너 트롬본과 피아노를 위한 교향적 소품, Op.88",
+      "Morceau Symphonique for Tenor Trombone and Piano, Op.88",
+      "트롬본 협주곡, Op.114 (트롬본과 피아노 연주)",
+      "Trombone Concerto, Op.114 (performed on Trombone and Piano)"
+    ],
     "price": "전석 15,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65155",
     "status": "공연중",
@@ -14220,7 +14579,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "E.Grieg - Holberg Suite, Op.40"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1289530",
     "status": "공연중",
@@ -14310,7 +14671,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Pablo de Sarasate — Carmen Fantasy / 사라사테 카르멘 환상곡"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/601161",
     "status": "공연중",
@@ -14850,7 +15213,11 @@ export const initialRealConcerts = [
     "venue": "피오레아트앤엔터(피오레움)",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "F. Chopin - Waltz in E Major, Op. posth, B. 44",
+      "S. Rachmaninoff - Etude Tableaux, Op. 39, No. 5",
+      "F. Liszt - Ballade No. 2 in b minor, S. 171"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1606370",
     "status": "공연중",
@@ -15269,7 +15636,15 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Jesus, Joy of Man's Desiring BWV 147                                                                                                    고수진  최유리",
+      "Sheep May Safely Graze BWV 208",
+      "Sleepers, Wake BWV 140",
+      "Piano Sonata No. 16 in C Major, K. 545                                                                                                  신재은  이영신",
+      "I. Waltz",
+      "Symphony No. 40 in g minor, K. 550 for 2 Pianos 8 Hands                                                                          조윤경  신재은",
+      "W. A. Mozart Sonata K. 381"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014138",
     "status": "예매중",
@@ -15298,7 +15673,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "로베르트 슈만"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/66164",
     "status": "예매중",
@@ -15763,7 +16140,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "W.A. Mozart ... Serenade in G Major, K. 525 “Eine kleine Nachtmusik”",
+      "A. Dvořák ... Serenade for Strings in E Major, Op. 22",
+      "G. Bacewicz ... Concerto for Strings (1948)"
+    ],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37636&amp;menuNo=200320",
     "status": "예매중",
@@ -15890,7 +16271,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "No. 1 C major, BWV 772",
+      "No. 9 F minor , BWV 780",
+      "No. 6 E major, BWV 777",
+      "No. 8 F major, BWV 779"
+    ],
     "price": "전석 40,000원",
     "ticketUrl": "https://thehouseconcert.com/sub/concert/schedule_view.php?idx=1509",
     "status": "예매중",
@@ -15922,7 +16308,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Andenken, WoO 136 (생각)",
+      "Ich liebe dich, WoO 123 (나는 그대를 사랑하오)"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013883",
     "status": "예매중",
@@ -16009,7 +16398,15 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "E. Ysaÿe | Sonata No.5 in G Major for Solo Violin, Op.27 (arr. For Viola)",
+      "외젠 이자이 | 바이올린 솔로를 위한 소나타 제5번, 작품번호27 (비올라를 위한 편곡)",
+      "H. Vieuxtemps | Viola Sonata in B-flat Major, Op.36",
+      "앙리 비외탕 | 비올라 소나타, 작품번호36",
+      "C. Franck | Violin Sonata in A Major, FWV 8 (arr. For Viola)",
+      "세자르 프랑크 | 바이올린 소나타, 작품번호8 (비올라를 위한 편곡)",
+      "III. Ben moderato: Recitative – Fantasia"
+    ],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011759",
     "status": "예매중",
@@ -16036,7 +16433,33 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "요한 제바스티안 바흐",
+      "Prelude and Fugue No.1 in C Major, BWV 846",
+      "Prelude and Fugue No.2 in c minor, BWV 847",
+      "Prelude and Fugue No.3 in C-sharp Major, BWV 848",
+      "Prelude and Fugue No.4 in c-sharp minor, BWV 849",
+      "Prelude and Fugue No.5 in D Major, BWV 850",
+      "Prelude and Fugue No.6 in d minor, BWV 851",
+      "Prelude and Fugue No.7 in E-flat Major, BWV 852",
+      "Prelude and Fugue No.8 in e-flat minor, BWV 853",
+      "Prelude and Fugue No.9 in E Major, BWV 854",
+      "Prelude and Fugue No.10 in e minor, BWV 855",
+      "Prelude and Fugue No.11 in F Major, BWV 856",
+      "Prelude and Fugue No.12 in f minor, BWV 857",
+      "Prelude and Fugue No.13 in F-sharp Major, BWV 858",
+      "Prelude and Fugue No.14 in f-sharp minor, BWV 859",
+      "Prelude and Fugue No.15 in G Major, BWV 860",
+      "Prelude and Fugue No.16 in g minor, BWV 861",
+      "Prelude and Fugue No.17 in A-flat Major, BWV 862",
+      "Prelude and Fugue No.18 in g-sharp minor, BWV 863",
+      "Prelude and Fugue No.19 in A Major, BWV 864",
+      "Prelude and Fugue No.20 in a minor, BWV 865",
+      "Prelude and Fugue No.21 in B-flat Major, BWV 866",
+      "Prelude and Fugue No.22 in b-flat minor, BWV 867",
+      "Prelude and Fugue No.23 in B Major, BWV 868",
+      "Prelude and Fugue No.24 in b minor, BWV 869"
+    ],
     "price": "R석 100,000원, S석 80,000원, A석 60,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/63607",
     "status": "예매중",
@@ -16467,7 +16890,9 @@ export const initialRealConcerts = [
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "Modern Suite BPM 100 to 160 for Clarinet, Violin, Cello, Piano, and Sequenced Sounds"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015173",
     "status": "예매중",
@@ -16776,7 +17201,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "C. Gounod                         Faust Waltz                                                             Piano I 윤정아 김보현"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://www.lotteconcerthall.com/product/performance/261213",
     "status": "예매중",
@@ -16832,7 +17259,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "◆이상의 시에 의한 가곡 10곡 (2016)",
+      "◆피아노 협주곡 “남대천의 추억” (2019-20) 피아노, 사물놀이"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37626&amp;menuNo=200320",
     "status": "예매중",
@@ -17335,7 +17765,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Chaconne from Partita No. 2 Solo Violin in d minor, BWV 1004",
+      "Violin Sonata No. 1 in a minor, Op. 105",
+      "Violin Sonata No. 1 in G Major, Op. 78"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&amp;p_new=&amp;start2=0&amp;page_no2=1&amp;p_idx=14103",
     "status": "예매중",
@@ -17444,7 +17878,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "벨라 바르톡 Bela Bartok(1881~1945)"
+    ],
     "price": "R석 55,000원, S석 33,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009964",
     "status": "예매중",
@@ -17785,7 +18221,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "가브리엘 포레 '시실리안느 Op. 89'",
+      "모리스 라벨 '바이올린과 첼로를 위한 소나타 2악장'"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.jejusi.go.kr/acenter/show/perf/view.do?showId=1721",
     "status": "예매중",
@@ -18147,7 +18586,12 @@ export const initialRealConcerts = [
     "venue": "비오케이아트센터(BOK아트센터)",
     "city": "세종특별자치시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "Bruch – Op.88, I",
+      "Dohnányi – Serenade in C major, Op.10, I. Marcia",
+      "R. Schumann – Piano Quartet in E-flat Major, Op.47, III. Andante cantabile",
+      "Bruch – Romance in F major, Op.85"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://playticket.co.kr/nav/detail.html?idx=4623",
     "status": "예매중",
@@ -18332,7 +18776,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "벨라 바르톡 Bela Bartok(1881~1945)"
+    ],
     "price": "R석 55,000원, S석 33,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009965",
     "status": "예매중",
@@ -18360,7 +18806,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "코른골트 / 헛소동: 모음곡, Op.11",
+      "E. W. Korngold / Much Ado about Nothing: Suite, Op.11",
+      "월튼 / 바이올린 협주곡",
+      "W. Walton / Violin Concerto",
+      "브람스 / 피아노 사중주 제1번 g단조, 작품 25 (쇤베르크 관현악 편곡)",
+      "J. Brahms / Piano Quartet No.1 in g minor, Op. 25 (Arr. Schoenberg)"
+    ],
     "price": "R석 110,000원, S석 90,000원, A석 60,000원, B석 30,000원, C석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25017204",
     "status": "예매중",
@@ -18414,7 +18867,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "모차르트, 오보에 사중주",
+      "멘델스존, 피아노 삼중주 제1번 중 1악장",
+      "슈만, 피아노 사중주 중 3, 4악장",
+      "피아졸라, 부에노스아이레스의 사계 중 ‘겨울’"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37720&amp;menuNo=200320",
     "status": "예매중",
@@ -18444,7 +18902,16 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "모차르트 – 오페라 “극장 지배인” 서곡, K.486",
+      "W. A. Mozart - Overture to “Der Schauspieldirektor”, K.486",
+      "닐센 - 클라리넷 협주곡, Op.57",
+      "C. Nielsen - Clarinet Concerto, Op.57",
+      "마르티누 - 오보에 협주곡, H.353",
+      "B. Martinů - Oboe Concerto, H.353",
+      "고르델리 - 플루트 협주곡, Op.8",
+      "O. Gordeli - Flute Concerto, Op.8"
+    ],
     "price": "전석무료",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014000",
     "status": "예매중",
@@ -18560,7 +19027,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Petite Suite for Piano Four Hands, L. 65",
+      "Suite No. 2 for Two Pianos, Op. 17"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014244",
     "status": "예매중",
@@ -18707,7 +19177,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "프로코피예프 : '세 개의 오렌지에 대한 사랑' 모음곡, 작품번호 33bis 중 발췌 연주",
+      "Scherzo(제4곡)",
+      "프로코피예프 : 피아노 협주곡 제3번 다장조, 작품번호 26",
+      "프로코피예프 : 교향곡 제3번 다단조, 작품번호 44"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://cccf.moonhwain.net/rsvc/rsv_pm.html?b_id=cccf&amp;p_idx=77",
     "status": "예매중",
@@ -19054,7 +19529,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "R. Strauss / from 8 Gedichte aus ‘Letzte Blätter’ Op.10 (15‘)",
+      "S. Rachmaninoff 라흐마니노프 (15’)",
+      "ㆍ A Dream, Op.8, No.5 꿈 작품8-5",
+      "ㆍ Oh, never sing to me again Op.4, No.4  노래하지 마오, 아름다운 이여 작품4-4",
+      "ㆍ “How fair this spot!” Op.21, No.7 “얼마나 아름다운 곳인가!” 작품21-7",
+      "ㆍ Spring Waters, Op.14, No.11 봄의 물결 작품14-11"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013298",
     "status": "예매중",
@@ -19241,7 +19723,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "라흐마니노프 - 피아노 협주곡 2번",
+      "브람스 - 교향곡 4번"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010305",
     "status": "예매중",
@@ -19326,7 +19811,16 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Francis Kleyjans                          Romance  No.1,3",
+      "파울로 벨리나티                                 사랑의 왈츠",
+      "Domenico Scarlatti                           Keyboard Sonata in A Major, K.208",
+      "Keyboard Sonata in A Major, K.322",
+      "도메니코 스카를라티                          소나타 K.208, K.322",
+      "Antonio Vivaldi                           L’estate   from Le Quattro Stagioni   사계 중 여름",
+      "안토니오 비발디                            I.Allegro non molto",
+      "지아코아노 로시니                            도둑까치의 서곡"
+    ],
     "price": "R석 50,000원, S석 40,000원",
     "ticketUrl": "https://nol.yanolja.com/ticket/products/P0004826",
     "status": "예매중",
@@ -19354,7 +19848,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "E. W. Korngold – Theme and Variation, Op.42",
+      "코른골트 – 주제와 변주곡, Op.42",
+      "D. Shostakovich – Piano Concerto No.2 in F Major, Op.102",
+      "쇼스타코비치 – 피아노 협주곡 2번 F장조, Op.102",
+      "J. Brahms – Piano Quartet No.1 in g minor, Op.25 (Arr. Schönberg)",
+      "브람스 – 피아노 4중주 1번 g단조, Op.25 (쇤베르크 관현악 편곡)"
+    ],
     "price": "전석무료",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014387",
     "status": "예매중",
@@ -19381,7 +19882,22 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤 Ludwig van Beethoven",
+      "피아노 소나타 제15번 D장조, Op.28",
+      "Piano Sonata No.15 in D Major, Op.28",
+      "Scherzo. Allegro vivace",
+      "프란츠 슈베르트 Franz Schubert",
+      "피아노를 위한 방랑자 환상곡 C장조, D.760",
+      "Wanderer Fantasia in C Major, D.760",
+      "세르게이 프로코피예프 Sergey Prokofiev",
+      "피아노를 위한 토카타 d단조, Op.11",
+      "Toccata for Piano in d minor, Op.11",
+      "로베르트 슈만 Robert Schumann",
+      "피아노 소나타 제1번 f-sharp단조, Op.11",
+      "Piano Sonata No.1 in f-sharp minor, Op.11",
+      "Scherzo e Intermezzo. Allegrissimo"
+    ],
     "price": "전석 15,000원",
     "ticketUrl": "https://www.kumhoarthall.com:448/designer/skin/01/detail.html?p_idx=25412&amp;s_idx=11&amp;vwY=2026&amp;vwM=10&amp;se_idx=",
     "status": "예매중",
@@ -19409,7 +19925,21 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "비엔나풍의 카프리스, Op.2",
+      "Caprice Viennois, Op.2",
+      "루트비히 판 베토벤 Ludwig van Beethoven",
+      "바이올린과 피아노를 위한 소나타 제1번 D장조, Op.12/1",
+      "Sonata for Violin and Piano No.1 in D Major, Op.12/1",
+      "세르게이 프로코피예프 Sergey Prokofiev",
+      "신데렐라, Op.87 중 (바이올린과 피아노를 위한 편곡 미하일 피흐텐골츠)",
+      "Cinderella, Op.87 (excerpts, arranged for Violin and Piano by Mikhail Fichtenholz)",
+      "Grand Waltz",
+      "Rhapsody for Violin and Piano No.1, Sz.86",
+      "파블로 데 사라사테 Pablo de Sarasate",
+      "바이올린과 피아노를 위한 비제 ‘카르멘’에 의한 환상곡, Op.25",
+      "Fantasy on Bizet's “Carmen” for Violin and Piano, Op.25"
+    ],
     "price": "전석 13,000원",
     "ticketUrl": "https://www.kumhoarthall.com:448/designer/skin/01/detail.html?p_idx=25686",
     "status": "예매중",
@@ -19589,7 +20119,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J.S. Bach - Piece d‘ Orgue BWV 572",
+      "M. Durufle - Prelude et Fugue sur le nom d‘Alain, op.7",
+      "C. Saint-Saens - Danse marcabre, op.40 (arr. for organ and piano)"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "https://www.bac.or.kr/product/ko/performance/253559",
     "status": "예매중",
@@ -19744,7 +20278,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Prelude and Fugue in a minor, BWV 889",
+      "Piano Sonata No. 9 in D Major, K. 311",
+      "Scherzo No. 1 in b minor, Op. 20",
+      "Grandes etudes de Paganini, S.141"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1610089",
     "status": "예매중",
@@ -20233,7 +20772,27 @@ export const initialRealConcerts = [
     "venue": "스튜디오 리움",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "F. Chopin, Nocturne in B major, Op.62 No.1",
+      "쇼팽이 생전에 마지막으로 출판한 녹턴 중 첫 곡으로, 다시 돌아온 주제가 긴 트릴에 감싸이며",
+      "만년의 깊은 서정을 드러냅니다. 이어지는〈헌정〉은 슈만이 결혼을 앞두고 클라라에게 바친",
+      "가곡집《미르테의 꽃》의 첫 곡을 리스트가 피아노 독주곡으로 옮긴 작품으로,",
+      "C. Debussy, Suite bergamasque, L.75",
+      "A. Scriabin, Etude in D-sharp minor, Op.8 No.12",
+      "〈베르가마스크 모음곡〉은 바로크 모음곡의 틀에 드뷔시 특유의 색채를 입힌 작품으로,",
+      "이어지는 스크랴빈의 에튀드 Op.8 No.12는 거센 옥타브 도약과 격정적인 화성으로",
+      "R. Schumann, Davidsbündlertänze, Op.6",
+      "‘다비드 동맹’은 낡은 예술에 맞서기 위해 슈만이 상상 속에서 만든 예술가들의 모임입니다.",
+      "열정적인 플로레스탄과 몽상적인 오이제비우스, 슈만 내면의 두 자아가 번갈아 춤추듯 등장하며,",
+      "F. Liszt, Der Erlkönig, S.558/4",
+      "리스트의 제자 조반니 스감바티가 피아노 독주곡으로 옮겼습니다. 고요하고 애잔한 노래가 흐른 뒤,",
+      "슈베르트의 가곡을 리스트가 편곡한〈마왕〉에서는 질주하는 말발굽 같은 옥타브 위로",
+      "F. Chopin, Ballade No.4 in F minor, Op.52",
+      "네 곡의 발라드 가운데 마지막이자 가장 원숙한 작품으로 꼽힙니다.",
+      "N. Kapustin, Variations, Op.41",
+      "스트라빈스키〈봄의 제전〉첫머리의 바순 선율을 주제로 삼아 스윙 리듬과 재즈 화성으로",
+      "모차르트 피아노 소나타 11번 A장조 K.331의 마지막 악장〈터키 행진곡〉을"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://playticket.co.kr/nav/detail.html?idx=4628",
     "status": "예매중",
@@ -20338,7 +20897,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Johann Sebastian Bach / Concerto for 3 Violins in D Major, BWV 1064R",
+      "Antonio Vivaldi / Concerto for 3 Violins in F Major, RV 551",
+      "Antonio Vivaldi / Concerto for 4 Violins in b minor, RV 580",
+      "Ludwig Wilhelm Maurer / Concerto for 4 Violins and Orchestra in A Major, Op. 55"
+    ],
     "price": "R석 30,000원, S석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014752",
     "status": "예매중",
@@ -20422,7 +20986,11 @@ export const initialRealConcerts = [
     "composers": [
       "모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "Symphony No. 25 in G minor, K. 183 교향곡 25번 사단조 (1773, 17세)",
+      "Violin Concerto No. 4 in D Major, K. 218 바이올린 협주곡 4번 라장조 (1775년, 19세)",
+      "Symphony No. 40 in G minor, K. 550 교향곡 40번 사단조 (1788년, 32세)"
+    ],
     "price": "R석 120,000원, S석 100,000원, A석 70,000원, B석 50,000원, 시야방해 R석 84,000원, 시야방해 S석 70,000원, 시야방해 A석 49,000원, 시야방해 B석 35,000원",
     "ticketUrl": "https://nol.yanolja.com/ticket/products/26013766",
     "status": "예매중",
@@ -20599,7 +21167,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "F.Suppe - Overture to Light Cavalry",
+      "E.Elgar - Pomp and Circumstance Marches, Op.39, No.1"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014258",
     "status": "예매중",
@@ -20743,7 +21314,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Symphony No. 2 in C Minor “Resurrection”"
+    ],
     "price": "R석 70,000원, S석 50,000원, A석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013612",
     "status": "예매중",
@@ -20864,7 +21437,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Serenade for Strings in E major Op.22 현을 위한 세레나데 E장조 Op.22 中 1, 2, 5악장",
+      "Pierrot Lunaire Op.21  달에 홀린 피에로 Op.21 中",
+      "Valse de Chopin (쇼팽의 왈츠)",
+      "Winter from The Four Seasons Op.8 No.4 사계 中 겨울 Op.8 No.4",
+      "7 Canciones populares Españolas  7개의 스페인 민요 모음곡",
+      "Bachiana Brasileira No.5 (브라질풍의 바흐 제5번) / H. Villa-Lobos(1887∼1959)"
+    ],
     "price": "전석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013873",
     "status": "예매중",
@@ -20897,7 +21477,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Bizet: Carman Overture (카르멘 서곡)",
+      "W.A. Mozart : Piano Concerto No.25 In C Major K.503 /",
+      "베르디 오페라 《라 트라비아타》 중"
+    ],
     "price": "R석 150,000원, S석 100,000원, A석 70,000원, B석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012023",
     "status": "예매중",
@@ -20957,7 +21541,23 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Sonatina in C major, Op.36 No.3",
+      "Nocturne No.6 in F major, H.40 ‘Cradle Song’",
+      "Sonata No.1 in E-flat major, Op.1 No.1",
+      "Sonata No.28 in A major, Op.101",
+      "6 Moments Musicaux D.780 (Op.94)",
+      "No.1 in C major",
+      "No.2 in A-flat major",
+      "No.3 in F minor: Allegro moderato",
+      "No.4 in C-sharp minor: Moderato",
+      "No.5 in F minor: Allegro vavace",
+      "No.6 in A-flat major: Allegretto",
+      "Aufforderung zum Tanz (Invitation to the Dance), Op.65",
+      "Prelude No.1 Andantino",
+      "Prelude No.3 Allegro",
+      "Prelude No.4 Memory “17, 18, 19”"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37700&amp;menuNo=200320",
     "status": "예매중",
@@ -21088,7 +21688,12 @@ export const initialRealConcerts = [
       "바흐",
       "헨델"
     ],
-    "pieces": [],
+    "pieces": [
+      "G.F. Händel (1685–1759) — 〈Dixit Dominus〉 HWV 232",
+      "게오르크 프리드리히 헨델 — 시편 110편 \"주께서 내 주에게 말씀하시기를\"",
+      "J.S. Bach (1685–1750) — 〈Magnificat in D Major〉 BWV 243",
+      "요한 세바스찬 바흐 — 성모 마리아의 찬가 \"마그니피캇\""
+    ],
     "price": "전석 3,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014360",
     "status": "예매중",
@@ -21579,7 +22184,10 @@ export const initialRealConcerts = [
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "▪ Waltz of the Flowers(꽃의 왈츠) ·················································· P. I. Tchaikovsky",
+      "▪ Selection from Water Music Suites (수상음악 모음곡 중)···················· G. F. Handel"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.sejongpac.or.kr/dfac/dfacPerformance/dfacPerformance/performTicket.do?performIdx=37736&amp;menuNo=1200007",
     "status": "예매중",
@@ -22223,7 +22831,9 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 \"합창\""
+    ],
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1748448",
     "status": "예매중",
@@ -22433,7 +23043,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "WTC I Prelude and Fugue No. 16 in g minor, BWV 861",
+      "Piano Sonata No. 17 in d minor, Op. 31 No. 2 [The Tempest]",
+      "Scherzo No. 4 in E Major, Op. 54",
+      "Piano Sonata No. 16 in a minor, D. 845"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1610089",
     "status": "예매중",
@@ -22493,7 +23108,9 @@ export const initialRealConcerts = [
     "composers": [
       "비발디"
     ],
-    "pieces": [],
+    "pieces": [
+      "안토니오 비발디: 바이올린 협주곡 Op.8 \"사계\""
+    ],
     "price": "1층석 20,000원, 2층석 10,000원",
     "ticketUrl": "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&amp;p_new=&amp;start2=0&amp;page_no2=1&amp;p_idx=14099",
     "status": "예매중",
@@ -22920,7 +23537,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "브람스 : 대학 축전 서곡, 작품 80",
+      "바버 : 교향곡 제1번, 단악장 작품 9",
+      "스트라빈스키 : 불새 모음곡 (1919)"
+    ],
     "price": "R석 450,000원, S석 350,000원, A석 250,000원, B석 150,000원, C석 80,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014086",
     "status": "예매중",
@@ -23003,7 +23624,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Sonata No.1 For Violin and Piano in F Major, Op.8",
+      "Sonata No.2 For Violin and Piano in G Major, Op.13",
+      "Sonata No.3 For Violin and Piano in c minor, Op.45"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004867",
     "status": "예매중",
@@ -23058,7 +23683,16 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "바순과 피아노를 위한 콘서트 솔로, Op.35",
+      "Solo de Concert for Bassoon and Piano, Op.35",
+      "바순 협주곡 C장조 (바순과 피아노 연주)",
+      "Bassoon Concerto in C Major (performed on Bassoon and Piano)",
+      "바순과 피아노를 위한 환상곡 B-flat장조",
+      "Fantasia for Bassoon and Orchestra in B-flat Major",
+      "바순과 현악을 위한 협주곡 (바순과 피아노 연주)",
+      "Concerto for Bassoon and Strings (performed on Bassoon and Piano)"
+    ],
     "price": "전석 13,000원",
     "ticketUrl": "https://www.kumhoarthall.com:448/designer/skin/01/detail.html?p_idx=25687",
     "status": "예매중",
@@ -23345,7 +23979,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. C. F. Bach - Symphony in D minor, WFV I∕3",
+      "J. S. Bach - Violin Concerto in A minor, BWV 1041",
+      "J. C. Bach/ H. Casadesus - Viola Concerto in C minor",
+      "L. Janáček - Suite for string orchestra"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014025",
     "status": "예매중",
@@ -23700,7 +24339,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "세르게이 라흐마니노프   피아노 협주곡 제3번",
+      "사무엘 바버   교향곡 제1번, 단악장 작품9",
+      "이고르 스트라빈스키   '불새' 모음곡(1919)"
+    ],
     "price": "R석 480,000원, S석 380,000원, A석 280,000원, B석 180,000원, C석 100,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014094",
     "status": "예매중",
@@ -24089,7 +24732,13 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "세르게이 라흐마니노프\t\t피아노 협주곡 제3번 라단조, 작품번호30",
+      "사무엘 바버 \t                 교향곡 제1번, 작품번호9",
+      "Samuel Barber            Symphony No. 1 in One Movement, Op. 9",
+      "이고르 스트라빈스키 \t\t발레 <불새> 모음곡 (1919)",
+      "Igor Stravinsky          \t     “The Firebird” Suite (1919)"
+    ],
     "price": "R석 480,000원, S석 380,000원, A석 280,000원, B석 180,000원, C석 100,000원, 시야방해R  432,000원, 시야방해S  342,000원, 시야방해A  252,000원, 시야방해B  162,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013979",
     "status": "예매중",
@@ -24203,7 +24852,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "B for Sonata (1973)"
+    ],
     "price": "전석 40,000원",
     "ticketUrl": "https://thehouseconcert.com/sub/concert/schedule_view.php?idx=1510",
     "status": "예매중",
@@ -24378,7 +25029,12 @@ export const initialRealConcerts = [
     "composers": [
       "라흐마니노프"
     ],
-    "pieces": [],
+    "pieces": [
+      "드보르자크                   교향곡 7번  Op.70A.",
+      "Dvořák                       Symphony No. 7 in D minor, Op. 70",
+      "라흐마니노프              피아노 협주곡 2번  Op.18S.",
+      "Rachmaninoff            Piano Concerto No. 2 in C minor, Op. 18"
+    ],
     "price": "R석 120,000원, S석 90,000원, A석 60,000원, B석 30,000원, C석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012173",
     "status": "예매중",
@@ -24406,7 +25062,15 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "멘델스존 _ 무언가, 작품 67",
+      "쇼팽 _ 야상곡 나장조, 작품 32-1",
+      "F. Chopin _ Nocturne in B Major, Op. 32 No. 1",
+      "쇼팽 _ 야상곡 마장조, 작품 62-2",
+      "F. Chopin _ Nocturne in E Major, Op. 62 No. 2",
+      "쇼팽 _ 발라드 제1번 사단조, 작품 23",
+      "F. Chopin _ Ballade No. 1 in g minor, Op. 23"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008185",
     "status": "예매중",
@@ -24952,7 +25616,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. 에클스ㅣ<광기의 연인> 모음곡: 그라운드 변주곡(에어 5번) Z.502",
+      "J. Ecclesㅣ Suite: Ground(Aire V), Z.502",
+      "D. 퍼셀ㅣ바이올린 소나타 제6번",
+      "D. PurcellㅣSixth Sonata for Solo Violin",
+      "마테이스 주니어ㅣ환상곡 a단조 “알리아 판타지아”",
+      "N. Matteis Jr.ㅣFantasia in a minor “Alia Fantasia”  외 다수"
+    ],
     "price": "전석무료",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014378",
     "status": "예매중",
@@ -25091,7 +25762,10 @@ export const initialRealConcerts = [
     "venue": "대구콘서트하우스",
     "city": "대구광역시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "Francis Poulenc - Sonata for Flute and Piano (1956-1957)",
+      "Benjamin Godard - Suite de Trois Morceaux for flute and piano  (1890)"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/66341",
     "status": "예매중",
@@ -25660,7 +26334,24 @@ export const initialRealConcerts = [
     "venue": "롯데콘서트홀",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "합창/ 주의 영광",
+      "합창/ 깨끗게 하시리라",
+      "Alto(aria) + 합창/ 아름다운 소식을 전하는 자여",
+      "합창/ 한 아기 우리에게 났고",
+      "전원 교향곡",
+      "합창/ 지극히 높은곳엔 주께 영광",
+      "합창/ 그 멍에는 쉽고 그 짐은 가벼워",
+      "합창/ 세상 죄를 지고 가는 하나님의 어린양을 보라",
+      "합창/ 그는 실로",
+      "합창/ 그가 채찍에 맞으므로",
+      "합창/ 우리는 다 양 같아서",
+      "합창/ 저가 여호와께 의탁하니 ***",
+      "합창/ 문들아 너희 머리를 들지어다",
+      "합창/ 할렐루야",
+      "합창/ 사망이 한 사람으로",
+      "합창/ 죽임 당하신 어린양 아멘"
+    ],
     "price": "R석 50,000원, S석 30,000원, A석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014951",
     "status": "예매중",
@@ -25841,7 +26532,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "바흐 _ 무반주 바이올린을 위한 파르티타 제2번 라단조, 작품 1004 중 제5곡 '샤콘느'",
+      "J. S. Bach _ Partita for Solo Violin No. 2 in d minor, BWV 1004: V. Chaconne",
+      "브람스 _ 바이올린 소나타 제1번 사장조, 작품 78 '비의 노래'",
+      "J. Brahms _ Violin Sonata No. 1 in G Major, Op. 78 'Regenlied'",
+      "베토벤 _ 바이올린 소나타 제9번 가장조, 작품 47 '크로이처'",
+      "L. van Beethoven _ Violin Sonata No. 9 in A Major, Op. 47 'Kreutzer'"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008256",
     "status": "예매중",
@@ -25978,7 +26676,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "샤타르 올지바야르 - 마두금 협주곡 제1번",
+      "Shatar Ulziibayar - Morin Khuur Concerto No.1",
+      "시벨리우스 - 교향곡 제2번 D장조, Op.43",
+      "J. Sibelius - Symphony No.2 in D major, Op.43"
+    ],
     "price": "R석 30,000원, S석 16,000원, H석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014607",
     "status": "예매중",
@@ -26061,7 +26764,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Piano Sonata No. 18 in E flat Major, Op. 31 No. 3",
+      "Piano Sonata No. 4 in F sharp Major, Op. 30"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1610089",
     "status": "예매중",
@@ -26478,7 +27184,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "로베르트 슈만 Robert Schumann",
+      "시인의 사랑, 성악과 피아노를 위한 연가곡, Op.48",
+      "Dichterliebe, Song Cycle for Voice and Piano, Op.48"
+    ],
     "price": "전석 15,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65159",
     "status": "예매중",
@@ -26505,7 +27215,20 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "프레데리크 쇼팽 Frédéric Chopin",
+      "피아노를 위한 스케르초 제1번 b단조, Op.20, CT.197",
+      "Scherzo for Piano No.1 in b minor, Op.20, CT.197",
+      "피아노를 위한 스케르초 제2번 b-flat단조, Op.31, CT.198",
+      "Scherzo for Piano No.2 in b-flat minor, Op.31, CT.198",
+      "피아노를 위한 스케르초 제3번 c-sharp단조, Op.39, CT.199",
+      "Scherzo for Piano No.3 in c-sharp minor, Op.39, CT.199",
+      "피아노를 위한 스케르초 제4번 E장조, Op.54, CT.200",
+      "Scherzo for Piano No.4 in E Major, Op.54, CT.200",
+      "로베르트 슈만 Robert Schumann",
+      "피아노를 위한 유머레스크 B-flat 장조, Op.20",
+      "Humoreske for Piano in B-flat Major, Op.20"
+    ],
     "price": "전석 13,000원",
     "ticketUrl": "https://www.ticketlink.co.kr/product/65154",
     "status": "예매중",
@@ -26713,7 +27436,13 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "투리나 - 세비야나 환상곡",
+      "Turina - Fantasia Sevillana Op. 29",
+      "라우타바라 - 유니콘의 세레나데",
+      "Rautavaara - <Serenades of the Unicorn>",
+      "파가니니 - 바이올린과 기타를 위한 모음 소나타 1번"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/638550",
     "status": "예매중",
@@ -27166,7 +27895,15 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Bizet | Carmen Overture",
+      "오페라 「카르멘」 서곡",
+      "S. Rachmaninoff | Piano Concerto No. 2 in c minor, Op. 18",
+      "피아노 협주곡 제2번 다단조, Op. 18",
+      "J. Haydn | Trumpet Concerto in E♭ Major",
+      "트럼펫 협주곡 내림마장조",
+      "Hyo-Won Woo | Ah! Korea"
+    ],
     "price": "VIP석 30,000원, R석 20,000원, S석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014379",
     "status": "예매중",
@@ -27193,7 +27930,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Ballade No. 1 in G minor, Op. 23",
+      "Piano Sonata No. 3 in F minor, Op. 14",
+      "Ⅱ. Scherzo: Molto comodo"
+    ],
     "price": "전석 40,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014583",
     "status": "예매중",
@@ -27628,7 +28369,14 @@ export const initialRealConcerts = [
     "composers": [
       "브람스"
     ],
-    "pieces": [],
+    "pieces": [
+      "Ludwig van Beethoven | Egmont Overture, Op. 84",
+      "베토벤 | 에그몬트 서곡, 작품번호 84",
+      "Johannes Brahms | Piano Concerto No. 2 in B♭ Major, Op. 83",
+      "브람스 | 피아노 협주곡 제2번 내림나장조, 작품번호 83",
+      "Johannes Brahms | Symphony No. 1 in C minor, Op. 68",
+      "브람스 | 교향곡 제1번 다단조, 작품번호 68"
+    ],
     "price": "R석 100,000원, S석 70,000원, A석 50,000원, B석 30,000원, C석 20,000원, 시야방해R  70,000원, 시야방해A  30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26000077",
     "status": "예매중",
@@ -27655,7 +28403,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Piano Sonata in C minor, Hob. XVI: 20",
+      "Symphonic Etudes, Op. 13"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37725&amp;menuNo=200320",
     "status": "예매중",
@@ -27737,7 +28488,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "◆ <혼성합창> 지휘 ㅣ 염혜경",
+      "◆ <여성합창> 지휘 ㅣ 임수진",
+      "◆ <남성합창> 지휘 ㅣ 염혜경",
+      "◆ <혼성합창> 지휘 ㅣ 임수진"
+    ],
     "price": "R석 40,000원, S석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013716",
     "status": "예매중",
@@ -28335,7 +29091,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "프로코피예프, <로미오와 줄리엣> 발췌"
+    ],
     "price": "R석 100,000원, S석 80,000원, A석 50,000원, B석 30,000원, C석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/59430",
     "status": "예매중",
@@ -28497,7 +29255,13 @@ export const initialRealConcerts = [
     "venue": "부산문화회관",
     "city": "부산광역시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "Prelude and Fugue No.1 in C Major, BWV 846",
+      "No.1 in C major, BWV 846",
+      "No.2 in c minor, BWV 847",
+      "Piano Sonata No. 32 in C minor, Op. 111",
+      "Mephisto Waltz No. 1"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014825",
     "status": "예매중",
@@ -29058,7 +29822,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "브람스, 클라리넷 삼중주"
+    ],
     "price": "R석 70,000원, S석 40,000원, A석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25013737",
     "status": "예매중",
@@ -29113,7 +29879,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "요한 제바스티안 바흐 Johann Sebastian Bach",
+      "바이올린 독주를 위한 파르티타 제2번 d단조, BWV 1004 중 샤콘느",
+      "(피아노를 위한 편곡 요하네스 브람스, 마림바 연주)",
+      "Chaconne from Partita for Solo Violin No.2 in d minor, BWV1004"
+    ],
     "price": "전석 15,000원",
     "ticketUrl": "https://www.kumhoarthall.com:448/designer/skin/01/detail.html?p_idx=25663&amp;s_idx=11&amp;vwY=2026&amp;vwM=11&amp;se_idx=",
     "status": "예매중",
@@ -29141,7 +29912,17 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "로베르트 슈만 Robert Schumann",
+      "호른과 피아노를 위한 아다지오와 알레그로 A-flat장조, Op.70",
+      "Adagio and Allegro for Horn and Piano in A-flat Major, Op.70",
+      "호른과 피아노를 위한 환상곡, Op.2",
+      "Fantasie for Horn and Piano, Op.2",
+      "호른 협주곡 제1번 E-flat장조, Op.11 (호른과 피아노 연주)",
+      "Horn Concerto No.1 in E-flat Major, Op.11 (performed on Horn and Piano)",
+      "호른과 오케스트라를 위한 협주곡 B-flat장조, Op.91 (호른과 피아노 연주)",
+      "Concerto for Horn and Orchestra in B-flat Major, Op.91 (performed on Horn and Piano)"
+    ],
     "price": "전석 13,000원",
     "ticketUrl": "https://www.kumhoarthall.com:448/designer/skin/01/detail.html?p_idx=25689",
     "status": "예매중",
@@ -30244,7 +31025,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Piano Sonata No. 2, Op. 19"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37737&amp;menuNo=200320",
     "status": "예매중",
@@ -30319,7 +31102,9 @@ export const initialRealConcerts = [
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "Flute Sonata in E Minor, Op. 167 \"Undine\""
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014185",
     "status": "예매중",
@@ -30524,7 +31309,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "II. Scherzo: Allegro molto",
+      "III. Scherzo: Poco allegro"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37728&amp;menuNo=200320",
     "status": "예매중",
@@ -30933,7 +31721,12 @@ export const initialRealConcerts = [
     "composers": [
       "브람스"
     ],
-    "pieces": [],
+    "pieces": [
+      "브람스 _ 바이올린 협주곡 라장조, 작품 77",
+      "J. Brahms Violin Concerto in D Major, Op.77",
+      "브람스 _ 교향곡 제4번 마단조, 작품 98",
+      "J. Brahms Symphony No. 4 in e minor, Op. 98"
+    ],
     "price": "R석 20,000원, S석 10,000원, A석 5,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014701",
     "status": "예매중",
@@ -31148,7 +31941,10 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [],
+    "pieces": [
+      "Duet with two obbligato ‘eyeglasses’ in E-flat major, WoO 32, for Viola and Cello",
+      "III. Scherzo. Allegro assai"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013664",
     "status": "예매중",
@@ -31207,7 +32003,9 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 \"합창\""
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65010",
     "status": "예매중",
@@ -31292,7 +32090,16 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Blute nur, du liebes Herz, No.8 / 피투성이가 되어라 사랑하는 주의 마음이여!",
+      "from Oratorio <​​Matthäus-Passion> 오라토리오 <​​마태수난곡>",
+      "괴테의 빌헬름 마이스터에 의한 가곡집",
+      "Kennst du das Land, Op.98a, No.1 / 당신은 그 나라를 아시나요?",
+      "Nur wer die Sehnsucht kennt, Op.98a, No.3 / 오직 그리움을 아는 이 만이",
+      "Heiß’ mich nicht reden, heiß’ mich schweigen, Op98a, No.5 / 말하라 하지 말고 침묵하게 내버려 두세요.",
+      "So laßt mich scheinen, bis ich werde, Op.98a, No.9 / 그대로 빛나는 존재로 남게 해 주세요.",
+      "Paganini / 파가니니"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://nol.yanolja.com/ticket/products/P0004864",
     "status": "예매중",
@@ -31571,7 +32378,9 @@ export const initialRealConcerts = [
     "venue": "일신홀",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "Rondo Capriccioso in E Major, Op.14 (arr. Yoav Talmi)"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014130",
     "status": "예매중",
@@ -31746,7 +32555,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "라흐마니노프의 솔로 피아노 작품 셀렉션",
+      "라흐마니노프 - 피아노 협주곡 제2번 C단조, 작품 18",
+      "Rachmaninov - Piano Concerto No. 2 in C minor, Op. 18"
+    ],
     "price": "C석 40,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/638550",
     "status": "예매중",
@@ -32016,7 +32829,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Johann Sebastian Bach (1685–1750) Air from Orchestral Suite No. 3, BWV 1068 for Soprano Saxophone and Piano",
+      "Joseph Haydn (1732–1809) Oboe Concerto in C Major for Soprano Saxophone and Piano"
+    ],
     "price": "전석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013910",
     "status": "예매중",
@@ -32155,7 +32971,9 @@ export const initialRealConcerts = [
     "venue": "정약용도서관",
     "city": "경기도",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "안토니오 비발디: 바이올린 협주곡 Op.8 \"사계\""
+    ],
     "price": "전석 1,000원",
     "ticketUrl": "http://nyjcf.moonhwain.net/rsvc/rsv_pm.html?b_id=nyjcf&amp;p_idx=740",
     "status": "예매중",
@@ -32179,7 +32997,10 @@ export const initialRealConcerts = [
     "venue": "세종문화회관",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "예수 그리스도의 고난과 십자가에서의 희생을 중심으로 인류를 위한 속죄와 구원의 의미를 담아낸다. 고난과 죽음에서 부활과 승리로 이어지는 극적인 음악의 흐름은 작품의 중심을 이루며, 웅장한 ‘할렐루야’ 합창과 함께 장엄한 절정에 이른다.",
+      "죽음을 넘어선 부활의 확신과 영원한 생명에 대한 희망을 노래한다. 마지막 합창 ‘Worthy is the Lamb’과 ‘Amen’에 이르러 구원의 완성과 신의 영광을 장엄하게 찬양하며 대서사의 막을 내린다."
+    ],
     "price": "R석 70,000원, S석 50,000원, A석 30,000원, B석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004874",
     "status": "예매중",
@@ -32277,7 +33098,9 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Transcendental Etudes, S.139"
+    ],
     "price": "전석 40,000원",
     "ticketUrl": "https://thehouseconcert.com/sub/concert/schedule_view.php?idx=1513",
     "status": "예매중",
@@ -32456,7 +33279,9 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 \"합창\""
+    ],
     "price": "R석 30,000원, S석 20,000원",
     "ticketUrl": "https://www.ntok.go.kr/ntok/pm/prfmng/performanceDetail.do?mi=21009&amp;perfId=267146",
     "status": "예매중",
@@ -32487,7 +33312,9 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 \"합창\""
+    ],
     "price": "R석 20,000원, S석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009135",
     "status": "예매중",
@@ -32657,7 +33484,12 @@ export const initialRealConcerts = [
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "Piano Sonata No.31 in A-flat Major, Op.110",
+      "Piano Sonata No.14 in A minor, D.784",
+      "Piano Sonata No.4 in F-sharp Major, Op.30",
+      "Piano Sonata in B minor, S.178"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014999",
     "status": "예매중",
@@ -32811,7 +33643,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "S. Rachmaninoff - Suite No. 2 Op. 17 for Two Pianos",
+      "W.A. Mozart - Violin Sonata No. 32 in B-flat Major, K. 454",
+      "R. A. Schumann - Cello Concerto in A minor, Op.129",
+      "J. Brahms - Sonata for Violin and Piano No. 1 in G Major, Op. 78"
+    ],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014071",
     "status": "예매중",
@@ -33192,7 +34029,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "D. Scarlatti Sonata in D Minor, K.213",
+      "D. Scarlatti Sonata in G Minor, K.427",
+      "L,v. Beethoven Andante Favori in F Major, WoO.57",
+      "L,v. Beethoven Sonata No.21 in C Major, Op.53",
+      "A. Scriabin Sonata No.2 in G# Minor, Op.19",
+      "R. Schumann Carnaval, Op.9"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014726",
     "status": "예매중",
@@ -33400,7 +34244,10 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Holst\t           The Planets Op.32 中 Ⅳ. Jupiter, The Bringer of Jolity (행성 중 ‘목성’)",
+      "D. Shostakovich\t    Waltz No.2"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/62984",
     "status": "예매중",
@@ -33421,7 +34268,9 @@ export const initialRealConcerts = [
     "venue": "로드아트센터 [부산]",
     "city": "부산광역시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "'리스트 초절기교 연습곡' 전곡 연주"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1738966",
     "status": "예매중",
@@ -33633,7 +34482,9 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 \"합창\""
+    ],
     "price": "R석 70,000원, S석 50,000원, A석 30,000원",
     "ticketUrl": "http://www.artgy.or.kr/PF/PF0201V.aspx?showid=0000008487",
     "status": "예매중",
@@ -33660,7 +34511,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "R. Schumann - Arabeske, Op.18",
+      "R. Schumann - Sonata No.1 in F-sharp minor, Op.11",
+      "J. Brahms - Sonata No.3 in f minor, Op.5"
+    ],
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010631",
     "status": "예매중",
@@ -34569,7 +35424,14 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "첼로 독주를 위한 모음곡 제1번 Op.72 중 1악장",
+      "Suite for Solo Cello No.1, Op.72 (excerpt)",
+      "모리스 라벨 Maurice Ravel (1875~1937)",
+      "바이올린과 첼로를 위한 소나타, M.73 중 1, 4막장",
+      "Sonata for Violin and Cello, M.73 (excerpts)",
+      "부에노스 아이레스의 사계 중 봄 Primavera Portena from Cuatro estaciones portena"
+    ],
     "price": "전석 70,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65096",
     "status": "예매중",
@@ -35034,7 +35896,9 @@ export const initialRealConcerts = [
     "composers": [
       "헨델"
     ],
-    "pieces": [],
+    "pieces": [
+      "Händel, Messiah, HWV 56"
+    ],
     "price": "R석 70,000원, S석 50,000원, A석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26001421",
     "status": "예매중",
@@ -35122,7 +35986,13 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "쇼스타코비치/ 현악 팔중주, Op.11",
+      "Dmitry Shostakovich  | 2 Pieces for String Octet, Op.11",
+      "멘델스존/ 현악 팔중주, Op.20, MWV R20",
+      "Felix Mendelssohn |   String Octet in E-Flat Major, Op.20, MWV R20",
+      "George Enescu | String Octet in C Major, Op.7"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014887",
     "status": "예매중",
@@ -35178,7 +36048,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "B. Britten: Simple Symphony, Op. 4",
+      "D. Shostakovich: Symphony No. 14 in G minor, Op. 135",
+      "드미트리 쇼스타코비치: 교향곡 제14번 사단조 Op. 135"
+    ],
     "price": "R석 150,000원, S석 120,000원, A석 80,000원, B석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26007924",
     "status": "예매중",
@@ -35382,7 +36256,10 @@ export const initialRealConcerts = [
     "composers": [
       "헨델"
     ],
-    "pieces": [],
+    "pieces": [
+      "헨델 메시아",
+      "G. Handel Messiah HWV. 56"
+    ],
     "price": "R석 20,000원, S석 15,000원, A석 10,000원",
     "ticketUrl": "https://www.ticketlink.co.kr/product/60020",
     "status": "예매중",
@@ -35403,7 +36280,15 @@ export const initialRealConcerts = [
     "venue": "롯데콘서트홀",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "세르게이 프로코피예프",
+      "피아노 소타나 제6번 가장조, Op.82",
+      "Piano Sonata No.6 in A Major, Op.82",
+      "피아노 소나타 제7번 내림나장조, Op.83",
+      "Piano Sonata No.7 in B♭ Major, Op.83",
+      "피아노 소나타 제8번 내림나장조, Op.84",
+      "Piano Sonata No.8 in B♭ Major, Op.84"
+    ],
     "price": "R석 80,000원, S석 60,000원, A석 45,000원, B석 35,000원, 시야방해R  68,000원, 시야방해B  29,750원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014781",
     "status": "예매중",
@@ -35467,7 +36352,15 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Verdi, Nabucco : Overture",
+      "베르디, <나부코> 서곡",
+      "베르디, <리골레토> 중 ‘여자의 마음’",
+      "베르디, <라 트라비아타> 중 ‘아 그이였던가’",
+      "최진석, 관현악을 위한 ‘베토벤의 뒤를 따라’",
+      "Beethoven, Symphony No.9 in D minor, Op.125",
+      "베토벤, 교향곡 제9번 ‘합창’"
+    ],
     "price": "R석 100,000원, S석 70,000원, A석 50,000원, B석 30,000원, 시야방해 R석 70,000원, 시야방해 S석 49,000원, 시야방해 A석 35,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012176",
     "status": "예매중",
@@ -36294,7 +37187,11 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "파리나무십자가소년합창단의 기도/파리나무십자가소년합창단",
+      "아베 베룸 / 모차르트",
+      "할롈루야/ 헨델"
+    ],
     "price": "R석 120,000원, S석 110,000원, A석 90,000원, B석 70,000원, C석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012354",
     "status": "예매중",
@@ -36716,7 +37613,9 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 \"합창\""
+    ],
     "price": "R석 30,000원, S석 20,000원, A석 10,000원, B석 5,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26001678",
     "status": "예매중",
@@ -37045,7 +37944,12 @@ export const initialRealConcerts = [
     "composers": [
       "베토벤"
     ],
-    "pieces": [],
+    "pieces": [
+      "모차르트 교향곡 제38번 '프라하'",
+      "W. A. Mozart Symphony No. 38 in D major 'Prague' K.504",
+      "베토벤, 교향곡 제9번 ‘합창’",
+      "L. V. Beethoven Symphony No. 9 in d minor, Op. 125 'Choral'"
+    ],
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/59996",
     "status": "예매중",
@@ -37135,7 +38039,12 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "베토벤 / 피아노 협주곡 제5번 E♭장조, 작품73 '황제'",
+      "L. v. Beethoven / Piano Concerto No.5 in e flat major, Op.73 'Emperor'",
+      "베토벤 / 교향곡 제9번 d단조, 작품 125 ‘합창’",
+      "L. v. Beethoven / Symphony No.9 in d minor, Op. 125 ‘Choral’"
+    ],
     "price": "R석 150,000원, S석 120,000원, A석 80,000원, B석 50,000원, C석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014713",
     "status": "예매중",
@@ -37690,7 +38599,11 @@ export const initialRealConcerts = [
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "C.Reinecke - Flute Ballade Op.288",
+      "J. Brahms Piano Sonata No. 1 in C major op. 1 - I. Allegro",
+      "Saint-Saens - Danse macabre, op.40"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "https://www.sejongpac.or.kr/dfac/dfacPerformance/dfacPerformance/performTicket.do?performIdx=37741&amp;menuNo=1200007",
     "status": "예매중",
@@ -37796,7 +38709,13 @@ export const initialRealConcerts = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "W.A. Mozart: Piano Concerto No. 25 in C Major, K.503",
+      "모차르트: 피아노 협주곡 제25번 다장조, K.503",
+      "L.v. Beethoven: Symphony No. 9 in d minor, Op.125 ‘Choral’",
+      "베토벤: 교향곡 제9번 라단조, Op.125 ‘합창’",
+      "고양시립합창단, 안양시립합창단"
+    ],
     "price": "R석 70,000원, S석 50,000원, A석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014389",
     "status": "예매중",
@@ -37874,7 +38793,10 @@ export const initialRealConcerts = [
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "G. Rossini        William Tell Overture",
+      "G. Bizet          Carmen Suite"
+    ],
     "price": "R석 100,000원, S석 70,000원, A석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015136",
     "status": "예매중",
@@ -38027,7 +38949,10 @@ export const initialRealConcerts = [
     "venue": "세종문화회관",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "Sonata in A Minor, D. 821, Arpeggione",
+      "Piccola Suite da Tosca"
+    ],
     "price": "전석 200,000원",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37784&amp;menuNo=200320",
     "status": "예매중",
@@ -38056,7 +38981,11 @@ export const initialRealConcerts = [
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "Piano Sonata No. 18 in E-flat Major, Op. 31, No. 3",
+      "II. Scherzo. Allegretto vivace",
+      "No. 3 Ballade in g minor"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015164",
     "status": "예매중",

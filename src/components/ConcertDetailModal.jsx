@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, Music2, ExternalLink, Calendar, MapPin, User } from 'lucide-react';
+import { X, Music2, ExternalLink, Calendar, MapPin, User, Ticket } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
@@ -70,6 +70,13 @@ export default function ConcertDetailModal({ concert, onClose }) {
                 </span>
               )}
             </div>
+
+            {concert.price && (
+              <div className="flex items-center gap-1.5 text-xs text-amber-300 font-semibold pt-0.5">
+                <Ticket className="w-3.5 h-3.5 shrink-0" />
+                <span className="truncate">{concert.price}</span>
+              </div>
+            )}
           </div>
         </div>
 

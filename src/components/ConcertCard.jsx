@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MapPin, User, Music2, ExternalLink, Info, CheckCircle2, ShieldAlert, Sparkles, Clock, Flame } from 'lucide-react';
+import { Calendar, MapPin, User, Music2, ExternalLink, Info, CheckCircle2, ShieldAlert, Sparkles, Clock, Flame, Ticket } from 'lucide-react';
 import { formatKoreanDate, getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
@@ -143,6 +143,13 @@ export default function ConcertCard({ concert, onSelect }) {
               <User className="w-3.5 h-3.5 text-concert-500 shrink-0" />
               <span className="truncate">
                 {Array.isArray(concert.performers) ? concert.performers.join(', ') : (concert.performers || '출연진 정보')}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Ticket className="w-3.5 h-3.5 text-concert-500 shrink-0" />
+              <span className="truncate font-semibold text-stone-700 dark:text-stone-200">
+                {concert.price || '공식 예매처 참조'}
               </span>
             </div>
           </div>
