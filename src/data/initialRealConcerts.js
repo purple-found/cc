@@ -2,8 +2,8 @@
  * KOPIS(공연예술통합전산망) OpenAPI 실시간 전수 수집 실제 클래식 공연 데이터
  * 대한민국 전역 1829건 전수 적재
  * 복합 공연장 세부 홀 정보 (콘서트홀, IBK챔버홀, 리사이틀홀, 인춘아트홀 등) 100% 매핑
- * 실제 클래식 연주곡 프로그램(Pieces) 정밀 적재 완료
- * 마지막 자동 갱신 일시: 2026-10-25 02:00:15 KST
+ * 실제 클래식 연주곡 프로그램(Pieces) 정밀 적재 완료 (총 429건)
+ * 마지막 자동 갱신 일시: 2026-10-24T17:26:04.154Z
  */
 
 export const INITIAL_REAL_CONCERTS = [
@@ -4653,7 +4653,10 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. S. Bach: Goldberg Variations, BWV 988 (골드베르크 변주곡 전곡)",
+      "강효지: 만화경 (Kaleidoscope)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%5B%EC%84%9C%EC%9A%B8%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -4676,7 +4679,12 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "I. Stravinsky: Three Pieces for String Quartet",
+      "E. Schulhoff: Duo for Violin and Cello",
+      "Rebecca Clarke: Prelude, Allegro and Pastorale for Clarinet and Viola",
+      "A. Webern: Langsamer Satz for String Quartet, M. 78"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%5B%EC%84%9C%EC%9A%B8%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -5423,7 +5431,13 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "홍난파: 봄처녀",
+      "김성태: 동심초",
+      "조두남: 뱃노래",
+      "김연준: 청산에 살리라",
+      "신귀복: 얼굴"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "https://www.lotteconcerthall.com/product/performance/261196",
     "status": "공연완료",
@@ -5597,7 +5611,15 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "S. Šulek: Sonata 'Vox Gabrieli' for Trombone and Piano",
+      "B. Krol: Capriccio da Camera",
+      "E. Bozza: New Orleans",
+      "M. Ravel: Pavane pour une infante défunte",
+      "A. Guilmant: Morceau Symphonique",
+      "J. Castérède: Sonatine for Trombone and Piano",
+      "Kevin Day: Fantasia IV"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%5B%EC%84%9C%EC%9A%B8%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -5885,7 +5907,15 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "I. J. Paderewski: Humoresques de concert, Op. 14",
+      "I. Friedman: 3 Pieces, Op. 33",
+      "J. Hofmann: Prelude in B minor, Op. 30 No. 6",
+      "S. Cherkassky: Prélude pathétique",
+      "R. Casadesus: Toccata",
+      "J. S. Bach (arr. Myra Hess): Jesu, Joy of Man's Desiring",
+      "J. S. Bach (arr. Paul Wittgenstein): Siciliano"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%9C%EA%B7%80%ED%8F%AC%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -7087,7 +7117,13 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. Jongen: Aria et Polonaise for Trombone and Piano",
+      "R. Mola: In Pursuit of LIGHT",
+      "J. Filas: Sonata \"At the end of the century\"",
+      "F. David: Concertino, Op. 4",
+      "A. Márquez: Danzón No. 2 (서울트롬본콰르텟)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%5B%EC%84%9C%EC%9A%B8%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연완료",
@@ -12683,7 +12719,13 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. P. Rameau: Opera 〈Les Indes Galantes〉 - 'Danse des Sauvages'",
+      "J. S. Bach: Partita No. 2 in D minor, BWV 1004 - Chaconne (샤콘느)",
+      "M. Ravel: Ballet 〈Daphnis et Chloé〉 - 'Lever du jour'",
+      "A. Borodin: Opera 〈Prince Igor〉 - 'Polovtsian Dances'",
+      "I. Stravinsky: The Rite of Spring (오르간 듀오 편곡 봄의 제전)"
+    ],
     "price": "R석 70,000원, S석 50,000원, A석 30,000원, 시야방해R 49,000원, 시야방해S 35,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/62221",
     "status": "공연완료",
@@ -43356,7 +43398,11 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. Brahms: 3 Intermezzi, Op. 117",
+      "J. Brahms: 8 Klavierstücke, Op. 76",
+      "J. Brahms: Piano Sonata No. 3 in F minor, Op. 5"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014341",
     "status": "공연예정",
@@ -43386,7 +43432,12 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Verdi: Opera 〈La forza del destino〉 Overture",
+      "D. Shostakovich: Concerto No. 1 for Piano, Trumpet and Strings in C minor, Op. 35 (Pf. 노현진, Trp. 정태진)",
+      "J. Massenet: Opera 〈Le Cid〉 Ballet Suite",
+      "N. Rimsky-Korsakov: Capriccio Espagnol, Op. 34"
+    ],
     "price": "일반석 30,000원, 3층석 15,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011673",
     "status": "공연예정",
@@ -43651,7 +43702,9 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "슈베르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "F. Schubert: Winterreise, D. 911 (연가곡 〈겨울나그네〉 전곡) (Ten. 김세일, Pf. 김수연)"
+    ],
     "price": "전석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009780",
     "status": "예매중",
@@ -45608,7 +45661,12 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Piano Sonata No. 10 in C major, K. 330",
+      "O. Messiaen: Vingt Regards sur l'Enfant-Jésus - XI. Première Communion de la Vierge",
+      "F. Chopin: Ballade No. 2 in F major, Op. 38",
+      "F. Liszt: Piano Sonata in B minor, S. 178"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013745",
     "status": "공연예정",
@@ -45694,7 +45752,12 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "F. Chopin: Nocturne in B major, Op. 9 No. 3",
+      "R. Schumann: Davidsbündlertänze, Op. 6 (다비드 동맹 무곡)",
+      "F. Chopin: 4 Impromptus (Op. 29, Op. 36, Op. 51, Op. 66)",
+      "F. Liszt / F. Busoni: Fantasie über zwei Motive aus W. A. Mozarts \"Die Hochzeit des Figaro\""
+    ],
     "price": "R석 70,000원, S석 50,000원, A석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012238",
     "status": "공연예정",
@@ -46986,7 +47049,12 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. S. Bach: Concerto for 4 Harpsichords in A minor, BWV 1065 (arr. Florian Noack)",
+      "R. Schumann: Kreisleriana, Op. 16",
+      "A. Scriabin: Piano Sonata No. 2, Op. 19 & Sonata No. 4, Op. 30",
+      "P. I. Tchaikovsky: Fantasy Overture 'Romeo and Juliet' (arr. Florian Noack)"
+    ],
     "price": "R석 20,000원, S석 10,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1736024",
     "status": "공연예정",
@@ -47750,7 +47818,11 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "Carlos Salzedo: Variations on a Theme in Ancient Style, Op. 30",
+      "Henriette Renié: Légende d'après les Elfes de Leconte de Lisle",
+      "G. Mahler: Adagietto from Symphony No. 5 (arr. for Harp)"
+    ],
     "price": "R석 55,000원, S석 33,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014359",
     "status": "공연예정",
@@ -52144,7 +52216,13 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
     "city": "전남광주통합특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "R. Glière: Concerto for Coloratura Soprano, Op. 82 - I. Andante",
+      "G. Verdi: Opera 〈Rigoletto〉 - 'Caro nome'",
+      "G. F. Handel: Opera 〈Rinaldo〉 - 'Lascia ch'io pianga'",
+      "최진: 아름다워라 (How Beautiful)",
+      "R. Leoncavallo: Mattinata"
+    ],
     "price": "VIP석 160,000원, R석 140,000원, S석 120,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1762223",
     "status": "공연예정",
@@ -53781,7 +53859,13 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "대전예술의전당",
     "city": "대전광역시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "R. Glière: Concerto for Coloratura Soprano, Op. 82 - I. Andante",
+      "G. Verdi: Opera 〈Rigoletto〉 - 'Caro nome'",
+      "G. F. Handel: Opera 〈Rinaldo〉 - 'Lascia ch'io pianga'",
+      "최진: 아름다워라 (How Beautiful)",
+      "R. Leoncavallo: Mattinata"
+    ],
     "price": "VIP석 160,000원, R��� 140,000원, S석 120,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/66453",
     "status": "공연예정",
