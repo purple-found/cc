@@ -165,6 +165,7 @@ async function main() {
             const isOrch = ['오케스트라', '교향악단', '필하모닉', '필하모니', '심포니', '관현악단', '관현악', '합창교향곡', 'orchestra', 'philharmonic', 'symphony'].some(k => t.includes(k));
             return isOrch ? '오케스트라' : '실내악';
           })(),
+          composers: ['클래식 명작'],
           pieces: [],
           price: '공식 예매처 참조',
           ticketUrl: `https://search.naver.com/search.naver?query=${encodeURIComponent(venue + ' 공식 예매')}`,

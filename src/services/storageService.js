@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v24: 가짜 2027 신년 공연 전수 삭제 및 오케스트라/실내악 분류 전수 교정 완료
-const CONCERTS_KEY = 'opus_korea_concerts_v24';
+// v25: KOPIS 1,301건 최신 정기 동기화 반영
+const CONCERTS_KEY = 'opus_korea_concerts_v25';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -34,6 +34,7 @@ try {
       'opus_korea_concerts_v21',
       'opus_korea_concerts_v22',
       'opus_korea_concerts_v23',
+      'opus_korea_concerts_v24',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
