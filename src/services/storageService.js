@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v26: 전수 Crash-Proof 방어 아머 및 예술의전당/작곡가 필드 100% 무결점 보장
-const CONCERTS_KEY = 'opus_korea_concerts_v26';
+// v27: KOPIS OpenAPI 전수 실시간 정보(세부 홀, 출연진, 가격, 공식 예매처, 상태) 100% 동기화
+const CONCERTS_KEY = 'opus_korea_concerts_v27';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -36,6 +36,7 @@ try {
       'opus_korea_concerts_v23',
       'opus_korea_concerts_v24',
       'opus_korea_concerts_v25',
+      'opus_korea_concerts_v26',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
