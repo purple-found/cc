@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v30: 공식 상세페이지/포스터 팩트체크 및 검증 완료된 실연 곡목(353건) 전수 연동
-const CONCERTS_KEY = 'opus_korea_concerts_v30';
+// v31: 예술의전당 오케스트라 및 주요 공연 공식 프로그램 전수 연동 (386건)
+const CONCERTS_KEY = 'opus_korea_concerts_v31';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -40,6 +40,7 @@ try {
       'opus_korea_concerts_v27',
       'opus_korea_concerts_v28',
       'opus_korea_concerts_v29',
+      'opus_korea_concerts_v30',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
