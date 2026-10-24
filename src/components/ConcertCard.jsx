@@ -65,14 +65,14 @@ export default function ConcertCard({ concert, onSelect }) {
         {/* Composers & Genre Tag List */}
         <div className="flex items-center gap-1.5 flex-wrap overflow-hidden pt-0.5">
           <span className="px-2.5 py-0.5 rounded text-[11px] font-bold bg-concert-50 dark:bg-hall-800 text-concert-800 dark:text-concert-300 shrink-0">
-            {concert.performerType}
+            {concert.performerType || '클래식'}
           </span>
-          {concert.composers.map((comp) => (
+          {(Array.isArray(concert.composers) ? concert.composers : (concert.composers ? [concert.composers] : ['클래식 명작'])).map((comp, idx) => (
             <span
-              key={comp}
+              key={idx}
               className="px-2.5 py-0.5 rounded text-[11px] font-medium bg-stone-100 dark:bg-hall-850 text-stone-700 dark:text-stone-300 shrink-0"
             >
-              #{comp.split(' ')[0]}
+              #{typeof comp === 'string' ? comp.split(' ')[0] : '클래식'}
             </span>
           ))}
         </div>
@@ -86,10 +86,11 @@ export default function ConcertCard({ concert, onSelect }) {
             className="font-serif font-bold text-base md:text-lg text-stone-900 dark:text-stone-50 leading-snug"
           >
             {(() => {
-              const dashIdx = concert.title.indexOf(' - ');
+              const safeTitle = concert.title || '클래식 연주회';
+              const dashIdx = safeTitle.indexOf(' - ');
               if (dashIdx !== -1) {
-                const part1 = concert.title.substring(0, dashIdx);
-                const part2 = concert.title.substring(dashIdx + 3);
+                const part1 = safeTitle.substring(0, dashIdx);
+                const part2 = safeTitle.substring(dashIdx + 3);
                 return (
                   <>
                     <span className="block">{part1} -</span>
@@ -99,10 +100,10 @@ export default function ConcertCard({ concert, onSelect }) {
                   </>
                 );
               }
-              const singleDashIdx = concert.title.indexOf('-');
-              if (singleDashIdx !== -1 && singleDashIdx > 0 && singleDashIdx < concert.title.length - 1) {
-                const part1 = concert.title.substring(0, singleDashIdx);
-                const part2 = concert.title.substring(singleDashIdx + 1).trim();
+              const singleDashIdx = safeTitle.indexOf('-');
+              if (singleDashIdx !== -1 && singleDashIdx > 0 && singleDashIdx < safeTitle.length - 1) {
+                const part1 = safeTitle.substring(0, singleDashIdx);
+                const part2 = safeTitle.substring(singleDashIdx + 1).trim();
                 return (
                   <>
                     <span className="block">{part1} -</span>
@@ -112,7 +113,7 @@ export default function ConcertCard({ concert, onSelect }) {
                   </>
                 );
               }
-              return <span className="line-clamp-2">{concert.title}</span>;
+              return <span className="line-clamp-2">{safeTitle}</span>;
             })()}
           </h3>
 
@@ -140,7 +141,9 @@ export default function ConcertCard({ concert, onSelect }) {
 
             <div className="flex items-center gap-2">
               <User className="w-3.5 h-3.5 text-concert-500 shrink-0" />
-              <span className="truncate">{concert.performers.join(', ')}</span>
+              <span className="truncate">
+                {Array.isArray(concert.performers) ? concert.performers.join(', ') : (concert.performers || '출연진 정보')}
+              </span>
             </div>
           </div>
 

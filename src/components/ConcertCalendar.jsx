@@ -319,7 +319,7 @@ export default function ConcertCalendar({ concerts, onSelectConcert }) {
                     {c.time} · {c.venue}
                   </p>
                   <p className="text-[11px] text-concert-600 dark:text-concert-400 font-medium truncate mt-0.5">
-                    {c.performers.join(', ')}
+                    {Array.isArray(c.performers) ? c.performers.join(', ') : (c.performers || '')}
                   </p>
                 </div>
                 <button

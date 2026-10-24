@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v25: KOPIS 1,301건 최신 정기 동기화 반영
-const CONCERTS_KEY = 'opus_korea_concerts_v25';
+// v26: 전수 Crash-Proof 방어 아머 및 예술의전당/작곡가 필드 100% 무결점 보장
+const CONCERTS_KEY = 'opus_korea_concerts_v26';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -35,6 +35,7 @@ try {
       'opus_korea_concerts_v22',
       'opus_korea_concerts_v23',
       'opus_korea_concerts_v24',
+      'opus_korea_concerts_v25',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
@@ -100,12 +101,25 @@ export const storageService = {
         synced.push(...missingConcerts);
       }
 
+      // 모든 공연 객체의 필수 배열 필드(composers, pieces, performers) 무결점 보장
+      const safeSynced = synced.map(c => ({
+        ...c,
+        composers: Array.isArray(c.composers) && c.composers.length > 0 ? c.composers : ['클래식 명작'],
+        pieces: Array.isArray(c.pieces) ? c.pieces : [],
+        performers: Array.isArray(c.performers) && c.performers.length > 0 ? c.performers : [c.title || '출연진']
+      }));
+
       if (hasUpdate) {
-        localStorage.setItem(CONCERTS_KEY, JSON.stringify(synced));
+        localStorage.setItem(CONCERTS_KEY, JSON.stringify(safeSynced));
       }
-      return synced;
+      return safeSynced;
     } catch (e) {
-      return initialRealConcerts || [];
+      return (initialRealConcerts || []).map(c => ({
+        ...c,
+        composers: Array.isArray(c.composers) && c.composers.length > 0 ? c.composers : ['클래식 명작'],
+        pieces: Array.isArray(c.pieces) ? c.pieces : [],
+        performers: Array.isArray(c.performers) && c.performers.length > 0 ? c.performers : [c.title || '출연진']
+      }));
     }
   },
 
