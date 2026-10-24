@@ -46,13 +46,12 @@ function getTodayYYYYMMDD() {
   const kst = new Date(utc + (9 * 3600000));
   const pad = n => String(n).padStart(2, '0');
   const y = kst.getFullYear();
-  // 최소 20261001부터 미래 탐색
-  const startY = y < 2026 ? 2026 : y;
-  const startM = y < 2026 ? '10' : pad(kst.getMonth() + 1);
-  const startD = y < 2026 ? '01' : pad(kst.getDate());
+  const m = pad(kst.getMonth() + 1);
+  const day = pad(kst.getDate());
+  // 최근 1년 전부터 미래 2년치까지 전수 탐색 (1년 보존 원칙 및 최신 일정 전수 수집)
   return {
-    start: `${startY}${startM}${startD}`,
-    end: `${startY + 1}1231`
+    start: `${y - 1}${m}${day}`,
+    end: `${y + 2}1231`
   };
 }
 
@@ -212,14 +211,18 @@ async function main() {
 
   const filePath = path.resolve(__dirname, '../src/data/initialRealConcerts.js');
   const fileContent = fs.readFileSync(filePath, 'utf8');
-  const jsonMatch = fileContent.match(/export const initialRealConcerts = (\[[\s\S]*\]);/);
-  if (!jsonMatch) {
+  const jsonStart = fileContent.indexOf('[');
+  const jsonEnd = fileContent.lastIndexOf(']');
+  if (jsonStart === -1 || jsonEnd === -1) {
     throw new Error('initialRealConcerts.js 내의 JSON 배열을 파싱할 수 없습니다.');
   }
 
-  const existingConcerts = JSON.parse(jsonMatch[1]);
+  const existingConcerts = JSON.parse(fileContent.substring(jsonStart, jsonEnd + 1));
   const concertMap = new Map();
-  existingConcerts.forEach(c => concertMap.set(c.kopisId || c.id, c));
+  existingConcerts.forEach(c => {
+    const rawId = (c.kopisId || (c.id || '').replace(/^kopis-/, '')).trim();
+    if (rawId) concertMap.set(rawId, c);
+  });
 
   const { start, end } = getTodayYYYYMMDD();
   console.log(`수집 대상 기간: ${start} ~ ${end}`);
@@ -228,8 +231,8 @@ async function main() {
   let updatedCount = 0;
   const newItemsToEnrich = [];
 
-  // 1페이지부터 최대 5페이지까지 신규/수정 분량 탐색 (페이지당 100건 = 최대 500건)
-  for (let page = 1; page <= 5; page++) {
+  // 1페이지부터 최대 15페이지까지 신규/수정 분량 탐색 (페이지당 100건 = 최대 1,500건)
+  for (let page = 1; page <= 15; page++) {
     const listUrl = `http://www.kopis.or.kr/openApi/restful/pblprfr?service=${SERVICE_KEY}&stdate=${start}&eddate=${end}&cpage=${page}&rows=100&shcate=CCCA`;
     const xml = await fetchXml(listUrl);
     if (!xml || !xml.includes('<db>')) break;
@@ -356,9 +359,10 @@ async function main() {
  * 마지막 자동 갱신 일시: ${formatKSTNow()}
  */
 
-export const initialRealConcerts = ${JSON.stringify(updatedConcertList, null, 2)};
+export const INITIAL_REAL_CONCERTS = ${JSON.stringify(updatedConcertList, null, 2)};
+export const initialRealConcerts = INITIAL_REAL_CONCERTS;
 
-export default initialRealConcerts;
+export default INITIAL_REAL_CONCERTS;
 `;
 
   fs.writeFileSync(filePath, output, 'utf8');
