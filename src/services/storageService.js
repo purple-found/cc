@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v28: 카드 티켓 가격 표기 및 상세/시놉시스 프로그램(204건) 자동 추출 연동
-const CONCERTS_KEY = 'opus_korea_concerts_v28';
+// v29: 공식 상세페이지/포스터 팩트체크 및 향상된 시놉시스 프로그램(264건) 전수 연동
+const CONCERTS_KEY = 'opus_korea_concerts_v29';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -38,6 +38,7 @@ try {
       'opus_korea_concerts_v25',
       'opus_korea_concerts_v26',
       'opus_korea_concerts_v27',
+      'opus_korea_concerts_v28',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
