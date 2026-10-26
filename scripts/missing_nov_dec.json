@@ -1,0 +1,816 @@
+{
+  "missingNov": [
+    {
+      "id": "PF304466",
+      "title": "테너 최원혁 리사이틀: Romantic &amp; Verismo [경기 광주]",
+      "startDate": "2026.11.14",
+      "endDate": "2026.11.14",
+      "venue": "광주시문화예술의전당 (구. 남한산성아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304466_261026_142034.gif",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304462",
+      "title": "강지원 플루트 독주회",
+      "startDate": "2026.11.26",
+      "endDate": "2026.11.26",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304462_261026_141311.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304460",
+      "title": "에보니홀 단풍살롱: 네 개의 풍경을 따라 떠오르는 당신의 기억 [수원]",
+      "startDate": "2026.11.14",
+      "endDate": "2026.11.14",
+      "venue": "에보니홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304460_261026_140911.png",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304447",
+      "title": "김태영 색소폰 독주회",
+      "startDate": "2026.11.20",
+      "endDate": "2026.11.20",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304447_261026_133848.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304441",
+      "title": "국립합창단 전막공연, 클래식 세레나데 [정선]",
+      "startDate": "2026.11.24",
+      "endDate": "2026.11.24",
+      "venue": "정선아리랑센터",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304441_261026_132543.png",
+      "area": "강원특별자치도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304437",
+      "title": "한국소리문화의전당 신진예술인 발굴 프로젝트 시리즈 See: Rise, Ep.04 박경과 친구들 [전주]",
+      "startDate": "2026.11.21",
+      "endDate": "2026.11.21",
+      "venue": "한국소리문화의전당",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304437_261026_132006.jpg",
+      "area": "전북특별자치도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304430",
+      "title": "세상의 모든 플레이리스트, 박지훈의 음악회 [원주]",
+      "startDate": "2026.11.20",
+      "endDate": "2026.11.20",
+      "venue": "플레이리스트",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304430_261026_131246.gif",
+      "area": "강원특별자치도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304426",
+      "title": "푸르지오 아트홀 수요 초대석 48. 테마앙상블: 내가 만난 브람스",
+      "startDate": "2026.11.18",
+      "endDate": "2026.11.18",
+      "venue": "푸르지오아트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304426_261026_130359.jpg",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304414",
+      "title": "정희연 바이올린 독주회",
+      "startDate": "2026.11.07",
+      "endDate": "2026.11.07",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304414_261026_123834.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304402",
+      "title": "한국피아노학회 기획연주, 젊은 피아니스트의 초상: The Art of Virtuosity Series Ⅰ. 잔향과 색채",
+      "startDate": "2026.11.17",
+      "endDate": "2026.11.17",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304402_261026_112926.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304398",
+      "title": "올라비올라 정기연주회",
+      "startDate": "2026.11.19",
+      "endDate": "2026.11.19",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304398_261026_111736.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304393",
+      "title": "북구와 함께하는 예술의전당 SAC on Screen, 마술피리 [울산] (영상화)",
+      "startDate": "2026.11.25",
+      "endDate": "2026.11.25",
+      "venue": "울산북구문화예술회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304393_261026_110739.png",
+      "area": "울산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304391",
+      "title": "Heritage Series; The Masters, 클라리네티스트 폴 메이어 &amp; 피아니스트 에릭 르 사쥬",
+      "startDate": "2026.11.16",
+      "endDate": "2026.11.16",
+      "venue": "신영체임버홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304391_261026_110353.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304390",
+      "title": "제101회 영미성악연구회 정기연주회",
+      "startDate": "2026.11.03",
+      "endDate": "2026.11.03",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304390_261026_110018.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304381",
+      "title": "제1304회 서초금요음악회, 사랑을 노래하다: 오페라 라보엠",
+      "startDate": "2026.11.06",
+      "endDate": "2026.11.06",
+      "venue": "서초문화예술회관(구. 서초구민회관)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304381_261026_104305.jpg",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304377",
+      "title": "콘체르탄테: 바로크의 숨결, 비르투오조가 말하다",
+      "startDate": "2026.11.16",
+      "endDate": "2026.11.16",
+      "venue": "롯데콘서트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304377_261026_103405.jpg",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304372",
+      "title": "토요 클래식의 밤, 해설이 있는 클래식, 악보 속 음표들의 시간 여행: 바로크부터 20세기까지",
+      "startDate": "2026.11.21",
+      "endDate": "2026.11.21",
+      "venue": "콘서트홀 나누",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304372_261026_102916.jpg",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304370",
+      "title": "R&amp;R 체임버 앙상블 창단연주회",
+      "startDate": "2026.11.28",
+      "endDate": "2026.11.28",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304370_261026_102654.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304369",
+      "title": "대한민국 작곡제전, Ensemble Wiro Ⅱ. 공명 (Resonance) : 현대의 시선 [서울]",
+      "startDate": "2026.11.06",
+      "endDate": "2026.11.06",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304369_261026_102322.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304365",
+      "title": "월간연주자, 피아니스트 황성훈 (11월)",
+      "startDate": "2026.11.28",
+      "endDate": "2026.11.28",
+      "venue": "갤러리 디 아르테 청담",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304365_261026_101423.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF299172",
+      "title": "영등포아트홀 기획공연, 도란도란 클래식 시즌2. 베토벤",
+      "startDate": "2026.11.05",
+      "endDate": "2026.11.07",
+      "venue": "영등포아트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299172_260824_115849.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF299101",
+      "title": "DCH 라이브 클럽 with 안일구",
+      "startDate": "2026.10.18",
+      "endDate": "2026.11.01",
+      "venue": "온쉼표",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299101_260821_144752.png",
+      "area": "서울특별시",
+      "state": "공연중"
+    },
+    {
+      "id": "PF299079",
+      "title": "[패키지] 더 피아니스트 [대구]",
+      "startDate": "2026.10.05",
+      "endDate": "2026.11.29",
+      "venue": "수성아트피아",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299079_260821_134929.png",
+      "area": "대구광역시",
+      "state": "공연중"
+    },
+    {
+      "id": "PF298756",
+      "title": "플로리안 노악 피아노 리사이틀 [춘천]",
+      "startDate": "2026.11.29",
+      "endDate": "2026.11.29",
+      "venue": "춘천문화예술회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298756_260910_154927.gif",
+      "area": "강원특별자치도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF298463",
+      "title": "지브리를 품은 클래식: 풍성히 깊어가는 가을 [부산 해운대]",
+      "startDate": "2026.11.15",
+      "endDate": "2026.11.15",
+      "venue": "해운대문화회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298463_260813_145555.gif",
+      "area": "부산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF298415",
+      "title": "일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 [평택]",
+      "startDate": "2026.11.01",
+      "endDate": "2026.11.01",
+      "venue": "평택아트센터",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298415_260813_130743.gif",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF297860",
+      "title": "고양시민을 위한 Orchestra + Ukulele 콜라보: 니가 있어 참 좋다",
+      "startDate": "2026.11.05",
+      "endDate": "2026.11.05",
+      "venue": "고양아람누리",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297860_260806_131548.jpg",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF297399",
+      "title": "MAC 모닝 콘서트 #9",
+      "startDate": "2026.11.25",
+      "endDate": "2026.11.25",
+      "venue": "마포아트센터",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297399_260731_140230.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF297325",
+      "title": "남양주문화재단 마티네 콘서트 시리즈, 11시 클래식 수다 with 장일범 (11월)",
+      "startDate": "2026.11.18",
+      "endDate": "2026.11.18",
+      "venue": "다산아트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297325_260730_144955.jpg",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF297173",
+      "title": "브런치클래식 Ⅵ. 가을 그 쓸쓸함에 대하여 [군포]",
+      "startDate": "2026.11.12",
+      "endDate": "2026.11.12",
+      "venue": "군포문화예술회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297173_260729_103550.gif",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF297128",
+      "title": "코리안 영 아티스트 시리즈 Ⅵ, 이재리 첼로 리사이틀",
+      "startDate": "2026.11.30",
+      "endDate": "2026.11.30",
+      "venue": "명동대성당",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297128_260728_130818.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF297071",
+      "title": "베토벤의 생애를 관통하는 세 개의 피아노 협주곡: 위대한 베토벤 [부산]",
+      "startDate": "2026.11.29",
+      "endDate": "2026.11.29",
+      "venue": "부산콘서트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297071_260727_161232.jpg",
+      "area": "부산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF296962",
+      "title": "지브리 &amp; 디즈니 영화음악 오케스트라 콘서트 [대전 (앵콜) ]",
+      "startDate": "2026.11.01",
+      "endDate": "2026.11.01",
+      "venue": "충남대학교 정심화국제문화회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296962_260727_111329.gif",
+      "area": "대전광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF296669",
+      "title": "강릉시립교향악단 with 한재민 [통영]",
+      "startDate": "2026.11.28",
+      "endDate": "2026.11.28",
+      "venue": "통영국제음악당",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296669_260722_144148.gif",
+      "area": "경상남도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF296633",
+      "title": "낭만주의 거장, 차이코프스키 [부산]",
+      "startDate": "2026.11.06",
+      "endDate": "2026.11.06",
+      "venue": "부산콘서트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296633_260722_134340.gif",
+      "area": "부산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF296625",
+      "title": "윤이상국제음악콩쿠르 결선 [통영]",
+      "startDate": "2026.11.07",
+      "endDate": "2026.11.07",
+      "venue": "통영국제음악당",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296625_260722_132756.gif",
+      "area": "경상남도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF295891",
+      "title": "양방언 솔로 데뷔 30주년 기념 공연, UTOPIA: New Horizon",
+      "startDate": "2026.11.28",
+      "endDate": "2026.11.29",
+      "venue": "국립극장",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295891_260918_110311.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF295816",
+      "title": "Season G, Two Guitars: 박규희 x 박주원 [진주]",
+      "startDate": "2026.11.27",
+      "endDate": "2026.11.27",
+      "venue": "경상남도문화예술회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295816_260710_142531.jpg",
+      "area": "경상남도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF295559",
+      "title": "스테이지M 시네마 시리즈, 우리가 사랑한 시네마 뮤직 콘서트 [사천]",
+      "startDate": "2026.11.08",
+      "endDate": "2026.11.08",
+      "venue": "사천문화예술회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295559_260708_105245.gif",
+      "area": "경상남도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF295530",
+      "title": "마티네 콘서트, 그랜드 투어: 무대 위 세계여행 Ⅴ. 러시아 [평택]",
+      "startDate": "2026.11.11",
+      "endDate": "2026.11.11",
+      "venue": "평택시북부문예회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295530_260707_142100.jpg",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF295511",
+      "title": "[패키지] 마티네 콘서트, 그랜드 투어 무대 위 세계여행 하반기 패키지 [평택]",
+      "startDate": "2026.09.09",
+      "endDate": "2026.11.11",
+      "venue": "평택시북부문예회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295511_260707_132335.jpg",
+      "area": "경기도",
+      "state": "공���중"
+    },
+    {
+      "id": "PF294971",
+      "title": "용인문화재단 브런치 콘서트 (하반기)",
+      "startDate": "2026.09.12",
+      "endDate": "2026.11.14",
+      "venue": "용인시평생학습관 (여성회관)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294971_260701_095917.gif",
+      "area": "경기도",
+      "state": "공연중"
+    },
+    {
+      "id": "PF294908",
+      "title": "로데아트센터 마티네 콘서트 시리즈: 클래식 모닝, 아샤 퀄텟 &amp; 이종은: 실내악의 정점 The Climax",
+      "startDate": "2026.11.25",
+      "endDate": "2026.11.25",
+      "venue": "로데아트센터",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294908_260630_101036.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF294473",
+      "title": "토요키즈클래식 (하반기) [용인]",
+      "startDate": "2026.09.19",
+      "endDate": "2026.11.28",
+      "venue": "용인포은아트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294473_260624_101121.gif",
+      "area": "경기도",
+      "state": "공연중"
+    },
+    {
+      "id": "PF293685",
+      "title": "지브리 &amp; 디즈니 영화음악 오케스트라 콘서트 [고양 (앵콜) ]",
+      "startDate": "2026.11.08",
+      "endDate": "2026.11.08",
+      "venue": "고양아람누리",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293685_260615_120759.gif",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF293619",
+      "title": "클래식부산 마티네 콘서트, 지휘자 김광현의 오페라 톡톡: 카르멘",
+      "startDate": "2026.11.25",
+      "endDate": "2026.11.25",
+      "venue": "부산콘서트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293619_260612_161347.png",
+      "area": "부산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF293472",
+      "title": "(재) 전주문화재단 전주한벽문화관 우수작품시리즈 Ⅲ. 클래시칸 앙상블",
+      "startDate": "2026.11.21",
+      "endDate": "2026.11.21",
+      "venue": "전주한벽문화관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293472_260611_145710.gif",
+      "area": "전북특별자치도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF293457",
+      "title": "(재) 전주문화재단 전주한벽문화관 우수작품시리즈 Ⅱ. 소프라노 황수미",
+      "startDate": "2026.11.14",
+      "endDate": "2026.11.14",
+      "venue": "전주한벽문화관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293457_260611_143057.gif",
+      "area": "전북특별자치도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF293444",
+      "title": "(재) 전주문화재단 전주한벽문화관 우수작품시리즈 IV. 피아니스트 김태형 [전주]",
+      "startDate": "2026.11.28",
+      "endDate": "2026.11.28",
+      "venue": "전주한벽문화관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293444_260611_135736.gif",
+      "area": "전북특별자치도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF293426",
+      "title": "(재) 전주문화재단 전주한벽문화관 우수작품시리즈 I. 피아니스트 김수연 [전주]",
+      "startDate": "2026.11.07",
+      "endDate": "2026.11.07",
+      "venue": "전주한벽문화관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293426_260611_132411.gif",
+      "area": "전북특별자치도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF293370",
+      "title": "헤르만아트홀 기획연주, 신동찬 &amp; 임현진 듀오 리사이틀",
+      "startDate": "2026.11.07",
+      "endDate": "2026.11.07",
+      "venue": "헤르만아트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293370_260611_103303.png",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF293224",
+      "title": "수성르네상스 프로젝트, 젊은 예술가 리사이틀 Ⅶ, 박재오 피아노 리사이틀 [대구]",
+      "startDate": "2026.11.25",
+      "endDate": "2026.11.25",
+      "venue": "수성아트피아",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293224_260609_133712.png",
+      "area": "대구광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF293106",
+      "title": "수성아트피아 일요음악회: 인생은 아름다워 [대구]",
+      "startDate": "2026.11.01",
+      "endDate": "2026.11.01",
+      "venue": "수성아트피아",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293106_261006_174053.png",
+      "area": "대구광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF292616",
+      "title": "제254회 울산시립교향악단 정기연주회, 고전과 낭만의 빛: Light of the Classical and the Romantic",
+      "startDate": "2026.11.13",
+      "endDate": "2026.11.13",
+      "venue": "울산문화예술회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292616_260601_114441.jpg",
+      "area": "울산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF291715",
+      "title": "주술회전 인 콘서트 월드투어 [서울]",
+      "startDate": "2026.11.07",
+      "endDate": "2026.11.08",
+      "venue": "경희대학교 평화의전당",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF291715_260519_103330.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF290844",
+      "title": "Sound of Busan #4: 부산콘서트필하모닉 오케스트라, 올 댓 차이콥스키",
+      "startDate": "2026.11.27",
+      "endDate": "2026.11.27",
+      "venue": "부산시민회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF290844_260507_141733.jpg",
+      "area": "부산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF290652",
+      "title": "수성키즈클래식, 리듬으로 만나는 클래식 놀이터 [대구]",
+      "startDate": "2026.11.14",
+      "endDate": "2026.11.14",
+      "venue": "수성아트피아",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF290652_260504_182117.png",
+      "area": "대구광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF289509",
+      "title": "꿈의숲 마티네 콘서트, 벨 에포크 아트 &amp; 뮤직시리즈4: 샤갈, 영혼을 물들인 사랑의 색채",
+      "startDate": "2026.11.25",
+      "endDate": "2026.11.25",
+      "venue": "꿈의숲아트센터",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF289509_260416_121204.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF288330",
+      "title": "제51회 K-뮤직 필하모닉 오케스트라 정기연주회 [대전]",
+      "startDate": "2026.11.01",
+      "endDate": "2026.11.01",
+      "venue": "대전시립연정국악원",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF288330_260331_101144.gif",
+      "area": "대전광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF286299",
+      "title": "영화의전당 BCC 시네라이브, 11시 영화음악콘서트: 합창으로 듣는 영화음악 [부산] (11월)",
+      "startDate": "2026.11.25",
+      "endDate": "2026.11.25",
+      "venue": "(재) 영화의전당",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286299_260304_152321.jpg",
+      "area": "부산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF286123",
+      "title": "조성현 바흐 플루트 소나타 전곡 리사이틀 [원주]",
+      "startDate": "2026.11.04",
+      "endDate": "2026.11.04",
+      "venue": "플레이리스트",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286123_260923_155328.gif",
+      "area": "강원특별자치도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF285541",
+      "title": "피노키오 [대전]",
+      "startDate": "2026.11.03",
+      "endDate": "2026.11.06",
+      "venue": "복합문화공간 플랜에이",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285541_260223_130740.gif",
+      "area": "대전광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF285362",
+      "title": "공주, 안동 자매도시 교류음악회: 환희의 송가 [공주]",
+      "startDate": "2026.11.20",
+      "endDate": "2026.11.20",
+      "venue": "공주문예회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285362_260219_152115.gif",
+      "area": "충청남도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF284416",
+      "title": "울산시립교향악단, 샌드아트로 즐기는 문학이 잇는 클래식 제4막: 눈보라",
+      "startDate": "2026.11.27",
+      "endDate": "2026.11.27",
+      "venue": "울산문화예술회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284416_260204_111014.jpg",
+      "area": "울산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF284239",
+      "title": "수성아트피아 마티네시리즈, 하모니카 박종성 (11월)",
+      "startDate": "2026.11.12",
+      "endDate": "2026.11.12",
+      "venue": "수성아트피아",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284239_260202_131024.png",
+      "area": "대구광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF283669",
+      "title": "키즈 마티네 콘서트: 레전드 애니메이션의 세계로 퐁당! [김포] (11월)",
+      "startDate": "2026.11.21",
+      "endDate": "2026.11.21",
+      "venue": "김포아트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF283669_260122_134050.gif",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF280940",
+      "title": "제832회 KBS교향악단 정기연주회",
+      "startDate": "2026.11.28",
+      "endDate": "2026.11.28",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280940_261022_154618.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF280847",
+      "title": "부천시립합창단 해설음악회, 세상의 모든 합창음악: 영국",
+      "startDate": "2026.11.05",
+      "endDate": "2026.11.05",
+      "venue": "부천아트센터",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280847_261008_173754.jpg",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF280842",
+      "title": "부천시립예술단 1234 콘서트 Ⅳ, 부천시립합창단 : 오르간과 합창음악",
+      "startDate": "2026.11.19",
+      "endDate": "2026.11.19",
+      "venue": "부천아트센터",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280842_260806_173901.gif",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF280841",
+      "title": "제341회 부천필하모닉오케스트라 정기연주회 [부천]",
+      "startDate": "2026.11.26",
+      "endDate": "2026.11.26",
+      "venue": "부천아트센터",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280841_261002_180908.jpg",
+      "area": "경기도",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF277408",
+      "title": "서울시향 얍 판 츠베덴의 말러 교향곡 4번",
+      "startDate": "2026.11.26",
+      "endDate": "2026.11.27",
+      "venue": "롯데콘서트홀",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF277408_261022_154332.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF256370",
+      "title": "스테이지 M 신년 음악회: 캔들데이 콘서트 [대구]",
+      "startDate": "2025.01.17",
+      "endDate": "2026.12.27",
+      "venue": "스테이지엠 (STAGE M) (구.프란츠홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF256370_250108_161156.gif",
+      "area": "대구광역시",
+      "state": "공연중"
+    },
+    {
+      "id": "PF248820",
+      "title": "우리가 사랑한 한국 영화 OST 콘서트 [대구]",
+      "startDate": "2024.11.09",
+      "endDate": "2026.11.22",
+      "venue": "스테이지엠 (STAGE M) (구.프란츠홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF248820_241223_114124.jpg",
+      "area": "대구광역시",
+      "state": "공연중"
+    }
+  ],
+  "missingDec": [
+    {
+      "id": "PF304471",
+      "title": "소프라노 김지현 독창회",
+      "startDate": "2026.12.04",
+      "endDate": "2026.12.04",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304471_261026_143137.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304455",
+      "title": "앙상블 자비에 챔버 오케스트라 시리즈 Ⅰ: 전통의 재해석 [부산]",
+      "startDate": "2026.12.13",
+      "endDate": "2026.12.13",
+      "venue": "부산문화회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304455_261026_135249.gif",
+      "area": "부산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304445",
+      "title": "김정은 피아노 독주회",
+      "startDate": "2026.12.30",
+      "endDate": "2026.12.30",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304445_261026_133232.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304408",
+      "title": "장희재 비올라 독주회",
+      "startDate": "2026.12.20",
+      "endDate": "2026.12.20",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304408_261026_120323.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF304368",
+      "title": "11시 브런치 콘서트, 브라스 블루스 [부산]",
+      "startDate": "2026.12.22",
+      "endDate": "2026.12.22",
+      "venue": "금정문화회관",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304368_261026_101947.jpg",
+      "area": "부산광역시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF295970",
+      "title": "국립합창단, 한국 가곡의 모든 것",
+      "startDate": "2026.12.08",
+      "endDate": "2026.12.08",
+      "venue": "국립극장",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295970_260713_160621.jpg",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF277438",
+      "title": "서울시향 얍 판 츠베덴의 베토벤 환희의 송가 ②",
+      "startDate": "2026.12.18",
+      "endDate": "2026.12.18",
+      "venue": "예술의전당 [서울]",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF277438_261022_155004.gif",
+      "area": "서울특별시",
+      "state": "공연예정"
+    },
+    {
+      "id": "PF256370",
+      "title": "스테이지 M 신년 음악회: 캔들데이 콘서트 [대구]",
+      "startDate": "2025.01.17",
+      "endDate": "2026.12.27",
+      "venue": "스테이지엠 (STAGE M) (구.프란츠홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF256370_250108_161156.gif",
+      "area": "대구광역시",
+      "state": "공연중"
+    }
+  ]
+}

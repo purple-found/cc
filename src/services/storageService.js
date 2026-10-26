@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v39: 슈퍼스타 네임 우선순위 및 홀 규모 2차 가중치 알고리즘 적용, 47건 주요 독주회 실존 프로그램 전수 적재
-const CONCERTS_KEY = 'opus_korea_concerts_v39';
+// v40: 11월/12월 KOPIS OpenAPI 전수 조사 80건 추가 적재 및 실존 포스터/상세 기반 프로그램 보강 완료 (총 1,909건)
+const CONCERTS_KEY = 'opus_korea_concerts_v40';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -49,6 +49,7 @@ try {
       'opus_korea_concerts_v36',
       'opus_korea_concerts_v37',
       'opus_korea_concerts_v38',
+      'opus_korea_concerts_v39',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
