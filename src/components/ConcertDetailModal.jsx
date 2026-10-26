@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, Music2, ExternalLink, Calendar, MapPin, User, Ticket } from 'lucide-react';
+import { X, Music2, ExternalLink, Calendar, MapPin, User, Ticket, ImageIcon } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
@@ -80,42 +80,68 @@ export default function ConcertDetailModal({ concert, onClose }) {
           </div>
         </div>
 
-        {/* Modal Body: 오직 프로그램(작품 목록)만 순수하게 표시 */}
-        <div className="p-5 sm:p-6 space-y-4 flex-1 overflow-y-auto">
-          <div className="flex items-center gap-2 pb-2 border-b border-stone-100 dark:border-hall-800">
-            <Music2 className="w-4 h-4 text-concert-500 shrink-0" />
-            <h4 className="font-serif font-bold text-sm text-stone-900 dark:text-stone-100">
-              연주 프로그램 (Program)
-            </h4>
+        {/* Modal Body: 프로그램(작품 목록) 및 상세 포스터 표시 */}
+        <div className="p-5 sm:p-6 space-y-5 flex-1 overflow-y-auto">
+          <div className="space-y-3">
+            <div className="flex items-center gap-2 pb-2 border-b border-stone-100 dark:border-hall-800">
+              <Music2 className="w-4 h-4 text-concert-500 shrink-0" />
+              <h4 className="font-serif font-bold text-sm text-stone-900 dark:text-stone-100">
+                연주 프로그램 (Program)
+              </h4>
+            </div>
+
+            <div className="space-y-2.5">
+              {concert.pieces && concert.pieces.length > 0 ? (
+                concert.pieces.map((piece, idx) => (
+                  <div
+                    key={idx}
+                    className="p-3.5 rounded-2xl bg-stone-50 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 flex items-start gap-3"
+                  >
+                    <span className="w-5 h-5 rounded-full bg-concert-100 dark:bg-hall-700 text-concert-700 dark:text-concert-300 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                      {idx + 1}
+                    </span>
+                    <div className="text-xs sm:text-sm font-serif font-medium text-stone-800 dark:text-stone-200 leading-relaxed break-keep">
+                      {piece}
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <div className="p-6 rounded-2xl bg-stone-50 dark:bg-hall-850 border border-dashed border-stone-200 dark:border-hall-800 text-center space-y-2">
+                  <Music2 className="w-8 h-8 text-stone-300 dark:text-stone-600 mx-auto" />
+                  <p className="font-serif text-xs text-stone-600 dark:text-stone-400 font-medium">
+                    공식 전산망에 등록된 프로그램 목록이 없습니다.
+                  </p>
+                  <p className="text-[11px] text-stone-400 dark:text-stone-500">
+                    상세 연주곡 및 프로그램 안내는 공식 예매처 페이지를 확인해 주세요.
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
 
-          <div className="space-y-2.5">
-            {concert.pieces && concert.pieces.length > 0 ? (
-              concert.pieces.map((piece, idx) => (
-                <div
-                  key={idx}
-                  className="p-3.5 rounded-2xl bg-stone-50 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 flex items-start gap-3"
-                >
-                  <span className="w-5 h-5 rounded-full bg-concert-100 dark:bg-hall-700 text-concert-700 dark:text-concert-300 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
-                    {idx + 1}
-                  </span>
-                  <div className="text-xs sm:text-sm font-serif font-medium text-stone-800 dark:text-stone-200 leading-relaxed break-keep">
-                    {piece}
-                  </div>
-                </div>
-              ))
-            ) : (
-              <div className="p-6 rounded-2xl bg-stone-50 dark:bg-hall-850 border border-dashed border-stone-200 dark:border-hall-800 text-center space-y-2">
-                <Music2 className="w-8 h-8 text-stone-300 dark:text-stone-600 mx-auto" />
-                <p className="font-serif text-xs text-stone-600 dark:text-stone-400 font-medium">
-                  공식 전산망에 등록된 프로그램 목록이 없습니다.
-                </p>
-                <p className="text-[11px] text-stone-400 dark:text-stone-500">
-                  상세 연주곡 및 프로그램 안내는 공식 예매처 페이지를 확인해 주세요.
-                </p>
+          {/* 공식 포스터 및 상세 전단 이미지 (있는 경우) */}
+          {concert.introImages && concert.introImages.length > 0 && (
+            <div className="pt-4 border-t border-stone-100 dark:border-hall-800 space-y-3">
+              <div className="flex items-center gap-2">
+                <ImageIcon className="w-4 h-4 text-concert-500 shrink-0" />
+                <h4 className="font-serif font-bold text-sm text-stone-900 dark:text-stone-100">
+                  공식 포스터 및 상세 안내 리플릿
+                </h4>
               </div>
-            )}
-          </div>
+              <div className="space-y-3">
+                {concert.introImages.map((imgUrl, iIdx) => (
+                  <div key={iIdx} className="rounded-2xl overflow-hidden border border-stone-200 dark:border-hall-800 bg-stone-100 dark:bg-hall-950 p-1">
+                    <img
+                      src={imgUrl}
+                      alt={`${concert.title} 상세 안내 포스터 ${iIdx + 1}`}
+                      className="w-full h-auto object-contain max-h-[450px] mx-auto rounded-xl"
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Modal Footer: 닫기 & 공식 예매처 버튼 */}

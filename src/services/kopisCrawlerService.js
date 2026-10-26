@@ -202,22 +202,65 @@ export const kopisCrawlerService = {
       };
     }
 
-    // 5. 중복 제거 (kopisId / mt20id 기준)
+    // 5. 중복 제거 (kopisId / mt20id 기준) 및 상세 포스터/프로그램 보강 대상 선별
     const existingList = storageService.getConcerts();
     const concertMap = new Map(existingList.map((c) => [c.kopisId || c.id, c]));
 
     let addedCount = 0;
+    const itemsNeedingDetails = [];
+
     totalConcerts.forEach((newC) => {
       const keyId = newC.kopisId || newC.id;
       if (!concertMap.has(keyId)) {
         concertMap.set(keyId, newC);
         addedCount++;
+        itemsNeedingDetails.push(newC);
       } else {
-        // 기존 정보 업데이트
+        // 기존 정보 업데이트 (상태 등)
         const old = concertMap.get(keyId);
-        concertMap.set(keyId, { ...old, ...newC });
+        const merged = { ...old, ...newC };
+        // 기존에 검증된 pieces 및 introImages 보존
+        if (old.pieces && old.pieces.length > 0) merged.pieces = old.pieces;
+        if (old.introImages && old.introImages.length > 0) merged.introImages = old.introImages;
+        if (!merged.pieces || merged.pieces.length === 0 || !merged.introImages) {
+          itemsNeedingDetails.push(merged);
+        }
+        concertMap.set(keyId, merged);
       }
     });
+
+    // 6. 상세페이지 및 포스터(styurls)에서 상세 프로그램 정보 무조건 추가 연동 (동시성 5개 제한)
+    if (itemsNeedingDetails.length > 0) {
+      if (onProgress) {
+        onProgress({ stage: `공연 포스터 및 상세 프로그램 정보 연동 중 (${itemsNeedingDetails.length}건)...` });
+      }
+      const enrichTargets = itemsNeedingDetails.slice(0, 40); // 브라우저 비동기 쿼터 안전 범위
+      for (let i = 0; i < enrichTargets.length; i += 5) {
+        const chunk = enrichTargets.slice(i, i + 5);
+        const details = await Promise.all(chunk.map(c => this.fetchConcertDetail(c.kopisId, key)));
+        chunk.forEach((c, idx) => {
+          const d = details[idx];
+          if (d) {
+            if (d.hall && !c.hall) c.hall = d.hall;
+            if (d.price && (!c.price || c.price === '공식 예매처 참조')) c.price = d.price;
+            if (d.relateUrl && (!c.ticketUrl || c.ticketUrl.includes('search.naver.com'))) c.ticketUrl = d.relateUrl;
+            if (d.styurls && d.styurls.length > 0) c.introImages = d.styurls;
+            if (d.poster && (!c.imageUrl || c.imageUrl.includes('unsplash.com'))) c.imageUrl = d.poster;
+            if (d.sty && d.sty.length > 15) c.description = d.sty;
+
+            if (!c.pieces || c.pieces.length === 0) {
+              const fromDesc = this.extractPiecesFromDescription(d.sty);
+              if (fromDesc.length > 0) {
+                c.pieces = fromDesc;
+              } else {
+                const fromTitle = this.extractPiecesFromTitle(c.title);
+                if (fromTitle.length > 0) c.pieces = fromTitle;
+              }
+            }
+          }
+        });
+      }
+    }
 
     const updatedConcerts = Array.from(concertMap.values());
     // 날짜 및 시간 오름차순 정렬
@@ -232,8 +275,186 @@ export const kopisCrawlerService = {
       uniqueCount: updatedConcerts.length,
       addedCount: addedCount,
       concerts: updatedConcerts,
-      message: `KOPIS 공식 전산망에서 총 ${totalConcerts.length}건의 실제 클래식 공연을 전수 수집했습니다. (신규 ${addedCount}건 반영, 전체 ${updatedConcerts.length}건)`
+      message: `KOPIS 공식 전산망에서 총 ${totalConcerts.length}건의 실제 클래식 공연을 전수 수집하고 포스터 및 상세 프로그램을 연동했습니다. (신규 ${addedCount}건 반영, 전체 ${updatedConcerts.length}건)`
     };
+  },
+
+  /**
+   * KOPIS 공연 상세 XML 호출 (포스터 styurls 및 상세 프로그램 sty, 가격, 예매처 수집)
+   */
+  async fetchConcertDetail(kopisId, serviceKey = KOPIS_DEFAULT_KEY) {
+    if (!kopisId) return null;
+    const key = (serviceKey || KOPIS_DEFAULT_KEY).trim();
+    const baseUrl = this.getApiBaseUrl();
+    const detailUrl = `${baseUrl}/${kopisId}?service=${encodeURIComponent(key)}`;
+    
+    try {
+      let xml = '';
+      try {
+        const res = await fetch(detailUrl);
+        if (res.ok) xml = await res.text();
+      } catch (err) {
+        const altUrl = detailUrl.includes('/api/kopis/openApi/restful/pblprfr')
+          ? detailUrl.replace('/api/kopis/openApi/restful/pblprfr', 'http://www.kopis.or.kr/openApi/restful/pblprfr')
+          : detailUrl.replace('http://www.kopis.or.kr/openApi/restful/pblprfr', '/api/kopis/openApi/restful/pblprfr');
+        const altRes = await fetch(altUrl);
+        if (altRes.ok) xml = await altRes.text();
+      }
+
+      if (!xml) return null;
+
+      const fcltynm = (xml.match(/<fcltynm>([\s\S]*?)<\/fcltynm>/) || [])[1] || '';
+      const prfcast = (xml.match(/<prfcast>([\s\S]*?)<\/prfcast>/) || [])[1] || '';
+      const pcseguidance = (xml.match(/<pcseguidance>([\s\S]*?)<\/pcseguidance>/) || [])[1] || '';
+      const prfruntime = (xml.match(/<prfruntime>([\s\S]*?)<\/prfruntime>/) || [])[1] || '';
+      const dtguidance = (xml.match(/<dtguidance>([\s\S]*?)<\/dtguidance>/) || [])[1] || '';
+      const sty = (xml.match(/<sty>([\s\S]*?)<\/sty>/) || [])[1] || '';
+      const poster = (xml.match(/<poster>([\s\S]*?)<\/poster>/) || [])[1] || '';
+
+      const styurls = [];
+      const styurlMatches = xml.match(/<styurl>([\s\S]*?)<\/styurl>/g);
+      if (styurlMatches) {
+        for (const sm of styurlMatches) {
+          const u = sm.replace(/<\/?styurl>/g, '').trim();
+          if (u.startsWith('http') && !styurls.includes(u)) {
+            styurls.push(u);
+          }
+        }
+      }
+
+      let relateUrl = '';
+      const relateUrlMatch = xml.match(/<relateurl>([\s\S]*?)<\/relateurl>/);
+      if (relateUrlMatch && relateUrlMatch[1].trim().startsWith('http')) {
+        relateUrl = relateUrlMatch[1].trim();
+      }
+
+      let hall = null;
+      const pMatches = fcltynm.match(/\(([^()]+)\)/g);
+      if (pMatches) {
+        for (const pm of pMatches) {
+          const inner = pm.replace(/[()]/g, '').trim();
+          if (inner && !inner.startsWith('구.') && !inner.includes('파리뮤직포럼')) {
+            hall = inner.replace(/^(세종|서울|부천|대구|대전|부산)/, '').trim();
+            break;
+          }
+        }
+      }
+
+      return {
+        fcltynm: fcltynm.trim(),
+        hall,
+        cast: prfcast.trim(),
+        price: pcseguidance.trim(),
+        runtime: prfruntime.trim(),
+        dtguidance: dtguidance.trim(),
+        sty: sty.trim(),
+        poster: poster.trim(),
+        styurls,
+        relateUrl
+      };
+    } catch {
+      return null;
+    }
+  },
+
+  /**
+   * 상세 설명에서 프로그램(곡목) 추출
+   */
+  extractPiecesFromDescription(desc) {
+    if (!desc || desc.length < 15) return [];
+    const text = desc
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/&nbsp;/g, ' ');
+    const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+
+    const progHeaderIdx = lines.findIndex(l => 
+      /^\[?(?:프로그램|PROGRAM|Program|곡목|곡\s*목|공연\s*곡목|연주\s*곡목|프로그램\s*안내)\]?$/i.test(l) ||
+      /^\[(?:프로그램|PROGRAM|Program|곡목)\]/i.test(l) ||
+      /^(?:PROGRAM|Program|프로그램)$/i.test(l)
+    );
+
+    if (progHeaderIdx === -1) return [];
+
+    const pieces = [];
+    const stopKeywords = [
+      '프로필', 'PROFILE', 'Profile', '출연진', 'CAST', 'Cast', '아티스트', 'ARTIST',
+      '공연소개', '기획의도', '안내사항', '관람안내', '예매안내', '티켓안내', '할인정보',
+      '유의사항', '오시는길', '시놉시스', '줄거리', 'SYNOPSIS', '기획사', '주최'
+    ];
+
+    let currentPerformer = '';
+
+    for (let i = progHeaderIdx + 1; i < lines.length; i++) {
+      const line = lines[i];
+      if (stopKeywords.some(kw => line.includes(kw))) break;
+      if (/^\*.*(?:변경|사정|주최|프로그램은|유의|관람)/.test(line)) continue;
+      if (/^(?:INTERMISSION|Intermission|인터미션|휴식|중간휴식|<1부>|<2부>|1부|2부|PART\s*\d|Part\s*\d)$/i.test(line)) continue;
+      if (/^(?:해설|진행|사회)\s*:/.test(line)) continue;
+      if (line.length < 3 || line.length > 160) continue;
+
+      if (/^(?:Piano|Violin|Violoncello|Cello|Flute|Clarinet|Percussion|판소리|Sop\.|Ten\.|Bar\.|Bass\.|Mezzo\.|소프라노|테너|바리톤|베이스|메조소프라노)\s+[가-힣a-zA-Z\s,·/]+/i.test(line)) {
+        currentPerformer = line.trim();
+        continue;
+      }
+
+      let cleanPiece = line.replace(/^[0-9]+[\.\)]\s*/, '').replace(/^[•\-\*·]\s*/, '').trim();
+      cleanPiece = cleanPiece.replace(/\s*\(\d{4}[~-]\d{4}\)/g, '');
+      if (cleanPiece.length >= 3) {
+        if (currentPerformer) {
+          cleanPiece = `${cleanPiece} (${currentPerformer})`;
+          currentPerformer = '';
+        }
+        if (!pieces.includes(cleanPiece)) {
+          pieces.push(cleanPiece);
+        }
+      }
+    }
+
+    return pieces;
+  },
+
+  /**
+   * 제목에서 명작 레퍼토리 추출
+   */
+  extractPiecesFromTitle(title) {
+    if (!title) return [];
+    const t = title.trim();
+    const pieces = [];
+
+    if (t.includes('말러') && (t.includes('교향곡 4번') || t.includes('교향곡 제4번'))) {
+      pieces.push('구스타프 말러: 교향곡 제4번 G장조');
+    } else if (t.includes('말러') && (t.includes('교향곡 5번') || t.includes('교향곡 제5번'))) {
+      pieces.push('구스타프 말러: 교향곡 제5번 c#단조');
+    } else if (t.includes('베토벤') && (t.includes('합창') || t.includes('교향곡 제9번') || t.includes('교향곡 9번'))) {
+      pieces.push('루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 "합창"');
+    } else if (t.includes('라흐마니노프') && (t.includes('교향곡 제2번') || t.includes('교향곡 2번'))) {
+      pieces.push('세르게이 라흐마니노프: 교향곡 제2번 e단조 Op.27');
+    } else if (t.includes('라흐마니노프') && (t.includes('피아노 협주곡 제2번') || t.includes('피아노 협주곡 2번'))) {
+      pieces.push('세르게이 라흐마니노프: 피아노 협주곡 제2번 c단조 Op.18');
+    } else if (t.includes('라흐마니노프') && (t.includes('피아노 협주곡 제3번') || t.includes('피아노 협주곡 3번'))) {
+      pieces.push('세르게이 라흐마니노프: 피아노 협주곡 제3번 d단조 Op.30');
+    } else if (t.includes('차이콥스키') && t.includes('백조의 호수') && t.includes('비창')) {
+      pieces.push("표트르 일리치 차이콥스키: 모음곡 '백조의 호수' Op.20a");
+      pieces.push("표트르 일리치 차이콥스키: 교향곡 제6번 b단조 Op.74 '비창'");
+    } else if (t.includes('차이콥스키') && (t.includes('교향곡 제5번') || t.includes('교향곡 5번'))) {
+      pieces.push('표트르 일리치 차이콥스키: 교향곡 제5번 e단조 Op.64');
+    } else if (t.includes('차이콥스키') && (t.includes('비창') || t.includes('교향곡 제6번') || t.includes('교향곡 6번'))) {
+      pieces.push("표트르 일리치 차이콥스키: 교향곡 제6번 b단조 Op.74 '비창'");
+    } else if (t.includes('비발디') && t.includes('사계')) {
+      pieces.push('안토니오 비발디: 바이올린 협주곡 Op.8 "사계"');
+    } else if (t.includes('드보르작') && (t.includes('신세계') || t.includes('교향곡 제9번') || t.includes('교향곡 9번'))) {
+      pieces.push('안토닌 드보르작: 교향곡 제9번 e단조 Op.95 "신세계로부터"');
+    } else if (t.includes('홀스트') && t.includes('행성')) {
+      pieces.push('구스타브 홀스트: 모음곡 "행성" Op.32');
+    } else if (t.includes('생상스') && t.includes('동물의 사육제')) {
+      pieces.push('카미유 생상스: 동물의 사육제');
+    }
+
+    return pieces;
   },
 
   /**

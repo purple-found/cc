@@ -66,6 +66,19 @@ async function fetchConcertDetail(kopisId) {
   const prfruntime = (xml.match(/<prfruntime>([\s\S]*?)<\/prfruntime>/) || [])[1] || '';
   const dtguidance = (xml.match(/<dtguidance>([\s\S]*?)<\/dtguidance>/) || [])[1] || '';
   const sty = (xml.match(/<sty>([\s\S]*?)<\/sty>/) || [])[1] || '';
+  const poster = (xml.match(/<poster>([\s\S]*?)<\/poster>/) || [])[1] || '';
+
+  // styurls: 공식 소개 포스터 및 전단 이미지 배열 추출
+  const styurls = [];
+  const styurlMatches = xml.match(/<styurl>([\s\S]*?)<\/styurl>/g);
+  if (styurlMatches) {
+    for (const sm of styurlMatches) {
+      const u = sm.replace(/<\/?styurl>/g, '').trim();
+      if (u.startsWith('http') && !styurls.includes(u)) {
+        styurls.push(u);
+      }
+    }
+  }
 
   let relateUrl = '';
   const relateUrlMatch = xml.match(/<relateurl>([\s\S]*?)<\/relateurl>/);
@@ -94,6 +107,8 @@ async function fetchConcertDetail(kopisId) {
     runtime: prfruntime.trim(),
     dtguidance: dtguidance.trim(),
     sty: sty.trim(),
+    poster: poster.trim(),
+    styurls,
     relateUrl
   };
 }
@@ -110,7 +125,7 @@ function cleanHtmlEntities(str) {
 }
 
 function extractPiecesFromDescription(desc) {
-  if (!desc || desc.length < 20) return [];
+  if (!desc || desc.length < 15) return [];
   const text = cleanHtmlEntities(desc);
   const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
 
@@ -134,32 +149,24 @@ function extractPiecesFromDescription(desc) {
   for (let i = progHeaderIdx + 1; i < lines.length; i++) {
     const line = lines[i];
     if (stopKeywords.some(kw => line.includes(kw))) break;
-    if (/^\*.*(?:변경|사정|주최|프로그램은)/.test(line)) continue;
+    if (/^\*.*(?:변경|사정|주최|프로그램은|유의|관람)/.test(line)) continue;
     if (/^(?:INTERMISSION|Intermission|인터미션|휴식|중간휴식|<1부>|<2부>|1부|2부|PART\s*\d|Part\s*\d)$/i.test(line)) continue;
     if (/^(?:해설|진행|사회)\s*:/.test(line)) continue;
     if (line.length < 3 || line.length > 160) continue;
 
-    if (/^(?:Sop\.|Ten\.|Bar\.|Bass\.|Mezzo\.|소프라노|테너|바리톤|베이스|메조소프라노)\s+[가-힣a-zA-Z\s,·]+/i.test(line)) {
+    if (/^(?:Piano|Violin|Violoncello|Cello|Flute|Clarinet|Percussion|판소리|Sop\.|Ten\.|Bar\.|Bass\.|Mezzo\.|소프라노|테너|바리톤|베이스|메조소프라노)\s+[가-힣a-zA-Z\s,·/]+/i.test(line)) {
       currentPerformer = line.trim();
       continue;
     }
 
-    const isPieceCandidate = 
-      /\b(?:Op\.|No\.|BWV|K\.|Hob\.|RV|D\.|S\.|WoO|HWV|Sz\.|M\.|L\.|P\.)\b/i.test(line) ||
-      /(?:소나타|협주곡|교향곡|모음곡|서곡|녹턴|에튀드|발라드|스케르초|환상곡|Concerto|Symphony|Sonata|Suite|Overture|Nocturne|Etude|Ballade|Scherzo|Fantasia|Waltz|왈츠|세레나데|Serenade|가곡|칸타타|오라토리오|미사곡|사계|비창|영웅|운명|전원|합창|신세계|백조의 호수|호두까기)/i.test(line) ||
-      /(?:베토벤|모차르트|바흐|브람스|쇼팽|슈베르트|슈만|차이콥스키|차이코프스키|라흐마니노프|라벨|드뷔시|드보르작|드보르자크|리스트|멘델스존|시벨리우스|하이든|헨델|말러|생상스|비발디|푸치니|베르디|로시니|파가니니|타르티니|사라사테|프랑크|포레|프로코피예프|쇼스타코비치|스트라빈스키|바르톡|바르토크|거슈윈|거쉬인|구노|도니제티|글린카|벨리니|Gounod|Donizetti|Rossini|Puccini|Verdi|Bizet|비제|홍난파|현제명|채동선|이흥렬|조두남|김동진|최영섭|장일남|윤이상|신예훈|이신우|전현석|박소은|김지향|전욱용|정샹푸|뤼윈츠|박준선|양영광|조선희|김승림|김지현|이윤석)/i.test(line) ||
-      /Opera\s*<[^>]+>|오페라\s*<[^>]+>|<\s*[^>]+>[^<]+Opera/i.test(line) ||
-      /(?:for|for Solo|for 2|for Two|duo|trio|quartet|quintet)\b/i.test(line) ||
-      /^[0-9]+[st|nd|rd|th|\.]?\s+[A-Z가-힣]/.test(line);
-
-    if (isPieceCandidate) {
-      let cleanPiece = line.replace(/^[0-9]+[\.\)]\s*/, '').replace(/^[•\-\*·]\s*/, '').trim();
-      cleanPiece = cleanPiece.replace(/\s*\(\d{4}[~-]\d{4}\)/g, '');
+    let cleanPiece = line.replace(/^[0-9]+[\.\)]\s*/, '').replace(/^[•\-\*·]\s*/, '').trim();
+    cleanPiece = cleanPiece.replace(/\s*\(\d{4}[~-]\d{4}\)/g, '');
+    if (cleanPiece.length >= 3) {
       if (currentPerformer) {
         cleanPiece = `${cleanPiece} (${currentPerformer})`;
         currentPerformer = '';
       }
-      if (cleanPiece.length >= 3 && !pieces.includes(cleanPiece)) {
+      if (!pieces.includes(cleanPiece)) {
         pieces.push(cleanPiece);
       }
     }
@@ -304,49 +311,108 @@ async function main() {
 
   console.log(`신규 공연 ${newConcertsCount}건 발굴, 기존 공연 ${updatedCount}건 상태 갱신.`);
 
-  // 신규 공연 세부 정보 및 홀 보강 (동시성 5개)
-  if (newItemsToEnrich.length > 0) {
-    console.log(`신규 공연 ${newItemsToEnrich.length}건에 대한 상세 홀 및 정보 연동 중...`);
-    for (let i = 0; i < newItemsToEnrich.length; i += 5) {
-      const chunk = newItemsToEnrich.slice(i, i + 5);
-      const details = await Promise.all(chunk.map(c => fetchConcertDetail(c.kopisId)));
+  // 상세 캐시 로드 (있을 경우 재활용하여 초고속 동기화 보장)
+  const detailsCachePath = path.resolve(__dirname, 'kopis_all_details.json');
+  let detailsCache = {};
+  if (fs.existsSync(detailsCachePath)) {
+    try {
+      detailsCache = JSON.parse(fs.readFileSync(detailsCachePath, 'utf8'));
+    } catch {}
+  }
 
-      chunk.forEach((c, idx) => {
-        const d = details[idx];
-        if (d) {
-          if (d.hall) c.hall = d.hall;
-          if (d.cast && d.cast.length > 1) {
-            c.performers = d.cast.split(',').map(s => s.trim()).filter(Boolean);
-          }
-          if (d.price) c.price = d.price;
-          if (d.dtguidance) {
-            const timeMatch = d.dtguidance.match(/(\d{1,2}:\d{2})/);
-            if (timeMatch) c.time = timeMatch[1];
-          }
-          if (d.relateUrl) c.ticketUrl = d.relateUrl;
-          if (d.sty && d.sty.length > 15) c.description = d.sty;
+  // 상세 프로그램 및 포스터 보강 대상: 신규 발굴 공연 + 곡목/포스터가 미등록된 모든 기존 공연
+  const itemsToEnrich = Array.from(concertMap.values()).filter(c => 
+    (!c.pieces || c.pieces.length === 0) || !c.introImages || c.introImages.length === 0
+  );
 
-          // 곡목(pieces) 자동 추출 및 반영
-          if (!c.pieces || c.pieces.length === 0) {
-            const fromDesc = extractPiecesFromDescription(d.sty);
-            if (fromDesc.length > 0) {
-              c.pieces = fromDesc;
-            } else {
-              const fromTitle = extractPiecesFromTitle(c.title);
-              if (fromTitle.length > 0) {
-                c.pieces = fromTitle;
-              }
-            }
-          }
-        }
-        // 롯데콘서트홀 단일 홀 뱃지 생략 원칙 준수
-        if (c.venue && c.venue.includes('롯데콘서트홀')) {
-          c.hall = null;
-        }
+  console.log(`[상세 프로그램 및 포스터 전수 보강] 총 ${itemsToEnrich.length}건에 대해 상세페이지 및 포스터 연동 시작...`);
+
+  const missingFetchIds = [];
+  itemsToEnrich.forEach(c => {
+    const rawId = (c.kopisId || (c.id || '').replace(/^kopis-/, '')).trim();
+    if (rawId && !detailsCache[rawId]) {
+      missingFetchIds.push(rawId);
+    }
+  });
+
+  // 캐시에 없는 상세 정보는 KOPIS OpenAPI로 실시간 전수 수집
+  if (missingFetchIds.length > 0) {
+    console.log(`KOPIS 공식 OpenAPI에서 미등록 상세 XML ${missingFetchIds.length}건 추가 수집 중...`);
+    for (let i = 0; i < missingFetchIds.length; i += 5) {
+      const chunk = missingFetchIds.slice(i, i + 5);
+      const fetched = await Promise.all(chunk.map(id => fetchConcertDetail(id)));
+      chunk.forEach((id, idx) => {
+        if (fetched[idx]) detailsCache[id] = fetched[idx];
       });
       await sleep(150);
     }
+    // 캐시 저장
+    try {
+      fs.writeFileSync(detailsCachePath, JSON.stringify(detailsCache, null, 2), 'utf8');
+    } catch {}
   }
+
+  let enrichedCount = 0;
+  let piecesFoundCount = 0;
+  let postersFoundCount = 0;
+
+  // 모든 대상 공연에 대해 포스터(styurls) 및 상세 프로그램(pieces) 무조건 연동
+  itemsToEnrich.forEach(c => {
+    const rawId = (c.kopisId || (c.id || '').replace(/^kopis-/, '')).trim();
+    const d = detailsCache[rawId];
+    if (d) {
+      if (d.hall && !c.hall) c.hall = d.hall;
+      if (d.cast && (!c.performers || c.performers.length === 0)) {
+        c.performers = d.cast.split(',').map(s => s.trim()).filter(Boolean);
+      }
+      if (d.price && (!c.price || c.price === '공식 예매처 참조')) {
+        c.price = d.price;
+      }
+      if (d.dtguidance && (!c.time || c.time === '19:30')) {
+        const timeMatch = d.dtguidance.match(/(\d{1,2}:\d{2})/);
+        if (timeMatch) c.time = timeMatch[1];
+      }
+      if (d.relateUrl && (!c.ticketUrl || c.ticketUrl.includes('search.naver.com'))) {
+        c.ticketUrl = d.relateUrl;
+      }
+      if (d.sty && d.sty.length > 15) {
+        c.description = d.sty;
+      }
+      if (d.poster && (!c.imageUrl || c.imageUrl.includes('unsplash.com'))) {
+        c.imageUrl = d.poster;
+      }
+
+      // 포스터 및 상세 전단 이미지 (styurls) 무조건 연동
+      if (d.styurls && d.styurls.length > 0) {
+        c.introImages = d.styurls;
+        postersFoundCount++;
+      }
+
+      // 프로그램 곡목(pieces) 무조건 상세페이지/소개글 및 제목에서 전수 추출
+      if (!c.pieces || c.pieces.length === 0) {
+        const fromDesc = extractPiecesFromDescription(d.sty);
+        if (fromDesc.length > 0) {
+          c.pieces = fromDesc;
+          piecesFoundCount++;
+        } else {
+          const fromTitle = extractPiecesFromTitle(c.title);
+          if (fromTitle.length > 0) {
+            c.pieces = fromTitle;
+            piecesFoundCount++;
+          }
+        }
+      }
+
+      enrichedCount++;
+    }
+
+    // 롯데콘서트홀 단일 홀 뱃지 생략 원칙 준수
+    if (c.venue && c.venue.includes('롯데콘서트홀')) {
+      c.hall = null;
+    }
+  });
+
+  console.log(`[연동 완료] 상세정보 ${enrichedCount}건 연동, 포스터 연동 ${postersFoundCount}건, 프로그램 추출 반영 ${piecesFoundCount}건`);
 
   // 최종 리스트 정리 및 저장
   const updatedConcertList = Array.from(concertMap.values()).sort((a, b) => a.date.localeCompare(b.date));
