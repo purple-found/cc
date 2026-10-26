@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Music, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useState, useMemo, memo } from 'react';
+import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Music, ExternalLink, ChevronDown, ChevronUp, Ticket } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser';
 import { getVenueOfficialUrl } from '../utils/venueUrls';
 
@@ -207,7 +207,7 @@ function getConcertPriorityScore(c) {
   return score;
 }
 
-export default function ConcertCalendar({ concerts }) {
+function ConcertCalendar({ concerts }) {
   // 기본 연월 설정 (2026년 10월)
   const [currentYear, setCurrentYear] = useState(2026);
   const [currentMonth, setCurrentMonth] = useState(10); // 1-indexed (10 = 10월)
@@ -234,26 +234,32 @@ export default function ConcertCalendar({ concerts }) {
     setSelectedDate(null);
   };
 
-  // 월의 시작 요일 및 총 일수 계산
-  const firstDayOfWeek = new Date(currentYear, currentMonth - 1, 1).getDay(); // 0(일) ~ 6(토)
-  const daysInMonth = new Date(currentYear, currentMonth, 0).getDate();
+  // 월의 시작 요일 및 총 일수 계산 (메모이제이션)
+  const firstDayOfWeek = useMemo(() => new Date(currentYear, currentMonth - 1, 1).getDay(), [currentYear, currentMonth]);
+  const daysInMonth = useMemo(() => new Date(currentYear, currentMonth, 0).getDate(), [currentYear, currentMonth]);
 
-  // 날짜별 공연 매핑 및 대표 공연 우선순위 자동 정렬
-  const monthString = `${currentYear}-${String(currentMonth).padStart(2, '0')}`;
-  const concertsThisMonth = concerts.filter((c) => c.date.startsWith(monthString));
+  // 날짜별 공연 매핑 및 대표 공연 우선순위 자동 정렬 (메모이제이션)
+  const { concertsThisMonth, concertMap } = useMemo(() => {
+    const monthString = `${currentYear}-${String(currentMonth).padStart(2, '0')}`;
+    const monthlyList = concerts.filter((c) => c.date.startsWith(monthString));
 
-  const concertMap = {};
-  concertsThisMonth.forEach((c) => {
-    if (!concertMap[c.date]) concertMap[c.date] = [];
-    concertMap[c.date].push(c);
-  });
+    const map = {};
+    monthlyList.forEach((c) => {
+      if (!map[c.date]) map[c.date] = [];
+      map[c.date].push(c);
+    });
 
-  // 각 날짜별로 가장 규모가 크고 대표적인 메이저 공연이 1순위(대표 공연)로 오도록 우선순위 정렬
-  Object.keys(concertMap).forEach((dateKey) => {
-    concertMap[dateKey].sort((a, b) => getConcertPriorityScore(b) - getConcertPriorityScore(a));
-  });
+    // 각 날짜별로 가장 규모가 크고 대표적인 메이저 공연이 1순위(대표 공연)로 오도록 우선순위 정렬
+    Object.keys(map).forEach((dateKey) => {
+      map[dateKey].sort((a, b) => getConcertPriorityScore(b) - getConcertPriorityScore(a));
+    });
 
-  const selectedConcerts = selectedDate ? (concertMap[selectedDate] || []) : [];
+    return { concertsThisMonth: monthlyList, concertMap: map };
+  }, [concerts, currentYear, currentMonth]);
+
+  const selectedConcerts = useMemo(() => {
+    return selectedDate ? (concertMap[selectedDate] || []) : [];
+  }, [selectedDate, concertMap]);
 
   const daysOfWeek = ['일', '월', '화', '수', '목', '금', '토'];
 
@@ -435,6 +441,11 @@ export default function ConcertCalendar({ concerts }) {
                       >
                         <Music className="w-3 h-3 text-concert-500" />
                         <span>{isExpanded ? '접기' : '곡목'}</span>
+                        {isExpanded ? (
+                          <ChevronUp className="w-3 h-3 text-stone-400" />
+                        ) : (
+                          <ChevronDown className="w-3 h-3 text-stone-400" />
+                        )}
                       </button>
                       <a
                         href={getVenueOfficialUrl(c)}
@@ -481,3 +492,5 @@ export default function ConcertCalendar({ concerts }) {
     </div>
   );
 }
+
+export default memo(ConcertCalendar);

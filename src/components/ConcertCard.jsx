@@ -1,11 +1,11 @@
-import React from 'react';
-import { Calendar, MapPin, User, Music2, ExternalLink, Info, CheckCircle2, ShieldAlert, Sparkles, Clock, Flame, Ticket } from 'lucide-react';
-import { formatKoreanDate, getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
+import React, { useState, memo } from 'react';
+import { MapPin, User, Music2, ExternalLink, CheckCircle2, Sparkles, Clock, Ticket, ChevronDown, ChevronUp } from 'lucide-react';
+import { getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
 
-export default function ConcertCard({ concert }) {
-  const isBlocked = concert.crawlerBlocked;
+function ConcertCard({ concert }) {
+  const [isExpanded, setIsExpanded] = useState(false);
   const isPast = isPastConcert(concert.date, concert.time);
   const isToday = isTodayConcert(concert.date);
   const displayStatus = getDisplayStatus(concert);
@@ -14,9 +14,20 @@ export default function ConcertCard({ concert }) {
   const dateParts = concert.date ? concert.date.split('-') : ['2026', '10', '01'];
   const monthDay = `${Number(dateParts[1])}.${Number(dateParts[2])}`;
 
+  // 곡목 데이터 정규화 (배열 또는 줄바꿈 텍스트)
+  const piecesList = Array.isArray(concert.pieces) && concert.pieces.length > 0
+    ? concert.pieces
+    : (typeof concert.program === 'string' && concert.program.trim().length > 0
+        ? concert.program.split('\n').map(p => p.trim()).filter(Boolean)
+        : []);
+
+  // 4줄(곡목) 이상인 경우 3개만 먼저 보여주고 '더보기' 펼치기 버튼 활성화
+  const hasManyPieces = piecesList.length >= 4;
+  const displayedPieces = hasManyPieces && !isExpanded ? piecesList.slice(0, 3) : piecesList;
+
   return (
     <article className="group bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 shadow-sm hover:shadow-md hover:border-concert-400 dark:hover:border-concert-500 transition-all duration-200 flex flex-col justify-between p-5 space-y-4">
-      {/* Top Header: Date Block & Status Badges (No AI Image, Clean Typography) */}
+      {/* Top Header: Date Block & Status Badges */}
       <div className="space-y-3 pb-3 border-b border-stone-100 dark:border-hall-800">
         <div className="flex items-center justify-between gap-2 flex-wrap">
           {/* Elegant Date Badge */}
@@ -154,24 +165,50 @@ export default function ConcertCard({ concert }) {
             </div>
           </div>
 
-          {/* All Program Pieces directly on each card */}
+          {/* Program Pieces with 4+ lines Collapsible Toggle */}
           <div className="mt-3.5 pt-3 border-t border-stone-100 dark:border-hall-800">
-            <div className="flex items-center gap-1.5 text-xs font-bold text-stone-700 dark:text-stone-300 mb-2">
-              <Music2 className="w-3.5 h-3.5 text-concert-500 shrink-0" />
-              <span>프로그램 (Program)</span>
+            <div className="flex items-center justify-between text-xs font-bold text-stone-700 dark:text-stone-300 mb-2">
+              <div className="flex items-center gap-1.5">
+                <Music2 className="w-3.5 h-3.5 text-concert-500 shrink-0" />
+                <span>프로그램 (Program)</span>
+              </div>
+              {piecesList.length > 0 && (
+                <span className="text-[10px] font-semibold text-stone-400 dark:text-stone-500">
+                  총 {piecesList.length}곡
+                </span>
+              )}
             </div>
-            {concert.pieces && concert.pieces.length > 0 ? (
-              <ul className="space-y-1.5 pl-0.5">
-                {concert.pieces.map((piece, idx) => (
-                  <li
-                    key={idx}
-                    className="font-serif text-[11.5px] text-stone-700 dark:text-stone-300 leading-snug flex items-start gap-1.5"
+
+            {piecesList.length > 0 ? (
+              <div className="space-y-2">
+                <ul className="space-y-1.5 pl-0.5">
+                  {displayedPieces.map((piece, idx) => (
+                    <li
+                      key={idx}
+                      className="font-serif text-[11.5px] text-stone-700 dark:text-stone-300 leading-snug flex items-start gap-1.5"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-concert-500 shrink-0 mt-1.5" />
+                      <span className="break-keep">{piece}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {hasManyPieces && (
+                  <button
+                    type="button"
+                    onClick={() => setIsExpanded(prev => !prev)}
+                    className="w-full py-1.5 px-3 rounded-lg bg-stone-100 hover:bg-stone-200/80 dark:bg-hall-800 dark:hover:bg-hall-750 text-stone-700 dark:text-stone-200 text-[11px] font-semibold transition-colors flex items-center justify-center gap-1 cursor-pointer border border-stone-200/70 dark:border-hall-700 select-none"
+                    aria-expanded={isExpanded}
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-concert-500 shrink-0 mt-1.5" />
-                    <span className="break-keep">{piece}</span>
-                  </li>
-                ))}
-              </ul>
+                    <span>{isExpanded ? '곡목 접기' : `외 ${piecesList.length - 3}개 곡목 더보기`}</span>
+                    {isExpanded ? (
+                      <ChevronUp className="w-3.5 h-3.5 text-stone-500 dark:text-stone-400" />
+                    ) : (
+                      <ChevronDown className="w-3.5 h-3.5 text-stone-500 dark:text-stone-400" />
+                    )}
+                  </button>
+                )}
+              </div>
             ) : (
               <p className="font-serif text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 pl-0.5">
                 공식 프로그램은 공연장 및 예매처 안내 참조
@@ -198,3 +235,6 @@ export default function ConcertCard({ concert }) {
     </article>
   );
 }
+
+export default memo(ConcertCard);
+

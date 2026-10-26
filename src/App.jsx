@@ -15,11 +15,11 @@ import Footer from './components/Footer';
 import { storageService } from './services/storageService';
 import { kopisMonitoringService } from './services/kopisMonitoringService.js';
 import { kopisCrawlerService } from './services/kopisCrawlerService.js';
-import { isPastConcert, formatKSTDateTime } from './utils/parser.js';
+import { isPastConcert } from './utils/parser.js';
 import { matchesBilingualConcert, prewarmSearchIndex } from './utils/bilingualSearch.js';
 import { matchesVenueFilter } from './utils/venueMatcher.js';
 import { analyticsService } from './services/analyticsService.js';
-import { Sparkles, Calendar, MessageSquare, AlertCircle } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('concerts');

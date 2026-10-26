@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { Calendar, MapPin, ExternalLink, ChevronDown, ChevronUp, Music2, Ticket } from 'lucide-react';
-import { formatKoreanDate } from '../utils/parser.js';
+import React, { useState, memo } from 'react';
+import { ExternalLink, ChevronDown, ChevronUp, Music2, Ticket } from 'lucide-react';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
 
-export default function ConcertCompactList({ concerts = [] }) {
+function ConcertCompactList({ concerts = [] }) {
   const [expandedConcertId, setExpandedConcertId] = useState(null);
 
   if (concerts.length === 0) {
@@ -150,3 +149,5 @@ export default function ConcertCompactList({ concerts = [] }) {
     </div>
   );
 }
+
+export default memo(ConcertCompactList);
