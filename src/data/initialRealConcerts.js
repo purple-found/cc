@@ -50314,6 +50314,30 @@ export const INITIAL_REAL_CONCERTS = [
     "runtime": "1시간 30분"
   },
   {
+    "id": "kopis-PF303596",
+    "kopisId": "PF303596",
+    "title": "블루노트 도쿄 올스타 재즈 오케스트라 with LISA ONO 내한공연",
+    "date": "2026-12-02",
+    "startDate": "2026-12-02",
+    "endDate": "2026-12-03",
+    "time": "19:30",
+    "venue": "롯데콘서트홀",
+    "hall": "롯데콘서트홀",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Antonio Carlos Jobim: The Girl from Ipanema (Garota de Ipanema)",
+      "George Gershwin: Fascinating Rhythm (Blue Note Tokyo All-Star Jazz Orchestra arr.)",
+      "Chico Buarque: O Que Será",
+      "Consuelo Velázquez: Bésame Mucho (with Lisa Ono)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303596_261016_135100.jpg",
+    "price": "R석 160,000원, S석 130,000원, A석 100,000원, B석 70,000원, C석 40,000원, 시야방해R 112,000원, 시야방해S 91,000원, 시야방해A 70,000원",
+    "ticketUrl": "https://www.lotteconcerthall.com/product/performance/261233",
+    "cast": "리사 오노, 에릭 미야시로, 마사토 혼다, 에이지로 나카가와, 센리 카와구치 등"
+  },
+  {
     "id": "kopis-PF285072",
     "kopisId": "PF285072",
     "title": "국립오페라단 정기공연, 돈 카를로스",
@@ -50538,6 +50562,29 @@ export const INITIAL_REAL_CONCERTS = [
     "runtime": "1시간 20분"
   },
   {
+    "id": "kopis-PF294519",
+    "kopisId": "PF294519",
+    "title": "지역 아티스트와 함께하는 K-클래식 콘서트8: 홍순달밴드 [천안]",
+    "date": "2026-12-03",
+    "startDate": "2026-12-03",
+    "endDate": "2026-12-03",
+    "time": "19:30",
+    "venue": "천안예술의전당",
+    "hall": "소공연장",
+    "region": "충남",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "C. Debussy: Clair de Lune (재즈 앙상블 편곡)",
+      "J. S. Bach: Air on the G String (재즈 앙상블 편곡)",
+      "크리스마스 캐롤 스윙 메들리"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294519_260624_125032.gif",
+    "price": "전석 10,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008957",
+    "cast": "홍순달, 홍준표, 홍윤표, 구교진, 이도헌, 모리시타 시게루, 사토미 노리코 등"
+  },
+  {
     "id": "kopis-PF300600",
     "kopisId": "PF300600",
     "title": "알렉상드르 캉토로프 피아노 리사이틀",
@@ -50648,7 +50695,9 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "프란츠 슈베르트: 연가곡 \"겨울 나그네\" D.911 전곡 (Franz Schubert: Winterreise, D. 911)"
+    ],
     "price": "전석 40,000원",
     "ticketUrl": "https://gdfac.or.kr/product/performance/258500",
     "status": "공연예정",
@@ -50709,6 +50758,69 @@ export const INITIAL_REAL_CONCERTS = [
     "price": "R석 50,000원, S석 30,000원, A석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014802",
     "cast": "김지현, 김범준, 주휘준, 김현지, 김희민"
+  },
+  {
+    "id": "kopis-PF297717",
+    "kopisId": "PF297717",
+    "title": "국립발레단, 호두까기인형 [대구]",
+    "date": "2026-12-04",
+    "startDate": "2026-12-04",
+    "endDate": "2026-12-05",
+    "time": "19:30",
+    "venue": "대구문화예술회관",
+    "hall": "팔공홀",
+    "region": "대구",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "표트르 일리치 차이콥스키: 발레 <호두까기 인형> Op.71 전막 (국립발레단, 대구국제오페라오케스트라 실연)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297717_260805_111415.gif",
+    "price": "R석 100,000원, S석 70,000원, A석 50,000원, H석  30,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011265",
+    "cast": ""
+  },
+  {
+    "id": "kopis-PF290826",
+    "kopisId": "PF290826",
+    "title": "광주시립발레단, 호두까기 인형 [부산]",
+    "date": "2026-12-04",
+    "startDate": "2026-12-04",
+    "endDate": "2026-12-04",
+    "time": "19:30",
+    "venue": "부산시민회관",
+    "hall": "대극장",
+    "region": "부산",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "표트르 일리치 차이콥스키: 발레 <호두까기 인형> Op.71 전막 (광주시립발레단)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF290826_260507_134259.jpg",
+    "price": "R석 60,000원, S석 30,000원, A석 20,000원",
+    "ticketUrl": "https://tickets.interpark.com/goods/26007880",
+    "cast": ""
+  },
+  {
+    "id": "kopis-PF296661",
+    "kopisId": "PF296661",
+    "title": "호두까기 인형 [인천]",
+    "date": "2026-12-04",
+    "startDate": "2026-12-04",
+    "endDate": "2026-12-05",
+    "time": "19:30",
+    "venue": "부평아트센터",
+    "hall": "해누리극장",
+    "region": "인천",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "표트르 일리치 차이콥스키: 모음곡 \"호두까기 인형\" Op.71a (인천 부평아트센터)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296661_260722_143206.gif",
+    "price": "R석 50,000원, S석 40,000원, A석 30,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010478",
+    "cast": "박시은, 황경호 등"
   },
   {
     "id": "kopis-PF303451",
@@ -50911,7 +51023,10 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "L. v. Beethoven: Symphony No. 9 in D minor, Op. 125 \"Choral\" (4악장 환희의 송가)",
+      "오페라 아리아 및 송년 페스티벌 오케스트라 갈라"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014384",
     "status": "공연예정",
@@ -50939,7 +51054,11 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "S. Rachmaninoff: Suite No. 1 for 2 Pianos, Op. 5 \"Fantaisie-Tableaux\"",
+      "S. Rachmaninoff: Suite No. 2 for 2 Pianos, Op. 17",
+      "A. Arensky: Suite No. 1 for 2 Pianos, Op. 15"
+    ],
     "price": "VIP석 80,000원, R석 70,000원, S석 60,000원, A석 50,000원, B석 40,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013717",
     "status": "공연예정",
@@ -51058,7 +51177,12 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. F. Händel: Opera <Rinaldo> 중 \"Lascia ch'io pianga\" (울게 하소서)",
+      "G. F. Händel: Opera <Serse> 중 \"Ombra mai fù\" (라르고)",
+      "H. Purcell: Music for a While",
+      "A. Vivaldi: Nisi Dominus, RV 608 중 \"Cum dederit\""
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008524",
     "status": "공연예정",
@@ -51134,6 +51258,50 @@ export const INITIAL_REAL_CONCERTS = [
       "클래식 명작"
     ],
     "runtime": "1시간 30분"
+  },
+  {
+    "id": "kopis-PF304510",
+    "kopisId": "PF304510",
+    "title": "한수진 바이올린 리사이틀",
+    "date": "2026-12-05",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "time": "16:00",
+    "venue": "거암아트홀",
+    "hall": "거암아트홀",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "J. S. Bach: Partita No. 2 in D minor, BWV 1004 (Chaconne)",
+      "J. Brahms: Violin Sonata No. 3 in D minor, Op. 108",
+      "C. Saint-Saëns: Havanaise, Op. 83"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304510_261026_155245.gif",
+    "price": "전석 50,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015342",
+    "cast": "한수진, 신수정"
+  },
+  {
+    "id": "kopis-PF304108",
+    "kopisId": "PF304108",
+    "title": "호두까기 인형 [울산]",
+    "date": "2026-12-05",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-06",
+    "time": "17:00",
+    "venue": "울산문화예술회관",
+    "hall": "대공연장",
+    "region": "울산",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "표트르 일리치 차이콥스키: 발레 <호두까기 인형> Op.71 전막 (울산문화예술회관)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304108_261022_104029.jpg",
+    "price": "R석 50,000원, S석 40,000원, A석 30,000원, 시야방해석 20,000원",
+    "ticketUrl": "https://booking.naver.com/booking/12/bizes/1759296",
+    "cast": ""
   },
   {
     "id": "kopis-PF301250",
@@ -51301,7 +51469,11 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Violin Sonata No. 18 in G major, K. 301",
+      "L. v. Beethoven: Violin Sonata No. 5 in F major, Op. 24 \"Spring\"",
+      "R. Strauss: Violin Sonata in E-flat major, Op. 18"
+    ],
     "price": "R석 50,000원, S석 40,000원, A석 30,000원, B석 20,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1755553",
     "status": "공연예정",
@@ -52054,6 +52226,29 @@ export const INITIAL_REAL_CONCERTS = [
     "runtime": "2시간"
   },
   {
+    "id": "kopis-PF282160",
+    "kopisId": "PF282160",
+    "title": "서울시국악관현악단, 송년 음악회",
+    "date": "2026-12-10",
+    "startDate": "2026-12-10",
+    "endDate": "2026-12-10",
+    "time": "19:30",
+    "venue": "세종문화회관",
+    "hall": "대극장",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "박범훈: 국악관현악을 위한 축제 (Celebration for Korean Traditional Orchestra)",
+      "이준호: 관현악 \"축연무\"",
+      "국악관현악으로 듣는 크리스마스 캐롤 환상곡"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF282160_261022_155353.gif",
+    "price": "R석 50,000원, S석 40,000원, A석 30,000원",
+    "ticketUrl": "https://www.ticketlink.co.kr/product/60497",
+    "cast": "김성국, 서재현, 이희문, 황린, 김한복, 박안지, 신찬선 등"
+  },
+  {
     "id": "kopis-PF293713",
     "kopisId": "PF293713",
     "title": "경기필 마스터피스 시리즈 Ⅵ. 무소륵스키 전람회의 그림 [서울]",
@@ -52248,6 +52443,29 @@ export const INITIAL_REAL_CONCERTS = [
     "runtime": "1시간 20분"
   },
   {
+    "id": "kopis-PF304507",
+    "kopisId": "PF304507",
+    "title": "김경미 & 이도휘 피아노 듀오 리사이틀: Paris meets New York [대구]",
+    "date": "2026-12-11",
+    "startDate": "2026-12-11",
+    "endDate": "2026-12-11",
+    "time": "19:30",
+    "venue": "대구콘서트하우스 (챔버홀 (소공연장) )",
+    "hall": "소공연장",
+    "region": "대구",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "C. Debussy: Petite Suite for Piano 4 Hands, L. 65",
+      "M. Ravel: La Valse for 2 Pianos",
+      "G. Gershwin: Rhapsody in Blue for 2 Pianos"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304507_261026_154854.jpg",
+    "price": "전석 20,000원",
+    "ticketUrl": "http://www.ticketlink.co.kr/product/66482",
+    "cast": "김경미, 이도휘"
+  },
+  {
     "id": "kopis-PF293906",
     "kopisId": "PF293906",
     "title": "지브리 & 디즈니 영화음악 오케스트라 콘서트 [익산]",
@@ -52322,7 +52540,12 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Verdi: <La Traviata> 중 \"축배의 노래\" (Brindisi)",
+      "G. Puccini: <La Bohème> 중 \"Che gelida manina\" (그대의 찬 손)",
+      "G. Puccini: <La Bohème> 중 \"Si, mi chiamano Mimì\" (내 이름은 미미)",
+      "G. Bizet: <Carmen> 중 \"Votre toast\" (투우사의 노래)"
+    ],
     "price": "VIP석 120,000원, R석 100,000원, S석 80,000원, A석 50,000원, B석 30,000원",
     "ticketUrl": "https://www.ticketlink.co.kr/product/60492",
     "status": "공연예정",
@@ -52446,7 +52669,9 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "조르주 비제: 오페라 <카르멘> 하이라이트 (하바네라, 세기디야, 투우사의 노래, 꽃노래, 최종 2중창)"
+    ],
     "price": "VIP석 120,000원, R석 80,000원, S석 50,000원, A석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013099",
     "status": "공연예정",
@@ -52484,6 +52709,76 @@ export const INITIAL_REAL_CONCERTS = [
       "클래식 명작"
     ],
     "runtime": "2시간"
+  },
+  {
+    "id": "kopis-PF304506",
+    "kopisId": "PF304506",
+    "title": "한국성악가협회와 함께하는 밥퍼 자선음악회",
+    "date": "2026-12-12",
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-12",
+    "time": "19:30",
+    "venue": "서울아트센터",
+    "hall": "도암홀",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "F. Schubert: Ave Maria, D. 839",
+      "C. Gounod: Repentir (O Divine Redeemer)",
+      "G. F. Händel: <Messiah> 중 \"Rejoice greatly, O daughter of Zion\"",
+      "한국 가곡 및 성가 합창 명곡"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304506_261026_154854.gif",
+    "price": "전석 100,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009873",
+    "cast": "권미현, 김선희, 김영은, 김원진, 김태은, 김혜영, 서보란 등"
+  },
+  {
+    "id": "kopis-PF301127",
+    "kopisId": "PF301127",
+    "title": "윤별 발레 컴퍼니, 그랜드 갈라 [용인]",
+    "date": "2026-12-12",
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-12",
+    "time": "17:00",
+    "venue": "용인포은아트홀",
+    "hall": "용인포은아트홀",
+    "region": "경기",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "P. I. Tchaikovsky: <Swan Lake> 중 백조 파드되",
+      "L. Minkus: <Don Quixote> 그랑 파드되",
+      "P. I. Tchaikovsky: <The Nutcracker> 그랑 파드되"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301127_260916_163503.gif",
+    "price": "VIP석 80,000원, R석 60,000원, S석 50,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013411",
+    "cast": "강경호, 강서연, 강수민, 곽지오, 김민섭, 김상영, 김유찬 등"
+  },
+  {
+    "id": "kopis-PF301662",
+    "kopisId": "PF301662",
+    "title": "이은미 콘서트 with 오케스트라: 추억이 핀다 [전주]",
+    "date": "2026-12-12",
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-12",
+    "time": "18:00",
+    "venue": "전북대학교 삼성문화회관",
+    "hall": "대공연장",
+    "region": "전북",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "이은미 & 오케스트라: 애인 있어요",
+      "녹턴",
+      "기억 속으로"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301662_260923_113915.jpg",
+    "price": "R석 132,000원, S석 110,000원, A석 99,000원",
+    "ticketUrl": "http://www.ticketlink.co.kr/product/65836",
+    "cast": "이은미"
   },
   {
     "id": "kopis-PF300689",
@@ -52753,7 +53048,10 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. S. Bach: French Suite No. 5 in G major, BWV 816",
+      "F. Chopin: 24 Preludes, Op. 28"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010937",
     "status": "공연예정",
@@ -53005,7 +53303,10 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. Brahms: Violin Sonata No. 1 in G major, Op. 78 \"Regenlied\" (비의 노래)",
+      "P. de Sarasate: Zigeunerweisen, Op. 20 (찌고이네르바이젠)"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009278",
     "status": "공연예정",
@@ -53100,7 +53401,11 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. S. Bach: Air on the G String (G선상의 아리아 - 4대의 첼로 편곡)",
+      "D. Popper: Requiem for 3 Cellos and Piano, Op. 66",
+      "A. Piazzolla: The Four Seasons of Buenos Aires - Winter (부에노스아이레스의 사계 중 겨울)"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://www.gdfac.or.kr/product/performance/258460",
     "status": "공연예정",
@@ -53448,7 +53753,10 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "P. I. Tchaikovsky: Piano Trio in A minor, Op. 50 \"어느 위대한 예술가의 추억\"",
+      "D. Shostakovich: Piano Quintet in G minor, Op. 57"
+    ],
     "price": "전석 50,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/60121",
     "status": "공연예정",
@@ -53476,7 +53784,11 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "모리스 라벨: 피아노 협주곡 G장조 (Maurice Ravel: Piano Concerto in G major, 협연 손열음)",
+      "조지 거슈윈: 랩소디 인 블루 (George Gershwin: Rhapsody in Blue)",
+      "이고르 스트라빈스키: 봄의 제전 (Igor Stravinsky: The Rite of Spring)"
+    ],
     "price": "V석 80,000원, R석 60,000원, S석 40,000원, A석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26007706",
     "status": "공연예정",
@@ -53534,7 +53846,9 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "프란츠 슈베르트: 겨울 나그네 D.911 주요 가곡 (보리수, 봄의 꿈, 휴식, 우편마차, 거리의 악사)"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/61076",
     "status": "공연예정",
@@ -53545,6 +53859,27 @@ export const INITIAL_REAL_CONCERTS = [
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284275_260202_142438.png",
     "hall": "대공연장",
     "runtime": "1시간 30분"
+  },
+  {
+    "id": "kopis-PF303402",
+    "kopisId": "PF303402",
+    "title": "유니버설발레단, 호두까기인형 [서울 종로]",
+    "date": "2026-12-17",
+    "startDate": "2026-12-17",
+    "endDate": "2026-12-30",
+    "time": "19:30",
+    "venue": "세종문화회관",
+    "hall": "대극장",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "표트르 일리치 차이콥스키: 발레 <호두까기 인형> Op.71 전막 (P. I. Tchaikovsky: The Nutcracker, Op. 71, 코리아쿱오케스트라 실연)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303402_261016_101506.gif",
+    "price": "VIP석 140,000원, R석 120,000원, S석 90,000원, A석 60,000원, B석 30,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004869",
+    "cast": "김광현, 강미선, 콘스탄틴 노보셀로프, 전여진, 이승민, 서혜원, 이현준 등"
   },
   {
     "id": "kopis-PF302281",
@@ -53654,7 +53989,10 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "F. Mendelssohn: Piano Trio No. 1 in D minor, Op. 49",
+      "J. Brahms: Piano Quartet No. 3 in C minor, Op. 60 \"Werther\""
+    ],
     "price": "전석 50,000원",
     "ticketUrl": "https://www.ticketlink.co.kr/product/60122",
     "status": "공연예정",
@@ -53685,7 +54023,9 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 \"합창\" (Ludwig van Beethoven: Symphony No. 9 in D minor, Op. 125 \"Choral\")"
+    ],
     "price": "R석 20,000원, S석 15,000원, A석 10,000원",
     "ticketUrl": "https://www.ulsan.go.kr/ucac/art/page.do?mnu_code=mnu001002",
     "status": "공연예정",
@@ -53706,7 +54046,12 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "플레이리스트",
     "city": "강원특별자치도",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "J. S. Bach: Trio Sonata in G major, BWV 1038",
+      "F. Poulenc: Flute Sonata, FP 164 (조성현)",
+      "M. Ravel: Tzigane (스베틀린 루세브)",
+      "C. Saint-Saëns: Introduction and Rondo Capriccioso, Op. 28"
+    ],
     "price": "전석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015203",
     "status": "공연예정",
@@ -53775,6 +54120,48 @@ export const INITIAL_REAL_CONCERTS = [
     "price": "R석 150,000원, S석 120,000원, A석 80,000원, B석 40,000원, C석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25013841",
     "cast": "얍 판 츠베덴, 이세르게이, 김병훈, 최윤, 홍혜란, 양송미, 김성호 등"
+  },
+  {
+    "id": "kopis-PF302439",
+    "kopisId": "PF302439",
+    "title": "M 송년발레, 호두까기 인형",
+    "date": "2026-12-18",
+    "startDate": "2026-12-18",
+    "endDate": "2026-12-20",
+    "time": "19:30",
+    "venue": "마포아트센터",
+    "hall": "아트홀맥",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "표트르 일리치 차이콥스키: 발레 <호두까기 인형> Op.71 전막 (M 송년발레)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302439_261002_171252.gif",
+    "price": "R석 77,000원, S석 55,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013990",
+    "cast": "박시은, 조수민, 소하은, 백인규, 성재승, 펠릭스 스티그마이어 등"
+  },
+  {
+    "id": "kopis-PF302858",
+    "kopisId": "PF302858",
+    "title": "전남광주통합특별시립발레단, 호두까기 인형 [전남 광주]",
+    "date": "2026-12-18",
+    "startDate": "2026-12-18",
+    "endDate": "2026-12-19",
+    "time": "19:30",
+    "venue": "국립아시아문화전당",
+    "hall": "극장1",
+    "region": "기타",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "표트르 일리치 차이콥스키: 발레 <호두까기 인형> Op.71 전막 (전남광주통합특별시립발레단)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302858_261008_154138.jpg",
+    "price": "R석 50,000원, S석 30,000원, A석 20,000원",
+    "ticketUrl": "https://www.acc.go.kr/main/performance.do?PID=0102&amp;action=Read&amp;bnkey=EM_0000010174",
+    "cast": ""
   },
   {
     "id": "kopis-PF298967",
@@ -53854,7 +54241,9 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "말러"
     ],
-    "pieces": [],
+    "pieces": [
+      "구스타프 말러: 교향곡 제5번 c#단조 (Gustav Mahler: Symphony No. 5 in C-sharp minor)"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25018117",
     "status": "공연예정",
@@ -53944,7 +54333,9 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "헨델"
     ],
-    "pieces": [],
+    "pieces": [
+      "게오르크 프리드리히 헨델: 오라토리오 \"메시아\" HWV 56 전곡 (G. F. Händel: Oratorio \"Messiah\", HWV 56)"
+    ],
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014673",
     "status": "공연예정",
@@ -53972,7 +54363,10 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤: 피아노 협주곡 제5번 Eb장조 Op.73 \"황제\" (협연 손민수)",
+      "표트르 일리치 차이콥스키: 교향곡 제5번 e단조 Op.64"
+    ],
     "price": "1층석 100,000원, 1층 시야제한석 80,000원, 2층석 100,000원, 2층 시야제한석 80,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1754946",
     "status": "공연예정",
@@ -54114,7 +54508,11 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "Bach"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. S. Bach: Brandenburg Concerto No. 6 in B-flat major, BWV 1051",
+      "J. S. Bach: Viola da Gamba Sonata No. 3 in G minor, BWV 1029",
+      "G. P. Telemann: Viola Concerto in G major, TWV 51:G9"
+    ],
     "price": "VIP석 110,000원, R석 80,000원, S석 60,000원, A석 40,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26007788",
     "status": "공연예정",
@@ -54191,7 +54589,12 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "플레이리스트",
     "city": "강원특별자치도",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "J. S. Bach: Trio Sonata in G major, BWV 1038",
+      "F. Poulenc: Flute Sonata, FP 164 (조성현)",
+      "M. Ravel: Tzigane (스베틀린 루세브)",
+      "C. Saint-Saëns: Introduction and Rondo Capriccioso, Op. 28"
+    ],
     "price": "전석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015204",
     "status": "공연예정",
@@ -54210,6 +54613,97 @@ export const INITIAL_REAL_CONCERTS = [
       "클래식 명작"
     ],
     "runtime": "1시간 10분"
+  },
+  {
+    "id": "kopis-PF300193",
+    "kopisId": "PF300193",
+    "title": "론 브랜튼의 재즈 크리스마스! [수원]",
+    "date": "2026-12-19",
+    "startDate": "2026-12-19",
+    "endDate": "2026-12-19",
+    "time": "18:30",
+    "venue": "경기아트센터",
+    "hall": "소극장",
+    "region": "경기",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Mel Tormé: The Christmas Song",
+      "Vince Guaraldi: Christmas Time Is Here",
+      "Hugh Martin: Have Yourself a Merry Little Christmas"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300193_260904_150411.gif",
+    "price": "R석 69,000원, S석 59,000원, A석 49,000원",
+    "ticketUrl": "https://booking.naver.com/booking/12/bizes/1726260",
+    "cast": "론 브랜튼, 정재동, 임경진, 매뉴엘 웨이언드, 이주미"
+  },
+  {
+    "id": "kopis-PF297379",
+    "kopisId": "PF297379",
+    "title": "카즈미 타테이시 트리오 내한공연: 지브리, 재즈를 만나다 [광주]",
+    "date": "2026-12-19",
+    "startDate": "2026-12-19",
+    "endDate": "2026-12-19",
+    "time": "17:00",
+    "venue": "국립아시아문화전당",
+    "hall": "극장2",
+    "region": "기타",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Joe Hisaishi: My Neighbor Totoro",
+      "Joe Hisaishi: Always with Me",
+      "Joe Hisaishi: Merry-Go-Round of Life"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297379_260731_125520.gif",
+    "price": "VIP석 88,000원, R석 77,000원, S석 66,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010847",
+    "cast": "타테이시 카즈미, 사토 시노부, 스즈키 마오"
+  },
+  {
+    "id": "kopis-PF303855",
+    "kopisId": "PF303855",
+    "title": "송년음악회: 세향국악오케스트라 & 김덕수 [거제]",
+    "date": "2026-12-19",
+    "startDate": "2026-12-19",
+    "endDate": "2026-12-19",
+    "time": "17:00",
+    "venue": "거제문화예술회관",
+    "hall": "대극장",
+    "region": "경남",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "사물놀이와 국악오케스트라를 위한 협주곡 \"신모듬\" (박범훈 작곡, 김덕수 협연)",
+      "세향국악오케스트라 송년 서곡"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303855_261020_110136.jpg",
+    "price": "R석 30,000원, S석 20,000원, A석 10,000원",
+    "ticketUrl": "https://ticket.geojeart.or.kr/eventView.do?group_id=2002260",
+    "cast": "김덕수, 오정해, 윤은화, 이영훈 등"
+  },
+  {
+    "id": "kopis-PF301794",
+    "kopisId": "PF301794",
+    "title": "이은미 콘서트 with 오케스트라: 추억이 핀다 [대구]",
+    "date": "2026-12-19",
+    "startDate": "2026-12-19",
+    "endDate": "2026-12-19",
+    "time": "18:00",
+    "venue": "아양아트센터",
+    "hall": "아양홀",
+    "region": "대구",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "이은미 & 오케스트라: 애인 있어요",
+      "녹턴",
+      "기억 속으로"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301794_260928_140320.gif",
+    "price": "R석 132,000원, S석 110,000원, A석 99,000원",
+    "ticketUrl": "https://www.ticketlink.co.kr/product/65850",
+    "cast": "이은미 등"
   },
   {
     "id": "kopis-PF299436",
@@ -54350,7 +54844,12 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Queen of the Night (arr. Philharmonix)",
+      "J. Brahms: Hungarian Dance No. 1 & No. 5 (arr. Philharmonix)",
+      "J. Strauss II: Die Fledermaus Overture",
+      "Queen: Bohemian Rhapsody (Philharmonix version)"
+    ],
     "price": "R석 80,000원, S석 50,000원, A석 30,000원",
     "ticketUrl": "https://www.gdfac.or.kr/product/performance/258527",
     "status": "공연예정",
@@ -54578,6 +55077,28 @@ export const INITIAL_REAL_CONCERTS = [
     "cast": "장희재, 김은찬, 박동석, 이호찬, 김진택"
   },
   {
+    "id": "kopis-PF295748",
+    "kopisId": "PF295748",
+    "title": "카즈미 타테이시 트리오 내한공연: 크리스마스, 재즈를 만나다 [성남]",
+    "date": "2026-12-20",
+    "startDate": "2026-12-20",
+    "endDate": "2026-12-20",
+    "time": "15:00",
+    "venue": "성남아트센터",
+    "hall": "콘서트홀",
+    "region": "경기",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Joe Hisaishi: Merry-Go-Round of Life",
+      "Hugh Martin: Have Yourself a Merry Little Christmas"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295748_260710_095837.gif",
+    "price": "VIP석 88,000원, R석 77,000원, S석 66,000원, A석 55,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009563",
+    "cast": "타테이시 카즈미, 사토 시노부, 스즈키 마오"
+  },
+  {
     "id": "kopis-PF303358",
     "kopisId": "PF303358",
     "title": "크리스마스 지브리 & 디즈니 OST 콘서트",
@@ -54610,6 +55131,29 @@ export const INITIAL_REAL_CONCERTS = [
     "runtime": "2시간"
   },
   {
+    "id": "kopis-PF304082",
+    "kopisId": "PF304082",
+    "title": "나윤선 & 보얀지 크리스마스 인 라이트, 재즈 리턴스: 빛의 시어터",
+    "date": "2026-12-21",
+    "startDate": "2026-12-21",
+    "endDate": "2026-12-22",
+    "time": "20:00",
+    "venue": "그랜드 워커힐 서울 (비스타 워커힐 서울)",
+    "hall": "비스타 워커힐 서울",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Astor Piazzolla: Libertango (Youn Sun Nah & Bojan Z Duo)",
+      "Paul Simon: Sound of Silence",
+      "Silent Night, Holy Night (재즈 보컬 & 피아노 편곡)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304082_261021_163530.jpg",
+    "price": "VIP석 200,000원, R석 150,000원, S석 120,000원",
+    "ticketUrl": "https://booking.naver.com/booking/12/bizes/1759806",
+    "cast": "나윤선, 보얀 줄피카르파시치"
+  },
+  {
     "id": "kopis-PF302135",
     "kopisId": "PF302135",
     "title": "손세혁 피아노 독주회 [서울]",
@@ -54624,7 +55168,11 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Piano Sonata No. 8 in A minor, K. 310",
+      "F. Chopin: Ballade No. 1 in G minor, Op. 23",
+      "F. Liszt: Mephisto Waltz No. 1, S. 514"
+    ],
     "price": "전석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013784",
     "status": "공연예정",
@@ -54769,7 +55317,9 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "자코모 푸치니: 오페라 <라 보엠> 전막 (Giacomo Puccini: Opera \"La Bohème\")"
+    ],
     "price": "VIP석 120,000원, R석 80,000원, S석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011073",
     "status": "공연예정",
@@ -54950,6 +55500,29 @@ export const INITIAL_REAL_CONCERTS = [
     "cast": "성재창, 김동민, 정종수, 박제연, 김정기"
   },
   {
+    "id": "kopis-PF296339",
+    "kopisId": "PF296339",
+    "title": "카즈미 타테이시 트리오 내한공연: 지브리, 재즈를 만나다 [서울]",
+    "date": "2026-12-22",
+    "startDate": "2026-12-22",
+    "endDate": "2026-12-22",
+    "time": "19:30",
+    "venue": "영등포아트홀",
+    "hall": "영등포아트홀",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Joe Hisaishi: My Neighbor Totoro",
+      "Joe Hisaishi: Always with Me",
+      "Joe Hisaishi: Merry-Go-Round of Life"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296339_260720_125146.gif",
+    "price": "VIP석 88,000원, R석 77,000원, S석 66,000원",
+    "ticketUrl": "http://www.ticketlink.co.kr/product/66432",
+    "cast": "타테이시 카즈미, 사토 시노부, 스즈키 마오"
+  },
+  {
     "id": "kopis-PF302198",
     "kopisId": "PF302198",
     "title": "베토벤 교향곡 x 두 대의 피아노 #3",
@@ -55093,7 +55666,10 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "영산아트홀",
     "city": "서울특별시",
     "performerType": "실내악",
-    "pieces": [],
+    "pieces": [
+      "C. Saint-Saëns: Le Carnaval des animaux (동물의 사육제)",
+      "M. Ravel: Introduction and Allegro for Harp, Flute, Clarinet and String Quartet"
+    ],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015068",
     "status": "공연예정",
@@ -55388,6 +55964,73 @@ export const INITIAL_REAL_CONCERTS = [
     "runtime": "2시간"
   },
   {
+    "id": "kopis-PF303074",
+    "kopisId": "PF303074",
+    "title": "서울발레시어터, 호두까기 인형 [여수]",
+    "date": "2026-12-24",
+    "startDate": "2026-12-24",
+    "endDate": "2026-12-25",
+    "time": "19:30",
+    "venue": "GS칼텍스 예울마루",
+    "hall": "대극장",
+    "region": "기타",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "표트르 일리치 차이콥스키: 발레 <호두까기 인형> Op.71 전막 (서울발레시어터)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303074_261012_180757.jpg",
+    "price": "R석 77,000원, S석 55,000원, A석 44,000원",
+    "ticketUrl": "http://www.ticketlink.co.kr/product/66153",
+    "cast": "성재승, 소하은, 황경호, 김명준 등"
+  },
+  {
+    "id": "kopis-PF296879",
+    "kopisId": "PF296879",
+    "title": "카즈미 타테이시 트리오 내한공연: 크리스마스, 재즈를 만나다 [서울 강동]",
+    "date": "2026-12-24",
+    "startDate": "2026-12-24",
+    "endDate": "2026-12-24",
+    "time": "19:30",
+    "venue": "강동아트센터",
+    "hall": "대극장 한강",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Joe Hisaishi: Merry-Go-Round of Life",
+      "Hugh Martin: Have Yourself a Merry Little Christmas",
+      "J. Pierpont: Jingle Bells Jazz Fantasy"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296879_260724_123206.gif",
+    "price": "VIP석 88,000원, R석 77,000원, S석 66,000원, A석 55,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010350",
+    "cast": "타테이시 카즈미, 사토 시노부, 스즈키 마오"
+  },
+  {
+    "id": "kopis-PF303942",
+    "kopisId": "PF303942",
+    "title": "나윤선 크리스마스 콘서트: Jazz for Christmas [평택]",
+    "date": "2026-12-24",
+    "startDate": "2026-12-24",
+    "endDate": "2026-12-24",
+    "time": "19:30",
+    "venue": "평택아트센터",
+    "hall": "대공연장",
+    "region": "경기",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Mel Tormé: The Christmas Song",
+      "Astor Piazzolla: Libertango",
+      "Have Yourself a Merry Little Christmas"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303942_261021_101013.jpg",
+    "price": "R석 50,000원, S석 30,000원",
+    "ticketUrl": "https://booking.naver.com/booking/12/bizes/1763510",
+    "cast": "나윤선, 보얀 지, 천현지, 김솔다니엘, 유우정"
+  },
+  {
     "id": "kopis-PF303490",
     "kopisId": "PF303490",
     "title": "더 크리스마스: 송영훈의 4첼리스트",
@@ -55579,6 +56222,122 @@ export const INITIAL_REAL_CONCERTS = [
     "runtime": "2시간"
   },
   {
+    "id": "kopis-PF288633",
+    "kopisId": "PF288633",
+    "title": "크리스마스 발레, 호두까기 인형 [성남]",
+    "date": "2026-12-25",
+    "startDate": "2026-12-25",
+    "endDate": "2026-12-25",
+    "time": "14:00",
+    "venue": "성남아트센터",
+    "hall": "오페라하우스",
+    "region": "경기",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "표트르 일리치 차이콥스키: 발레 <호두까기 인형> Op.71 전막 (성남아트센터 크리스마스 발레)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF288633_260403_134128.gif",
+    "price": "R석 80,000원, S석 60,000원, A석 40,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26004572",
+    "cast": ""
+  },
+  {
+    "id": "kopis-PF303519",
+    "kopisId": "PF303519",
+    "title": "아람 크리스마스 콘서트 #2. 리베란테",
+    "date": "2026-12-25",
+    "startDate": "2026-12-25",
+    "endDate": "2026-12-25",
+    "time": "17:00",
+    "venue": "고양아람누리",
+    "hall": "아람극장",
+    "region": "경기",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "G. Bizet: <Carmen> 중 \"Votre toast, je peux vous le rendre\" (투우사의 노래)",
+      "L. Cohen: Hallelujah (아람 심포니 오케스트라 & 리베란테 편곡)",
+      "Adolphe Adam: O Holy Night (오 거룩한 밤)",
+      "크리스마스 캐롤 메들리"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303519_261016_102640.jpg",
+    "price": "R석 90,000원, S석 80,000원, A석 70,000원, B석 60,000원",
+    "ticketUrl": "http://www.artgy.or.kr/PF/PF0201V.aspx?showid=0000008473",
+    "cast": "김지훈, 진원, 노현우"
+  },
+  {
+    "id": "kopis-PF300186",
+    "kopisId": "PF300186",
+    "title": "론 브랜튼의 재즈 크리스마스! [서울]",
+    "date": "2026-12-25",
+    "startDate": "2026-12-25",
+    "endDate": "2026-12-25",
+    "time": "16:00",
+    "venue": "세종문화회관",
+    "hall": "체임버홀",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Mel Tormé: The Christmas Song",
+      "Vince Guaraldi: Christmas Time Is Here (Charlie Brown Christmas)",
+      "J. Fred Coots: Santa Claus Is Comin' to Town",
+      "Hugh Martin: Have Yourself a Merry Little Christmas"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300186_260904_143907.png",
+    "price": "R석 69,000원, S석 59,000원, A석 49,000원",
+    "ticketUrl": "http://www.ticketlink.co.kr/product/65356",
+    "cast": "론 브랜든, 정재동, 임경진, 매뉴엘 웨이언드, 이주미"
+  },
+  {
+    "id": "kopis-PF297997",
+    "kopisId": "PF297997",
+    "title": "카즈미 타테이시 트리오 내한공연: 지브리, 재즈를 만나다 [대구]",
+    "date": "2026-12-25",
+    "startDate": "2026-12-25",
+    "endDate": "2026-12-25",
+    "time": "17:00",
+    "venue": "대덕문화전당",
+    "hall": "대덕문화전당",
+    "region": "대구",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Joe Hisaishi: My Neighbor Totoro",
+      "Joe Hisaishi: Always with Me",
+      "Joe Hisaishi: Merry-Go-Round of Life"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297997_260807_145410.gif",
+    "price": "VIP석 88,000원, R석 77,000원, S석 66,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011212",
+    "cast": "타테이시 카즈미, 사토 시노부, 스즈키 마오"
+  },
+  {
+    "id": "kopis-PF302736",
+    "kopisId": "PF302736",
+    "title": "이은미 콘서트 with 오케스트라: 추억이 핀다 [용인]",
+    "date": "2026-12-25",
+    "startDate": "2026-12-25",
+    "endDate": "2026-12-25",
+    "time": "16:00",
+    "venue": "용인포은아트홀",
+    "hall": "용인포은아트홀",
+    "region": "경기",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "이은미 & 모스틀리 필하모닉 오케스트라: 애인 있어요",
+      "녹턴 (오케스트라 버전)",
+      "기억 속으로 (오케스트라 버전)",
+      "어떤 그리움"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302736_261007_143801.jpg",
+    "price": "R석 132,000원, S석 121,000원, A석 99,000원",
+    "ticketUrl": "http://www.ticketlink.co.kr/product/66077",
+    "cast": "이은미"
+  },
+  {
     "id": "kopis-PF303552",
     "kopisId": "PF303552",
     "title": "KBS교향악단과 함께하는 여수음악제 송년음악회",
@@ -55598,7 +56357,11 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. Strauss II: Die Fledermaus Overture (박쥐 서곡)",
+      "P. I. Tchaikovsky: Violin Concerto in D major, Op. 35",
+      "L. v. Beethoven: Symphony No. 7 in A major, Op. 92"
+    ],
     "price": "R석 70,000원, S석 50,000원, A석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014186",
     "status": "공연예정",
@@ -55659,7 +56422,9 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 \"합창\""
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "https://www.incheon.go.kr/art/ART010101/view?resveProgrmSeCode=C&amp;resveGroupSn=5&amp;progrmSn=10672",
     "status": "공연예정",
@@ -55714,7 +56479,11 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Piano Sonata No. 8 in A minor, K. 310",
+      "F. Chopin: Ballade No. 1 in G minor, Op. 23",
+      "F. Liszt: Mephisto Waltz No. 1, S. 514"
+    ],
     "price": "전석 40,000원",
     "ticketUrl": "https://www.bac.or.kr/product/ko/performance/253541",
     "status": "공연예정",
@@ -55762,6 +56531,75 @@ export const INITIAL_REAL_CONCERTS = [
       "클래식 명작"
     ],
     "runtime": "2시간"
+  },
+  {
+    "id": "kopis-PF304470",
+    "kopisId": "PF304470",
+    "title": "임채문 더블베이스 리사이틀",
+    "date": "2026-12-26",
+    "startDate": "2026-12-26",
+    "endDate": "2026-12-26",
+    "time": "20:00",
+    "venue": "예술의전당",
+    "hall": "IBK챔버홀",
+    "region": "서울",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "J. S. Bach: Cello Suite No. 3 in C major, BWV 1009 (arr. for Double Bass)",
+      "P. Hindemith: Sonata for Double Bass and Piano",
+      "G. Bottesini: Gran Duo Concertante for Violin, Double Bass and Piano"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304470_261026_142705.gif",
+    "price": "전석 40,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015333",
+    "cast": "임채문, 설민경, 김도현"
+  },
+  {
+    "id": "kopis-PF300131",
+    "kopisId": "PF300131",
+    "title": "론 브랜튼의 재즈 크리스마스! [인천]",
+    "date": "2026-12-26",
+    "startDate": "2026-12-26",
+    "endDate": "2026-12-26",
+    "time": "17:00",
+    "venue": "아트센터 인천",
+    "hall": "콘서트홀",
+    "region": "인천",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Mel Tormé: The Christmas Song",
+      "Vince Guaraldi: Christmas Time Is Here",
+      "Hugh Martin: Have Yourself a Merry Little Christmas"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300131_260904_112957.jpg",
+    "price": "R석 69,000원, S석 59,000원, A석 49,000원",
+    "ticketUrl": "https://booking.naver.com/booking/12/bizes/1726673",
+    "cast": "론 브랜튼, 정재동, 임경진, 매뉴엘 웨이언드, 이주미"
+  },
+  {
+    "id": "kopis-PF298602",
+    "kopisId": "PF298602",
+    "title": "카즈미 타테이시 트리오 내한공연: 지브리, 재즈를 만나다 [부산]",
+    "date": "2026-12-26",
+    "startDate": "2026-12-26",
+    "endDate": "2026-12-26",
+    "time": "17:00",
+    "venue": "금정문화회관 (대공연장(금빛누리홀))",
+    "hall": "금빛누리홀",
+    "region": "부산",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "Joe Hisaishi: My Neighbor Totoro (이웃집 토토로 - Kazumi Tateishi Trio Jazz arr.)",
+      "Joe Hisaishi: Always with Me (센과 치히로의 행방불명 - 언제나 몇 번이라도)",
+      "Joe Hisaishi: Merry-Go-Round of Life (하울의 움직이는 성 - 인생의 회전목마)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298602_260814_171908.gif",
+    "price": "VIP석 88,000원, R석 77,000원, S석 66,000원, A석 55,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011629",
+    "cast": "타테이시 카즈미, 사토 시노부, 스즈키 마오"
   },
   {
     "id": "kopis-PF303600",
@@ -55881,7 +56719,10 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Bottesini: Double Bass Concerto No. 2 in B minor",
+      "N. Paganini: Fantasy on a Theme from Rossini's \"Moses in Egypt\""
+    ],
     "price": "전석 40,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013514",
     "status": "공연예정",
@@ -55992,6 +56833,27 @@ export const INITIAL_REAL_CONCERTS = [
     "runtime": "2시간"
   },
   {
+    "id": "kopis-PF303363",
+    "kopisId": "PF303363",
+    "title": "BAC 특별기획, 호두까기인형",
+    "date": "2026-12-27",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-27",
+    "time": "14:00",
+    "venue": "부천아트센터",
+    "hall": "콘서트홀",
+    "region": "경기",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "표트르 일리치 차이콥스키: 모음곡 \"호두까기 인형\" Op.71a (오케스트라 실연 발레 갈라)"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303363_261014_165855.gif",
+    "price": "전석 30,000원",
+    "ticketUrl": "https://www.ticketlink.co.kr/product/66109",
+    "cast": "김유원 등"
+  },
+  {
     "id": "kopis-PF283864",
     "kopisId": "PF283864",
     "title": "함신익과 심포니 송 마스터즈 시리즈 Ⅷ, 송년음악회: 합창교향곡",
@@ -56033,7 +56895,10 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "성남아트센터",
     "city": "경기도",
     "performerType": "오케스트라",
-    "pieces": [],
+    "pieces": [
+      "안토닌 드보르작: 사육제 서곡 Op.92 (Carnival Overture, Op. 92)",
+      "안토닌 드보르작: 교향곡 제9번 e단조 Op.95 \"신세계로부터\" (Symphony No. 9 \"From the New World\")"
+    ],
     "price": "R석 33,000원, S석 22,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015076",
     "status": "공연예정",
@@ -56176,6 +57041,29 @@ export const INITIAL_REAL_CONCERTS = [
     "cast": "김정은"
   },
   {
+    "id": "kopis-PF293218",
+    "kopisId": "PF293218",
+    "title": "수성르네상스 프로젝트, 젊은 예술가 리사이틀 Ⅷ. 베이시스트 이기욱 리사이틀 [대구]",
+    "date": "2026-12-30",
+    "startDate": "2026-12-30",
+    "endDate": "2026-12-30",
+    "time": "19:30",
+    "venue": "수성아트피아 (소극장 (소공연장) )",
+    "hall": "소공연장",
+    "region": "대구",
+    "status": "공연예정",
+    "category": "클래식",
+    "pieces": [
+      "G. Bottesini: Elegia No. 1 in D major for Double Bass and Piano",
+      "P. Hindemith: Sonata for Double Bass and Piano",
+      "A. Piazzolla: Kicho for Double Bass and Piano"
+    ],
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293218_260609_131231.jpg",
+    "price": "전석 10,000원",
+    "ticketUrl": "http://www.ticketlink.co.kr/product/63276",
+    "cast": "이기욱, 최신영, 서예일, 김연귀"
+  },
+  {
     "id": "kopis-PF299920",
     "kopisId": "PF299920",
     "title": "제야음악회 [부산]",
@@ -56195,7 +57083,12 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "클래식 명작"
     ],
-    "pieces": [],
+    "pieces": [
+      "E. Elgar: Pomp and Circumstance March No. 1, Op. 39 (위풍당당 행진곡)",
+      "G. Puccini: <Turandot> 중 \"Nessun dorma\" (공주는 잠 못 이루고)",
+      "J. Strauss II: Radetzky March, Op. 228 (라데츠키 행진곡)",
+      "L. v. Beethoven: Symphony No. 9 in D minor, Op. 125 \"합창\" (4악장 환희의 송가)"
+    ],
     "price": "R석 50,000원, S석 30,000원, A석 20,000원",
     "ticketUrl": "http://www.bscc.or.kr/01_perfor/?mcode=0401010200&amp;mode=2&amp;no=26481",
     "status": "공연예정",
