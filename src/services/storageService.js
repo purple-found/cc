@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v38: 프레디 켐프 등 대형 콘서트홀 대표공연 점수 가중치 최적화 및 47건 주요 독주회 실존 프로그램 전수 적재
-const CONCERTS_KEY = 'opus_korea_concerts_v38';
+// v39: 슈퍼스타 네임 우선순위 및 홀 규모 2차 가중치 알고리즘 적용, 47건 주요 독주회 실존 프로그램 전수 적재
+const CONCERTS_KEY = 'opus_korea_concerts_v39';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -48,6 +48,7 @@ try {
       'opus_korea_concerts_v35',
       'opus_korea_concerts_v36',
       'opus_korea_concerts_v37',
+      'opus_korea_concerts_v38',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);

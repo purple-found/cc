@@ -14,7 +14,7 @@ function getHallTierScore(venue = '', hall = '') {
 
   // 1. 단일 대형 전용 콘서트홀 (2,000석 규모)
   if (v.includes('롯데콘서트홀') || v.includes('아트센터 인천') || v.includes('아트센터인천') || v.includes('부산콘서트홀')) {
-    return 110;
+    return 60;
   }
 
   // 2. 초소형 살롱홀 및 연습실 (100석 내외)
@@ -60,7 +60,7 @@ function getHallTierScore(venue = '', hall = '') {
     text.includes('체임버홀') ||
     text.includes('앙상블홀')
   ) {
-    return 40;
+    return 30;
   }
 
   // 5. 초대형 콘서트홀 및 대극장 (1,200~2,500석+ 메인 음악당)
@@ -80,30 +80,29 @@ function getHallTierScore(venue = '', hall = '') {
     text.includes('대공연장') ||
     text.includes('오페라극장')
   ) {
-    return 110;
+    return 60;
   }
 
   // 미분류 기본 공연장
-  return 30;
+  return 20;
 }
 
 /**
  * 클래식 공연 대표성 / 세부홀 규모 / 인기 우선순위 점수 계산 알고리즘
- * 1. 동일 공연장 내 세부홀 규모(좌석수/위상) 정밀 차등:
- *    - 콘서트홀/대극장(+110) vs IBK챔버홀(+40) vs 리사이틀홀(+15) vs 인춘아트홀(+5)
- *    (동일 예술의전당 내에서도 메인 콘서트홀이 챔버홀/리사이틀홀 대비 압도적 대표성 확보)
- * 2. 공연장 랜드마크 명성 기본 점수 (Venue Prestige):
- *    - 서울 3대 메카 (예술의전당, 롯데콘서트홀, 세종문화회관) -> +25점
- *    - 광역시도 대표 전문 음악당 (부천아트센터, 아트센터인천, 대구콘서트하우스, 부산콘서트홀 등) -> +15점
- * 3. 세계적 거장 지휘자 / 슈퍼스타 솔리스트 / 최정상 악단 가중치 (+90점)
- * 4. '리사이틀' 지능형 가중치:
- *    - 대형 콘서트홀 슈퍼스타 리사이틀: +80점 (최고 흥행 이벤트)
- *    - 중소형 챔버/리사이틀홀 슈퍼스타 리사이틀: +35점 (메인 콘서트홀 대작 역전 방지)
- *    - 소형홀 일반 독주회: -20점
- * 5. 대형 오케스트라 및 협주곡 가중치:
- *    - 오케스트라: +45점
- *    - 대형 메인홀 협주곡(Concerto): +45점 (프레디 켐프 쇼팽 협주곡 등)
- * 6. 개인 학위/동문회/연구회/소규모 독주회 상대적 후순위 조정 (-45점)
+ * [사용자 원칙 100% 반영]
+ * 1. [최우선] 거장 / 슈퍼스타 아티스트 네임 가중치 (+200점):
+ *    - 프레디 켐프, 조성진, 임윤찬 등 거장 솔리스트/지휘자 공연이 홀 크기보다 최우선
+ * 2. [차순위 판가름] 네임 가중치가 동등할 때 세부홀 크기 가중치:
+ *    - 대형 콘서트홀/대극장(+60점) vs IBK챔버홀(+30점) vs 리사이틀홀(+15점) vs 인춘아트홀(+5점)
+ * 3. 공연장 랜드마크 명성 기본 점수 (Venue Prestige):
+ *    - 서울 3대 메카 (예술의전당, 롯데콘서트홀, 세종문화회관) -> +20점
+ *    - 광역시도 대표 전문 음악당 (부천아트센터, 아트센터인천, 대구콘서트하우스, 부산콘서트홀 등) -> +10점
+ * 4. 장르/편성 가중치:
+ *    - 오케스트라/교향악단: +35점
+ *    - 협주곡(Concerto): +25점
+ *    - 대형 음악제/페스티벌: +20점
+ *    - 슈퍼스타 리사이틀: +20점 (비슈퍼스타 일반 독주회: -20점)
+ * 5. 소규모 학위/동문회/연구회 후순위 조정 (-50점)
  */
 function getConcertPriorityScore(c) {
   let score = 0;
@@ -114,34 +113,15 @@ function getConcertPriorityScore(c) {
   const performers = (Array.isArray(c.performers) ? c.performers.join(' ') : (c.performers || '')).toLowerCase();
   const fullText = `${title} ${venue} ${hall} ${performers} ${desc}`;
 
-  // 1. 세부홀 규모(좌석수)에 따른 정밀 차등 점수
-  const hallScore = getHallTierScore(venue, hall);
-  score += hallScore;
-
-  // 2. 공연장 랜드마크 명성 기본 점수
-  if (venue.includes('예술의전당') || venue.includes('롯데콘서트홀') || venue.includes('세종문화회관')) {
-    score += 25;
-  } else if (
-    venue.includes('부천아트센터') ||
-    venue.includes('대구콘서트하우스') ||
-    venue.includes('아트센터 인천') ||
-    venue.includes('아트센터인천') ||
-    venue.includes('부산콘서트홀') ||
-    venue.includes('대전예술의전당') ||
-    venue.includes('광주예술의전당')
-  ) {
-    score += 15;
-  }
-
-  // 3. 세계적 거장 및 슈퍼스타 솔리스트/지휘자/대표 국공립 악단 (+90)
+  // 1. [최우선] 세계적 거장 및 슈퍼스타 솔리스트/지휘자/대표 국공립 악단 (+200)
   const superstarKeywords = [
     '스미노 하야토', '스미노', 'sumino', 'cateen', 'hayato sumino',
     '프레디 켐프', '프레디 캠프', '프레디켐프', '프레디캠프', 'freddy kempf', 'kempf',
-    '김규연', '아르토 노라스', '노라스', 'arto noras',
     '조성진', 'seong-jin cho', '임윤찬', 'yunchan lim', '손열음', 'yeol eum son',
-    '백건우', '김선욱', '선우예권', '박재홍', '신창용', '임동혁',
-    '양성원', '송영훈', '백주영', '이경선', '김대진',
-    '클라라 주미 강', '강주미', '양인모', '김봄소리', '사라 장', '장영주', '정경화', '신지아', '대니 구',
+    '백건우', '김선욱', '선우예권', '박재홍', '신창용', '임동혁', '이혁',
+    '후지타 마오', '비킹구르 올라프손', '바딤 콜로덴코', '니콜라이 루간스키', '알버트 카노 스미트',
+    '양성원', '송영훈', '아르토 노라스', '노라스', 'arto noras', '김규연', '백주영', '이경선', '김대진',
+    '클라라 주미 강', '강주미', '양인모', '김봄소리', '사라 장', '장영주', '정경화', '신지아', '대니 구', '박수예',
     '막심 벤게로프', 'vengerov', '파트리샤 코파친스카야', 'kopatchinskaja', '솔 가베타', 'sol gabetta',
     '한재민', '문태국', '유자 왕', 'yuja wang', '랑랑', 'lang lang', '키신', 'kissin', '트리포노프', 'trifonov',
     '파보 예르비', 'paavo järvi', 'paavo jarvi', '에스토니안', '사이먼 래틀', 'rattle',
@@ -153,25 +133,35 @@ function getConcertPriorityScore(c) {
   let hasSuperstar = false;
   for (const kw of superstarKeywords) {
     if (fullText.includes(kw)) {
-      score += 90;
+      score += 200;
       hasSuperstar = true;
       break;
     }
   }
 
-  // 4. '리사이틀' / '독주회'의 지능형 다이내믹 가중치
-  const isRecital = title.includes('리사이틀') || title.includes('recital') || title.includes('독주회') || title.includes('독창회');
-  if (isRecital) {
-    if (hasSuperstar) {
-      score += (hallScore >= 100 ? 80 : 35); // 대형 콘서트홀 슈퍼스타 리사이틀: +80, 중소형홀 리사이틀: +35
-    } else if (hallScore >= 100) {
-      score += 25; // 대형 콘서트홀 리사이틀
-    } else {
-      score -= 20; // 소형홀 일반 독주회 상대적 후순위화
-    }
+  // 2. [차순위] 세부홀 규모(좌석수)에 따른 차등 점수 (네임 가중치가 동등할 때 판가름)
+  const hallScore = getHallTierScore(venue, hall);
+  score += hallScore;
+
+  // 3. 공연장 랜드마크 명성 기본 점수
+  if (venue.includes('예술의전당') || venue.includes('롯데콘서트홀') || venue.includes('세종문화회관')) {
+    score += 20;
+  } else if (
+    venue.includes('부천아트센터') ||
+    venue.includes('대구콘서트하우스') ||
+    venue.includes('아트센터 인천') ||
+    venue.includes('아트센터인천') ||
+    venue.includes('부산콘서트홀') ||
+    venue.includes('대전예술의전당') ||
+    venue.includes('광주예술의전당')
+  ) {
+    score += 10;
   }
 
-  // 5. 대형 오케스트라 및 협주곡/페스티벌 가중치
+  // 4. 협주곡(Concerto) 및 오케스트라/음악제 편성 보정
+  if (fullText.includes('협주곡') || fullText.includes('concerto')) {
+    score += 25;
+  }
   if (
     fullText.includes('오케스트라') ||
     fullText.includes('교향악단') ||
@@ -180,10 +170,7 @@ function getConcertPriorityScore(c) {
     fullText.includes('philharmonic') ||
     fullText.includes('symphony')
   ) {
-    score += 45;
-  }
-  if (fullText.includes('협주곡') || fullText.includes('concerto')) {
-    score += (hallScore >= 100 ? 45 : 20); // 대형 메인홀 협주곡 우대 (+45)
+    score += 35;
   }
   if (
     fullText.includes('음악제') ||
@@ -192,13 +179,20 @@ function getConcertPriorityScore(c) {
     fullText.includes('내한') ||
     fullText.includes('정기연주회')
   ) {
-    score += 30;
-  }
-  if (fullText.includes('합창단')) {
-    score += 15;
+    score += 20;
   }
 
-  // 6. 소규모 학위/동문회/제자 연주회/친목회 후순위 조정 (-45)
+  // 5. 슈퍼스타 리사이틀 가중치 (+20) vs 일반 독주회 (-20)
+  const isRecital = title.includes('리사이틀') || title.includes('recital') || title.includes('독주회') || title.includes('독창회');
+  if (isRecital) {
+    if (hasSuperstar) {
+      score += 20;
+    } else {
+      score -= 20;
+    }
+  }
+
+  // 6. 소규모 학위/동문회/제자 연주회/친목회 후순위 조정 (-50)
   if (
     title.includes('동문') ||
     title.includes('제자') ||
@@ -207,7 +201,7 @@ function getConcertPriorityScore(c) {
     title.includes('동호회') ||
     title.includes('귀국')
   ) {
-    score -= 45;
+    score -= 50;
   }
 
   return score;
