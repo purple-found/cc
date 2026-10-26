@@ -118,9 +118,15 @@ try {
     }
   }
 
-  // 모달 ESC 및 배경 터치 바인딩 검증
-  const detailModalContent = fs.readFileSync(path.join(ROOT_DIR, 'src/components/ConcertDetailModal.jsx'), 'utf-8');
-  if (!detailModalContent.includes("e.key === 'Escape'") || !detailModalContent.includes('onClick={onClose}')) {
+  // 모달 ESC 및 배경 터치 바인딩 검증 (ConcertDetailModal 영구 삭제 검증 및 활성 모달 검증)
+  const isConcertDetailModalDeleted = !fs.existsSync(path.join(ROOT_DIR, 'src/components/ConcertDetailModal.jsx'));
+  const tipModalContent = fs.readFileSync(path.join(ROOT_DIR, 'src/components/TipConcertModal.jsx'), 'utf-8');
+  const adminAuthModalContent = fs.readFileSync(path.join(ROOT_DIR, 'src/components/AdminAuthModal.jsx'), 'utf-8');
+
+  if (!isConcertDetailModalDeleted || 
+      !tipModalContent.includes("e.key === 'Escape'") || 
+      !tipModalContent.includes('onClick={onClose}') ||
+      !adminAuthModalContent.includes("e.key === 'Escape'")) {
     modalBindingCheck = false;
   }
 

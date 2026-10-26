@@ -4,7 +4,7 @@ import { formatKoreanDate, getDisplayStatus, isPastConcert, isTodayConcert } fro
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
 
-export default function ConcertCard({ concert, onSelect }) {
+export default function ConcertCard({ concert }) {
   const isBlocked = concert.crawlerBlocked;
   const isPast = isPastConcert(concert.date, concert.time);
   const isToday = isTodayConcert(concert.date);

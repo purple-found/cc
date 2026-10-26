@@ -320,12 +320,12 @@ async function main() {
     } catch {}
   }
 
-  // 상세 프로그램 및 포스터 보강 대상: 신규 발굴 공연 + 곡목/포스터가 미등록된 모든 기존 공연
+  // 상세 프로그램 보강 대상: 신규 발굴 공연 + 곡목이 미등록된 모든 기존 공연
   const itemsToEnrich = Array.from(concertMap.values()).filter(c => 
-    (!c.pieces || c.pieces.length === 0) || !c.introImages || c.introImages.length === 0
+    !c.pieces || c.pieces.length === 0
   );
 
-  console.log(`[상세 프로그램 및 포스터 전수 보강] 총 ${itemsToEnrich.length}건에 대해 상세페이지 및 포스터 연동 시작...`);
+  console.log(`[상세 프로그램 전수 보강] 총 ${itemsToEnrich.length}건에 대해 상세페이지 프로그램 연동 시작...`);
 
   const missingFetchIds = [];
   itemsToEnrich.forEach(c => {
@@ -354,9 +354,8 @@ async function main() {
 
   let enrichedCount = 0;
   let piecesFoundCount = 0;
-  let postersFoundCount = 0;
 
-  // 모든 대상 공연에 대해 포스터(styurls) 및 상세 프로그램(pieces) 무조건 연동
+  // 모든 대상 공연에 대해 상세 프로그램(pieces) 무조건 연동
   itemsToEnrich.forEach(c => {
     const rawId = (c.kopisId || (c.id || '').replace(/^kopis-/, '')).trim();
     const d = detailsCache[rawId];
@@ -380,12 +379,6 @@ async function main() {
       }
       if (d.poster && (!c.imageUrl || c.imageUrl.includes('unsplash.com'))) {
         c.imageUrl = d.poster;
-      }
-
-      // 포스터 및 상세 전단 이미지 (styurls) 무조건 연동
-      if (d.styurls && d.styurls.length > 0) {
-        c.introImages = d.styurls;
-        postersFoundCount++;
       }
 
       // 프로그램 곡목(pieces) 무조건 상세페이지/소개글 및 제목에서 전수 추출
@@ -412,7 +405,7 @@ async function main() {
     }
   });
 
-  console.log(`[연동 완료] 상세정보 ${enrichedCount}건 연동, 포스터 연동 ${postersFoundCount}건, 프로그램 추출 반영 ${piecesFoundCount}건`);
+  console.log(`[연동 완료] 상세정보 ${enrichedCount}건 연동, 프로그램 추출 반영 ${piecesFoundCount}건`);
 
   // 최종 리스트 정리 및 저장
   const updatedConcertList = Array.from(concertMap.values()).sort((a, b) => a.date.localeCompare(b.date));

@@ -219,20 +219,19 @@ export const kopisCrawlerService = {
         // 기존 정보 업데이트 (상태 등)
         const old = concertMap.get(keyId);
         const merged = { ...old, ...newC };
-        // 기존에 검증된 pieces 및 introImages 보존
+        // 기존에 검증된 pieces 보존
         if (old.pieces && old.pieces.length > 0) merged.pieces = old.pieces;
-        if (old.introImages && old.introImages.length > 0) merged.introImages = old.introImages;
-        if (!merged.pieces || merged.pieces.length === 0 || !merged.introImages) {
+        if (!merged.pieces || merged.pieces.length === 0) {
           itemsNeedingDetails.push(merged);
         }
         concertMap.set(keyId, merged);
       }
     });
 
-    // 6. 상세페이지 및 포스터(styurls)에서 상세 프로그램 정보 무조건 추가 연동 (동시성 5개 제한)
+    // 6. 상세페이지에서 상세 프로그램 정보 무조건 추가 연동 (동시성 5개 제한)
     if (itemsNeedingDetails.length > 0) {
       if (onProgress) {
-        onProgress({ stage: `공연 포스터 및 상세 프로그램 정보 연동 중 (${itemsNeedingDetails.length}건)...` });
+        onProgress({ stage: `상세 프로그램 정보 연동 중 (${itemsNeedingDetails.length}건)...` });
       }
       const enrichTargets = itemsNeedingDetails.slice(0, 40); // 브라우저 비동기 쿼터 안전 범위
       for (let i = 0; i < enrichTargets.length; i += 5) {
@@ -244,7 +243,6 @@ export const kopisCrawlerService = {
             if (d.hall && !c.hall) c.hall = d.hall;
             if (d.price && (!c.price || c.price === '공식 예매처 참조')) c.price = d.price;
             if (d.relateUrl && (!c.ticketUrl || c.ticketUrl.includes('search.naver.com'))) c.ticketUrl = d.relateUrl;
-            if (d.styurls && d.styurls.length > 0) c.introImages = d.styurls;
             if (d.poster && (!c.imageUrl || c.imageUrl.includes('unsplash.com'))) c.imageUrl = d.poster;
             if (d.sty && d.sty.length > 15) c.description = d.sty;
 

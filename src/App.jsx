@@ -4,7 +4,6 @@ import FilterBar from './components/FilterBar';
 import ConcertCard from './components/ConcertCard';
 import ConcertCompactList from './components/ConcertCompactList';
 import ConcertCalendar from './components/ConcertCalendar';
-import ConcertDetailModal from './components/ConcertDetailModal';
 import TipConcertModal from './components/TipConcertModal';
 import InitialDiscoveryGuide from './components/InitialDiscoveryGuide';
 import CommunityBoard from './components/CommunityBoard';
@@ -60,7 +59,6 @@ export default function App() {
   const shouldShowConcerts = hasActiveCondition || showAllConcerts;
 
   // Modal & Target states
-  const [selectedConcert, setSelectedConcert] = useState(null);
   const [reviewTargetConcert, setReviewTargetConcert] = useState(null);
   const [isTipModalOpen, setIsTipModalOpen] = useState(false);
   const [isAdminAuthModalOpen, setIsAdminAuthModalOpen] = useState(false);
@@ -203,14 +201,6 @@ export default function App() {
     setPosts(updated);
     analyticsService.trackCommunityPost(newPost.category, newPost.title);
     showToast('소중한 이야기가 등록되었습니다.');
-  };
-
-  // 공연 선택 및 GA4 조회 추적 핸들러
-  const handleSelectConcert = (concert) => {
-    setSelectedConcert(concert);
-    if (concert) {
-      analyticsService.trackSelectConcert(concert);
-    }
   };
 
   const handleAddComment = (postId, comment) => {
@@ -450,12 +440,10 @@ export default function App() {
             ) : viewMode === 'compact' ? (
               <ConcertCompactList
                 concerts={filteredConcerts}
-                onSelectConcert={handleSelectConcert}
               />
             ) : (
               <ConcertCalendar
                 concerts={filteredConcerts}
-                onSelectConcert={handleSelectConcert}
               />
             )}
           </section>
@@ -546,12 +534,6 @@ export default function App() {
           setActiveTab('admin');
           showToast('관리자 권한이 정상 인증되었습니다.');
         }}
-      />
-
-      {/* Program Modal (간략보기 등에서 프로그램 버튼 클릭 시 작동) */}
-      <ConcertDetailModal
-        concert={selectedConcert}
-        onClose={() => setSelectedConcert(null)}
       />
 
       {/* Toast Notification */}

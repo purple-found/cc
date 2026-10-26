@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v35: 공식 포스터 및 상세페이지 프로그램 (총 461편 및 68개 포스터 리플릿) 전수 연동
-const CONCERTS_KEY = 'opus_korea_concerts_v35';
+// v36: 상세 모달 제거, 인라인 곡목 확장 및 공연장 규모별 대표 공연 점수 알고리즘 정밀화
+const CONCERTS_KEY = 'opus_korea_concerts_v36';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -45,6 +45,7 @@ try {
       'opus_korea_concerts_v32',
       'opus_korea_concerts_v33',
       'opus_korea_concerts_v34',
+      'opus_korea_concerts_v35',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
