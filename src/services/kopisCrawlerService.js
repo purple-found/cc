@@ -552,7 +552,6 @@ export const kopisCrawlerService = {
           const fcltynm = getText('fcltynm') || '공식 공연장';
           const poster = getText('poster');
           const area = getText('area');
-          const prfstate = getText('prfstate') || '예매중';
 
           concerts.push({
             id: `kopis-${mt20id}`,
@@ -568,7 +567,7 @@ export const kopisCrawlerService = {
             pieces: [],
             price: '공식 예매처 참조',
             ticketUrl: getVenueOfficialUrl(fcltynm),
-            status: prfstate === '공연예정' ? '예매중' : prfstate,
+            status: '공연예정',
             source: 'KOPIS 전산망 공식 수집',
             sourceHall: fcltynm,
             crawlerBlocked: false,
@@ -604,7 +603,6 @@ export const kopisCrawlerService = {
         const fcltynm = getTag('fcltynm') || '공식 공연장';
         const poster = getTag('poster');
         const area = getTag('area');
-        const prfstate = getTag('prfstate') || '예매중';
 
         concerts.push({
           id: `kopis-${mt20id}`,
@@ -620,7 +618,7 @@ export const kopisCrawlerService = {
           pieces: [],
           price: '공식 예매처 참조',
           ticketUrl: getVenueOfficialUrl(fcltynm),
-          status: prfstate === '공연예정' ? '예매중' : prfstate,
+          status: '공연예정',
           source: 'KOPIS 전산망 공식 수집',
           sourceHall: fcltynm,
           crawlerBlocked: false,

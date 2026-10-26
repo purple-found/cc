@@ -264,7 +264,7 @@ async function main() {
       const venue = venueMatch ? venueMatch[1].trim() : '공식 공연장';
       const poster = posterMatch ? posterMatch[1].trim() : '';
       const area = areaMatch ? areaMatch[1].trim() : '전국';
-      const status = stateMatch ? stateMatch[1].trim() : '예매중';
+      const status = stateMatch && stateMatch[1].trim().includes('완료') ? '지나간공연' : '공연예정';
 
       const existing = concertMap.get(kopisId);
       if (existing) {

@@ -1,5 +1,5 @@
 import React, { useState, memo } from 'react';
-import { MapPin, User, Music2, ExternalLink, CheckCircle2, Sparkles, Clock, Ticket, ChevronDown, ChevronUp } from 'lucide-react';
+import { MapPin, User, Music2, ExternalLink, Sparkles, Clock, Ticket, ChevronDown, ChevronUp, Calendar } from 'lucide-react';
 import { getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
@@ -42,32 +42,24 @@ function ConcertCard({ concert }) {
             </span>
           </div>
 
-          {/* Status Badges */}
+          {/* Status Badge: 공연예정 / 오늘공연 / 지나간공연 단일 표준 배지 */}
           <div className="flex items-center gap-1.5 flex-nowrap shrink-0">
-            {/* 오늘의 당일 공연 특별 뱃지 (아직 지나가지 않은 경우) */}
-            {isToday && !isPast && (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-black bg-amber-500 text-white shadow-xs animate-pulse shrink-0">
-                <Sparkles className="w-3 h-3 text-white" />
-                <span>오늘 공연</span>
+            {displayStatus === '오늘공연' && (
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-500 text-white shadow-xs shrink-0 animate-pulse">
+                <Sparkles className="w-3 h-3 text-white shrink-0" />
+                <span>오늘공연</span>
               </span>
             )}
-
-            {displayStatus && (
-              <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-[10px] font-bold shrink-0 ${
-                displayStatus === '지나간 공연'
-                  ? 'bg-stone-200/90 dark:bg-stone-300 text-stone-900 border border-stone-300 dark:border-stone-400'
-                  : displayStatus === '매진'
-                  ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-200/60 dark:border-rose-900/60'
-                  : displayStatus === '매진임박'
-                  ? 'bg-orange-100 dark:bg-orange-950/60 text-orange-800 dark:text-orange-300 border border-orange-200/60 dark:border-orange-900/60'
-                  : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border border-emerald-200/70 dark:border-emerald-800/60'
-              }`}>
-                {displayStatus === '지나간 공연' ? (
-                  <Clock className="w-3 h-3 text-stone-700 shrink-0" />
-                ) : displayStatus === '예매중' ? (
-                  <CheckCircle2 className="w-3 h-3 text-emerald-500 shrink-0" />
-                ) : null}
-                <span>{displayStatus}</span>
+            {displayStatus === '공연예정' && (
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[10px] font-bold bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border border-emerald-200/70 dark:border-emerald-800/60 shrink-0">
+                <Calendar className="w-3 h-3 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>공연예정</span>
+              </span>
+            )}
+            {displayStatus === '지나간공연' && (
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[10px] font-bold bg-stone-200/90 dark:bg-stone-300 text-stone-900 border border-stone-300 dark:border-stone-400 shrink-0">
+                <Clock className="w-3 h-3 text-stone-700 shrink-0" />
+                <span>지나간공연</span>
               </span>
             )}
           </div>

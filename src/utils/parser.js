@@ -152,14 +152,17 @@ export function isTodayConcert(dateString) {
 
 /**
  * 공연 상태 표시 텍스트 계산
- * 공연일이 이미 지난 경우 '지나간 공연'으로 자동 전환
+ * 상태 단일화: '지나간공연' / '오늘공연' / '공연예정' (예매중/예매완료 배제)
  */
 export function getDisplayStatus(concert) {
   if (!concert) return '';
   if (isPastConcert(concert.date, concert.time)) {
-    return '지나간 공연';
+    return '지나간공연';
   }
-  return concert.status || '예매중';
+  if (isTodayConcert(concert.date)) {
+    return '오늘공연';
+  }
+  return '공연예정';
 }
 
 

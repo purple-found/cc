@@ -180,7 +180,7 @@ try {
     pieces: ['브람스 교향곡 1번'],
     price: '전석 50,000원',
     ticketUrl: 'https://test.com',
-    status: '예매중',
+    status: '공연예정',
     description: '테스트 공연입니다.',
     imageUrl: 'https://test.com/img.jpg'
   };
@@ -353,7 +353,7 @@ try {
     pieces: ['브람스 대학축전 서곡', '브람스 교향곡 1번'],
     price: 'R석 120,000원',
     ticketUrl: 'https://lotteconcerthall.com',
-    status: '예매중',
+    status: '공연예정',
     description: '서울시향 정기공연',
     imageUrl: 'https://test.com/brahms.jpg'
   });
@@ -370,7 +370,7 @@ try {
     pieces: ['말러 교향곡 2번 부활'],
     price: 'R석 100,000원',
     ticketUrl: 'https://sac.or.kr',
-    status: '예매중',
+    status: '공연예정',
     description: 'KBS교향악단 정기연주회',
     imageUrl: 'https://test.com/mahler.jpg'
   });
@@ -438,7 +438,7 @@ try {
     pieces: ['바흐 토카타와 푸가 d단조'],
     price: '전석 30,000원',
     ticketUrl: 'https://bac.or.kr',
-    status: '예매중',
+    status: '공연예정',
     description: '수동 등록 테스트',
     imageUrl: 'https://test.com/organ.jpg'
   });

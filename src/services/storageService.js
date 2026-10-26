@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v36: 상세 모달 제거, 인라인 곡목 확장 및 공연장 규모별 대표 공연 점수 알고리즘 정밀화
-const CONCERTS_KEY = 'opus_korea_concerts_v36';
+// v37: 공연 상태 단일화 ('공연예정' / '오늘공연' / '지나간공연' 3종 표준화 및 예매중/예매완료 제거)
+const CONCERTS_KEY = 'opus_korea_concerts_v37';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -46,6 +46,7 @@ try {
       'opus_korea_concerts_v33',
       'opus_korea_concerts_v34',
       'opus_korea_concerts_v35',
+      'opus_korea_concerts_v36',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
@@ -541,7 +542,7 @@ export const storageService = {
       pieces: Array.isArray(targetTip.pieces) ? targetTip.pieces : [targetTip.pieces || '상세 프로그램'],
       price: targetTip.price || '추후 공지',
       ticketUrl: targetTip.ticketUrl || '',
-      status: '예매중',
+      status: '공연예정',
       description: `[관람객 제보 등록] ${targetTip.note || '공연 일정입니다.'}`,
       imageUrl: targetTip.imageUrl || 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80',
       source: '관람객 제보 (관리자 승인)',
