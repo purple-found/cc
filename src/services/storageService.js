@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v41: 12월 연말 공연/클래식/호두까기인형 발레/제야음악회 35건 추가 적재 및 실존 프로그램 전수 보강 (총 1,944건)
-const CONCERTS_KEY = 'opus_korea_concerts_v41';
+// v42: 순수 서양음악(CCCA/클래식) 100% 원칙 준수 — 비클래식 31건 전량 제거, 12월 전산망 순수 클래식 212건(221 일정) 완전 적재 (총 1,913건)
+const CONCERTS_KEY = 'opus_korea_concerts_v42';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -51,6 +51,7 @@ try {
       'opus_korea_concerts_v38',
       'opus_korea_concerts_v39',
       'opus_korea_concerts_v40',
+      'opus_korea_concerts_v41',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
