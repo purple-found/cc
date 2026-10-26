@@ -312,12 +312,6 @@ export default function App() {
     });
   }, [concerts, filters]);
 
-  // 특정 공연과 관련된 게시글 필터링
-  const selectedConcertPosts = useMemo(() => {
-    if (!selectedConcert) return [];
-    return posts.filter((p) => p.concertId === selectedConcert.id);
-  }, [posts, selectedConcert]);
-
   if (hasFatalError) {
     return (
       <ErrorFallback
