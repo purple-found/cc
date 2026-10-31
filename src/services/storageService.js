@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v42: 순수 서양음악(CCCA/클래식) 100% 원칙 준수 — 비클래식 31건 전량 제거, 12월 전산망 순수 클래식 212건(221 일정) 완전 적재 (총 1,913건)
-const CONCERTS_KEY = 'opus_korea_concerts_v42';
+// v43: 새벽 3시 KOPIS 정기 자동 업데이트 반영 (신규 162건 발굴 및 상태 갱신, 총 2,075건 순수 클래식 전수 적재)
+const CONCERTS_KEY = 'opus_korea_concerts_v43';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -52,6 +52,7 @@ try {
       'opus_korea_concerts_v39',
       'opus_korea_concerts_v40',
       'opus_korea_concerts_v41',
+      'opus_korea_concerts_v42',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);
