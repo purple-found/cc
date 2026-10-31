@@ -80,72 +80,90 @@ function getHallTierScore(venue = '', hall = '') {
     text.includes('대공연장') ||
     text.includes('오페라극장')
   ) {
-    return 60;
+    return 70;
   }
 
-  // 미분류 기본 공연장
+  // 미분류 기본 공연장 (예술의전당 제야음악회 등 메인홀 기본값 보정)
+  if (v.includes('예술의전당') && (text.includes('제야') || text.includes('송년') || text.includes('교향악단'))) {
+    return 70;
+  }
+
   return 20;
 }
 
 /**
- * 클래식 공연 대표성 / 세부홀 규모 / 인기 우선순위 점수 계산 알고리즘
- * [사용자 원칙 100% 반영]
- * 1. [최우선] 거장 / 슈퍼스타 아티스트 네임 가중치 (+200점):
- *    - 프레디 켐프, 조성진, 임윤찬 등 거장 솔리스트/지휘자 공연이 홀 크기보다 최우선
- * 2. [차순위 판가름] 네임 가중치가 동등할 때 세부홀 크기 가중치:
- *    - 대형 콘서트홀/대극장(+60점) vs IBK챔버홀(+30점) vs 리사이틀홀(+15점) vs 인춘아트홀(+5점)
- * 3. 공연장 랜드마크 명성 기본 점수 (Venue Prestige):
- *    - 서울 3대 메카 (예술의전당, 롯데콘서트홀, 세종문화회관) -> +20점
- *    - 광역시도 대표 전문 음악당 (부천아트센터, 아트센터인천, 대구콘서트하우스, 부산콘서트홀 등) -> +10점
- * 4. 장르/편성 가중치:
- *    - 오케스트라/교향악단: +35점
- *    - 협주곡(Concerto): +25점
- *    - 대형 음악제/페스티벌: +20점
- *    - 슈퍼스타 리사이틀: +20점 (비슈퍼스타 일반 독주회: -20점)
- * 5. 소규모 학위/동문회/연구회 후순위 조정 (-50점)
+ * 클래식 공연 대표성 / 아티스트 인지도 / 세부홀 규모 정밀 우선순위 알고리즘
+ * 1. [Tier S] 세계적 거장 / 글로벌 헤드라이너 슈퍼스타 (+260점):
+ *    - 비킹구르 올라프손, 조성진, 임윤찬, 프레디 켐프, 스미노 하야토, 아르헤리치 등 단독 메인홀 매진급 거장 및 주요 국공립/해외 명문 악단
+ * 2. [Tier A] 국내외 저명 중견 연주자 / 실내악 명인 (+130점):
+ *    - 백주영, 양성원, 송영훈, 아르토 노라스, 김규연 등
+ * 3. [홀 규모] 대형 콘서트홀/대극장(+70점) vs IBK챔버홀(+30점) vs 리사이틀홀(+15점) vs 인춘아트홀(+5점)
+ * 4. [편성 보정] 곡목 설명(description) 내 단순 단어 매칭 오작동을 차단하고, 공연 제목(title)과 출연진(performers)만 기준으로 오케스트라/협주곡 판별
+ * 5. [성격 보정] 자선/기부/환우돕기/렉처/마티네/키즈(-45점) 및 동문/제자/귀국/학위(-60점) 후순위 조정
  */
 function getConcertPriorityScore(c) {
   let score = 0;
   const title = (c.title || '').toLowerCase();
   const venue = (c.venue || '').toLowerCase();
   const hall = (c.hall || '').toLowerCase();
-  const desc = (c.description || '').toLowerCase();
   const performers = (Array.isArray(c.performers) ? c.performers.join(' ') : (c.performers || '')).toLowerCase();
-  const fullText = `${title} ${venue} ${hall} ${performers} ${desc}`;
+  const cast = (c.cast || '').toLowerCase();
+  const coreText = `${title} ${venue} ${hall} ${performers} ${cast}`;
 
-  // 1. [최우선] 세계적 거장 및 슈퍼스타 솔리스트/지휘자/대표 국공립 악단 (+200)
-  const superstarKeywords = [
+  // 1-A. [Tier S] 글로벌 슈퍼스타 솔리스트 / 세계적 지휘자 / 대표 명문 악단 (+260)
+  const tierSSuperstars = [
+    '비킹구르 올라프손', '올라프손', 'olafsson', 'ólafsson',
     '스미노 하야토', '스미노', 'sumino', 'cateen', 'hayato sumino',
     '프레디 켐프', '프레디 캠프', '프레디켐프', '프레디캠프', 'freddy kempf', 'kempf',
     '조성진', 'seong-jin cho', '임윤찬', 'yunchan lim', '손열음', 'yeol eum son',
-    '백건우', '김선욱', '선우예권', '박재홍', '신창용', '임동혁', '이혁',
-    '후지타 마오', '비킹구르 올라프손', '바딤 콜로덴코', '니콜라이 루간스키', '알버트 카노 스미트',
-    '양성원', '송영훈', '아르토 노라스', '노라스', 'arto noras', '김규연', '백주영', '이경선', '김대진',
-    '클라라 주미 강', '강주미', '양인모', '김봄소리', '사라 장', '장영주', '정경화', '신지아', '대니 구', '박수예',
+    '마르타 아르헤리치', '아르헤리치', 'argerich', '샤를 뒤트와', 'dutoit',
+    '테오도르 쿠렌치스', '쿠렌치스', 'currentzis', '유토피아 오케스트라',
+    '유자 왕', 'yuja wang', '랑랑', 'lang lang', '키신', 'kissin', '트리포노프', 'trifonov',
+    '니콜라이 루간스키', '루간스키', 'lugansky', '후지타 마오', 'fujita', '바딤 콜로덴코',
+    '백건우', '김선욱', '선우예권', '박재홍', '임동혁', '이혁',
+    '클라라 주미 강', '강주미', '양인모', '김봄소리', '사라 장', '장영주', '정경화', '조수미',
     '막심 벤게로프', 'vengerov', '파트리샤 코파친스카야', 'kopatchinskaja', '솔 가베타', 'sol gabetta',
-    '한재민', '문태국', '유자 왕', 'yuja wang', '랑랑', 'lang lang', '키신', 'kissin', '트리포노프', 'trifonov',
+    '한재민', '라이너 호넥', '라이너호넥', '레 벙 프랑세',
     '파보 예르비', 'paavo järvi', 'paavo jarvi', '에스토니안', '사이먼 래틀', 'rattle',
-    '정명훈', '얍 판 츠베덴', '두다멜', 'dudamel', '메켈레', 'mäkelä',
-    '빈 필', '베를린 필', '런던 심포니', '로열 콘세르트', '바이에른', '라이프치히',
-    '서울시향', '서울시립교향악단', 'kbs교향악단', '국립심포니', '국립오페라단'
+    '정명훈', '얍 판 츠베덴', '두다멜', 'dudamel', '메켈레', 'mäkelä', '조너선 노트',
+    '빈 필', '베를린 필', '런던 심포니', '로열 콘세르트', '바이에른', '라이프치히', 'bbc 필하모닉',
+    '서울시향', '서울시립교향악단', 'kbs교향악단', 'kbs 교향악단', '국립심포니', '국립오페라단'
   ];
 
-  let hasSuperstar = false;
-  for (const kw of superstarKeywords) {
-    if (fullText.includes(kw)) {
-      score += 200;
-      hasSuperstar = true;
+  // 1-B. [Tier A] 국내외 저명 연주자 및 실내악 스타 (+130)
+  const tierAArtists = [
+    '양성원', '송영훈', '아르토 노라스', '노라스', 'arto noras', '김규연',
+    '백주영', '이경선', '김대진', '신창용', '문태국', '신지아', '대니 구', '박수예',
+    '리처드 용재 오닐', '용재 오닐', '용재오닐', '윤홍천', '손민수',
+    '일리야 라쉬코프스키', '라쉬코프스키', '플로리안 노악', '에릭 르 사쥬', '폴 메이어',
+    '파비오 비온디', '고잉홈프로젝트', '스베틀린 루세브', '조성현'
+  ];
+
+  let artistTier = 0;
+  for (const kw of tierSSuperstars) {
+    if (coreText.includes(kw)) {
+      score += 260;
+      artistTier = 2;
       break;
     }
   }
+  if (artistTier === 0) {
+    for (const kw of tierAArtists) {
+      if (coreText.includes(kw)) {
+        score += 130;
+        artistTier = 1;
+        break;
+      }
+    }
+  }
 
-  // 2. [차순위] 세부홀 규모(좌석수)에 따른 차등 점수 (네임 가중치가 동등할 때 판가름)
+  // 2. 세부홀 규모(좌석수)에 따른 차등 점수
   const hallScore = getHallTierScore(venue, hall);
   score += hallScore;
 
   // 3. 공연장 랜드마크 명성 기본 점수
-  if (venue.includes('예술의전당') || venue.includes('롯데콘서트홀') || venue.includes('세종문화회관')) {
-    score += 20;
+  if ((venue.includes('예술의전당') && !venue.includes('대전') && !venue.includes('광주') && !venue.includes('천안') && !venue.includes('안동') && !venue.includes('의정부') && !venue.includes('익산') && !venue.includes('경주') && !venue.includes('화성') && !venue.includes('제천') && !venue.includes('서귀포') && !venue.includes('군산') && !venue.includes('청주')) || venue.includes('롯데콘서트홀') || venue.includes('세종문화회관')) {
+    score += 25;
   } else if (
     venue.includes('부천아트센터') ||
     venue.includes('대구콘서트하우스') ||
@@ -153,55 +171,80 @@ function getConcertPriorityScore(c) {
     venue.includes('아트센터인천') ||
     venue.includes('부산콘서트홀') ||
     venue.includes('대전예술의전당') ||
-    venue.includes('광주예술의전당')
+    venue.includes('광주예술의전당') ||
+    venue.includes('통영국제음악당')
   ) {
-    score += 10;
+    score += 12;
   }
 
-  // 4. 협주곡(Concerto) 및 오케스트라/음악제 편성 보정
-  if (fullText.includes('협주곡') || fullText.includes('concerto')) {
-    score += 25;
+  // 4. 협주곡(Concerto) 및 오케스트라/음악제 편성 보정 (제목과 출연진 기준으로만 엄격 판정)
+  if (title.includes('협주곡') || title.includes('concerto')) {
+    score += 20;
   }
   if (
-    fullText.includes('오케스트라') ||
-    fullText.includes('교향악단') ||
-    fullText.includes('필하모닉') ||
-    fullText.includes('orchestra') ||
-    fullText.includes('philharmonic') ||
-    fullText.includes('symphony')
+    title.includes('오케스트라') ||
+    title.includes('교향악단') ||
+    title.includes('필하모닉') ||
+    title.includes('orchestra') ||
+    title.includes('philharmonic') ||
+    title.includes('symphony') ||
+    c.performerType === '오케스트라'
   ) {
-    score += 35;
+    score += 30;
   }
   if (
-    fullText.includes('음악제') ||
-    fullText.includes('페스티벌') ||
-    fullText.includes('festival') ||
-    fullText.includes('내한') ||
-    fullText.includes('정기연주회')
+    title.includes('음악제') ||
+    title.includes('페스티벌') ||
+    title.includes('festival') ||
+    title.includes('내한') ||
+    title.includes('제야음악회') ||
+    title.includes('송년음악회')
   ) {
     score += 20;
   }
 
-  // 5. 슈퍼스타 리사이틀 가중치 (+20) vs 일반 독주회 (-20)
+  // 5. 슈퍼스타 리사이틀 가중치 (+25) vs 일반 독주회 (-25)
   const isRecital = title.includes('리사이틀') || title.includes('recital') || title.includes('독주회') || title.includes('독창회');
   if (isRecital) {
-    if (hasSuperstar) {
-      score += 20;
+    if (artistTier >= 1) {
+      score += 25;
     } else {
-      score -= 20;
+      score -= 25;
     }
   }
 
-  // 6. 소규모 학위/동문회/제자 연주회/친목회 후순위 조정 (-50)
+  // 6. 자선/기부/환우돕기/렉처/마티네/키즈/청소년 음악회 후순위 조정 (-45)
+  if (
+    title.includes('소아암') ||
+    title.includes('환우') ||
+    title.includes('돕기') ||
+    title.includes('기부') ||
+    title.includes('희망콘서트') ||
+    title.includes('자선') ||
+    title.includes('렉처') ||
+    title.includes('해설이 있는') ||
+    title.includes('마티네') ||
+    title.includes('브런치') ||
+    title.includes('키즈') ||
+    title.includes('어린이') ||
+    title.includes('청소년') ||
+    title.includes('유스') ||
+    title.includes('초등학교')
+  ) {
+    score -= 45;
+  }
+
+  // 7. 소규모 학위/동문회/제자 연주회/친목회 후순위 조정 (-60)
   if (
     title.includes('동문') ||
     title.includes('제자') ||
     title.includes('학위') ||
     title.includes('연구회') ||
     title.includes('동호회') ||
-    title.includes('귀국')
+    title.includes('귀국') ||
+    title.includes('창단')
   ) {
-    score -= 50;
+    score -= 60;
   }
 
   return score;
