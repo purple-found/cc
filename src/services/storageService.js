@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v44: 새벽 3시 KOPIS 정기 자동 업데이트 4단계 프로그램 자동 추출(KOPIS 소개글 + 공식 상세페이지 + 포스터/소개전단 OCR + 제목 매칭) 반영
-const CONCERTS_KEY = 'opus_korea_concerts_v44';
+// v45: OCR 오탈자·작곡가 매칭 정밀 정제 및 성능 최적화 반영
+const CONCERTS_KEY = 'opus_korea_concerts_v45';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -14,50 +14,12 @@ const BLOCKED_IPS_KEY = 'opus_korea_blocked_ips_v1';
 // 이전 버전의 로컬 캐시 키 정리
 try {
   if (typeof localStorage !== 'undefined') {
-    [
-      'opus_korea_verified_real_concerts_v5',
-      'opus_korea_verified_real_concerts_v6',
-      'opus_korea_concerts_v7',
-      'opus_korea_concerts_v8',
-      'opus_korea_concerts_v9',
-      'opus_korea_concerts_v10',
-      'opus_korea_concerts_v11',
-      'opus_korea_concerts_v12',
-      'opus_korea_concerts_v13',
-      'opus_korea_concerts_v14',
-      'opus_korea_concerts_v15',
-      'opus_korea_concerts_v16',
-      'opus_korea_concerts_v17',
-      'opus_korea_concerts_v18',
-      'opus_korea_concerts_v19',
-      'opus_korea_concerts_v20',
-      'opus_korea_concerts_v21',
-      'opus_korea_concerts_v22',
-      'opus_korea_concerts_v23',
-      'opus_korea_concerts_v24',
-      'opus_korea_concerts_v25',
-      'opus_korea_concerts_v26',
-      'opus_korea_concerts_v27',
-      'opus_korea_concerts_v28',
-      'opus_korea_concerts_v29',
-      'opus_korea_concerts_v30',
-      'opus_korea_concerts_v31',
-      'opus_korea_concerts_v32',
-      'opus_korea_concerts_v33',
-      'opus_korea_concerts_v34',
-      'opus_korea_concerts_v35',
-      'opus_korea_concerts_v36',
-      'opus_korea_concerts_v37',
-      'opus_korea_concerts_v38',
-      'opus_korea_concerts_v39',
-      'opus_korea_concerts_v40',
-      'opus_korea_concerts_v41',
-      'opus_korea_concerts_v42',
-      'opus_korea_concerts_v43',
-      'opus_korea_halls_v3'
-    ].forEach((k) => {
+    ['opus_korea_verified_real_concerts_v5', 'opus_korea_verified_real_concerts_v6', 'opus_korea_halls_v3'].forEach(k => {
       localStorage.removeItem(k);
     });
+    for (let v = 7; v <= 44; v++) {
+      localStorage.removeItem(`opus_korea_concerts_v${v}`);
+    }
   }
 } catch {}
 

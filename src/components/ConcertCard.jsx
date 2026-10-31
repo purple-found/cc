@@ -1,6 +1,6 @@
 import React, { useState, memo } from 'react';
 import { MapPin, User, Music2, ExternalLink, Sparkles, Clock, Ticket, ChevronDown, ChevronUp, Calendar } from 'lucide-react';
-import { getDisplayStatus, isPastConcert, isTodayConcert } from '../utils/parser.js';
+import { getDisplayStatus, isPastConcert, isTodayConcert, extractVenueAndHall } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
 
@@ -9,6 +9,7 @@ function ConcertCard({ concert }) {
   const isPast = isPastConcert(concert.date, concert.time);
   const isToday = isTodayConcert(concert.date);
   const displayStatus = getDisplayStatus(concert);
+  const { cleanVenue, hallName, showHallBadge } = extractVenueAndHall(concert);
 
   // 날짜 파싱 (예: 2026-10-05 -> 10월 5일)
   const dateParts = concert.date ? concert.date.split('-') : ['2026', '10', '01'];
@@ -125,21 +126,13 @@ function ConcertCard({ concert }) {
             <div className="flex items-center gap-1.5 flex-wrap min-w-0">
               <MapPin className="w-3.5 h-3.5 text-concert-500 shrink-0" />
               <span className="truncate max-w-[170px] sm:max-w-[210px]">
-                {concert.venue ? concert.venue.replace(/\s*\([^)]*\)$/, '').trim() : '공식 공연장'}
+                {cleanVenue || '공식 공연장'}
               </span>
-              {(() => {
-                const cleanVenue = concert.venue ? concert.venue.replace(/\s*\([^)]*\)$/, '').trim() : '';
-                if (cleanVenue.includes('롯데콘서트홀') || cleanVenue.includes('꿈의숲아트센터')) return null;
-                const hallName = concert.hall || (concert.venue && concert.venue.match(/\(([^)]+)\)/) ? concert.venue.match(/\(([^)]+)\)/)[1].trim() : null);
-                if (hallName && hallName !== '공연홀') {
-                  return (
-                    <span className="px-2 py-0.5 rounded-md text-[11px] font-bold bg-[#b88648]/20 dark:bg-[#b88648]/30 text-[#85531d] dark:text-[#f3d9b1] border border-[#b88648]/40 dark:border-[#b88648]/50 shrink-0 shadow-xs">
-                      {hallName}
-                    </span>
-                  );
-                }
-                return null;
-              })()}
+              {showHallBadge && (
+                <span className="px-2 py-0.5 rounded-md text-[11px] font-bold bg-[#b88648]/20 dark:bg-[#b88648]/30 text-[#85531d] dark:text-[#f3d9b1] border border-[#b88648]/40 dark:border-[#b88648]/50 shrink-0 shadow-xs">
+                  {hallName}
+                </span>
+              )}
             </div>
 
             <div className="flex items-center gap-2">

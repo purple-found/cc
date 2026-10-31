@@ -111,25 +111,41 @@ export function formatKoreanDate(dateString) {
   }
 }
 
+// 1초 단위 KST 현재 시각 캐싱 (수천 건의 공연 정렬 시 new Date() 반복 생성 방지)
+let _lastTick = 0;
+let _cachedTodayStr = '';
+let _cachedTimeStr = '';
+
+function getCurrentDateAndTimeStrings() {
+  const nowMs = Date.now();
+  if (nowMs - _lastTick > 1000 || !_cachedTodayStr) {
+    _lastTick = nowMs;
+    const d = new Date(nowMs);
+    const pad = (n) => String(n).padStart(2, '0');
+    _cachedTodayStr = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+    _cachedTimeStr = `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  }
+  return { todayStr: _cachedTodayStr, timeStr: _cachedTimeStr };
+}
+
+function normalizeTimeHHMM(timeString) {
+  if (!timeString || typeof timeString !== 'string') return '23:59';
+  const m = timeString.trim().match(/^(\d{1,2}):(\d{2})/);
+  if (!m) return '23:59';
+  return `${String(m[1]).padStart(2, '0')}:${m[2]}`;
+}
+
 /**
- * 공연 일시 경과 여부 확인 도우미
+ * 공연 일시 경과 여부 확인 도우미 (초고속 문자열 비교 및 한 자리 시간 패딩 지원)
  * 공연일(date) 및 시작시간(time)을 기준으로 현재 시점 이후인지 판별
  */
 export function isPastConcert(dateString, timeString = '23:59') {
   if (!dateString) return false;
-  try {
-    const time = timeString ? timeString.slice(0, 5) : '23:59';
-    const concertDateTime = new Date(`${dateString}T${time}:00`);
-    if (isNaN(concertDateTime.getTime())) {
-      // YYYY-MM-DD 날짜만으로 비교
-      const today = new Date();
-      const concertDate = new Date(`${dateString}T23:59:59`);
-      return concertDate < today;
-    }
-    return concertDateTime < new Date();
-  } catch {
-    return false;
-  }
+  const { todayStr, timeStr } = getCurrentDateAndTimeStrings();
+  if (dateString < todayStr) return true;
+  if (dateString > todayStr) return false;
+  const normTime = normalizeTimeHHMM(timeString);
+  return normTime < timeStr;
 }
 
 /**
@@ -138,16 +154,7 @@ export function isPastConcert(dateString, timeString = '23:59') {
  */
 export function isTodayConcert(dateString) {
   if (!dateString) return false;
-  try {
-    const today = new Date();
-    const year = today.getFullYear();
-    const month = String(today.getMonth() + 1).padStart(2, '0');
-    const day = String(today.getDate()).padStart(2, '0');
-    const todayString = `${year}-${month}-${day}`;
-    return dateString === todayString;
-  } catch {
-    return false;
-  }
+  return dateString === getCurrentDateAndTimeStrings().todayStr;
 }
 
 /**
@@ -164,5 +171,25 @@ export function getDisplayStatus(concert) {
   }
   return '공연예정';
 }
+
+/**
+ * 공연장명 및 세부 홀 배지 표시 규격 통합 추출 도우미
+ */
+export function extractVenueAndHall(concert) {
+  if (!concert) return { cleanVenue: '', hallName: null, showHallBadge: false };
+  const rawVenue = concert.venue || '';
+  const parenMatch = rawVenue.match(/\(([^)]+)\)/);
+  const hallName = concert.hall || (parenMatch ? parenMatch[1].trim() : null);
+  const cleanVenue = rawVenue.replace(/\s*\([^)]*\)/g, '').trim();
+  const showHallBadge = Boolean(
+    hallName &&
+    hallName !== '공연홀' &&
+    hallName !== cleanVenue &&
+    !cleanVenue.includes('롯데콘서트홀') &&
+    !cleanVenue.includes('꿈의숲아트센터')
+  );
+  return { cleanVenue, hallName, showHallBadge };
+}
+
 
 

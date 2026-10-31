@@ -1,6 +1,6 @@
 import React, { useState, useMemo, memo } from 'react';
 import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Music, ExternalLink, ChevronDown, ChevronUp, Ticket } from 'lucide-react';
-import { formatKoreanDate } from '../utils/parser';
+import { formatKoreanDate, extractVenueAndHall } from '../utils/parser';
 import { getVenueOfficialUrl } from '../utils/venueUrls';
 
 /**
@@ -251,9 +251,11 @@ function getConcertPriorityScore(c) {
 }
 
 function ConcertCalendar({ concerts }) {
-  // 기본 연월 설정 (2026년 10월)
-  const [currentYear, setCurrentYear] = useState(2026);
-  const [currentMonth, setCurrentMonth] = useState(10); // 1-indexed (10 = 10월)
+  const now = new Date();
+  const defaultYear = now.getFullYear();
+  const defaultMonth = now.getMonth() + 1;
+  const [currentYear, setCurrentYear] = useState(defaultYear);
+  const [currentMonth, setCurrentMonth] = useState(defaultMonth);
   const [selectedDate, setSelectedDate] = useState(null);
   const [expandedConcertId, setExpandedConcertId] = useState(null);
 
@@ -334,13 +336,13 @@ function ConcertCalendar({ concerts }) {
           </button>
           <button
             onClick={() => {
-              setCurrentYear(2026);
-              setCurrentMonth(10);
+              setCurrentYear(defaultYear);
+              setCurrentMonth(defaultMonth);
               setSelectedDate(null);
             }}
             className="px-3 py-1.5 rounded-xl bg-stone-100 dark:bg-hall-850 hover:bg-stone-200 dark:hover:bg-hall-700 text-xs font-semibold text-stone-700 dark:text-stone-300 transition-colors shrink-0"
           >
-            이번 달 (2026.10)
+            이번 달 ({defaultYear}.{String(defaultMonth).padStart(2, '0')})
           </button>
           <button
             onClick={nextMonth}
@@ -444,9 +446,7 @@ function ConcertCalendar({ concerts }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {selectedConcerts.map((c) => {
               const isExpanded = expandedConcertId === c.id;
-              const cleanVenue = c.venue ? c.venue.replace(/\s*\([^)]*\)$/, '').trim() : '공식 공연장';
-              const hallName = c.hall || (c.venue && c.venue.match(/\(([^)]+)\)/) ? c.venue.match(/\(([^)]+)\)/)[1].trim() : null);
-              const showHallBadge = hallName && hallName !== '공연홀' && !cleanVenue.includes('롯데콘서트홀');
+              const { cleanVenue, hallName, showHallBadge } = extractVenueAndHall(c);
 
               return (
                 <div

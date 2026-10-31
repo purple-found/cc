@@ -1,5 +1,6 @@
 import React, { useState, memo } from 'react';
 import { ExternalLink, ChevronDown, ChevronUp, Music2, Ticket } from 'lucide-react';
+import { extractVenueAndHall } from '../utils/parser.js';
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
 
@@ -21,9 +22,7 @@ function ConcertCompactList({ concerts = [] }) {
       <div className="divide-y divide-stone-100 dark:divide-hall-800">
         {concerts.map((concert) => {
           const isExpanded = expandedConcertId === concert.id;
-          const cleanVenue = concert.venue ? concert.venue.replace(/\s*\([^)]*\)$/, '').trim() : '공식 공연장';
-          const hallName = concert.hall || (concert.venue && concert.venue.match(/\(([^)]+)\)/) ? concert.venue.match(/\(([^)]+)\)/)[1].trim() : null);
-          const showHallBadge = hallName && hallName !== '공연홀' && !cleanVenue.includes('롯데콘서트홀') && !cleanVenue.includes('꿈의숲아트센터');
+          const { cleanVenue, hallName, showHallBadge } = extractVenueAndHall(concert);
 
           return (
             <div

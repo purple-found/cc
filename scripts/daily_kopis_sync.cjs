@@ -247,14 +247,26 @@ function normalizeOcrMusicalText(line, isOcr = false) {
     .replace(/」\.\s*5\.\s*Bach/gi, 'J. S. Bach')
     .replace(/」\.\s*Haydn/gi, 'J. Haydn')
     .replace(/」\.\s*Brahms/gi, 'J. Brahms')
-    .replace(/P\.\s*1[』\.]\s*TchaikOVSky/gi, 'P. I. Tchaikovsky')
+    .replace(/P\.\s*[1l][』\.]\s*Tchaik[oO0]vsk[yYgG]/gi, 'P. I. Tchaikovsky')
     .replace(/5\.\s*Cherkassky/gi, 'S. Cherkassky')
     .replace(/5\.\s*Mercadante/gi, 'S. Mercadante')
-    .replace(/Pi해10/g, 'Piano')
+    .replace(/(?:Pi해10|Pi리10|P\|혜0|Pia0@)/g, 'Piano')
     .replace(/표IO十노/g, '피아노')
-    .replace(/Ma[1J]0[「r]/gi, 'Major')
-    .replace(/\bfo[「']\s*/gi, 'for ')
-    .replace(/\bSO\[0\b/gi, 'Solo')
+    .replace(/(?:Ma[1J]0[「r]|Majo[「『]|Ma\.lOr)/gi, 'Major')
+    .replace(/mino[「『]/gi, 'minor')
+    .replace(/\bfo[「'\s]+(?=[A-Z])/g, 'for ')
+    .replace(/\bSO\[0\b|\b5010\b|\bS010\b/gi, 'Solo')
+    .replace(/(?:CeIIo|Ce110|C이\|0)/gi, 'Cello')
+    .replace(/(?:VioIin|V101in|Ⅵ\(\)h11)/gi, 'Violin')
+    .replace(/Keyboa[「『]d/gi, 'Keyboard')
+    .replace(/Cla[「『]inet/gi, 'Clarinet')
+    .replace(/BaIIade/g, 'Ballade')
+    .replace(/Ncrtunw/gi, 'Nocturne')
+    .replace(/\bin\s+0\s+Major\b/gi, 'in D Major')
+    .replace(/\bin\s+6\s+Major\b/gi, 'in G Major')
+    .replace(/\bin\s+8\s+Minor\b/gi, 'in B Minor')
+    .replace(/\bin\s+9\s+Minor\b/gi, 'in G Minor')
+    .replace(/\bin\s+\(:\s*Major\b/gi, 'in C Major')
     .replace(/HOb\.\s*\)\(Ⅵ\s*:/gi, 'Hob. XVI:')
     .replace(/卜\|Ob\s*\)\(Ⅵ\s*25/g, 'Hob. XVI:25')
     .replace(/B`\.,W\s*(\d+)/g, 'BWV $1')
@@ -271,7 +283,7 @@ function normalizeOcrMusicalText(line, isOcr = false) {
     .replace(/\bNO\.\s*(\d)/gi, 'No. $1')
     .replace(/\bN0\.?\s*(\d)/g, 'No. $1')
     .replace(/\bN이\s*(\d)/g, 'No. $1')
-    .replace(/\b0[p하A]\.?\s*(\d+)/g, 'Op. $1')
+    .replace(/(?:\b0[p하A]\.?|\(기[\),.]*|\(누[\),\-.]*)\s*(\d+)/g, 'Op. $1')
     .replace(/\b00\.\s*1\b/g, 'Op. 1')
     .replace(/\bVO\s*al\s+Zigeunerlieder/gi, 'Vocal Zigeunerlieder')
     .replace(/[•·_]/g, ' - ')
@@ -290,9 +302,9 @@ function htmlToLines(html, isOcr = false) {
   return text.split(/\r?\n/).map(l => normalizeOcrMusicalText(l, isOcr)).filter(Boolean);
 }
 
-const BIO_EXCLUDE_REGEX = /(?:졸업|박사|석사|학사|사사|교수|강사|출강|역임|수상|입상|콩쿠르|데뷔|초청|초대되어|발매|음반|앨범|선발|오디션|주최|주관|후원|협찬|문의|예매|티켓|관람|입장|할인|전석|R석|S석|A석|무료|유료|인터파크|예스24|티켓링크|오시는\s*길|주차|취소|환불|연주하기도|개최|선보인다|들려준다|무대를\s*꾸미|졸업하고|재학|장학생|구성된다|시작하지만|전개될수록|작품이다|곡이다|특징이다|연상시키는|소품곡\s*중|작품번호\s*\d|작곡된|독주곡집으로|생애\s*말년|예술감독|상임지휘|객원지휘|특별출연|우정출연|찬조출연|GUEST)/i;
+const BIO_EXCLUDE_REGEX = /(?:졸업|박사|석사|학사|사사|교수|강사|출강|역임|수상|입상|콩쿠르|준우승|데뷔|초청|초대되어|발매|음반|앨범|선발|오디션|주최|주관|후원|협찬|문의|예매|티켓|관람|입장|할인|전석|R석|S석|A석|무료|유료|인터파크|예스24|티켓링크|오시는\s*길|주차|취소|환불|연주하기도|개최|선보인다|선보입니다|들려준다|무대를\s*꾸미|졸업하고|재학|장학생|구성된다|시작하지만|전개될수록|작품이다|곡이다|특징이다|연상시키는|소품곡\s*중|작품번호\s*\d|작곡된|독주곡집으로|생애\s*말년|예술감독|상임지휘|객원지휘|특별출연|우정출연|찬조출연|GUEST|실황\s*연주|순회\s*연주|협연하|출연하|비룾하여|투어에\s*오른다|작곡발표회|Intermission|\bStage$)/i;
 
-const MOVEMENT_ONLY_REGEX = /^(?:(?:[I|V|X|Ⅰ|Ⅱ|Ⅲ|Ⅳ|Ⅴ]{1,4})\s*[\.\)]\s*(?:Allegro|Andante|Adagio|Presto|Largo|Moderato|Scherzo|Rondo|Menuetto|Finale|Grave|Vivace|Lento|Molto|Poco|Assai|Con\s|Ma\s|Non\s|Tempo|Romanze|Intermezzo|ntermezzo|Marcia|Gavotte|Sarabande|Gigue|Allemande|Courante|Preludio|Aria|Variations|Var\.|Valse)|(?:Allegro|Andante|Adagio|Presto|Largo|Moderato|Scherzo|Rondo|Menuetto|Finale)\s*[:\.])/i;
+const MOVEMENT_ONLY_REGEX = /^(?:(?:[I|V|X|Ⅰ|Ⅱ|Ⅲ|Ⅳ|Ⅴ|l]{1,4})\s*[\.\)]\s*(?:Allegro|Andante|Adagio|Presto|Largo|Moderato|Scherzo|Rondo|Menuetto|Finale|Grave|Vivace|Lento|Molto|Poco|Assai|Con\s|Ma\s|Non\s|Tempo|Romanze|Intermezzo|ntermezzo|Marcia|Gavotte|Sarabande|Gigue|Allemande|Courante|Preludio|Aria|Variations|Var\.|Valse|Serenade)|(?:Allegro|Andante|Adagio|Presto|Largo|Moderato|Scherzo|Rondo|Menuetto|Finale)\s*[:\.])/i;
 
 const COMPOSER_ONLY_REGEX = /^(?:J\.\s*S\.\s*Bach|Johann\s+Sebastian\s+Bach|W\.\s*A\.\s*Mozart|W\s*-\s*A\.\s*Mozart|Wolfgang\s+Amadeus\s+Mozart|L\.\s*v\.\s*Beethoven|Ludwig\s+van\s+Beethoven|F\.\s*Chopin|Fr[eé]d[eé]ric\s+Chopin|R\.\s*Schumann|Robert\s+Schumann|J\.\s*Brahms|Johannes\s+Brahms|F\.\s*Schubert|Franz\s+Schubert|F\.\s*Liszt|Franz\s+Liszt|C\.\s*Debussy|Claude\s+Debussy|M\.\s*Ravel|Maurice\s+Ravel|P\.\s*I\.\s*Tchaikovsky|Pyotr\s+Ilyich\s+Tchaikovsky|S\.\s*Rachmaninoff|Sergei\s+Rachmaninoff|S\.\s*Prokofiev|Sergei\s+Prokofiev|D\.\s*Shostakovich|Dmitri\s+Shostakovich|F\.\s*Mendelssohn|Felix\s+Mendelssohn|C\.\s*Franck|C[eé]sar\s+Franck|C\.\s*Saint-Sa[eë]ns|Camille\s+Saint-Sa[eë]ns|G\.\s*Faur[eé]|Gabriel\s+Faur[eé]|A\.\s*Dvo[rř][aá]k|Anton[ií]n\s+Dvo[rř][aá]k|E\.\s*Grieg|Edvard\s+Grieg|J\.\s*Sibelius|Jean\s+Sibelius|G\.\s*Mahler|Gustav\s+Mahler|R\.\s*Strauss|Richard\s+Strauss|I\.\s*Stravinsky|Igor\s+Stravinsky|B\.\s*Bart[oó]k|B[eé]la\s+Bart[oó]k|A\.\s*Vivaldi|Antonio\s+Vivaldi|G\.\s*F\.\s*H[aä]ndel|George\s+Frideric\s+Handel|J\.\s*Haydn|Joseph\s+Haydn|N\.\s*Paganini|Niccol[oò]\s+Paganini|P\.\s*de\s+Sarasate|Pablo\s+de\s+Sarasate|F\.\s*Poulenc|Francis\s+Poulenc|A\.\s*Piazzolla|Astor\s+Piazzolla|M\.\s*Reger|Max\s+Reger|S\.\s*Cherkassky|H\.\s*Vieuxtemps|S\.\s*Mercadante|G\.\s*Puccini|G\.\s*Verdi|G\.\s*Bizet|G\.\s*Rossini|G\.\s*Donizetti|V\.\s*Bellini|바흐|모차르트|베토벤|쇼팽|슈만|브람스|슈베르트|리스트|드뷔시|라벨|차이콥스키|차이코프스키|라흐마니노프|프로코피예프|쇼스타코비치|멘델스존|프랑크|생상스|포레|드보르작|드보르자크|그리그|시벨리우스|말러|슈트라우스|스트라빈스키|바르톡|비발디|헨델|하이든|파가니니|사라사테|풀랑크|피아졸라)(?:\s*\([\d\s~–\-.,b.c]+\))?$/i;
 
@@ -301,6 +313,7 @@ function isMusicalPieceLine(line, allowBroadInProgramBlock = false) {
   if (line.includes('\uFFFD') || line.includes('_*_+_*')) return false;
   if (MOVEMENT_ONLY_REGEX.test(line)) return false;
   if (BIO_EXCLUDE_REGEX.test(line)) return false;
+  if (COMPOSER_ONLY_REGEX.test(line)) return false;
   if (/^(?:Program|PROGRAM|프로그램|곡목|연주자|출연진|프로필|Profile|Intermission|인터미션|1부|2부|<1부>|<2부>|\[1부\]|\[2부\])$/i.test(line)) return false;
   if (/^(?:\d+\.\s*)?(?:Opera\s*Ensemble|Bass\s*Baritone|Mezzo\s*Soprano|Soprano|Tenor|Baritone|Bass)\s+[가-힣a-zA-Z\s,·\-/]+$/i.test(line)) return false;
 
@@ -329,24 +342,27 @@ function addUniquePiece(pieces, candidate) {
   const cNorm = norm(candidate);
   if (!cNorm) return;
 
-  // 또한 동일 Op. 번호가 이미 존재하고 장르명이 같으면 중복 방지
   const opMatch = candidate.match(/\bOp\.\s*(\d+)/i);
-  const exists = pieces.some(p => {
+  for (let idx = 0; idx < pieces.length; idx++) {
+    const p = pieces[idx];
     const pNorm = norm(p);
-    if (pNorm === cNorm || pNorm.includes(cNorm) || cNorm.includes(pNorm)) return true;
+    if (pNorm === cNorm || pNorm.includes(cNorm)) return;
+    if (cNorm.includes(pNorm)) {
+      pieces[idx] = candidate;
+      return;
+    }
     if (opMatch) {
       const pOp = p.match(/\bOp\.\s*(\d+)/i);
-      if (pOp && pOp[1] === opMatch[1] && pNorm.slice(0, 8) === cNorm.slice(0, 8)) return true;
+      if (pOp && pOp[1] === opMatch[1] && pNorm.slice(0, 8) === cNorm.slice(0, 8)) return;
     }
-    return false;
-  });
-  if (!exists) pieces.push(candidate);
+  }
+  pieces.push(candidate);
 }
 
 function cleanPieceLine(line, currentComposer) {
   let cleanPiece = line
     .replace(/^[0-9]+[\.\)]?\s*/, '')
-    .replace(/^[•\-\*·▶▸]\s*/, '')
+    .replace(/^[•\-\*·▶▸\.]+\s*/, '')
     .replace(/\s*\(\d{4}[~–\-]\d{4}\)/g, '')
     .trim();
 
@@ -410,6 +426,7 @@ function extractPiecesSmart(rawTextOrHtml, { isPlainSty = false, isOcr = false }
         if (currentPerformer && isPlainSty) {
           cp = `${cp} (${currentPerformer})`;
         }
+        if (isOcr) currentComposer = '';
         addUniquePiece(pieces, cp);
       }
     }
@@ -657,6 +674,8 @@ function extractPiecesFromTitle(title) {
     pieces.push('요한 제바스티안 바흐: 골드베르크 변주곡 BWV 988');
   } else if (t.includes('슈베르트') && t.includes('겨울나그네')) {
     pieces.push('프란츠 슈베르트: 연가곡 "겨울나그네" D.911');
+  } else if (t.includes('카르미나 부라나') || /Carmina\s+Burana/i.test(t)) {
+    pieces.push('C. Orff: Carmina Burana (칼 오르프: 카르미나 부라나)');
   }
 
   return pieces;
