@@ -320,37 +320,26 @@ async function main() {
     } catch {}
   }
 
-  // 상세 프로그램 보강 대상: 신규 발굴 공연 + 곡목이 미등록된 모든 기존 공연
-  const itemsToEnrich = Array.from(concertMap.values()).filter(c => 
-    !c.pieces || c.pieces.length === 0
-  );
-
-  console.log(`[상세 프로그램 전수 보강] 총 ${itemsToEnrich.length}건에 대해 상세페이지 프로그램 연동 시작...`);
-
-  const missingFetchIds = [];
-  itemsToEnrich.forEach(c => {
-    const rawId = (c.kopisId || (c.id || '').replace(/^kopis-/, '')).trim();
-    if (rawId && !detailsCache[rawId]) {
-      missingFetchIds.push(rawId);
-    }
-  });
-
-  // 캐시에 없는 상세 정보는 KOPIS OpenAPI로 실시간 전수 수집
-  if (missingFetchIds.length > 0) {
-    console.log(`KOPIS 공식 OpenAPI에서 미등록 상세 XML ${missingFetchIds.length}건 추가 수집 중...`);
-    for (let i = 0; i < missingFetchIds.length; i += 5) {
-      const chunk = missingFetchIds.slice(i, i + 5);
-      const fetched = await Promise.all(chunk.map(id => fetchConcertDetail(id)));
-      chunk.forEach((id, idx) => {
-        if (fetched[idx]) detailsCache[id] = fetched[idx];
+  // 신규 발굴 공연은 무조건 KOPIS OpenAPI로 실시간 상세 XML 수집
+  if (newItemsToEnrich.length > 0) {
+    console.log(`KOPIS 공식 OpenAPI에서 신규 공연 상세 XML ${newItemsToEnrich.length}건 실시간 수집 중...`);
+    for (let i = 0; i < newItemsToEnrich.length; i += 5) {
+      const chunk = newItemsToEnrich.slice(i, i + 5);
+      const fetched = await Promise.all(chunk.map(c => fetchConcertDetail(c.kopisId)));
+      chunk.forEach((c, idx) => {
+        if (fetched[idx]) detailsCache[c.kopisId] = fetched[idx];
       });
-      await sleep(150);
+      await sleep(100);
     }
-    // 캐시 저장
     try {
       fs.writeFileSync(detailsCachePath, JSON.stringify(detailsCache, null, 2), 'utf8');
     } catch {}
   }
+
+  // 상세 프로그램 보강 대상: 신규 발굴 공연 + 곡목이 미등록된 기존 공연
+  const itemsToEnrich = Array.from(concertMap.values()).filter(c => 
+    !c.pieces || c.pieces.length === 0
+  );
 
   let enrichedCount = 0;
   let piecesFoundCount = 0;

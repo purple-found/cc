@@ -1,5 +1,14 @@
 [
   {
+    "timestamp": "2026-10-31 15:56:45 KST",
+    "schedule": "03:00 AM (매일 새벽 3시 정기 배치)",
+    "status": "SUCCESS",
+    "newConcerts": 162,
+    "updatedConcerts": 8,
+    "totalConcerts": 2075,
+    "message": "KOPIS 공식 OpenAPI에서 신규 162건 등록 및 8건 상태 갱신 완료"
+  },
+  {
     "timestamp": "2026-10-26 13:57:12 KST",
     "schedule": "03:00 AM (매일 새벽 3시 정기 배치)",
     "status": "SUCCESS",
