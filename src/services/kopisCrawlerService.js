@@ -589,16 +589,48 @@ export const kopisCrawlerService = {
       return [clean.slice(0, 25)];
     };
 
-    // 연주 편성 (오케스트라 vs 실내악) 정밀 판별
-    const detectPerformerType = (title) => {
-      const t = (title || '').toLowerCase();
-      if (t.includes('필하모닉스') && !t.includes('오케스트라')) return '실내악';
-      const isOrch = [
-        '오케스트라', '교향악단', '필하모닉', '필하모니', '심포니', '관현악단', '관현악',
-        '합창교향곡', '윈드오케스트라', '챔버오케스트라', '체임버오케스트라',
-        'orchestra', 'philharmonic', 'symphony'
-      ].some(k => t.includes(k));
-      return isOrch ? '오케스트라' : '실내악';
+    // 연주 편성 (오페라 / 오케스트라 / 성악·합창 / 독주회 / 실내악) 정밀 판별
+    const detectPerformerType = (title, venue = '') => {
+      const rawTitle = (title || '').trim();
+      const t = rawTitle.toLowerCase();
+      const v = (venue || '').toLowerCase();
+      const isPureOrchestraProgram = /(?:오케스트라|교향악단|필하모닉|필하모니|심포니)/.test(t) &&
+        !/(?:오페라|오페레타|라인의 황금|발퀴레|지크프리트|신들의 황혼|라\s*보엠|라\s*트라비아타|리골레토|마술피리|사랑의 묘약|토스카|투란도트|돈\s*카를로스|돈\s*조반니|코지\s*판\s*투테|피가로의 결혼|나비부인)/.test(t);
+
+      if (!isPureOrchestraProgram) {
+        if (
+          v.includes('오페라극장') ||
+          /(?:오페라|오페레타|오페라단|오페라갈라|\bopera\b|라인의 황금|발퀴레|지크프리트|신들의 황혼|니벨룽의 반지|라\s*보엠|라\s*트라비아타|리골레토|돈\s*카를로스|사랑의 묘약|마술피리|피가로의 결혼|돈\s*조반니|돈\s*죠반니|코지\s*판\s*투테|토스카|투란도트|나비부인|세비야의 이발사|세빌리아의 이발사|카발레리아 루스티카나|팔리아치|박쥐|일\s*트로바토레|람메르무어의 루치아)/i.test(rawTitle) ||
+          (/카르멘/.test(rawTitle) && !/(?:오케스트라|교향악단|필하모닉|독주회|리사이틀|콰르텟|트리오|앙상블)/.test(rawTitle))
+        ) {
+          return '오페라';
+        }
+      }
+
+      if (!(t.includes('필하모닉스') && !t.includes('오케스트라'))) {
+        const isOrch = [
+          '오케스트라', '교향악단', '필하모닉', '필하모니', '심포니', '관현악단', '관현악',
+          '합창교향곡', '서울시향', '부산시향', '인천시향', '대구시향', '대전시향', '광주시향',
+          '수원시향', '울산시향', '부천필', '경기필', '한경아르떼필', 'kbs교향악단', '국립심포니',
+          '신포니에타', '신포니아', '챔버오케스트라', '체임버오케스트라', '윈드오케스트라', '관악단',
+          'orchestra', 'philharmonic', 'symphony', 'sinfonietta', '필하모니커'
+        ].some(k => t.includes(k));
+        if (isOrch) return '오케스트라';
+      }
+
+      if (/(?:합창단|합창제|합창음악|소년소녀합창|남성합창|여성합창|시립합창|국립합창|합창|코러스|콰이어|\bchoir\b|\bchorus\b|\bchorale\b|독창회|성악|소프라노|메조소프라노|테너|바리톤|카운터테너|\bsoprano\b|\btenor\b|\bbaritone\b|보칼레|칸토레스|마드리갈|가곡의 밤|가곡|연가곡|오라토리오|칸타타|메시아|카르미나 부라나)/i.test(rawTitle)) {
+        return '성악/합창';
+      }
+
+      if (/(?:듀오|\bduo\b|트리오|\btrio\b|콰르텟|퀄텟|\bquartet\b|퀸텟|\bquintet\b|섹스텟|셉텟|옥텟|\boctet\b|앙상블|\bensemble\b|체임버|챔버|\bchamber\b|실내악|두 대의 피아노|2대의 피아노|피아노 듀엣|포핸즈|four hands|솔로이스츠|soloists|무지치|콜레기움)/i.test(rawTitle)) {
+        return '실내악';
+      }
+
+      if (/(?:독주회|리사이틀|\brecital\b|피아니스트|바이올리니스트|첼리스트|비올리스트|플루티스트|오보이스트|클라리네티스트|바수니스트|호르니스트|트럼페터|오르가니스트|기타리스트|하피스트|하프시코디스트|타악기 독주)/i.test(rawTitle)) {
+        return '독주회';
+      }
+
+      return '실내악';
     };
 
     try {
@@ -640,7 +672,7 @@ export const kopisCrawlerService = {
             venue: fcltynm,
             city: normalizeCity(area, fcltynm),
             performers: detectPerformers(prfnm),
-            performerType: detectPerformerType(prfnm),
+            performerType: detectPerformerType(prfnm, fcltynm),
             composers: detectComposers(prfnm),
             pieces: [],
             price: '공식 예매처 참조',
@@ -691,7 +723,7 @@ export const kopisCrawlerService = {
           venue: fcltynm,
           city: normalizeCity(area, fcltynm),
           performers: detectPerformers(prfnm),
-          performerType: detectPerformerType(prfnm),
+          performerType: detectPerformerType(prfnm, fcltynm),
           composers: detectComposers(prfnm),
           pieces: [],
           price: '공식 예매처 참조',

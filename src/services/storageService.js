@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v45: OCR 오탈자·작곡가 매칭 정밀 정제 및 성능 최적화 반영
-const CONCERTS_KEY = 'opus_korea_concerts_v45';
+// v46: 연주 편성 5분류(오케스트라 / 실내악 / 독주회 / 오페라 / 성악·합창) 정밀 재분류 및 오페라 레퍼토리 보강 반영
+const CONCERTS_KEY = 'opus_korea_concerts_v46';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -17,7 +17,7 @@ try {
     ['opus_korea_verified_real_concerts_v5', 'opus_korea_verified_real_concerts_v6', 'opus_korea_halls_v3'].forEach(k => {
       localStorage.removeItem(k);
     });
-    for (let v = 7; v <= 44; v++) {
+    for (let v = 7; v <= 45; v++) {
       localStorage.removeItem(`opus_korea_concerts_v${v}`);
     }
   }
@@ -41,22 +41,25 @@ export const storageService = {
       if (!Array.isArray(parsed) || parsed.length === 0) {
         return initialRealConcerts || [];
       }
-      // 세부 홀(hall) 정보나 작품 목록이 최신화되지 않은 경우 initialRealConcerts와 즉각 병합
+      // 세부 홀(hall), 연주 편성(performerType), 작품 목록(pieces)이 최신화되지 않은 경우 initialRealConcerts와 즉각 병합
       const initialMap = new Map((initialRealConcerts || []).map(c => [c.id || c.kopisId, c]));
       let hasUpdate = false;
       const synced = parsed.map(c => {
         const init = initialMap.get(c.id || c.kopisId);
         if (init) {
           const needsHallUpdate = init.hall && c.hall !== init.hall;
+          const needsTypeUpdate = init.performerType && c.performerType !== init.performerType;
           const hasFakePieces = Array.isArray(c.pieces) && c.pieces.some(p =>
             p.includes('앙코르') || p.includes('레퍼토리') || p.includes('하모니') || p.includes('협주곡 앙상블') || p.includes('소나타 및 모음곡') || p.includes('실내악 선율') || p.endsWith('프로그램')
           );
-          if (needsHallUpdate || hasFakePieces) {
+          if (needsHallUpdate || needsTypeUpdate || hasFakePieces) {
             hasUpdate = true;
             return {
               ...c,
               hall: init.hall !== undefined ? init.hall : c.hall,
               venue: init.venue || c.venue,
+              performerType: init.performerType || c.performerType,
+              composers: init.composers || c.composers,
               pieces: init.pieces || []
             };
           }

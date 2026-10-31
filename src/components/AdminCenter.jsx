@@ -996,18 +996,18 @@ export default function AdminCenter({
 
                 <div>
                   <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
-                    장르 형태
+                    연주 편성
                   </label>
                   <select
                     value={formData.performerType}
                     onChange={(e) => setFormData({ ...formData, performerType: e.target.value })}
                     className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                   >
-                    <option value="솔리스트">솔리스트 리사이틀</option>
-                    <option value="오케스트라">오케스트라 관현악</option>
-                    <option value="협연 / 오케스트라">협연 & 오케스트라</option>
-                    <option value="실내악 / 앙상블">실내악 / 앙상블</option>
-                    <option value="오페라 / 성악">오페라 / 성악</option>
+                    <option value="오케스트라">오케스트라 (Orchestra)</option>
+                    <option value="실내악">실내악 (Chamber Music)</option>
+                    <option value="독주회">독주회 / 리사이틀 (Solo Recital)</option>
+                    <option value="오페라">오페라 (Opera)</option>
+                    <option value="성악/합창">성악 / 합창 (Vocal & Choir)</option>
                   </select>
                 </div>
               </div>

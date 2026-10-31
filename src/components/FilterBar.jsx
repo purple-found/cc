@@ -259,7 +259,7 @@ export default function FilterBar({
           </select>
         </div>
 
-        {/* 연주 편성 필터 (오케스트라 / 실내악) */}
+        {/* 연주 편성 필터 (오케스트라 / 실내악 / 독주회 / 오페라 / 성악·합창) */}
         <div>
           <label className="block text-[11px] font-bold text-stone-500 dark:text-stone-400 mb-1">
             연주 편성 (Formation)
@@ -272,6 +272,9 @@ export default function FilterBar({
             <option value="all">전체 편성 (All Formations)</option>
             <option value="오케스트라">오케스트라 (Orchestra)</option>
             <option value="실내악">실내악 (Chamber Music)</option>
+            <option value="독주회">독주회 / 리사이틀 (Solo Recital)</option>
+            <option value="오페라">오페라 (Opera)</option>
+            <option value="성악/합창">성악 / 합창 (Vocal & Choir)</option>
           </select>
         </div>
 

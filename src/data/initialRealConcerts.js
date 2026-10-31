@@ -28,7 +28,8 @@ export const INITIAL_REAL_CONCERTS = [
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF248820_202512290232392710.jpg",
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF248820_202512290232392901.png"
-    ]
+    ],
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF256370",
@@ -47,7 +48,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF256370_250108_161156.gif",
     "price": "R석 45,000원, S석 35,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/53912",
-    "cast": "양재관, 이유진, 이희수, 박현우"
+    "cast": "양재관, 이유진, 이희수, 박현우",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF274143",
@@ -448,7 +450,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박상욱",
       "박건우"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -853,7 +855,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "카메론 카펜터"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -1007,7 +1009,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정태영",
       "장인순 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -1039,7 +1041,7 @@ export const INITIAL_REAL_CONCERTS = [
       "서지연",
       "이인권 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -1098,7 +1100,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박상욱",
       "장주훈"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -1128,7 +1130,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김보람"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -1289,7 +1291,7 @@ export const INITIAL_REAL_CONCERTS = [
       "최성수",
       "백명진"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -1419,7 +1421,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "송문희"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -1718,7 +1720,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박상욱",
       "윤동환"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -1781,7 +1783,7 @@ export const INITIAL_REAL_CONCERTS = [
       "손애영",
       "고동현 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -1957,7 +1959,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "박은경"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "쇼팽"
@@ -2309,7 +2311,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "에이치아츠 (H-Art)",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -2335,7 +2337,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "노현진"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "모차르트",
@@ -2369,7 +2371,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "벤자민 리게티"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -2404,7 +2406,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박상욱",
       "김우연"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -2428,7 +2430,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "아트브릿지",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -2481,7 +2483,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "박찬우 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -2593,7 +2595,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "비원뮤직홀",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작",
       "슈만"
@@ -2678,11 +2680,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구문화예술회관",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "지나간공연",
@@ -2765,7 +2769,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -2864,7 +2868,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -2887,7 +2891,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "푸르지오아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -2933,7 +2937,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "쌀롱드무지끄",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -3002,11 +3006,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "울산광역시학생교육문화회관",
     "city": "울산광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%9A%B8%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%ED%95%99%EC%83%9D%EA%B5%90%EC%9C%A1%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "지나간공연",
@@ -3060,7 +3066,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "비원뮤직홀",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "슈만",
@@ -3089,7 +3095,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -3141,7 +3147,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "양양문화복지회관",
     "city": "강원특별자치도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -3164,7 +3170,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -3210,7 +3216,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "11:00",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -3242,7 +3248,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "강릉원주대학교 하슬라홀",
     "city": "강원특별자치도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -3288,7 +3294,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "경기아트센터(구. 경기도문화의전당)",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -3369,7 +3375,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "광주시문화예술의전당 (구. 남한산성아트홀)",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -3473,7 +3479,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "제주문예회관",
     "city": "제주특별자치도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -3620,7 +3626,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -3652,7 +3658,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "18:00",
     "venue": "쌀롱드무지끄",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -3682,7 +3688,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -3763,7 +3769,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "성남아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -3963,7 +3969,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -4096,7 +4102,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "성남아트리움 (구. 성남시민회관)",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -4128,7 +4134,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295511_260707_132335.jpg",
     "price": "그랜드 투어 하반기 패키지 15,000원",
     "ticketUrl": "https://ticket.yes24.com/Perf/59163",
-    "cast": "안인모 등"
+    "cast": "안인모 등",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF300479",
@@ -4174,7 +4181,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "강동아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -4266,7 +4273,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구콘서트하우스",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -4402,7 +4409,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "고양아람누리",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -4477,7 +4484,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "비원뮤직홀",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -4508,7 +4515,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "쌀롱드무지끄",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -4695,11 +4702,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "전남대학교 민주마루홀",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Le nozze di Figaro, K. 492 (모차르트: 오페라 피가로의 결혼)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A0%84%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20%EB%AF%BC%EC%A3%BC%EB%A7%88%EB%A3%A8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "지나간공연",
@@ -4724,7 +4733,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이환희",
       "채수성 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -4751,7 +4760,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "손열음"
     ],
-    "performerType": "독주",
+    "performerType": "독주회",
     "composers": [
       "파데레프스키",
       "프리드만",
@@ -4788,7 +4797,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "봉산문화회관",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -4850,7 +4859,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:30",
     "venue": "고양어울림누리",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -4979,7 +4988,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구콘서트하우스",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -5112,7 +5121,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -5190,7 +5199,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294971_260701_095917.gif",
     "price": "1층석 20,000원, 2층석 15,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009116",
-    "cast": "이정우, 유미향, 유신혜, 메튜 에른스터"
+    "cast": "이정우, 유미향, 유신혜, 메튜 에른스터",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF300918",
@@ -5250,7 +5260,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "로데아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -5368,7 +5378,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -5515,7 +5525,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대주아트 엔터뮤직 2호점",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -5538,7 +5548,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -5639,7 +5649,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세라믹팔레스홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -5662,7 +5672,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "거암아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -5717,7 +5727,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "충남대학교 정심화국제문화회관",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -5763,7 +5773,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "화도수동행정복지센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -5809,7 +5819,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "사천문화예술회관",
     "city": "경상남도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -5878,7 +5888,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "11:30",
     "venue": "롯데콘서트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -5905,7 +5915,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전예술의전당",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -6006,7 +6016,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구콘서트하우스",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -6029,7 +6039,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구문화예술회관",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -6052,7 +6062,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -6086,7 +6096,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "노선형"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -6140,7 +6150,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -6224,7 +6234,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "강동아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -6256,7 +6266,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "신영체임버홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -6302,7 +6312,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "장흥문화예술회관",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -6348,7 +6358,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "서귀포예술의전당",
     "city": "제주특별자치도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -6453,7 +6463,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "모스크바홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -6479,7 +6489,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "비원뮤직홀",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -6534,11 +6544,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "김제문화예술회관",
     "city": "전북특별자치도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65366",
     "status": "지나간공연",
@@ -6566,7 +6578,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "13:30",
     "venue": "연세대학교 백주년기념관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -6643,7 +6655,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -6666,7 +6678,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -6712,7 +6724,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "목포문화예술회관",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -6758,7 +6770,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별���",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -6850,11 +6862,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "여수시민회관",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Le nozze di Figaro, K. 492 (모차르트: 오페라 피가로의 결혼)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%97%AC%EC%88%98%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "지나간공연",
@@ -6896,7 +6910,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "화성예술의전당",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -7222,7 +7236,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "의정부예술의전당",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -7360,7 +7374,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "18:00",
     "venue": "쌀롱드무지끄",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -7422,7 +7436,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -7445,7 +7459,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구학생문화센터",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -7560,7 +7574,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -7612,7 +7626,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "서빛마루문화예술회관",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -7635,11 +7649,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "국립부여박물관",
     "city": "충청남도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B5%AD%EB%A6%BD%EB%B6%80%EC%97%AC%EB%B0%95%EB%AC%BC%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "지나간공연",
@@ -7759,7 +7775,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294473_260624_101121.gif",
     "price": "1층석 20,000원, 2층석 15,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008730",
-    "cast": "정환호 등"
+    "cast": "정환호 등",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF295052",
@@ -7858,7 +7875,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "14:00",
     "venue": "쌀롱드무지끄",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -7887,7 +7904,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "15:00",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -8007,7 +8024,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "18:00",
     "venue": "신불당아트센터",
     "city": "충청남도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -8247,7 +8264,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "모차르트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -8301,7 +8318,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "신세계남산",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -8327,7 +8344,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -8373,7 +8390,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -8396,7 +8413,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "아트스페이스 흥학관",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -8422,7 +8439,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전시립연정국악원",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -8570,7 +8587,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "성남아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -8593,7 +8610,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -8662,7 +8679,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "서귀포예술의전당",
     "city": "제주특별자치도",
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -8708,7 +8725,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "다산아트홀",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -8731,7 +8748,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종예술의전당",
     "city": "세종특별자치시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -8754,7 +8771,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -8780,7 +8797,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -8834,7 +8851,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -8861,7 +8878,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "성남아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9004,7 +9021,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -9036,7 +9053,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "달서아트센터 (구. 웃는얼굴아트센터)",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9091,7 +9108,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "뮤직앤아트스튜디오",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9127,7 +9144,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "로데아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9153,7 +9170,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "구미시문화예술회관",
     "city": "경상북도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -9324,7 +9341,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "소셜베뉴 라움",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -9347,7 +9364,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -9396,7 +9413,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9419,7 +9436,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "세종국악당",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -9532,7 +9549,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전예술의전당",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9569,7 +9586,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "제주문예회관",
     "city": "제주특별자치도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -9595,7 +9612,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "복합문화공간 플랜에이",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -9622,7 +9639,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9653,7 +9670,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "시흥아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9739,7 +9756,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "피오레아트앤엔터(피오레움)",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9791,7 +9808,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "더같음",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9860,7 +9877,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "부산문화회관",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9906,7 +9923,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "푸르지오아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -9929,7 +9946,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -9985,7 +10002,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "후지타 마오"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -10057,7 +10074,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "옥유아"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "바흐"
     ],
@@ -10091,7 +10108,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정다은",
       "홍청의"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -10248,7 +10265,7 @@ export const INITIAL_REAL_CONCERTS = [
       "장지원",
       "한은지"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "브람스"
     ],
@@ -10275,7 +10292,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "임호열"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -10364,7 +10381,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "신세계남산",
     "city": "서울특별시",
-    "performerType": "독주",
+    "performerType": "독주회",
     "composers": [
       "루트비히 판 베토벤",
       "프란츠 슈베르트"
@@ -10395,7 +10412,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -10422,7 +10439,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "헤르만아트홀",
     "city": "��울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -10534,7 +10551,7 @@ export const INITIAL_REAL_CONCERTS = [
       "유진백",
       "한민선"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -10567,7 +10584,7 @@ export const INITIAL_REAL_CONCERTS = [
       "나영오",
       "김경천"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -10664,7 +10681,7 @@ export const INITIAL_REAL_CONCERTS = [
       "강동엽",
       "조현상 등"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -10731,7 +10748,7 @@ export const INITIAL_REAL_CONCERTS = [
       "배연희",
       "김소희 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -10777,7 +10794,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "일리야 라쉬코프스키 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "라흐마니노프"
     ],
@@ -10908,7 +10925,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "노민영"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -11071,7 +11088,7 @@ export const INITIAL_REAL_CONCERTS = [
       "임창진",
       "서원 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -11095,7 +11112,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "KBS [본관]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -11236,7 +11253,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전시립연정국악원",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -11263,7 +11280,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -11295,7 +11312,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "광주교육대학교 풍향문화관",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -11324,11 +11341,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "제주아트센터",
     "city": "제주특별자치도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "요한 슈트라우스 2세"
     ],
-    "pieces": [],
+    "pieces": [
+      "J. Strauss II: Die Fledermaus (요한 슈트라우스 2세: 오페레타 박쥐)"
+    ],
     "price": "R석 50,000원, S석 30,000원, A석 20,000원",
     "ticketUrl": "https://www.jejusi.go.kr/acenter/show/perf/view.do?showId=1691",
     "status": "지나간공연",
@@ -11388,11 +11407,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "코오롱 야외음악당",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "조르주 비제"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Bizet: Carmen (조르주 비제: 오페라 카르멘)"
+    ],
     "price": "전석무료",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012884",
     "status": "지나간공연",
@@ -11466,7 +11487,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "광림아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -11489,7 +11510,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "종로아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -11539,7 +11560,7 @@ export const INITIAL_REAL_CONCERTS = [
       "손예인",
       "백동현"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -11572,7 +11593,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "정상욱"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -11665,7 +11686,7 @@ export const INITIAL_REAL_CONCERTS = [
       "문정재",
       "박종호"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -11857,7 +11878,7 @@ export const INITIAL_REAL_CONCERTS = [
       "장윤화",
       "곽건"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -11884,7 +11905,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김민영"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -11968,7 +11989,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "16:00",
     "venue": "갤러리 디 아르테 청담",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -12049,7 +12070,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "18:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -12345,7 +12366,7 @@ export const INITIAL_REAL_CONCERTS = [
       "서민정",
       "장재희"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -12375,7 +12396,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "안화영"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -12443,7 +12464,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "후지타 마오"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "모차르트",
@@ -12536,7 +12557,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "장-기엔 케라스"
     ],
-    "performerType": "독주",
+    "performerType": "독주회",
     "composers": [
       "요한 제바스티안 바흐"
     ],
@@ -12570,7 +12591,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "안소연"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -12681,7 +12702,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구문화예술회관",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -12707,7 +12728,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "율리우스 아살"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -12737,7 +12758,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "문세희"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "모차르트"
     ],
@@ -12771,7 +12792,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이성경",
       "윤효린"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -12804,7 +12825,7 @@ export const INITIAL_REAL_CONCERTS = [
       "성현경",
       "올리버 케른"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -12836,7 +12857,7 @@ export const INITIAL_REAL_CONCERTS = [
       "오동규",
       "김나연"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -12959,7 +12980,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "독주",
+    "performerType": "독주회",
     "composers": [
       "볼프강 아마데우스 모차르트"
     ],
@@ -13000,7 +13021,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299079_260821_134929.png",
     "price": "R석 패키지 450,000원, S석 패지키 360,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/64866",
-    "cast": "임윤찬, 손민수, 비킹구르 올라프손, 백건우"
+    "cast": "임윤찬, 손민수, 비킹구르 올라프손, 백건우",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF301052",
@@ -13013,7 +13035,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김원"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -13113,7 +13135,7 @@ export const INITIAL_REAL_CONCERTS = [
       "즐라토미르 펑",
       "박영성"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -13247,7 +13269,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김경란",
       "공희상"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -13378,7 +13400,7 @@ export const INITIAL_REAL_CONCERTS = [
       "성미진",
       "허동권 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -13406,7 +13428,7 @@ export const INITIAL_REAL_CONCERTS = [
       "엄윤정",
       "유혜영 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -13463,7 +13485,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김봉중",
       "임효선"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -13601,7 +13623,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "낙동아트센터",
     "city": "부산광역시",
-    "performerType": "독주",
+    "performerType": "독주회",
     "composers": [
       "루트비히 판 베토벤"
     ],
@@ -13629,7 +13651,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "일신홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -13655,7 +13677,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "정다슬"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -13689,7 +13711,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박민하",
       "김병희"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -13749,7 +13771,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김도현"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -13818,7 +13840,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박원민",
       "홍소유"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -13947,7 +13969,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박주미",
       "다카토리 다츠야 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -14004,7 +14026,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "윤희주"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -14073,7 +14095,7 @@ export const INITIAL_REAL_CONCERTS = [
       "구수민",
       "시모다 미키"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -14336,11 +14358,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "국립아시아문화전당",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: Turandot (자코모 푸치니: 오페라 투란도트)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B5%AD%EB%A6%BD%EC%95%84%EC%8B%9C%EC%95%84%EB%AC%B8%ED%99%94%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "지나간공연",
@@ -14363,7 +14387,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김대욱",
       "신민철"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -14397,7 +14421,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이성은",
       "윤민규"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -14558,7 +14582,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "한희준"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -14656,7 +14680,7 @@ export const INITIAL_REAL_CONCERTS = [
       "주찬미",
       "김지현 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -14779,7 +14803,7 @@ export const INITIAL_REAL_CONCERTS = [
       "문성필",
       "전용현"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -14808,7 +14832,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박수홍",
       "손지혜"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -14844,7 +14868,7 @@ export const INITIAL_REAL_CONCERTS = [
       "함정민",
       "홍대용 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -15012,7 +15036,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "동래문화회관",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -15042,11 +15066,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "다산아트홀",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "주세페 베르디"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Verdi: La Traviata (주세페 베르디: 오페라 라 트라비아타)"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "https://culture.nyj.go.kr/home/7?action-value=034b36d9c6a85fcdfbef1cb8454c5e13&amp;action=read",
     "status": "지나간공연",
@@ -15156,11 +15182,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화예술회관",
     "city": "세종특별자치시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "조아키노 로시니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Rossini: Il barbiere di Siviglia (조아키노 로시니: 오페라 세비야의 이발사)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "지나간공연",
@@ -15225,7 +15253,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "울산문화예술회관",
     "city": "울산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -15294,7 +15322,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "낙동아트센터",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -15320,7 +15348,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "유수현"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "Schumann"
     ],
@@ -15352,7 +15380,7 @@ export const INITIAL_REAL_CONCERTS = [
       "조윤정",
       "박진우"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -15448,7 +15476,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김계희",
       "박영성"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -15673,7 +15701,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김민정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -15700,7 +15728,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김수정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -15733,7 +15761,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "조주연"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -16072,7 +16100,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김진세"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -16104,7 +16132,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "강성주"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -16243,11 +16271,13 @@ export const INITIAL_REAL_CONCERTS = [
       "페데리카 디 트라파니",
       "다닐로 팔루디 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)"
+    ],
     "price": "R석 160,000원, S석 130,000원, A석 100,000원, B석 70,000원, C석 40,000원, 시야방해R  112,000원, 시야방해S  91,000원, 시야방해A  70,000원",
     "ticketUrl": "https://www.lotteconcerthall.com/product/performance/261195",
     "status": "지나간공연",
@@ -16400,7 +16430,7 @@ export const INITIAL_REAL_CONCERTS = [
       "진승민",
       "유지훈"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -16427,7 +16457,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "전성진"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -16555,7 +16585,7 @@ export const INITIAL_REAL_CONCERTS = [
       "조현주",
       "오동규"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -16649,7 +16679,7 @@ export const INITIAL_REAL_CONCERTS = [
       "홍석기",
       "박준형"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -16825,7 +16855,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "15:00",
     "venue": "NCM STUDIO",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -16851,7 +16881,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "18:00",
     "venue": "한국소리문화의전당",
     "city": "전북특별자치도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -17063,7 +17093,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "성남아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -17219,7 +17249,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "빛고을시민문화관",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -17251,7 +17281,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박유건",
       "남승재 등"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -17278,7 +17308,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김규태"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "모차르트"
     ],
@@ -17310,7 +17340,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김보라"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -17416,7 +17446,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "프레디 켐프"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -17451,7 +17481,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이유라",
       "김지선 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -17513,7 +17543,7 @@ export const INITIAL_REAL_CONCERTS = [
       "한예원",
       "정호정"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -17567,7 +17597,7 @@ export const INITIAL_REAL_CONCERTS = [
       "유지영",
       "정현진"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -17652,7 +17682,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "콘서트홀 나누",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -17678,7 +17708,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "14:00",
     "venue": "소월아트홀 (성동문화회관)",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -17710,7 +17740,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "18:30",
     "venue": "소월아트홀 (성동문화회관)",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -17742,7 +17772,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "김인홀(KIMIN HALL)",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -17769,11 +17799,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "16:00",
     "venue": "F1963",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "리하르트 바그너"
     ],
-    "pieces": [],
+    "pieces": [
+      "R. Wagner: Die Walküre, WWV 86B (리하르트 바그너: 오페라 발퀴레)"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1738268",
     "status": "지나간공연",
@@ -17942,7 +17974,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정승연",
       "조혜정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -17997,7 +18029,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -18033,7 +18065,7 @@ export const INITIAL_REAL_CONCERTS = [
       "윤예지",
       "김현희 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -18066,11 +18098,13 @@ export const INITIAL_REAL_CONCERTS = [
       "서선옥",
       "김도완"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "주세페 베르디"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Verdi: Rigoletto (주세페 베르디: 오페라 리골레토)"
+    ],
     "price": "전석무료",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65800",
     "status": "지나간공연",
@@ -18122,7 +18156,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "정푸름"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -18157,7 +18191,7 @@ export const INITIAL_REAL_CONCERTS = [
       "변재홍",
       "김은경 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -18185,7 +18219,7 @@ export const INITIAL_REAL_CONCERTS = [
       "임경원",
       "오윤주"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -18246,7 +18280,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "윤의중 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -18273,7 +18307,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "염희선"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -18305,7 +18339,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "서예솔"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -18332,7 +18366,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김죽현"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -18391,7 +18425,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "제31회 성남시중원구여성합창단 정기연주회"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -18419,7 +18453,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이주현",
       "김기환 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -18508,11 +18542,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "강릉아트센터 (구. 강릉문화예술관)",
     "city": "강원특별자치도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)"
+    ],
     "price": "R석 20,000원, S석 10,000원",
     "ticketUrl": "http://gn.moonhwain.net/rsvc/rsv_pm.html?b_id=gn&amp;p_idx=1431",
     "status": "지나간공연",
@@ -18656,7 +18692,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -18715,7 +18751,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "통영국제음악당",
     "city": "경상남도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -18764,7 +18800,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "고양아람누리",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -18791,7 +18827,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김근화",
       "민경식"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -18889,7 +18925,7 @@ export const INITIAL_REAL_CONCERTS = [
       "아르토 노라스",
       "김규연"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "로베르트 슈만",
       "류재준",
@@ -19048,7 +19084,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "부산시립합창단 예술교육공연"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -19075,7 +19111,7 @@ export const INITIAL_REAL_CONCERTS = [
       "조화영",
       "박민희"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작",
       "모차르트"
@@ -19113,7 +19149,7 @@ export const INITIAL_REAL_CONCERTS = [
       "허만우",
       "배정숙 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -19169,7 +19205,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "문예진"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -19206,7 +19242,7 @@ export const INITIAL_REAL_CONCERTS = [
       "안드레아스 펠버",
       "니콜라이 크뤼겔 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -19239,7 +19275,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김지연",
       "권현아 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -19295,11 +19331,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "동해문화예술회관",
     "city": "강원특별자치도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65572",
     "status": "지나간공연",
@@ -19327,7 +19365,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "신영체임버홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작",
       "슈베르트",
@@ -19397,7 +19435,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정하나",
       "정보희"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -19436,7 +19474,7 @@ export const INITIAL_REAL_CONCERTS = [
       "강현수",
       "박정민 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -19557,7 +19595,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "유미향"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "베토벤"
     ],
@@ -19617,7 +19655,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "일리야 라쉬코프스키 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "라흐마니노프"
     ],
@@ -19650,7 +19688,7 @@ export const INITIAL_REAL_CONCERTS = [
       "르노 카퓌송",
       "강윤지 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "모차르트"
     ],
@@ -19684,7 +19722,7 @@ export const INITIAL_REAL_CONCERTS = [
       "윤지은",
       "김지선 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -19768,7 +19806,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김태한 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -19802,7 +19840,7 @@ export const INITIAL_REAL_CONCERTS = [
       "변세원",
       "신덕균 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -19926,7 +19964,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김정은",
       "이수민"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -20057,7 +20095,7 @@ export const INITIAL_REAL_CONCERTS = [
       "성덕현",
       "허성은"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -20111,7 +20149,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수원SK아트리움",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -20143,7 +20181,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "11:00",
     "venue": "낙동아트센터",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -20228,7 +20266,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "서울아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -20254,7 +20292,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김희정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -20317,7 +20355,7 @@ export const INITIAL_REAL_CONCERTS = [
       "서지은",
       "이현동 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -20344,7 +20382,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "양민제"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -20371,7 +20409,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "박종해"
     ],
-    "performerType": "독주",
+    "performerType": "독주회",
     "composers": [
       "프란츠 슈베르트"
     ],
@@ -20468,7 +20506,7 @@ export const INITIAL_REAL_CONCERTS = [
       "르노 카퓌송",
       "강윤지 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "모차르트"
     ],
@@ -20532,7 +20570,7 @@ export const INITIAL_REAL_CONCERTS = [
       "홍지연",
       "이재완"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -20598,7 +20636,7 @@ export const INITIAL_REAL_CONCERTS = [
       "강주희",
       "구민희"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -20630,7 +20668,7 @@ export const INITIAL_REAL_CONCERTS = [
       "조주현",
       "정호정"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -20779,7 +20817,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이재호 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -20836,7 +20874,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "성남아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -20859,11 +20897,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "김해서부문화센터",
     "city": "경상남도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)"
+    ],
     "price": "R석 60,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013865",
     "status": "지나간공연",
@@ -20970,7 +21010,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "신영체임버홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -20996,7 +21036,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전예술가의집",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -21132,7 +21172,7 @@ export const INITIAL_REAL_CONCERTS = [
       "민창숙",
       "한범택 등"
     ],
-    "performerType": "오케스트라",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -21165,7 +21205,7 @@ export const INITIAL_REAL_CONCERTS = [
       "조성덕",
       "김정훈 등"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -21224,7 +21264,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "손민수"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -21253,7 +21293,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김주성",
       "김혜령"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -21280,7 +21320,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이상미"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -21307,7 +21347,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "정재윤"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -21518,11 +21558,13 @@ export const INITIAL_REAL_CONCERTS = [
       "윤지수",
       "오창석 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "가이타노 도니제티"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Donizetti: L'elisir d'amore (가이타노 도니제티: 오페라 사랑의 묘약)"
+    ],
     "price": "전석무료",
     "ticketUrl": "http://www.bscc.or.kr/01_perfor/?mcode=0401010200&amp;mode=2&amp;no=26866",
     "status": "지나간공연",
@@ -21546,7 +21588,7 @@ export const INITIAL_REAL_CONCERTS = [
       "최윤호",
       "윤소영"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -21579,7 +21621,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "박주혁"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -21658,7 +21700,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "제9회 대구중구문화원 시니어여성합창단 정기연주"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -21804,7 +21846,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "다니엘 델 피노"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -21978,7 +22020,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이석우"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -22005,7 +22047,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "파질 사이"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -22029,7 +22071,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -22075,7 +22117,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "16:00",
     "venue": "JB소극장",
     "city": "충청남도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -22412,7 +22454,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이선아"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "J.S. 바흐"
     ],
@@ -22445,7 +22487,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김호정",
       "김종윤"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "프랭크 브리지",
       "루트비히 판 베토벤",
@@ -22480,7 +22522,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이진화"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "루트비히 판 베토벤",
       "요하네스 브람스",
@@ -22544,7 +22586,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "손열음"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "이그나시 얀 파데레프스키",
       "J.S. 바흐",
@@ -22578,7 +22620,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이원해",
       "최형록"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클라라 슈만",
       "요하네스 브람스"
@@ -22616,7 +22658,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박선영",
       "신재은 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -22677,7 +22719,7 @@ export const INITIAL_REAL_CONCERTS = [
       "황민웅",
       "조대연"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -22705,7 +22747,7 @@ export const INITIAL_REAL_CONCERTS = [
       "설지영",
       "신민철"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "브람스"
     ],
@@ -22803,7 +22845,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김정원",
       "임지영"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -22947,7 +22989,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "16:00",
     "venue": "고양어울림누리",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -22970,7 +23012,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "고양아람누리",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -23112,7 +23154,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전시립연정국악원",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -23135,7 +23177,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "엘림아트센터",
     "city": "인천광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -23167,7 +23209,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299101_260821_144752.png",
     "price": "전석 120,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1246855",
-    "cast": "안일구"
+    "cast": "안일구",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF302784",
@@ -23283,7 +23326,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김태훈",
       "김재홍"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -23429,7 +23472,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김도윤",
       "이선호"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "볼프강 아마데우스 모차르트",
       "J.S. 바흐",
@@ -23558,7 +23601,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "율리우스 아살"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "벨라 버르토크",
       "루트비히 판 베토벤",
@@ -23661,7 +23704,7 @@ export const INITIAL_REAL_CONCERTS = [
       "하수진",
       "우지연 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -23723,7 +23766,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이정은"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -23760,11 +23803,13 @@ export const INITIAL_REAL_CONCERTS = [
       "김정수",
       "배하은 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Le nozze di Figaro, K. 492 (모차르트: 오페라 피가로의 결혼)"
+    ],
     "price": "전석무료",
     "ticketUrl": "http://nonsan.moonhwain.net/rsvc/rsv_pm.html?b_id=nonsan&amp;p_idx=91",
     "status": "지나간공연",
@@ -23793,7 +23838,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김승철",
       "박은순 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -23883,7 +23928,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이지헌",
       "나대주 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -24128,7 +24173,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김유빈"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "표트르 일리치 차이콥스키",
       "세르게이 라흐마니노프",
@@ -24483,11 +24528,13 @@ export const INITIAL_REAL_CONCERTS = [
       "이아람",
       "정국철 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "조르주 비제"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Bizet: Carmen (조르주 비제: 오페라 카르멘)"
+    ],
     "price": "R석 100,000원, S석 70,000원, 2층석 50,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65982",
     "status": "지나간공연",
@@ -24575,7 +24622,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정제윤",
       "손가슬 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -24665,7 +24712,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박상욱",
       "김덕우"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -24719,7 +24766,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전예술의전당",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -24751,7 +24798,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "울산중구문화의전당",
     "city": "울산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -24805,7 +24852,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "강릉아트센터 (구. 강릉문화예술관)",
     "city": "강원특별자치도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -24890,7 +24937,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "일신홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -24977,7 +25024,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "인천문화예술회관",
     "city": "인천광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -25188,7 +25235,7 @@ export const INITIAL_REAL_CONCERTS = [
       "제상철",
       "서선옥 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "모차르트"
     ],
@@ -25215,7 +25262,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "손민수"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "바흐"
     ],
@@ -25302,7 +25349,7 @@ export const INITIAL_REAL_CONCERTS = [
       "강승민",
       "진영선"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -25336,7 +25383,7 @@ export const INITIAL_REAL_CONCERTS = [
       "허성우",
       "박종관"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -25523,11 +25570,15 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "만능재치꾼 피가로"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트",
+      "조아키노 로시니"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Le nozze di Figaro, K. 492 (모차르트: 오페라 피가로의 결혼)",
+      "G. Rossini: Il barbiere di Siviglia (조아키노 로시니: 오페라 세비야의 이발사)"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/619928",
     "status": "지나간공연",
@@ -25552,7 +25603,7 @@ export const INITIAL_REAL_CONCERTS = [
       "스베틀린 루세브",
       "문태국"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -25612,7 +25663,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "제22회 부산국제합창제"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -25677,7 +25728,7 @@ export const INITIAL_REAL_CONCERTS = [
       "조우태",
       "이금빈 등"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -25701,7 +25752,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "고양어울림누리",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -25795,7 +25846,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구서구문화회관",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -25827,7 +25878,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예나아트홀",
     "city": "강원특별자치도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -25903,7 +25954,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "로데아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -25954,7 +26005,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "군산예술의전당",
     "city": "전북특별자치도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -25977,7 +26028,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "고양아람누리",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -26007,7 +26058,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "강동아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -26038,7 +26089,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "국립극장",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -26064,7 +26115,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이나현"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "프랑수아 쿠프랭",
       "루트비히 판 베토벤",
@@ -26103,7 +26154,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김황경",
       "이미란 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "라벨"
     ],
@@ -26139,7 +26190,7 @@ export const INITIAL_REAL_CONCERTS = [
       "전용현",
       "김호준 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -26202,7 +26253,7 @@ export const INITIAL_REAL_CONCERTS = [
       "안대현",
       "김규태 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -26295,7 +26346,7 @@ export const INITIAL_REAL_CONCERTS = [
       "손지훈",
       "이동환 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "모차르트"
     ],
@@ -26324,7 +26375,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이금희 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -26417,7 +26468,7 @@ export const INITIAL_REAL_CONCERTS = [
       "윤영석",
       "임재웅 등"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -26512,7 +26563,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김정규",
       "윤종신 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -26569,7 +26620,7 @@ export const INITIAL_REAL_CONCERTS = [
       "안민혁",
       "임정우"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -26602,7 +26653,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김태선",
       "조아영 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -27089,7 +27140,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "(재) 영화의전당",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -27135,7 +27186,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "한국소리문화의전당",
     "city": "전북특별자치도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -27194,11 +27245,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "15:00",
     "venue": "강동아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://www.gdfac.or.kr/product/ko/performance/258491",
     "status": "지나간공연",
@@ -27252,7 +27305,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "평택시남부문예회관",
     "city": "경기도",
-    "performerType": "독주",
+    "performerType": "독주회",
     "composers": [
       "파데레프스키",
       "프리드만",
@@ -27319,7 +27372,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "HD아트센터(구 현대예술관)",
     "city": "울산광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -27399,7 +27452,7 @@ export const INITIAL_REAL_CONCERTS = [
       "문진성",
       "김명현"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -27431,7 +27484,7 @@ export const INITIAL_REAL_CONCERTS = [
       "최민지",
       "황건영"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -27627,7 +27680,7 @@ export const INITIAL_REAL_CONCERTS = [
       "손지훈",
       "이동환 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "모차르트"
     ],
@@ -27718,7 +27771,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "일리야 라쉬코프스키 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "라흐마니노프"
     ],
@@ -27751,7 +27804,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박소라",
       "나윤채 등"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -27779,7 +27832,7 @@ export const INITIAL_REAL_CONCERTS = [
       "우수현",
       "박영성"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -27821,7 +27874,7 @@ export const INITIAL_REAL_CONCERTS = [
       "임승호",
       "원정아"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -28044,7 +28097,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "길병민"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -28073,7 +28126,7 @@ export const INITIAL_REAL_CONCERTS = [
       "전민영",
       "김승혜 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -28172,7 +28225,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김정랑",
       "고동금 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -28201,7 +28254,7 @@ export const INITIAL_REAL_CONCERTS = [
       "서혜리",
       "정욱"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -28331,7 +28384,7 @@ export const INITIAL_REAL_CONCERTS = [
       "신인섭",
       "우상혁 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -28422,7 +28475,7 @@ export const INITIAL_REAL_CONCERTS = [
       "여지영",
       "유미진"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -28446,7 +28499,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014846",
@@ -28475,8 +28528,10 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "비원뮤직홀",
     "city": "대구광역시",
-    "performerType": "실내악",
-    "pieces": [],
+    "performerType": "오페라",
+    "pieces": [
+      "G. Verdi: La Traviata (주세페 베르디: 오페라 라 트라비아타)"
+    ],
     "price": "전석무료",
     "ticketUrl": "http://www.ticketlink.co.kr/product/66076",
     "status": "지나간공연",
@@ -28495,7 +28550,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이지영"
     ],
     "composers": [
-      "클래식 명작"
+      "주세페 베르디"
     ],
     "runtime": "1시간 10분"
   },
@@ -28538,7 +28593,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "15:00",
     "venue": "NCM STUDIO",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1747676",
@@ -28626,7 +28681,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "대구콘서트하우스",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/66034",
@@ -28686,7 +28741,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "KBS [본관]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -28749,11 +28804,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "강동아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)"
+    ],
     "price": "R석 80,000원, S석 50,000원, A석 30,000원",
     "ticketUrl": "https://gdfac.or.kr/product/performance/258475",
     "status": "지나간공연",
@@ -28804,7 +28861,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "사유원",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -28827,7 +28884,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -28896,7 +28953,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "GS칼텍스 예울마루",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -28919,7 +28976,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "함안문화예술회관",
     "city": "경상남도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -28942,7 +28999,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "(재) 영화의전당",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -29074,7 +29131,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김현미",
       "오윤주"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -29131,7 +29188,7 @@ export const INITIAL_REAL_CONCERTS = [
       "하세연",
       "박영성"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -29189,7 +29246,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "일리야 라쉬코프스키 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "라흐마니노프"
     ],
@@ -29377,7 +29434,7 @@ export const INITIAL_REAL_CONCERTS = [
       "남자은",
       "최민정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -29434,7 +29491,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이근영"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -29522,7 +29579,7 @@ export const INITIAL_REAL_CONCERTS = [
       "장세인",
       "안지원"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -29610,7 +29667,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "프레디 켐프"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -29741,7 +29798,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "15:00",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012737",
@@ -29848,7 +29905,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "(재) 영화의전당",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -29901,7 +29958,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이정미",
       "최연주 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -29971,7 +30028,7 @@ export const INITIAL_REAL_CONCERTS = [
       "최운현",
       "한애나 등"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -30109,7 +30166,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이문선",
       "이미경 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -30222,7 +30279,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김세준",
       "박종해"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -30254,7 +30311,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "손민수"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -30371,7 +30428,7 @@ export const INITIAL_REAL_CONCERTS = [
       "방희수",
       "김지혜 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -30398,7 +30455,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "남양주시립합창단"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -30454,7 +30511,7 @@ export const INITIAL_REAL_CONCERTS = [
       "진선미",
       "김소정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -30659,7 +30716,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "일리야 라쉬코프스키 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -30808,7 +30865,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "성남아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -30840,7 +30897,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "고양어울림누리",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -30863,7 +30920,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "고양아람누리",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -30886,7 +30943,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "신세계남산",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -30909,7 +30966,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "아양아트센터",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -30932,7 +30989,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -30985,7 +31042,7 @@ export const INITIAL_REAL_CONCERTS = [
       "안환",
       "박준호 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "멘델스존"
     ],
@@ -31012,7 +31069,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "오상은"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -31097,7 +31154,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김우연",
       "김재원"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -31566,7 +31623,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정준식",
       "최병혁 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -31698,7 +31755,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "푸르지오아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://ticket.melon.com/performance/index.htm?prodId=214034",
@@ -31729,7 +31786,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "성남아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014929",
@@ -31756,7 +31813,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "하남문화예술회관",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -31848,7 +31905,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "다산아트홀",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -31871,7 +31928,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -31921,7 +31978,7 @@ export const INITIAL_REAL_CONCERTS = [
       "최재원",
       "강자연"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -31952,7 +32009,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이새미"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -31979,7 +32036,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "안정현 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -32069,11 +32126,13 @@ export const INITIAL_REAL_CONCERTS = [
       "조너선 스토턴",
       "김요한 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "리하르트 바그너"
     ],
-    "pieces": [],
+    "pieces": [
+      "R. Wagner: Das Rheingold, WWV 86A (리하르트 바그너: 오페라 라인의 황금)"
+    ],
     "price": "R석 150,000원, S석 120,000원, A석 90,000원, B석 60,000원, C석 40,000원, D석  20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26001652",
     "status": "공연예정",
@@ -32096,7 +32155,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "스미노 하야토"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "프레데리크 쇼팽",
       "스미노 하야토",
@@ -32197,7 +32256,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이정우",
       "강지승"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "Mozart"
     ],
@@ -32230,11 +32289,15 @@ export const INITIAL_REAL_CONCERTS = [
       "김윤희",
       "김진욱 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트",
+      "조아키노 로시니"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Le nozze di Figaro, K. 492 (모차르트: 오페라 피가로의 결혼)",
+      "G. Rossini: Il barbiere di Siviglia (조아키노 로시니: 오페라 세비야의 이발사)"
+    ],
     "price": "R석 20,000원, S석 15,000원, A석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014786",
     "status": "지나간공연",
@@ -32354,7 +32417,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "지호남"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -32420,7 +32483,7 @@ export const INITIAL_REAL_CONCERTS = [
       "조용석",
       "정은지 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -32452,7 +32515,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김동원",
       "이진수 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -32604,7 +32667,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김정아"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -32752,7 +32815,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "비오케이아트센터(BOK아트센터)",
     "city": "세종특별자치시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "Bruch – Op.88, I",
       "Dohnányi – Serenade in C major, Op.10, I. Marcia",
@@ -32867,7 +32930,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "고양아람누리",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -32936,7 +32999,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -33091,7 +33154,7 @@ export const INITIAL_REAL_CONCERTS = [
       "성민제",
       "고의석"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -33118,7 +33181,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이루이사"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "바흐"
     ],
@@ -33363,7 +33426,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이주현"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -33541,7 +33604,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김효주",
       "서주장 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "로시니"
     ],
@@ -33771,7 +33834,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013999",
@@ -33801,7 +33864,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전예술의전당",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014550",
@@ -33883,7 +33946,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -33929,7 +33992,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "구로아트밸리",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -33981,7 +34044,7 @@ export const INITIAL_REAL_CONCERTS = [
       "신은경",
       "김미경 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -34012,7 +34075,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김영애",
       "이선미"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "볼프강 아마데우스 모차르트",
       "로베르트 슈만"
@@ -34049,7 +34112,7 @@ export const INITIAL_REAL_CONCERTS = [
       "권세연",
       "홍청의"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -34080,7 +34143,7 @@ export const INITIAL_REAL_CONCERTS = [
       "심윤지",
       "윤일수"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -34187,7 +34250,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박회림",
       "조병익"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -34262,7 +34325,7 @@ export const INITIAL_REAL_CONCERTS = [
       "장지애",
       "김정권 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "볼프강 아마데우스 모차르트"
     ],
@@ -34460,7 +34523,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "민경배"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -34502,7 +34565,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김성온",
       "강은정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -34543,7 +34606,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이병웅",
       "김소영 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -34604,7 +34667,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박지윤",
       "일리야 라쉬코프스키"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "바흐",
       "베토벤",
@@ -34703,7 +34766,7 @@ export const INITIAL_REAL_CONCERTS = [
       "홍채린",
       "김예은"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -34773,7 +34836,7 @@ export const INITIAL_REAL_CONCERTS = [
       "오인덕",
       "유혜배 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -35068,7 +35131,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "추교준"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "로베르트 슈만",
       "프란츠 슈베르트",
@@ -35315,7 +35378,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "군포문화예술회관",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "전석무료",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014941",
@@ -35544,7 +35607,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "구로창의아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -35708,7 +35771,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이상민"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -35776,7 +35839,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "지유경"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -35806,7 +35869,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "비킹구르 올라프손"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "베토벤"
@@ -35915,7 +35978,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박진우",
       "김진택"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "프레데리크 쇼팽"
     ],
@@ -35947,7 +36010,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "제4회 파주시민 합창제"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -36236,7 +36299,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298415_260813_130743.gif",
     "price": "VIP석 120,000원, R석 90,000원, S석 70,000원, A석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011735",
-    "cast": "일리야 라쉬코프스키 등"
+    "cast": "일리야 라쉬코프스키 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF296962",
@@ -36255,7 +36319,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296962_260727_111329.gif",
     "price": "VIP석 100,000원, R석 80,000원, S석 60,000원, A석 50,000원, 시야방해석  70,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010746",
-    "cast": "백윤학, 이희주 등"
+    "cast": "백윤학, 이희주 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF293106",
@@ -36274,7 +36339,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293106_261006_174053.png",
     "price": "전석무료",
     "ticketUrl": "http://www.ticketlink.co.kr/product/63634",
-    "cast": "최은혁, 오수빈, 김순자, 이은림, 김현준, 정효민 등"
+    "cast": "최은혁, 오수빈, 김순자, 이은림, 김현준, 정효민 등",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF288330",
@@ -36293,7 +36359,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF288330_260331_101144.gif",
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26001966",
-    "cast": "박인석, 이은정, 황혁 등"
+    "cast": "박인석, 이은정, 황혁 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF304706",
@@ -36405,7 +36472,7 @@ export const INITIAL_REAL_CONCERTS = [
       "하만택",
       "박경준 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -36435,7 +36502,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세라믹팔레스홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014210",
@@ -36463,7 +36530,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "J. S. Bach: English Suite No. 2 in A Minor, BWV 807",
       "M. Ravel: La Valse",
@@ -36612,7 +36679,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "신민정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -36692,7 +36759,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정연경",
       "이지현"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "모차르트"
     ],
@@ -36725,7 +36792,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이무은",
       "임진영 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -36761,7 +36828,7 @@ export const INITIAL_REAL_CONCERTS = [
       "우경식",
       "이미영 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "바흐",
       "헨델"
@@ -36794,7 +36861,7 @@ export const INITIAL_REAL_CONCERTS = [
       "서형민",
       "이일세"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "베토벤"
     ],
@@ -36880,7 +36947,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "뮤직앤아트스튜디오",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "S. L. Weiss",
       "J. Morel Sonatina (1st Movemrnt)",
@@ -36947,7 +37014,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "J. S. Bach: Sonata for Solo Violin No. 1 in G Minor, BWV 1001",
       "L. v. Beethoven: Violin Sonata No. 5 in F major, Op. 24 'Spring' (봄 소나타)",
@@ -37007,7 +37074,8 @@ export const INITIAL_REAL_CONCERTS = [
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304390_261026_110018.gif",
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304390_202610261100188100.gif"
-    ]
+    ],
+    "performerType": "성악/합창"
   },
   {
     "id": "kopis-PF285541",
@@ -37026,7 +37094,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285541_260223_130740.gif",
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26002371",
-    "cast": ""
+    "cast": "",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304858",
@@ -37036,7 +37105,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "구미시문화예술회관",
     "city": "경상북도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -37059,7 +37128,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전시립연정국악원",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -37085,7 +37154,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "전남광주통합특별시립합창단 기획연주회 Ⅶ. 마티네콘서트"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "베르디"
     ],
@@ -37259,7 +37328,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김종현",
       "김동엽"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -37323,7 +37392,7 @@ export const INITIAL_REAL_CONCERTS = [
       "류승완",
       "김하얀"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -37375,7 +37444,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [
       "잊었던 마음 (김소월 시/김순남 곡) (Sop. 홍예빈 / Pf. 최영민)",
       "탱자 (박노춘 시/김순남 곡) (Bar. 강형규 / Pf. 최영민)"
@@ -37445,7 +37514,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세라믹팔레스홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014241",
@@ -37474,7 +37543,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "반포심산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014716",
@@ -37517,7 +37586,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286123_260923_155328.gif",
     "price": "전석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26000940",
-    "cast": "조성현, 이은지, 조현근"
+    "cast": "조성현, 이은지, 조현근",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF304834",
@@ -37620,7 +37690,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이동호",
       "박혜지 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "드미트리 쇼스타코비치"
     ],
@@ -37726,7 +37796,7 @@ export const INITIAL_REAL_CONCERTS = [
       "차예은",
       "박상민 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -37787,7 +37857,7 @@ export const INITIAL_REAL_CONCERTS = [
       "송현정",
       "김준형"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -37858,9 +37928,9 @@ export const INITIAL_REAL_CONCERTS = [
       "유영광",
       "김한결 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
     "pieces": [
       "G. Puccini: Opera 〈La Bohème〉 (푸치니 서거 100주년 전막 공연)"
@@ -37925,7 +37995,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김봉균",
       "박홍진"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -37953,7 +38023,7 @@ export const INITIAL_REAL_CONCERTS = [
       "오유진",
       "히로타 슌지"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "Mozart",
       "모차르트"
@@ -37992,7 +38062,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정제학",
       "심규호 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -38052,7 +38122,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "손열음"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -38108,7 +38178,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구콘서트하우스",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "L. v. Beethoven: Cello Sonata No. 3 in A major, Op. 69 (첼로 소나타 3번)",
       "J. Brahms: Cello Sonata No. 2 in F major, Op. 99 (첼로 소나타 2번)",
@@ -38185,7 +38255,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299172_260824_115849.gif",
     "price": "일반석 10,000원, 2열 할인석 7,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012203",
-    "cast": "신현선, 윤정수, 여가영, 나승준, 황지은, 노원빈, 최지호 등"
+    "cast": "신현선, 윤정수, 여가영, 나승준, 황지은, 노원빈, 최지호 등",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF297860",
@@ -38204,7 +38275,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297860_260806_131548.jpg",
     "price": "R석 20,000원, S석 10,000원",
     "ticketUrl": "http://www.artgy.or.kr/PF/PF0201V.aspx?showid=0000008397",
-    "cast": ""
+    "cast": "",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF280847",
@@ -38233,7 +38305,8 @@ export const INITIAL_REAL_CONCERTS = [
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280847_261008_173754.jpg",
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280847_202610080537545420.jpg"
-    ]
+    ],
+    "performerType": "성악/합창"
   },
   {
     "id": "kopis-PF304679",
@@ -38243,7 +38316,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "익산예술의전당",
     "city": "전북특별자치도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "칼 오르프"
     ],
@@ -38278,7 +38351,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "세르게이 프로코피예프",
       "에드바르 그리그"
@@ -38315,7 +38388,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "천세정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "쇼팽"
     ],
@@ -38356,7 +38429,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김요한",
       "공병우 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "베토벤"
     ],
@@ -38387,7 +38460,7 @@ export const INITIAL_REAL_CONCERTS = [
       "조현근",
       "이은지"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "바흐"
     ],
@@ -38484,7 +38557,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김혜진",
       "유주연 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -38514,7 +38587,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이채영"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "J.S. 바흐",
       "루트비히 판 베토벤",
@@ -38550,7 +38623,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이진",
       "박상욱"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "브람스"
     ],
@@ -38646,7 +38719,7 @@ export const INITIAL_REAL_CONCERTS = [
       "오근영",
       "진건혜 등"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "비발디"
     ],
@@ -38923,7 +38996,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "H. I. F. Biber: Passacaglia in G Minor for Violin Solo",
       "A. Schnittke: Sonata No. 1 for Violin and Piano",
@@ -38988,7 +39061,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구콘서트하우스",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "W. A. Mozart: Piano Sonata No. 11 in A Major, K. 331",
       "F. Chopin: Ballade No. 1 in G Minor, Op. 23",
@@ -39085,11 +39158,17 @@ export const INITIAL_REAL_CONCERTS = [
     "region": "서울",
     "status": "공연예정",
     "category": "클래식",
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)"
+    ],
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304381_261026_104305.jpg",
     "price": "전석 5,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1759256",
-    "cast": "박미화, 김동원, 윤현정, 안대현"
+    "cast": "박미화, 김동원, 윤현정, 안대현",
+    "performerType": "오페라",
+    "composers": [
+      "자코모 푸치니"
+    ]
   },
   {
     "id": "kopis-PF304369",
@@ -39124,7 +39203,8 @@ export const INITIAL_REAL_CONCERTS = [
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304369_202610261023230371.jpg",
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304369_202610261023230190.jpg"
-    ]
+    ],
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF296633",
@@ -39147,7 +39227,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296633_260722_134340.gif",
     "price": "VIP석 120,000원, R석 90,000원, S석 70,000원, A석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010560",
-    "cast": "최영선, 임지영, 세르게이 타라소프 등"
+    "cast": "최영선, 임지영, 세르게이 타라소프 등",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304876",
@@ -39157,7 +39238,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "부천아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -39245,7 +39326,7 @@ export const INITIAL_REAL_CONCERTS = [
       "하장호",
       "김영실 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -39306,7 +39387,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "정보희"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -39372,7 +39453,7 @@ export const INITIAL_REAL_CONCERTS = [
       "변예진",
       "박영성"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -39403,7 +39484,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "바딤 콜로덴코"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -39438,7 +39519,7 @@ export const INITIAL_REAL_CONCERTS = [
       "권대현",
       "홍유리"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -39605,11 +39686,13 @@ export const INITIAL_REAL_CONCERTS = [
       "한준헌",
       "김윤복 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)"
+    ],
     "price": "전석무료",
     "ticketUrl": "https://scac.lodev.kr/eventView.do?group_id=2000621",
     "status": "공연예정",
@@ -39769,9 +39852,9 @@ export const INITIAL_REAL_CONCERTS = [
       "문현주",
       "박의현 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
     "pieces": [
       "리하르트 바그너: 베젠동크 가곡 WWV 91 (협연: 소프라노 서선영)",
@@ -39802,7 +39885,7 @@ export const INITIAL_REAL_CONCERTS = [
       "조미연",
       "권현진"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "펠릭스 멘델스존",
       "카미유 생상스",
@@ -39924,7 +40007,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "16:00",
     "venue": "인천문화예술회관",
     "city": "인천광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "전석무료",
     "ticketUrl": "https://www.incheon.go.kr/art/ART010101/view?resveProgrmSeCode=C&amp;resveGroupSn=5&amp;progrmSn=10916",
@@ -39952,7 +40035,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "15:00",
     "venue": "부평아트센터",
     "city": "인천광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "전석무료",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015179",
@@ -40076,11 +40159,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "가이타노 도니제티"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Donizetti: L'elisir d'amore (가이타노 도니제티: 오페라 사랑의 묘약)"
+    ],
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65534",
     "status": "공연예정",
@@ -40286,7 +40371,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304414_261026_123834.gif",
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014332",
-    "cast": "정희연, 신민철"
+    "cast": "정희연, 신민철",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF296625",
@@ -40305,7 +40391,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296625_260722_132756.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010090",
-    "cast": ""
+    "cast": "",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF293426",
@@ -40328,7 +40415,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293426_260611_132411.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008299",
-    "cast": "김수연"
+    "cast": "김수연",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF293370",
@@ -40351,7 +40439,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293370_260611_103303.png",
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1417626",
-    "cast": "신동찬, 임현진"
+    "cast": "신동찬, 임현진",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF291715",
@@ -40370,7 +40459,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF291715_260519_103330.gif",
     "price": "VIP석 154,000원, R석 132,000원, S석 110,000원, A석 99,000원, B석 77,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/63080",
-    "cast": ""
+    "cast": "",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304958",
@@ -40380,7 +40470,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -40403,7 +40493,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "성남아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -40426,7 +40516,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -40472,7 +40562,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "문산행복센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -40521,7 +40611,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김준희"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -40583,7 +40673,7 @@ export const INITIAL_REAL_CONCERTS = [
       "장우리",
       "박로한"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "슈만",
@@ -40727,7 +40817,7 @@ export const INITIAL_REAL_CONCERTS = [
       "안용",
       "이선아 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -40843,7 +40933,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "최성훈 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -40999,7 +41089,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295559_260708_105245.gif",
     "price": "전석 40,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/64200",
-    "cast": "배창훈, 박성근, 신호연, 박현우, 이상준"
+    "cast": "배창훈, 박성근, 신호연, 박현우, 이상준",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF293685",
@@ -41018,7 +41109,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293685_260615_120759.gif",
     "price": "R석 100,000원, S석 80,000원, A석 60,000원",
     "ticketUrl": "http://www.artgy.or.kr/PF/PF0201V.aspx?showid=0000008363",
-    "cast": "백윤학, 이희주 등"
+    "cast": "백윤학, 이희주 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF304821",
@@ -41028,11 +41120,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구문화예술회관",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "주세페 베르디"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Verdi: La Traviata (주세페 베르디: 오페라 라 트라비아타)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -41080,7 +41174,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "14:00",
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "요한 제바스티안 바흐",
       "게오르크 프리드리히 헨델"
@@ -41118,7 +41212,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "18:30",
     "venue": "아르케아트홀",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -41150,7 +41244,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "15:00",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "루트비히 판 베토벤",
       "로베르트 슈만",
@@ -41404,7 +41498,7 @@ export const INITIAL_REAL_CONCERTS = [
       "플로라 파브리",
       "정민호 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "바흐"
     ],
@@ -41466,7 +41560,7 @@ export const INITIAL_REAL_CONCERTS = [
       "강초롱",
       "윤예진"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -41498,7 +41592,7 @@ export const INITIAL_REAL_CONCERTS = [
       "윤태현",
       "박종화 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -41559,7 +41653,7 @@ export const INITIAL_REAL_CONCERTS = [
       "안종도",
       "송현민"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -41656,7 +41750,7 @@ export const INITIAL_REAL_CONCERTS = [
       "고성현",
       "이경민"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -41712,7 +41806,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박동희",
       "최진아 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -41741,7 +41835,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김채원",
       "박하은"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "루트비히 판 베토벤",
       "조아키노 로시니"
@@ -41862,7 +41956,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "복합문화공간 플랜에이",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [
       "G. Puccini - Opera ‘Gianni Schicchi’ 中 ‘O mio babbino caro’"
     ],
@@ -41926,7 +42020,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "을숙도문화회관",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "https://esd.moonhwain.net:451/rsvc/rsv_pm_detail.html?pfmIng=1&amp;p_idx=442",
@@ -41950,7 +42044,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전시립연정국악원",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014832",
@@ -42112,7 +42206,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "소현정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -42393,7 +42487,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구콘서트하우스",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "Francis Poulenc - Sonata for Flute and Piano (1956-1957)",
       "Benjamin Godard - Suite de Trois Morceaux for flute and piano (1890)"
@@ -42424,7 +42518,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "신영체임버홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 40,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014775",
@@ -42579,7 +42673,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295530_260707_142100.jpg",
     "price": "전석 10,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1689603",
-    "cast": "안인모"
+    "cast": "안인모",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304881",
@@ -42612,11 +42707,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "진도향토문화회관",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "주세페 베르디"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Verdi: Rigoletto (주세페 베르디: 오페라 리골레토)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%A7%84%EB%8F%84%ED%96%A5%ED%86%A0%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -42667,11 +42764,13 @@ export const INITIAL_REAL_CONCERTS = [
       "이하진",
       "정기훈 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)"
+    ],
     "price": "전석무료",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014501",
     "status": "공연예정",
@@ -42767,7 +42866,7 @@ export const INITIAL_REAL_CONCERTS = [
       "권혜경",
       "박정자"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -42832,7 +42931,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정한결",
       "유성권 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -42985,7 +43084,7 @@ export const INITIAL_REAL_CONCERTS = [
       "전상용",
       "지준혁 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -43099,7 +43198,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구콘서트하우스",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "pieces": [
       "F. P. Tosti: Ideale, Non t'amo piu, Marechiare, L'alba separa dalla luce l'ombra",
       "G. Verdi: Opera <Rigoletto>, <La Traviata>, <Il Trovatore> 주요 아리아"
@@ -43133,7 +43232,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "롯데콘서트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [
       "Alto(aria) + 합창/ 아름다운 소식을 전하는 자여"
     ],
@@ -43166,7 +43265,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "인천문화예술회관",
     "city": "인천광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [
       "Er ist gekommen in Sturm und Regen 그는 폭풍과 빗속에 왔네",
       "Liebst du um Schönheit 아름다움 때문에 사랑한다면",
@@ -43199,7 +43298,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "S. Rachmaninoff: Prelude in C-sharp Minor, Op. 3 No. 2",
       "S. Rachmaninoff: 10 Preludes, Op. 23 (No. 2, 3, 4, 6, 8, 9)",
@@ -43379,7 +43478,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297173_260729_103550.gif",
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010989",
-    "cast": "다니엘 린데만, 박준성, 예수아 등"
+    "cast": "다니엘 린데만, 박준성, 예수아 등",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF284239",
@@ -43398,7 +43498,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284239_260202_131024.png",
     "price": "전석 30,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/61049",
-    "cast": "박종성"
+    "cast": "박종성",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304837",
@@ -43442,7 +43543,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전예술의전당",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -43525,7 +43626,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "강지혜"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "슈만"
     ],
@@ -43557,7 +43658,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김미영",
       "민경식"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -43744,7 +43845,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이정선"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "프레데리크 쇼팽"
     ],
@@ -43784,7 +43885,7 @@ export const INITIAL_REAL_CONCERTS = [
       "안준희",
       "이시욱"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "슈만"
     ],
@@ -43849,7 +43950,7 @@ export const INITIAL_REAL_CONCERTS = [
       "송강이",
       "한은지"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -43939,7 +44040,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "R석 50,000원, S석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014334",
@@ -43999,7 +44100,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "거제문화예술회관",
     "city": "경상남도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -44039,7 +44140,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292616_260601_114441.jpg",
     "price": "R석 20,000원, S석 15,000원, A석 10,000원",
     "ticketUrl": "https://www.ulsan.go.kr/ucac/art/page.do",
-    "cast": "사샤 괴첼, 모네 핫토리 등"
+    "cast": "사샤 괴첼, 모네 핫토리 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF304944",
@@ -44095,7 +44197,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전시립연정국악원",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -44118,7 +44220,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "을숙도문화회관",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -44275,7 +44377,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이재은",
       "조자영 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -44350,7 +44452,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김영준",
       "이희라"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -44382,7 +44484,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이서현",
       "홍인경"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -44449,9 +44551,10 @@ export const INITIAL_REAL_CONCERTS = [
       "김순희",
       "이범주 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "베르디"
+      "베르디",
+      "주세페 베르디"
     ],
     "pieces": [
       "G. Verdi: Opera 〈Rigoletto〉 Highlights ('La donna è mobile', 'Caro nome')",
@@ -44543,7 +44646,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정강한",
       "정수진"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -44573,7 +44676,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "오현승"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -44702,7 +44805,7 @@ export const INITIAL_REAL_CONCERTS = [
       "원재연",
       "김수연"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -44867,11 +44970,13 @@ export const INITIAL_REAL_CONCERTS = [
       "남자은",
       "백나현 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "가이타노 도니제티"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Donizetti: L'elisir d'amore (가이타노 도니제티: 오페라 사랑의 묘약)"
+    ],
     "price": "R석 20,000원, S석 15,000원, A석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65886",
     "status": "공연예정",
@@ -44949,7 +45054,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "고희전 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -45197,11 +45302,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "성남아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EB%82%A8%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -45260,7 +45367,8 @@ export const INITIAL_REAL_CONCERTS = [
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304466_261026_142034.gif",
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304466_202610260220340960.jpg"
-    ]
+    ],
+    "performerType": "성악/합창"
   },
   {
     "id": "kopis-PF304460",
@@ -45279,7 +45387,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304460_261026_140911.png",
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1747201",
-    "cast": "박찬미, 안미란, 박현재"
+    "cast": "박찬미, 안미란, 박현재",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF293457",
@@ -45302,7 +45411,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293457_260611_143057.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008462",
-    "cast": "황수미, 방은현"
+    "cast": "황수미, 방은현",
+    "performerType": "성악/합창"
   },
   {
     "id": "kopis-PF290652",
@@ -45321,7 +45431,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF290652_260504_182117.png",
     "price": "전석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/62983",
-    "cast": "우정훈, 김동준, 조민호, 윤상욱, 오영은, 조한솔, 정호린"
+    "cast": "우정훈, 김동준, 조민호, 윤상욱, 오영은, 조한솔, 정호린",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304840",
@@ -45331,7 +45442,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "대전예술의전당",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -45361,7 +45472,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "부평아트센터",
     "city": "인천광역시",
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -45384,7 +45495,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -45430,7 +45541,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대구어린이회관 꾀꼬리극장",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -45499,7 +45610,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "모스크바홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -45526,7 +45637,7 @@ export const INITIAL_REAL_CONCERTS = [
       "유송윤",
       "문재원"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -45599,7 +45710,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "윤유정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -45669,7 +45780,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "고연경"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -45973,7 +46084,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "J. Brahms: Violin Sonata No. 1 in G Major, Op. 78",
       "J. Brahms: Violin Sonata No. 2 in A Major, Op. 100",
@@ -46141,7 +46252,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298463_260813_145555.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/64804",
-    "cast": "이명로, 신혜원, 박민희, 이지우, 이석민"
+    "cast": "이명로, 신혜원, 박민희, 이지우, 이석민",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304922",
@@ -46233,7 +46345,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전시립연정국악원",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -46314,7 +46426,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "조수연"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -46345,7 +46457,7 @@ export const INITIAL_REAL_CONCERTS = [
       "유민아",
       "공원경"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "요한 제바스티안 바흐",
       "세르게이 프로코피예프"
@@ -46418,7 +46530,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304391_261026_110353.gif",
     "price": "전석 40,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015420",
-    "cast": "폴 메이어, 에릭 르 사쥬"
+    "cast": "폴 메이어, 에릭 르 사쥬",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF304377",
@@ -46437,7 +46550,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304377_261026_103405.jpg",
     "price": "R석 20,000원, S석 10,000원",
     "ticketUrl": "https://www.lotteconcerthall.com/product/performance/261250",
-    "cast": "홍승아 등"
+    "cast": "홍승아 등",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF303309",
@@ -46451,7 +46565,7 @@ export const INITIAL_REAL_CONCERTS = [
       "임수진",
       "염혜경 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -46548,7 +46662,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박성모",
       "히로타 슌지"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -46587,7 +46701,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김현정",
       "이호중 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -46684,7 +46798,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수원SK아트리움",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "R석 20,000원, S석 10,000원",
     "ticketUrl": "http://www.artsuwon.or.kr/?p=10_view&amp;p_idx=5115&amp;page=1",
@@ -46822,7 +46936,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304402_261026_112926.gif",
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015247",
-    "cast": "박지현, 정찬미, 엄태현, 조미정, 신아름"
+    "cast": "박지현, 정찬미, 엄태현, 조미정, 신아름",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF304954",
@@ -46855,7 +46970,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "18:00",
     "venue": "꿈의숲아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "브람스"
     ],
@@ -46886,7 +47001,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "서귀포예술의전당",
     "city": "제주특별자치도",
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -46909,7 +47024,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전시립연정국악원",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -46932,7 +47047,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "모차르트",
       "베토벤",
@@ -46975,7 +47090,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박혜준",
       "김지훈"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "베토벤",
@@ -47078,7 +47193,7 @@ export const INITIAL_REAL_CONCERTS = [
       "유문선",
       "김종윤"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "프랑시스 풀랑크"
     ],
@@ -47244,7 +47359,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304426_261026_130359.jpg",
     "price": "전석 20,000원",
     "ticketUrl": "https://ticket.melon.com/performance/index.htm?prodId=214154",
-    "cast": "김주영, 김성은, 박유미"
+    "cast": "김주영, 김성은, 박유미",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF297325",
@@ -47263,7 +47379,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297325_260730_144955.jpg",
     "price": "전석 10,000원",
     "ticketUrl": "http://nyjcf.moonhwain.net/rsvc/rsv_pm.html?b_id=nyjcf&amp;p_idx=719",
-    "cast": "장일범, 이호철, 문정현, 김유미, 권한숙"
+    "cast": "장일범, 이호철, 문정현, 김유미, 권한숙",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304704",
@@ -47273,7 +47390,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "베토벤",
       "브람스",
@@ -47333,7 +47450,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "조윤정"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -47401,7 +47518,7 @@ export const INITIAL_REAL_CONCERTS = [
       "한재민",
       "강윤지 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -47429,7 +47546,7 @@ export const INITIAL_REAL_CONCERTS = [
       "윤용진",
       "김예슬"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "모차르트"
@@ -47463,7 +47580,7 @@ export const INITIAL_REAL_CONCERTS = [
       "일리야 라쉬코프스키",
       "조성호"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "로베르트 슈만",
       "요하네스 브람스",
@@ -47585,7 +47702,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "부산문화회관",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "Prelude and Fugue No. 1 in C Major, BWV 846",
       "No. 2 in c Minor, BWV 847",
@@ -47617,7 +47734,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
     "city": "전남광주통합특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [
       "펠릭스 멘델스존: 오라토리오 \"엘리야\" Op.70 전곡 (Felix Mendelssohn: Oratorio \"Elijah\", Op. 70)"
     ],
@@ -47666,7 +47783,8 @@ export const INITIAL_REAL_CONCERTS = [
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304398_261026_111736.gif",
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304398_202610261117366780.png"
-    ]
+    ],
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF280842",
@@ -47685,7 +47803,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280842_260806_173901.gif",
     "price": "전석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/60016",
-    "cast": "김선아, 최규미 등"
+    "cast": "김선아, 최규미 등",
+    "performerType": "성악/합창"
   },
   {
     "id": "kopis-PF304846",
@@ -47718,7 +47837,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "대전시립연정국악원",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -47741,7 +47860,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "로드아트센터 [부산]",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -47858,7 +47977,7 @@ export const INITIAL_REAL_CONCERTS = [
       "허정인",
       "일리야 라쉬코프스키"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "베토벤",
@@ -47930,11 +48049,13 @@ export const INITIAL_REAL_CONCERTS = [
       "유재언",
       "양종대 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "주세페 베르디"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Verdi: La Traviata (주세페 베르디: 오페라 라 트라비아타)"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "https://www.haman.go.kr/02574/02585.web?amode=view&amp;sno=4360&amp;smonth=2026-11",
     "status": "공연예정",
@@ -48029,11 +48150,13 @@ export const INITIAL_REAL_CONCERTS = [
       "박의현",
       "하현주 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)"
+    ],
     "price": "R석 50,000원, S석 30,000원, 학생전석  10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/65697",
     "status": "공연예정",
@@ -48134,7 +48257,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "경주예술의전당",
     "city": "경상북도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1754331",
@@ -48173,7 +48296,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304447_261026_133848.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014904",
-    "cast": "김태영, 김재원"
+    "cast": "김태영, 김재원",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF304430",
@@ -48195,7 +48319,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304430_261026_131246.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26006315",
-    "cast": "박지훈"
+    "cast": "박지훈",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF285362",
@@ -48216,7 +48341,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285362_260219_152115.gif",
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25017944",
-    "cast": "정나라, 이창호 등"
+    "cast": "정나라, 이창호 등",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304947",
@@ -48272,7 +48398,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "경동교회",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -48295,7 +48421,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "천주교 서울대교구 화양동성당",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -48321,7 +48447,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "황예진"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -48447,7 +48573,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김도현",
       "문양숙"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -48502,7 +48628,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "황성원"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -48534,7 +48660,7 @@ export const INITIAL_REAL_CONCERTS = [
       "강태이",
       "이희라"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -48576,11 +48702,13 @@ export const INITIAL_REAL_CONCERTS = [
       "임수연",
       "최병혁 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)"
+    ],
     "price": "R석 100,000원, S석 70,000원, A석 50,000원, B석 30,000원",
     "ticketUrl": "http://www.artgy.or.kr/PF/PF0201V.aspx?showid=0000008484",
     "status": "공연예정",
@@ -48642,7 +48770,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김연우",
       "조성덕 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -48669,7 +48797,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "박재오"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -48731,11 +48859,13 @@ export const INITIAL_REAL_CONCERTS = [
       "양석진",
       "금교동 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)"
+    ],
     "price": "R석 40,000원, S석 30,000원, A석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013565",
     "status": "공연예정",
@@ -48786,7 +48916,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "16:00",
     "venue": "음악의집",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "전석 25,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1620850",
@@ -48845,7 +48975,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "J. Haydn: Piano Sonata No. 31 in A-flat Major, Hob. XVI:46 (요제프 하이든: 피아노 소나타 31번 내림가장조)",
       "R. Schumann: Kreisleriana, Op. 16"
@@ -48879,7 +49009,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "14:00",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "A. Piazzolla: Las Cuatro Estaciones Porteñas (부에노스아이레스의 사계)",
       "A. Vivaldi: Le Quattro Stagioni, Op. 8 (사계)"
@@ -48998,7 +49128,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "20:00",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "G. Finzi: Interlude, Op. 21 (arr. for Oboe & Piano)",
       "C. Koechlin: Sonata for Oboe and Piano, Op. 58 - III. Andante, Le Soir dans la Campagne",
@@ -49032,11 +49162,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "14:00",
     "venue": "성남아트리움 (구. 성남시민회관)",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "조르주 비제"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Bizet: Carmen (조르주 비제: 오페라 카르멘)"
+    ],
     "price": "R석 60,000원, S석 40,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013227",
     "status": "공연예정",
@@ -49084,7 +49216,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "일신홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -49119,7 +49251,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304437_261026_132006.jpg",
     "price": "전석무료",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015380",
-    "cast": "박경, 한송현, 료타 나카무라, 유세이 타자키, 황지은"
+    "cast": "박경, 한송현, 료타 나카무라, 유세이 타자키, 황지은",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304372",
@@ -49138,7 +49271,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304372_261026_102916.jpg",
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1269745",
-    "cast": "오수민"
+    "cast": "오수민",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF293472",
@@ -49157,7 +49291,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293472_260611_145710.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008301",
-    "cast": "이지영, 최유진, 백은교, 변현정, 임창호, 문지원, 이신규 등"
+    "cast": "이지영, 최유진, 백은교, 변현정, 임창호, 문지원, 이신규 등",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF283669",
@@ -49176,7 +49311,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF283669_260122_134050.gif",
     "price": "전석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26000775",
-    "cast": ""
+    "cast": "",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304979",
@@ -49212,7 +49348,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "송윤진"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -49312,7 +49448,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "전민주"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "베토벤",
@@ -49377,7 +49513,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "윤재빈"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -49762,7 +49898,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "인천문화예술회관",
     "city": "인천광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -49831,7 +49967,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "16:00",
     "venue": "로드아트센터 [부산]",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "루트비히 판 베토벤",
       "세르게이 프로코피예프"
@@ -49866,7 +50002,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "20:00",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "요한 제바스티안 바흐",
       "프란츠 슈베르트",
@@ -49964,7 +50100,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이은빈",
       "문지영"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -50027,7 +50163,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "베토벤"
     ],
@@ -50064,7 +50200,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "김다솔"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "슈만"
     ],
@@ -50096,7 +50232,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "장은주"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -50180,7 +50316,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "Flute Sonata in E Minor, Op. 167 \"Undine\""
     ],
@@ -50249,7 +50385,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304441_261026_132543.png",
     "price": "전석무료",
     "ticketUrl": "https://www.jacf.or.kr/jacf/pageview.php?url=sub01a_view&amp;keyvalue=sub01&amp;idx=672",
-    "cast": "민인기, 이진영, 강명원, 최윤정, 주호남, 오영인, 조대현 등"
+    "cast": "민인기, 이진영, 강명원, 최윤정, 주호남, 오영인, 조대현 등",
+    "performerType": "성악/합창"
   },
   {
     "id": "kopis-PF304891",
@@ -50282,7 +50419,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -50317,7 +50454,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "정승미"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -50411,7 +50548,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "왕쯔통"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -50445,7 +50582,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김재원",
       "송현민"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -50681,7 +50818,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "신성호"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -50774,11 +50911,17 @@ export const INITIAL_REAL_CONCERTS = [
     "region": "울산",
     "status": "공연예정",
     "category": "클래식",
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)"
+    ],
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304393_261026_110739.png",
     "price": "전석무료",
     "ticketUrl": "https://crs.ubimc.or.kr/yeyak/event/all_list?prc=view&amp;prg_id=P260710101837980",
-    "cast": "김우경, 공병우, 박현주, 전승현, 서활란, 김병오, 이세희 등"
+    "cast": "김우경, 공병우, 박현주, 전승현, 서활란, 김병오, 이세희 등",
+    "performerType": "오페라",
+    "composers": [
+      "볼프강 아마데우스 모차르트"
+    ]
   },
   {
     "id": "kopis-PF297399",
@@ -50797,7 +50940,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297399_260731_140230.gif",
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010620",
-    "cast": "이종진, 선율, 강보라, 김용배 등"
+    "cast": "이종진, 선율, 강보라, 김용배 등",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF294908",
@@ -50816,7 +50960,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294908_260630_101036.gif",
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008415",
-    "cast": "송영민, 조희윤, 조하영, 한지윤, 유하나, 이종은"
+    "cast": "송영민, 조희윤, 조하영, 한지윤, 유하나, 이종은",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF293619",
@@ -50831,11 +50976,17 @@ export const INITIAL_REAL_CONCERTS = [
     "region": "부산",
     "status": "공연예정",
     "category": "클래식",
-    "pieces": [],
+    "pieces": [
+      "G. Bizet: Carmen (조르주 비제: 오페라 카르멘)"
+    ],
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293619_260612_161347.png",
     "price": "전석 20,000원",
     "ticketUrl": "https://classicbusan.busan.go.kr/product/performance/253215",
-    "cast": "김광현, 남수지, 김진훈, 이지헌, 장양진, 윤태희, 신동원 등"
+    "cast": "김광현, 남수지, 김진훈, 이지헌, 장양진, 윤태희, 신동원 등",
+    "performerType": "오페라",
+    "composers": [
+      "조르주 비제"
+    ]
   },
   {
     "id": "kopis-PF293224",
@@ -50854,7 +51005,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293224_260609_133712.png",
     "price": "전석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/63275",
-    "cast": "박재오"
+    "cast": "박재오",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF289509",
@@ -50873,7 +51025,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF289509_260416_121204.gif",
     "price": "전석 15,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004638",
-    "cast": "이지안, 문재원, 윤동환, 홍채원, 김우연"
+    "cast": "이지안, 문재원, 윤동환, 홍채원, 김우연",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF286299",
@@ -50892,7 +51045,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286299_260304_152321.jpg",
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26003167",
-    "cast": "손한묵 등"
+    "cast": "손한묵 등",
+    "performerType": "성악/합창"
   },
   {
     "id": "kopis-PF304707",
@@ -50951,7 +51105,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "윤은경"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -50983,7 +51137,7 @@ export const INITIAL_REAL_CONCERTS = [
       "임홍균",
       "조준영"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -51239,7 +51393,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "임윤찬"
     ],
-    "performerType": "독주",
+    "performerType": "독주회",
     "composers": [
       "볼프강 아마데우스 모차르트"
     ],
@@ -51326,7 +51480,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "부산콘서트홀",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -51392,7 +51546,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304462_261026_141311.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015119",
-    "cast": "강지원, 김중현"
+    "cast": "강지원, 김중현",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF280841",
@@ -51415,7 +51570,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280841_261002_180908.jpg",
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "https://www.ticketlink.co.kr/product/60017",
-    "cast": "아드리앙 페뤼숑, 조재혁 등"
+    "cast": "아드리앙 페뤼숑, 조재혁 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF277408",
@@ -51437,7 +51593,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF277408_261022_154332.gif",
     "price": "R석 150,000원, S석 120,000원, A석 80,000원, B석 40,000원, C석 10,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/59431",
-    "cast": "얍 판 츠베덴, 앙투안 타메스티, 황수미 등"
+    "cast": "얍 판 츠베덴, 앙투안 타메스티, 황수미 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF304733",
@@ -51470,7 +51627,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "아양아트센터",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -51493,7 +51650,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "리스트",
       "하이든"
@@ -51602,7 +51759,7 @@ export const INITIAL_REAL_CONCERTS = [
       "최병혁",
       "진성원 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "베토벤"
     ],
@@ -51695,7 +51852,7 @@ export const INITIAL_REAL_CONCERTS = [
       "변선아",
       "고승희"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -51733,11 +51890,13 @@ export const INITIAL_REAL_CONCERTS = [
       "최윤나",
       "조철희"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Don Giovanni, K. 527 (모차르트: 오페라 돈 조반니)"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1752055",
     "status": "공연예정",
@@ -51760,7 +51919,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "임윤찬"
     ],
-    "performerType": "독주",
+    "performerType": "독주회",
     "composers": [
       "볼프강 아마데우스 모차르트"
     ],
@@ -51793,7 +51952,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "임윤찬"
     ],
-    "performerType": "독주",
+    "performerType": "독주회",
     "composers": [
       "볼프강 아마데우스 모차르트"
     ],
@@ -51827,7 +51986,7 @@ export const INITIAL_REAL_CONCERTS = [
       "마크 앙드레",
       "박진우"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -51911,7 +52070,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "음악정원홀",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1684115",
@@ -51940,7 +52099,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "아트브릿지",
     "city": "대전광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015050",
@@ -52043,7 +52202,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295816_260710_142531.jpg",
     "price": "R석 30,000원, S석 20,000원",
     "ticketUrl": "https://artcenter.gyeongnam.go.kr/concert/concertView.do?CONCERT_ID=CM0001617",
-    "cast": "박규희, 박주원"
+    "cast": "박규희, 박주원",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF290844",
@@ -52066,7 +52226,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF290844_260507_141733.jpg",
     "price": "R석 50,000원, S석 30,000원, A석 20,000원",
     "ticketUrl": "https://tickets.interpark.com/goods/26008058",
-    "cast": "오창록, 박승주 등"
+    "cast": "오창록, 박승주 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF284416",
@@ -52085,7 +52246,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF284416_260204_111014.jpg",
     "price": "전석 10,000원",
     "ticketUrl": "https://ucac.moonhwain.net:451/rsvc/rsv_pm.html?b_id=ucac&amp;p_idx=6749",
-    "cast": "박윤환, 정아름, 임주은 등"
+    "cast": "박윤환, 정아름, 임주은 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF304814",
@@ -52095,7 +52257,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "바흐"
     ],
@@ -52127,7 +52289,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -52150,7 +52312,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "청주예술의전당",
     "city": "충청북도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -52186,7 +52348,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -52253,7 +52415,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "플로리안 노악"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -52693,7 +52855,8 @@ export const INITIAL_REAL_CONCERTS = [
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304370_261026_102654.gif",
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304370_202610261026545230.png"
-    ]
+    ],
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304365",
@@ -52712,7 +52875,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304365_261026_101423.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013106",
-    "cast": "황성훈"
+    "cast": "황성훈",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF296669",
@@ -52735,7 +52899,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296669_260722_144148.gif",
     "price": "A석 50,000원, B석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010253",
-    "cast": "한재민, 정민 등"
+    "cast": "한재민, 정민 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF295891",
@@ -52754,7 +52919,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295891_260918_110311.gif",
     "price": "VIP석 99,000원, R석 88,000원, S석 66,000원, A석 55,000원",
     "ticketUrl": "https://www.ntok.go.kr/ntok/pm/prfmng/performanceDetail.do?mi=21008&amp;perfId=267155",
-    "cast": "양방언"
+    "cast": "양방언",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF293444",
@@ -52777,7 +52943,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293444_260611_135736.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008381",
-    "cast": "김태형"
+    "cast": "김태형",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF280940",
@@ -52800,7 +52967,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280940_261022_154618.gif",
     "price": "R석 100,000원, S석 80,000원, A석 50,000원, B석 30,000원, C석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25017206",
-    "cast": "잔카를로 게레로, 스티븐 이설리스 등"
+    "cast": "잔카를로 게레로, 스티븐 이설리스 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF304851",
@@ -52835,7 +53003,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "청주예술의전당",
     "city": "충청북도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -52881,7 +53049,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "시흥아트센터",
     "city": "경기도",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "볼프강 아마데우스 모차르트"
     ],
@@ -52955,7 +53123,7 @@ export const INITIAL_REAL_CONCERTS = [
       "최영임",
       "송나예"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -53132,7 +53300,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:00",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [
       "죽음을 넘어선 부활의 확신과 영원한 생명에 대한 희망을 노래한다. 마지막 합창 ‘Worthy is the Lamb’과 ‘Amen’에 이르러 구원의 완성과 신의 영광을 장엄하게 찬양하며 대서사의 막을 내린다."
     ],
@@ -53225,7 +53393,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298756_260910_154927.gif",
     "price": "R석 30,000원, S석 20,000원, A석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011626",
-    "cast": "플로리안 노악"
+    "cast": "플로리안 노악",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF297071",
@@ -53248,7 +53417,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297071_260727_161232.jpg",
     "price": "VIP석 120,000원, R석 90,000원, S석 70,000원, A석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010569",
-    "cast": "최영선, 일리야 라쉬코프스키 등"
+    "cast": "최영선, 일리야 라쉬코프스키 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF304795",
@@ -53281,7 +53451,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "로베르트 슈만",
       "요하네스 브람스"
@@ -53315,7 +53485,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "14:00",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "루트비히 판 베토벤"
     ],
@@ -53389,7 +53559,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "신영호"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "프란츠 슈베르트"
     ],
@@ -53446,7 +53616,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "광림아트센터",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -53500,7 +53670,8 @@ export const INITIAL_REAL_CONCERTS = [
     "composers": [
       "요한 제바스티안 바흐",
       "요하네스 브람스"
-    ]
+    ],
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF304952",
@@ -53510,7 +53681,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "일신홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "요한 제바스티안 바흐"
     ],
@@ -53550,7 +53721,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "요한 제바스티안 바흐",
       "루트비히 판 베토벤",
@@ -53595,7 +53766,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박서현",
       "김승민"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -53632,7 +53803,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김성국",
       "김소강 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -53723,7 +53894,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김은희",
       "유현성"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "요한 제바스티안 바흐",
       "표트르 일리치 차이콥스키"
@@ -53913,7 +54084,7 @@ export const INITIAL_REAL_CONCERTS = [
       "윤태현",
       "정태양 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -53941,7 +54112,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "R. Schumann: Waldszenen, Op. 82 (숲의 정경)",
       "R. Schumann: Arabeske, Op. 18 (아라베스크)",
@@ -54011,7 +54182,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "Piano Sonata No. 31 in A-flat Major, Op.110",
       "Piano Sonata No. 14 in A Minor, D.784",
@@ -54052,9 +54223,9 @@ export const INITIAL_REAL_CONCERTS = [
       "최웅조",
       "줄리 로바르-장드르 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "주세페 베르디"
     ],
     "pieces": [
       "G. Verdi: Opera 〈Don Carlos〉 (베르디 오페라 〈돈 카를로스〉 전막)"
@@ -54209,7 +54380,7 @@ export const INITIAL_REAL_CONCERTS = [
       "윤정수",
       "이동환 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -54266,7 +54437,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "루트비히 판 베토벤"
     ],
@@ -54303,7 +54474,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "알렉상드르 캉토로프"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -54431,7 +54602,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "국립합창단"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -54468,7 +54639,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304471_261026_143137.gif",
     "price": "R석 50,000원, S석 30,000원, A석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014802",
-    "cast": "김지현, 김범준, 주휘준, 김현지, 김희민"
+    "cast": "김지현, 김범준, 주휘준, 김현지, 김희민",
+    "performerType": "성악/합창"
   },
   {
     "id": "kopis-PF304890",
@@ -54501,7 +54673,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "낙동아트센터",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -54529,7 +54701,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박영성",
       "김상진"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -54688,7 +54860,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이관욱"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -54876,7 +55048,7 @@ export const INITIAL_REAL_CONCERTS = [
       "고의석",
       "손소향"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -54941,7 +55113,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "로드아트센터 [부산]",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 20,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1738966",
@@ -54981,7 +55153,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304510_261026_155245.gif",
     "price": "전석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015342",
-    "cast": "한수진, 신수정"
+    "cast": "한수진, 신수정",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF304907",
@@ -54991,7 +55164,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "아트센터 인천",
     "city": "인천광역시",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -55014,11 +55187,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "공주문예회관",
     "city": "충청남도",
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "볼프강 아마데우스 모차르트"
     ],
-    "pieces": [],
+    "pieces": [
+      "W. A. Mozart: Così fan tutte, K. 588 (모차르트: 오페라 코지 판 투테)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B3%B5%EC%A3%BC%EB%AC%B8%EC%98%88%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -55037,7 +55212,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "17:00",
     "venue": "헤르만아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -55258,7 +55433,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이범주",
       "안정민 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "베토벤"
     ],
@@ -55287,7 +55462,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "리드 테츨로프"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -55318,7 +55493,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "알버트 카노 스미트"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -55381,7 +55556,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "일리야 라쉬코프스키 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "라흐마니노프"
     ],
@@ -55512,11 +55687,13 @@ export const INITIAL_REAL_CONCERTS = [
       "한정현",
       "최승희"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)"
+    ],
     "price": "전석 10,000원",
     "ticketUrl": "https://artscenter.junggu.ulsan.kr/01_Menu/01_view.do?prcValue=P0001922&amp;searchCat1=PFMANC",
     "status": "공연예정",
@@ -55539,7 +55716,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "리드 테츨로프"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "슈만",
@@ -55572,7 +55749,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "알버트 카노 스미트"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -55645,7 +55822,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295970_260713_160621.jpg",
     "price": "R석 40,000원, S석 30,000원",
     "ticketUrl": "https://www.ntok.go.kr/ntok/pm/prfmng/performanceDetail.do?mi=21008&amp;perfId=267154",
-    "cast": "민인기, 강혜정, 강형규 등"
+    "cast": "민인기, 강혜정, 강형규 등",
+    "performerType": "성악/합창"
   },
   {
     "id": "kopis-PF304651",
@@ -55722,7 +55900,7 @@ export const INITIAL_REAL_CONCERTS = [
       "장정권",
       "이호찬"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -55809,7 +55987,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "알버트 카노 스미트"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -55896,7 +56074,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -55919,7 +56097,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -56020,7 +56198,7 @@ export const INITIAL_REAL_CONCERTS = [
       "지중배",
       "김서현 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -56047,7 +56225,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "진해아트홀",
     "city": "경상남도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [],
     "price": "1층석 80,000원, 2층석 60,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1756394",
@@ -56071,7 +56249,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "거암아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "J. S. Bach: Partita No. 2 in D Minor, BWV 1004 (샤콘느 Chaconne 포함)",
       "E. Ysaÿe: Solo Violin Sonata No. 2 in A Minor, Op. 27 'Obsession'",
@@ -56108,7 +56286,7 @@ export const INITIAL_REAL_CONCERTS = [
       "지중배",
       "김서현 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -56177,11 +56355,13 @@ export const INITIAL_REAL_CONCERTS = [
       "홍승범",
       "백진호 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "가이타노 도니제티"
     ],
-    "pieces": [],
+    "pieces": [
+      "G. Donizetti: L'elisir d'amore (가이타노 도니제티: 오페라 사랑의 묘약)"
+    ],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1750713",
     "status": "공연예정",
@@ -56204,7 +56384,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "알버트 카노 스미트"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "바흐",
@@ -56311,7 +56491,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304507_261026_154854.jpg",
     "price": "전석 20,000원",
     "ticketUrl": "http://www.ticketlink.co.kr/product/66482",
-    "cast": "김경미, 이도휘"
+    "cast": "김경미, 이도휘",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF304956",
@@ -56321,7 +56502,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "안동문화예술의전당",
     "city": "경상북도",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -56452,7 +56633,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "서울시오페라단"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -56581,9 +56762,9 @@ export const INITIAL_REAL_CONCERTS = [
       "문정현",
       "박현정 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "조르주 비제"
     ],
     "pieces": [
       "조르주 비제: 오페라 <카르멘> 하이라이트 (하바네라, 세기디야, 투우사의 노래, 꽃노래, 최종 2중창)"
@@ -56647,7 +56828,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304506_261026_154854.gif",
     "price": "전석 100,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009873",
-    "cast": "권미현, 김선희, 김영은, 김원진, 김태은, 김혜영, 서보란 등"
+    "cast": "권미현, 김선희, 김영은, 김원진, 김태은, 김혜영, 서보란 등",
+    "performerType": "성악/합창"
   },
   {
     "id": "kopis-PF304967",
@@ -56703,7 +56885,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "20:00",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -56879,7 +57061,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "파리나무 십자가 소년합창단 특별 초청공연"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -57003,7 +57185,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304455_261026_135249.gif",
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015299",
-    "cast": "김다미, 유효정, 신효은, 황재윤, 서가영, 황지원, 나승준 등"
+    "cast": "김다미, 유효정, 신효은, 황재윤, 서가영, 황지원, 나승준 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF304743",
@@ -57039,7 +57222,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "유성호"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -57185,7 +57368,7 @@ export const INITIAL_REAL_CONCERTS = [
       "정민호",
       "김세일 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "헨델"
     ],
@@ -57273,7 +57456,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "세르게이 라흐마니노프"
     ],
@@ -57355,7 +57538,7 @@ export const INITIAL_REAL_CONCERTS = [
       "박종해",
       "송현민"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -57453,7 +57636,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김대연",
       "박건우"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -57522,7 +57705,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "안성맞춤아트홀 문화가 있는 날"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "헨델"
     ],
@@ -57578,7 +57761,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "클래식 합창"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -57610,7 +57793,7 @@ export const INITIAL_REAL_CONCERTS = [
       "이수정",
       "아렌트 호로스펠트 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "헨델"
     ],
@@ -57636,7 +57819,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "롯데콘서트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "피아노 소타나 제6번 가장조, Op.82",
       "Piano Sonata No. 6 in A Major, Op.82",
@@ -57794,7 +57977,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "이혁"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "쇼팽"
@@ -57827,7 +58010,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "박수예"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "라벨"
@@ -57979,7 +58162,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -58065,7 +58248,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "알베르트 알카라즈 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
       "클래식 명작"
     ],
@@ -58232,7 +58415,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF277438_261022_155004.gif",
     "price": "R석 150,000원, S석 120,000원, A석 80,000원, B석 40,000원, C석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25013841",
-    "cast": "얍 판 츠베덴, 이세르게이, 김병훈, 최윤, 홍혜란, 양송미, 김성호 등"
+    "cast": "얍 판 츠베덴, 이세르게이, 김병훈, 최윤, 홍혜란, 양송미, 김성호 등",
+    "performerType": "오케스트라"
   },
   {
     "id": "kopis-PF304921",
@@ -58242,11 +58426,13 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "강릉아트센터 (구. 강릉문화예술관)",
     "city": "강원특별자치도",
-    "performerType": "오케스트라",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "리하르트 바그너"
     ],
-    "pieces": [],
+    "pieces": [
+      "R. Wagner: Das Rheingold, WWV 86A (리하르트 바그너: 오페라 라인의 황금)"
+    ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%95%EB%A6%89%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20(%EA%B5%AC.%20%EA%B0%95%EB%A6%89%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%EA%B4%80)%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
     "status": "공연예정",
@@ -58446,7 +58632,7 @@ export const INITIAL_REAL_CONCERTS = [
       "모건 피어스",
       "김지영 등"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "헨델"
     ],
@@ -58506,7 +58692,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "BAC 특별기획"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -58533,7 +58719,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "손세혁"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -58739,7 +58925,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "부산문화회관",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -58765,7 +58951,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "파리나무 십자가 소년 합창단 특별 초청 공연"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -58923,11 +59109,15 @@ export const INITIAL_REAL_CONCERTS = [
       "강은경",
       "류동연 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "피에트로 마스카니",
+      "자코모 푸치니"
     ],
-    "pieces": [],
+    "pieces": [
+      "P. Mascagni: Cavalleria Rusticana (마스카니: 오페라 카발레리아 루스티카나)",
+      "G. Puccini: Tosca (자코모 푸치니: 오페라 토스카)"
+    ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014355",
     "status": "공연예정",
@@ -59006,7 +59196,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "니콜라이 루간스키"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "슈만",
@@ -59119,7 +59309,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304408_261026_120323.gif",
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015327",
-    "cast": "장희재, 김은찬, 박동석, 이호찬, 김진택"
+    "cast": "장희재, 김은찬, 박동석, 이호찬, 김진택",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF303358",
@@ -59164,7 +59355,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "손세혁"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -59261,7 +59452,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "니콜라이 루간스키"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작",
       "슈만",
@@ -59300,9 +59491,9 @@ export const INITIAL_REAL_CONCERTS = [
       "정준식",
       "나규보 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오페라",
     "composers": [
-      "클래식 명작"
+      "자코모 푸치니"
     ],
     "pieces": [
       "자코모 푸치니: 오페라 <라 보엠> 전막 (Giacomo Puccini: Opera \"La Bohème\")"
@@ -59329,7 +59520,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "파리나무십자가소년합창단 특별초청 공연"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -59415,7 +59606,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "반포심산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015199",
@@ -59484,7 +59675,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304368_261026_101947.jpg",
     "price": "전석 20,000원",
     "ticketUrl": "https://ticket.yes24.com/Perf/60705",
-    "cast": "성재창, 김동민, 정종수, 박제연, 김정기"
+    "cast": "성재창, 김동민, 정종수, 박제연, 김정기",
+    "performerType": "실내악"
   },
   {
     "id": "kopis-PF302198",
@@ -59627,7 +59819,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "영산아트홀",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "C. Saint-Saëns: Le Carnaval des animaux (동물의 사육제)",
       "M. Ravel: Introduction and Allegro for Harp, Flute, Clarinet and String Quartet"
@@ -59661,7 +59853,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "L. v. Beethoven: Piano Sonata No. 27 in E Minor, Op. 90",
       "L. v. Beethoven: Piano Sonata No. 28 in A major, Op. 101",
@@ -59894,7 +60086,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "임형주"
     ],
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "클래식 명작"
     ],
@@ -60002,7 +60194,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "낙동아트센터",
     "city": "부산광역시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "composers": [
       "요하네스 브람스",
       "조르주 비제"
@@ -60068,7 +60260,7 @@ export const INITIAL_REAL_CONCERTS = [
       "김대연",
       "박건우"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -60383,7 +60575,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "손세혁"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "클래식 명작"
     ],
@@ -60461,7 +60653,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304470_261026_142705.gif",
     "price": "전석 40,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015333",
-    "cast": "임채문, 설민경, 김도현"
+    "cast": "임채문, 설민경, 김도현",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF304562",
@@ -60597,7 +60790,7 @@ export const INITIAL_REAL_CONCERTS = [
       "인디 스티빈",
       "김예은 등"
     ],
-    "performerType": "실내악",
+    "performerType": "오케스트라",
     "composers": [
       "클래식 명작"
     ],
@@ -60745,7 +60938,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "금호아트홀 연세",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "프란츠 슈베르트",
       "세르게이 라흐마니노프",
@@ -60868,7 +61061,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "수성아트피아",
     "city": "대구광역시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "장 시벨리우스"
     ],
@@ -60941,7 +61134,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "세종문화회관",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "성악/합창",
     "pieces": [
       "Sonata in A Minor, D. 821, Arpeggione",
       "Piccola Suite da Tosca"
@@ -60973,7 +61166,7 @@ export const INITIAL_REAL_CONCERTS = [
     "time": "19:30",
     "venue": "예술의전당 [서울]",
     "city": "서울특별시",
-    "performerType": "실내악",
+    "performerType": "독주회",
     "pieces": [
       "Piano Sonata No. 18 in E-flat Major, Op. 31, No. 3",
       "No. 3 Ballade in g Minor"
@@ -61016,7 +61209,8 @@ export const INITIAL_REAL_CONCERTS = [
     "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304445_261026_133232.gif",
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015402",
-    "cast": "김정은"
+    "cast": "김정은",
+    "performerType": "독주회"
   },
   {
     "id": "kopis-PF299920",
@@ -61237,7 +61431,7 @@ export const INITIAL_REAL_CONCERTS = [
     "performers": [
       "손세혁"
     ],
-    "performerType": "실내악",
+    "performerType": "독주회",
     "composers": [
       "루트비히 판 베토벤",
       "요하네스 브람스",

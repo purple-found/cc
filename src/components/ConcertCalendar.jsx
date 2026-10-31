@@ -188,7 +188,8 @@ function getConcertPriorityScore(c) {
     title.includes('orchestra') ||
     title.includes('philharmonic') ||
     title.includes('symphony') ||
-    c.performerType === '오케스트라'
+    c.performerType === '오케스트라' ||
+    c.performerType === '오페라'
   ) {
     score += 30;
   }

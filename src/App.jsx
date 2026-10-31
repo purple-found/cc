@@ -270,9 +270,19 @@ export default function App() {
         }
       }
 
-      // 3. 연주 편성 필터 (오케스트라 / 실내악)
+      // 3. 연주 편성 필터 (오케스트라 / 실내악 / 독주회 / 오페라 / 성악·합창)
       if (filters.performerType && filters.performerType !== 'all') {
-        if (c.performerType !== filters.performerType) {
+        const pt = c.performerType || '';
+        const target = filters.performerType;
+        if (target === '독주회') {
+          if (pt !== '독주회' && pt !== '독주' && pt !== '솔리스트') return false;
+        } else if (target === '오페라') {
+          if (pt !== '오페라' && pt !== '오페라 / 성악') return false;
+        } else if (target === '실내악') {
+          if (pt !== '실내악' && pt !== '실내악 / 앙상블') return false;
+        } else if (target === '오케스트라') {
+          if (pt !== '오케스트라' && pt !== '협연 / 오케스트라') return false;
+        } else if (pt !== target) {
           return false;
         }
       }

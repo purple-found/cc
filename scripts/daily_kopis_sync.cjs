@@ -676,9 +676,87 @@ function extractPiecesFromTitle(title) {
     pieces.push('프란츠 슈베르트: 연가곡 "겨울나그네" D.911');
   } else if (t.includes('카르미나 부라나') || /Carmina\s+Burana/i.test(t)) {
     pieces.push('C. Orff: Carmina Burana (칼 오르프: 카르미나 부라나)');
+  } else if (t.includes('라인의 황금')) {
+    pieces.push('R. Wagner: Das Rheingold, WWV 86A (리하르트 바그너: 오페라 라인의 황금)');
+  } else if (t.includes('발퀴레')) {
+    pieces.push('R. Wagner: Die Walküre, WWV 86B (리하르트 바그너: 오페라 발퀴레)');
+  } else if (/돈\s*카를로스/.test(t)) {
+    pieces.push('G. Verdi: Don Carlos (주세페 베르디: 오페라 돈 카를로스)');
+  } else if (/라\s*보엠/.test(t)) {
+    pieces.push('G. Puccini: La Bohème (자코모 푸치니: 오페라 라 보엠)');
+  } else if (/라\s*트라비아타/.test(t)) {
+    pieces.push('G. Verdi: La Traviata (주세페 베르디: 오페라 라 트라비아타)');
+  } else if (t.includes('리골레토')) {
+    pieces.push('G. Verdi: Rigoletto (주세페 베르디: 오페라 리골레토)');
+  } else if (t.includes('마술피리')) {
+    pieces.push('W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)');
+  } else if (t.includes('피가로의 결혼') || t.includes('만능재치꾼 피가로')) {
+    pieces.push('W. A. Mozart: Le nozze di Figaro, K. 492 (모차르트: 오페라 피가로의 결혼)');
+  } else if (/코지\s*판\s*투테/.test(t)) {
+    pieces.push('W. A. Mozart: Così fan tutte, K. 588 (모차르트: 오페라 코지 판 투테)');
+  } else if (/돈\s*조반니|돈\s*죠반니/.test(t)) {
+    pieces.push('W. A. Mozart: Don Giovanni, K. 527 (모차르트: 오페라 돈 조반니)');
+  } else if (t.includes('사랑의 묘약')) {
+    pieces.push("G. Donizetti: L'elisir d'amore (가이타노 도니제티: 오페라 사랑의 묘약)");
+  } else if (/세비야의 이발사|세빌리아의 이발사/.test(t)) {
+    pieces.push('G. Rossini: Il barbiere di Siviglia (조아키노 로시니: 오페라 세비야의 이발사)');
   }
 
   return pieces;
+}
+
+function classifyPerformerType(c) {
+  const title = (c.title || '').trim();
+  const t = title.toLowerCase();
+  const hall = (c.hall || '').trim();
+  const perf = Array.isArray(c.performers) ? c.performers.join(' ').toLowerCase() : String(c.performers || '').toLowerCase();
+
+  // 1. 순수 관현악단 모음곡 연주 예외
+  const isPureOrchestraProgram = /(?:오케스트라|교향악단|필하모닉|필하모니|심포니)/.test(t) &&
+    !/(?:오페라|오페레타|라인의 황금|발퀴레|지크프리트|신들의 황혼|라\s*보엠|라\s*트라비아타|리골레토|마술피리|사랑의 묘약|토스카|투란도트|돈\s*카를로스|돈\s*조반니|코지\s*판\s*투테|피가로의 결혼|나비부인)/.test(t);
+
+  // 2. 오페라 (Opera)
+  if (!isPureOrchestraProgram) {
+    if (
+      hall === '오페라극장' ||
+      /(?:오페라|오페레타|오페라단|오페라갈라|\bopera\b|라인의 황금|발퀴레|지크프리트|신들의 황혼|니벨룽의 반지|라\s*보엠|라\s*트라비아타|리골레토|돈\s*카를로스|사랑의 묘약|마술피리|피가로의 결혼|돈\s*조반니|돈\s*죠반니|코지\s*판\s*투테|토스카|투란도트|나비부인|세비야의 이발사|세빌리아의 이발사|카발레리아 루스티카나|팔리아치|박쥐|일\s*트로바토레|람메르무어의 루치아)/i.test(title) ||
+      (/카르멘/.test(title) && !/(?:오케스트라|교향악단|필하모닉|독주회|리사이틀|콰르텟|트리오|앙상블)/.test(title))
+    ) {
+      return '오페라';
+    }
+  }
+
+  // 3. 오케스트라 (Orchestra)
+  if (!(t.includes('필하모닉스') && !t.includes('오케스트라'))) {
+    const isOrch = [
+      '오케스트라', '교향악단', '필하모닉', '필하모니', '심포니', '관현악단', '관현악',
+      '합창교향곡', '서울시향', '부산시향', '인천시향', '대구시향', '대전시향', '광주시향',
+      '수원시향', '울산시향', '창원시향', '전주시향', '청주시향', '춘천시향', '원주시향',
+      '포항시향', '강릉시향', '부천필', '경기필', '한경아르떼필', 'kbs교향악단', '국립심포니',
+      '신포니에타', '신포니아', '챔버오케스트라', '체임버오케스트라', '챔버 오케스트라', '체임버 오케스트라',
+      '윈드오케스트라', '윈드 오케스트라', '관악단', '교향악축제', '월드오케스트라',
+      'orchestra', 'philharmonic', 'symphony', 'sinfonietta', '필하모니커',
+      '3개의 피아노 협주곡', '세 개의 피아노 협주곡', '윤이상국제음악콩쿠르 결선'
+    ].some(k => t.includes(k) || perf.includes(k));
+    if (isOrch) return '오케스트라';
+  }
+
+  // 4. 성악/합창 (Vocal & Choir)
+  if (/(?:합창단|합창제|합창음악|소년소녀합창|남성합창|여성합창|시립합창|국립합창|합창|코러스|콰이어|\bchoir\b|\bchorus\b|\bchorale\b|독창회|성악|소프라노|메조소프라노|테너|바리톤|카운터테너|\bsoprano\b|\btenor\b|\bbaritone\b|보칼레|칸토레스|마드리갈|가곡의 밤|가곡|연가곡|오라토리오|칸타타|메시아|카르미나 부라나)/i.test(title + ' ' + perf)) {
+    return '성악/합창';
+  }
+
+  // 5. 실내악 다인 편성 (듀오/트리오/콰르텟/앙상블 등)
+  if (/(?:듀오|\bduo\b|트리오|\btrio\b|콰르텟|퀄텟|\bquartet\b|퀸텟|\bquintet\b|섹스텟|셉텟|옥텟|\boctet\b|앙상블|\bensemble\b|체임버|챔버|\bchamber\b|실내악|두 대의 피아노|2대의 피아노|피아노 듀엣|포핸즈|four hands|솔로이스츠|soloists|무지치|콜레기움)/i.test(title + ' ' + perf)) {
+    return '실내악';
+  }
+
+  // 6. 독주회 (Solo Recital)
+  if (/(?:독주회|리사이틀|\brecital\b|피아니스트|바이올리니스트|첼리스트|비올리스트|플루티스트|오보이스트|클라리네티스트|바수니스트|호르니스트|트럼페터|오르가니스트|기타리스트|하피스트|하프시코디스트|타악기 독주)/i.test(title)) {
+    return '독주회';
+  }
+
+  return '실내악';
 }
 
 function syncComposersFromPieces(concert) {
@@ -697,7 +775,8 @@ function syncComposersFromPieces(concert) {
     ['Handel', '헨델'], ['Händel', '헨델'], ['Haydn', '하이든'],
     ['Paganini', '파가니니'], ['Sarasate', '사라사테'], ['Poulenc', '풀랑크'],
     ['Piazzolla', '피아졸라'], ['Puccini', '푸치니'], ['Verdi', '베르디'],
-    ['Bizet', '비제'], ['Rossini', '로시니'], ['Bruckner', '브루크너']
+    ['Bizet', '비제'], ['Rossini', '로시니'], ['Bruckner', '브루크너'],
+    ['Wagner', '바그너'], ['Donizetti', '도니제티'], ['Mascagni', '마스카니'], ['Orff', '오르프']
   ];
   const detected = new Set(
     (concert.composers || []).filter(c => c !== '클래식 명작')
@@ -783,12 +862,7 @@ async function main() {
           time: '19:30',
           venue: venue,
           city: area,
-          performerType: (() => {
-            const t = (title || '').toLowerCase();
-            if (t.includes('필하모닉스') && !t.includes('오케스트라')) return '실내악';
-            const isOrch = ['오케스트라', '교향악단', '필하모닉', '필하모니', '심포니', '관현악단', '관현악', '합창교향곡', 'orchestra', 'philharmonic', 'symphony'].some(k => t.includes(k));
-            return isOrch ? '오케스트라' : '실내악';
-          })(),
+          performerType: classifyPerformerType({ title, venue }),
           composers: ['클래식 명작'],
           pieces: [],
           price: '공식 예매처 참조',
@@ -862,8 +936,9 @@ async function main() {
     } catch {}
   }
 
-  // 기존 적재된 pieces에 대해서도 OCR 오타 교정 및 비곡목 라인(GUEST 등) 정제 적용
+  // 기존 적재된 pieces에 대해서도 OCR 오타 교정, 비곡목 라인 정제 및 연주 편성(5분류) 동기화 적용
   for (const c of concertMap.values()) {
+    c.performerType = classifyPerformerType(c);
     if (Array.isArray(c.pieces) && c.pieces.length > 0) {
       const cleaned = [];
       for (const rawP of c.pieces) {
