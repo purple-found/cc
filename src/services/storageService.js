@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v43: 새벽 3시 KOPIS 정기 자동 업데이트 반영 (신규 162건 발굴 및 상태 갱신, 총 2,075건 순수 클래식 전수 적재)
-const CONCERTS_KEY = 'opus_korea_concerts_v43';
+// v44: 새벽 3시 KOPIS 정기 자동 업데이트 4단계 프로그램 자동 추출(KOPIS 소개글 + 공식 상세페이지 + 포스터/소개전단 OCR + 제목 매칭) 반영
+const CONCERTS_KEY = 'opus_korea_concerts_v44';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -53,6 +53,7 @@ try {
       'opus_korea_concerts_v40',
       'opus_korea_concerts_v41',
       'opus_korea_concerts_v42',
+      'opus_korea_concerts_v43',
       'opus_korea_halls_v3'
     ].forEach((k) => {
       localStorage.removeItem(k);

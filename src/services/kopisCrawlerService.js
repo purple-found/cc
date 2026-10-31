@@ -237,26 +237,36 @@ export const kopisCrawlerService = {
       for (let i = 0; i < enrichTargets.length; i += 5) {
         const chunk = enrichTargets.slice(i, i + 5);
         const details = await Promise.all(chunk.map(c => this.fetchConcertDetail(c.kopisId, key)));
-        chunk.forEach((c, idx) => {
+        for (let idx = 0; idx < chunk.length; idx++) {
+          const c = chunk[idx];
           const d = details[idx];
           if (d) {
             if (d.hall && !c.hall) c.hall = d.hall;
             if (d.price && (!c.price || c.price === '공식 예매처 참조')) c.price = d.price;
             if (d.relateUrl && (!c.ticketUrl || c.ticketUrl.includes('search.naver.com'))) c.ticketUrl = d.relateUrl;
             if (d.poster && (!c.imageUrl || c.imageUrl.includes('unsplash.com'))) c.imageUrl = d.poster;
+            if (d.styurls && d.styurls.length > 0) c.introImages = d.styurls;
             if (d.sty && d.sty.length > 15) c.description = d.sty;
 
             if (!c.pieces || c.pieces.length === 0) {
+              // 1단계: KOPIS 상세 설명(<sty>)에서 추출
               const fromDesc = this.extractPiecesFromDescription(d.sty);
               if (fromDesc.length > 0) {
                 c.pieces = fromDesc;
               } else {
-                const fromTitle = this.extractPiecesFromTitle(c.title);
-                if (fromTitle.length > 0) c.pieces = fromTitle;
+                // 2단계: 공식 상세페이지(<relateurl>) 본문에서 자동 추출
+                const fromPage = await this.fetchPiecesFromDetailPages(d.relateUrls || (d.relateUrl ? [d.relateUrl] : []));
+                if (fromPage.length > 0) {
+                  c.pieces = fromPage;
+                } else {
+                  // 3단계: 공연 제목·부제에서 명작 레퍼토리 추출
+                  const fromTitle = this.extractPiecesFromTitle(c.title);
+                  if (fromTitle.length > 0) c.pieces = fromTitle;
+                }
               }
             }
           }
-        });
+        }
       }
     }
 
@@ -301,6 +311,13 @@ export const kopisCrawlerService = {
 
       if (!xml) return null;
 
+      const decodeEntities = (s) => (s || '')
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'");
+
       const fcltynm = (xml.match(/<fcltynm>([\s\S]*?)<\/fcltynm>/) || [])[1] || '';
       const prfcast = (xml.match(/<prfcast>([\s\S]*?)<\/prfcast>/) || [])[1] || '';
       const pcseguidance = (xml.match(/<pcseguidance>([\s\S]*?)<\/pcseguidance>/) || [])[1] || '';
@@ -313,18 +330,24 @@ export const kopisCrawlerService = {
       const styurlMatches = xml.match(/<styurl>([\s\S]*?)<\/styurl>/g);
       if (styurlMatches) {
         for (const sm of styurlMatches) {
-          const u = sm.replace(/<\/?styurl>/g, '').trim();
+          const u = decodeEntities(sm.replace(/<\/?styurl>/g, '').trim());
           if (u.startsWith('http') && !styurls.includes(u)) {
             styurls.push(u);
           }
         }
       }
 
-      let relateUrl = '';
-      const relateUrlMatch = xml.match(/<relateurl>([\s\S]*?)<\/relateurl>/);
-      if (relateUrlMatch && relateUrlMatch[1].trim().startsWith('http')) {
-        relateUrl = relateUrlMatch[1].trim();
+      const relateUrls = [];
+      const relateMatches = xml.match(/<relateurl>([\s\S]*?)<\/relateurl>/g);
+      if (relateMatches) {
+        for (const rm of relateMatches) {
+          const u = decodeEntities(rm.replace(/<\/?relateurl>/g, '').trim());
+          if (u.startsWith('http') && !relateUrls.includes(u)) {
+            relateUrls.push(u);
+          }
+        }
       }
+      const relateUrl = relateUrls[0] || '';
 
       let hall = null;
       const pMatches = fcltynm.match(/\(([^()]+)\)/g);
@@ -346,9 +369,10 @@ export const kopisCrawlerService = {
         runtime: prfruntime.trim(),
         dtguidance: dtguidance.trim(),
         sty: sty.trim(),
-        poster: poster.trim(),
+        poster: decodeEntities(poster.trim()),
         styurls,
-        relateUrl
+        relateUrl,
+        relateUrls
       };
     } catch {
       return null;
@@ -356,52 +380,92 @@ export const kopisCrawlerService = {
   },
 
   /**
-   * 상세 설명에서 프로그램(곡목) 추출
+   * 공식 상세페이지(<relateurl>) 본문에서 프로그램 자동 추출
+   */
+  async fetchPiecesFromDetailPages(relateUrls = []) {
+    if (!Array.isArray(relateUrls) || relateUrls.length === 0) return [];
+    for (const rawUrl of relateUrls) {
+      if (!rawUrl || !rawUrl.startsWith('http')) continue;
+      try {
+        const res = await fetch(rawUrl);
+        if (!res.ok) continue;
+        const html = await res.text();
+        const extracted = this.extractPiecesFromDescription(html);
+        if (extracted.length > 0) return extracted;
+      } catch {
+        // 브라우저 CORS 제한 시 무시하고 다음 단계(배치 OCR/제목 매칭)로 안전 폴백
+      }
+    }
+    return [];
+  },
+
+  /**
+   * 상세 설명 또는 상세페이지 HTML에서 프로그램(곡목) 지능형 추출
    */
   extractPiecesFromDescription(desc) {
     if (!desc || desc.length < 15) return [];
-    const text = desc
-      .replace(/&lt;/g, '<')
-      .replace(/&gt;/g, '>')
-      .replace(/&amp;/g, '&')
-      .replace(/&quot;/g, '"')
-      .replace(/&#39;/g, "'")
-      .replace(/&nbsp;/g, ' ');
-    const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+    const decoded = desc
+      .replace(/\\u003c/gi, '<')
+      .replace(/\\u003e/gi, '>')
+      .replace(/\\u0026/gi, '&')
+      .replace(/\\r\\n/g, '\n')
+      .replace(/\\n/g, '\n')
+      .replace(/&lt;/gi, '<')
+      .replace(/&gt;/gi, '>')
+      .replace(/&amp;/gi, '&')
+      .replace(/&quot;/gi, '"')
+      .replace(/&#39;/gi, "'")
+      .replace(/&nbsp;/gi, ' ')
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<\/(?:p|div|li|tr|h[1-6]|dt|dd)>/gi, '\n')
+      .replace(/<[^>]+>/g, ' ');
+    const lines = decoded.split(/\r?\n/).map(l => l.replace(/\s+/g, ' ').trim()).filter(Boolean);
 
-    const progHeaderIdx = lines.findIndex(l => 
-      /^\[?(?:프로그램|PROGRAM|Program|곡목|곡\s*목|공연\s*곡목|연주\s*곡목|프로그램\s*안내)\]?$/i.test(l) ||
-      /^\[(?:프로그램|PROGRAM|Program|곡목)\]/i.test(l) ||
-      /^(?:PROGRAM|Program|프로그램)$/i.test(l)
-    );
+    const headerRegex = /^(?:\[|\<|■|●|◆|▶|★|\*)?\s*(?:프로그램|PROGRAM|Program|곡목|곡\s*목|공연\s*곡목|연주\s*곡목|프로그램\s*안내|연주\s*프로그램)\s*(?:\]|\>| 안내)?$/i;
+    const progHeaderIdx = lines.findIndex(l => headerRegex.test(l));
 
     if (progHeaderIdx === -1) return [];
 
     const pieces = [];
     const stopKeywords = [
-      '프로필', 'PROFILE', 'Profile', '출연진', 'CAST', 'Cast', '아티스트', 'ARTIST',
+      '프로필', 'PROFILE', 'Profile', '출연진', 'CAST', 'Cast', '아티스트 소개',
       '공연소개', '기획의도', '안내사항', '관람안내', '예매안내', '티켓안내', '할인정보',
-      '유의사항', '오시는길', '시놉시스', '줄거리', 'SYNOPSIS', '기획사', '주최'
+      '유의사항', '오시는길', '시놉시스', '줄거리', 'SYNOPSIS', '기획사', '주최', '_*_+_*'
     ];
+    const movementOnlyRegex = /^(?:(?:[I|V|X|Ⅰ|Ⅱ|Ⅲ|Ⅳ|Ⅴ]{1,4})\s*[\.\)]\s*(?:Allegro|Andante|Adagio|Presto|Largo|Moderato|Scherzo|Rondo|Menuetto|Finale|Grave|Vivace|Lento|Molto|Poco|Assai|Con\s|Ma\s|Non\s|Tempo|Romanze|Intermezzo|Marcia)|(?:Allegro|Andante|Adagio|Presto|Largo|Moderato|Scherzo|Rondo|Menuetto|Finale)\s*[:\.])/i;
+    const composerOnlyRegex = /^(?:J\.\s*S\.\s*Bach|Johann\s+Sebastian\s+Bach|W\.\s*A\.\s*Mozart|Wolfgang\s+Amadeus\s+Mozart|L\.\s*v\.\s*Beethoven|Ludwig\s+van\s+Beethoven|F\.\s*Chopin|Fr[eé]d[eé]ric\s+Chopin|R\.\s*Schumann|Robert\s+Schumann|J\.\s*Brahms|Johannes\s+Brahms|F\.\s*Schubert|Franz\s+Schubert|F\.\s*Liszt|Franz\s+Liszt|C\.\s*Debussy|Claude\s+Debussy|M\.\s*Ravel|Maurice\s+Ravel|P\.\s*I\.\s*Tchaikovsky|Pyotr\s+Ilyich\s+Tchaikovsky|S\.\s*Rachmaninoff|Sergei\s+Rachmaninoff|S\.\s*Prokofiev|D\.\s*Shostakovich|F\.\s*Mendelssohn|C\.\s*Franck|C\.\s*Saint-Sa[eë]ns|G\.\s*Faur[eé]|A\.\s*Dvo[rř][aá]k|E\.\s*Grieg|J\.\s*Sibelius|G\.\s*Mahler|R\.\s*Strauss|I\.\s*Stravinsky|B\.\s*Bart[oó]k|A\.\s*Vivaldi|J\.\s*Haydn|N\.\s*Paganini)(?:\s*\([\d\s~–\-.,b.c]+\))?$/i;
 
     let currentPerformer = '';
+    let currentComposer = '';
 
-    for (let i = progHeaderIdx + 1; i < lines.length; i++) {
+    for (let i = progHeaderIdx + 1; i < Math.min(lines.length, progHeaderIdx + 75); i++) {
       const line = lines[i];
-      if (stopKeywords.some(kw => line.includes(kw))) break;
+      if (line.includes('\uFFFD') || stopKeywords.some(kw => line.includes(kw))) break;
       if (/^\*.*(?:변경|사정|주최|프로그램은|유의|관람)/.test(line)) continue;
-      if (/^(?:INTERMISSION|Intermission|인터미션|휴식|중간휴식|<1부>|<2부>|1부|2부|PART\s*\d|Part\s*\d)$/i.test(line)) continue;
+      if (/^(?:INTERMISSION|Intermission|인터미션|휴식|중간휴식|<1부>|<2부>|1부|2부|\[1부\]|\[2부\]|PART\s*\d|Part\s*\d)$/i.test(line)) {
+        currentComposer = '';
+        continue;
+      }
       if (/^(?:해설|진행|사회)\s*:/.test(line)) continue;
-      if (line.length < 3 || line.length > 160) continue;
+      if (movementOnlyRegex.test(line)) continue;
+      if (line.length < 3 || line.length > 140) continue;
 
-      if (/^(?:Piano|Violin|Violoncello|Cello|Flute|Clarinet|Percussion|판소리|Sop\.|Ten\.|Bar\.|Bass\.|Mezzo\.|소프라노|테너|바리톤|베이스|메조소프라노)\s+[가-힣a-zA-Z\s,·/]+/i.test(line)) {
+      if (composerOnlyRegex.test(line)) {
+        currentComposer = line.replace(/\s*\([\d\s~–\-.,b.c]+\)\s*$/, '').trim();
+        continue;
+      }
+
+      if (/^(?:Piano|Violin|Violoncello|Cello|Flute|Clarinet|Percussion|판소리|Sop\.|Ten\.|Bar\.|Bass\.|Mezzo\.|소프라노|테너|바리톤|베이스|메조소프라노)\s+[가-힣a-zA-Z\s,·/]+$/i.test(line) && !/(?:Sonata|Concerto|Trio|Quartet|Quintet|Suite|Partita|Op\.|BWV|KV)/i.test(line)) {
         currentPerformer = line.trim();
         continue;
       }
 
       let cleanPiece = line.replace(/^[0-9]+[\.\)]\s*/, '').replace(/^[•\-\*·]\s*/, '').trim();
-      cleanPiece = cleanPiece.replace(/\s*\(\d{4}[~-]\d{4}\)/g, '');
+      cleanPiece = cleanPiece.replace(/\s*\(\d{4}[~–\-]\d{4}\)/g, '');
       if (cleanPiece.length >= 3) {
+        if (currentComposer && !cleanPiece.toLowerCase().includes(currentComposer.split(' ').pop().toLowerCase())) {
+          cleanPiece = `${currentComposer}: ${cleanPiece}`;
+        }
         if (currentPerformer) {
           cleanPiece = `${cleanPiece} (${currentPerformer})`;
           currentPerformer = '';
@@ -423,12 +487,22 @@ export const kopisCrawlerService = {
     const t = title.trim();
     const pieces = [];
 
-    if (t.includes('말러') && (t.includes('교향곡 4번') || t.includes('교향곡 제4번'))) {
+    if (t.includes('말러') && (t.includes('교향곡 1번') || t.includes('교향곡 제1번') || t.includes('거인'))) {
+      pieces.push('구스타프 말러: 교향곡 제1번 D장조 "거인"');
+    } else if (t.includes('말러') && (t.includes('교향곡 2번') || t.includes('교향곡 제2번') || t.includes('부활'))) {
+      pieces.push('구스타프 말러: 교향곡 제2번 c단조 "부활"');
+    } else if (t.includes('말러') && (t.includes('교향곡 4번') || t.includes('교향곡 제4번'))) {
       pieces.push('구스타프 말러: 교향곡 제4번 G장조');
     } else if (t.includes('말러') && (t.includes('교향곡 5번') || t.includes('교향곡 제5번'))) {
       pieces.push('구스타프 말러: 교향곡 제5번 c#단조');
     } else if (t.includes('베토벤') && (t.includes('합창') || t.includes('교향곡 제9번') || t.includes('교향곡 9번'))) {
       pieces.push('루트비히 판 베토벤: 교향곡 제9번 d단조 Op.125 "합창"');
+    } else if (t.includes('베토벤') && (t.includes('운명') || t.includes('교향곡 제5번') || t.includes('교향곡 5번'))) {
+      pieces.push('루트비히 판 베토벤: 교향곡 제5번 c단조 Op.67 "운명"');
+    } else if (t.includes('베토벤') && (t.includes('전원') || t.includes('교향곡 제6번') || t.includes('교향곡 6번'))) {
+      pieces.push('루트비히 판 베토벤: 교향곡 제6번 F장조 Op.68 "전원"');
+    } else if (t.includes('베토벤') && t.includes('황제')) {
+      pieces.push('루트비히 판 베토벤: 피아노 협주곡 제5번 E-flat장조 Op.73 "황제"');
     } else if (t.includes('라흐마니노프') && (t.includes('교향곡 제2번') || t.includes('교향곡 2번'))) {
       pieces.push('세르게이 라흐마니노프: 교향곡 제2번 e단조 Op.27');
     } else if (t.includes('라흐마니노프') && (t.includes('피아노 협주곡 제2번') || t.includes('피아노 협주곡 2번'))) {
@@ -450,6 +524,10 @@ export const kopisCrawlerService = {
       pieces.push('구스타브 홀스트: 모음곡 "행성" Op.32');
     } else if (t.includes('생상스') && t.includes('동물의 사육제')) {
       pieces.push('카미유 생상스: 동물의 사육제');
+    } else if (t.includes('헨델') && t.includes('메시아')) {
+      pieces.push('게오르크 프리드리히 헨델: 오라토리오 "메시아" HWV 56');
+    } else if (t.includes('바흐') && t.includes('골드베르크')) {
+      pieces.push('요한 제바스티안 바흐: 골드베르크 변주곡 BWV 988');
     }
 
     return pieces;
