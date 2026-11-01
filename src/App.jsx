@@ -166,12 +166,16 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isAdminAuthenticated]);
 
-  // 일반 사용자의 공연 제보 핸들러
+  // 일반 사용자의 문의 및 공연 제보 핸들러
   const handleSubmitTip = (tipData) => {
     const updatedTips = storageService.addTip(tipData);
     setTips(updatedTips);
     analyticsService.trackTipSubmit(tipData);
-    showToast('소중한 공연 제보가 관리자에게 전달되었습니다. 검토 후 공식 일정으로 등록됩니다.');
+    if (tipData.type === 'inquiry') {
+      showToast('소중한 문의 및 요청이 관리자에게 전달되었습니다. 확인 후 신속히 반영하겠습니다.');
+    } else {
+      showToast('소중한 공연 제보가 관리자에게 전달되었습니다. 검토 후 공식 일정으로 등록됩니다.');
+    }
   };
 
   // 관리자의 제보 승인 및 공식 일정 반영 핸들러
@@ -186,7 +190,7 @@ export default function App() {
   const handleDeleteTip = (tipId) => {
     const updatedTips = storageService.deleteTip(tipId);
     setTips(updatedTips);
-    showToast('제보가 반려/삭제되었습니다.', 'info');
+    showToast('항목이 정리되었습니다.', 'info');
   };
 
   // 공연 추가 핸들러 (Admin 직접 등록)
@@ -235,6 +239,11 @@ export default function App() {
     const updated = storageService.toggleLike(postId);
     setPosts(updated);
     showToast('공감을 보냈습니다! ❤️');
+  };
+
+  const handleViewPost = (postId) => {
+    const updated = storageService.incrementPostView(postId);
+    setPosts(updated);
   };
 
   // 관리자 커뮤니티 관리 핸들러 (글/댓글 수정 및 삭제, IP 차단/해제)
@@ -484,6 +493,7 @@ export default function App() {
             onAddPost={handleAddPost}
             onAddComment={handleAddComment}
             onToggleLike={handleToggleLike}
+            onViewPost={handleViewPost}
             initialTargetConcert={reviewTargetConcert}
           />
         )}

@@ -4,12 +4,24 @@ import { getDisplayStatus, isPastConcert, isTodayConcert, extractVenueAndHall } 
 import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
 
+function formatComposerBadge(comp) {
+  if (typeof comp !== 'string' || !comp.trim()) return '클래식';
+  const clean = comp.trim();
+  if (clean === '클래식 명작' || clean === '클래식') return clean;
+  const parts = clean.split(/\s+/);
+  if (parts.length > 1 && parts[parts.length - 1] === '2세') {
+    return `${parts[parts.length - 2]} 2세`;
+  }
+  return parts[parts.length - 1];
+}
+
 function ConcertCard({ concert }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const isPast = isPastConcert(concert.date, concert.time);
   const isToday = isTodayConcert(concert.date);
   const displayStatus = getDisplayStatus(concert);
   const { cleanVenue, hallName, showHallBadge } = extractVenueAndHall(concert);
+  const officialUrl = getVenueOfficialUrl(concert);
 
   // 날짜 파싱 (예: 2026-10-05 -> 10월 5일)
   const dateParts = concert.date ? concert.date.split('-') : ['2026', '10', '01'];
@@ -76,7 +88,7 @@ function ConcertCard({ concert }) {
               key={idx}
               className="px-2.5 py-0.5 rounded text-[11px] font-medium bg-stone-100 dark:bg-hall-850 text-stone-700 dark:text-stone-300 shrink-0"
             >
-              #{typeof comp === 'string' ? comp.split(' ')[0] : '클래식'}
+              #{formatComposerBadge(comp)}
             </span>
           ))}
         </div>
@@ -205,10 +217,10 @@ function ConcertCard({ concert }) {
         {/* Action Button: 공식 예매처 바로가기 */}
         <div className="pt-2.5 border-t border-stone-100 dark:border-hall-800">
           <a
-            href={getVenueOfficialUrl(concert)}
+            href={officialUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => analyticsService.trackTicketClick(concert, getVenueOfficialUrl(concert))}
+            onClick={() => analyticsService.trackTicketClick(concert, officialUrl)}
             className="w-full py-2.5 px-3.5 rounded-xl bg-concert-500 hover:bg-concert-600 active:scale-[0.99] text-white text-xs font-semibold transition-all flex items-center justify-center gap-1.5 shadow-sm shadow-concert-500/20"
             title="공연장 공식 홈페이지 / 예매처 바로가기"
           >

@@ -11,13 +11,13 @@ const THEME_KEY = 'opus_korea_theme_v3';
 const TIPS_KEY = 'opus_korea_tips_v3';
 const BLOCKED_IPS_KEY = 'opus_korea_blocked_ips_v1';
 
-// 이전 버전의 로컬 캐시 키 정리
+// 이전 버전의 로컬 캐시 키 정리 (QuotaExceededError 원천 방지)
 try {
   if (typeof localStorage !== 'undefined') {
     ['opus_korea_verified_real_concerts_v5', 'opus_korea_verified_real_concerts_v6', 'opus_korea_halls_v3'].forEach(k => {
       localStorage.removeItem(k);
     });
-    for (let v = 7; v <= 45; v++) {
+    for (let v = 7; v <= 46; v++) {
       localStorage.removeItem(`opus_korea_concerts_v${v}`);
     }
   }
@@ -346,8 +346,12 @@ export const storageService = {
     return updated;
   },
 
-  // 관리자: 부적절한 댓글 수정
+  // 관리자: 부적절한 댓글 수정 (문자열 또는 { content } 객체 모두 안전 처리)
   updateComment(postId, commentId, newContent) {
+    const cleanContent =
+      typeof newContent === 'object' && newContent !== null
+        ? String(newContent.content || '')
+        : String(newContent || '');
     const list = this.getPosts();
     const updated = list.map(post => {
       if (post.id === postId) {
@@ -357,7 +361,7 @@ export const storageService = {
             if (c.id === commentId) {
               return {
                 ...c,
-                content: newContent,
+                content: cleanContent,
                 editedAt: formatKSTDateTime(new Date()),
                 editedByAdmin: true
               };
@@ -381,6 +385,19 @@ export const storageService = {
           ...post,
           comments: (post.comments || []).filter(c => c.id !== commentId)
         };
+      }
+      return post;
+    });
+    this.savePosts(updated);
+    return updated;
+  },
+
+  // 게시글 조회수 증가
+  incrementPostView(postId) {
+    const list = this.getPosts();
+    const updated = list.map(post => {
+      if (post.id === postId) {
+        return { ...post, views: (Number(post.views) || 0) + 1 };
       }
       return post;
     });

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   ShieldCheck,
   RefreshCw,
@@ -20,7 +20,8 @@ import {
   ChevronUp,
   BarChart3,
   ExternalLink,
-  Activity
+  Activity,
+  Search
 } from 'lucide-react';
 import { formatKoreanDate } from '../utils/parser.js';
 import { kopisCrawlerService } from '../services/kopisCrawlerService.js';
@@ -49,6 +50,12 @@ export default function AdminCenter({
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [editingConcert, setEditingConcert] = useState(null);
   const [isSyncingKopis, setIsSyncingKopis] = useState(false);
+  const [syncProgressText, setSyncProgressText] = useState('');
+  const [syncResult, setSyncResult] = useState(null);
+
+  // 등록 공연 검색 및 가상 페이지네이션 상태 (2,000+건 DOM 렌더링 최적화)
+  const [adminConcertQuery, setAdminConcertQuery] = useState('');
+  const [visibleConcertLimit, setVisibleConcertLimit] = useState(60);
 
   // 커뮤니티 및 IP 관리용 상태
   const [editingPost, setEditingPost] = useState(null);
@@ -60,6 +67,34 @@ export default function AdminCenter({
   // 구글 애널리틱스 4 (GA4) 연동 상태
   const [gaMeasurementId, setGaMeasurementId] = useState(() => analyticsService.getMeasurementId() || '');
   const [gaFeedback, setGaFeedback] = useState(null);
+
+  // ESC 키로 관리자 모달 닫기 (Gate 2)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        if (isAddModalOpen) setIsAddModalOpen(false);
+        else if (editingConcert) setEditingConcert(null);
+        else if (editingPost) setEditingPost(null);
+        else if (editingComment) setEditingComment(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isAddModalOpen, editingConcert, editingPost, editingComment]);
+
+  // 관리자 공연 검색 필터링
+  const filteredAdminConcerts = useMemo(() => {
+    const q = adminConcertQuery.trim().toLowerCase();
+    if (!q) return concerts;
+    return concerts.filter((c) => {
+      const titleMatch = (c.title || '').toLowerCase().includes(q);
+      const venueMatch = (c.venue || '').toLowerCase().includes(q);
+      const dateMatch = (c.date || '').includes(q);
+      const typeMatch = (c.performerType || '').toLowerCase().includes(q);
+      const perfMatch = (c.performers || []).some((p) => String(p).toLowerCase().includes(q));
+      return titleMatch || venueMatch || dateMatch || typeMatch || perfMatch;
+    });
+  }, [concerts, adminConcertQuery]);
 
   const handleSaveGaId = (e) => {
     e.preventDefault();
@@ -92,20 +127,33 @@ export default function AdminCenter({
 
   const handleSyncKopis = async () => {
     setIsSyncingKopis(true);
+    setSyncResult(null);
+    setSyncProgressText('[1/4단계] KOPIS 공식 전산망 및 10대 공연장 일정 조회 시작...');
     try {
-      const res = await kopisCrawlerService.crawlKopisConcerts();
+      const res = await kopisCrawlerService.crawlKopisConcerts({
+        onProgress: (p) => {
+          if (p && p.stage) setSyncProgressText(p.stage);
+        }
+      });
       if (res.success && res.concerts) {
         if (onRefreshConcerts) {
           onRefreshConcerts(res.concerts);
         }
-        alert(res.message);
+        setSyncResult(res);
       } else {
-        alert(res.message || '공연 데이터를 수집하지 못했습니다.');
+        setSyncResult({
+          success: false,
+          message: res.message || '공연 데이터를 수집하지 못했습니다.'
+        });
       }
     } catch (e) {
-      alert('KOPIS 전산망 수집 중 오류: ' + (e.message || '네트워크 오류'));
+      setSyncResult({
+        success: false,
+        message: 'KOPIS 전산망 수집 중 오류: ' + (e.message || '네트워크 오류')
+      });
     } finally {
       setIsSyncingKopis(false);
+      setSyncProgressText('');
     }
   };
   const [formData, setFormData] = useState({
@@ -279,128 +327,239 @@ export default function AdminCenter({
               )}
             </div>
             <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 font-medium">
-              누락된 일정을 직접 관리하거나, 관람객이 제보한 공연을 검토하여 정식 등록합니다.
+              새벽 3시 자동 배치와 동일한 4단계(KOPIS 소개글 · 공식 상세페이지 · 포스터/전단 이미지 판독 · 명작 매칭) 수집을 수동 실행하거나 공연을 관리합니다.
             </p>
           </div>
 
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2.5 flex-wrap">
             <button
               onClick={handleSyncKopis}
               disabled={isSyncingKopis}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-800 dark:text-stone-200 text-xs font-semibold transition-all shrink-0 border border-stone-200 dark:border-hall-700"
-              title="공연예술통합전산망(KOPIS) 공식 실시간 클래식 공연 데이터를 수집합니다"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-800 dark:text-stone-200 text-xs font-semibold transition-all shrink-0 border border-stone-200 dark:border-hall-700 cursor-pointer"
+              title="새벽 3시 자동 업데이트와 동일한 4단계(KOPIS 공식망 + 상세페이지 + 포스터/전단 이미지 판독) 실시간 수집을 즉시 실행합니다"
             >
               <RefreshCw className={`w-3.5 h-3.5 ${isSyncingKopis ? 'animate-spin text-concert-500' : ''}`} />
-              <span>{isSyncingKopis ? 'KOPIS 전산망 수집 중...' : 'KOPIS 공식 실시간 수집'}</span>
+              <span>{isSyncingKopis ? '4단계 지능형 수집 중...' : 'KOPIS 공식 실시간 수집'}</span>
             </button>
 
             <button
               onClick={() => setIsAddModalOpen(true)}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-md shrink-0"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-md shrink-0 cursor-pointer"
             >
               <PlusCircle className="w-4 h-4" />
               <span>공연 직접 등록 (관리자)</span>
             </button>
           </div>
         </div>
+
+        {/* Live 4-Stage Progress & Result Banner */}
+        {isSyncingKopis && syncProgressText && (
+          <div className="p-3.5 rounded-xl bg-concert-50/80 dark:bg-hall-850 border border-concert-200 dark:border-hall-700 flex items-center gap-2.5 text-xs text-concert-800 dark:text-concert-200 animate-pulse">
+            <RefreshCw className="w-4 h-4 animate-spin text-concert-600 shrink-0" />
+            <span className="font-semibold">{syncProgressText}</span>
+          </div>
+        )}
+
+        {syncResult && (
+          <div
+            className={`p-4 rounded-xl border text-xs space-y-2 ${
+              syncResult.success
+                ? 'bg-emerald-50/80 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800/70 text-emerald-900 dark:text-emerald-200'
+                : 'bg-red-50/80 dark:bg-red-950/40 border-red-200 dark:border-red-800/70 text-red-900 dark:text-red-200'
+            }`}
+          >
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center gap-1.5 font-bold">
+                {syncResult.success ? (
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                ) : (
+                  <AlertTriangle className="w-4 h-4 text-red-600 dark:text-red-400 shrink-0" />
+                )}
+                <span>{syncResult.message}</span>
+              </div>
+              <button
+                onClick={() => setSyncResult(null)}
+                className="p-1 rounded hover:bg-black/5 dark:hover:bg-white/10"
+                aria-label="결과 닫기"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            </div>
+            {syncResult.success && (
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 text-[11px]">
+                <div className="p-2 rounded-lg bg-white/80 dark:bg-hall-900/80 border border-emerald-200/60 dark:border-emerald-900/50">
+                  <span className="text-stone-500 dark:text-stone-400 block">1단계 (KOPIS 소개글)</span>
+                  <span className="font-bold text-stone-900 dark:text-stone-100">{syncResult.stage1Count || 0}건 발굴</span>
+                </div>
+                <div className="p-2 rounded-lg bg-white/80 dark:bg-hall-900/80 border border-emerald-200/60 dark:border-emerald-900/50">
+                  <span className="text-stone-500 dark:text-stone-400 block">2단계 (공식 상세페이지)</span>
+                  <span className="font-bold text-stone-900 dark:text-stone-100">{syncResult.stage2Count || 0}건 발굴</span>
+                </div>
+                <div className="p-2 rounded-lg bg-white/80 dark:bg-hall-900/80 border border-emerald-200/60 dark:border-emerald-900/50">
+                  <span className="text-stone-500 dark:text-stone-400 block">3단계 (포스터·전단 판독)</span>
+                  <span className="font-bold text-stone-900 dark:text-stone-100">
+                    {syncResult.stage3Count || 0}건 {syncResult.serverBatchStarted ? '(서버 정밀 판독 중)' : '발굴'}
+                  </span>
+                </div>
+                <div className="p-2 rounded-lg bg-white/80 dark:bg-hall-900/80 border border-emerald-200/60 dark:border-emerald-900/50">
+                  <span className="text-stone-500 dark:text-stone-400 block">4단계 (제목·오페라 매칭)</span>
+                  <span className="font-bold text-stone-900 dark:text-stone-100">{syncResult.stage4Count || 0}건 발굴</span>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
-      {/* User Tip-off Inbox (관람객 제보 대기열 섹션) */}
+      {/* User Inquiry & Tip-off Inbox (관람객 문의 및 공연 제보함) */}
       <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
           <div className="flex items-center gap-2">
             <Inbox className="w-5 h-5 text-concert-500" />
             <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100">
-              관람객 공연 제보함 ({tips.length}건 대기 중)
+              관람객 문의 및 공연 제보함 ({tips.length}건 대기 중)
             </h3>
           </div>
           <span className="text-xs text-stone-400">
-            검토 후 승인 시 즉시 공식 일정으로 메인 화면에 등록됩니다.
+            공연 제보는 승인 시 즉시 공식 일정으로 등록되며, 일반 문의는 확인 후 완료 처리할 수 있습니다.
           </span>
         </div>
 
         {tips.length === 0 ? (
           <div className="p-8 text-center bg-stone-50 dark:bg-hall-850 rounded-2xl border border-stone-200/60 dark:border-hall-800 text-xs text-stone-500 dark:text-stone-400">
-            현재 대기 중인 관람객 제보가 없습니다. 유저가 상단 [공연 제보하기]를 통해 제보한 공연이 여기에 표시됩니다.
+            현재 대기 중인 문의 또는 공연 제보가 없습니다. 이용자가 상단 [문의 및 공연 제보]를 통해 접수한 내역이 여기에 표시됩니다.
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {tips.map((tip) => (
-              <div
-                key={tip.id}
-                className="p-4 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-800 space-y-3"
-              >
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10px] text-stone-400">{tip.createdAt} 제보 접수</span>
-                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300">
-                      검토 대기
-                    </span>
-                  </div>
-                  <h4 className="font-bold text-sm text-stone-900 dark:text-stone-100 mt-1">
-                    {tip.title}
-                  </h4>
-                  <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">
-                    {formatKoreanDate(tip.date)} · {tip.time} | {tip.venue}
-                  </p>
-                  <p className="text-xs text-concert-600 dark:text-concert-400 font-medium mt-0.5">
-                    출연: {Array.isArray(tip.performers) ? tip.performers.join(', ') : tip.performers}
-                  </p>
-                  {tip.note && (
-                    <p className="text-[11px] text-stone-600 dark:text-stone-300 bg-white dark:bg-hall-900 p-2 rounded-lg border border-stone-200/60 dark:border-hall-800 mt-2">
-                      <strong>제보 메모:</strong> {tip.note}
+            {tips.map((tip) => {
+              const isInquiry = tip.type === 'inquiry' || tip.venue === '일반 문의 / 정보 수정 요청';
+              return (
+                <div
+                  key={tip.id}
+                  className="p-4 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-800 space-y-3"
+                >
+                  <div>
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-[10px] text-stone-400">{tip.createdAt} 접수</span>
+                      <span
+                        className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                          isInquiry
+                            ? 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300'
+                            : 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
+                        }`}
+                      >
+                        {isInquiry ? '일반 문의 / 요청' : '공연 제보 대기'}
+                      </span>
+                    </div>
+                    <h4 className="font-bold text-sm text-stone-900 dark:text-stone-100 mt-1">
+                      {tip.title}
+                    </h4>
+                    {!isInquiry && (
+                      <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">
+                        {formatKoreanDate(tip.date)} · {tip.time} | {tip.venue}
+                      </p>
+                    )}
+                    <p className="text-xs text-concert-600 dark:text-concert-400 font-medium mt-0.5">
+                      {isInquiry ? '작성자/연락처: ' : '출연: '}
+                      {Array.isArray(tip.performers) ? tip.performers.join(', ') : tip.performers}
                     </p>
-                  )}
-                </div>
+                    {tip.note && (
+                      <p className="text-[11px] text-stone-600 dark:text-stone-300 bg-white dark:bg-hall-900 p-2.5 rounded-lg border border-stone-200/60 dark:border-hall-800 mt-2 whitespace-pre-wrap leading-relaxed">
+                        <strong>{isInquiry ? '문의 내용:' : '제보 메모:'}</strong> {tip.note}
+                      </p>
+                    )}
+                  </div>
 
-                <div className="flex items-center justify-end gap-2 pt-2 border-t border-stone-200/80 dark:border-hall-800">
-                  <button
-                    onClick={() => onDeleteTip(tip.id)}
-                    className="px-3 py-1.5 rounded-lg bg-stone-200 hover:bg-stone-300 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-300 text-xs font-semibold transition-colors"
-                  >
-                    반려
-                  </button>
-                  <button
-                    onClick={() => onApproveTip(tip.id)}
-                    className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-xs"
-                  >
-                    <Check className="w-3.5 h-3.5" />
-                    <span>승인하여 정식 등록</span>
-                  </button>
+                  <div className="flex items-center justify-end gap-2 pt-2 border-t border-stone-200/80 dark:border-hall-800">
+                    {isInquiry ? (
+                      <button
+                        onClick={() => onDeleteTip(tip.id)}
+                        className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-xs"
+                      >
+                        <Check className="w-3.5 h-3.5" />
+                        <span>확인 완료 (정리)</span>
+                      </button>
+                    ) : (
+                      <>
+                        <button
+                          onClick={() => onDeleteTip(tip.id)}
+                          className="px-3 py-1.5 rounded-lg bg-stone-200 hover:bg-stone-300 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-300 text-xs font-semibold transition-colors"
+                        >
+                          반려
+                        </button>
+                        <button
+                          onClick={() => onApproveTip(tip.id)}
+                          className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-xs"
+                        >
+                          <Check className="w-3.5 h-3.5" />
+                          <span>승인하여 정식 등록</span>
+                        </button>
+                      </>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>
 
       {/* Registered Concerts Management Section */}
       <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100 flex items-center gap-2">
               <Music className="w-5 h-5 text-concert-500" />
               <span>현재 등록된 전체 공연 데이터 ({concerts.length}건)</span>
             </h3>
-            <span className="text-xs text-stone-400">관리자 삭제 시 메인 화면 및 캘린더에 즉시 반영됩니다</span>
+            <span className="text-xs text-stone-400">
+              관리자 수정·삭제 시 메인 화면 및 캘린더에 즉시 반영됩니다
+            </span>
           </div>
 
-          {concerts.length > 0 && (
-            <button
-              onClick={() => {
-                if (confirm('⚠️ 등록된 모든 공연 데이터를 완전히 삭제하시겠습니까?\n이 작업은 즉시 반영되며, 필요 시 공연 직접 등록이나 관람객 제보 승인을 통해 다시 채울 수 있습니다.')) {
-                  if (onClearAllConcerts) {
-                    onClearAllConcerts();
+          <div className="flex items-center gap-2 flex-wrap">
+            {/* Instant Admin Concert Search Input */}
+            <div className="relative min-w-[220px]">
+              <Search className="w-3.5 h-3.5 text-stone-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <input
+                type="text"
+                value={adminConcertQuery}
+                onChange={(e) => {
+                  setAdminConcertQuery(e.target.value);
+                  setVisibleConcertLimit(60);
+                }}
+                placeholder="공연명, 공연장, 날짜, 출연진 빠른 검색..."
+                className="w-full pl-8 pr-7 py-1.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+              />
+              {adminConcertQuery && (
+                <button
+                  type="button"
+                  onClick={() => setAdminConcertQuery('')}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600"
+                  aria-label="검색어 지우기"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
+
+            {concerts.length > 0 && (
+              <button
+                onClick={() => {
+                  if (confirm('⚠️ 등록된 모든 공연 데이터를 완전히 삭제하시겠습니까?\n이 작업은 즉시 반영되며, 필요 시 공연 직접 등록이나 관람객 제보 승인을 통해 다시 채울 수 있습니다.')) {
+                    if (onClearAllConcerts) {
+                      onClearAllConcerts();
+                    }
                   }
-                }
-              }}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-red-50 hover:bg-red-100 dark:bg-red-950/60 dark:hover:bg-red-900/60 text-red-600 dark:text-red-300 border border-red-200/80 dark:border-red-900/50 transition-colors shrink-0"
-              title="모든 공연 데이터를 완전히 비웁니다"
-            >
-              <Trash2 className="w-3.5 h-3.5" />
-              <span>공연 데이터 전체 삭제</span>
-            </button>
-          )}
+                }}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-red-50 hover:bg-red-100 dark:bg-red-950/60 dark:hover:bg-red-900/60 text-red-600 dark:text-red-300 border border-red-200/80 dark:border-red-900/50 transition-colors shrink-0"
+                title="모든 공연 데이터를 완전히 비웁니다"
+              >
+                <Trash2 className="w-3.5 h-3.5" />
+                <span>공연 데이터 전체 삭제</span>
+              </button>
+            )}
+          </div>
         </div>
 
         {concerts.length === 0 ? (
@@ -409,57 +568,78 @@ export default function AdminCenter({
             <p className="font-semibold text-stone-700 dark:text-stone-300">현재 등록된 공연 데이터가 없습니다.</p>
             <p className="text-[11px] text-stone-400">부정확한 기존 데이터는 전량 정리되었습니다. 상단의 '공연 직접 등록' 버튼을 이용하거나 관람객 제보를 승인하여 정확한 일정을 등록해주세요.</p>
           </div>
+        ) : filteredAdminConcerts.length === 0 ? (
+          <div className="py-8 text-center text-xs text-stone-400 dark:text-stone-500 bg-stone-50/60 dark:bg-hall-850/60 rounded-xl border border-dashed border-stone-200 dark:border-hall-800">
+            검색어("{adminConcertQuery}")와 일치하는 공연이 없습니다.
+          </div>
         ) : (
-          <div className="divide-y divide-stone-100 dark:divide-hall-800 max-h-96 overflow-y-auto">
-            {concerts.map((c) => (
-              <div
-                key={c.id}
-                className="py-3 flex items-center justify-between gap-3 text-xs"
-              >
-                <div className="min-w-0 space-y-1">
-                  <div className="flex items-center gap-2">
-                    <span className="font-bold text-stone-900 dark:text-stone-100 text-sm truncate">
-                      {c.title}
-                    </span>
-                    <span className={`px-2 py-0.5 rounded text-[10px] font-semibold ${
-                      c.crawlerBlocked
-                        ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
-                        : 'bg-stone-100 text-stone-600 dark:bg-hall-800 dark:text-stone-300'
-                    }`}>
-                      {c.source}
-                    </span>
+          <div className="space-y-3">
+            <div className="divide-y divide-stone-100 dark:divide-hall-800 max-h-96 overflow-y-auto pr-1">
+              {filteredAdminConcerts.slice(0, visibleConcertLimit).map((c) => (
+                <div
+                  key={c.id}
+                  className="py-3 flex items-center justify-between gap-3 text-xs"
+                >
+                  <div className="min-w-0 space-y-1">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-concert-50 dark:bg-hall-800 text-concert-700 dark:text-concert-300 shrink-0">
+                        {c.performerType || '클래식'}
+                      </span>
+                      <span className="font-bold text-stone-900 dark:text-stone-100 text-sm truncate">
+                        {c.title}
+                      </span>
+                      <span className={`px-2 py-0.5 rounded text-[10px] font-semibold shrink-0 ${
+                        c.crawlerBlocked
+                          ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
+                          : 'bg-stone-100 text-stone-600 dark:bg-hall-800 dark:text-stone-300'
+                      }`}>
+                        {c.source}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3 text-stone-500 dark:text-stone-400">
+                      <span>{formatKoreanDate(c.date)}</span>
+                      <span>·</span>
+                      <span>{c.venue}</span>
+                      <span>·</span>
+                      <span className="text-concert-600 dark:text-concert-400 truncate max-w-xs">{(c.performers || []).join(', ')}</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3 text-stone-500 dark:text-stone-400">
-                    <span>{formatKoreanDate(c.date)}</span>
-                    <span>·</span>
-                    <span>{c.venue}</span>
-                    <span>·</span>
-                    <span className="text-concert-600 dark:text-concert-400 truncate max-w-xs">{c.performers.join(', ')}</span>
-                  </div>
-                </div>
 
-                <div className="flex items-center gap-1 shrink-0">
-                  <button
-                    onClick={() => openEditModal(c)}
-                    className="p-2 text-stone-500 hover:text-concert-600 dark:hover:text-concert-400 hover:bg-concert-50 dark:hover:bg-hall-800 rounded-lg transition-colors"
-                    title="공연 정보 직접 수정"
-                  >
-                    <Edit3 className="w-4 h-4" />
-                  </button>
-                  <button
-                    onClick={() => {
-                      if (confirm(`'${c.title}' 공연을 삭제하시겠습니까?`)) {
-                        onDeleteConcert(c.id);
-                      }
-                    }}
-                    className="p-2 text-stone-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded-lg transition-colors"
-                    title="공연 일정 삭제"
-                  >
-                    <Trash2 className="w-4 h-4" />
-                  </button>
+                  <div className="flex items-center gap-1 shrink-0">
+                    <button
+                      onClick={() => openEditModal(c)}
+                      className="p-2 text-stone-500 hover:text-concert-600 dark:hover:text-concert-400 hover:bg-concert-50 dark:hover:bg-hall-800 rounded-lg transition-colors"
+                      title="공연 정보 직접 수정"
+                    >
+                      <Edit3 className="w-4 h-4" />
+                    </button>
+                    <button
+                      onClick={() => {
+                        if (confirm(`'${c.title}' 공연을 삭제하시겠습니까?`)) {
+                          onDeleteConcert(c.id);
+                        }
+                      }}
+                      className="p-2 text-stone-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded-lg transition-colors"
+                      title="공연 일정 삭제"
+                    >
+                      <Trash2 className="w-4 h-4" />
+                    </button>
+                  </div>
                 </div>
+              ))}
+            </div>
+
+            {filteredAdminConcerts.length > visibleConcertLimit && (
+              <div className="pt-2 text-center">
+                <button
+                  type="button"
+                  onClick={() => setVisibleConcertLimit((prev) => prev + 100)}
+                  className="px-4 py-2 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-750 text-stone-700 dark:text-stone-300 text-xs font-semibold transition-colors"
+                >
+                  공연 목록 더보기 ({visibleConcertLimit} / {filteredAdminConcerts.length}건 표시 중)
+                </button>
               </div>
-            ))}
+            )}
           </div>
         )}
       </div>
@@ -1167,7 +1347,7 @@ export default function AdminCenter({
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div>
                   <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
                     공연장 / 홀
@@ -1178,6 +1358,23 @@ export default function AdminCenter({
                     onChange={(e) => setEditingConcert({ ...editingConcert, venue: e.target.value })}
                     className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                   />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    연주 편성
+                  </label>
+                  <select
+                    value={editingConcert.performerType || '오케스트라'}
+                    onChange={(e) => setEditingConcert({ ...editingConcert, performerType: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  >
+                    <option value="오케스트라">오케스트라</option>
+                    <option value="실내악">실내악</option>
+                    <option value="독주회">독주회</option>
+                    <option value="오페라">오페라</option>
+                    <option value="성악/합창">성악/합창</option>
+                  </select>
                 </div>
 
                 <div>

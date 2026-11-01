@@ -29,6 +29,7 @@ export default function CommunityBoard({
   onAddPost,
   onAddComment,
   onToggleLike,
+  onViewPost,
   initialTargetConcert
 }) {
   const [selectedCategory, setSelectedCategory] = useState('전체');
@@ -66,6 +67,18 @@ export default function CommunityBoard({
       setIsWriteModalOpen(true);
     }
   }, [initialTargetConcert]);
+
+  // ESC 키로 상세 모달 / 글쓰기 모달 닫기 (Gate 2)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        if (activePost) setActivePost(null);
+        else if (isWriteModalOpen) setIsWriteModalOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activePost, isWriteModalOpen]);
 
   // 검색 실행 핸들러 (타이핑 완료 후 검색 버튼 클릭 또는 엔터 키)
   const handleExecuteSearch = (e) => {
@@ -438,7 +451,10 @@ export default function CommunityBoard({
           filteredPosts.map((post) => (
             <article
               key={post.id}
-              onClick={() => setActivePost(post)}
+              onClick={() => {
+                if (onViewPost) onViewPost(post.id);
+                setActivePost({ ...post, views: (Number(post.views) || 0) + 1 });
+              }}
               className="p-5 rounded-2xl bg-white dark:bg-hall-900 border border-stone-200/80 dark:border-hall-800 hover:border-concert-400/80 dark:hover:border-concert-500/80 transition-all cursor-pointer shadow-xs space-y-3"
             >
               <div className="flex items-center justify-between gap-2 flex-wrap">

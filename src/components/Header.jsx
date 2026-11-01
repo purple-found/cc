@@ -64,14 +64,14 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
 
           {/* Right Action buttons */}
           <div className="flex items-center gap-2.5">
-            {/* General User: Suggest/Tip-off concert to Admin */}
+            {/* General User: Inquiry & Suggest/Tip-off concert to Admin */}
             <button
               onClick={onOpenTipModal}
               className="flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-lg bg-concert-50 dark:bg-hall-800 border border-concert-300/80 dark:border-hall-700 text-concert-800 dark:text-concert-300 hover:bg-concert-100 dark:hover:bg-hall-700 transition-colors shrink-0"
-              title="누락된 공연이나 정보를 관리자에게 제보해주세요"
+              title="서비스 이용 문의나 누락된 공연 정보를 관리자에게 전달해주세요"
             >
               <Sparkles className="w-3.5 h-3.5 text-concert-600 dark:text-concert-400" />
-              <span>공연 제보하기</span>
+              <span>문의 및 공연 제보</span>
             </button>
 
             {/* Dark / Light Mode Switcher */}
