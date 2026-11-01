@@ -144,6 +144,28 @@ export default function App() {
     setToast({ message, type });
   };
 
+  // 시크릿 관리자 인증/진입 호출 핸들러 (검색창 커맨드, 푸터 5회 탭, 키보드 단축키 공용)
+  const handleOpenAdminAuth = () => {
+    if (isAdminAuthenticated) {
+      setActiveTab('admin');
+      showToast('관리 센터로 이동했습니다.');
+    } else {
+      setIsAdminAuthModalOpen(true);
+    }
+  };
+
+  // 데스크톱 표준 관리자 단축키 (Ctrl + Shift + A 또는 Cmd + Shift + A)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'A' || e.key === 'a' || e.code === 'KeyA')) {
+        e.preventDefault();
+        handleOpenAdminAuth();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isAdminAuthenticated]);
+
   // 일반 사용자의 공연 제보 핸들러
   const handleSubmitTip = (tipData) => {
     const updatedTips = storageService.addTip(tipData);
@@ -392,6 +414,7 @@ export default function App() {
               concerts={concerts}
               shouldShowConcerts={shouldShowConcerts}
               onReset={() => setShowAllConcerts(false)}
+              onOpenAdminAuth={handleOpenAdminAuth}
             />
 
             {/* View Mode: Initial Discovery Guide vs Cards vs Compact vs Calendar */}
@@ -543,15 +566,8 @@ export default function App() {
       {/* Toast Notification */}
       <Toast toast={toast} onClose={() => setToast(null)} />
 
-      {/* Global Footer with hidden admin trigger */}
-      <Footer onOpenAdminAuth={() => {
-        if (isAdminAuthenticated) {
-          setActiveTab('admin');
-          showToast('관리 센터로 이동했습니다.');
-        } else {
-          setIsAdminAuthModalOpen(true);
-        }
-      }} />
+      {/* Global Footer with hidden 5-tap admin trigger */}
+      <Footer onOpenAdminAuth={handleOpenAdminAuth} />
     </div>
   );
 }

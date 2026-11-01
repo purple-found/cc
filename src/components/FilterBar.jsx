@@ -11,7 +11,8 @@ export default function FilterBar({
   filteredCount,
   concerts = [],
   shouldShowConcerts = true,
-  onReset
+  onReset,
+  onOpenAdminAuth
 }) {
   // 1. 등록된 모든 공연장 전수 통합 및 단일 ㄱㄴㄷ(가나다) 순 완전 정렬
   const venues = useMemo(() => {
@@ -128,6 +129,22 @@ export default function FilterBar({
   const handleSearchSubmit = (e) => {
     if (e) e.preventDefault();
     const query = localSearch.trim();
+
+    // 시크릿 관리자 호출 명령어 감지 (/admin, !admin, #admin, /관리자, !관리자)
+    const lowerQuery = query.toLowerCase();
+    if (
+      lowerQuery === '/admin' ||
+      lowerQuery === '!admin' ||
+      lowerQuery === '#admin' ||
+      lowerQuery === '/관리자' ||
+      lowerQuery === '!관리자' ||
+      lowerQuery === '#관리자'
+    ) {
+      setLocalSearch('');
+      if (onOpenAdminAuth) onOpenAdminAuth();
+      return;
+    }
+
     setFilters((prev) => ({ ...prev, search: query }));
     if (query) {
       analyticsService.trackSearch(query, filters);
