@@ -2507,7 +2507,13 @@
     "relateUrls": [
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013141"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "I협주곡|",
+      "MELON SYMPHONY ORCHESTRA",
+      "Symphony Orchestro"
+    ]
   },
   "PF302100": {
     "fcltynm": "부천아트센터 (콘서트홀)",
@@ -2526,7 +2532,14 @@
     "relateUrls": [
       "https://www.bac.or.kr/product/ko/performance/253542"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "G.비제 - 카르멘 모음곡 1,2번",
+      "G.Bizet - Carmen Suite No. 1 & No. 2",
+      "A.보로단 - 교향곡 제2번 B단조",
+      "A. Borodin - Symphony No. 2 in B Minor"
+    ]
   },
   "PF301577": {
     "fcltynm": "세종문화회관 (세종체임버홀)",
@@ -2546,7 +2559,16 @@
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004843",
       "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37661&menuNo=200320#none"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "생상스, 현악 사중주 1번 4악장",
+      "말러, 교향곡 5번 4악장 아다지에토",
+      "C. Saint-Saens, String Quartet No. 1 in E Minor",
+      "야나체크, 현악 사중주 1번 ”크로이처 소나타“ 3, 4악장",
+      "L. Janå&ek, String Quartet No. 1, \"Kreutzer Sonata\"",
+      "G. Mahler, Symphony No. 5, IV. Adagietto"
+    ]
   },
   "PF302816": {
     "fcltynm": "전남광주통합특별시 예술의전당 (구. 광주예술의전당) (소극장)",
@@ -2566,7 +2588,16 @@
       "https://booking.naver.com/booking/12/bizes/1751420",
       "https://ticket.yes24.com/Perf/60504"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "포퍼 I 네 대의 첼로를 위한 콘서트 폴로네이즈, Op. 14",
+      "D. Popper | Concert Polonaise for 4 Cellos, Op. 14",
+      "그리그 I 롤베르그 모음곡, Op. 40",
+      "E. Grieg | Holberg Suite, 0이40",
+      "www.facebook.com/gisymphony",
+      "gwangju—symphony-orchestra"
+    ]
   },
   "PF303163": {
     "fcltynm": "화성예술의전당 (동탄아트홀)",
@@ -2604,7 +2635,11 @@
     "relateUrls": [
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014206"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "스테이지 2 - 단풍나무합창단"
+    ]
   },
   "PF304837": {
     "fcltynm": "부천아트센터 (콘서트홀)",
@@ -2623,7 +2658,14 @@
     "relateUrls": [
       "https://www.bac.or.kr/product/performance/253569"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "헨델, 메시아 - G.F. HANDEL, MESSIAH",
+      "한일의 오라토리오 '메시아' HVvW 56은 1 741년에 쓰여 이듬해 더블린에서 초연된 이래 전 세가에서 가장 자주 연주되는 중요 작품으로 자",
+      "리 잡았습니다. 예수 그리스도의 탄생에 대한 예언으로부터 메시아의 오심과 고난, 그리고 부활과 영원한 승리까지 3부로 이루어진 이 대작은",
+      "[1-4)으로 구성된 합창단으로, 매해 교회"
+    ]
   },
   "PF303785": {
     "fcltynm": "대전예술의전당 (앙상블홀)",
@@ -2673,7 +2715,8 @@
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010080",
       "https://www.lotteconcerthall.com/product/performance/261146"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true
   },
   "PF300261": {
     "fcltynm": "예술의전당 [서울] (인춘아트홀)",
@@ -3476,8 +3519,6 @@
     "pageChecked": true,
     "ocrChecked": true,
     "extractedPieces": [
-      "1975년 국가사절단 합창 지휘 (18개국 순회 연주)",
-      "오으하작곡발표회연주, 7뚀아낭성기합창곡집출판2 |념회기념연주",
       "원프로젝트 남성합창단은 2011년 4월 25일 “김성균음악교육연구소”에서 시대의 정서와",
       "지난 15여 년 동안 다수의 크고 작은 연주회를 통하여 높은 합창의 진수를 구현하였고, 세계"
     ]
@@ -3523,7 +3564,12 @@
     "relateUrls": [
       "https://www.bac.or.kr/product/ko/performance/253562"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "Concerto in a Minor, Op.54",
+      "ConcertoN02 in Minor, Op. 18"
+    ]
   },
   "PF284175": {
     "fcltynm": "아트센터 인천 (콘서트홀)",
@@ -3542,7 +3588,16 @@
     "relateUrls": [
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26001012"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "N. Paganini : Vi01a Concert0 (arr. from Guitar Quartet No. 15)",
+      "P. I. Tchaikovsky : Romeo and Juliet, Fantasy-Overture",
+      "하이든 : 트럼펫 협주곡 내림마장조, Hob. V11e:1",
+      "B. Vaihal : Double bass Concerto in D major",
+      "C. M. v. Weber : Bassoon Concerto in F major, Op. 75",
+      "Stravinsky : The Firebird Suite (1919)"
+    ]
   },
   "PF299246": {
     "fcltynm": "아트센터 인천 (콘서트홀)",
@@ -3561,7 +3616,14 @@
     "relateUrls": [
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012048"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "안토니오 비발디: 현악 협주곡 비단조, RV 143",
+      "Ca『lo Tessarini: Overture in D major from Op. 4",
+      "안토니우 페레이라 다 코스타: 협주곡 제10번 다장조",
+      "AIessandro ScarIatti: Sinfonia di Concerto grosso No. 5"
+    ]
   },
   "PF298969": {
     "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
@@ -3581,7 +3643,8 @@
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012030",
       "https://www.lotteconcerthall.com/product/performance/261181"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true
   },
   "PF303044": {
     "fcltynm": "부천아트센터 (소공연장)",
@@ -3600,7 +3663,13 @@
     "relateUrls": [
       "https://www.bac.or.kr/product/performance/253556?q=MTM5Nzc0NmM4OWY4NGMzOGE2M2I2MGNjY2JkN2EyY2U%3d"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "카르엔| 서곡 1",
+      "사계 中 - 겨올 - I Antonio",
+      "푸를 옷소매 주제에 의한 환상곡 I R이하, Voughm WiMiams"
+    ]
   },
   "PF304840": {
     "fcltynm": "대전예술의전당 (앙상블홀)",
@@ -3619,7 +3688,8 @@
     "relateUrls": [
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014692"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true
   },
   "PF293945": {
     "fcltynm": "전남광주통합특별시 예술의전당 (구. 광주예술의전당) (대극장)",
@@ -3639,7 +3709,8 @@
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008616",
       "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79489"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true
   },
   "PF300213": {
     "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
@@ -3659,7 +3730,8 @@
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012775",
       "https://www.lotteconcerthall.com/product/performance/261197"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true
   },
   "PF288841": {
     "fcltynm": "아트센터 인천 (콘서트홀)",
@@ -3678,7 +3750,12 @@
     "relateUrls": [
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26005247"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "덴마크 라디오 합창단, 그리고 오비에도의 일 레온 데 오로(E| Leon de Oro)와 협업하고",
+      "합창단 창단을 도왔으며 이곳의 보들리 필로*(BodIey FeIIow)로 재직 중이다."
+    ]
   },
   "PF304879": {
     "fcltynm": "부천아트센터 (콘서트홀)",
@@ -3697,7 +3774,12 @@
     "relateUrls": [
       "http://www.lgart.com/UIPage/perform/calender_view.aspx?seq=253570"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "Waltz No. 2 (Jazz Suite)",
+      "Symphony No. 9 in E Minor, 하. 95"
+    ]
   },
   "PF303088": {
     "fcltynm": "부천아트센터 (콘서트홀)",
@@ -3717,7 +3799,11 @@
     "relateUrls": [
       "https://www.bac.or.kr/product/performance/253549?q=ZmExYWNmOGIxZWUxNGE2MzljNGM0ZjgzNWE4MzE1NDA%3d"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "No. 3"
+    ]
   },
   "PF304244": {
     "fcltynm": "전남광주통합특별시 예술의전당 (구. 광주예술의전당) (소극장)",
@@ -3737,7 +3823,15 @@
       "https://booking.naver.com/booking/12/bizes/1760568",
       "https://ticket.yes24.com/Perf/60712"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "Johann Sebastian Bach: 관현악 모음곡 제3번 중 아리아",
+      "Johann Sebastian Bach: Orchestral Suite No. 3 in D Major, BWV 1068 ll. Air",
+      "George Frideric Handel: Oboe Concerto in D Minor, S. D935",
+      "George Frideric Handel: 사계 : 〈화성과 창의의 시도> Op. 8, No. 4 “겨울”",
+      "Antonio Vivaldi: Orchestra, Korean Symphony Orchestra 협연,"
+    ]
   },
   "PF303829": {
     "fcltynm": "예술의전당 [서울] (인춘아트홀)",
@@ -3758,7 +3852,15 @@
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014589",
       "https://ticket.yes24.com/Perf/60609"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "Valse caprtcho",
+      "Fantasia 6éttca",
+      "Fantasia bética 베티카 환상곡",
+      "Nocturne 녹턴",
+      "Serenata andaluza 안달루시아 세레나데"
+    ]
   },
   "PF304398": {
     "fcltynm": "예술의전당 [서울] (IBK챔버홀)",
@@ -3777,7 +3879,14 @@
     "relateUrls": [
       "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015360"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "Carnaval des animaux (The Carnival 하 the Animals)",
+      "Boléro",
+      "Pavane, Op. 50 & Sicilienne, Op. 78",
+      "Suite for Flute and 」azz Piano Trio: \"lrlandaise”"
+    ]
   },
   "PF281690": {
     "fcltynm": "아트센터 인천 (콘서트홀)",
@@ -3799,7 +3908,31 @@
       "https://www.enticket.com:469/pfm/sub01_view.html?pfmIng=1&p_idx=4093",
       "https://www.incheon.go.kr/art/ART010104/view?resveProgrmSeCode=C&resveGroupSn=5&progrmSn=10661"
     ],
-    "pageChecked": true
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "A Dv이äk | Symphony No. 9 in E Minor, Op. 95 'From the New World'",
+      "P. TchaikOvSky Violin Concerto in D major, Op. 35",
+      "모차르트 I 피아노 협주곡 23번",
+      "F. Mendelssohn | Piano Concerto No. 2 in D Minor, Op. 40",
+      "드보르자크 I 교향곡 7번",
+      "G. Mahler | Symphony No. 7 in D Minor, Op. 70",
+      "T. Adés | Overture tO 'The Tempest' (Asian Premiere)",
+      "K. Szymanowski | Violin Concerto No. 2 in A Minor, Op. 61 (Korean Premiere)",
+      "P. |. Tchaikovsky I Symphony No. 6 in B Minor, Op. 74 'Pathétique",
+      "W. A. Mozart I Piano Concerto No. 23 in A major, Ⅸ. 488",
+      "J. Sibelius | Symphony No. 2 in D major, Op. 43",
+      "말러 I 교향곡 8번 '천인교항곡'",
+      "G. Mahler | Symphony No. 8 in Eb major 'Symphony Of a Thousand",
+      "하이든l칡로 협주곡 1번",
+      "J. Haydn 1 Cello Concerto No. 1 in C major, 卜Ob. VIIb : 1",
+      "Bartök I Concerto for Orchestra",
+      "J. Brahms I Symphony No. 3 in F major, Op. 90",
+      "J. Brahms I Piano Concerto No. 2 in 비, major, Op. 83",
+      "모차르트 I 피아노 협주곡 20번",
+      "W. A. Mozart | Piano Concerto No. 20 in Minor, K. 466",
+      "L. `,. Beethoven Symphony No. 2 in D major, Op. 36"
+    ]
   },
   "PF303784": {
     "fcltynm": "경주예술의전당 (대공연장(화랑홀))",
@@ -4185,6 +4318,1062 @@
     "relateUrl": "http://www.ticketlink.co.kr/product/66657",
     "relateUrls": [
       "http://www.ticketlink.co.kr/product/66657"
+    ],
+    "pageChecked": true
+  },
+  "PF304719": {
+    "fcltynm": "세종문화회관 (세종대극장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "대극장",
+    "cast": "임태경, 윤승업, 강혜정 등",
+    "price": "VIP석 150,000원, R석 120,000원, S석 100,000원, A석 80,000원, A석 40,000원",
+    "runtime": "2시간",
+    "dtguidance": "금요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304719_261028_143025.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304719_202610280230255131.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304719_202610280230255040.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004875",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004875",
+      "https://ticket.melon.com/performance/index.htm?prodId=214167",
+      "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37783&menuNo=200320"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true
+  },
+  "PF303381": {
+    "fcltynm": "예술의전당 [서울] (IBK챔버홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "IBK챔버홀",
+    "cast": "이정현, 김화라, 이해수 등",
+    "price": "R석 55,000원, S석 33,000원",
+    "runtime": "1시간 35분",
+    "dtguidance": "일요일(14:00)",
+    "sty": "[Program]\n\n윤이상                               투게더\nIsang Yun                          Together (1989)\n\n페데리스 바스크스                내면의 성\nPēteris Vasks                       Castillo Interior (2013)\n\n보후슬라프 마르티누             바이올린과 첼로를 위한 이중주1번\nBohuslav Martinů                  Duo No. 1 for Violin and Cello, H. 157\n\n- Intermission -\n\nA. F. 세르바스 &amp; H. 레오나르    베토벤 주제에 의한 연주회용 그랑 듀오 2번\nA. F. Servais &amp; H. Léonard       Grand Duo de Concert No. 2 on Themes by Beethoven\n\n안톤 아렌스키                      현악 사중주 2번 A단조\nAnton Arensky                    String Quartet No. 2 in A minor, Op. 35 (for Violin, Viola and Two Cellos)",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303381_261014_181524.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303381_202610140615243030.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014622",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014622"
+    ],
+    "extractedPieces": [
+      "Bohuslav Martinů Duo No. 1 for Violin and Cello, H. 157",
+      "A. F. Servais & H. Léonard Grand Duo de Concert No. 2 on Themes by Beethoven",
+      "안톤 아렌스키 현악 사중주 2번 A단조",
+      "Anton Arensky String Quartet No. 2 in A minor, Op. 35 (for Violin, Viola and Two Cellos)"
+    ]
+  },
+  "PF303184": {
+    "fcltynm": "JCC 아트센터 (콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "콘서트홀",
+    "cast": "정효인, 조은애, 윤인아",
+    "price": "전석 10,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "토요일(15:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303184_261013_135523.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303184_202610130155237131.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303184_202610130155237090.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014571",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014571"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "이번 rBeethoven Complete Piano Sonatas」 는 베토벤의 32개 피아노 소나타를 여러 자해에 걸쳐 연주하는 장기 프",
+      "베토벤 피아노 소나타 전곡 시리즈 1"
+    ]
+  },
+  "PF304627": {
+    "fcltynm": "대전시립연정국악원 (작은마당)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "작은마당",
+    "cast": "황윤지, 박연선, 이미솔",
+    "price": "전석 20,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "일요일(17:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304627_261027_155636.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304627_202610270356369480.png"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015483",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015483"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "B.BARTOK: Sonata Latino",
+      "A.PIAZZOLLA: J. Gade & T. L Christiansen Tango Fantasia fO「 Piano"
+    ]
+  },
+  "PF304491": {
+    "fcltynm": "로드아트센터 [부산] (로드아트센터(2F))",
+    "genrenm": "서양음악(클래식)",
+    "hall": "2F",
+    "cast": "노예진",
+    "price": "전석 20,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "목요일(19:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304491_261026_151459.png",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304491_202610260314595002.png",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304491_202610260314594901.png",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304491_202610260314594710.png"
+    ],
+    "relateUrl": "https://booking.naver.com/booking/12/bizes/1738966",
+    "relateUrls": [
+      "https://booking.naver.com/booking/12/bizes/1738966"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "쇼팽: Ballades",
+      "No. 1 in g Minor, Op. 23 (1번 사단조, 작품 :",
+      "No. 2 in F MajorI Op. 38 (2번 바장조, 작품",
+      "No. 3 in A-fIat Majorl Op. 47 (3번 내림2卜겯",
+      "No. 4 in f Minor, Op. 52 (4번 바단조′ 작품 !"
+    ]
+  },
+  "PF303979": {
+    "fcltynm": "서귀포예술의전당 (대극장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "대극장",
+    "cast": "양윤경, 조영준, 강승아, 강지원, 고다혜, 고두희, 고수빈 등",
+    "price": "전석 10,000원",
+    "runtime": "1시간 40분",
+    "dtguidance": "토요일(14:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303979_261021_114611.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303979_202610211146111770.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014746",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014746"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true
+  },
+  "PF304706": {
+    "fcltynm": "금호아트홀 연세 (금호아트홀 연세)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "금호아트홀 연세",
+    "cast": "김현정, 임혜선, 이유정, 위은영, 이진영, 서강은, 강혜령 등",
+    "price": "전석 30,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "일요일(15:00)",
+    "sty": "[Program]\n\nC. Saint-Saens Polonaise in F Minor, Op. 77 for 2 Pianos 4 Hands\n\nA. Borodin Polovtsian Dances from \"Prince Igor\" for 2 Pianos 4 Hands\n\nM. Ravel La Valse for 2 Pianos 4 Hands\n\nG. Gershwin Cuban Overture for 2 Pianos 4 Hands\n\nD. Shostakovich Concertino in A Minor, Op. 94 for 2 Pianos 4 Hands\n\nL. Pennario March of the Lunatics for 2 Pianos 4 Hands\n\nW. Lutosławski Variations on a Theme by Paganini for 2 Pianos 4 Hands",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304706_261028_140855.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304706_202610280208558270.gif"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014821",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014821"
+    ],
+    "extractedPieces": [
+      "C. Saint-Saens Polonaise in F Minor, Op. 77 for 2 Pianos 4 Hands",
+      "M. Ravel La Valse for 2 Pianos 4 Hands",
+      "G. Gershwin Cuban Overture for 2 Pianos 4 Hands",
+      "W. Lutosławski Variations on a Theme by Paganini for 2 Pianos 4 Hands"
+    ]
+  },
+  "PF302035": {
+    "fcltynm": "금호아트홀 연세 (금호아트홀 연세)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "금호아트홀 연세",
+    "cast": "강명주, 김경원, 김수진, 오진현, 정연경, 이지현",
+    "price": "전석 30,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "화요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302035_260929_162349.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302035_202609290422120171.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302035_202609290422120110.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013694",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013694"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true
+  },
+  "PF294972": {
+    "fcltynm": "천안예술의전당 (소공연장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "소공연장",
+    "cast": "이선희, 한영화, 이민지, 조소연, 이관희, 김명신, 박애리 등",
+    "price": "전석 10,000원",
+    "runtime": "1시간 20분",
+    "dtguidance": "목요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294972_260701_100250.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF294972_202607011002505200.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF294972_202607010535127630.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008987",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008987"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "2017년 1월 \"Sunny Lee Mozart & Rietz clarinet Concerto\""
+    ]
+  },
+  "PF304876": {
+    "fcltynm": "부천아트센터 (소공연장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "소공연장",
+    "cast": "전병권, 김복순, 박회영, 양용석, 정찬욱 등",
+    "price": "전석무료",
+    "runtime": "1시간 30분",
+    "dtguidance": "금요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304876_261030_102719.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304876_202610301027193090.jpg"
+    ],
+    "relateUrl": "https://www.bac.or.kr/product/ko/performance/253577",
+    "relateUrls": [
+      "https://www.bac.or.kr/product/ko/performance/253577"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "I . 복사골 여성합창단"
+    ]
+  },
+  "PF304033": {
+    "fcltynm": "예술의전당 [서울] (IBK챔버홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "IBK챔버홀",
+    "cast": "윤소영, 김수암, 보이텍 짐보브스키, 이윤의, 최고은, 최지웅, 한수혜 등",
+    "price": "R석 50,000원, S석 30,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "토요일(20:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304033_261021_142309.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304033_202610210223090610.png"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015153",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015153"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true
+  },
+  "PF303362": {
+    "fcltynm": "예술의전당 [서울] (리사이틀홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "리사이틀홀",
+    "cast": "이지영, 오선영, 송정민, 신현석, 백승훈",
+    "price": "전석 20,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "화요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303362_261014_165510.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303362_202610140455106181.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303362_202610140455106130.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014675",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014675"
+    ],
+    "pageChecked": true,
+    "extractedPieces": [
+      "Petite Offrande Musicale for Woodwind Quintet",
+      "Woodwind Quintet in C Major, Op. 79",
+      "Pictures at an Exhibition for Woodwind Quintet"
+    ]
+  },
+  "PF301176": {
+    "fcltynm": "세종문화회관 (세종체임버홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "체임버홀",
+    "cast": "나윤아, 장혜리, 정소윤",
+    "price": "전석 30,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "화요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301176_260917_113646.png",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301176_202609171136460911.png",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301176_202609171136460750.png"
+    ],
+    "relateUrl": "https://nol.yanolja.com/ticket/products/P0004837",
+    "relateUrls": [
+      "https://nol.yanolja.com/ticket/products/P0004837",
+      "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37637&menuNo=200320"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "Ludwig van Beethoven: Piano Trio No. 39 in G Major, \"Gypsy\", Hob.XV/25",
+      "Piano Trio No. 5 in C Major, 〈`7548",
+      "Piano TriO No. 7 in B-flat Major, Op. 97 \"Archduke\""
+    ]
+  },
+  "PF301695": {
+    "fcltynm": "군산예술의전당 (대공연장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "대공연장",
+    "cast": "이명근, 최예랑, 김예지, 최진솔, 신서율, 송예원",
+    "price": "전석 3,000원",
+    "runtime": "1시간 10분",
+    "dtguidance": "목요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301695_260923_140053.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301695_202609230200539071.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301695_202609230200539030.jpg"
+    ],
+    "relateUrl": "http://www.ticketlink.co.kr/product/65765",
+    "relateUrls": [
+      "http://www.ticketlink.co.kr/product/65765"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "베토벤: Violin Concerto No. 1 in G Minor, Op.26",
+      "그리그: Flute Concerto in D Major, Op.283",
+      "그리그: Piano Concerto No. 1 in C Major, Op.15",
+      "그리그: Piano Concerto in a Minor, Op. 16",
+      "그리그: Piano Concerto NO 2 in Minor, Op 22"
+    ]
+  },
+  "PF299878": {
+    "fcltynm": "천안예술의전당 (대공연장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "대공연장",
+    "cast": "금난새 등",
+    "price": "R석 30,000원, 일반석 20,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "일요일(18:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299878_260902_115328.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299878_202609021153282771.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299878_202609021153282580.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012658",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012658"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true,
+    "extractedPieces": [
+      "Symphony No. 45 in F-shmp Minor, Hoh I:臥5 \"Fmewell\" 해. AIIeg11) assai",
+      "(교향곡 제45번 「고별」 제7악장) - -",
+      "Symphony Np. 1 in"
+    ]
+  },
+  "PF304377": {
+    "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "롯데콘서트홀",
+    "cast": "홍승아 등",
+    "price": "R석 20,000원, S석 10,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "월요일(11:30)",
+    "sty": "[공연소개]\n연주자를 악보의 재현자가 아닌 창작의 주체로 복원하는 '역사적 연주관습 기반 창작(Historically Informed Creation; HIC)'을 실천하는 무대입니다. 음악을 감정을 설득하는 언어로 여겼던 바로크 수사학의 사유를 동시대 작곡의 동력으로 삼아, 작곡가(하프시코드)와 바로크 첼로에 정통한 첼리스트가 워크숍을 통해 발굴한 '수사학적 비르투오시티'를 세 편의 신작으로 구현합니다. 고음악의 구조적 명료함과 현대음악의 음향적 감수성을 잇는 창작 초연 무대로, 서울문화재단 2026년 예술창작활동지원사업 선정 프로젝트입니다.\n\n[PROGRAM]\n  ① 첼로 소나타 (개작 초연) — 첼로·하프시코드\n  ② 콘체르토 그로소 (초연) — 현악 앙상블·하프시코드\n  — 인터미션 —\n  ③ 첼로와 현악기들을 위한 콘체르탄테 (초연) — 협연 첼로·현악 앙상블\n- 편성: 첼로 협연 1, 현악 앙상블 15(바이올린I 5·II 4, 비올라 3, 첼로 2, 더블베이스 1), 하프시코드",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304377_261026_103405.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304377_202610261034054210.jpg"
+    ],
+    "relateUrl": "https://www.lotteconcerthall.com/product/performance/261250",
+    "relateUrls": [
+      "https://www.lotteconcerthall.com/product/performance/261250"
+    ],
+    "extractedPieces": [
+      "편성: 첼로 협연 1, 현악 앙상블 15(바이올린I 5·II 4, 비올라 3, 첼로 2, 더블베이스 1), 하프시코드"
+    ]
+  },
+  "PF277462": {
+    "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "롯데콘서트홀",
+    "cast": "한누 린투, 한재민, 강윤지 등",
+    "price": "R석 100,000원, S석 80,000원, A석 50,000원, B석 30,000원, C석 10,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "목요일 ~ 금요일(19:30)",
+    "sty": "[PROGRAM]\n\n구바이둘리나, ‘동화시’\nGubaidulina, Fairytale Poem\n\n리하르트 슈트라우스, '돈키호테'\nRichard Strauss, Don Quixote, Op. 35, TrV 184\n\n프로코피예프, &lt;로미오와 줄리엣&gt; 발췌\nProkofiev, Selections from Romeo &amp; Juliet, Op. 64\n\n* 프로그램 및 연주자가 변경될 수 있습니다.",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF277462_260721_164606.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF277462_202607210446064730.jpg"
+    ],
+    "relateUrl": "http://www.ticketlink.co.kr/product/59430",
+    "relateUrls": [
+      "http://www.ticketlink.co.kr/product/59430",
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25013703",
+      "http://www.lotteconcerthall.com/kor/Performance/ConcertDetails/260902"
+    ],
+    "pageChecked": true,
+    "ocrChecked": true
+  },
+  "PF277504": {
+    "fcltynm": "세종문화회관 (세종체임버홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "체임버홀",
+    "cast": "주연경, 주연주, 한재민, 임상우, 정은원, 김도현, 문양숙",
+    "price": "R석 70,000원, S석 40,000원, A석 10,000원",
+    "runtime": "1시간 20분",
+    "dtguidance": "토요일(17:00)",
+    "sty": "[프로그램]\n\n임준희, ‘댄싱 산조 3’\nJun-hee Im, Dancing Sanjo 3 for piano, violin, gayageum\n\n신동훈, ‘내 그림자’\nDonghoon Shin, My Shadow\n\n윤이상, ‘노래’\nIsang Yun, Nore\n\n브람스, 클라리넷 삼중주\nBrahms, Clarinet Trio in A minor, Op. 114\n\n* 프로그램 및 출연자는 변경될 수 있습니다.\n\n어느새 맞이한 가을의 끝자락에 올해 준비한 마지막 실내악 프로그램이 울려 퍼진다. 임준희 작곡가의 피아노와 바이올린, 가야금을 위한 ‘댄싱 산조 3’로 시작해, 클라리넷과 두 대의 바이올린, 첼로, 피아노가 함께하는 신동훈 작곡가의 ‘내 그림자(My Shadow)’와 윤이상 작곡가의 첼로와 피아노를 위한 ‘노래(Nore)’로 이어지는 프로그램. 과거 서울시향이 심혈을 기울였던 아르스 노바의 향수를 느끼게 하는 작품들이 다양한 각도에서 한국적인 것이 무엇인지를 묻는다. 공연의 마무리는 요하네스 브람스의 클라리넷과 첼로, 피아노를 위한 삼중주가 맡는다. 외로움이라는 감정을 평생 각별하게 대했던 브람스. 한없이 쓸쓸한 듯하면서도 어떻게든 나아갈 수 있다는 굳건함이 느껴지는 작품이 2026년의 가을을 특별하게 기억하게 할 것이다.",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF277504_261007_180019.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF277504_202610070600191180.gif"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25013737",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25013737",
+      "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=36681&menuNo=200320"
+    ],
+    "extractedPieces": [
+      "Jun-hee Im, Dancing Sanjo 3 for piano, violin, gayageum",
+      "Brahms, Clarinet Trio in A minor, Op. 114"
+    ]
+  },
+  "PF303175": {
+    "fcltynm": "세종문화회관 (세종체임버홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "체임버홀",
+    "cast": "현지윤",
+    "price": "전석 20,000원",
+    "runtime": "1시간",
+    "dtguidance": "월요일(19:30)",
+    "sty": "[시놉시스]\n독일 유학 시절, 나의 손목시계는 여전히 한국 시간에 맞춰져 있었다.\n\n시간을 바꾸지 않았던 이유는, 그것이 독일 땅에서의 삶을 이어갈 수 있도록 나를 붙잡아 준 유일한 좌표였기 때문이다.\n\n낯선 언어, 낯선 문화, 낯선 사람들 사이 물리적 시간과는 별개로 내면의 시간은 어딘가에 멈춰진 듯 느리게, 고요히 흘러갔다. \n\n나를 둘러싼 침묵과 그 속에서 마주한 고독. 내뱉지 못하고 삼켜진 말과 마음들이 차오를 때면 나는 조용히 주위를 둘러보았다. 그리고 그 순간들을 기록하기 시작했다 .\n\n정지된 시간에 대한 단상. 그 고요 속에서 길어낸 내면의 울림. 본 프로젝트는 지나온 시간들을 비추는 ‘빛의 지도’를 따라가며 음악과 이미지가 교차하는 순간 속에서 멈춰 있던 시간의 감각을 되살리려는 시도이다.\n\n누구에게나 시간이 멈춘 듯한 고독과 침묵의 순간은 찾아오기 마련이다. 지극히 개인적인 동시에 가장 인간적인 이야기.\n\n말로는전할수없는마음들이어떤이미지나침묵, 그리고피아노소리를통해닿기를바란다. 나의내면에서비롯된이이야기가당신의시간속에서도공명하기를꿈꾼다.\n\n[PROGRAM]\nArvo Pärt (1935-) – Für Alina\nLeoš Janáček (1854-1928) – In the Mists\nJohn Cage (1912-1992) – In a Landscape\nJohn Adams (1947-) – China Gates\nFederico Mompou (1893-1987) – Música Callada IV\njy.H (1990-) – für mich, für uns",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303175_261013_133348.png",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303175_202610130133485260.png"
+    ],
+    "relateUrl": "https://nol.yanolja.com/ticket/products/P0004814",
+    "relateUrls": [
+      "https://nol.yanolja.com/ticket/products/P0004814",
+      "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37624&menuNo=200320"
+    ],
+    "extractedPieces": [
+      "Arvo Pärt (1935-) – Für Alina",
+      "Leoš Janáček – In the Mists",
+      "John Cage – In a Landscape",
+      "John Adams (1947-) – China Gates",
+      "Federico Mompou – Música Callada IV",
+      "jy.H (1990-) – für mich, für uns"
+    ]
+  },
+  "PF295037": {
+    "fcltynm": "천안예술의전당 (소공연장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "소공연장",
+    "cast": "김홍박, 김재원, 송현민",
+    "price": "전석 20,000원",
+    "runtime": "1시간 20분",
+    "dtguidance": "수요일(11:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295037_260701_133636.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295037_202607010136368491.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295037_202607010136368320.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009275",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009275"
+    ],
+    "pageChecked": true
+  },
+  "PF303968": {
+    "fcltynm": "부천아트센터 (소공연장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "소공연장",
+    "cast": "김민정, 폴 매튜스, 최지예, 김건민, 이종원, 김무선, 권윤주",
+    "price": "전석 30,000원",
+    "runtime": "",
+    "dtguidance": "토요일(11:00,14:00), 일요일(14:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303968_261021_110921.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303968_202610211109214800.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014654",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014654",
+      "https://www.bac.or.kr/academy/kr/course/4328"
+    ],
+    "pageChecked": true
+  },
+  "PF288216": {
+    "fcltynm": "금호아트홀 연세 (금호아트홀 연세)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "금호아트홀 연세",
+    "cast": "조진주",
+    "price": "전석 50,000원",
+    "runtime": "1시간 40분",
+    "dtguidance": "목요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF288216_260330_104705.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288216_202603301047055530.jpg"
+    ],
+    "relateUrl": "https://www.kumhoarthall.com:448/designer/skin/01/detail.html?p_idx=25582",
+    "relateUrls": [
+      "https://www.kumhoarthall.com:448/designer/skin/01/detail.html?p_idx=25582",
+      "https://booking.naver.com/booking/12/bizes/1544140",
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25016344"
+    ],
+    "pageChecked": true
+  },
+  "PF303330": {
+    "fcltynm": "부천아트센터 (소공연장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "소공연장",
+    "cast": "박상욱, 장정권, 이호찬",
+    "price": "전석 15,000원",
+    "runtime": "1시간 10분",
+    "dtguidance": "수요일(11:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303330_261014_150659.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303330_202610140306594740.jpg"
+    ],
+    "relateUrl": "http://www.ticketlink.co.kr/product/66107",
+    "relateUrls": [
+      "http://www.ticketlink.co.kr/product/66107",
+      "https://nol.yanolja.com/ticket/products/26014396",
+      "https://www.bac.or.kr/product/performance/253550?q=ZGI5MTZiNDE4ZTU5NDFhYWI1ZWE3MGFhNTMwMjU2MTA%3d"
+    ],
+    "pageChecked": true
+  },
+  "PF304977": {
+    "fcltynm": "안동문화예술의전당 (웅부홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "웅부홀",
+    "cast": "정혜진, 김민성, 김해심, 손가영, 이혜경, 정혜은, 조신애 등",
+    "price": "전석무료",
+    "runtime": "1시간 20분",
+    "dtguidance": "수요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304977_261030_153854.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304977_202610300338548740.jpg"
+    ],
+    "relateUrl": "http://www.ticketlink.co.kr/product/66658",
+    "relateUrls": [
+      "http://www.ticketlink.co.kr/product/66658"
+    ],
+    "pageChecked": true
+  },
+  "PF304817": {
+    "fcltynm": "예술의전당 [서울] (IBK챔버홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "IBK챔버홀",
+    "cast": "유시연, 박영성",
+    "price": "전석 50,000원",
+    "runtime": "1시간 40분",
+    "dtguidance": "수요일(19:30)",
+    "sty": "[PROGRAM]\nRobert Schumann \n헌정 (Widmung) - 가곡집 《미르테의 꽃》 중 제1곡\n\nCésar Franck \nSonata for Violin and Piano in A Major,\n\nMax Bruch \n콜 니드라이 (Kol Nidrei) - 히브리 선율에 의한 아다지오, 라단조\n\nOlivier Messiaen\n《시간의 종말을 위한 사중주》 중 제8악장 '예수의 불멸성에 대한 찬미'\n\n이신우 \n주님을 찬양하라 (Laudate Dominum) 바이올린 환상곡 제2번",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304817_261029_130809.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304817_202610290108094490.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015551",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015551"
+    ],
+    "extractedPieces": [
+      "Robert Schumann: 헌정 (Widmung) - 가곡집 《미르테의 꽃》 중 제1곡",
+      "César Franck: Sonata for Violin and Piano in A Major,",
+      "César Franck: 콜 니드라이 (Kol Nidrei) - 히브리 선율에 의한 아다지오, 라단조",
+      "César Franck: 《시간의 종말을 위한 사중주》 중 제8악장 '예수의 불멸성에 대한 찬미'",
+      "César Franck: 주님을 찬양하라 (Laudate Dominum) 바이올린 환상곡 제2번"
+    ]
+  },
+  "PF297987": {
+    "fcltynm": "예술의전당 [서울] (콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "콘서트홀",
+    "cast": "김성진 등",
+    "price": "R석 110,000원, S석 90,000원, A석 70,000원, B석 50,000원",
+    "runtime": "2시간",
+    "dtguidance": "일요일(17:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297987_260807_142629.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297987_202608070226299341.jpeg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297987_202608070226299280.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011322",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011322",
+      "https://ticket.yes24.com/Perf/59557"
+    ],
+    "pageChecked": true
+  },
+  "PF303693": {
+    "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "롯데콘서트홀",
+    "cast": "한주헌, 주연선, 주연경",
+    "price": "R석 66,000원, S석 55,000원, A석 44,000원",
+    "runtime": "2시간",
+    "dtguidance": "월요일(20:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303693_261019_113207.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303693_202610191131155110.jpg"
+    ],
+    "relateUrl": "http://www.ticketlink.co.kr/product/66184",
+    "relateUrls": [
+      "http://www.ticketlink.co.kr/product/66184",
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014604",
+      "https://www.lotteconcerthall.com/product/performance/261238"
+    ],
+    "pageChecked": true
+  },
+  "PF304642": {
+    "fcltynm": "세종문화회관 (세종체임버홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "체임버홀",
+    "cast": "",
+    "price": "전석 30,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "월요일(19:30)",
+    "sty": "[PROGRAM]\n\nT. Barclay – Sunshine\n\nA. Vivaldi – The Four Seasons, \"Winter\" in F minor, RV 297\nI. Allegro non molto\n​II. Largo\n​III. Allegro\n\nF. Schubert – Arpeggione Sonata in A minor, D. 821\nI. Allegro moderato\n\nM. de Falla – Spanish Dance No. 1 from La vida breve\n\nJ. Brahms – \"How Lovely Is Thy Dwelling Place\" from A German Requiem, Op. 45\n\nT. Albinoni – Adagio in G minor\n\nRobin Soldan – Cossack Ride\n\nS. Prokofiev – Finale from Symphony No. 1 in D Major, Op. 25 \"Classical\"",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304642_261028_103550.png",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304642_202610281035504730.png"
+    ],
+    "relateUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37774&menuNo=200320",
+    "relateUrls": [
+      "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37774&menuNo=200320"
+    ],
+    "extractedPieces": [
+      "T. Barclay – Sunshine",
+      "A. Vivaldi – The Four Seasons, \"Winter\" in F minor, RV 297",
+      "F. Schubert – Arpeggione Sonata in A minor, D. 821",
+      "M. de Falla – Spanish Dance No. 1 from La vida breve",
+      "J. Brahms – \"How Lovely Is Thy Dwelling Place\" from A German Requiem, Op. 45",
+      "T. Albinoni – Adagio in G minor",
+      "Robin Soldan – Cossack Ride",
+      "S. Prokofiev – Finale from Symphony No. 1 in D Major, Op. 25 \"Classical\""
+    ]
+  },
+  "PF302798": {
+    "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "롯데콘서트홀",
+    "cast": "남기범, 고운지, 이다솔 등",
+    "price": "R석 130,000원, S석 110,000원, A석 90,000원, B석 70,000원, C석 60,000원, 시야방해S 50,000원, 시야방해A 40,000원, 시야방해B 30,000원, 시야방해C 25,000원",
+    "runtime": "2시간",
+    "dtguidance": "토요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302798_261008_115611.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302798_202610081156113430.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014290",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014290",
+      "https://www.lotteconcerthall.com/product/performance/261229"
+    ],
+    "pageChecked": true
+  },
+  "PF303297": {
+    "fcltynm": "부천아트센터 (콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "콘서트홀",
+    "cast": "",
+    "price": "R석 70,000원, S석 50,000원, A석 30,000원",
+    "runtime": "1시간 55분",
+    "dtguidance": "토요일(17:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303297_261014_132906.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303297_202610140133006960.jpg"
+    ],
+    "relateUrl": "http://www.ticketlink.co.kr/product/66108",
+    "relateUrls": [
+      "http://www.ticketlink.co.kr/product/66108",
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014399",
+      "https://www.bac.or.kr/product/performance/253552?q=YjU3ZjYwOTgxNjY1NDI2YTkwZTRjZjQ1MmMwMzhiM2M%3d",
+      "https://ticket.yes24.com/Perf/60576"
+    ],
+    "pageChecked": true
+  },
+  "PF294284": {
+    "fcltynm": "대전예술의전당 (아트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "아트홀",
+    "cast": "백윤학, 이희주 등",
+    "price": "R석 100,000원, S석 80,000원, A석 60,000원",
+    "runtime": "2시간",
+    "dtguidance": "일요일(15:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294284_260622_132400.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF294284_202606220124002220.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009004",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009004"
+    ],
+    "pageChecked": true
+  },
+  "PF303207": {
+    "fcltynm": "아트센터 인천 (콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "콘서트홀",
+    "cast": "백종성, 조세형 등",
+    "price": "R석 50,000원, S석 30,000원, A석 20,000원, 3층석 10,000원",
+    "runtime": "1시간 40분",
+    "dtguidance": "일요일(17:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303207_261013_143857.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303207_202610130238572061.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303207_202610130238571730.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014553",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014553"
+    ],
+    "pageChecked": true
+  },
+  "PF303758": {
+    "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "롯데콘서트홀",
+    "cast": "고상지, 조용훈, 윤종수, 김아람, 박용은, 안지은, 김강빈 등",
+    "price": "R석 110,000원, S석 99,000원, A석 77,000원",
+    "runtime": "1시간 50분",
+    "dtguidance": "일요일(17:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303758_261019_142044.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303758_202610190220448230.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014605",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014605",
+      "https://www.lotteconcerthall.com/product/performance/261239"
+    ],
+    "pageChecked": true
+  },
+  "PF302154": {
+    "fcltynm": "경주예술의전당 (소공연장(원화홀))",
+    "genrenm": "서양음악(클래식)",
+    "hall": "원화홀",
+    "cast": "윤현상, 이영현, 박성근, 신호연, 박현우",
+    "price": "전석 40,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "목요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302154_260930_150630.png",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302154_202609300306307221.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302154_202609300306307170.jpg"
+    ],
+    "relateUrl": "http://www.ticketlink.co.kr/product/65941",
+    "relateUrls": [
+      "http://www.ticketlink.co.kr/product/65941",
+      "https://booking.naver.com/booking/12/bizes/1746093",
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013909"
+    ],
+    "pageChecked": true
+  },
+  "PF303502": {
+    "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "롯데콘서트홀",
+    "cast": "구교현, 조윤성, 신동하, 신동진",
+    "price": "R석 130,000원, S석 100,000원, A석 80,000원, B석 60,000원, 시야방해R 100,000원, 시야방해S 80,000원, 시야방해A 60,000원",
+    "runtime": "1시간 40분",
+    "dtguidance": "목요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303502_261015_153556.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303502_202610150335560110.jpg"
+    ],
+    "relateUrl": "http://www.ticketlink.co.kr/product/66208",
+    "relateUrls": [
+      "http://www.ticketlink.co.kr/product/66208",
+      "https://booking.naver.com/booking/12/bizes/1756420",
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014393",
+      "https://www.lotteconcerthall.com/product/performance/261235"
+    ],
+    "pageChecked": true
+  },
+  "PF297763": {
+    "fcltynm": "아트센터 인천 (다목적홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "다목적홀",
+    "cast": "윤현상, 이영현, 박성근, 신호연, 박준형",
+    "price": "전석 40,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "금요일(15:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297763_260805_135750.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297763_202608050157509281.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297763_202608050157508970.jpg"
+    ],
+    "relateUrl": "http://www.ticketlink.co.kr/product/64753",
+    "relateUrls": [
+      "http://www.ticketlink.co.kr/product/64753",
+      "https://booking.naver.com/booking/12/bizes/1711418",
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011384"
+    ],
+    "pageChecked": true
+  },
+  "PF303291": {
+    "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "롯데콘서트홀",
+    "cast": "백윤학, 이희주 등",
+    "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해S  60,000원, 시야방해A  50,000원, 시야방해B  40,000원",
+    "runtime": "2시간",
+    "dtguidance": "토요일(14:00,18:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303291_261014_131734.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303291_202610140117348110.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014555",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014555",
+      "https://www.lotteconcerthall.com/product/performance/261234"
+    ],
+    "pageChecked": true
+  },
+  "PF303465": {
+    "fcltynm": "대전예술의전당 (아트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "아트홀",
+    "cast": "",
+    "price": "R석 100,000원, S석 80,000원, A석 60,000원",
+    "runtime": "2시간",
+    "dtguidance": "토요일(14:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303465_261015_141019.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303465_202610150210190410.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014638",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014638"
+    ],
+    "pageChecked": true
+  },
+  "PF300106": {
+    "fcltynm": "청주예술의전당 (대공연장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "대공연장",
+    "cast": "",
+    "price": "R석 100,000원, S석 80,000원, A석 60,000원",
+    "runtime": "2시간",
+    "dtguidance": "토요일(15:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300106_260904_103039.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300106_202609041030392800.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012841",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012841"
+    ],
+    "pageChecked": true
+  },
+  "PF303609": {
+    "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "롯데콘서트홀",
+    "cast": "백윤학 등",
+    "price": "R석 120,000원, S석 100,000원, A석 80,000원, B석 70,000원, 시야방해S  60,000원, 시야방해A  50,000원, 시야방해B  40,000원",
+    "runtime": "2시간",
+    "dtguidance": "금요일(19:30)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303609_261016_141354.png",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303609_202610160213542840.png"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014705",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014705",
+      "https://www.lotteconcerthall.com/product/performance/261241"
+    ],
+    "pageChecked": true
+  },
+  "PF303031": {
+    "fcltynm": "모스크바홀 (모스크바홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "모스크바홀",
+    "cast": "조수진, 이은진, 정예진",
+    "price": "일반석 30,000원, 학생 22,000원",
+    "runtime": "1시간 30분",
+    "dtguidance": "토요일(15:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303031_261012_164608.png",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303031_202610120446086193.png",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303031_202610120446086092.png",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303031_202610120446085941.png",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303031_202610120446085760.png"
+    ],
+    "relateUrl": "https://booking.naver.com/booking/5/bizes/1383059",
+    "relateUrls": [
+      "https://booking.naver.com/booking/5/bizes/1383059"
+    ],
+    "pageChecked": true
+  },
+  "PF302874": {
+    "fcltynm": "F1963 (GMC금난새뮤직센터)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "GMC금난새뮤직센터",
+    "cast": "서은아, 임지영, 이혜란, 시명운, 한운지, 황여진, 권덕진 등",
+    "price": "전석 30,000원",
+    "runtime": "1시간 20분",
+    "dtguidance": "토요일(17:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302874_261012_105550.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302874_202610121055502510.jpg"
+    ],
+    "relateUrl": "https://booking.naver.com/booking/12/bizes/1752001",
+    "relateUrls": [
+      "https://booking.naver.com/booking/12/bizes/1752001",
+      "https://ticket.yes24.com/Perf/60531"
+    ],
+    "pageChecked": true
+  },
+  "PF302676": {
+    "fcltynm": "구로아트밸리 (예술극장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "예술극장",
+    "cast": "김인덕, 김희선, 김희숙, 양야실, 여태희, 오인덕, 유혜배 등",
+    "price": "전석 5,000원",
+    "runtime": "1시간",
+    "dtguidance": "토요일(14:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302676_261007_113759.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302676_202610071137592240.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014201",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014201"
+    ],
+    "pageChecked": true
+  },
+  "PF302650": {
+    "fcltynm": "구로아트밸리 (예술극장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "예술극장",
+    "cast": "김영준, 윤소진, 이창훈, 은화랑, 석혜진, 김진아, 문제영 등",
+    "price": "전석 5,000원",
+    "runtime": "1시간",
+    "dtguidance": "토요일(19:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302650_261007_102940.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302650_202610071030436520.jpg"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014198",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014198"
+    ],
+    "pageChecked": true
+  },
+  "PF302476": {
+    "fcltynm": "라율아트홀 (라율아트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "라율아트홀",
+    "cast": "석유리, 심재연, 변규리, 김지훈",
+    "price": "전석 30,000원",
+    "runtime": "1시간",
+    "dtguidance": "토요일(17:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302476_261006_113459.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302476_202610060606420460.png"
+    ],
+    "relateUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013969",
+    "relateUrls": [
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013969"
+    ],
+    "pageChecked": true
+  },
+  "PF302335": {
+    "fcltynm": "낙동아트센터 (콘서트홀)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "콘서트홀",
+    "cast": "오충근, 조성현, 김주영 등",
+    "price": "R석 30,000원, S석 20,000원, A석 10,000원",
+    "runtime": "1시간 50분",
+    "dtguidance": "토요일(17:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302335_261002_130245.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302335_202610020102452640.jpg"
+    ],
+    "relateUrl": "https://booking.naver.com/booking/12/bizes/1747535",
+    "relateUrls": [
+      "https://booking.naver.com/booking/12/bizes/1747535",
+      "https://ticket.yes24.com/Perf/60432"
+    ],
+    "pageChecked": true
+  },
+  "PF302039": {
+    "fcltynm": "콘서트홀 나누 (콘서트홀 나누)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "콘서트홀 나누",
+    "cast": "조서연",
+    "price": "전석 27,000원",
+    "runtime": "1시간",
+    "dtguidance": "토요일(19:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302039_260929_164435.gif",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302039_202609290444359540.png"
+    ],
+    "relateUrl": "https://booking.naver.com/booking/12/bizes/1269745",
+    "relateUrls": [
+      "https://booking.naver.com/booking/12/bizes/1269745",
+      "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013571"
+    ],
+    "pageChecked": true
+  },
+  "PF301713": {
+    "fcltynm": "성산아트홀 (대극장)",
+    "genrenm": "서양음악(클래식)",
+    "hall": "대극장",
+    "cast": "유미 나나츠타니, 임가진, 김미연",
+    "price": "전석 30,000원",
+    "runtime": "1시간 20분",
+    "dtguidance": "토요일(15:00)",
+    "sty": "",
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301713_260923_150255.jpg",
+    "styurls": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301713_202609230302551190.jpg"
+    ],
+    "relateUrl": "https://booking.naver.com/booking/12/bizes/1743322",
+    "relateUrls": [
+      "https://booking.naver.com/booking/12/bizes/1743322",
+      "https://ticket.yes24.com/Perf/60310"
     ],
     "pageChecked": true
   }

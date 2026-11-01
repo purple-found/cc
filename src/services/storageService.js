@@ -4,7 +4,7 @@ import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
 // v46: 연주 편성 5분류(오케스트라 / 실내악 / 독주회 / 오페라 / 성악·합창) 정밀 재분류 및 오페라 레퍼토리 보강 반영
-const CONCERTS_KEY = 'opus_korea_concerts_v46';
+const CONCERTS_KEY = 'opus_korea_concerts_v47';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
