@@ -377,37 +377,35 @@ export default function App() {
       />
 
       {/* Main Container */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-7 space-y-6">
         {/* Tab 1: Concerts Discovery */}
         {activeTab === 'concerts' && (
-          <section className="space-y-6">
-            {/* Hero Banner: Satin Gloss Deep-Brown Instrument Wood Varnish Tone */}
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#24140e] via-[#3d2015] to-[#1a0c07] text-white p-8 sm:p-10 shadow-2xl border border-[#522b1c]/60">
-              {/* Semi-transparent orchestra cello section artwork on the right (Copyright/portrait-free asset) */}
+          <section className="space-y-5">
+            {/* Editorial Masthead */}
+            <div className="relative overflow-hidden rounded-xl bg-[#1e120c] text-white px-7 py-8 sm:px-10 sm:py-9 border border-[#3d2519]">
               <div className="absolute right-0 top-0 bottom-0 w-full sm:w-3/5 lg:w-1/2 pointer-events-none overflow-hidden select-none">
                 <img
                   src="/images/banner_cello_section.jpg"
                   alt="Orchestra Cello Section"
-                  className="w-full h-full object-cover object-right opacity-35 mix-blend-screen scale-105"
+                  className="w-full h-full object-cover object-right opacity-30 mix-blend-screen"
                   style={{
-                    maskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 20%, black 100%)',
-                    WebkitMaskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 20%, black 100%)'
+                    maskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 25%, black 100%)',
+                    WebkitMaskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 25%, black 100%)'
                   }}
                 />
               </div>
 
-              {/* Satin gloss & wood shimmer overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#874b26]/15 to-white/[0.08] pointer-events-none" />
-              <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#9b582b]/20 rounded-full blur-3xl pointer-events-none" />
-              <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-25 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#b88648]/40 via-[#522b1c]/10 to-transparent" />
-
-              <div className="relative z-10 max-w-2xl space-y-3.5">
-                <h1 className="font-serif font-black text-xl sm:text-3xl leading-snug tracking-tight text-[#fdf8f4] drop-shadow-sm">
-                  숨죽인 홀 안의 침묵<br />가슴 깊이 남겨질 선율의 순간
+              <div className="relative z-10 max-w-xl space-y-3">
+                <div className="flex items-center gap-2.5 text-[11px] font-serif tracking-widest uppercase text-[#c9b08f]">
+                  <span>Season 2026 — 2027</span>
+                  <span className="w-6 h-px bg-[#6e4b32]" />
+                  <span>Concert Archive</span>
+                </div>
+                <h1 className="font-serif font-bold text-xl sm:text-2xl md:text-[28px] leading-snug tracking-tight text-[#faf5ee]">
+                  숨죽인 홀 안의 침묵, 가슴 깊이 남겨질 선율의 순간
                 </h1>
-                <p className="text-sm sm:text-[15px] text-[#ebdcc5]/95 font-medium leading-relaxed drop-shadow-xs">
-                  무대 위의 호흡과 객석의 여운이 하나가 되는 시간<br />
-                  전국 공연장에서 펼쳐지는 아름다운 연주의 순간들을 정갈하게 전합니다
+                <p className="text-xs sm:text-sm text-[#d8c7b0] font-normal leading-relaxed">
+                  전국 주요 콘서트홀에서 펼쳐지는 클래식 연주회 일정과 세부 프로그램을 한곳에 정갈하게 기록합니다.
                 </p>
               </div>
             </div>
@@ -423,7 +421,6 @@ export default function App() {
               concerts={concerts}
               shouldShowConcerts={shouldShowConcerts}
               onReset={() => setShowAllConcerts(false)}
-              onOpenAdminAuth={handleOpenAdminAuth}
             />
 
             {/* View Mode: Initial Discovery Guide vs Cards vs Compact vs Calendar */}
@@ -437,13 +434,12 @@ export default function App() {
               />
             ) : viewMode === 'cards' ? (
               filteredConcerts.length === 0 ? (
-                <div className="p-16 text-center bg-white dark:bg-hall-900 rounded-3xl border border-stone-200 dark:border-hall-800">
-                  <AlertCircle className="w-12 h-12 mx-auto text-stone-300 dark:text-stone-600 mb-3" />
+                <div className="p-14 text-center bg-white dark:bg-hall-900 rounded-xl border border-stone-200 dark:border-hall-800">
                   <h3 className="font-serif font-bold text-base text-stone-800 dark:text-stone-200">
-                    선택한 조건의 클래식 공연이 없습니다
+                    선택한 조건에 해당하는 공연이 없습니다
                   </h3>
                   <p className="text-xs text-stone-500 dark:text-stone-400 mt-1.5">
-                    필터 조건을 변경하거나 검색어를 재설정해보세요.
+                    필터 조건을 변경하거나 검색어를 다시 입력해 보세요.
                   </p>
                   <button
                     onClick={() => {
@@ -458,13 +454,13 @@ export default function App() {
                       });
                       setShowAllConcerts(true);
                     }}
-                    className="mt-4 px-4 py-2 rounded-xl bg-concert-50 dark:bg-hall-800 text-concert-700 dark:text-concert-300 text-xs font-bold hover:bg-concert-100 transition-colors"
+                    className="mt-4 px-4 py-2 rounded-lg bg-stone-900 dark:bg-hall-800 text-stone-50 dark:text-stone-200 text-xs font-medium hover:bg-stone-800 transition-colors cursor-pointer"
                   >
-                    전체 공연 다시 보기
+                    전체 공연 일정 보기
                   </button>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                   {filteredConcerts.map((concert) => (
                     <ConcertCard
                       key={concert.id}

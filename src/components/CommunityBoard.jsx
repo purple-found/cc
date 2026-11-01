@@ -37,7 +37,7 @@ export default function CommunityBoard({
   const [searchScope, setSearchScope] = useState('title_content'); // 'title_content', 'author', 'comments'
   const [appliedSearch, setAppliedSearch] = useState({ query: '', scope: 'title_content' });
   const [isWriteModalOpen, setIsWriteModalOpen] = useState(false);
-  const [isRulesExpanded, setIsRulesExpanded] = useState(true);
+  const [isRulesExpanded, setIsRulesExpanded] = useState(false);
   const [activePost, setActivePost] = useState(null);
 
   // New post form state
@@ -223,26 +223,25 @@ export default function CommunityBoard({
   const categories = ['전체', '클래식 수다', '관람 후기'];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
       {/* Board Top Header & Controls */}
-      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
+      <div className="bg-white dark:bg-hall-900 rounded-xl border border-stone-200/90 dark:border-hall-800 p-6 space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h2 className="font-serif font-black text-xl text-stone-900 dark:text-stone-50 flex items-center gap-2">
-              <MessageSquare className="w-5 h-5 text-concert-500" />
-              <span>클래식 커뮤니티</span>
+            <h2 className="font-serif font-bold text-xl text-stone-900 dark:text-stone-50">
+              커뮤니티
             </h2>
-            <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 font-medium">
-              다가올 무대에 대한 벅찬 설렘과 생생한 관람 후기를 나눠보세요.
+            <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">
+              공연 관람 후기와 클래식 음악에 관한 이야기를 나눕니다.
             </p>
           </div>
 
           <button
             onClick={() => setIsWriteModalOpen(true)}
-            className="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-md shrink-0"
+            className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-stone-900 hover:bg-stone-800 dark:bg-concert-500 dark:hover:bg-concert-600 text-stone-50 dark:text-white text-xs font-medium transition-colors shrink-0 cursor-pointer"
           >
-            <PenSquare className="w-4 h-4" />
-            <span>이야기 남기기</span>
+            <PenSquare className="w-3.5 h-3.5" />
+            <span>글쓰기</span>
           </button>
         </div>
 
@@ -253,10 +252,10 @@ export default function CommunityBoard({
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all shrink-0 ${
+                className={`px-3.5 py-1.5 rounded-md text-xs font-medium transition-colors shrink-0 cursor-pointer ${
                   selectedCategory === cat
-                    ? 'bg-concert-500 text-white shadow-xs'
-                    : 'bg-stone-100 dark:bg-hall-850 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-hall-800'
+                    ? 'bg-stone-900 dark:bg-hall-700 text-stone-50 dark:text-stone-50'
+                    : 'bg-stone-100/80 dark:bg-hall-850 text-stone-600 dark:text-stone-300 hover:bg-stone-200/70 dark:hover:bg-hall-800'
                 }`}
               >
                 {cat}
@@ -264,16 +263,15 @@ export default function CommunityBoard({
             ))}
           </div>
 
-          {/* Multi-Scope Search Form with dedicated Search Button */}
+          {/* Multi-Scope Search Form */}
           <form
             onSubmit={handleExecuteSearch}
-            className="flex items-center gap-1.5 w-full md:w-auto bg-stone-50 dark:bg-hall-850 p-1 rounded-xl border border-stone-200 dark:border-hall-700 shadow-xs"
+            className="flex items-center gap-1.5 w-full md:w-auto bg-stone-50/80 dark:bg-hall-850 p-1 rounded-lg border border-stone-200 dark:border-hall-700"
           >
-            {/* Search Scope Selector */}
             <select
               value={searchScope}
               onChange={(e) => setSearchScope(e.target.value)}
-              className="bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 text-xs font-semibold px-2.5 py-1.5 rounded-lg border-none focus:outline-none focus:ring-1 focus:ring-concert-500 cursor-pointer shrink-0"
+              className="bg-white dark:bg-hall-800 text-stone-700 dark:text-stone-300 text-xs font-medium px-2.5 py-1.5 rounded-md border border-stone-200/80 dark:border-hall-700 focus:outline-none cursor-pointer shrink-0"
               title="검색 범위 선택"
             >
               <option value="title_content">제목+내용</option>
@@ -281,7 +279,6 @@ export default function CommunityBoard({
               <option value="comments">댓글</option>
             </select>
 
-            {/* Search Text Input */}
             <div className="relative flex-1 min-w-[140px] sm:min-w-[180px]">
               <input
                 type="text"
@@ -289,7 +286,7 @@ export default function CommunityBoard({
                 onChange={(e) => setSearchInput(e.target.value)}
                 placeholder={
                   searchScope === 'author'
-                    ? '작성자 닉네임 검색'
+                    ? '작성자 검색'
                     : searchScope === 'comments'
                     ? '댓글 내용 검색'
                     : '제목 또는 본문 검색'
@@ -308,13 +305,11 @@ export default function CommunityBoard({
               )}
             </div>
 
-            {/* Explicit Search Button */}
             <button
               type="submit"
-              className="flex items-center gap-1 px-3.5 py-1.5 rounded-lg bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold shadow-xs transition-colors shrink-0"
+              className="flex items-center gap-1 px-3 py-1.5 rounded-md bg-stone-900 hover:bg-stone-800 dark:bg-hall-700 dark:hover:bg-hall-600 text-stone-50 text-xs font-medium transition-colors shrink-0 cursor-pointer"
               title="검색 실행"
             >
-              <Search className="w-3.5 h-3.5" />
               <span>검색</span>
             </button>
           </form>
@@ -322,9 +317,9 @@ export default function CommunityBoard({
 
         {/* Active Search Result Summary & Reset */}
         {appliedSearch.query && (
-          <div className="flex items-center justify-between px-3.5 py-2 bg-concert-50/70 dark:bg-concert-950/40 rounded-xl border border-concert-200/60 dark:border-concert-900/40 text-xs">
-            <span className="text-concert-800 dark:text-concert-200">
-              <span className="font-bold">
+          <div className="flex items-center justify-between px-3.5 py-2 bg-stone-50 dark:bg-hall-850 rounded-lg border border-stone-200 dark:border-hall-700 text-xs">
+            <span className="text-stone-700 dark:text-stone-200">
+              <span className="font-semibold">
                 {appliedSearch.scope === 'author'
                   ? '작성자'
                   : appliedSearch.scope === 'comments'
@@ -332,40 +327,37 @@ export default function CommunityBoard({
                   : '제목+내용'}
               </span>
               {' 검색 결과: '}
-              <span className="font-bold underline">"{appliedSearch.query}"</span>
+              <span className="font-semibold">"{appliedSearch.query}"</span>
               {` (${filteredPosts.length}건)`}
             </span>
             <button
               type="button"
               onClick={handleResetSearch}
-              className="text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-100 font-semibold underline text-[11px]"
+              className="text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-100 font-medium underline text-[11px]"
             >
-              전체 보기 (검색 해제)
+              전체 보기
             </button>
           </div>
         )}
       </div>
 
-      {/* Community Guidelines Banner (클래식 커뮤니티 이용 규칙) */}
-      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-5 shadow-xs space-y-3">
+      {/* Community Guidelines Banner */}
+      <div className="bg-white dark:bg-hall-900 rounded-xl border border-stone-200/90 dark:border-hall-800 px-5 py-3.5 space-y-3">
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <span className="p-1.5 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400">
-              <ShieldAlert className="w-4 h-4" />
+            <span className="text-[10px] font-semibold px-2 py-0.5 rounded-sm bg-stone-100 dark:bg-hall-800 text-stone-600 dark:text-stone-300">
+              안내
             </span>
-            <h3 className="font-serif font-bold text-sm text-stone-900 dark:text-stone-100 flex items-center gap-2">
-              <span>클래식 커뮤니티 이용 규칙</span>
-              <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-stone-100 dark:bg-hall-800 text-stone-600 dark:text-stone-300">
-                필독
-              </span>
+            <h3 className="font-serif font-bold text-xs sm:text-sm text-stone-800 dark:text-stone-200">
+              커뮤니티 이용 규칙
             </h3>
           </div>
           <button
             type="button"
             onClick={() => setIsRulesExpanded(!isRulesExpanded)}
-            className="flex items-center gap-1 text-xs text-stone-500 hover:text-stone-700 dark:text-stone-400 dark:hover:text-stone-200 font-semibold transition-colors"
+            className="flex items-center gap-1 text-xs text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-200 font-medium transition-colors cursor-pointer"
           >
-            <span>{isRulesExpanded ? '규칙 접기' : '규칙 펼치기'}</span>
+            <span>{isRulesExpanded ? '접기' : '자세히 보기'}</span>
             {isRulesExpanded ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
           </button>
         </div>

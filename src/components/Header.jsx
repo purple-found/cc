@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MessageSquare, ShieldCheck, Sun, Moon, Sparkles } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react';
 import BrandIcon from './BrandIcon';
 
 export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpenTipModal }) {
@@ -9,110 +9,100 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
   };
 
   return (
-    <header className="sticky top-0 z-40 backdrop-blur-md bg-stone-50/90 dark:bg-hall-900/90 border-b border-stone-200 dark:border-hall-800 transition-colors duration-200 shadow-sm">
+    <header className="sticky top-0 z-40 backdrop-blur-md bg-[#fbf9f5]/95 dark:bg-hall-950/95 border-b border-stone-200/80 dark:border-hall-800 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo & Brand */}
-          <div 
-            onClick={() => setActiveTab('concerts')}
-            className="flex items-center gap-3 cursor-pointer group shrink-0"
-          >
-            <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-[#24140e] via-[#3d2015] to-[#1a0c07] text-[#f6e5c5] flex items-center justify-center shadow-lg shadow-[#1a0c07]/30 border border-[#753d22]/70 dark:border-[#874b26]/60 group-hover:scale-105 group-hover:border-[#b88648]/70 transition-all overflow-hidden shrink-0">
-              {/* 벨벳 질감 새틴 광택 오버레이 */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#874b26]/20 to-white/10 pointer-events-none" />
-              <div className="absolute -top-2 -right-2 w-7 h-7 bg-[#b88648]/20 rounded-full blur-xs pointer-events-none" />
-              <BrandIcon className="w-[35px] h-[35px] relative z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] text-[#f6e5c5]" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="font-serif font-bold text-xl tracking-tight text-stone-900 dark:text-stone-100">
+        <div className="flex items-center justify-between h-18 py-3.5">
+          {/* Left: Brand Identity & Editorial Navigation */}
+          <div className="flex items-center gap-8">
+            <div
+              onClick={() => setActiveTab('concerts')}
+              className="flex items-center gap-3 cursor-pointer group shrink-0"
+            >
+              <div className="w-9 h-9 rounded-md bg-[#1f130d] dark:bg-hall-850 text-[#f3e3c6] flex items-center justify-center border border-[#4a2c1d] dark:border-hall-700 shrink-0">
+                <BrandIcon className="w-[26px] h-[26px] text-[#f3e3c6]" />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-serif font-bold text-lg tracking-wider text-stone-900 dark:text-stone-100 leading-none">
                   CLASSICALENDER
                 </span>
+                <span className="text-[11px] text-stone-500 dark:text-stone-400 tracking-tight mt-1">
+                  선율이 머무는 곳, 클린더
+                </span>
               </div>
-              <p className="text-xs text-stone-500 dark:text-stone-400 font-medium">
-                선율이 머무는 곳, 클린더
-              </p>
             </div>
+
+            {/* Editorial Navigation Links */}
+            <nav className="hidden md:flex items-center gap-6 pl-4 border-l border-stone-200 dark:border-hall-800">
+              <button
+                onClick={() => setActiveTab('concerts')}
+                className={`py-1 text-sm transition-colors shrink-0 cursor-pointer border-b-2 ${
+                  activeTab === 'concerts'
+                    ? 'border-stone-900 dark:border-concert-300 text-stone-900 dark:text-stone-50 font-semibold'
+                    : 'border-transparent text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 font-medium'
+                }`}
+              >
+                공연 일정
+              </button>
+
+              <button
+                onClick={() => setActiveTab('community')}
+                className={`py-1 text-sm transition-colors shrink-0 cursor-pointer border-b-2 ${
+                  activeTab === 'community'
+                    ? 'border-stone-900 dark:border-concert-300 text-stone-900 dark:text-stone-50 font-semibold'
+                    : 'border-transparent text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 font-medium'
+                }`}
+              >
+                커뮤니티
+              </button>
+            </nav>
           </div>
 
-          {/* Navigation Tabs */}
-          <nav className="hidden md:flex items-center gap-1.5 bg-stone-100/80 dark:bg-hall-850 p-1.5 rounded-xl border border-stone-200/80 dark:border-hall-700">
-            <button
-              onClick={() => setActiveTab('concerts')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all shrink-0 ${
-                activeTab === 'concerts'
-                  ? 'bg-white dark:bg-hall-700 text-stone-900 dark:text-stone-50 shadow-sm'
-                  : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
-              }`}
-            >
-              <Calendar className="w-4 h-4 text-concert-500" />
-              <span>공연 일정</span>
-            </button>
-
-            <button
-              onClick={() => setActiveTab('community')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all shrink-0 ${
-                activeTab === 'community'
-                  ? 'bg-white dark:bg-hall-700 text-stone-900 dark:text-stone-50 shadow-sm'
-                  : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
-              }`}
-            >
-              <MessageSquare className="w-4 h-4 text-concert-500" />
-              <span>커뮤니티</span>
-            </button>
-          </nav>
-
           {/* Right Action buttons */}
-          <div className="flex items-center gap-2.5">
-            {/* General User: Inquiry & Suggest/Tip-off concert to Admin */}
+          <div className="flex items-center gap-2">
             <button
               onClick={onOpenTipModal}
-              className="flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-lg bg-concert-50 dark:bg-hall-800 border border-concert-300/80 dark:border-hall-700 text-concert-800 dark:text-concert-300 hover:bg-concert-100 dark:hover:bg-hall-700 transition-colors shrink-0"
-              title="서비스 이용 문의나 누락된 공연 정보를 관리자에게 전달해주세요"
+              className="text-xs font-medium px-3.5 py-2 rounded-md bg-white dark:bg-hall-900 border border-stone-300/90 dark:border-hall-700 text-stone-700 dark:text-stone-300 hover:border-stone-800 dark:hover:border-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-colors shrink-0 cursor-pointer"
+              title="서비스 이용 문의나 누락된 공연 정보를 전달합니다"
             >
-              <Sparkles className="w-3.5 h-3.5 text-concert-600 dark:text-concert-400" />
-              <span>문의 및 공연 제보</span>
+              문의 및 공연 제보
             </button>
 
-            {/* Dark / Light Mode Switcher */}
             <button
               onClick={toggleTheme}
-              className="p-2.5 rounded-xl border border-stone-200 dark:border-hall-700 bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-hall-700 transition-colors shrink-0"
+              className="p-2 rounded-md border border-stone-200 dark:border-hall-800 bg-white dark:bg-hall-900 text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-stone-100 hover:border-stone-400 dark:hover:border-hall-700 transition-colors shrink-0 cursor-pointer"
               aria-label="화면 모드 전환"
               title={theme === 'light' ? '다크 모드로 전환' : '라이트 모드로 전환'}
             >
               {theme === 'light' ? (
-                <Moon className="w-5 h-5 text-stone-700" />
+                <Moon className="w-4 h-4 text-stone-700" />
               ) : (
-                <Sun className="w-5 h-5 text-amber-400" />
+                <Sun className="w-4 h-4 text-concert-300" />
               )}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation bar */}
-        <div className="flex md:hidden items-center justify-around py-2.5 border-t border-stone-200 dark:border-hall-800 gap-1 overflow-x-auto">
+        <div className="flex md:hidden items-center gap-6 py-2 border-t border-stone-200/70 dark:border-hall-800 overflow-x-auto">
           <button
             onClick={() => setActiveTab('concerts')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold shrink-0 ${
+            className={`py-1 text-xs shrink-0 border-b-2 ${
               activeTab === 'concerts'
-                ? 'bg-concert-500 text-white'
-                : 'text-stone-600 dark:text-stone-300'
+                ? 'border-stone-900 dark:border-concert-300 text-stone-900 dark:text-stone-100 font-semibold'
+                : 'border-transparent text-stone-500 dark:text-stone-400 font-medium'
             }`}
           >
-            <Calendar className="w-3.5 h-3.5" />
-            <span>공연 일정</span>
+            공연 일정
           </button>
           <button
             onClick={() => setActiveTab('community')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold shrink-0 ${
+            className={`py-1 text-xs shrink-0 border-b-2 ${
               activeTab === 'community'
-                ? 'bg-concert-500 text-white'
-                : 'text-stone-600 dark:text-stone-300'
+                ? 'border-stone-900 dark:border-concert-300 text-stone-900 dark:text-stone-100 font-semibold'
+                : 'border-transparent text-stone-500 dark:text-stone-400 font-medium'
             }`}
           >
-            <MessageSquare className="w-3.5 h-3.5" />
-            <span>커뮤니티</span>
+            커뮤니티
           </button>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Music, MapPin, Sparkles, Calendar, Eye } from 'lucide-react';
-import BrandIcon from './BrandIcon';
+import { ArrowRight } from 'lucide-react';
 
 export default function InitialDiscoveryGuide({
   totalCount = 0,
@@ -10,109 +9,141 @@ export default function InitialDiscoveryGuide({
   onShowAll
 }) {
   const quickVenues = [
-    { label: '예술의전당', value: '예술의전당' },
-    { label: '롯데콘서트홀', value: '롯데콘서트홀' },
-    { label: '부천아트센터', value: '부천아트센터' },
-    { label: '부산콘서트홀', value: '부산콘서트홀' },
-    { label: '대구콘서트하우스', value: '대구콘서트하우스' }
+    { label: '예술의전당', sub: '서울 서초', value: '예술의전당' },
+    { label: '롯데콘서트홀', sub: '서울 송파', value: '롯데콘서트홀' },
+    { label: '부천아트센터', sub: '경기 부천', value: '부천아트센터' },
+    { label: '아트센터인천', sub: '인천 연수', value: '아트센터인천' },
+    { label: '부산콘서트홀', sub: '부산 진구', value: '부산콘서트홀' },
+    { label: '대구콘서트하우스', sub: '대구 중구', value: '대구콘서트하우스' }
   ];
 
   const quickComposers = [
-    { label: '베토벤', value: '베토벤' },
-    { label: '쇼팽', value: '쇼팽' },
-    { label: '브람스', value: '브람스' },
-    { label: '말러', value: '말러' },
-    { label: '라흐마니노프', value: '라흐마니노프' }
+    { label: '베토벤', sub: 'L. v. Beethoven', value: '베토벤' },
+    { label: '모차르트', sub: 'W. A. Mozart', value: '모차르트' },
+    { label: '쇼팽', sub: 'F. Chopin', value: '쇼팽' },
+    { label: '브람스', sub: 'J. Brahms', value: '브람스' },
+    { label: '말러', sub: 'G. Mahler', value: '말러' },
+    { label: '라흐마니노프', sub: 'S. Rachmaninoff', value: '라흐마니노프' }
   ];
 
   const quickDates = [
-    { label: '2026년 10월', value: '2026-10' },
-    { label: '2026년 11월', value: '2026-11' },
-    { label: '2026년 12월', value: '2026-12' },
-    { label: '2027년 (내년)', value: '2027' }
+    { label: '2026년 10월', sub: '가을 정기공연', value: '2026-10' },
+    { label: '2026년 11월', sub: '해외 명문 악단 내한', value: '2026-11' },
+    { label: '2026년 12월', sub: '송년 · 제야 음악회', value: '2026-12' },
+    { label: '2027년 시즌', sub: '신년 · 상반기 일정', value: '2027' }
   ];
 
   return (
-    <div className="bg-white/90 dark:bg-hall-900/90 rounded-3xl border border-stone-200/90 dark:border-hall-800 p-8 sm:p-12 text-center shadow-xs backdrop-blur-xs space-y-8 transition-colors">
-      {/* Icon & Hero Instruction */}
-      <div className="space-y-3.5 max-w-xl mx-auto">
-        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500/15 via-concert-500/15 to-amber-700/20 dark:from-amber-400/20 dark:to-concert-600/30 border border-concert-500/30 dark:border-concert-500/40 flex items-center justify-center text-concert-600 dark:text-concert-400 mx-auto shadow-xs">
-          <BrandIcon className="w-9 h-9" />
-        </div>
-        <h2 className="font-serif font-black text-xl sm:text-2xl text-stone-900 dark:text-stone-100 tracking-tight">
-          원하시는 공연을 검색하거나 조건을 선택해보세요
-        </h2>
-      </div>
-
-      {/* Quick Recommendation Section */}
-      <div className="max-w-2xl mx-auto space-y-4 pt-2">
-        <div className="text-[11px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-wider flex items-center justify-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5 text-concert-500" />
-          <span>자주 찾는 조건으로 빠른 탐색</span>
-        </div>
-
-        {/* 1. Quick Venues */}
-        <div className="flex flex-wrap items-center justify-center gap-2">
-          <span className="text-[11px] font-bold text-stone-400 dark:text-stone-500 mr-1 flex items-center gap-1 shrink-0">
-            <MapPin className="w-3 h-3 text-concert-500" /> 공연장
+    <div className="bg-white dark:bg-hall-900 rounded-xl border border-stone-200/90 dark:border-hall-800 overflow-hidden transition-colors">
+      {/* Editorial Top Header Bar */}
+      <div className="px-6 py-5 sm:px-8 border-b border-stone-200/80 dark:border-hall-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <span className="text-[11px] font-serif tracking-widest uppercase text-stone-400 dark:text-stone-500 block mb-1">
+            Curated Index
           </span>
-          {quickVenues.map((v) => (
-            <button
-              key={v.value}
-              type="button"
-              onClick={() => onSelectVenue(v.value)}
-              className="px-3 py-1.5 rounded-xl bg-stone-50 dark:bg-hall-850 hover:bg-concert-50 dark:hover:bg-hall-800 text-stone-700 dark:text-stone-300 hover:text-concert-700 dark:hover:text-concert-300 border border-stone-200 dark:border-hall-700 hover:border-concert-300 text-xs font-semibold transition-all shadow-2xs shrink-0 cursor-pointer"
-            >
-              {v.label}
-            </button>
-          ))}
+          <h2 className="font-serif font-bold text-lg sm:text-xl text-stone-900 dark:text-stone-100 tracking-tight">
+            공연장, 작곡가 또는 시즌별로 일정을 찾아보세요
+          </h2>
         </div>
 
-        {/* 2. Quick Composers */}
-        <div className="flex flex-wrap items-center justify-center gap-2">
-          <span className="text-[11px] font-bold text-stone-400 dark:text-stone-500 mr-1 flex items-center gap-1 shrink-0">
-            <Music className="w-3 h-3 text-concert-500" /> 작곡가
-          </span>
-          {quickComposers.map((c) => (
-            <button
-              key={c.value}
-              type="button"
-              onClick={() => onSelectComposer(c.value)}
-              className="px-3 py-1.5 rounded-xl bg-stone-50 dark:bg-hall-850 hover:bg-concert-50 dark:hover:bg-hall-800 text-stone-700 dark:text-stone-300 hover:text-concert-700 dark:hover:text-concert-300 border border-stone-200 dark:border-hall-700 hover:border-concert-300 text-xs font-semibold transition-all shadow-2xs shrink-0 cursor-pointer"
-            >
-              {c.label}
-            </button>
-          ))}
-        </div>
-
-        {/* 3. Quick Dates */}
-        <div className="flex flex-wrap items-center justify-center gap-2">
-          <span className="text-[11px] font-bold text-stone-400 dark:text-stone-500 mr-1 flex items-center gap-1 shrink-0">
-            <Calendar className="w-3 h-3 text-concert-500" /> 시기
-          </span>
-          {quickDates.map((d) => (
-            <button
-              key={d.value}
-              type="button"
-              onClick={() => onSelectDateRange(d.value)}
-              className="px-3 py-1.5 rounded-xl bg-stone-50 dark:bg-hall-850 hover:bg-concert-50 dark:hover:bg-hall-800 text-stone-700 dark:text-stone-300 hover:text-concert-700 dark:hover:text-concert-300 border border-stone-200 dark:border-hall-700 hover:border-concert-300 text-xs font-semibold transition-all shadow-2xs shrink-0 cursor-pointer"
-            >
-              {d.label}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Show All Concerts Button */}
-      <div className="pt-2">
         <button
           type="button"
           onClick={onShowAll}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-stone-900 via-stone-850 to-stone-900 dark:from-hall-800 dark:via-hall-750 dark:to-hall-800 text-stone-100 hover:text-white border border-stone-700/60 dark:border-hall-700 text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all active:scale-98 cursor-pointer"
+          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-stone-900 hover:bg-stone-800 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-50 dark:text-stone-100 text-xs font-medium transition-colors shrink-0 cursor-pointer"
         >
-          <Eye className="w-4 h-4 text-concert-400 shrink-0" />
-          <span>전체 공연 한눈에 보기</span>
+          <span>전체 공연 일정 열람 ({totalCount.toLocaleString()}편)</span>
+          <ArrowRight className="w-3.5 h-3.5" />
         </button>
+      </div>
+
+      {/* 3-Column Architectural Directory */}
+      <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-stone-200/80 dark:divide-hall-800">
+        {/* Column 1: Venues */}
+        <div className="p-6 sm:p-7 space-y-4">
+          <div className="flex items-baseline justify-between border-b border-stone-100 dark:border-hall-800 pb-2.5">
+            <span className="font-serif font-bold text-sm text-stone-900 dark:text-stone-100">
+              주요 공연장
+            </span>
+            <span className="text-[11px] font-serif text-stone-400 dark:text-stone-500">
+              01
+            </span>
+          </div>
+          <div className="grid grid-cols-2 gap-2">
+            {quickVenues.map((v) => (
+              <button
+                key={v.value}
+                type="button"
+                onClick={() => onSelectVenue(v.value)}
+                className="text-left px-3 py-2.5 rounded-lg bg-stone-50/70 dark:bg-hall-850/70 hover:bg-stone-100 dark:hover:bg-hall-800 border border-stone-200/70 dark:border-hall-800 hover:border-stone-400 dark:hover:border-hall-600 transition-colors cursor-pointer group"
+              >
+                <span className="block text-xs font-semibold text-stone-800 dark:text-stone-200 group-hover:text-stone-950 dark:group-hover:text-white truncate">
+                  {v.label}
+                </span>
+                <span className="block text-[10px] text-stone-400 dark:text-stone-500 mt-0.5 truncate">
+                  {v.sub}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Column 2: Composers */}
+        <div className="p-6 sm:p-7 space-y-4">
+          <div className="flex items-baseline justify-between border-b border-stone-100 dark:border-hall-800 pb-2.5">
+            <span className="font-serif font-bold text-sm text-stone-900 dark:text-stone-100">
+              시대별 주요 작곡가
+            </span>
+            <span className="text-[11px] font-serif text-stone-400 dark:text-stone-500">
+              02
+            </span>
+          </div>
+          <div className="grid grid-cols-2 gap-2">
+            {quickComposers.map((c) => (
+              <button
+                key={c.value}
+                type="button"
+                onClick={() => onSelectComposer(c.value)}
+                className="text-left px-3 py-2.5 rounded-lg bg-stone-50/70 dark:bg-hall-850/70 hover:bg-stone-100 dark:hover:bg-hall-800 border border-stone-200/70 dark:border-hall-800 hover:border-stone-400 dark:hover:border-hall-600 transition-colors cursor-pointer group"
+              >
+                <span className="block text-xs font-semibold text-stone-800 dark:text-stone-200 group-hover:text-stone-950 dark:group-hover:text-white truncate">
+                  {c.label}
+                </span>
+                <span className="block text-[10px] font-serif italic text-stone-400 dark:text-stone-500 mt-0.5 truncate">
+                  {c.sub}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Column 3: Seasons */}
+        <div className="p-6 sm:p-7 space-y-4">
+          <div className="flex items-baseline justify-between border-b border-stone-100 dark:border-hall-800 pb-2.5">
+            <span className="font-serif font-bold text-sm text-stone-900 dark:text-stone-100">
+              시즌 일정
+            </span>
+            <span className="text-[11px] font-serif text-stone-400 dark:text-stone-500">
+              03
+            </span>
+          </div>
+          <div className="space-y-2">
+            {quickDates.map((d) => (
+              <button
+                key={d.value}
+                type="button"
+                onClick={() => onSelectDateRange(d.value)}
+                className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-lg bg-stone-50/70 dark:bg-hall-850/70 hover:bg-stone-100 dark:hover:bg-hall-800 border border-stone-200/70 dark:border-hall-800 hover:border-stone-400 dark:hover:border-hall-600 transition-colors cursor-pointer group"
+              >
+                <span className="text-xs font-semibold text-stone-800 dark:text-stone-200 group-hover:text-stone-950 dark:group-hover:text-white">
+                  {d.label}
+                </span>
+                <span className="text-[11px] text-stone-400 dark:text-stone-500">
+                  {d.sub}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
