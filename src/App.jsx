@@ -381,13 +381,14 @@ export default function App() {
         {/* Tab 1: Concerts Discovery */}
         {activeTab === 'concerts' && (
           <section className="space-y-5">
-            {/* Editorial Masthead */}
-            <div className="relative overflow-hidden rounded-xl bg-[#1e120c] text-white px-7 py-8 sm:px-10 sm:py-9 border border-[#3d2519]">
+            {/* Editorial Masthead with Velvet Texture */}
+            <div className="velvet-banner relative overflow-hidden rounded-xl text-white px-7 py-8 sm:px-10 sm:py-9 border border-[#5e341f]/75">
+              {/* Semi-transparent orchestra cello section artwork on the right */}
               <div className="absolute right-0 top-0 bottom-0 w-full sm:w-3/5 lg:w-1/2 pointer-events-none overflow-hidden select-none">
                 <img
                   src="/images/banner_cello_section.jpg"
                   alt="Orchestra Cello Section"
-                  className="w-full h-full object-cover object-right opacity-30 mix-blend-screen"
+                  className="w-full h-full object-cover object-right opacity-32 mix-blend-screen"
                   style={{
                     maskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 25%, black 100%)',
                     WebkitMaskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 25%, black 100%)'
@@ -395,17 +396,20 @@ export default function App() {
                 />
               </div>
 
+              {/* Subtle directional velvet nap sheen */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-black/25 via-[#8c4b27]/15 to-[#f5dfc0]/[0.07] pointer-events-none" />
+
               <div className="relative z-10 max-w-xl space-y-3">
-                <div className="flex items-center gap-2.5 text-[11px] font-serif tracking-widest uppercase text-[#c9b08f]">
+                <div className="flex items-center gap-2.5 text-[11px] font-serif tracking-widest uppercase text-[#d8be9c]">
                   <span>Season 2026 — 2027</span>
-                  <span className="w-6 h-px bg-[#6e4b32]" />
+                  <span className="w-6 h-px bg-[#7c5337]" />
                   <span>Concert Archive</span>
                 </div>
-                <h1 className="font-serif font-bold text-xl sm:text-2xl md:text-[28px] leading-snug tracking-tight text-[#faf5ee]">
+                <h1 className="font-serif font-bold text-xl sm:text-2xl md:text-[28px] leading-snug tracking-tight text-[#fdf8f2]">
                   숨죽인 홀 안의 침묵, 가슴 깊이 남겨질 선율의 순간
                 </h1>
-                <p className="text-xs sm:text-sm text-[#d8c7b0] font-normal leading-relaxed">
-                  전국 주요 콘서트홀에서 펼쳐지는 클래식 연주회 일정과 세부 프로그램을 한곳에 정갈하게 기록합니다.
+                <p className="text-xs sm:text-sm text-[#e6d5be] font-normal leading-relaxed">
+                  전국 콘서트홀에서 펼쳐지는 클래식 연주회 일정을 정갈하게 기록합니다
                 </p>
               </div>
             </div>

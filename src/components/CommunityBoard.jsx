@@ -363,57 +363,43 @@ export default function CommunityBoard({
         </div>
 
         {isRulesExpanded && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-3 border-t border-stone-100 dark:border-hall-800 text-xs">
-            <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1">
-              <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                1. 명예훼손·모욕 등 법적 분쟁 소지 발언 금지
-              </span>
-              <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
-                연주자, 지휘자, 악단 및 타 관람객을 향한 악의적 인신공격, 사실 적시 또는 허위사실에 의한 명예훼손 등 법적으로 문제가 될 수 있는 발언을 엄격히 금지합니다. (건전한 연주 비평은 전면 보장됩니다)
+          <ol className="space-y-2 pt-3 border-t border-stone-100 dark:border-hall-800 text-xs text-stone-600 dark:text-stone-300 leading-relaxed">
+            <li className="flex items-baseline gap-2">
+              <span className="font-serif font-bold text-stone-400 dark:text-stone-500 shrink-0">01.</span>
+              <p>
+                <strong className="font-semibold text-stone-900 dark:text-stone-100 mr-1.5">명예훼손·모욕 등 법적 분쟁 소지 발언 금지</strong>
+                연주자, 지휘자, 악단 및 타 관람객을 향한 악의적 인신공격이나 허위사실 유포를 금지합니다. 건전한 연주 비평은 자유롭게 나누실 수 있습니다.
               </p>
-            </div>
-
-            <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1">
-              <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-                2. 정치·사회적 갈등 조장 발언 금지
-              </span>
-              <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
-                음악과 예술 본연의 향유를 위해 정치적 논쟁, 편가르기, 특정 집단 비하 게시물은 무통보 삭제 및 IP가 차단됩니다.
+            </li>
+            <li className="flex items-baseline gap-2">
+              <span className="font-serif font-bold text-stone-400 dark:text-stone-500 shrink-0">02.</span>
+              <p>
+                <strong className="font-semibold text-stone-900 dark:text-stone-100 mr-1.5">정치·사회적 갈등 조장 발언 금지</strong>
+                음악과 예술 본연의 향유를 위해 정치적 논쟁, 편가르기, 특정 집단 비하 게시물은 예고 없이 삭제 및 이용이 제한됩니다.
               </p>
-            </div>
-
-            <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1">
-              <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
-                3. 허위사실 유포 및 불법 암표 거래 금지
-              </span>
-              <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
-                확인되지 않은 루머 유포나 공식 예매처 규정을 위반하는 프리미엄 웃돈 암표 거래, 불법 양도는 엄단합니다.
+            </li>
+            <li className="flex items-baseline gap-2">
+              <span className="font-serif font-bold text-stone-400 dark:text-stone-500 shrink-0">03.</span>
+              <p>
+                <strong className="font-semibold text-stone-900 dark:text-stone-100 mr-1.5">허위사실 유포 및 불법 암표 거래 금지</strong>
+                확인되지 않은 루머 유포나 공식 예매처 규정을 위반하는 웃돈 암표 거래 및 불법 양도를 금합니다.
               </p>
-            </div>
-
-            <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1">
-              <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
-                <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
-                4. 기타 대한민국 법률 및 관계 법령 위반 금지
-              </span>
-              <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
-                음란물, 사기, 저작권 침해 등 기타 대한민국 실정법 및 관계 법령을 위반하는 모든 게시물은 사전 경고 없이 즉각 삭제 및 해당 IP가 차단될 수 있습니다.
+            </li>
+            <li className="flex items-baseline gap-2">
+              <span className="font-serif font-bold text-stone-400 dark:text-stone-500 shrink-0">04.</span>
+              <p>
+                <strong className="font-semibold text-stone-900 dark:text-stone-100 mr-1.5">관계 법령 위반 게시물 금지</strong>
+                음란물, 사기, 저작권 침해 등 실정법을 위반하는 게시물은 즉시 삭제 및 차단 조치됩니다.
               </p>
-            </div>
-
-            <div className="p-3 rounded-xl bg-stone-50/70 dark:bg-hall-850/60 border border-stone-200/60 dark:border-hall-800 space-y-1 md:col-span-2">
-              <span className="font-bold text-stone-900 dark:text-stone-100 flex items-center gap-1.5 text-[11px]">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                5. 성숙한 클래식 공연장 관람 에티켓 준수
-              </span>
-              <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed pl-3">
-                악장 간 박수 자제, 연주 중 스마트폰 무음 유지, 무단 녹음·촬영 금지 등 품격 있는 관람 문화를 함께 지켜주세요.
+            </li>
+            <li className="flex items-baseline gap-2">
+              <span className="font-serif font-bold text-stone-400 dark:text-stone-500 shrink-0">05.</span>
+              <p>
+                <strong className="font-semibold text-stone-900 dark:text-stone-100 mr-1.5">공연장 관람 에티켓 존중</strong>
+                악장 간 박수 자제, 연주 중 무음 유지, 무단 녹음·촬영 금지 등 성숙한 공연장 문화를 함께 만들어 갑니다.
               </p>
-            </div>
-          </div>
+            </li>
+          </ol>
         )}
       </div>
 

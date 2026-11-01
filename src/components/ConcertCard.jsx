@@ -5,9 +5,18 @@ import { getVenueOfficialUrl } from '../utils/venueUrls.js';
 import { analyticsService } from '../services/analyticsService.js';
 
 function formatComposerBadge(comp) {
-  if (typeof comp !== 'string' || !comp.trim()) return '클래식';
+  if (typeof comp !== 'string' || !comp.trim()) return '';
   const clean = comp.replace(/\([^)]*\)/g, '').trim();
-  if (!clean || clean === '클래식 명작' || clean === '클래식' || clean === '클래식 명곡') return '클래식 명작';
+  if (
+    !clean ||
+    clean === '클래식 명작' ||
+    clean === '클래식' ||
+    clean === '클래식 명곡' ||
+    clean === '미정' ||
+    clean === '기타'
+  ) {
+    return '';
+  }
   const parts = clean.split(/\s+/);
   if (parts.length > 1 && parts[parts.length - 1] === '2세') {
     return `${parts[parts.length - 2]} 2세`;
@@ -32,6 +41,15 @@ function ConcertCard({ concert }) {
     : (typeof concert.program === 'string' && concert.program.trim().length > 0
         ? concert.program.split('\n').map(p => p.trim()).filter(Boolean)
         : []);
+
+  // 실제 작곡가명만 필터링 ('클래식 명작' 등 임시 플레이스홀더 배지 제거)
+  const validComposers = Array.from(
+    new Set(
+      (Array.isArray(concert.composers) ? concert.composers : (concert.composers ? [concert.composers] : []))
+        .map(formatComposerBadge)
+        .filter(Boolean)
+    )
+  ).slice(0, 3);
 
   // 4줄(곡목) 이상인 경우 3개만 먼저 보여주고 '더보기' 펼치기 버튼 활성화
   const hasManyPieces = piecesList.length >= 4;
@@ -72,17 +90,17 @@ function ConcertCard({ concert }) {
           </div>
         </div>
 
-        {/* Formation & Composer Tags (No Hashtags) */}
+        {/* Formation & Composer Tags */}
         <div className="flex items-center gap-1.5 flex-wrap overflow-hidden">
           <span className="px-2.5 py-0.5 rounded-sm text-[11px] font-semibold bg-[#f5efe6] dark:bg-hall-800 text-[#6e4726] dark:text-concert-300 shrink-0">
             {concert.performerType || '클래식'}
           </span>
-          {(Array.isArray(concert.composers) ? concert.composers : (concert.composers ? [concert.composers] : ['클래식 명작'])).slice(0, 3).map((comp, idx) => (
+          {validComposers.map((compName, idx) => (
             <span
               key={idx}
               className="px-2.5 py-0.5 rounded-sm text-[11px] font-medium bg-stone-100/80 dark:bg-hall-850 text-stone-600 dark:text-stone-300 shrink-0"
             >
-              {formatComposerBadge(comp)}
+              {compName}
             </span>
           ))}
         </div>

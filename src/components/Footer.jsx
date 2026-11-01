@@ -29,8 +29,9 @@ export default function Footer({ onOpenAdminAuth }) {
             onClick={handleSecretTap}
             className="inline-flex items-center gap-3 select-none cursor-default"
           >
-            <div className="w-8 h-8 rounded-md bg-[#1f130d] dark:bg-hall-850 text-[#f3e3c6] flex items-center justify-center border border-[#4a2c1d] dark:border-hall-700 shrink-0">
-              <BrandIcon className="w-[22px] h-[22px] text-[#f3e3c6]" />
+            <div className="velvet-icon-box w-8 h-8 rounded-md text-[#f6e5c5] flex items-center justify-center border border-[#6e3d24]/80 dark:border-[#7d4629]/70 shrink-0">
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#96532a]/20 to-white/10 pointer-events-none" />
+              <BrandIcon className="w-[23px] h-[23px] relative z-10 drop-shadow-[0_1px_1px_rgba(0,0,0,0.85)] text-[#f6e5c5]" />
             </div>
             <div>
               <span className="font-serif font-bold text-sm tracking-wider text-stone-900 dark:text-stone-100 block leading-none">

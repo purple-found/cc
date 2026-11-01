@@ -18,8 +18,9 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
               onClick={() => setActiveTab('concerts')}
               className="flex items-center gap-3 cursor-pointer group shrink-0"
             >
-              <div className="w-9 h-9 rounded-md bg-[#1f130d] dark:bg-hall-850 text-[#f3e3c6] flex items-center justify-center border border-[#4a2c1d] dark:border-hall-700 shrink-0">
-                <BrandIcon className="w-[26px] h-[26px] text-[#f3e3c6]" />
+              <div className="velvet-icon-box w-10 h-10 rounded-lg text-[#f6e5c5] flex items-center justify-center border border-[#6e3d24]/80 dark:border-[#7d4629]/70 shrink-0">
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#96532a]/20 to-white/10 pointer-events-none" />
+                <BrandIcon className="w-[30px] h-[30px] relative z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)] text-[#f6e5c5]" />
               </div>
               <div className="flex flex-col">
                 <span className="font-serif font-bold text-lg tracking-wider text-stone-900 dark:text-stone-100 leading-none">
