@@ -37,6 +37,7 @@ export default function AdminCenter({
   onDeleteConcert,
   onClearAllConcerts,
   onApproveTip,
+  onUpdateTip,
   onDeleteTip,
   onLogout,
   onRefreshConcerts,
@@ -45,10 +46,12 @@ export default function AdminCenter({
   onUpdateComment,
   onDeleteComment,
   onBlockIp,
-  onUnblockIp
+  onUnblockIp,
+  onNavigateToCommunity
 }) {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [editingConcert, setEditingConcert] = useState(null);
+  const [editingTip, setEditingTip] = useState(null);
   const [isSyncingKopis, setIsSyncingKopis] = useState(false);
   const [syncProgressText, setSyncProgressText] = useState('');
   const [syncResult, setSyncResult] = useState(null);
@@ -74,13 +77,33 @@ export default function AdminCenter({
       if (e.key === 'Escape') {
         if (isAddModalOpen) setIsAddModalOpen(false);
         else if (editingConcert) setEditingConcert(null);
+        else if (editingTip) setEditingTip(null);
         else if (editingPost) setEditingPost(null);
         else if (editingComment) setEditingComment(null);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isAddModalOpen, editingConcert, editingPost, editingComment]);
+  }, [isAddModalOpen, editingConcert, editingTip, editingPost, editingComment]);
+
+  // 제보 항목 수정 모달 열기 핸들러
+  const openEditTipModal = (tip) => {
+    setEditingTip({
+      id: tip.id,
+      title: tip.title || '',
+      date: tip.date || '',
+      time: tip.time || '19:30',
+      venue: tip.venue || '',
+      city: tip.city || '서울',
+      performerType: tip.performerType || '오케스트라',
+      performers: Array.isArray(tip.performers) ? tip.performers.join(', ') : (tip.performers || ''),
+      composers: Array.isArray(tip.composers) ? tip.composers.join(', ') : (tip.composers || ''),
+      pieces: Array.isArray(tip.pieces) ? tip.pieces.join('\n') : (tip.pieces || ''),
+      price: tip.price || '전석 안내 예정',
+      ticketUrl: tip.ticketUrl || '',
+      note: tip.note || ''
+    });
+  };
 
   // 관리자 공연 검색 필터링
   const filteredAdminConcerts = useMemo(() => {
@@ -488,11 +511,19 @@ export default function AdminCenter({
                           반려
                         </button>
                         <button
+                          onClick={() => openEditTipModal(tip)}
+                          className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-amber-100 hover:bg-amber-200 dark:bg-amber-950/70 dark:hover:bg-amber-900/70 text-amber-800 dark:text-amber-200 text-xs font-semibold transition-colors"
+                          title="제보 내용을 바로 수정하거나 보완하여 등록합니다"
+                        >
+                          <Edit3 className="w-3.5 h-3.5" />
+                          <span>수정 / 보완</span>
+                        </button>
+                        <button
                           onClick={() => onApproveTip(tip.id)}
                           className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-xs"
                         >
                           <Check className="w-3.5 h-3.5" />
-                          <span>승인하여 정식 등록</span>
+                          <span>승인 등록</span>
                         </button>
                       </>
                     )}
@@ -593,7 +624,7 @@ export default function AdminCenter({
                           ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
                           : 'bg-stone-100 text-stone-600 dark:bg-hall-800 dark:text-stone-300'
                       }`}>
-                        {c.source}
+                        {c.source && c.source.includes('KOPIS') ? 'KOPIS 전산망 공식 수집' : c.source}
                       </span>
                     </div>
                     <div className="flex items-center gap-3 text-stone-500 dark:text-stone-400">
@@ -644,226 +675,32 @@ export default function AdminCenter({
         )}
       </div>
 
-      {/* Community Moderation Section (커뮤니티 부적절 글 및 댓글 관리) */}
-      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm space-y-4">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      {/* Community Direct Moderation Shortcut Section */}
+      <div className="bg-white dark:bg-hall-900 rounded-2xl border border-stone-200/90 dark:border-hall-800 p-6 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="space-y-1">
           <div className="flex items-center gap-2">
             <MessageSquare className="w-5 h-5 text-concert-500" />
             <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100 flex items-center gap-2">
-              <span>커뮤니티 게시글 및 댓글 관리</span>
+              <span>커뮤니티 게시글 및 댓글 관리 안내</span>
               <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-stone-100 dark:bg-hall-800 text-stone-600 dark:text-stone-300">
-                게시글 {posts.length}건
+                현재 게시글 {posts.length}건
               </span>
             </h3>
           </div>
-          <span className="text-xs text-stone-400">
-            작성자 IP를 확인하고, 정치/비방 등 부적절한 글과 댓글을 수정·삭제하거나 이용자를 차단합니다.
-          </span>
+          <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed">
+            관리자 인증 상태에서는 상단 <strong>[커뮤니티]</strong> 탭의 각 게시글 및 댓글에서 바로 <strong>수정 · 삭제 · 작성자 IP 차단</strong>을 진행하실 수 있습니다.
+          </p>
         </div>
 
-        {posts.length === 0 ? (
-          <div className="py-8 text-center text-xs text-stone-400 dark:text-stone-500 bg-stone-50/60 dark:bg-hall-850/60 rounded-xl border border-dashed border-stone-200 dark:border-hall-800">
-            등록된 커뮤니티 게시글이 없습니다.
-          </div>
-        ) : (
-          <div className="space-y-3 max-h-[500px] overflow-y-auto pr-1">
-            {posts.map((post) => {
-              const isAuthorBlocked = blockedIps.some((b) => b.ip === post.ip);
-              const isExpanded = expandedPostId === post.id;
-              const commentsCount = post.comments ? post.comments.length : 0;
-
-              return (
-                <div
-                  key={post.id}
-                  className="p-4 rounded-xl bg-stone-50/80 dark:bg-hall-850 border border-stone-200/80 dark:border-hall-800 space-y-3"
-                >
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="space-y-1 min-w-0">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-concert-50 dark:bg-hall-800 text-concert-700 dark:text-concert-300">
-                          {post.category}
-                        </span>
-                        <h4 className="font-bold text-sm text-stone-900 dark:text-stone-100 truncate">
-                          {post.title}
-                        </h4>
-                      </div>
-
-                      <div className="flex items-center gap-2 text-[11px] text-stone-500 dark:text-stone-400 flex-wrap">
-                        <span className="font-semibold text-stone-700 dark:text-stone-300">{post.author}</span>
-                        <span>·</span>
-                        <span>{post.createdAt}</span>
-                        <span>·</span>
-                        <span className="inline-flex items-center px-2 py-0.5 rounded font-mono text-[10px] font-semibold bg-stone-200 dark:bg-hall-700 text-stone-700 dark:text-stone-300">
-                          IP: {post.ip || '기록 없음'}
-                        </span>
-                        {isAuthorBlocked && (
-                          <span className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded text-[10px] font-bold bg-red-100 dark:bg-red-950/70 text-red-700 dark:text-red-300">
-                            <Ban className="w-3 h-3" />
-                            차단된 IP
-                          </span>
-                        )}
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-1.5 shrink-0">
-                      <button
-                        onClick={() => setExpandedPostId(isExpanded ? null : post.id)}
-                        className="px-2.5 py-1.5 rounded-lg bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-300 text-xs font-semibold flex items-center gap-1 transition-colors"
-                        title="댓글 목록 확인"
-                      >
-                        <MessageCircle className="w-3.5 h-3.5 text-stone-500" />
-                        <span>댓글 ({commentsCount})</span>
-                        {isExpanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
-                      </button>
-
-                      <button
-                        onClick={() => setEditingPost({
-                          id: post.id,
-                          title: post.title,
-                          category: post.category,
-                          content: post.content
-                        })}
-                        className="p-1.5 text-stone-500 hover:text-concert-600 dark:hover:text-concert-400 hover:bg-concert-50 dark:hover:bg-hall-800 rounded-lg transition-colors"
-                        title="게시글 내용 수정"
-                      >
-                        <Edit3 className="w-4 h-4" />
-                      </button>
-
-                      <button
-                        onClick={() => {
-                          if (confirm(`'${post.title}' 게시글을 삭제하시겠습니까?\n등록된 댓글도 함께 삭제됩니다.`)) {
-                            onDeletePost(post.id);
-                          }
-                        }}
-                        className="p-1.5 text-stone-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded-lg transition-colors"
-                        title="게시글 삭제"
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </button>
-
-                      {post.ip && (
-                        isAuthorBlocked ? (
-                          <button
-                            onClick={() => onUnblockIp(post.ip)}
-                            className="px-2 py-1 rounded-lg text-[10px] font-bold bg-stone-200 hover:bg-stone-300 dark:bg-hall-700 dark:hover:bg-hall-600 text-stone-700 dark:text-stone-300 transition-colors"
-                            title="이 IP 차단 해제"
-                          >
-                            차단 해제
-                          </button>
-                        ) : (
-                          <button
-                            onClick={() => {
-                              if (confirm(`IP (${post.ip}) 사용자를 차단하시겠습니까?\n차단 시 해당 IP에서는 글 및 댓글 작성이 원천 차단됩니다.`)) {
-                                onBlockIp(post.ip, `게시글 '${post.title}' 부적절 발언 규제`);
-                              }
-                            }}
-                            className="px-2 py-1 rounded-lg text-[10px] font-bold bg-red-100 hover:bg-red-200 dark:bg-red-950/60 dark:hover:bg-red-900/60 text-red-700 dark:text-red-300 transition-colors"
-                            title="이 IP 차단하기"
-                          >
-                            IP 차단
-                          </button>
-                        )
-                      )}
-                    </div>
-                  </div>
-
-                  <p className="text-xs text-stone-700 dark:text-stone-300 bg-white dark:bg-hall-900 p-3 rounded-lg border border-stone-200/60 dark:border-hall-800 leading-relaxed whitespace-pre-wrap">
-                    {post.content}
-                  </p>
-
-                  {/* Comments accordion */}
-                  {isExpanded && (
-                    <div className="pt-3 border-t border-stone-200/60 dark:border-hall-800/80 space-y-2">
-                      <div className="flex items-center justify-between text-xs font-bold text-stone-700 dark:text-stone-300">
-                        <span>등록된 댓글 ({commentsCount}개)</span>
-                      </div>
-
-                      {commentsCount === 0 ? (
-                        <p className="text-[11px] text-stone-400 italic py-1">작성된 댓글이 없습니다.</p>
-                      ) : (
-                        <div className="space-y-2">
-                          {post.comments.map((comment) => {
-                            const isCommentBlocked = blockedIps.some((b) => b.ip === comment.ip);
-                            return (
-                              <div
-                                key={comment.id}
-                                className="p-2.5 rounded-lg bg-stone-100/70 dark:bg-hall-900 border border-stone-200/60 dark:border-hall-800 flex items-start justify-between gap-2 text-xs"
-                              >
-                                <div className="space-y-1 min-w-0">
-                                  <div className="flex items-center gap-2 flex-wrap text-[11px]">
-                                    <span className="font-bold text-stone-800 dark:text-stone-200">{comment.author}</span>
-                                    <span className="text-stone-400">{comment.createdAt}</span>
-                                    <span className="inline-flex items-center px-1.5 py-0.2 rounded font-mono text-[10px] bg-stone-200/80 dark:bg-hall-800 text-stone-700 dark:text-stone-300">
-                                      IP: {comment.ip || '기록 없음'}
-                                    </span>
-                                    {isCommentBlocked && (
-                                      <span className="text-[10px] font-bold text-red-600 dark:text-red-400">
-                                        (차단된 IP)
-                                      </span>
-                                    )}
-                                  </div>
-                                  <p className="text-stone-700 dark:text-stone-300 leading-relaxed">
-                                    {comment.content}
-                                  </p>
-                                </div>
-
-                                <div className="flex items-center gap-1 shrink-0">
-                                  <button
-                                    onClick={() => setEditingComment({
-                                      postId: post.id,
-                                      commentId: comment.id,
-                                      author: comment.author,
-                                      content: comment.content
-                                    })}
-                                    className="p-1 text-stone-500 hover:text-concert-600 dark:hover:text-concert-400 hover:bg-stone-200 dark:hover:bg-hall-800 rounded transition-colors"
-                                    title="댓글 수정"
-                                  >
-                                    <Edit3 className="w-3.5 h-3.5" />
-                                  </button>
-                                  <button
-                                    onClick={() => {
-                                      if (confirm('해당 댓글을 삭제하시겠습니까?')) {
-                                        onDeleteComment(post.id, comment.id);
-                                      }
-                                    }}
-                                    className="p-1 text-stone-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded transition-colors"
-                                    title="댓글 삭제"
-                                  >
-                                    <Trash2 className="w-3.5 h-3.5" />
-                                  </button>
-                                  {comment.ip && (
-                                    isCommentBlocked ? (
-                                      <button
-                                        onClick={() => onUnblockIp(comment.ip)}
-                                        className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-stone-200 dark:bg-hall-700 text-stone-700 dark:text-stone-300"
-                                      >
-                                        해제
-                                      </button>
-                                    ) : (
-                                      <button
-                                        onClick={() => {
-                                          if (confirm(`댓글 작성자 IP (${comment.ip})를 차단하시겠습니까?`)) {
-                                            onBlockIp(comment.ip, `댓글 부적절 표현 규제`);
-                                          }
-                                        }}
-                                        className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-red-100 hover:bg-red-200 dark:bg-red-950/60 text-red-700 dark:text-red-300"
-                                      >
-                                        IP 차단
-                                      </button>
-                                    )
-                                  )}
-                                </div>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
+        {onNavigateToCommunity && (
+          <button
+            type="button"
+            onClick={onNavigateToCommunity}
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold transition-all shadow-sm shrink-0 cursor-pointer"
+          >
+            <MessageSquare className="w-4 h-4" />
+            <span>커뮤니티 탭으로 이동하여 관리하기</span>
+          </button>
         )}
       </div>
 
@@ -1637,6 +1474,238 @@ export default function AdminCenter({
                   className="px-4 py-1.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white font-bold shadow-xs transition-all"
                 >
                   수정 저장
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Tip-off Edit & Approve Modal (관람객 제보 내용 바로 수정 및 정식 등록 모달) */}
+      {editingTip && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
+          onClick={() => setEditingTip(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="bg-white dark:bg-hall-900 rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto border border-stone-200 dark:border-hall-750 shadow-2xl p-6 sm:p-8 space-y-6"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <span className="inline-block px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 text-[11px] font-bold">
+                  제보함에서 바로 수정 · 보완
+                </span>
+                <h2 className="font-serif font-bold text-xl text-stone-900 dark:text-stone-50 flex items-center gap-2 mt-1">
+                  <Edit3 className="w-5 h-5 text-concert-500" />
+                  <span>공연 제보 내역 수정 및 정식 등록</span>
+                </h2>
+                <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">
+                  관람객이 제보한 공연 정보를 제보함에서 바로 다듬어 정식 일정으로 즉시 승인 등록할 수 있습니다.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setEditingTip(null)}
+                className="p-1.5 rounded-full hover:bg-stone-100 dark:hover:bg-hall-800 text-stone-400"
+                aria-label="닫기"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                if (!editingTip.title || !editingTip.date) {
+                  alert('공연명과 공연 날짜는 필수입니다.');
+                  return;
+                }
+                if (onApproveTip) {
+                  onApproveTip(editingTip.id, editingTip);
+                }
+                setEditingTip(null);
+              }}
+              className="space-y-4"
+            >
+              <div>
+                <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  공연 명칭 *
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={editingTip.title}
+                  onChange={(e) => setEditingTip({ ...editingTip, title: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    공연 날짜 *
+                  </label>
+                  <input
+                    type="date"
+                    required
+                    value={editingTip.date}
+                    onChange={(e) => setEditingTip({ ...editingTip, date: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    시작 시간
+                  </label>
+                  <input
+                    type="text"
+                    value={editingTip.time}
+                    onChange={(e) => setEditingTip({ ...editingTip, time: e.target.value })}
+                    placeholder="예: 19:30"
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    공연장 / 홀
+                  </label>
+                  <input
+                    type="text"
+                    value={editingTip.venue}
+                    onChange={(e) => setEditingTip({ ...editingTip, venue: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    연주 편성
+                  </label>
+                  <select
+                    value={editingTip.performerType || '오케스트라'}
+                    onChange={(e) => setEditingTip({ ...editingTip, performerType: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  >
+                    <option value="오케스트라">오케스트라</option>
+                    <option value="실내악">실내악</option>
+                    <option value="독주회">독주회</option>
+                    <option value="오페라">오페라</option>
+                    <option value="성악/합창">성악/합창</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  출연진 (쉼표로 구분)
+                </label>
+                <input
+                  type="text"
+                  value={editingTip.performers}
+                  onChange={(e) => setEditingTip({ ...editingTip, performers: e.target.value })}
+                  placeholder="예: 조성진 (Piano), 서울시향"
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  작곡가 (쉼표로 구분)
+                </label>
+                <input
+                  type="text"
+                  value={editingTip.composers}
+                  onChange={(e) => setEditingTip({ ...editingTip, composers: e.target.value })}
+                  placeholder="예: 베토벤, 말러, 라흐마니노프"
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  연주 프로그램 곡목 (줄바꿈으로 구분)
+                </label>
+                <textarea
+                  rows={3}
+                  value={editingTip.pieces}
+                  onChange={(e) => setEditingTip({ ...editingTip, pieces: e.target.value })}
+                  placeholder="예: 라흐마니노프 - 피아노 협주곡 3번"
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    티켓 가격 정보
+                  </label>
+                  <input
+                    type="text"
+                    value={editingTip.price}
+                    onChange={(e) => setEditingTip({ ...editingTip, price: e.target.value })}
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                    예매처 링크
+                  </label>
+                  <input
+                    type="text"
+                    value={editingTip.ticketUrl}
+                    onChange={(e) => setEditingTip({ ...editingTip, ticketUrl: e.target.value })}
+                    placeholder="https://..."
+                    className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  제보 메모 / 공연 소개
+                </label>
+                <textarea
+                  rows={2}
+                  value={editingTip.note}
+                  onChange={(e) => setEditingTip({ ...editingTip, note: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div className="flex items-center justify-end gap-2 pt-4 border-t border-stone-100 dark:border-hall-800 flex-wrap">
+                <button
+                  type="button"
+                  onClick={() => setEditingTip(null)}
+                  className="px-4 py-2 rounded-xl bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 text-xs font-semibold"
+                >
+                  취소
+                </button>
+                {onUpdateTip && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      onUpdateTip(editingTip.id, editingTip);
+                      setEditingTip(null);
+                    }}
+                    className="px-4 py-2 rounded-xl bg-amber-100 hover:bg-amber-200 dark:bg-amber-950/70 dark:hover:bg-amber-900 text-amber-800 dark:text-amber-200 text-xs font-bold transition-colors"
+                  >
+                    수정 내용만 제보함에 저장
+                  </button>
+                )}
+                <button
+                  type="submit"
+                  className="px-5 py-2 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold shadow-md transition-all flex items-center gap-1.5"
+                >
+                  <Check className="w-3.5 h-3.5" />
+                  <span>수정 내용으로 즉시 정식 등록</span>
                 </button>
               </div>
             </form>

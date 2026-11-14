@@ -13,10 +13,14 @@ import {
   MessageCircle,
   Sparkles,
   ShieldAlert,
+  ShieldCheck,
   FileText,
   ChevronDown,
   ChevronUp,
-  AlertTriangle
+  AlertTriangle,
+  Edit3,
+  Trash2,
+  Ban
 } from 'lucide-react';
 import { formatKSTDateTime } from '../utils/parser.js';
 import { ipService } from '../services/ipService.js';
@@ -30,7 +34,15 @@ export default function CommunityBoard({
   onAddComment,
   onToggleLike,
   onViewPost,
-  initialTargetConcert
+  initialTargetConcert,
+  isAdmin = false,
+  blockedIps = [],
+  onUpdatePost,
+  onDeletePost,
+  onUpdateComment,
+  onDeleteComment,
+  onBlockIp,
+  onUnblockIp
 }) {
   const [selectedCategory, setSelectedCategory] = useState('전체');
   const [searchInput, setSearchInput] = useState('');
@@ -39,6 +51,10 @@ export default function CommunityBoard({
   const [isWriteModalOpen, setIsWriteModalOpen] = useState(false);
   const [isRulesExpanded, setIsRulesExpanded] = useState(false);
   const [activePost, setActivePost] = useState(null);
+
+  // Admin inline/modal editing states
+  const [editingPost, setEditingPost] = useState(null);
+  const [editingComment, setEditingComment] = useState(null);
 
   // New post form state
   const [formData, setFormData] = useState({
@@ -68,17 +84,19 @@ export default function CommunityBoard({
     }
   }, [initialTargetConcert]);
 
-  // ESC 키로 상세 모달 / 글쓰기 모달 닫기 (Gate 2)
+  // ESC 키로 상세 모달 / 글쓰기 모달 / 관리자 수정 모달 닫기 (Gate 2)
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
-        if (activePost) setActivePost(null);
+        if (editingComment) setEditingComment(null);
+        else if (editingPost) setEditingPost(null);
+        else if (activePost) setActivePost(null);
         else if (isWriteModalOpen) setIsWriteModalOpen(false);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [activePost, isWriteModalOpen]);
+  }, [activePost, isWriteModalOpen, editingPost, editingComment]);
 
   // 검색 실행 핸들러 (타이핑 완료 후 검색 버튼 클릭 또는 엔터 키)
   const handleExecuteSearch = (e) => {
@@ -220,10 +238,84 @@ export default function CommunityBoard({
     setCommentInput({ author: '', content: '' });
   };
 
+  // 관리자 게시글 수정 저장 핸들러
+  const handleAdminSavePost = (e) => {
+    e.preventDefault();
+    if (!editingPost || !editingPost.title.trim() || !editingPost.content.trim()) return;
+    if (onUpdatePost) {
+      onUpdatePost(editingPost.id, {
+        title: editingPost.title.trim(),
+        category: editingPost.category,
+        content: editingPost.content.trim()
+      });
+    }
+    if (activePost && activePost.id === editingPost.id) {
+      setActivePost((prev) => ({
+        ...prev,
+        title: editingPost.title.trim(),
+        category: editingPost.category,
+        content: editingPost.content.trim()
+      }));
+    }
+    setEditingPost(null);
+  };
+
+  // 관리자 게시글 삭제 핸들러
+  const handleAdminDeletePost = (post, e) => {
+    if (e) e.stopPropagation();
+    if (!confirm(`'${post.title}' 게시글을 삭제하시겠습니까?\n등록된 댓글도 함께 삭제됩니다.`)) return;
+    if (onDeletePost) onDeletePost(post.id);
+    if (activePost && activePost.id === post.id) {
+      setActivePost(null);
+    }
+  };
+
+  // 관리자 댓글 수정 저장 핸들러
+  const handleAdminSaveComment = (e) => {
+    e.preventDefault();
+    if (!editingComment || !editingComment.content.trim()) return;
+    if (onUpdateComment) {
+      onUpdateComment(editingComment.postId, editingComment.commentId, editingComment.content.trim());
+    }
+    if (activePost && activePost.id === editingComment.postId) {
+      setActivePost((prev) => ({
+        ...prev,
+        comments: (prev.comments || []).map((c) =>
+          c.id === editingComment.commentId ? { ...c, content: editingComment.content.trim() } : c
+        )
+      }));
+    }
+    setEditingComment(null);
+  };
+
+  // 관리자 댓글 삭제 핸들러
+  const handleAdminDeleteComment = (postId, commentId) => {
+    if (!confirm('해당 댓글을 삭제하시겠습니까?')) return;
+    if (onDeleteComment) onDeleteComment(postId, commentId);
+    if (activePost && activePost.id === postId) {
+      setActivePost((prev) => ({
+        ...prev,
+        comments: (prev.comments || []).filter((c) => c.id !== commentId)
+      }));
+    }
+  };
+
   const categories = ['전체', '클래식 수다', '관람 후기'];
 
   return (
     <div className="space-y-5">
+      {/* Admin Mode Live Indicator Banner */}
+      {isAdmin && (
+        <div className="flex items-center justify-between gap-3 px-5 py-3 rounded-xl bg-amber-50/90 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/70 text-xs text-amber-900 dark:text-amber-200">
+          <div className="flex items-center gap-2 font-medium">
+            <ShieldCheck className="w-4 h-4 text-amber-700 dark:text-amber-400 shrink-0" />
+            <span>
+              <strong>관리자 모드 활성화됨</strong> — 각 게시글 및 댓글에서 바로 수정·삭제·IP 차단 조치를 진행하실 수 있습니다.
+            </span>
+          </div>
+        </div>
+      )}
+
       {/* Board Top Header & Controls */}
       <div className="bg-white dark:bg-hall-900 rounded-xl border border-stone-200/90 dark:border-hall-800 p-6 space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -426,79 +518,147 @@ export default function CommunityBoard({
             </button>
           </div>
         ) : (
-          filteredPosts.map((post) => (
-            <article
-              key={post.id}
-              onClick={() => {
-                if (onViewPost) onViewPost(post.id);
-                setActivePost({ ...post, views: (Number(post.views) || 0) + 1 });
-              }}
-              className="p-5 rounded-2xl bg-white dark:bg-hall-900 border border-stone-200/80 dark:border-hall-800 hover:border-concert-400/80 dark:hover:border-concert-500/80 transition-all cursor-pointer shadow-xs space-y-3"
-            >
-              <div className="flex items-center justify-between gap-2 flex-wrap">
-                <div className="flex items-center gap-2">
-                  <span
-                    className={`px-2.5 py-0.5 rounded-md text-[11px] font-bold ${
-                      post.category === '관람 후기'
-                        ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300'
-                        : 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300'
-                    }`}
-                  >
-                    {post.category}
-                  </span>
-
-                  {post.rating && (
-                    <div className="flex items-center gap-0.5 text-amber-500">
-                      {Array.from({ length: post.rating }).map((_, i) => (
-                        <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                      ))}
-                    </div>
-                  )}
-
-                  {post.concertTitle && (
-                    <span className="flex items-center gap-1 text-[11px] text-concert-600 dark:text-concert-400 font-semibold truncate max-w-xs sm:max-w-md">
-                      <Tag className="w-3 h-3 shrink-0" />
-                      <span className="truncate">{post.concertTitle}</span>
+          filteredPosts.map((post) => {
+            const isAuthorBlocked = isAdmin && blockedIps.some((b) => b.ip === post.ip);
+            return (
+              <article
+                key={post.id}
+                onClick={() => {
+                  if (onViewPost) onViewPost(post.id);
+                  setActivePost({ ...post, views: (Number(post.views) || 0) + 1 });
+                }}
+                className="p-5 rounded-2xl bg-white dark:bg-hall-900 border border-stone-200/80 dark:border-hall-800 hover:border-concert-400/80 dark:hover:border-concert-500/80 transition-all cursor-pointer shadow-xs space-y-3"
+              >
+                <div className="flex items-center justify-between gap-2 flex-wrap">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span
+                      className={`px-2.5 py-0.5 rounded-md text-[11px] font-bold ${
+                        post.category === '관람 후기'
+                          ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300'
+                          : 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300'
+                      }`}
+                    >
+                      {post.category}
                     </span>
-                  )}
+
+                    {post.rating && (
+                      <div className="flex items-center gap-0.5 text-amber-500">
+                        {Array.from({ length: post.rating }).map((_, i) => (
+                          <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                        ))}
+                      </div>
+                    )}
+
+                    {post.concertTitle && (
+                      <span className="flex items-center gap-1 text-[11px] text-concert-600 dark:text-concert-400 font-semibold truncate max-w-xs sm:max-w-md">
+                        <Tag className="w-3 h-3 shrink-0" />
+                        <span className="truncate">{post.concertTitle}</span>
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    {isAdmin && (
+                      <div
+                        className="flex items-center gap-1"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <span className="px-2 py-0.5 rounded font-mono text-[10px] bg-stone-100 dark:bg-hall-800 text-stone-600 dark:text-stone-300">
+                          IP: {post.ip || '기록 없음'}
+                        </span>
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setEditingPost({
+                              id: post.id,
+                              title: post.title,
+                              category: post.category,
+                              content: post.content
+                            });
+                          }}
+                          className="px-2 py-1 rounded-md text-[11px] font-semibold bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-200 flex items-center gap-1 transition-colors"
+                          title="게시글 바로 수정"
+                        >
+                          <Edit3 className="w-3 h-3" />
+                          <span>수정</span>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={(e) => handleAdminDeletePost(post, e)}
+                          className="px-2 py-1 rounded-md text-[11px] font-semibold bg-red-50 hover:bg-red-100 dark:bg-red-950/60 dark:hover:bg-red-900/60 text-red-600 dark:text-red-300 flex items-center gap-1 transition-colors"
+                          title="게시글 바로 삭제"
+                        >
+                          <Trash2 className="w-3 h-3" />
+                          <span>삭제</span>
+                        </button>
+                        {post.ip && (
+                          isAuthorBlocked ? (
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                if (onUnblockIp) onUnblockIp(post.ip);
+                              }}
+                              className="px-2 py-1 rounded-md text-[10px] font-bold bg-stone-200 hover:bg-stone-300 dark:bg-hall-700 text-stone-700 dark:text-stone-200"
+                            >
+                              차단 해제
+                            </button>
+                          ) : (
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                if (confirm(`IP (${post.ip}) 사용자를 차단하시겠습니까?`)) {
+                                  if (onBlockIp) onBlockIp(post.ip, `게시글 '${post.title}' 부적절 발언 규제`);
+                                }
+                              }}
+                              className="px-2 py-1 rounded-md text-[10px] font-bold bg-red-100 hover:bg-red-200 dark:bg-red-950/70 text-red-700 dark:text-red-300"
+                            >
+                              IP 차단
+                            </button>
+                          )
+                        )}
+                      </div>
+                    )}
+                    <span className="text-[11px] text-stone-400 dark:text-stone-500">
+                      {post.createdAt}
+                    </span>
+                  </div>
                 </div>
 
-                <span className="text-[11px] text-stone-400 dark:text-stone-500">
-                  {post.createdAt}
-                </span>
-              </div>
-
-              <div>
-                <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100 leading-snug">
-                  {post.title}
-                </h3>
-                <p className="mt-1.5 text-xs text-stone-600 dark:text-stone-300 line-clamp-2 leading-relaxed">
-                  {post.content}
-                </p>
-              </div>
-
-              <div className="flex items-center justify-between text-xs text-stone-500 dark:text-stone-400 pt-2 border-t border-stone-100 dark:border-hall-800">
-                <span className="font-medium text-stone-700 dark:text-stone-300">
-                  작성자: {post.author}
-                </span>
-
-                <div className="flex items-center gap-4">
-                  <span className="flex items-center gap-1">
-                    <Heart className="w-3.5 h-3.5 text-rose-500" />
-                    <span>{post.likes}</span>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <MessageSquare className="w-3.5 h-3.5 text-blue-500" />
-                    <span>{(post.comments || []).length}</span>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Eye className="w-3.5 h-3.5 text-stone-400" />
-                    <span>{post.views}</span>
-                  </span>
+                <div>
+                  <h3 className="font-serif font-bold text-base text-stone-900 dark:text-stone-100 leading-snug">
+                    {post.title}
+                  </h3>
+                  <p className="mt-1.5 text-xs text-stone-600 dark:text-stone-300 line-clamp-2 leading-relaxed">
+                    {post.content}
+                  </p>
                 </div>
-              </div>
-            </article>
-          ))
+
+                <div className="flex items-center justify-between text-xs text-stone-500 dark:text-stone-400 pt-2 border-t border-stone-100 dark:border-hall-800">
+                  <span className="font-medium text-stone-700 dark:text-stone-300">
+                    작성자: {post.author}
+                  </span>
+
+                  <div className="flex items-center gap-4">
+                    <span className="flex items-center gap-1">
+                      <Heart className="w-3.5 h-3.5 text-rose-500" />
+                      <span>{post.likes}</span>
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <MessageSquare className="w-3.5 h-3.5 text-blue-500" />
+                      <span>{(post.comments || []).length}</span>
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Eye className="w-3.5 h-3.5 text-stone-400" />
+                      <span>{post.views}</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            );
+          })
         )}
       </div>
 
@@ -516,7 +676,7 @@ export default function CommunityBoard({
           >
             {/* Header */}
             <div className="flex items-start justify-between gap-4 pb-4 border-b border-stone-100 dark:border-hall-800">
-              <div className="space-y-2">
+              <div className="space-y-2 flex-1 min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="px-2.5 py-0.5 rounded-md text-xs font-bold bg-concert-100 dark:bg-hall-800 text-concert-800 dark:text-concert-300">
                     {activePost.category}
@@ -539,10 +699,45 @@ export default function CommunityBoard({
                   {activePost.title}
                 </h2>
 
-                <div className="flex items-center gap-3 text-xs text-stone-400">
-                  <span>작성자: {activePost.author}</span>
-                  <span>·</span>
-                  <span>{activePost.createdAt}</span>
+                <div className="flex items-center justify-between gap-3 flex-wrap pt-1">
+                  <div className="flex items-center gap-3 text-xs text-stone-400">
+                    <span>작성자: {activePost.author}</span>
+                    <span>·</span>
+                    <span>{activePost.createdAt}</span>
+                    {isAdmin && (
+                      <span className="px-2 py-0.5 rounded font-mono text-[10px] bg-stone-100 dark:bg-hall-800 text-stone-600 dark:text-stone-300">
+                        IP: {activePost.ip || '기록 없음'}
+                      </span>
+                    )}
+                  </div>
+
+                  {isAdmin && (
+                    <div className="flex items-center gap-1.5">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setEditingPost({
+                            id: activePost.id,
+                            title: activePost.title,
+                            category: activePost.category,
+                            content: activePost.content
+                          })
+                        }
+                        className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-stone-100 hover:bg-stone-200 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-200 flex items-center gap-1 transition-colors"
+                      >
+                        <Edit3 className="w-3.5 h-3.5" />
+                        <span>게시글 수정</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={(e) => handleAdminDeletePost(activePost, e)}
+                        className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-red-50 hover:bg-red-100 dark:bg-red-950/60 dark:hover:bg-red-900/60 text-red-600 dark:text-red-300 flex items-center gap-1 transition-colors"
+                      >
+                        <Trash2 className="w-3.5 h-3.5" />
+                        <span>게시글 삭제</span>
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -596,6 +791,7 @@ export default function CommunityBoard({
                     type="text"
                     value={commentInput.content}
                     onChange={(e) => setCommentInput({ ...commentInput, content: e.target.value })}
+                    placeholder="댓글을 입력하세요..."
                     className="flex-1 px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
                   />
                   <button
@@ -610,20 +806,201 @@ export default function CommunityBoard({
 
               {/* Comments list */}
               <div className="space-y-2.5">
-                {(activePost.comments || []).map((comm) => (
-                  <div
-                    key={comm.id}
-                    className="p-3.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-100 dark:border-hall-800 text-xs space-y-1"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-stone-800 dark:text-stone-200">{comm.author}</span>
-                      <span className="text-[10px] text-stone-400">{comm.createdAt}</span>
+                {(activePost.comments || []).map((comm) => {
+                  const isCommBlocked = isAdmin && blockedIps.some((b) => b.ip === comm.ip);
+                  const isEditingThisComment =
+                    editingComment &&
+                    editingComment.postId === activePost.id &&
+                    editingComment.commentId === comm.id;
+
+                  return (
+                    <div
+                      key={comm.id}
+                      className="p-3.5 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-100 dark:border-hall-800 text-xs space-y-2"
+                    >
+                      <div className="flex items-center justify-between gap-2 flex-wrap">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="font-bold text-stone-800 dark:text-stone-200">{comm.author}</span>
+                          <span className="text-[10px] text-stone-400">{comm.createdAt}</span>
+                          {isAdmin && (
+                            <span className="px-1.5 py-0.5 rounded font-mono text-[10px] bg-stone-200/80 dark:bg-hall-800 text-stone-600 dark:text-stone-300">
+                              IP: {comm.ip || '기록 없음'}
+                            </span>
+                          )}
+                        </div>
+
+                        {isAdmin && (
+                          <div className="flex items-center gap-1">
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setEditingComment({
+                                  postId: activePost.id,
+                                  commentId: comm.id,
+                                  author: comm.author,
+                                  content: comm.content
+                                })
+                              }
+                              className="px-2 py-0.5 rounded text-[11px] font-semibold bg-stone-200/80 hover:bg-stone-300 dark:bg-hall-800 dark:hover:bg-hall-700 text-stone-700 dark:text-stone-200 flex items-center gap-1"
+                            >
+                              <Edit3 className="w-3 h-3" />
+                              <span>수정</span>
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => handleAdminDeleteComment(activePost.id, comm.id)}
+                              className="px-2 py-0.5 rounded text-[11px] font-semibold bg-red-50 hover:bg-red-100 dark:bg-red-950/60 text-red-600 dark:text-red-300 flex items-center gap-1"
+                            >
+                              <Trash2 className="w-3 h-3" />
+                              <span>삭제</span>
+                            </button>
+                            {comm.ip && (
+                              isCommBlocked ? (
+                                <button
+                                  type="button"
+                                  onClick={() => onUnblockIp && onUnblockIp(comm.ip)}
+                                  className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-stone-200 dark:bg-hall-700 text-stone-700 dark:text-stone-300"
+                                >
+                                  해제
+                                </button>
+                              ) : (
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    if (confirm(`댓글 작성자 IP (${comm.ip})를 차단하시겠습니까?`)) {
+                                      if (onBlockIp) onBlockIp(comm.ip, '댓글 부적절 표현 규제');
+                                    }
+                                  }}
+                                  className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-100 hover:bg-red-200 dark:bg-red-950/60 text-red-700 dark:text-red-300"
+                                >
+                                  IP 차단
+                                </button>
+                              )
+                            )}
+                          </div>
+                        )}
+                      </div>
+
+                      {isEditingThisComment ? (
+                        <form onSubmit={handleAdminSaveComment} className="space-y-2 pt-1">
+                          <textarea
+                            rows={2}
+                            required
+                            value={editingComment.content}
+                            onChange={(e) => setEditingComment({ ...editingComment, content: e.target.value })}
+                            className="w-full px-3 py-2 rounded-lg bg-white dark:bg-hall-900 border border-stone-300 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                          />
+                          <div className="flex justify-end gap-1.5">
+                            <button
+                              type="button"
+                              onClick={() => setEditingComment(null)}
+                              className="px-3 py-1 rounded-md bg-stone-200 dark:bg-hall-800 text-stone-700 dark:text-stone-300 text-[11px] font-semibold"
+                            >
+                              취소
+                            </button>
+                            <button
+                              type="submit"
+                              className="px-3 py-1 rounded-md bg-concert-500 hover:bg-concert-600 text-white text-[11px] font-bold"
+                            >
+                              저장
+                            </button>
+                          </div>
+                        </form>
+                      ) : (
+                        <p className="text-stone-600 dark:text-stone-300 leading-relaxed">{comm.content}</p>
+                      )}
                     </div>
-                    <p className="text-stone-600 dark:text-stone-300 leading-relaxed">{comm.content}</p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Admin Edit Post Modal inside Community Tab */}
+      {isAdmin && editingPost && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
+          onClick={() => setEditingPost(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="bg-white dark:bg-hall-900 rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto border border-stone-200 dark:border-hall-750 shadow-2xl p-6 sm:p-8 space-y-5"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between pb-3 border-b border-stone-100 dark:border-hall-800">
+              <h2 className="font-serif font-bold text-lg text-stone-900 dark:text-stone-50 flex items-center gap-2">
+                <Edit3 className="w-5 h-5 text-concert-500" />
+                <span>게시글 수정 (관리자)</span>
+              </h2>
+              <button
+                onClick={() => setEditingPost(null)}
+                className="p-1.5 rounded-full hover:bg-stone-100 dark:hover:bg-hall-800 text-stone-400"
+                aria-label="닫기"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <form onSubmit={handleAdminSavePost} className="space-y-4 text-xs">
+              <div>
+                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  카테고리
+                </label>
+                <select
+                  value={editingPost.category}
+                  onChange={(e) => setEditingPost({ ...editingPost, category: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                >
+                  <option value="클래식 수다">클래식 수다</option>
+                  <option value="관람 후기">관람 후기</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  게시글 제목
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={editingPost.title}
+                  onChange={(e) => setEditingPost({ ...editingPost, title: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div>
+                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
+                  게시글 본문
+                </label>
+                <textarea
+                  required
+                  rows={6}
+                  value={editingPost.content}
+                  onChange={(e) => setEditingPost({ ...editingPost, content: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
+                />
+              </div>
+
+              <div className="flex items-center justify-end gap-2 pt-3 border-t border-stone-100 dark:border-hall-800">
+                <button
+                  type="button"
+                  onClick={() => setEditingPost(null)}
+                  className="px-4 py-2 rounded-xl bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 text-xs font-semibold"
+                >
+                  취소
+                </button>
+                <button
+                  type="submit"
+                  className="px-5 py-2 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold shadow-md transition-all"
+                >
+                  수정 완료
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       )}

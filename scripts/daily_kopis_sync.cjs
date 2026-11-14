@@ -863,12 +863,12 @@ async function main() {
           venue: venue,
           city: area,
           performerType: classifyPerformerType({ title, venue }),
-          composers: ['클래식 명작'],
+          composers: [],
           pieces: [],
           price: '공식 예매처 참조',
           ticketUrl: `https://search.naver.com/search.naver?query=${encodeURIComponent(venue + ' 공식 예매')}`,
           status: status,
-          source: 'KOPIS 전산망 새벽 3시 자동 수집',
+          source: 'KOPIS 전산망 공식 수집',
           sourceHall: venue,
           crawlerBlocked: false,
           description: `${venue}에서 펼쳐지는 정통 클래식 무대.`,
@@ -939,6 +939,9 @@ async function main() {
   // 기존 적재된 pieces에 대해서도 OCR 오타 교정, 비곡목 라인 정제 및 연주 편성(5분류) 동기화 적용
   for (const c of concertMap.values()) {
     c.performerType = classifyPerformerType(c);
+    if (c.source && c.source.includes('KOPIS')) {
+      c.source = 'KOPIS 전산망 공식 수집';
+    }
     if (Array.isArray(c.pieces) && c.pieces.length > 0) {
       const cleaned = [];
       for (const rawP of c.pieces) {

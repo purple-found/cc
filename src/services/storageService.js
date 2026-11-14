@@ -514,10 +514,40 @@ export const storageService = {
     return updated;
   },
 
-  approveTip(tipId) {
+  updateTip(tipId, updatedData) {
     const tips = this.getTips();
-    const targetTip = tips.find(t => t.id === tipId);
-    if (!targetTip) return { updatedTips: tips, updatedConcerts: this.getConcerts() };
+    const updated = tips.map((t) => {
+      if (t.id === tipId) {
+        return { ...t, ...updatedData };
+      }
+      return t;
+    });
+    this.saveTips(updated);
+    return updated;
+  },
+
+  approveTip(tipId, overrideData = null) {
+    const tips = this.getTips();
+    const foundTip = tips.find(t => t.id === tipId);
+    if (!foundTip) return { updatedTips: tips, updatedConcerts: this.getConcerts() };
+
+    const targetTip = overrideData ? { ...foundTip, ...overrideData } : foundTip;
+
+    const parseArrayField = (val, fallback) => {
+      if (Array.isArray(val)) return val.map(v => String(v).trim()).filter(Boolean);
+      if (typeof val === 'string' && val.trim()) {
+        return val.split(',').map(v => v.trim()).filter(Boolean);
+      }
+      return fallback;
+    };
+
+    const parsePiecesField = (val) => {
+      if (Array.isArray(val)) return val.map(v => String(v).trim()).filter(Boolean);
+      if (typeof val === 'string' && val.trim()) {
+        return val.split('\n').map(v => v.trim()).filter(Boolean);
+      }
+      return [];
+    };
 
     const newConcert = {
       title: targetTip.title,
@@ -526,9 +556,9 @@ export const storageService = {
       venue: targetTip.venue,
       city: targetTip.city || '기타',
       performerType: targetTip.performerType || '오케스트라',
-      performers: Array.isArray(targetTip.performers) ? targetTip.performers : [targetTip.performers || '출연진 정보'],
-      composers: Array.isArray(targetTip.composers) ? targetTip.composers : [targetTip.composers || '클래식'],
-      pieces: Array.isArray(targetTip.pieces) ? targetTip.pieces : [targetTip.pieces || '상세 프로그램'],
+      performers: parseArrayField(targetTip.performers, ['출연진 정보']),
+      composers: parseArrayField(targetTip.composers, []),
+      pieces: parsePiecesField(targetTip.pieces),
       price: targetTip.price || '추후 공지',
       ticketUrl: targetTip.ticketUrl || '',
       status: '공연예정',

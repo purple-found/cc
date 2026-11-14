@@ -178,12 +178,21 @@ export default function App() {
     }
   };
 
-  // 관리자의 제보 승인 및 공식 일정 반영 핸들러
-  const handleApproveTip = (tipId) => {
-    const { updatedTips, updatedConcerts, approvedConcert } = storageService.approveTip(tipId);
+  // 관리자의 제보 내용 수정 저장 핸들러
+  const handleUpdateTip = (tipId, updatedData) => {
+    const updatedTips = storageService.updateTip(tipId, updatedData);
+    setTips(updatedTips);
+    showToast('제보 내용이 수정되었습니다.');
+  };
+
+  // 관리자의 제보 승인(또는 수정 후 즉시 등록) 및 공식 일정 반영 핸들러
+  const handleApproveTip = (tipId, overrideData = null) => {
+    const { updatedTips, updatedConcerts, approvedConcert } = storageService.approveTip(tipId, overrideData);
     setTips(updatedTips);
     setConcerts(updatedConcerts);
-    showToast(`제보 공연 '${approvedConcert.title}'이(가) 공식 일정으로 정식 등록되었습니다!`);
+    if (approvedConcert) {
+      showToast(`제보 공연 '${approvedConcert.title}'이(가) 공식 일정으로 정식 등록되었습니다.`);
+    }
   };
 
   // 관리자의 제보 반려/삭제 핸들러
@@ -374,6 +383,7 @@ export default function App() {
         theme={theme}
         setTheme={setTheme}
         onOpenTipModal={() => setIsTipModalOpen(true)}
+        isAdminAuthenticated={isAdminAuthenticated}
       />
 
       {/* Main Container */}
@@ -495,6 +505,14 @@ export default function App() {
             onToggleLike={handleToggleLike}
             onViewPost={handleViewPost}
             initialTargetConcert={reviewTargetConcert}
+            isAdmin={isAdminAuthenticated}
+            blockedIps={blockedIps}
+            onUpdatePost={handleUpdatePost}
+            onDeletePost={handleDeletePost}
+            onUpdateComment={handleUpdateComment}
+            onDeleteComment={handleDeleteComment}
+            onBlockIp={handleBlockIp}
+            onUnblockIp={handleUnblockIp}
           />
         )}
 
@@ -511,6 +529,7 @@ export default function App() {
               onDeleteConcert={handleDeleteConcert}
               onClearAllConcerts={handleClearAllConcerts}
               onApproveTip={handleApproveTip}
+              onUpdateTip={handleUpdateTip}
               onDeleteTip={handleDeleteTip}
               onRefreshConcerts={(newList) => setConcerts(newList)}
               onUpdatePost={handleUpdatePost}
@@ -519,6 +538,7 @@ export default function App() {
               onDeleteComment={handleDeleteComment}
               onBlockIp={handleBlockIp}
               onUnblockIp={handleUnblockIp}
+              onNavigateToCommunity={() => setActiveTab('community')}
               onLogout={() => {
                 setIsAdminAuthenticated(false);
                 setActiveTab('concerts');

@@ -2,7 +2,7 @@ import React from 'react';
 import { Sun, Moon } from 'lucide-react';
 import BrandIcon from './BrandIcon';
 
-export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpenTipModal }) {
+export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpenTipModal, isAdminAuthenticated = false }) {
   const toggleTheme = () => {
     const nextTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(nextTheme);
@@ -55,6 +55,19 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
               >
                 커뮤니티
               </button>
+
+              {isAdminAuthenticated && (
+                <button
+                  onClick={() => setActiveTab('admin')}
+                  className={`py-1 text-sm transition-colors shrink-0 cursor-pointer border-b-2 ${
+                    activeTab === 'admin'
+                      ? 'border-concert-600 dark:border-concert-300 text-concert-700 dark:text-concert-300 font-semibold'
+                      : 'border-transparent text-concert-600/80 dark:text-concert-400 hover:text-concert-800 dark:hover:text-concert-200 font-medium'
+                  }`}
+                >
+                  관리자 센터
+                </button>
+              )}
             </nav>
           </div>
 
@@ -105,6 +118,18 @@ export default function Header({ activeTab, setActiveTab, theme, setTheme, onOpe
           >
             커뮤니티
           </button>
+          {isAdminAuthenticated && (
+            <button
+              onClick={() => setActiveTab('admin')}
+              className={`py-1 text-xs shrink-0 border-b-2 ${
+                activeTab === 'admin'
+                  ? 'border-concert-600 dark:border-concert-300 text-concert-700 dark:text-concert-300 font-semibold'
+                  : 'border-transparent text-concert-600/80 dark:text-concert-400 font-medium'
+              }`}
+            >
+              관리자 센터
+            </button>
+          )}
         </div>
       </div>
     </header>
