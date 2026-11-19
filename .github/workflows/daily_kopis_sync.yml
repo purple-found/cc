@@ -1,0 +1,42 @@
+name: Daily KOPIS 3AM Auto Sync & Monthly Cleanup
+
+on:
+  schedule:
+    # 매일 한국시간(KST) 새벽 3시 자동 실행 (UTC 18:00)
+    - cron: '0 18 * * *'
+    # 매월 1일 한국시간(KST) 새벽 2시 과거 공연 정리 (UTC 17:00)
+    - cron: '0 17 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-concerts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Monthly Old Concert Cleanup
+        run: node scripts/monthly_cleanup_old_concerts.cjs
+
+      - name: Run Daily 4-Stage KOPIS & Poster Sync
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/daily_kopis_sync.cjs
+
+      - name: Commit & Push Updated Concert Dataset
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/initialRealConcerts.js
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): automated 3AM KOPIS concert sync"
+            git push
+          fi

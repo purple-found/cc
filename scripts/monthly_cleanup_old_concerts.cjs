@@ -118,6 +118,19 @@ function runMonthlyCleanup(cutoffYears = 1) {
 
   fs.writeFileSync(logFilePath, JSON.stringify(logHistory, null, 2), 'utf8');
   console.log(`📄 scripts/monthly_cleanup_log.json 감사 로그 업데이트 완료`);
+
+  if (removed.length > 0) {
+    try {
+      const { execSync } = require('child_process');
+      const repoRoot = path.resolve(__dirname, '..');
+      execSync('git add src/data/initialRealConcerts.js scripts/monthly_cleanup_log.json', { cwd: repoRoot, stdio: 'ignore' });
+      execSync(`git commit -m "chore(data): monthly old concert dataset cleanup (${removed.length} removed)"`, { cwd: repoRoot, stdio: 'ignore' });
+      execSync('git push origin main', { cwd: repoRoot, stdio: 'ignore' });
+      console.log(`🚀 [GitHub & Render 자동 배포] 정리된 공연 데이터가 GitHub 및 Render 사이트에 자동 반영되었습니다.`);
+    } catch (gitErr) {
+      console.warn(`⚠️ GitHub 자동 푸시 중 경고:`, gitErr.message);
+    }
+  }
   console.log(`=======================================================\n`);
 
   return logEntry;

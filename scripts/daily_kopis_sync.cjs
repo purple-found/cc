@@ -1191,6 +1191,23 @@ export default INITIAL_REAL_CONCERTS;
   logs = [logEntry, ...logs].slice(0, 30);
   fs.writeFileSync(logPath, JSON.stringify(logs, null, 2), 'utf8');
   console.log(`[${logEntry.timestamp}] 정기 동기화 배치 성공 완료!`);
+
+  // 새로 수집된 공연 데이터 파일(initialRealConcerts.js)만 GitHub에 자동 커밋·푸시하여 Render 실서버에 자동 반영
+  try {
+    const { execSync } = require('child_process');
+    const repoRoot = path.resolve(__dirname, '..');
+    execSync('git add src/data/initialRealConcerts.js scripts/daily_sync_log.json', { cwd: repoRoot, stdio: 'ignore' });
+    const diffStatus = execSync('git status --porcelain src/data/initialRealConcerts.js', { cwd: repoRoot }).toString().trim();
+    if (diffStatus) {
+      execSync(`git commit -m "chore(data): automated 3AM KOPIS concert dataset sync (${logEntry.timestamp})"`, { cwd: repoRoot, stdio: 'ignore' });
+      execSync('git push origin main', { cwd: repoRoot, stdio: 'ignore' });
+      console.log(`[GitHub & Render 자동 배포] 최신 공연 데이터(${updatedConcertList.length}건)가 GitHub(origin/main)에 푸시되어 Render 사이트에 자동 반영됩니다.`);
+    } else {
+      console.log(`[GitHub & Render 자동 배포] 공연 데이터 변경사항이 없어 푸시를 생략합니다.`);
+    }
+  } catch (gitErr) {
+    console.warn(`[GitHub 푸시 참고] 로컬 파일은 정상 갱신되었으나 원격 푸시 중 경고가 발생했습니다:`, gitErr.message);
+  }
 }
 
 main().catch(err => {
