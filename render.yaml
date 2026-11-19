@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: classicalender
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /kopis-api/*
+        destination: http://www.kopis.or.kr/openApi/restful/*
+      - type: rewrite
+        source: /*
+        destination: /index.html
