@@ -396,7 +396,7 @@ export default function App() {
               {/* Semi-transparent orchestra cello section artwork on the right */}
               <div className="absolute right-0 top-0 bottom-0 w-full sm:w-3/5 lg:w-1/2 pointer-events-none overflow-hidden select-none">
                 <img
-                  src="/images/banner_cello_section.jpg"
+                  src="/images/banner_cello_section.jpg?v=2"
                   alt="Orchestra Cello Section"
                   className="w-full h-full object-cover object-right opacity-32 mix-blend-screen"
                   style={{
