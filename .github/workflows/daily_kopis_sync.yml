@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: kopis-daily-sync
+  cancel-in-progress: false
+
 jobs:
   sync-concerts:
     runs-on: windows-latest
@@ -26,7 +30,7 @@ jobs:
       - name: Run Monthly Old Concert Cleanup
         run: node scripts/monthly_cleanup_old_concerts.cjs
 
-      - name: Run Daily 4-Stage KOPIS & Poster Sync
+      - name: Run Daily 5-Stage KOPIS & Poster Sync
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: node scripts/daily_kopis_sync.cjs
@@ -36,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/initialRealConcerts.js scripts/daily_sync_log.json
+          git add src/data/initialRealConcerts.js scripts/daily_sync_log.json scripts/kopis_all_details.json
           if ! git diff --cached --quiet; then
             git commit -m "chore(data): automated 3AM KOPIS concert sync"
             git push

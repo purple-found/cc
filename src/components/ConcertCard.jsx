@@ -209,8 +209,8 @@ function ConcertCard({ concert }) {
                 )}
               </div>
             ) : (
-              <p className="font-serif text-[11px] leading-relaxed text-stone-400 dark:text-stone-500">
-                상세 프로그램은 공연장 안내 참조
+              <p className="font-serif text-[11px] leading-relaxed text-stone-500 dark:text-stone-400 break-keep">
+                주최 측 세부 곡목 미공개 (공개 시 자동 업데이트)
               </p>
             )}
           </div>

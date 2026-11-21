@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v48: 현재 달 1일 ~ 향후 2년 예정 공연 최적화, 4단계 자동 추출 프로그램(pieces) 실시간 동기화 및 '클래식 명작' 더미 제거
-const CONCERTS_KEY = 'opus_korea_concerts_v48';
+// v53: OCR 작품번호 손상(BWV 5% -> BWV 508, K. 3% -> K. 303, 0다/0이 -> Op.) 자동 복원 및 % 기호 원천 차단 방화벽 적용
+const CONCERTS_KEY = 'opus_korea_concerts_v53';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -17,11 +17,20 @@ try {
     ['opus_korea_verified_real_concerts_v5', 'opus_korea_verified_real_concerts_v6', 'opus_korea_halls_v3'].forEach(k => {
       localStorage.removeItem(k);
     });
-    for (let v = 7; v <= 47; v++) {
+    for (let v = 7; v <= 52; v++) {
       localStorage.removeItem(`opus_korea_concerts_v${v}`);
     }
   }
 } catch {}
+
+function arraysEqual(a, b) {
+  if (a === b) return true;
+  if (!Array.isArray(a) || !Array.isArray(b) || a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) return false;
+  }
+  return true;
+}
 
 export const storageService = {
   // ───────────────────────── 공연 (Concerts) ─────────────────────────
@@ -62,8 +71,9 @@ export const storageService = {
           const needsTypeUpdate = init.performerType && c.performerType !== init.performerType;
           const initPieces = Array.isArray(init.pieces) ? init.pieces : [];
           const curPieces = Array.isArray(c.pieces) ? c.pieces : [];
+          const isKopisItem = String(c.id || c.kopisId || '').startsWith('kopis-') || Boolean(c.kopisId);
           const needsPiecesUpdate =
-            (initPieces.length > 0 && JSON.stringify(initPieces) !== JSON.stringify(curPieces)) ||
+            (!arraysEqual(initPieces, curPieces) && (isKopisItem || initPieces.length > 0)) ||
             (Array.isArray(c.composers) && c.composers.includes('클래식 명작'));
           if (needsHallUpdate || needsTypeUpdate || needsPiecesUpdate) {
             hasUpdate = true;
@@ -73,7 +83,7 @@ export const storageService = {
               venue: init.venue || c.venue,
               performerType: init.performerType || c.performerType,
               composers: (init.composers || []).filter(comp => comp && comp !== '클래식 명작'),
-              pieces: initPieces.length > 0 ? initPieces : curPieces,
+              pieces: isKopisItem ? initPieces : (initPieces.length > 0 ? initPieces : curPieces),
               introImages: init.introImages || c.introImages,
               description: init.description || c.description
             };
