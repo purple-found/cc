@@ -27,7 +27,6 @@ export default function InitialDiscoveryGuide({
   ];
 
   const quickDates = [
-    { label: '2026년 10월', sub: '가을 정기공연', value: '2026-10' },
     { label: '2026년 11월', sub: '해외 명문 악단 내한', value: '2026-11' },
     { label: '2026년 12월', sub: '송년 · 제야 음악회', value: '2026-12' },
     { label: '2027년 시즌', sub: '신년 · 상반기 일정', value: '2027' }

@@ -293,7 +293,6 @@ export default function FilterBar({
               className="flex-1 px-3 py-2 rounded-lg bg-stone-50/70 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs font-medium text-stone-800 dark:text-stone-200 focus:outline-none focus:border-stone-500 dark:focus:border-concert-400"
             >
               <option value="all">전체 일정</option>
-              <option value="2026-10">2026년 10월</option>
               <option value="2026-11">2026년 11월</option>
               <option value="2026-12">2026년 12월</option>
               <option value="2027">2027년 전체</option>

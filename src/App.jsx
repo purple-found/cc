@@ -411,8 +411,6 @@ export default function App() {
 
               <div className="relative z-10 max-w-xl space-y-3">
                 <div className="flex items-center gap-2.5 text-[11px] font-serif tracking-widest uppercase text-[#d8be9c]">
-                  <span>Season 2026 — 2027</span>
-                  <span className="w-6 h-px bg-[#7c5337]" />
                   <span>Concert Archive</span>
                 </div>
                 <h1 className="font-serif font-bold text-xl sm:text-2xl md:text-[28px] leading-snug tracking-tight text-[#fdf8f2]">
