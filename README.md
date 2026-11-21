@@ -1,4 +1,4 @@
-# CLASSICALENDER (클래시캘린더)
+# CLASSICALENDER (클린더)
 
 > 대한민국 클래식 공연 일정 큐레이션 & 애호가 커뮤니티 플랫폼  
 
