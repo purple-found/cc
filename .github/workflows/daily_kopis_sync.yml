@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   sync-concerts:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -32,10 +32,11 @@ jobs:
         run: node scripts/daily_kopis_sync.cjs
 
       - name: Commit & Push Updated Concert Dataset
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/initialRealConcerts.js
+          git add src/data/initialRealConcerts.js scripts/daily_sync_log.json
           if ! git diff --cached --quiet; then
             git commit -m "chore(data): automated 3AM KOPIS concert sync"
             git push

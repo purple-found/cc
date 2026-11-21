@@ -4,7 +4,6 @@ import {
   RefreshCw,
   PlusCircle,
   Trash2,
-  Calendar,
   CheckCircle2,
   AlertTriangle,
   Music,
@@ -13,11 +12,8 @@ import {
   Edit3,
   Ban,
   MessageSquare,
-  MessageCircle,
   X,
   UserX,
-  ChevronDown,
-  ChevronUp,
   BarChart3,
   ExternalLink,
   Activity,
@@ -41,10 +37,6 @@ export default function AdminCenter({
   onDeleteTip,
   onLogout,
   onRefreshConcerts,
-  onUpdatePost,
-  onDeletePost,
-  onUpdateComment,
-  onDeleteComment,
   onBlockIp,
   onUnblockIp,
   onNavigateToCommunity
@@ -60,10 +52,7 @@ export default function AdminCenter({
   const [adminConcertQuery, setAdminConcertQuery] = useState('');
   const [visibleConcertLimit, setVisibleConcertLimit] = useState(60);
 
-  // 커뮤니티 및 IP 관리용 상태
-  const [editingPost, setEditingPost] = useState(null);
-  const [editingComment, setEditingComment] = useState(null);
-  const [expandedPostId, setExpandedPostId] = useState(null);
+  // IP 관리용 상태
   const [manualBlockIp, setManualBlockIp] = useState('');
   const [manualBlockReason, setManualBlockReason] = useState('');
 
@@ -78,13 +67,11 @@ export default function AdminCenter({
         if (isAddModalOpen) setIsAddModalOpen(false);
         else if (editingConcert) setEditingConcert(null);
         else if (editingTip) setEditingTip(null);
-        else if (editingPost) setEditingPost(null);
-        else if (editingComment) setEditingComment(null);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isAddModalOpen, editingConcert, editingTip, editingPost, editingComment]);
+  }, [isAddModalOpen, editingConcert, editingTip]);
 
   // 제보 항목 수정 모달 열기 핸들러
   const openEditTipModal = (tip) => {
@@ -1307,173 +1294,6 @@ export default function AdminCenter({
                   className="px-5 py-2 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold shadow-md transition-all"
                 >
                   수정 내용 저장
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
-
-      {/* Post Moderation Edit Modal (Admin) */}
-      {editingPost && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
-          onClick={() => setEditingPost(null)}
-          role="dialog"
-          aria-modal="true"
-        >
-          <div
-            className="bg-white dark:bg-hall-900 rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto border border-stone-200 dark:border-hall-750 shadow-2xl p-6 sm:p-8 space-y-5"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between pb-3 border-b border-stone-100 dark:border-hall-800">
-              <h2 className="font-serif font-bold text-lg text-stone-900 dark:text-stone-50 flex items-center gap-2">
-                <Edit3 className="w-5 h-5 text-concert-500" />
-                <span>커뮤니티 게시글 수정 (관리자)</span>
-              </h2>
-              <button
-                onClick={() => setEditingPost(null)}
-                className="p-1.5 rounded-full hover:bg-stone-100 dark:hover:bg-hall-800 text-stone-400"
-                aria-label="닫기"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
-
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                onUpdatePost(editingPost.id, {
-                  title: editingPost.title,
-                  category: editingPost.category,
-                  content: editingPost.content
-                });
-                setEditingPost(null);
-              }}
-              className="space-y-4 text-xs"
-            >
-              <div>
-                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
-                  카테고리
-                </label>
-                <select
-                  value={editingPost.category}
-                  onChange={(e) => setEditingPost({ ...editingPost, category: e.target.value })}
-                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
-                >
-                  <option value="클래식 수다">클래식 수다</option>
-                  <option value="관람 후기">관람 후기</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
-                  게시글 제목
-                </label>
-                <input
-                  type="text"
-                  required
-                  value={editingPost.title}
-                  onChange={(e) => setEditingPost({ ...editingPost, title: e.target.value })}
-                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
-                />
-              </div>
-
-              <div>
-                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
-                  게시글 본문
-                </label>
-                <textarea
-                  required
-                  rows={6}
-                  value={editingPost.content}
-                  onChange={(e) => setEditingPost({ ...editingPost, content: e.target.value })}
-                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
-                />
-              </div>
-
-              <div className="flex items-center justify-end gap-2 pt-3 border-t border-stone-100 dark:border-hall-800">
-                <button
-                  type="button"
-                  onClick={() => setEditingPost(null)}
-                  className="px-4 py-2 rounded-xl bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 text-xs font-semibold"
-                >
-                  취소
-                </button>
-                <button
-                  type="submit"
-                  className="px-5 py-2 rounded-xl bg-concert-500 hover:bg-concert-600 text-white text-xs font-bold shadow-md transition-all"
-                >
-                  수정 완료
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
-
-      {/* Comment Moderation Edit Modal (Admin) */}
-      {editingComment && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
-          onClick={() => setEditingComment(null)}
-          role="dialog"
-          aria-modal="true"
-        >
-          <div
-            className="bg-white dark:bg-hall-900 rounded-3xl max-w-md w-full border border-stone-200 dark:border-hall-750 shadow-2xl p-6 space-y-4"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between pb-3 border-b border-stone-100 dark:border-hall-800">
-              <h2 className="font-serif font-bold text-base text-stone-900 dark:text-stone-50 flex items-center gap-2">
-                <Edit3 className="w-4 h-4 text-concert-500" />
-                <span>댓글 내용 수정 (관리자)</span>
-              </h2>
-              <button
-                onClick={() => setEditingComment(null)}
-                className="p-1 rounded-full hover:bg-stone-100 dark:hover:bg-hall-800 text-stone-400"
-                aria-label="닫기"
-              >
-                <X className="w-4 h-4" />
-              </button>
-            </div>
-
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                onUpdateComment(editingComment.postId, editingComment.commentId, {
-                  content: editingComment.content
-                });
-                setEditingComment(null);
-              }}
-              className="space-y-4 text-xs"
-            >
-              <div>
-                <label className="block font-bold text-stone-700 dark:text-stone-300 mb-1">
-                  작성자: {editingComment.author}
-                </label>
-                <textarea
-                  required
-                  rows={4}
-                  value={editingComment.content}
-                  onChange={(e) => setEditingComment({ ...editingComment, content: e.target.value })}
-                  className="w-full px-3 py-2 rounded-xl bg-stone-50 dark:bg-hall-850 border border-stone-200 dark:border-hall-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-concert-500"
-                />
-              </div>
-
-              <div className="flex items-center justify-end gap-2 pt-2 border-t border-stone-100 dark:border-hall-800">
-                <button
-                  type="button"
-                  onClick={() => setEditingComment(null)}
-                  className="px-3.5 py-1.5 rounded-xl bg-stone-100 dark:bg-hall-800 text-stone-700 dark:text-stone-300 font-semibold"
-                >
-                  취소
-                </button>
-                <button
-                  type="submit"
-                  className="px-4 py-1.5 rounded-xl bg-concert-500 hover:bg-concert-600 text-white font-bold shadow-xs transition-all"
-                >
-                  수정 저장
                 </button>
               </div>
             </form>

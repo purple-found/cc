@@ -239,21 +239,32 @@ async function fetchConcertDetail(kopisId) {
 
 function normalizeOcrMusicalText(line, isOcr = false) {
   if (!line) return '';
-  let res = line.replace(/\s+/g, ' ').trim();
+  let res = line.replace(/[\u200B-\u200D\uFEFF]/g, '').replace(/\s+/g, ' ').trim();
   if (!isOcr) return res;
   return res
     .replace(/^」\./, 'J.')
+    .replace(/^0\.\s*Nicolai/i, 'O. Nicolai')
     .replace(/」\.\s*S\.\s*Bach/gi, 'J. S. Bach')
     .replace(/」\.\s*5\.\s*Bach/gi, 'J. S. Bach')
     .replace(/」\.\s*Haydn/gi, 'J. Haydn')
     .replace(/」\.\s*Brahms/gi, 'J. Brahms')
+    .replace(/A\.\s*Sc[「r]iabin/gi, 'A. Scriabin')
     .replace(/P\.\s*[1l][』\.]\s*Tchaik[oO0]vsk[yYgG]/gi, 'P. I. Tchaikovsky')
     .replace(/5\.\s*Cherkassky/gi, 'S. Cherkassky')
     .replace(/5\.\s*Mercadante/gi, 'S. Mercadante')
     .replace(/(?:Pi해10|Pi리10|P\|혜0|Pia0@)/g, 'Piano')
     .replace(/표IO十노/g, '피아노')
-    .replace(/(?:Ma[1J]0[「r]|Majo[「『]|Ma\.lOr)/gi, 'Major')
+    .replace(/(?:Ma[1J]0[「r]|MajO[「r]|Majo[「『]|Ma\.lOr)/gi, 'Major')
+    .replace(/in\s+Major\./gi, 'in C Major,')
+    .replace(/in\s+Major,/gi, 'in C Major,')
     .replace(/mino[「『]/gi, 'minor')
+    .replace(/Hob\.\s*XV[lI1]{2}\s*:\s*(\d+)/gi, 'Hob. XVII:$1')
+    .replace(/Hob\.\s*XV[lI1]\s*:\s*(\d+)/gi, 'Hob. XVI:$1')
+    .replace(/Magic\s*F\/ute/gi, 'Magic Flute')
+    .replace(/ofWindsor/g, 'of Windsor')
+    .replace(/\btO\s+The\b/g, 'to The')
+    .replace(/Cs[åa]rd[åa]s/gi, 'Csárdás')
+    .replace(/「원저의/g, '「윈저의')
     .replace(/\bfo[「'\s]+(?=[A-Z])/g, 'for ')
     .replace(/\bSO\[0\b|\b5010\b|\bS010\b/gi, 'Solo')
     .replace(/(?:CeIIo|Ce110|C이\|0)/gi, 'Cello')
@@ -287,6 +298,8 @@ function normalizeOcrMusicalText(line, isOcr = false) {
     .replace(/\b00\.\s*1\b/g, 'Op. 1')
     .replace(/\bVO\s*al\s+Zigeunerlieder/gi, 'Vocal Zigeunerlieder')
     .replace(/[•·_]/g, ' - ')
+    .replace(/(?:\s*-\s*){3,}/g, ' - ')
+    .replace(/^[▪■●◆▶▸\s]+/, '')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -302,30 +315,38 @@ function htmlToLines(html, isOcr = false) {
   return text.split(/\r?\n/).map(l => normalizeOcrMusicalText(l, isOcr)).filter(Boolean);
 }
 
-const BIO_EXCLUDE_REGEX = /(?:졸업|박사|석사|학사|사사|교수|강사|출강|역임|수상|입상|콩쿠르|준우승|데뷔|초청|초대되어|발매|음반|앨범|선발|오디션|주최|주관|후원|협찬|문의|예매|티켓|관람|입장|할인|전석|R석|S석|A석|무료|유료|인터파크|예스24|티켓링크|오시는\s*길|주차|취소|환불|연주하기도|개최|선보인다|선보입니다|들려준다|무대를\s*꾸미|졸업하고|재학|장학생|구성된다|시작하지만|전개될수록|작품이다|곡이다|특징이다|연상시키는|소품곡\s*중|작품번호\s*\d|작곡된|독주곡집으로|생애\s*말년|예술감독|상임지휘|객원지휘|특별출연|우정출연|찬조출연|GUEST|실황\s*연주|순회\s*연주|협연하|출연하|비룾하여|투어에\s*오른다|작곡발표회|Intermission|\bStage$)/i;
+const BIO_EXCLUDE_REGEX = /(?:[\u3400-\u9FFF\uF900-\uFAFF]|@import|https?:\/\/|\b0\d{1,2}-\d{3,4}-\d{4}\b|졸업|박사|석사|학사|사사|교수|강사|출강|역임|수상|입상|콩쿠르|콩국|콩글|공글|공굴|준우승|데뷔|초청|초대되어|발매|음반|앨범|선발|오디션|주최|주관|후원|협찬|문의|예매|티켓|ticket|관람|입장|할인|전석|일반석|R석|S석|A석|무료|유료|인터파크|예스24|티켓링크|오시는\s*길|주차|취소|환불|연주하기도|개최|선보인다|선보입니다|들려준다|무대를\s*꾸미|졸업하고|재학|장학생|구성된다|시작하지만|전개될수록|작품이다|곡이다|특징이다|연상시키는|소품곡\s*중|작곡된|독주곡집으로|생애\s*말년|예술감독|상임지휘|객원지휘|특별출연|우정출연|찬조출연|GUEST|실황\s*연주|순회\s*연주|협연하|출연하|입증하|비룾하여|투어에\s*오른다|작곡발표회|동문회|오전\s*\d|오후\s*\d|\(토\)|\(일\)|\(월\)|\(화\)|\(수\)|\(목\)|\(금\)|1544-|1588-|070-|Intermission|\bStage$)/i;
 
-const MOVEMENT_ONLY_REGEX = /^(?:(?:[I|V|X|Ⅰ|Ⅱ|Ⅲ|Ⅳ|Ⅴ|l]{1,4})\s*[\.\)]\s*(?:Allegro|Andante|Adagio|Presto|Largo|Moderato|Scherzo|Rondo|Menuetto|Finale|Grave|Vivace|Lento|Molto|Poco|Assai|Con\s|Ma\s|Non\s|Tempo|Romanze|Intermezzo|ntermezzo|Marcia|Gavotte|Sarabande|Gigue|Allemande|Courante|Preludio|Aria|Variations|Var\.|Valse|Serenade)|(?:Allegro|Andante|Adagio|Presto|Largo|Moderato|Scherzo|Rondo|Menuetto|Finale)\s*[:\.])/i;
+const MOVEMENT_ONLY_REGEX = /^(?:(?:[I|V|X|Ⅰ|Ⅱ|Ⅲ|Ⅳ|Ⅴ|Ⅵ|Ⅶ|Ⅷ|Ⅸ|Ⅹ|Ⅺ|Ⅻ|l]{1,4})\s*[\.\)]\s*(?:Allegro|Andante|Adagio|Presto|Largo|Moderato|Scherzo|Rondo|Menuetto|Finale|Grave|Vivace|Lento|Molto|Poco|Assai|Con\s|Ma\s|Non\s|Tempo|Romanze|Intermezzo|ntermezzo|Marcia|Gavotte|Sarabande|Gigue|Allemande|Courante|Preludio|Aria|Variations|Var\.|Valse|Serenade|In\s+der|Waldes|Die\s+Stille|Mondnacht|Sch[öo]ne|Auf\s+einer|Wehmut|Zwielicht|Im\s+Walde|Fr[üu]hlings|Nicht\s+schnell|Einfach)|(?:Allegro|Andante|Adagio|Presto|Largo|Moderato|Scherzo|Rondo|Menuetto|Finale)\s*[:\.])/i;
 
-const COMPOSER_ONLY_REGEX = /^(?:J\.\s*S\.\s*Bach|Johann\s+Sebastian\s+Bach|W\.\s*A\.\s*Mozart|W\s*-\s*A\.\s*Mozart|Wolfgang\s+Amadeus\s+Mozart|L\.\s*v\.\s*Beethoven|Ludwig\s+van\s+Beethoven|F\.\s*Chopin|Fr[eé]d[eé]ric\s+Chopin|R\.\s*Schumann|Robert\s+Schumann|J\.\s*Brahms|Johannes\s+Brahms|F\.\s*Schubert|Franz\s+Schubert|F\.\s*Liszt|Franz\s+Liszt|C\.\s*Debussy|Claude\s+Debussy|M\.\s*Ravel|Maurice\s+Ravel|P\.\s*I\.\s*Tchaikovsky|Pyotr\s+Ilyich\s+Tchaikovsky|S\.\s*Rachmaninoff|Sergei\s+Rachmaninoff|S\.\s*Prokofiev|Sergei\s+Prokofiev|D\.\s*Shostakovich|Dmitri\s+Shostakovich|F\.\s*Mendelssohn|Felix\s+Mendelssohn|C\.\s*Franck|C[eé]sar\s+Franck|C\.\s*Saint-Sa[eë]ns|Camille\s+Saint-Sa[eë]ns|G\.\s*Faur[eé]|Gabriel\s+Faur[eé]|A\.\s*Dvo[rř][aá]k|Anton[ií]n\s+Dvo[rř][aá]k|E\.\s*Grieg|Edvard\s+Grieg|J\.\s*Sibelius|Jean\s+Sibelius|G\.\s*Mahler|Gustav\s+Mahler|R\.\s*Strauss|Richard\s+Strauss|I\.\s*Stravinsky|Igor\s+Stravinsky|B\.\s*Bart[oó]k|B[eé]la\s+Bart[oó]k|A\.\s*Vivaldi|Antonio\s+Vivaldi|G\.\s*F\.\s*H[aä]ndel|George\s+Frideric\s+Handel|J\.\s*Haydn|Joseph\s+Haydn|N\.\s*Paganini|Niccol[oò]\s+Paganini|P\.\s*de\s+Sarasate|Pablo\s+de\s+Sarasate|F\.\s*Poulenc|Francis\s+Poulenc|A\.\s*Piazzolla|Astor\s+Piazzolla|M\.\s*Reger|Max\s+Reger|S\.\s*Cherkassky|H\.\s*Vieuxtemps|S\.\s*Mercadante|G\.\s*Puccini|G\.\s*Verdi|G\.\s*Bizet|G\.\s*Rossini|G\.\s*Donizetti|V\.\s*Bellini|바흐|모차르트|베토벤|쇼팽|슈만|브람스|슈베르트|리스트|드뷔시|라벨|차이콥스키|차이코프스키|라흐마니노프|프로코피예프|쇼스타코비치|멘델스존|프랑크|생상스|포레|드보르작|드보르자크|그리그|시벨리우스|말러|슈트라우스|스트라빈스키|바르톡|비발디|헨델|하이든|파가니니|사라사테|풀랑크|피아졸라)(?:\s*\([\d\s~–\-.,b.c]+\))?$/i;
+const COMPOSER_ONLY_REGEX = /^(?:J\.\s*S\.\s*Bach|Johann\s+Sebastian\s+Bach|C\.\s*P\.\s*E\.\s*Bach|W\.\s*A\.\s*Mozart|W\s*-\s*A\.\s*Mozart|Wolfgang\s+Amadeus\s+Mozart|L\.\s*v\.\s*Beethoven|L\.\s*van\s+Beethoven|Ludwig\s+van\s+Beethoven|F\.\s*Chopin|Fr[eé]d[eé]ric\s+Chopin|R\.\s*Schumann|Robert\s+Schumann|C\.\s*Schumann|Clara\s+Schumann|J\.\s*Brahms|Johannes\s+Brahms|F\.\s*Schubert|Franz\s+Schubert|F\.\s*Liszt|Franz\s+Liszt|C\.\s*Debussy|Claude\s+Debussy|M\.\s*Ravel|Maurice\s+Ravel|P\.\s*I\.\s*Tchaikovsky|Pyotr\s+Ilyich\s+Tchaikovsky|S\.\s*Rachmaninoff|Sergei\s+Rachmaninoff|S\.\s*Prokofiev|Sergei\s+Prokofiev|D\.\s*Shostakovich|Dmitri\s+Shostakovich|F\.\s*Mendelssohn|Felix\s+Mendelssohn|A\.\s*Scriabin|Alexander\s+Scriabin|C\.\s*Franck|C[eé]sar\s+Franck|C\.\s*Saint-Sa[eë]ns|Camille\s+Saint-Sa[eë]ns|G\.\s*Faur[eé]|Gabriel\s+Faur[eé]|A\.\s*Dvo[rř][aá]k|Anton[ií]n\s+Dvo[rř][aá]k|E\.\s*Grieg|Edvard\s+Grieg|J\.\s*Sibelius|Jean\s+Sibelius|G\.\s*Mahler|Gustav\s+Mahler|A\.\s*Bruckner|Anton\s+Bruckner|R\.\s*Strauss|Richard\s+Strauss|J\.\s*Strauss(?:\s*II)?|Johann\s+Strauss|I\.\s*Stravinsky|Igor\s+Stravinsky|B\.\s*Bart[oó]k|B[eé]la\s+Bart[oó]k|A\.\s*Vivaldi|Antonio\s+Vivaldi|G\.\s*F\.\s*H[aä]ndel|George\s+Frideric\s+Handel|J\.\s*Haydn|Joseph\s+Haydn|N\.\s*Paganini|Niccol[oò]\s+Paganini|P\.\s*(?:de\s+)?Sarasate|Pablo\s+de\s+Sarasate|F\.\s*Poulenc|Francis\s+Poulenc|A\.\s*Piazzolla|Astor\s+Piazzolla|M\.\s*Reger|Max\s+Reger|S\.\s*Cherkassky|H\.\s*Vieuxtemps|S\.\s*Mercadante|G\.\s*Puccini|G\.\s*Verdi|G\.\s*Bizet|G\.\s*Rossini|G\.\s*Donizetti|V\.\s*Bellini|R\.\s*Wagner|E\.\s*Chausson|Ernest\s+Chausson|G\.\s*Enescu|George\s+Enescu|O\.\s*Nicolai|Otto\s+Nicolai|V\.\s*Monti|Vittorio\s+Monti|C\.\s*W\.\s*Gluck|F\.\s*Leh[aá]r|N\.\s*Rimsky-Korsakov|R\.\s*Korsakov|P\.\s*Hindemith|Paul\s+Hindemith|G\.\s*Bottesini|E\.\s*Elgar|Edward\s+Elgar|G\.\s*Holst|B\.\s*Smetana|M\.\s*Mussorgsky|A\.\s*Borodin|A\.\s*Glazunov|O\.\s*Respighi|J\.\s*Massenet|C\.\s*Gounod|L\.\s*Bernstein|G\.\s*Gershwin|A\.\s*Copland|S\.\s*Barber|E\.\s*Satie|Erik\s+Satie|F\.\s*Kreisler|E\.\s*Ysa[yÿ]e|H\.\s*Wieniawski|L\.\s*Boccherini|D\.\s*Scarlatti|F\.\s*Couperin|J\.\s*P\.\s*Rameau|G\.\s*P\.\s*Telemann|A\.\s*Corelli|G\.\s*Tartini|T\.\s*Albinoni|A\.\s*Schoenberg|A\.\s*Berg|O\.\s*Messiaen|B\.\s*Britten|Z\.\s*Kod[aá]ly|L\.\s*Jan[aá][cč]ek|M\.\s*de\s+Falla|I\.\s*Alb[eé]niz|E\.\s*Granados|J\.\s*Rodrigo|H\.\s*Villa-Lobos|N\.\s*Kapustin|바흐|모차르트|베토벤|쇼팽|슈만|클라라\s*슈만|브람스|슈베르트|리스트|드뷔시|라벨|차이콥스키|차이코프스키|라흐마니노프|프로코피예프|쇼스타코비치|멘델스존|스크랴빈|스크리아빈|프랑크|생상스|포레|드보르작|드보르자크|그리그|시벨리우스|말러|브루크너|슈트라우스|스트라빈스키|바르톡|비발디|헨델|하이든|파가니니|사라사테|풀랑크|피아졸라|바그너|쇼송|에네스쿠|니콜라이|몬티|글루크|레하르|림스키코르사코프|힌데미트|보테시니|엘가|홀스트|스메타나|무소륵스키|보로딘|글라주노프|레스피기|마스네|구노|번스타인|거슈윈|코플랜드|바버|사티|크라이슬러|이자이|비에냐프스키|보케리니|스카를라티|쿠프랭|라모|텔레만|코렐리|타르티니|알비노니|쇤베르크|메시앙|브리튼|코다이|야나체크|파야|알베니스|그라나도스|로드리고|빌라로보스|카푸스틴)(?:\s*\([\d\s~–\-.,b.c]+\))?$/i;
+
+function isComposerOnlyLine(line) {
+  if (!line) return false;
+  if (COMPOSER_ONLY_REGEX.test(line)) return true;
+  // 생몰년도가 명시된 작곡가 라인 (예: "Ernest Chausson (1855-1899)", "George Enescu (1881-1955)")
+  if (/^[A-ZÀ-ÖØ-Ý][A-Za-zÀ-ÖØ-öø-ÿ.\-\s]{2,38}\s*\(\s*\d{4}\s*[~–\-]\s*\d{0,4}\s*\)$/.test(line)) return true;
+  return false;
+}
 
 function isMusicalPieceLine(line, allowBroadInProgramBlock = false) {
-  if (!line || line.length < 4 || line.length > 130) return false;
+  if (!line || line.length < 4 || line.length > 150) return false;
   if (line.includes('\uFFFD') || line.includes('_*_+_*')) return false;
   if (MOVEMENT_ONLY_REGEX.test(line)) return false;
   if (BIO_EXCLUDE_REGEX.test(line)) return false;
-  if (COMPOSER_ONLY_REGEX.test(line)) return false;
-  if (/^(?:Program|PROGRAM|프로그램|곡목|연주자|출연진|프로필|Profile|Intermission|인터미션|1부|2부|<1부>|<2부>|\[1부\]|\[2부\])$/i.test(line)) return false;
-  if (/^(?:\d+\.\s*)?(?:Opera\s*Ensemble|Bass\s*Baritone|Mezzo\s*Soprano|Soprano|Tenor|Baritone|Bass)\s+[가-힣a-zA-Z\s,·\-/]+$/i.test(line)) return false;
+  if (isComposerOnlyLine(line)) return false;
+  if (/^(?:Program|PROGRAM|P\s*R\s*[O0]\s*G\s*R\s*A\s*M|프로그램|프로그래|곡목|연주자|출연진|프로필|Profile|Intermission|인터미션|1부|2부|<1부>|<2부>|\[1부\]|\[2부\]|STAGE\s*\d+.*)$/i.test(line)) return false;
+  if (/^(?:\d+\.\s*)?(?:Opera\s*Ensemble|Bass\s*Baritone|Mezzo\s*Soprano|Soprano|Tenor|Baritone|Bass|지휘|특별\s*지휘|연주|협연|합창|합장|사회|해설)\s+[가-힣a-zA-Z\s,·\-/&•]+$/i.test(line)) return false;
 
   const hasCatalogOrGenre = (
-    /\b(?:Op\.\s*\d|No\.\s*\d|BWV\s*\d|K\.\s*\d|KV\s*\d|Hob\.|RV\s*\d|D\.\s*\d|S\.\s*\d|WoO|HWV\s*\d|Sz\.\s*\d|FP\s*\d|MWV|TWV)\b/i.test(line) ||
-    /(?:Sonata|Concerto|Symphony|Suite|Partita|Prelude|Fugue|Etude|Ballade|Scherzo|Nocturne|Polonaise|Fantaisie|Fantasia|Impromptu|Variations|variata|Overture|Quartet|Quintet|Trio|Octet|Sextet|Septet|Serenade|Rhapsody|Romances?|Chaconne|Passacaglia|Caprice|Capriccio|Rondo|Poème|Tzigane|Liebestod|Carnaval|Faschingsschwank|Kreisleriana|Humoreske|Arabeske|Kinderszenen|Zigeunerlieder|Klavierst[üu]c?ke|Gaspard|Bergamasque|Estampes|Miroirs|Tombeau|Valse|Boléro|Pavane|Chanson|Après un rêve|소나타|협주곡|교향곡|모음곡|파르티타|전주곡|푸가|에튀드|연습곡|발라드|스케르초|녹턴|야상곡|폴로네이즈|환상곡|즉흥곡|변주곡|서곡|사중주|오중주|삼중주|팔중주|육중주|세레나데|랩소디|광시곡|로망스|샤콘느|카프리스|론도|사계|전람회의 그림|신세계로부터|비창|운명|황제|영웅|전원|합창|메시아|겨울나그네|동물의 사육제)/i.test(line)
+    /\b(?:Op\.\s*\d|No\.\s*\d|BWV\s*\d|K\.\s*\d|KV\s*\d|Hob\.|RV\s*\d|D\.\s*\d|S\.\s*\d|M\.\s*\d|WoO|HWV\s*\d|Sz\.\s*\d|FP\s*\d|MWV|TWV)\b/i.test(line) ||
+    /(?:Sonata|Concerto|Symphony|Symphonie|Suite|Partita|Prelude|Fugue|Etude|Ballade|Scherzo|Nocturne|Polonaise|Fantaisie|Fantasia|Fantasie|Fantasy|Impromptu|Variations|variata|Overture|Quartet|Quintet|Trio|Octet|Sextet|Septet|Serenade|Rhapsody|Romances?|Chaconne|Passacaglia|Caprice|Capriccio|Rondo|Poème|Tzigane|Liebestod|Carnaval|Faschingsschwank|Kreisleriana|Humoreske|Arabeske|Kinderszenen|Zigeunerlieder|Liederkreis|Dichterliebe|Frauenliebe|Schwanengesang|Winterreise|Klavierst[üu]c?ke|Gaspard|Bergamasque|Estampes|Miroirs|Tombeau|Valse|Bol[ée]ro|Pavane|Chanson|Apr[èe]s un r[êe]ve|Cs[áåa]rd[áåa]s|Bumblebee|Magic\s*Flute|Merry\s*Wives|Adagio\s+Melancolico|Minuet\s+and\s+Dance|Du\s+bist\s+die\s+Ruh|Mein\s+Herr\s+Marquis|Lippen\s+schweigen|Come\s+Paride|소나타|협주곡|교향곡|모음곡|파르티타|전주곡|푸가|에튀드|연습곡|초절기교|발라드|스케르초|녹턴|야상곡|폴로네이즈|환상곡|즉흥곡|변주곡|서곡|사중주|오중주|삼중주|팔중주|육중주|세레나데|랩소디|광시곡|로망스|샤콘느|파사칼리아|카프리스|론도|연가곡|연가곡집|차르다시|왕벌의\s*비행|마술피리|즐거운\s*아낙네들|사랑의\s*묘약|유쾌한\s*미망인|죽음의\s*무도|볼레로|피터와\s*늑대|동물의\s*사육제|사계|전람회의\s*그림|신세계로부터|비창|운명|황제|영웅|전원|합창|메시아|엘리야|천지창조|겨울나그네|백조의\s*노래|시인의\s*사랑|아베\s*마리아|아베\s*베룸|할렐루야|작품번호\s*\d|작품\s*\d)/i.test(line)
   );
 
   if (hasCatalogOrGenre) return true;
 
   if (allowBroadInProgramBlock) {
-    if (/[—–\-:]/.test(line) && /[A-Za-z가-힣]{3,}/.test(line)) return true;
+    if (/[—–\-:|\/<>《》「」『』]/.test(line) && /[A-Za-z가-힣]{2,}/.test(line)) return true;
   }
 
   return false;
@@ -342,7 +363,7 @@ function addUniquePiece(pieces, candidate) {
   const cNorm = norm(candidate);
   if (!cNorm) return;
 
-  const opMatch = candidate.match(/\bOp\.\s*(\d+)/i);
+  const opMatch = candidate.match(/(?:\bOp\.|작품번호|작품)\s*(\d+)/i);
   for (let idx = 0; idx < pieces.length; idx++) {
     const p = pieces[idx];
     const pNorm = norm(p);
@@ -352,8 +373,15 @@ function addUniquePiece(pieces, candidate) {
       return;
     }
     if (opMatch) {
-      const pOp = p.match(/\bOp\.\s*(\d+)/i);
-      if (pOp && pOp[1] === opMatch[1] && pNorm.slice(0, 8) === cNorm.slice(0, 8)) return;
+      const pOp = p.match(/(?:\bOp\.|작품번호|작품)\s*(\d+)/i);
+      if (pOp && pOp[1] === opMatch[1]) {
+        if (pNorm.slice(0, 8) === cNorm.slice(0, 8) || (p.includes('베토벤') && /Beethoven/i.test(candidate)) || (/Beethoven/i.test(p) && candidate.includes('베토벤'))) {
+          if (/^[A-Za-z]/.test(candidate) && !/^[A-Za-z]/.test(p)) {
+            pieces[idx] = candidate;
+          }
+          return;
+        }
+      }
     }
   }
   pieces.push(candidate);
@@ -364,6 +392,8 @@ function cleanPieceLine(line, currentComposer) {
     .replace(/^[0-9]+[\.\)]?\s*/, '')
     .replace(/^[•\-\*·▶▸\.]+\s*/, '')
     .replace(/\s*\(\d{4}[~–\-]\d{4}\)/g, '')
+    .replace(/\s*[–—―ㅡ]\s*\d+\s*['’′]\s*$/, '')
+    .replace(/\s*\|\s*/g, ': ')
     .trim();
 
   if (currentComposer) {
@@ -380,9 +410,24 @@ function cleanPieceLine(line, currentComposer) {
  */
 function extractPiecesSmart(rawTextOrHtml, { isPlainSty = false, isOcr = false } = {}) {
   if (!rawTextOrHtml || rawTextOrHtml.length < 15) return [];
-  const lines = htmlToLines(rawTextOrHtml, isOcr);
+  const rawLines = htmlToLines(rawTextOrHtml, isOcr);
 
-  const headerRegex = /^(?:\[|\<|■|●|◆|▶|★|\*)?\s*(?:프로그램|PROGRAM|Program|곡목|곡\s*목|공연\s*곡목|연주\s*곡목|프로그램\s*안내|연주\s*프로그램)\s*(?:\]|\>| 안내)?$/i;
+  // 줄바꿈으로 쪼개진 연속 곡목 라인 자동 병합 (예: "L. van Beethoven | Symphony No. 9 in D minor," + "Op. 125, 'Choral'")
+  const lines = [];
+  for (let i = 0; i < rawLines.length; i++) {
+    let cur = rawLines[i];
+    if (
+      i + 1 < rawLines.length &&
+      (cur.endsWith(',') || /^(?:Op\.\s*\d|No\.\s*\d|BWV\s*\d|K\.\s*\d|KV\s*\d|Hob\.)/i.test(rawLines[i + 1])) &&
+      !isComposerOnlyLine(cur)
+    ) {
+      cur = `${cur} ${rawLines[i + 1]}`.replace(/\s+/g, ' ').trim();
+      i++;
+    }
+    lines.push(cur);
+  }
+
+  const headerRegex = /^(?:\[|\<|■|●|◆|▶|★|\*)?\s*(?:프로그램|프로그래|프\s*로\s*그\s*램|PROGRAM|Program|P\s*R\s*[O0]\s*G\s*R\s*A\s*M|곡목|곡\s*목|공연\s*곡목|연주\s*곡목|프로그램\s*안내|연주\s*프로그램)\s*(?:\]|\>| 안내)?$/i;
 
   const stopKeywords = [
     '프로필', 'PROFILE', 'Profile', '출연진', 'CAST', 'Cast', '아티스트 소개',
@@ -399,33 +444,29 @@ function extractPiecesSmart(rawTextOrHtml, { isPlainSty = false, isOcr = false }
     if (!headerRegex.test(lines[idx])) continue;
 
     let currentComposer = '';
-    let currentPerformer = '';
-    for (let i = idx + 1; i < Math.min(lines.length, idx + 75); i++) {
+    for (let i = idx + 1; i < Math.min(lines.length, idx + 85); i++) {
       const line = lines[i];
       if (line.includes('\uFFFD')) break;
       if (stopKeywords.some(kw => line.includes(kw))) break;
+      if (/^(?:Pianist|Violinist|Cellist|Violist|Flutist|Oboist|Clarinetist|Bassoonist|Hornist|Conductor|피아니스트|바이올리니스트|첼리스트|비올리스트|플루티스트|클라리네티스트|지휘자)\s+[가-힣A-Za-z]/i.test(line)) break;
       if (/^\*.*(?:변경|사정|주최|프로그램은|유의|관람)/.test(line)) continue;
-      if (/^(?:INTERMISSION|Intermission|인터미션|휴식|중간휴식|<1부>|<2부>|1부|2부|\[1부\]|\[2부\]|PART\s*\d|Part\s*\d|-?\s*Intermission\s*-?)$/i.test(line)) {
+      if (/^(?:INTERMISSION|Intermission|인터미션|휴식|중간휴식|<1부>|<2부>|1부|2부|\[1부\]|\[2부\]|PART\s*\d|Part\s*\d|STAGE\s*\d.*|-?\s*Intermission\s*-?)$/i.test(line)) {
         currentComposer = '';
         continue;
       }
       if (MOVEMENT_ONLY_REGEX.test(line)) continue;
 
-      if (/^(?:\d+\.\s*)?(?:Piano|Violin|Violoncello|Cello|Flute|Clarinet|Percussion|Bass\s*Baritone|Soprano|Mezzo\s*Soprano|Tenor|Baritone|Bass|Opera\s*Ensemble|Sop\.|Ten\.|Bar\.|소프라노|테너|바리톤|베이스|메조소프라노)\s+[가-힣a-zA-Z\s,·\-/]+$/i.test(line) && !/(?:Sonata|Concerto|Trio|Quartet|Quintet|Suite|Partita|Op\.|BWV|KV)/i.test(line)) {
-        currentPerformer = line.replace(/^\d+\.\s*/, '').trim();
+      if (/^(?:\d+\.\s*)?(?:Piano|Violin|Violoncello|Cello|Flute|Clarinet|Percussion|Bass\s*Baritone|Soprano|Mezzo\s*Soprano|Tenor|Baritone|Bass|Opera\s*Ensemble|Sop\.|Ten\.|Bar\.|Pf\.|Vn\.|Vc\.|Fl\.|소프라노|테너|바리톤|베이스|메조소프라노|지휘|특별\s*지휘|연주|마림바|합창|합장)\s*[가-힣a-zA-Z\s,·\-/•&\.]+$/i.test(line) && !/(?:Sonata|Concerto|Trio|Quartet|Quintet|Suite|Partita|Op\.|BWV|KV)/i.test(line)) {
         continue;
       }
 
-      if (COMPOSER_ONLY_REGEX.test(line)) {
+      if (isComposerOnlyLine(line)) {
         currentComposer = line.replace(/\s*\([\d\s~–\-.,b.c]+\)\s*$/, '').trim();
         continue;
       }
 
-      if (isMusicalPieceLine(line, isPlainSty)) {
-        let cp = cleanPieceLine(line, currentComposer);
-        if (currentPerformer && isPlainSty) {
-          cp = `${cp} (${currentPerformer})`;
-        }
+      if (isMusicalPieceLine(line, isPlainSty && !isOcr)) {
+        const cp = cleanPieceLine(line, currentComposer);
         if (isOcr) currentComposer = '';
         addUniquePiece(pieces, cp);
       }
@@ -442,7 +483,7 @@ function extractPiecesSmart(rawTextOrHtml, { isPlainSty = false, isOcr = false }
       const line = lines[i];
       if (MOVEMENT_ONLY_REGEX.test(line)) continue;
 
-      if (COMPOSER_ONLY_REGEX.test(line)) {
+      if (isComposerOnlyLine(line)) {
         const comp = line.replace(/\s*\([\d\s~–\-.,b.c]+\)\s*$/, '').trim();
         currentComposer = comp;
         pendingComposers.push(comp);
@@ -776,7 +817,14 @@ function syncComposersFromPieces(concert) {
     ['Paganini', '파가니니'], ['Sarasate', '사라사테'], ['Poulenc', '풀랑크'],
     ['Piazzolla', '피아졸라'], ['Puccini', '푸치니'], ['Verdi', '베르디'],
     ['Bizet', '비제'], ['Rossini', '로시니'], ['Bruckner', '브루크너'],
-    ['Wagner', '바그너'], ['Donizetti', '도니제티'], ['Mascagni', '마스카니'], ['Orff', '오르프']
+    ['Wagner', '바그너'], ['Donizetti', '도니제티'], ['Mascagni', '마스카니'], ['Orff', '오르프'],
+    ['Scriabin', '스크랴빈'], ['Monti', '몬티'], ['Nicolai', '니콜라이'], ['Gluck', '글루크'],
+    ['Lehár', '레하르'], ['Lehar', '레하르'], ['Chausson', '쇼송'], ['Enescu', '에네스쿠'],
+    ['Hindemith', '힌데미트'], ['Bottesini', '보테시니'], ['Korsakov', '림스키코르사코프'],
+    ['Elgar', '엘가'], ['Holst', '홀스트'], ['Smetana', '스메타나'], ['Mussorgsky', '무소륵스키'],
+    ['Respighi', '레스피기'], ['Bernstein', '번스타인'], ['Gershwin', '거슈윈'], ['Satie', '사티'],
+    ['Kreisler', '크라이슬러'], ['Ysaÿe', '이자이'], ['Wieniawski', '비에냐프스키'],
+    ['Scarlatti', '스카를라티'], ['Telemann', '텔레만'], ['Kapustin', '카푸스틴']
   ];
   const detected = new Set(
     (concert.composers || []).filter(c => c !== '클래식 명작')
@@ -898,15 +946,53 @@ async function main() {
     } catch {}
   }
 
-  // KOPIS 상세 XML 미보유 공연 조회 (예정/진행 공연 및 독주회·주요 공연장 우선, KOPIS Rate-Limit 안전 범위)
+  // 0. initialRealConcerts.js에 이미 적재된 introImages, imageUrl, description, ticketUrl을 detailsCache에 자동 병합(Hydration)
+  for (const [rawId, c] of concertMap.entries()) {
+    const existingD = detailsCache[rawId] || {};
+    const hasRealDesc = c.description &&
+      c.description.length > 25 &&
+      !c.description.includes('정통 클래식 무대') &&
+      !c.description.includes('정부 공식 등록 클래식') &&
+      !c.description.includes('시즌 공식 클래식 공연');
+
+    if (
+      (c.introImages && c.introImages.length > 0) ||
+      hasRealDesc ||
+      (c.imageUrl && c.imageUrl.includes('kopis.or.kr')) ||
+      (c.ticketUrl && !c.ticketUrl.includes('search.naver.com'))
+    ) {
+      detailsCache[rawId] = {
+        ...existingD,
+        fcltynm: existingD.fcltynm || c.venue || '',
+        hall: existingD.hall || c.hall || null,
+        sty: existingD.sty || (hasRealDesc ? c.description : ''),
+        poster: existingD.poster || (c.imageUrl && c.imageUrl.includes('kopis.or.kr') ? c.imageUrl : ''),
+        styurls: (existingD.styurls && existingD.styurls.length > 0) ? existingD.styurls : (c.introImages || []),
+        relateUrl: existingD.relateUrl || (c.ticketUrl && !c.ticketUrl.includes('search.naver.com') ? c.ticketUrl : ''),
+        relateUrls: (existingD.relateUrls && existingD.relateUrls.length > 0)
+          ? existingD.relateUrls
+          : (c.ticketUrl && !c.ticketUrl.includes('search.naver.com') ? [c.ticketUrl] : [])
+      };
+    }
+  }
+
+  // KOPIS 상세 XML 미보유 공연 조회 (가까운 예정 공연 및 주요 공연장 우선)
   const idsNeedingXml = Array.from(concertMap.entries())
-    .filter(([rawId, c]) => !isValidDetailCache(detailsCache[rawId]) && (!c.pieces || c.pieces.length === 0))
+    .filter(([rawId, c]) => {
+      if (c.pieces && c.pieces.length > 0) return false;
+      const d = detailsCache[rawId];
+      // 아직 소개글(sty)도 없고 소개전단(styurls)도 없는 경우 상세 XML 조회
+      return !d || (!d.xmlFetched && (!d.styurls || d.styurls.length === 0) && (!d.sty || d.sty.length < 20));
+    })
     .sort(([, a], [, b]) => {
+      const aUpcoming = a.date >= '2026-11-15' ? 1 : 0;
+      const bUpcoming = b.date >= '2026-11-15' ? 1 : 0;
+      if (aUpcoming !== bUpcoming) return bUpcoming - aUpcoming;
+      if (aUpcoming && a.date !== b.date) return a.date.localeCompare(b.date);
       const score = (c) => {
         let s = 0;
-        if (c.date >= '2026-10-31') s += 100;
-        if (/독주회|리사이틀|Recital/i.test(c.title)) s += 50;
-        if (/예술의전당|롯데콘서트홀|세종문화회관|금호아트홀|부천아트센터|아트센터인천/.test(c.venue)) s += 40;
+        if (/예술의전당|롯데콘서트홀|세종문화회관|금호아트홀|부천아트센터|아트센터인천|통영국제음악당|대구콘서트하우스/.test(c.venue)) s += 50;
+        if (/독주회|리사이틀|Recital|오케스트라|교향악단/i.test(c.title)) s += 30;
         return s;
       };
       return score(b) - score(a);
@@ -922,7 +1008,7 @@ async function main() {
       const fetched = await Promise.all(chunk.map(id => fetchConcertDetail(id)));
       chunk.forEach((id, idx) => {
         if (fetched[idx] && isValidDetailCache(fetched[idx])) {
-          detailsCache[id] = fetched[idx];
+          detailsCache[id] = { ...(detailsCache[id] || {}), ...fetched[idx], xmlFetched: true };
           xmlSuccess++;
         }
       });
@@ -942,6 +1028,9 @@ async function main() {
     if (c.source && c.source.includes('KOPIS')) {
       c.source = 'KOPIS 전산망 공식 수집';
     }
+    if (Array.isArray(c.composers)) {
+      c.composers = c.composers.filter(comp => comp && comp !== '클래식 명작');
+    }
     if (Array.isArray(c.pieces) && c.pieces.length > 0) {
       const cleaned = [];
       for (const rawP of c.pieces) {
@@ -951,6 +1040,14 @@ async function main() {
         }
       }
       c.pieces = cleaned;
+    }
+    // description에 명시적 [PROGRAM]/[프로그램]이 있는데 기존 pieces가 1개 이하로 불완전 추출된 경우 재추출
+    if (c.description && /(?:\[PROGRAM\]|\[프로그램\]|\[Program)/i.test(c.description) && (!c.pieces || c.pieces.length <= 1)) {
+      const reparsed = extractPiecesSmart(c.description, { isPlainSty: true });
+      if (reparsed.length > (c.pieces ? c.pieces.length : 0)) {
+        c.pieces = reparsed;
+        syncComposersFromPieces(c);
+      }
     }
   }
 
@@ -967,11 +1064,11 @@ async function main() {
 
   const needStage2DetailPage = [];
 
-  // [Stage 1] KOPIS <sty> 소개글 정밀 파싱 및 메타데이터 동기화
+  // [Stage 1] KOPIS <sty> 및 공연 description 소개글 정밀 파싱
   for (const c of itemsToEnrich) {
     const rawId = (c.kopisId || (c.id || '').replace(/^kopis-/, '')).trim();
-    const d = detailsCache[rawId];
-    if (d && isValidDetailCache(d)) {
+    const d = detailsCache[rawId] || {};
+    if (isValidDetailCache(d)) {
       if (d.hall && !c.hall) c.hall = d.hall;
       if (d.cast && (!c.performers || c.performers.length === 0)) {
         c.performers = d.cast.split(',').map(s => s.trim()).filter(Boolean);
@@ -1011,14 +1108,16 @@ async function main() {
           syncComposersFromPieces(c);
           stage1StyCount++;
         }
-      } else if (d.sty && d.sty.length > 15) {
-        // Stage 1: KOPIS <sty> 본문에서 프로그램 추출
-        const fromSty = extractPiecesSmart(d.sty, { isPlainSty: true });
-        if (fromSty.length > 0) {
-          c.pieces = fromSty;
-          d.extractedPieces = fromSty;
-          syncComposersFromPieces(c);
-          stage1StyCount++;
+      } else {
+        const textToParse = (d.sty && d.sty.length > 15) ? d.sty : (c.description || '');
+        if (textToParse.length > 20) {
+          const fromSty = extractPiecesSmart(textToParse, { isPlainSty: true });
+          if (fromSty.length > 0) {
+            c.pieces = fromSty;
+            d.extractedPieces = fromSty;
+            syncComposersFromPieces(c);
+            stage1StyCount++;
+          }
         }
       }
 
@@ -1034,18 +1133,25 @@ async function main() {
   }
 
   const prioritySort = (a, b) => {
+    const aUpcoming = a.concert.date >= '2026-11-15' ? 1 : (a.concert.date >= '2026-10-15' ? 0.5 : 0);
+    const bUpcoming = b.concert.date >= '2026-11-15' ? 1 : (b.concert.date >= '2026-10-15' ? 0.5 : 0);
+    if (aUpcoming !== bUpcoming) return bUpcoming - aUpcoming;
+    const aHasIntro = (a.detail.styurls && a.detail.styurls.length > 0) ? 1 : 0;
+    const bHasIntro = (b.detail.styurls && b.detail.styurls.length > 0) ? 1 : 0;
+    if (aHasIntro !== bHasIntro) return bHasIntro - aHasIntro;
+    if (aUpcoming === 1 && a.concert.date !== b.concert.date) {
+      return a.concert.date.localeCompare(b.concert.date);
+    }
     const score = (c) => {
       let s = 0;
-      if (c.date >= '2026-10-31') s += 100;
-      if (/독주회|리사이틀|Recital/i.test(c.title)) s += 50;
-      if (/예술의전당|롯데콘서트홀|세종문화회관|금호아트홀|부천아트센터|아트센터인천/.test(c.venue)) s += 40;
+      if (/예술의전당|롯데콘서트홀|세종문화회관|금호아트홀|부천아트센터|아트센터인천|통영국제음악당|대구콘서트하우스/.test(c.venue)) s += 50;
+      if (/독주회|리사이틀|Recital|오케스트라|교향악단/i.test(c.title)) s += 40;
       return s;
     };
     return score(b.concert) - score(a.concert);
   };
 
   // [Stage 2] 공식 상세페이지(<relateurl>) 자동 접속 및 HTML 프로그램 파싱
-  // (예정/진행 공연 및 주요 공연장·독주회 우선 처리, 병렬 30건 단위 고속 파싱)
   const stage2Targets = needStage2DetailPage
     .filter(item => {
       if (item.concert.date < '2026-10-01') return false;
@@ -1090,13 +1196,13 @@ async function main() {
   const stage3Candidates = needStage2DetailPage
     .filter(({ concert, detail }) => {
       if (concert.pieces && concert.pieces.length > 0) return false;
-      if (concert.date < '2026-10-31') return false;
+      if (concert.date < '2026-10-01') return false;
       if (detail.ocrChecked) return false;
       const hasImages = (detail.styurls && detail.styurls.length > 0) || (detail.poster && detail.poster.startsWith('http'));
       return hasImages;
     })
     .sort(prioritySort)
-    .slice(0, 35);
+    .slice(0, 180);
 
   if (stage3Candidates.length > 0) {
     console.log(`[Stage 3] 세부 프로그램 미기재 공연 포스터·소개전단 이미지(${stage3Candidates.length}건) 자동 OCR 판독 중...`);
@@ -1192,21 +1298,23 @@ export default INITIAL_REAL_CONCERTS;
   fs.writeFileSync(logPath, JSON.stringify(logs, null, 2), 'utf8');
   console.log(`[${logEntry.timestamp}] 정기 동기화 배치 성공 완료!`);
 
-  // 새로 수집된 공연 데이터 파일(initialRealConcerts.js)만 GitHub에 자동 커밋·푸시하여 Render 실서버에 자동 반영
-  try {
-    const { execSync } = require('child_process');
-    const repoRoot = path.resolve(__dirname, '..');
-    execSync('git add src/data/initialRealConcerts.js scripts/daily_sync_log.json', { cwd: repoRoot, stdio: 'ignore' });
-    const diffStatus = execSync('git status --porcelain src/data/initialRealConcerts.js', { cwd: repoRoot }).toString().trim();
-    if (diffStatus) {
-      execSync(`git commit -m "chore(data): automated 3AM KOPIS concert dataset sync (${logEntry.timestamp})"`, { cwd: repoRoot, stdio: 'ignore' });
-      execSync('git push origin main', { cwd: repoRoot, stdio: 'ignore' });
-      console.log(`[GitHub & Render 자동 배포] 최신 공연 데이터(${updatedConcertList.length}건)가 GitHub(origin/main)에 푸시되어 Render 사이트에 자동 반영됩니다.`);
-    } else {
-      console.log(`[GitHub & Render 자동 배포] 공연 데이터 변경사항이 없어 푸시를 생략합니다.`);
+  // --auto-push 플래그로 실행된 경우에만 GitHub에 자동 푸시 (CI에서는 워크플로우 단계가 커밋/푸시 담당)
+  if (process.argv.includes('--auto-push')) {
+    try {
+      const { execSync } = require('child_process');
+      const repoRoot = path.resolve(__dirname, '..');
+      execSync('git add src/data/initialRealConcerts.js scripts/daily_sync_log.json', { cwd: repoRoot, stdio: 'ignore' });
+      const diffStatus = execSync('git status --porcelain src/data/initialRealConcerts.js', { cwd: repoRoot }).toString().trim();
+      if (diffStatus) {
+        execSync(`git commit -m "chore(data): automated 3AM KOPIS concert dataset sync (${logEntry.timestamp})"`, { cwd: repoRoot, stdio: 'ignore' });
+        execSync('git push origin main', { cwd: repoRoot, stdio: 'ignore' });
+        console.log(`[GitHub & Render 자동 배포] 최신 공연 데이터(${updatedConcertList.length}건)가 GitHub(origin/main)에 푸시되어 Render 사이트에 자동 반영됩니다.`);
+      } else {
+        console.log(`[GitHub & Render 자동 배포] 공연 데이터 변경사항이 없어 푸시를 생략합니다.`);
+      }
+    } catch (gitErr) {
+      console.warn(`[GitHub 푸시 참고] 로컬 파일은 정상 갱신되었으나 원격 푸시 중 경고가 발생했습니다:`, gitErr.message);
     }
-  } catch (gitErr) {
-    console.warn(`[GitHub 푸시 참고] 로컬 파일은 정상 갱신되었으나 원격 푸시 중 경고가 발생했습니다:`, gitErr.message);
   }
 }
 

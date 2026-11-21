@@ -532,10 +532,6 @@ export default function App() {
               onUpdateTip={handleUpdateTip}
               onDeleteTip={handleDeleteTip}
               onRefreshConcerts={(newList) => setConcerts(newList)}
-              onUpdatePost={handleUpdatePost}
-              onDeletePost={handleDeletePost}
-              onUpdateComment={handleUpdateComment}
-              onDeleteComment={handleDeleteComment}
               onBlockIp={handleBlockIp}
               onUnblockIp={handleUnblockIp}
               onNavigateToCommunity={() => setActiveTab('community')}
