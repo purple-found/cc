@@ -3,6 +3,12 @@
   publish = "dist"
 
 [[redirects]]
+  from = "/api/kopis/*"
+  to = "http://www.kopis.or.kr/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/kopis-api/*"
   to = "http://www.kopis.or.kr/openApi/restful/:splat"
   status = 200

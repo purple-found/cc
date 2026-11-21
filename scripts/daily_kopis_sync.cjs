@@ -120,10 +120,10 @@ function getTodayYYYYMMDD() {
   const pad = n => String(n).padStart(2, '0');
   const y = kst.getFullYear();
   const m = pad(kst.getMonth() + 1);
-  const day = pad(kst.getDate());
   return {
-    start: `${y - 1}${m}${day}`,
-    end: `${y + 2}1231`
+    start: `${y}${m}01`,
+    end: `${y + 2}1231`,
+    cutoffIso: `${y}-${m}-01`
   };
 }
 
@@ -851,21 +851,29 @@ async function main() {
     throw new Error('initialRealConcerts.js 내의 JSON 배열을 파싱할 수 없습니다.');
   }
 
+  const { start, end, cutoffIso } = getTodayYYYYMMDD();
+  console.log(`수집 및 유지 대상 기간: ${start} (${cutoffIso} 이후) ~ ${end}`);
+
   const existingConcerts = JSON.parse(fileContent.substring(jsonStart, jsonEnd + 1));
   const concertMap = new Map();
+  let prunedPastCount = 0;
   existingConcerts.forEach(c => {
+    if (c.date && c.date < cutoffIso) {
+      prunedPastCount++;
+      return;
+    }
     const rawId = (c.kopisId || (c.id || '').replace(/^kopis-/, '')).trim();
     if (rawId) concertMap.set(rawId, c);
   });
-
-  const { start, end } = getTodayYYYYMMDD();
-  console.log(`수집 대상 기간: ${start} ~ ${end}`);
+  if (prunedPastCount > 0) {
+    console.log(`지난달 이전 과거 공연 ${prunedPastCount}건 자동 정리 완료 (${cutoffIso} 이전 데이터 정리).`);
+  }
 
   let newConcertsCount = 0;
   let updatedCount = 0;
 
-  // 1페이지부터 최대 15페이지까지 신규/수정 분량 탐색 (페이지당 100건 = 최대 1,500건, 순수 서양음악 CCCA 전용)
-  for (let page = 1; page <= 15; page++) {
+  // 1페이지부터 최대 25페이지까지 신규/수정 분량 전수 탐색 (페이지당 100건 = 최대 2,500건, 현재 달 ~ 향후 2년 전량 커버)
+  for (let page = 1; page <= 25; page++) {
     const listUrl = `http://www.kopis.or.kr/openApi/restful/pblprfr?service=${SERVICE_KEY}&stdate=${start}&eddate=${end}&cpage=${page}&rows=100&shcate=CCCA`;
     const xml = await fetchXml(listUrl);
     if (!xml || !xml.includes('<db>')) break;
@@ -889,7 +897,8 @@ async function main() {
 
       const kopisId = idMatch[1].trim();
       const title = decodeHtmlAndUnicode(titleMatch[1].trim());
-      const rawDate = fromMatch ? fromMatch[1].trim().replace(/\./g, '-') : '2026-10-20';
+      const rawDate = fromMatch ? fromMatch[1].trim().replace(/\./g, '-') : cutoffIso;
+      if (rawDate < cutoffIso) continue;
       const venue = venueMatch ? venueMatch[1].trim() : '공식 공연장';
       const poster = posterMatch ? decodeHtmlAndUnicode(posterMatch[1].trim()) : '';
       const area = areaMatch ? areaMatch[1].trim() : '전국';

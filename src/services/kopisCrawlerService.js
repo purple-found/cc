@@ -23,26 +23,15 @@ export const kopisCrawlerService = {
   },
 
   /**
-   * 오늘 날짜 기준 미래 3개월간의 시작일과 종료일 계산 (YYYYMMDD 형식)
+   * 현재 달 1일부터 향후 2년 말까지의 시작일과 종료일 계산 (YYYYMMDD 형식)
    */
   getDefaultDateRange() {
     const today = new Date();
-    // 2026년 기준 날짜 계산 또는 현재 날짜
     const year = today.getFullYear();
-    const targetYear = year < 2026 ? 2026 : year;
-
     const pad = (n) => String(n).padStart(2, '0');
 
-    // 2026년 10월부터 미래 3개월 (또는 오늘부터 3개월)
-    let startD, endD;
-    if (year < 2026) {
-      startD = new Date(2026, 9, 1); // 2026-10-01
-      endD = new Date(2026, 11, 31); // 2026-12-31
-    } else {
-      startD = new Date(today);
-      endD = new Date(today);
-      endD.setMonth(endD.getMonth() + 3);
-    }
+    const startD = new Date(year, today.getMonth(), 1);
+    const endD = new Date(year + 2, 11, 31);
 
     const toYYYYMMDD = (d) => `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}`;
     const toInputFormat = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
@@ -59,11 +48,11 @@ export const kopisCrawlerService = {
    * KOPIS OpenAPI 호출 URL 결정 (브라우저 프록시 vs 직접 호출)
    */
   getApiBaseUrl() {
-    if (typeof window !== 'undefined' && window.location && window.location.port === '3000') {
-      // Vite 개발 서버 프록시 사용 (CORS 방지)
+    if (typeof window !== 'undefined') {
+      // 로컬 Vite 서버 및 Render/Vercel/Netlify 리버스 프록시 공용 경로 (HTTPS Mixed Content 및 CORS 원천 방지)
       return '/api/kopis/openApi/restful/pblprfr';
     }
-    // Node.js 또는 직접 통신
+    // Node.js 직접 통신
     return 'http://www.kopis.or.kr/openApi/restful/pblprfr';
   },
 

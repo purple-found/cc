@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/api/kopis/:path*",
+      "destination": "http://www.kopis.or.kr/:path*"
+    },
+    {
       "source": "/kopis-api/:path*",
       "destination": "http://www.kopis.or.kr/openApi/restful/:path*"
     },

@@ -23,16 +23,16 @@ function formatKSTString(date) {
   return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())} KST`;
 }
 
-function runMonthlyCleanup(cutoffYears = 1) {
+function runMonthlyCleanup() {
   const kstNow = getKSTDate();
-  const cutoffDate = new Date(kstNow.getFullYear() - cutoffYears, kstNow.getMonth(), kstNow.getDate(), 0, 0, 0);
   const pad = n => String(n).padStart(2, '0');
-  const cutoffStr = `${cutoffDate.getFullYear()}-${pad(cutoffDate.getMonth() + 1)}-${pad(cutoffDate.getDate())}`;
+  const cutoffDate = new Date(kstNow.getFullYear(), kstNow.getMonth(), 1, 0, 0, 0);
+  const cutoffStr = `${kstNow.getFullYear()}-${pad(kstNow.getMonth() + 1)}-01`;
 
   console.log(`=======================================================`);
   console.log(`[CLASSICALENDER 클린더] 매월 1일 새벽 2시 데이터 자동 최적화 배치`);
   console.log(`- 실행 시각: ${formatKSTString(kstNow)}`);
-  console.log(`- 보존 기준: 1년 이내 공연 유지 (기준일: ${cutoffStr} 이전 데이터 자동 삭제)`);
+  console.log(`- 보존 기준: 현재 달 1일(${cutoffStr}) 이후 공연 유지 (이전 과거 공연 자동 정리)`);
   console.log(`=======================================================`);
 
   const dataFilePath = path.join(__dirname, '..', 'src', 'data', 'initialRealConcerts.js');

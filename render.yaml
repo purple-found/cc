@@ -6,6 +6,9 @@ services:
     staticPublishPath: ./dist
     routes:
       - type: rewrite
+        source: /api/kopis/*
+        destination: http://www.kopis.or.kr/*
+      - type: rewrite
         source: /kopis-api/*
         destination: http://www.kopis.or.kr/openApi/restful/*
       - type: rewrite

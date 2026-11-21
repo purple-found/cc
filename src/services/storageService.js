@@ -3,8 +3,8 @@ import { initialHalls } from '../data/initialHalls.js';
 import { initialPosts } from '../data/initialPosts.js';
 import initialRealConcerts from '../data/initialRealConcerts.js';
 
-// v46: 연주 편성 5분류(오케스트라 / 실내악 / 독주회 / 오페라 / 성악·합창) 정밀 재분류 및 오페라 레퍼토리 보강 반영
-const CONCERTS_KEY = 'opus_korea_concerts_v47';
+// v48: 현재 달 1일 ~ 향후 2년 예정 공연 최적화, 4단계 자동 추출 프로그램(pieces) 실시간 동기화 및 '클래식 명작' 더미 제거
+const CONCERTS_KEY = 'opus_korea_concerts_v48';
 const HALLS_KEY = 'opus_korea_halls_v4';
 const POSTS_KEY = 'opus_korea_posts_v4';
 const THEME_KEY = 'opus_korea_theme_v3';
@@ -17,7 +17,7 @@ try {
     ['opus_korea_verified_real_concerts_v5', 'opus_korea_verified_real_concerts_v6', 'opus_korea_halls_v3'].forEach(k => {
       localStorage.removeItem(k);
     });
-    for (let v = 7; v <= 46; v++) {
+    for (let v = 7; v <= 47; v++) {
       localStorage.removeItem(`opus_korea_concerts_v${v}`);
     }
   }
@@ -41,53 +41,59 @@ export const storageService = {
       if (!Array.isArray(parsed) || parsed.length === 0) {
         return initialRealConcerts || [];
       }
-      // 세부 홀(hall), 연주 편성(performerType), 작품 목록(pieces)이 최신화되지 않은 경우 initialRealConcerts와 즉각 병합
+      // initialRealConcerts에서 정리된 과거 월(지난달 이전) KOPIS 데이터는 캐시에서도 자동 정리하되, 관리자 수동 등록/제보 승인 공연은 보존
       const initialMap = new Map((initialRealConcerts || []).map(c => [c.id || c.kopisId, c]));
       let hasUpdate = false;
-      const synced = parsed.map(c => {
-        const init = initialMap.get(c.id || c.kopisId);
+      const filteredParsed = parsed.filter(c => {
+        const key = c.id || c.kopisId;
+        const isKopisItem = String(key || '').startsWith('kopis-') || Boolean(c.kopisId);
+        if (isKopisItem && !initialMap.has(key) && !initialMap.has(c.kopisId)) {
+          hasUpdate = true;
+          return false;
+        }
+        return true;
+      });
+
+      // 새벽 3시 배치로 업데이트된 작품 목록(pieces), 작곡가(composers), 세부 홀(hall), 연주 편성(performerType)을 로컬 캐시와 즉시 동기화
+      const synced = filteredParsed.map(c => {
+        const init = initialMap.get(c.id || c.kopisId) || initialMap.get(c.kopisId);
         if (init) {
           const needsHallUpdate = init.hall && c.hall !== init.hall;
           const needsTypeUpdate = init.performerType && c.performerType !== init.performerType;
-          const hasFakePieces = Array.isArray(c.pieces) && c.pieces.some(p =>
-            p.includes('앙코르') || p.includes('레퍼토리') || p.includes('하모니') || p.includes('협주곡 앙상블') || p.includes('소나타 및 모음곡') || p.includes('실내악 선율') || p.endsWith('프로그램')
-          );
-          if (needsHallUpdate || needsTypeUpdate || hasFakePieces) {
+          const initPieces = Array.isArray(init.pieces) ? init.pieces : [];
+          const curPieces = Array.isArray(c.pieces) ? c.pieces : [];
+          const needsPiecesUpdate =
+            (initPieces.length > 0 && JSON.stringify(initPieces) !== JSON.stringify(curPieces)) ||
+            (Array.isArray(c.composers) && c.composers.includes('클래식 명작'));
+          if (needsHallUpdate || needsTypeUpdate || needsPiecesUpdate) {
             hasUpdate = true;
             return {
               ...c,
               hall: init.hall !== undefined ? init.hall : c.hall,
               venue: init.venue || c.venue,
               performerType: init.performerType || c.performerType,
-              composers: init.composers || c.composers,
-              pieces: init.pieces || []
+              composers: (init.composers || []).filter(comp => comp && comp !== '클래식 명작'),
+              pieces: initPieces.length > 0 ? initPieces : curPieces,
+              introImages: init.introImages || c.introImages,
+              description: init.description || c.description
             };
           }
         }
         return c;
       });
 
-      // initialRealConcerts에는 있으나 캐시에 누락된 신규 공연(예: 부산콘서트홀 등) 전수 즉시 자동 병합 (1년 이상 지난 공연은 자동 배제)
+      // initialRealConcerts에 새로 추가된 신규 공연 즉시 병합
       const existingIds = new Set(synced.map(c => c.id || c.kopisId));
-      const oneYearCutoff = new Date();
-      oneYearCutoff.setFullYear(oneYearCutoff.getFullYear() - 1);
-      const missingConcerts = (initialRealConcerts || []).filter(c => {
-        if (existingIds.has(c.id || c.kopisId)) return false;
-        if (c.date) {
-          const d = new Date(String(c.date).slice(0, 10));
-          if (!isNaN(d.getTime()) && d < oneYearCutoff) return false;
-        }
-        return true;
-      });
+      const missingConcerts = (initialRealConcerts || []).filter(c => !existingIds.has(c.id || c.kopisId));
       if (missingConcerts.length > 0) {
         hasUpdate = true;
         synced.push(...missingConcerts);
       }
 
-      // 모든 공연 객체의 필수 배열 필드(composers, pieces, performers) 무결점 보장
+      // 모든 공연 객체의 필수 배열 필드(composers, pieces, performers) 무결점 보장 ('클래식 명작' 더미 배제)
       const safeSynced = synced.map(c => ({
         ...c,
-        composers: Array.isArray(c.composers) && c.composers.length > 0 ? c.composers : ['클래식 명작'],
+        composers: Array.isArray(c.composers) ? c.composers.filter(comp => comp && comp !== '클래식 명작') : [],
         pieces: Array.isArray(c.pieces) ? c.pieces : [],
         performers: Array.isArray(c.performers) && c.performers.length > 0 ? c.performers : [c.title || '출연진']
       }));
@@ -99,7 +105,7 @@ export const storageService = {
     } catch (e) {
       return (initialRealConcerts || []).map(c => ({
         ...c,
-        composers: Array.isArray(c.composers) && c.composers.length > 0 ? c.composers : ['클래식 명작'],
+        composers: Array.isArray(c.composers) ? c.composers.filter(comp => comp && comp !== '클래식 명작') : [],
         pieces: Array.isArray(c.pieces) ? c.pieces : [],
         performers: Array.isArray(c.performers) && c.performers.length > 0 ? c.performers : [c.title || '출연진']
       }));
