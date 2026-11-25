@@ -1,9 +1,9 @@
 /**
  * KOPIS(공연예술통합전산망) OpenAPI 실시간 전수 수집 실제 클래식 공연 데이터
- * 대한민국 전역 1588건 전수 적재
+ * 대한민국 전역 1617건 전수 적재
  * 복합 공연장 세부 홀 정보 (콘서트홀, IBK챔버홀, 리사이틀홀, 인춘아트홀 등) 100% 매핑
  * 4단계 자동 파이프라인(KOPIS 소개글 -> 공식 상세페이지 -> 포스터·소개전단 이미지 OCR -> 제목 매칭) 기반 실제 연주곡(Pieces) 적재 완료
- * 마지막 자동 갱신 일시: 2026-11-25 03:45:23 KST
+ * 마지막 자동 갱신 일시: 2026-11-26 03:39:03 KST
  */
 
 export const INITIAL_REAL_CONCERTS = [
@@ -8027,7 +8027,7 @@ export const INITIAL_REAL_CONCERTS = [
     "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015389",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "경상오페라센터",
     "crawlerBlocked": false,
@@ -24092,6 +24092,69 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF305618",
+    "kopisId": "PF305618",
+    "title": "RCO Brass Ensemble: 11월의 크리스마스",
+    "date": "2026-11-24",
+    "time": "19:30",
+    "venue": "신세계남산",
+    "city": "서울특별시",
+    "performerType": "실내악",
+    "composers": [],
+    "pieces": [],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%EC%84%B8%EA%B3%84%EB%82%A8%EC%82%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "지나간공연",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "신세계남산",
+    "crawlerBlocked": false,
+    "description": "신세계남산에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305618_261123_163414.png",
+    "hall": null
+  },
+  {
+    "id": "kopis-PF305602",
+    "kopisId": "PF305602",
+    "title": "인덕의료재단과 함께하는 지역예술 힐링콘서트 [안동]",
+    "date": "2026-11-24",
+    "time": "19:30",
+    "venue": "안동문화예술의전당",
+    "city": "경상북도",
+    "performerType": "실내악",
+    "composers": [],
+    "pieces": [],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EB%8F%99%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "지나간공연",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "안동문화예술의전당",
+    "crawlerBlocked": false,
+    "description": "안동문화예술의전당에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305602_261105_151115.png",
+    "hall": null
+  },
+  {
+    "id": "kopis-PF305413",
+    "kopisId": "PF305413",
+    "title": "제65회 유나이티드 필하모닉 오케스트라와 함께하는 가족음악회: Great Korea [세종]",
+    "date": "2026-11-24",
+    "time": "19:30",
+    "venue": "세종예술의전당",
+    "city": "세종특별자치시",
+    "performerType": "오케스트라",
+    "composers": [],
+    "pieces": [],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EC%A2%85%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "지나간공연",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "세종예술의전당",
+    "crawlerBlocked": false,
+    "description": "세종예술의전당에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305413_261104_112804.jpg",
+    "hall": null
+  },
+  {
     "id": "kopis-PF301891",
     "kopisId": "PF301891",
     "title": "정승미 피아노 독주회",
@@ -24116,7 +24179,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013745",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
     "crawlerBlocked": false,
@@ -24141,7 +24204,7 @@ export const INITIAL_REAL_CONCERTS = [
     "pieces": [],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/12/bizes/1735296",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안산문화예술의전당",
     "crawlerBlocked": false,
@@ -24176,7 +24239,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "R석 150,000원, S석 120,000원, A석 80,000원, B석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012889",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
     "crawlerBlocked": false,
@@ -24211,7 +24274,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "R석 70,000원, S석 50,000원, A석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012238",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
     "crawlerBlocked": false,
@@ -24247,7 +24310,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009275",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "천안예술의전당",
     "crawlerBlocked": false,
@@ -24285,7 +24348,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 30,000원",
     "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37728&amp;menuNo=200320",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "세종문화회관",
     "crawlerBlocked": false,
@@ -24320,7 +24383,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012962",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "대구콘서트하우스 (챔버홀)",
     "crawlerBlocked": false,
@@ -24352,7 +24415,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석무료",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014377",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "안성맞춤아트홀",
     "crawlerBlocked": false,
@@ -24390,7 +24453,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 20,000원",
     "ticketUrl": "http://cccf.moonhwain.net/rsvc/rsv_pm.html?b_id=cccf&amp;p_idx=120",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "춘천문화예술회관",
     "crawlerBlocked": false,
@@ -24426,7 +24489,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 5,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1507167",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "나비아트홀",
     "crawlerBlocked": false,
@@ -24464,7 +24527,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "1층석 20,000원, 2층석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013235",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "용인포은아트홀",
     "crawlerBlocked": false,
@@ -24517,7 +24580,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "R석 30,000원, S석 20,000원",
     "ticketUrl": "https://www.accf.or.kr/main/product/detail/ko/404",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "국립아시아문화전당",
     "crawlerBlocked": false,
@@ -24553,7 +24616,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 10,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013269",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "이천아트홀",
     "crawlerBlocked": false,
@@ -24579,7 +24642,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 10,000원",
     "ticketUrl": "http://gn.moonhwain.net/rsvc/rsv_pm.html?b_id=gn&amp;p_idx=1445",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "강릉아트센터 (구. 강릉문화예술관)",
     "crawlerBlocked": false,
@@ -24617,7 +24680,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 5,000원",
     "ticketUrl": "https://www.enticket.com:469/pfm/sub01_view.html?p_idx=4338",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "학산소극장",
     "crawlerBlocked": false,
@@ -24648,7 +24711,7 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "울산북구문화예술회관",
     "hall": "공연장",
     "region": "울산",
-    "status": "공연예정",
+    "status": "지나간공연",
     "category": "클래식",
     "pieces": [
       "W. A. Mozart: Die Zauberflöte, K. 620 (모차르트: 오페라 마술피리)"
@@ -24673,7 +24736,7 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "마포아트센터",
     "hall": "아트홀맥",
     "region": "서울",
-    "status": "공연예정",
+    "status": "지나간공연",
     "category": "클래식",
     "pieces": [
       "C. Saint-Saëns: 죽음의 무도, Op.40",
@@ -24713,7 +24776,7 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "로데아트센터",
     "hall": "콘서트홀",
     "region": "서울",
-    "status": "공연예정",
+    "status": "지나간공연",
     "category": "클래식",
     "pieces": [
       "C. Debussy: The Prelude",
@@ -24774,7 +24837,7 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "부산콘서트홀",
     "hall": "챔버홀",
     "region": "부산",
-    "status": "공연예정",
+    "status": "지나간공연",
     "category": "클래식",
     "pieces": [
       "G. Bizet: Carmen (조르주 비제: 오페라 카르멘)"
@@ -24799,7 +24862,7 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "수성아트피아 (소극장 (소공연장) )",
     "hall": "소공연장",
     "region": "대구",
-    "status": "공연예정",
+    "status": "지나간공연",
     "category": "클래식",
     "pieces": [
       "Frédéric Chopin : Nocturne No. 17 in B Major, Op. 62, No. 1",
@@ -24843,7 +24906,7 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "꿈의숲아트센터",
     "hall": "콘서트홀",
     "region": "서울",
-    "status": "공연예정",
+    "status": "지나간공연",
     "category": "클래식",
     "pieces": [
       "Gustav MahIer - 이다지에토 교향곡 제5번 중"
@@ -24877,7 +24940,7 @@ export const INITIAL_REAL_CONCERTS = [
     "venue": "(재) 영화의전당",
     "hall": "재",
     "region": "부산",
-    "status": "공연예정",
+    "status": "지나간공연",
     "category": "클래식",
     "pieces": [
       "Y. Tiersen: [아멜리에] La valse d'Amélie, Comptine d'un autre 한이 l'aprés-midi",
@@ -24915,7 +24978,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EC%96%91%EC%B2%9C%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "양천문화회관",
     "crawlerBlocked": false,
@@ -24944,7 +25007,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 30,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015374",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "부산문화회관",
     "crawlerBlocked": false,
@@ -24982,7 +25045,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "R석 100,000원, S석 80,000원, A석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26016577",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "영산아트홀",
     "crawlerBlocked": false,
@@ -25012,7 +25075,7 @@ export const INITIAL_REAL_CONCERTS = [
     "pieces": [],
     "price": "전석무료",
     "ticketUrl": "http://www.ticketlink.co.kr/product/66896",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "군산예술의전당",
     "crawlerBlocked": false,
@@ -25046,7 +25109,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 20,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015716",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "금호아트홀 연세",
     "crawlerBlocked": false,
@@ -25114,7 +25177,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 1,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015714",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "나루아트센터",
     "crawlerBlocked": false,
@@ -25152,7 +25215,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 50,000원",
     "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015709",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예술의전당 [서울]",
     "crawlerBlocked": false,
@@ -25188,7 +25251,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 30,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1616848",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "피오레아트앤엔터(피오레움)",
     "crawlerBlocked": false,
@@ -25219,7 +25282,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석 5,000원",
     "ticketUrl": "https://booking.naver.com/booking/5/bizes/1507167",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "나비아트홀",
     "crawlerBlocked": false,
@@ -25250,7 +25313,7 @@ export const INITIAL_REAL_CONCERTS = [
     "pieces": [],
     "price": "전석 10,000원",
     "ticketUrl": "http://www.artgy.or.kr/PF/PF0201V.aspx?showid=0000008539",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양어울림누리",
     "crawlerBlocked": false,
@@ -25278,7 +25341,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석무료",
     "ticketUrl": "https://gcwcf.or.kr/w3_4?mode=view&rm_ix=69",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "철원군 화강문화센터",
     "crawlerBlocked": false,
@@ -25302,7 +25365,7 @@ export const INITIAL_REAL_CONCERTS = [
     "pieces": [],
     "price": "전석무료",
     "ticketUrl": "http://www.ticketlink.co.kr/product/67225",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "구미시문화예술회관",
     "crawlerBlocked": false,
@@ -25344,7 +25407,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석무료",
     "ticketUrl": "http://www.ticketlink.co.kr/product/67237",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "빛고을시민문화관",
     "crawlerBlocked": false,
@@ -25384,7 +25447,7 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "price": "전석무료",
     "ticketUrl": "http://www.artgy.or.kr/PF/PF0201V.aspx?showid=0000008477",
-    "status": "공연예정",
+    "status": "지나간공연",
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "고양아람누리",
     "crawlerBlocked": false,
@@ -26284,6 +26347,37 @@ export const INITIAL_REAL_CONCERTS = [
     "hall": "대공연장",
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307296_202611241015352430.jpg"
+    ]
+  },
+  {
+    "id": "kopis-PF307432",
+    "kopisId": "PF307432",
+    "title": "홍성수 클라리넷 독주회 [강릉]",
+    "date": "2026-11-26",
+    "time": "19:00",
+    "venue": "강릉원주대학교 하슬라홀",
+    "city": "강원특별자치도",
+    "performerType": "독주회",
+    "composers": [],
+    "pieces": [
+      "Concert0iIAd Theme and Variations for Orchestra7h EEEh, W.H."
+    ],
+    "price": "전석 20,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26016298",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "강릉원주대학교 하슬라홀",
+    "crawlerBlocked": false,
+    "description": "강릉원주대학교 하슬라홀에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307432_261125_133319.gif",
+    "hall": "하슬라홀",
+    "performers": [
+      "홍성수",
+      "김아름",
+      "김한샘"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307432_202611250142191170.png"
     ]
   },
   {
@@ -29350,6 +29444,50 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF307442",
+    "kopisId": "PF307442",
+    "title": "제37회 이건음악회: 아비 아비탈 초청 연주회",
+    "date": "2026-11-28",
+    "time": "19:30",
+    "venue": "롯데콘서트홀",
+    "city": "서울특별시",
+    "performerType": "실내악",
+    "composers": [
+      "바흐",
+      "비발디"
+    ],
+    "pieces": [
+      "바흐: rconcertosæ 20241d KLASS[K)",
+      "Johann Sebastian Bach: Orchestral Suite No. 3 in D Major, BWV 1068:1. Ouverture (arr.for strings)",
+      "Johann Sebastian Bach: Concerto in D Major, RV 93",
+      "Antonio Vivaldi: Deæ, RV 93",
+      "Antonio Vivaldi: Concerto in G Minor, BWV 1056",
+      "BE — GWæ, BWV 1056",
+      "Johann Sebastian Bach: Concerto in A Minor, BWV 1041"
+    ],
+    "price": "전석무료",
+    "ticketUrl": "https://www.lotteconcerthall.com/product/performance/261274",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "롯데콘서트홀",
+    "crawlerBlocked": false,
+    "description": "롯데콘서트홀에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307442_261125_135759.jpg",
+    "hall": null,
+    "performers": [
+      "아비 아비탈",
+      "피호영",
+      "최정현",
+      "피예나",
+      "변예진",
+      "민유경",
+      "최유진 등"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307442_202611250157593390.jpg"
+    ]
+  },
+  {
     "id": "kopis-PF302120",
     "kopisId": "PF302120",
     "title": "심삼종 색소폰 독주회",
@@ -30795,6 +30933,47 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF307399",
+    "kopisId": "PF307399",
+    "title": "박희민 피아노 독주회: Schubert, Rachmaninoff & Shostakovich",
+    "date": "2026-11-30",
+    "time": "19:30",
+    "venue": "금호아트홀 연세",
+    "city": "서울특별시",
+    "performerType": "독주회",
+    "composers": [
+      "슈베르트",
+      "라흐마니노프",
+      "쇼스타코비치"
+    ],
+    "pieces": [
+      "F. Schubert: Die schöne Müllerin, D. 795",
+      "F. Schubert: IO Preludes, Op. 23 No. 4 in I) Major. Andante cantabile",
+      "F. Schubert: No. 7 in C Minor. Allegro",
+      "F. Schubert: Preludes and Fugues, Op. 87",
+      "F. Schubert: No. No. 2 in A Minor",
+      "F. Schubert: No. No. 24 in D Minor",
+      "F. Schubert: Concerto Competition 291, Susan Torres Piano Award 391, Chautauqua Piano Concerto Competition finalist S"
+    ],
+    "price": "전석 20,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015824",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "금호아트홀 연세",
+    "crawlerBlocked": false,
+    "description": "금호아트홀 연세에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307399_261125_111716.gif",
+    "hall": "금호아트홀 연세",
+    "performers": [
+      "박희민"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307399_202611251117167202.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307399_202611251117166861.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307399_202611251117166130.jpg"
+    ]
+  },
+  {
     "id": "kopis-PF303000",
     "kopisId": "PF303000",
     "title": "이수빈 하프 리사이틀",
@@ -32060,6 +32239,63 @@ export const INITIAL_REAL_CONCERTS = [
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307023_202611201001145421.jpg",
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307023_202611201001145150.jpg"
+    ]
+  },
+  {
+    "id": "kopis-PF307457",
+    "kopisId": "PF307457",
+    "title": "제4회 사월 음악의 밤: 지음 X 혜음 MUSICAL [대구]",
+    "date": "2026-12-02",
+    "time": "18:30",
+    "venue": "수성아트피아",
+    "city": "대구광역시",
+    "performerType": "실내악",
+    "composers": [
+      "엘가"
+    ],
+    "pieces": [
+      "Poet and Peasant Overture",
+      "E. Elgar: Pomp and Circumstance March No. 1"
+    ],
+    "price": "전석무료",
+    "ticketUrl": "http://www.ticketlink.co.kr/product/67263",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "수성아트피아",
+    "crawlerBlocked": false,
+    "description": "수성아트피아에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307457_261125_142643.png",
+    "hall": "대공연장",
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307457_202611250226437130.png"
+    ]
+  },
+  {
+    "id": "kopis-PF306338",
+    "kopisId": "PF306338",
+    "title": "제2회 시스띠나일산합창단 정기연주회 [고양]",
+    "date": "2026-12-02",
+    "time": "19:00",
+    "venue": "고양아람누리",
+    "city": "경기도",
+    "performerType": "성악/합창",
+    "composers": [],
+    "pieces": [],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "http://www.artgy.or.kr/PF/PF0201V.aspx?showid=0000008513",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "고양아람누리",
+    "crawlerBlocked": false,
+    "description": "고양아람누리에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF306338_261113_111917.jpg",
+    "hall": "아람음악당",
+    "performers": [
+      "이호중",
+      "최은정 등"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF306338_202611131119173300.jpg"
     ]
   },
   {
@@ -35000,7 +35236,7 @@ export const INITIAL_REAL_CONCERTS = [
     "source": "KOPIS 전산망 공식 수집",
     "sourceHall": "예주문화예술회관",
     "crawlerBlocked": false,
-    "description": "[공연소개]\n2026 꿈의 오케스트라 ‘영덕’\n제1회 정기연주회\n서툰 첫 음에서 시작된 우리들의 아름다운 하모니!\n\n처음 악기를 잡았던 작은 손,\n낯설고 어색했던 첫 번째 소리.\n\n서로 다른 악기를 배우고, 친구들의 소리에 귀 기울이며 하나의 음악을 만들어가는 아이들.\n\n꿈의 오케스트라 ‘영덕’의 아이들이 함께 만들어 온 첫 번째 음악 이야기가 시작됩니다.",
+    "description": "[공연소개]\n2026 꿈의 오케스트라 ‘영덕’\n제1회 정기연주회\n서툰 첫 음에서 시작된 ��리들의 아름다운 하모니!\n\n처음 악기를 잡았던 작은 손,\n낯설고 어색했던 첫 번째 소리.\n\n서로 다른 악기를 배우고, 친구들의 소리에 귀 기울이며 하나의 음악을 만들어가는 아이들.\n\n꿈의 오케스트라 ‘영덕’의 아이들이 함께 만들어 온 첫 번째 음악 이야기가 시작됩니다.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305789_261109_141531.jpg",
     "hall": "예주문화예술회관",
     "introImages": [
@@ -35497,6 +35733,42 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF306036_202611111049504240.jpg"
+    ]
+  },
+  {
+    "id": "kopis-PF307430",
+    "kopisId": "PF307430",
+    "title": "진천군립교향악단과 함께하는 송년음악회 [진천]",
+    "date": "2026-12-05",
+    "time": "17:00",
+    "venue": "진천예술의전당",
+    "city": "충청북도",
+    "performerType": "오케스트라",
+    "composers": [
+      "차이콥스키"
+    ],
+    "pieces": [
+      "Tchaikovsky: SymphonyN0.5 In E Minor, Op.64 — IV. Finale"
+    ],
+    "price": "전석무료",
+    "ticketUrl": "http://jccf.moonhwain.kr/rsvc/rsv_pm.html?b_id=jccf&p_idx=19",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "진천예술의전당",
+    "crawlerBlocked": false,
+    "description": "진천예술의전당에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307430_261125_132959.jpg",
+    "hall": "진아트홀",
+    "performers": [
+      "강수형",
+      "조윤경",
+      "허솔지",
+      "손준호 등"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307430_202611250130000212.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307430_202611250129599811.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307430_202611250129599770.jpg"
     ]
   },
   {
@@ -36177,6 +36449,41 @@ export const INITIAL_REAL_CONCERTS = [
     "description": "쌀롱드무지끄에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307337_261124_131815.jpg",
     "hall": null
+  },
+  {
+    "id": "kopis-PF307376",
+    "kopisId": "PF307376",
+    "title": "월간연주자, Hermann Trio (12월)",
+    "date": "2026-12-06",
+    "time": "16:00",
+    "venue": "갤러리 디 아르테 청담",
+    "city": "서울특별시",
+    "performerType": "실내악",
+    "composers": [
+      "브람스",
+      "슈베르트"
+    ],
+    "pieces": [
+      "J. Brahms: c - (Trio). Poco",
+      "F. Schubert: \"Trio Hermann\""
+    ],
+    "price": "전석 30,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013800",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "갤러리 디 아르테 청담",
+    "crawlerBlocked": false,
+    "description": "갤러리 디 아르테 청담에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307376_261125_102247.gif",
+    "hall": "B1",
+    "performers": [
+      "조민현",
+      "안수빈",
+      "임정은"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307376_202611251022479680.png"
+    ]
   },
   {
     "id": "kopis-PF300511",
@@ -37056,6 +37363,45 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF307424",
+    "kopisId": "PF307424",
+    "title": "대구시립교향악단, 수험생 힐링콘서트 1 (12.08)",
+    "date": "2026-12-08",
+    "time": "19:30",
+    "venue": "대구콘서트하우스",
+    "city": "대구광역시",
+    "performerType": "오케스트라",
+    "composers": [
+      "베르디",
+      "비제",
+      "바그너"
+    ],
+    "pieces": [
+      "바그너 – 오페라 “로엔그린” 3막 전주곡, WWV 75",
+      "R. Wagner: Prelude Act Ⅲ to “Lohengrin”, WWV 75",
+      "베버 – 오페라 “마탄의 사수” 서곡, Op.77",
+      "C. M. von Weber – Overture to “ Der Freischütz”, Op.77",
+      "베르디 – 오페라 “루이자 밀러” 서곡",
+      "G. Verdi: Overture to “Luisa Miller”",
+      "베르디 – 오페라 “운명의 힘” 서곡",
+      "G. Verdi: Overture to “La forza del destino”",
+      "바그너 – 오페라 “방황하는 네덜란드인” 서곡, WWV 63",
+      "R. Wagner: Overture to “Der fliegende Holländer”, WWV 63",
+      "비제 – 카르멘 모음곡 중 발췌",
+      "G. Bizet: Selections from Carmen Suite",
+      "G. Bizet: 전주곡과 아라고네즈 Prélud & Aragonaise"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EC%BD%98%EC%84%9C%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "대구콘서트하우스",
+    "crawlerBlocked": false,
+    "description": "대구콘서트하우스에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307424_261125_131711.png",
+    "hall": null
+  },
+  {
     "id": "kopis-PF303224",
     "kopisId": "PF303224",
     "title": "대구콘서트하우스 특별음악회: Ensemble Eins 현대음악 콘서트",
@@ -37740,7 +38086,7 @@ export const INITIAL_REAL_CONCERTS = [
       "Vocal Emsemble: 이은림/소은경/ 최민영",
       "Vocal Emsemble: 김현준/최은혁/문성민",
       "우정의 노래:(E.A.Fenstad)",
-      "우정의 노래: Fantasy for Piano and Orchestra “Africa” (Saint-saens)"
+      "베르디: Fantasy for Piano and Orchestra “Africa” (Saint-saens)"
     ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EC%BD%98%EC%84%9C%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
@@ -41415,6 +41761,124 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF307463",
+    "kopisId": "PF307463",
+    "title": "슈베르티아데 솔로이스트 시리즈 Ⅱ: 트롬본 전한글",
+    "date": "2026-12-13",
+    "time": "17:00",
+    "venue": "부천아트센터",
+    "city": "경기도",
+    "performerType": "실내악",
+    "composers": [],
+    "pieces": [
+      "Romance Op. 21",
+      "Drei Romanzen, Op. 94",
+      "Ballade"
+    ],
+    "price": "전석 10,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26016537",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "부천아트센터",
+    "crawlerBlocked": false,
+    "description": "부천아트센터에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307463_261125_143930.gif",
+    "hall": "소공연장",
+    "performers": [
+      "전한글",
+      "김예은",
+      "김세림",
+      "임기량",
+      "김유미",
+      "정유진",
+      "정혜주 등"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307463_202611250239305651.jpg",
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307463_202611250239305470.jpg"
+    ]
+  },
+  {
+    "id": "kopis-PF307462",
+    "kopisId": "PF307462",
+    "title": "피아노수다 15주년 기념 음악회: 차이코프스키 3대 발레 판타지 [대전]",
+    "date": "2026-12-13",
+    "time": "15:00",
+    "venue": "대전예술가의집",
+    "city": "대전광역시",
+    "performerType": "실내악",
+    "composers": [
+      "차이콥스키"
+    ],
+    "pieces": [
+      "P. I. Tchaikovsky: Swan Lake Suite, Op. 20a",
+      "P. I. Tchaikovsky: Valse",
+      "P. I. Tchaikovsky: Danses des Cygnes G)",
+      "P. I. Tchaikovsky: Scene",
+      "P. I. Tchaikovsky: The Nutcracker Suite, Op. 71a",
+      "P. I. Tchaikovsky: Miniature Overture (4 Ad S)",
+      "Waltz of the Flowers ( -æg - l",
+      "P. I. Tchaikovsky: The Sleeping Beauty Suite, Op. 66a",
+      "Adagio: Pas d'Action (öl-C-l-XlQ: jil- — G)",
+      "P. I. Tchaikovsky: Panorama (ii-l-helul)",
+      "P. I. Tchaikovsky: THE GREAT 3 BALLET FANTASIES"
+    ],
+    "price": "전석 20,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26016846",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "대전예술가의집",
+    "crawlerBlocked": false,
+    "description": "대전예술가의집에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307462_261125_143804.gif",
+    "hall": "누리홀",
+    "performers": [
+      "김미영",
+      "김민수",
+      "김연주",
+      "김정인",
+      "박문일",
+      "박주원",
+      "유지수 등"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307462_202611250238050300.jpg"
+    ]
+  },
+  {
+    "id": "kopis-PF307452",
+    "kopisId": "PF307452",
+    "title": "이인 플루트 독주회",
+    "date": "2026-12-13",
+    "time": "19:30",
+    "venue": "영산아트홀",
+    "city": "서울특별시",
+    "performerType": "독주회",
+    "composers": [
+      "프로코피예프"
+    ],
+    "pieces": [
+      "S. Prokofiev: Romances for Oboe and Piano (arr. for Flute and Piano)",
+      "S. Prokofiev: Sonata for Flute and Piano, Op. 94"
+    ],
+    "price": "전석 30,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26016903",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "영산아트홀",
+    "crawlerBlocked": false,
+    "description": "영산아트홀에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307452_261125_141558.gif",
+    "hall": "영산아트홀",
+    "performers": [
+      "이인",
+      "정민정"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307452_202611250215581760.jpg"
+    ]
+  },
+  {
     "id": "kopis-PF297125",
     "kopisId": "PF297125",
     "title": "코리안 영 아티스트 시리즈 Ⅵ, 유성호 피아노 리사이틀",
@@ -42772,6 +43236,42 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF307413",
+    "kopisId": "PF307413",
+    "title": "제82회 부산시립청소년교향악단 정기연주회: 오마주",
+    "date": "2026-12-16",
+    "time": "19:30",
+    "venue": "낙동아트센터",
+    "city": "부산광역시",
+    "performerType": "오케스트라",
+    "composers": [
+      "모차르트",
+      "차이콥스키"
+    ],
+    "pieces": [
+      "W. A. Mozart: Concerto for Flute and Harp, K.299",
+      "W. A. Mozart: M. Rave Le tombeau de Couperin",
+      "P. I. Tchaikovsky: Suite No. 4 \"Mozartiana\", Op.61"
+    ],
+    "price": "전석 5,000원",
+    "ticketUrl": "http://www.bscc.or.kr/01_perfor/?mcode=0401010200&mode=2&no=26952",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "낙동아트센터",
+    "crawlerBlocked": false,
+    "description": "낙동아트센터에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307413_261125_125439.jpg",
+    "hall": "콘서트홀",
+    "performers": [
+      "백승현",
+      "이주형",
+      "정주희 등"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307413_202611251254399480.jpg"
+    ]
+  },
+  {
     "id": "kopis-PF296273",
     "kopisId": "PF296273",
     "title": "유키 구라모토 콘서트: Peacefully [안동]",
@@ -43427,6 +43927,45 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF307440",
+    "kopisId": "PF307440",
+    "title": "제23회 하트시각장애인체임버오케스트라 정기연주회",
+    "date": "2026-12-17",
+    "time": "19:30",
+    "venue": "세종문화회관",
+    "city": "서울특별시",
+    "performerType": "오케스트라",
+    "composers": [
+      "하이든"
+    ],
+    "pieces": [
+      "하이든: Overture to The Barber Of Seville",
+      "Joseph Haydn: cello Concerto No. 1 in C Major, Hob. VIII\" 1",
+      "하이든: A Pixar Symphonic Suite : Living & Loving Together"
+    ],
+    "price": "전석 50,000원",
+    "ticketUrl": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37896&menuNo=200320",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "세종문화회관",
+    "crawlerBlocked": false,
+    "description": "세종문화회관에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307440_261125_135137.png",
+    "hall": "체임버홀",
+    "performers": [
+      "이강호",
+      "이보라",
+      "남민경",
+      "양지인",
+      "엄정현",
+      "김수진",
+      "김담희 등"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307440_202611250151370880.png"
+    ]
+  },
+  {
     "id": "kopis-PF302281",
     "kopisId": "PF302281",
     "title": "제8회 서울챔버뮤직소사이어티 정기공연, 베토벤 서거 200주년 기념 공연: 인내와 극복",
@@ -43996,6 +44535,41 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF306810_202611180127349220.gif"
+    ]
+  },
+  {
+    "id": "kopis-PF307372",
+    "kopisId": "PF307372",
+    "title": "유민형 비올라 독주회",
+    "date": "2026-12-18",
+    "time": "19:00",
+    "venue": "세종문화회관",
+    "city": "서울특별시",
+    "performerType": "독주회",
+    "composers": [
+      "비외탕"
+    ],
+    "pieces": [
+      "비외탕: Mikhail Glinka Viola Sonata D Minor",
+      "비외탕: Franz Danzi Duet No. 1 in C Major for Viola and Cello",
+      "비외탕: Henri Vieuxtemps Elegie for Viola and Piano, Op. 30"
+    ],
+    "price": "전석 20,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004949",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "세종문화회관",
+    "crawlerBlocked": false,
+    "description": "세종문화회관에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307372_261125_101454.gif",
+    "hall": "체임버홀",
+    "performers": [
+      "유민형",
+      "문지영",
+      "임이랑"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307372_202611251014548420.jpg"
     ]
   },
   {
@@ -45297,6 +45871,44 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF307425",
+    "kopisId": "PF307425",
+    "title": "제주아트센터 x 제주예술단 x 서귀포합창단 공동기획: 송년음악회",
+    "date": "2026-12-19",
+    "time": "17:00",
+    "venue": "제주아트센터",
+    "city": "제주특별자치도",
+    "performerType": "성악/합창",
+    "composers": [
+      "베토벤"
+    ],
+    "pieces": [
+      "Ludwig van Beethoven: Symphony No. 9 in D Minor, Op. 125 \"Choral\"",
+      "R12e--n Scherzo: Molto vivace - Presto"
+    ],
+    "price": "1층석 15,000원, 2층석 10,000원",
+    "ticketUrl": "https://www.jejusi.go.kr/acenter/show/perf/view.do?showId=1730",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "제주아트센터",
+    "crawlerBlocked": false,
+    "description": "제주아트센터에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307425_261125_131738.png",
+    "hall": "대극장",
+    "performers": [
+      "박승유",
+      "박소영",
+      "김정미",
+      "이명현",
+      "이동환",
+      "임희준",
+      "박위수 등"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307425_202611250117388190.jpg"
+    ]
+  },
+  {
     "id": "kopis-PF299436",
     "kopisId": "PF299436",
     "title": "파리나무 십자가 소년 합창단 특별 초청 공연 [서울]",
@@ -46206,6 +46818,38 @@ export const INITIAL_REAL_CONCERTS = [
     "description": "세종문화회관에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307236_261123_151935.png",
     "hall": null
+  },
+  {
+    "id": "kopis-PF307406",
+    "kopisId": "PF307406",
+    "title": "오디뮤직 가족음악회: 크리스마스 선물",
+    "date": "2026-12-21",
+    "time": "17:00",
+    "venue": "산울림소극장",
+    "city": "서울특별시",
+    "performerType": "실내악",
+    "composers": [],
+    "pieces": [
+      "l. 281 Olé"
+    ],
+    "price": "전석 50,000원",
+    "ticketUrl": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26016928",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "산울림소극장",
+    "crawlerBlocked": false,
+    "description": "산울림소극장에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307406_261125_114253.gif",
+    "hall": "산울림소극장",
+    "performers": [
+      "노주희",
+      "맹진석",
+      "이초롱",
+      "김진리"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307406_202611251142536280.jpg"
+    ]
   },
   {
     "id": "kopis-PF302135",
@@ -47746,6 +48390,39 @@ export const INITIAL_REAL_CONCERTS = [
     "hall": null
   },
   {
+    "id": "kopis-PF307407",
+    "kopisId": "PF307407",
+    "title": "우리 가곡과 함께하는 송년음악회: 위로 [부산]",
+    "date": "2026-12-23",
+    "time": "19:30",
+    "venue": "영도문화예술회관",
+    "city": "부산광역시",
+    "performerType": "성악/합창",
+    "composers": [],
+    "pieces": [],
+    "price": "전석 10,000원",
+    "ticketUrl": "https://yeongdo.moonhwain.net:451/rsvc/rsv_pm.html?b_id=yeongdo&p_idx=281",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "영도문화예술회관",
+    "crawlerBlocked": false,
+    "description": "[프로그램]\n\n뱃노래\n꽃구름 속에\n청산에 살리라\n내 맘의 강물 \n흔들리며 피는 꽃\n잔향\n삶이 그대를 속일지라도",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307407_261125_115205.jpg",
+    "hall": "봉래홀",
+    "performers": [
+      "이예니",
+      "이지영",
+      "이지윤",
+      "윤서준",
+      "유용준",
+      "허종훈",
+      "김경기 등"
+    ],
+    "introImages": [
+      "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF307407_202611251152050590.jpg"
+    ]
+  },
+  {
     "id": "kopis-PF303450",
     "kopisId": "PF303450",
     "title": "KBS교향악단 70주년 기념 송년음악회: 합창",
@@ -48295,6 +48972,37 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF307444",
+    "kopisId": "PF307444",
+    "title": "크리스마스 콘서트 [구미]",
+    "date": "2026-12-24",
+    "time": "19:30",
+    "venue": "강동문화복지회관",
+    "city": "경상북도",
+    "performerType": "실내악",
+    "composers": [
+      "비발디",
+      "비제"
+    ],
+    "pieces": [
+      "비발디: String Quartet Op. 8 No. 1 in D Major, G 165",
+      "HIVCI Antonio Vivaldi: CH21 Concerto for Two Violins and Strings in A Minor RV 522",
+      "HIVCI Antonio Vivaldi: Romanze for Viola and Strings, Op. 85",
+      "Max Bruch: Fantasy on Bizet's \"Carmen\" for 4 Violins and Double Bass by Julian Milone",
+      "Ennio Morricone: Fantasy on Bizet's \"Carmen\" for 4 Violins and Double Bass by Julian Milone",
+      "BIRI Georges Bizet: Suite of Carols for Strings"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EA%B0%95%EB%8F%99%EB%AC%B8%ED%99%94%EB%B3%B5%EC%A7%80%ED%9A%8C%EA%B4%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "강동문화복지회관",
+    "crawlerBlocked": false,
+    "description": "강동문화복지회관에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307444_261125_135941.gif",
+    "hall": null
+  },
+  {
     "id": "kopis-PF303490",
     "kopisId": "PF303490",
     "title": "더 크리스마스: 송영훈의 4첼리스트",
@@ -48646,6 +49354,29 @@ export const INITIAL_REAL_CONCERTS = [
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF306091_202611200340455130.jpg"
     ]
+  },
+  {
+    "id": "kopis-PF307428",
+    "kopisId": "PF307428",
+    "title": "크리스마스 콘서트!",
+    "date": "2026-12-25",
+    "time": "19:30",
+    "venue": "예술의전당 [서울]",
+    "city": "서울특별시",
+    "performerType": "실내악",
+    "composers": [],
+    "pieces": [
+      "D Waltz&"
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%5B%EC%84%9C%EC%9A%B8%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "예술의전당 [서울]",
+    "crawlerBlocked": false,
+    "description": "예술의전당 [서울]에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307428_261125_132721.gif",
+    "hall": null
   },
   {
     "id": "kopis-PF303552",
@@ -49544,6 +50275,27 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF307449",
+    "kopisId": "PF307449",
+    "title": "크리스마스 콘서트: 유키 구라모토와 친구들 [평택]",
+    "date": "2026-12-27",
+    "time": "19:30",
+    "venue": "평택아트센터",
+    "city": "경기도",
+    "performerType": "실내악",
+    "composers": [],
+    "pieces": [],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "평택아트센터",
+    "crawlerBlocked": false,
+    "description": "평택아트센터에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307449_261125_140910.jpg",
+    "hall": null
+  },
+  {
     "id": "kopis-PF305666",
     "kopisId": "PF305666",
     "title": "라라라 송년음악회",
@@ -49793,6 +50545,27 @@ export const INITIAL_REAL_CONCERTS = [
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF305952_202611100102503160.jpg"
     ]
+  },
+  {
+    "id": "kopis-PF307389",
+    "kopisId": "PF307389",
+    "title": "제5회 케이챔버오케스트라 정기연주회: 송년음악회 [대전]",
+    "date": "2026-12-29",
+    "time": "19:30",
+    "venue": "대전시립연정국악원",
+    "city": "대전광역시",
+    "performerType": "오케스트라",
+    "composers": [],
+    "pieces": [],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%A0%84%EC%8B%9C%EB%A6%BD%EC%97%B0%EC%A0%95%EA%B5%AD%EC%95%85%EC%9B%90%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "대전시립연정국악원",
+    "crawlerBlocked": false,
+    "description": "대전시립연정국악원에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307389_261125_105408.gif",
+    "hall": null
   },
   {
     "id": "kopis-PF304242",
@@ -51162,6 +51935,33 @@ export const INITIAL_REAL_CONCERTS = [
     ]
   },
   {
+    "id": "kopis-PF307404",
+    "kopisId": "PF307404",
+    "title": "첼리스트 이호찬 브람스 전곡 리사이틀 Ⅰ",
+    "date": "2027-01-14",
+    "time": "19:30",
+    "venue": "예술의전당 [서울]",
+    "city": "서울특별시",
+    "performerType": "독주회",
+    "composers": [
+      "브람스",
+      "리스트"
+    ],
+    "pieces": [
+      "BRAHMS: COMPLETE SONATAS RECITAL I",
+      "BRAHMS: Pianist Cello Sonata No. 1: Violin Sonata ."
+    ],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%5B%EC%84%9C%EC%9A%B8%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "예술의전당 [서울]",
+    "crawlerBlocked": false,
+    "description": "예술의전당 [서울]에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307404_261125_113430.gif",
+    "hall": null
+  },
+  {
     "id": "kopis-PF306929",
     "kopisId": "PF306929",
     "title": "조이오브스트링스 창단 30주년 기념 연주회: 아름다운 투쟁",
@@ -51260,11 +52060,11 @@ export const INITIAL_REAL_CONCERTS = [
     ],
     "pieces": [
       "J. Strauss II: Johann Strauss II Die Fledermaus Overture 박쥐 서곡",
-      "J. Strauss II: Johann Strauss II Annen Polka Op.117 안넨 폴카 4.5‘",
-      "J. Strauss II: Josef Strauss Ohne Sorgen Polka Op.271 걱정없이 폴카 2’",
-      "J. Strauss II: Johann Strauss II Tritsch Tratsch Polka Op.214 트리치 트라치 폴카 3.5‘",
-      "J. Strauss II: Johann Strauss II Auf der Jagd Polka Op.373 사냥 폴카 2.5’",
-      "J. Strauss II: Johann Strauss II Kaiser Walzer Op.437 황제 왈츠"
+      "슈트라우스: Johann Strauss II Annen Polka Op.117 안넨 폴카 4.5‘",
+      "슈트라우스: Josef Strauss Ohne Sorgen Polka Op.271 걱정없이 폴카 2’",
+      "슈트라우스: Johann Strauss II Tritsch Tratsch Polka Op.214 트리치 트라치 폴카 3.5‘",
+      "슈트라우스: Johann Strauss II Auf der Jagd Polka Op.373 사냥 폴카 2.5’",
+      "슈트라우스: Johann Strauss II Kaiser Walzer Op.437 황제 왈츠"
     ],
     "price": "공식 예매처 참조",
     "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%AF%EB%8D%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
@@ -51328,6 +52128,27 @@ export const INITIAL_REAL_CONCERTS = [
     "crawlerBlocked": false,
     "description": "예술의전당 [서울]에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF306994_261119_145612.gif",
+    "hall": null
+  },
+  {
+    "id": "kopis-PF307427",
+    "kopisId": "PF307427",
+    "title": "조수미 & 빈 요한 슈트라우스 오케스트라 신년음악회 (01.18)",
+    "date": "2027-01-18",
+    "time": "19:30",
+    "venue": "롯데콘서트홀",
+    "city": "서울특별시",
+    "performerType": "오케스트라",
+    "composers": [],
+    "pieces": [],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EB%A1%AF%EB%8D%B0%EC%BD%98%EC%84%9C%ED%8A%B8%ED%99%80%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "롯데콘서트홀",
+    "crawlerBlocked": false,
+    "description": "롯데콘서트홀에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307427_261125_132327.jpg",
     "hall": null
   },
   {
@@ -51408,6 +52229,27 @@ export const INITIAL_REAL_CONCERTS = [
     "crawlerBlocked": false,
     "description": "예술의전당 [서울]에서 펼쳐지는 정통 클래식 무대.",
     "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305555_261105_132926.gif",
+    "hall": null
+  },
+  {
+    "id": "kopis-PF307403",
+    "kopisId": "PF307403",
+    "title": "임효선 피아노 리사이틀: 헌정",
+    "date": "2027-01-21",
+    "time": "19:30",
+    "venue": "예술의전당 [서울]",
+    "city": "서울특별시",
+    "performerType": "독주회",
+    "composers": [],
+    "pieces": [],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%5B%EC%84%9C%EC%9A%B8%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "예술의전당 [서울]",
+    "crawlerBlocked": false,
+    "description": "예술의전당 [서울]에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307403_261125_112934.gif",
     "hall": null
   },
   {
@@ -51708,6 +52550,27 @@ export const INITIAL_REAL_CONCERTS = [
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF305052_202611020106406030.jpg"
     ]
+  },
+  {
+    "id": "kopis-PF307370",
+    "kopisId": "PF307370",
+    "title": "제1209회 하우스콘서트, 아클리 희석 (Piano)",
+    "date": "2027-01-25",
+    "time": "19:30",
+    "venue": "예술가의 집",
+    "city": "서울특별시",
+    "performerType": "실내악",
+    "composers": [],
+    "pieces": [],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EA%B0%80%EC%9D%98%20%EC%A7%91%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "예술가의 집",
+    "crawlerBlocked": false,
+    "description": "예술가의 집에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307370_261125_100815.png",
+    "hall": null
   },
   {
     "id": "kopis-PF306898",
@@ -52162,6 +53025,27 @@ export const INITIAL_REAL_CONCERTS = [
     "introImages": [
       "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF306057_202611111145321890.jpg"
     ]
+  },
+  {
+    "id": "kopis-PF307469",
+    "kopisId": "PF307469",
+    "title": "몬트리올 심포니 오케스트라 & 브루스 리우",
+    "date": "2027-02-28",
+    "time": "19:30",
+    "venue": "예술의전당 [서울]",
+    "city": "서울특별시",
+    "performerType": "오케스트라",
+    "composers": [],
+    "pieces": [],
+    "price": "공식 예매처 참조",
+    "ticketUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EC%88%A0%EC%9D%98%EC%A0%84%EB%8B%B9%20%5B%EC%84%9C%EC%9A%B8%5D%20%EA%B3%B5%EC%8B%9D%20%EC%98%88%EB%A7%A4",
+    "status": "공연예정",
+    "source": "KOPIS 전산망 공식 수집",
+    "sourceHall": "예술의전당 [서울]",
+    "crawlerBlocked": false,
+    "description": "예술의전당 [서울]에서 펼쳐지는 정통 클래식 무대.",
+    "imageUrl": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF307469_261125_151506.gif",
+    "hall": null
   },
   {
     "id": "kopis-PF307306",
