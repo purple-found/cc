@@ -1,5 +1,22 @@
 [
   {
+    "timestamp": "2026-11-28 03:48:23 KST",
+    "schedule": "03:00 AM (매일 새벽 3시 정기 배치)",
+    "status": "SUCCESS",
+    "newConcerts": 0,
+    "updatedConcerts": 0,
+    "programsExtracted": {
+      "total": 4,
+      "stage1KopisSty": 1,
+      "stage2DetailPage": 0,
+      "stage3PosterOcr": 3,
+      "stage35Sibling": 0,
+      "stage4Title": 0
+    },
+    "totalConcerts": 1617,
+    "message": "KOPIS 공식 OpenAPI 동기화 및 5단계 자동 프로그램 추출(소개글 1건, 상세페이지 0건, 포스터·전단OCR 3건, 투어공유 0건, 제목·산문 0건) 완료"
+  },
+  {
     "timestamp": "2026-11-27 03:45:53 KST",
     "schedule": "03:00 AM (매일 새벽 3시 정기 배치)",
     "status": "SUCCESS",
